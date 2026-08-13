@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "topline",
+  "source": {
+    "title": "Nefit installatie-instructie TopLine HR/AquaPower, document 6720641179 (2019/07)",
+    "url": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641179.pdf"
+  },
+  "parameters": [
+    {
+      "code": "Cv-bedrijf",
+      "description": "Cv-bedrijf",
+      "factoryDefault": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "stand",
+      "technicalExplanation": "Schakelt cv-bedrijf aan of uit.",
+      "note": "Officiële keuzen: On en Off.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641179.pdf",
+      "sourcePage": 27,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "Maximale cv-watertemperatuur",
+      "description": "Maximale cv-watertemperatuur",
+      "factoryDefault": null,
+      "minimum": 30,
+      "maximum": 85,
+      "unit": "°C",
+      "technicalExplanation": "Bovengrens voor de cv-watertemperatuur.",
+      "note": "De officiële tabel vermeldt hier geen afzonderlijke fabriekswaarde in tekst; daarom is dit veld leeg gelaten.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641179.pdf",
+      "sourcePage": 27,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "Maximaal cv-vermogen",
+      "description": "Maximaal cv-vermogen",
+      "factoryDefault": null,
+      "minimum": 0,
+      "maximum": 100,
+      "unit": "%",
+      "technicalExplanation": "Past het maximale cv-vermogen aan de installatie aan.",
+      "note": "De officiële tabel vermeldt hier geen afzonderlijke fabriekswaarde in tekst; daarom is dit veld leeg gelaten.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641179.pdf",
+      "sourcePage": 27,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "Warmwaterbedrijf",
+      "description": "Warmwaterbedrijf",
+      "factoryDefault": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "stand",
+      "technicalExplanation": "Selecteert Comfort, Eco of uitgeschakeld warmwaterbedrijf.",
+      "note": "Officiële keuzen: Comf, Eco en Off.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641179.pdf",
+      "sourcePage": 27,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "Warmwatertemperatuur",
+      "description": "Warmwatertemperatuur",
+      "factoryDefault": null,
+      "minimum": 40,
+      "maximum": 60,
+      "unit": "°C",
+      "technicalExplanation": "Instelwaarde voor de warmwatertemperatuur.",
+      "note": "Bij naverwarming van een zonneboiler schrijft de handleiding 60 °C voor.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641179.pdf",
+      "sourcePage": 27,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "Minimaal pomptoerental",
+      "description": "Minimaal pomptoerental",
+      "factoryDefault": null,
+      "minimum": 50,
+      "maximum": "maximaal pomptoerental",
+      "unit": "%",
+      "technicalExplanation": "Ondergrens van het pomptoerental.",
+      "note": "De officiële tabel vermeldt hier geen afzonderlijke fabriekswaarde in tekst; daarom is dit veld leeg gelaten.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641179.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "Maximaal pomptoerental",
+      "description": "Maximaal pomptoerental",
+      "factoryDefault": null,
+      "minimum": "minimaal pomptoerental",
+      "maximum": 100,
+      "unit": "%",
+      "technicalExplanation": "Bovengrens van het pomptoerental.",
+      "note": "De officiële tabel vermeldt hier geen afzonderlijke fabriekswaarde in tekst; daarom is dit veld leeg gelaten.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641179.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "Pompnadraaitijd",
+      "description": "Pompnadraaitijd",
+      "factoryDefault": null,
+      "minimum": 1,
+      "maximum": 60,
+      "unit": "min",
+      "technicalExplanation": "Nadraaitijd na einde cv-bedrijf.",
+      "note": "Naast 1–60 minuten kan 24 uur worden gekozen.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641179.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    }
+  ]
+}

@@ -1,0 +1,1638 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "9700i",
+  "source": {
+    "title": "Nefit Bosch installatie- en onderhoudsinstructie 9700i HR(C), document 6721875843 (2024/02)",
+    "url": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf"
+  },
+  "faults": [
+    {
+      "code": "200",
+      "title": "Toestel in cv-bedrijf",
+      "meaning": "Toestel in cv-bedrijf",
+      "causes": [],
+      "checks": [],
+      "note": "Statusklasse O volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 27,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "201",
+      "title": "Warmteproducent in WW-bedrijf",
+      "meaning": "Warmteproducent in WW-bedrijf",
+      "causes": [],
+      "checks": [],
+      "note": "Statusklasse O volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 27,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "202",
+      "title": "Toestel met aanwarmvervroeging",
+      "meaning": "Toestel met aanwarmvervroeging",
+      "causes": [],
+      "checks": [],
+      "note": "Statusklasse O volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 27,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "203",
+      "title": "Toestel in stand-by, geen warmtevraag aanwezig",
+      "meaning": "Toestel in stand-by, geen warmtevraag aanwezig",
+      "causes": [],
+      "checks": [],
+      "note": "Statusklasse O volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 27,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "204",
+      "title": "Actuele cv-watertemperatuur van de warmtebron hoger dan gew. waarde",
+      "meaning": "Actuele cv-watertemperatuur van de warmtebron hoger dan gew. waarde",
+      "causes": [],
+      "checks": [],
+      "note": "Statusklasse O volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 27,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "208",
+      "title": "Warmtevraag vanwege rookgastest",
+      "meaning": "Warmtevraag vanwege rookgastest",
+      "causes": [],
+      "checks": [],
+      "note": "Statusklasse O volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 27,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "214",
+      "title": "Ventilator wordt tijdens de veiligheidstijd uitgeschakeld",
+      "meaning": "Ventilator wordt tijdens de veiligheidstijd uitgeschakeld",
+      "causes": [],
+      "checks": [
+        "Controleer de aansluitstekker aan de ventilator.",
+        "Controleer de aansluitkabel naar de ventilator."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 27,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "224",
+      "title": "Veiligheidstemperatuurbegrenzer geactiveerd",
+      "meaning": "Veiligheidstemperatuurbegrenzer geactiveerd",
+      "causes": [],
+      "checks": [
+        "CV-circuit: Zorg ervoor dat het cv-water circuleert.",
+        "Open het gesloten ventiel in het cv-circuit.",
+        "Vul water bij tot de insteldruk is bereikt.",
+        "Steek de stekker correct op de temperatuurbegrenzer van het verwarmingslichaam.",
+        "Controleer en vervang eventueel de temperatuurbegrenzer van het verwarmingslichaam. Drinkwatercircuit: Waarborg de circulatie van het drinkwater in het circuit."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "227",
+      "title": "Geen vlamsignaal na ontsteking",
+      "meaning": "Geen vlamsignaal na ontsteking",
+      "causes": [],
+      "checks": [
+        "Open de hoofdafsluiter.",
+        "Open de toestelafsluitkraan.",
+        "Onderbreek de voedingsspanning van het toestel en controleer de gasleiding.",
+        "Controleer de aansluitdruk van de gasleiding.",
+        "Controleer de branderfunctie, stel eventueel de brander in.",
+        "Controleer het CO -gehalte van de verbrandingslucht en stel het eventueel in. 2",
+        "Voer een aarding (PE) in de besturing uit.",
+        "Voer een werkingscontrole van de ontsteking uit.",
+        "Voer een werkingscontrole voor ionisatie uit.",
+        "Sluit de stekker van het ionisatie- en ontstekingstraject correct aan.",
+        "Sluit de stekker van het gasblok correct aan.",
+        "Controleer condensafvoer.",
+        "Controleer de rookgaszijde van de warmtewisselaar op vervuiling.",
+        "Controleer en vervang eventueel de Ionisatiepen.",
+        "Controleer en vervang eventueel de ontstekingselektrode.",
+        "Controleer en vervang eventueel de aansluitkabel naar de ontstekingselektrode.",
+        "Controleer en vervang eventueel de aansluitkabel naar de Ionisatiepen.",
+        "Controleer en vervang eventueel het gasblok.",
+        "Controleer en vervang eventueel besturing/branderautomaat."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "228",
+      "title": "Vlamsignaal ondanks niet aanwezige vlam",
+      "meaning": "Vlamsignaal ondanks niet aanwezige vlam",
+      "causes": [],
+      "checks": [
+        "Controleer en vervang eventueel ionisatiekabel.",
+        "Controleer en vervang eventueel elektrodenset.",
+        "Vervang de besturing."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "229",
+      "title": "Vlam tijdens branderbedrijf uitgevallen",
+      "meaning": "Vlam tijdens branderbedrijf uitgevallen",
+      "causes": [],
+      "checks": [
+        "Open de hoofdafsluiter.",
+        "Open de toestelafsluitkraan.",
+        "Leg het toestel stil en controleer de gasleiding.",
+        "Signaalverwerking op printplaat defect.",
+        "Vervang de Ionisatiepen.",
+        "Voer een aarding (PE) in de besturing uit.",
+        "Vervang de ontstekingskabel.",
+        "Vervang de aansluitkabel naar de Ionisatiepen.",
+        "Gasblok vervangen.",
+        "Stel de brander correct in of vervang de inspuiters.",
+        "Stel de brander bij minimale nominale belasting in.",
+        "Bouw het rookgasafvoersysteem om.",
+        "Verbrandingsluchtkoppeling te klein of beluchtingsopening te klein.",
+        "Reinig het verwarmingslichaam aan de rookgaszijde.",
+        "Vervang besturing/branderautomaat."
+      ],
+      "note": "Statusklasse B volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "232",
+      "title": "Warmtebron door extern schakelcontact vergrendeld",
+      "meaning": "Warmtebron door extern schakelcontact vergrendeld",
+      "causes": [],
+      "checks": [
+        "Sluit de stekker voor het externe schakelcontact aan.",
+        "Bouw brug in/Controleer de condenspomp volgens de gegevens van de fabrikant.",
+        "Pas het schakelpunt van de externe temperatuurbewaking aan het systeem aan.",
+        "Vervang de aansluitkabel naar de externe temperatuurbewaking.",
+        "Vervang de externe temperatuurbewaking."
+      ],
+      "note": "Statusklasse B volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "233",
+      "title": "Identificatiemodule of apparaatelektronica storing",
+      "meaning": "Identificatiemodule of apparaatelektronica storing",
+      "causes": [],
+      "checks": [
+        "Bouw cv-toestelidentificatiemodule/codeerstekker in.",
+        "Steek de stekker op de cv-toestelidentificatiemodule/codeerstekker.",
+        "Vervang de cv-toestelidentificatiemodule/codeerstekker (neem contact op met de Nefit servicedienst)."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "234",
+      "title": "Elektrische storing gasblok",
+      "meaning": "Elektrische storing gasblok",
+      "causes": [],
+      "checks": [
+        "Vervang de aansluitkabel en reset na de vervanging.",
+        "Vervang de gasblok en reset na de vervanging."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "235",
+      "title": "Versieconflict toestelelektronica/ ketelidentificatiemodule",
+      "meaning": "Versieconflict toestelelektronica/ ketelidentificatiemodule",
+      "causes": [],
+      "checks": [
+        "Controleer cv-toestelidentificatiemodule/codeerstekker.",
+        "Bouw geldige combinatie van besturing/branderautomaat in."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "237",
+      "title": "Installatiestoring",
+      "meaning": "Installatiestoring",
+      "causes": [],
+      "checks": [
+        "Vervang het cv-toesteldentificatiemodule/codeerstekker.",
+        "Vervang besturing/branderautomaat."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "238",
+      "title": "Elektronica is defect",
+      "meaning": "Elektronica is defect",
+      "causes": [],
+      "checks": [
+        "Vervang besturing."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "242",
+      "title": "Installatiestoring elektronica/ bedieningspaneel",
+      "meaning": "Installatiestoring elektronica/ bedieningspaneel",
+      "causes": [],
+      "checks": [
+        "Los het contactprobleem op.",
+        "Eventueel besturing of cv-toesteldentificatiemodule/codeerstekker vervangen (Nefit neem contact op met de servicedienst)."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "243",
+      "title": "Installatiestoring elektronica/ bedieningspaneel",
+      "meaning": "Installatiestoring elektronica/ bedieningspaneel",
+      "causes": [],
+      "checks": [
+        "Los het contactprobleem op.",
+        "Eventueel besturing of cv-toesteldentificatiemodule/codeerstekker vervangen (Nefit neem contact op met de servicedienst)."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "244",
+      "title": "Installatiestoring elektronica/ bedieningspaneel",
+      "meaning": "Installatiestoring elektronica/ bedieningspaneel",
+      "causes": [],
+      "checks": [
+        "Los het contactprobleem op.",
+        "Eventueel besturing of cv-toesteldentificatiemodule/codeerstekker vervangen (Nefit neem contact op met de servicedienst)."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "245",
+      "title": "Installatiestoring elektronica/ bedieningspaneel",
+      "meaning": "Installatiestoring elektronica/ bedieningspaneel",
+      "causes": [],
+      "checks": [
+        "Los het contactprobleem op.",
+        "Eventueel besturing of cv-toesteldentificatiemodule/codeerstekker vervangen (Nefit neem contact op met de servicedienst)."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "246",
+      "title": "Installatiestoring elektronica/ bedieningspaneel",
+      "meaning": "Installatiestoring elektronica/ bedieningspaneel",
+      "causes": [],
+      "checks": [
+        "Los het contactprobleem op.",
+        "Eventueel besturing of cv-toesteldentificatiemodule/codeerstekker vervangen (Nefit neem contact op met de servicedienst)."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "247",
+      "title": "Installatiestoring elektronica/ bedieningspaneel",
+      "meaning": "Installatiestoring elektronica/ bedieningspaneel",
+      "causes": [],
+      "checks": [
+        "Los het contactprobleem op.",
+        "Eventueel besturing of cv-toesteldentificatiemodule/codeerstekker vervangen (Nefit neem contact op met de servicedienst)."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "248",
+      "title": "Installatiestoring elektronica/ bedieningspaneel",
+      "meaning": "Installatiestoring elektronica/ bedieningspaneel",
+      "causes": [],
+      "checks": [
+        "Los het contactprobleem op.",
+        "Eventueel besturing of cv-toesteldentificatiemodule/codeerstekker vervangen (Nefit neem contact op met de servicedienst)."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "249",
+      "title": "Installatiestoring elektronica/ bedieningspaneel",
+      "meaning": "Installatiestoring elektronica/ bedieningspaneel",
+      "causes": [],
+      "checks": [
+        "Los het contactprobleem op.",
+        "Eventueel besturing of cv-toesteldentificatiemodule/codeerstekker vervangen (Nefit neem contact op met de servicedienst)."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "250",
+      "title": "Installatiestoring elektronica/ bedieningspaneel",
+      "meaning": "Installatiestoring elektronica/ bedieningspaneel",
+      "causes": [],
+      "checks": [
+        "Los het contactprobleem op.",
+        "Eventueel besturing of cv-toesteldentificatiemodule/codeerstekker vervangen (Nefit neem contact op met de servicedienst)."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "251",
+      "title": "Installatiestoring elektronica/ bedieningspaneel",
+      "meaning": "Installatiestoring elektronica/ bedieningspaneel",
+      "causes": [],
+      "checks": [
+        "Los het contactprobleem op.",
+        "Eventueel besturing of cv-toesteldentificatiemodule/codeerstekker vervangen (Nefit neem contact op met de servicedienst)."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "252",
+      "title": "Installatiestoring elektronica/ bedieningspaneel",
+      "meaning": "Installatiestoring elektronica/ bedieningspaneel",
+      "causes": [],
+      "checks": [
+        "Los het contactprobleem op.",
+        "Eventueel besturing of cv-toesteldentificatiemodule/codeerstekker vervangen (Nefit neem contact op met de servicedienst)."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "253",
+      "title": "Installatiestoring elektronica/ bedieningspaneel",
+      "meaning": "Installatiestoring elektronica/ bedieningspaneel",
+      "causes": [],
+      "checks": [
+        "Los het contactprobleem op.",
+        "Eventueel besturing of cv-toesteldentificatiemodule/codeerstekker vervangen (Nefit neem contact op met de servicedienst)."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "254",
+      "title": "Installatiestoring elektronica/ bedieningspaneel",
+      "meaning": "Installatiestoring elektronica/ bedieningspaneel",
+      "causes": [],
+      "checks": [
+        "Los het contactprobleem op.",
+        "Eventueel besturing of cv-toesteldentificatiemodule/codeerstekker vervangen (Nefit neem contact op met de servicedienst)."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "255",
+      "title": "Installatiestoring elektronica/ bedieningspaneel",
+      "meaning": "Installatiestoring elektronica/ bedieningspaneel",
+      "causes": [],
+      "checks": [
+        "Los het contactprobleem op.",
+        "Eventueel besturing of cv-toesteldentificatiemodule/codeerstekker vervangen (Nefit neem contact op met de servicedienst)."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "256",
+      "title": "Installatiestoring elektronica/ bedieningspaneel",
+      "meaning": "Installatiestoring elektronica/ bedieningspaneel",
+      "causes": [],
+      "checks": [
+        "Los het contactprobleem op.",
+        "Eventueel besturing of cv-toesteldentificatiemodule/codeerstekker vervangen (Nefit neem contact op met de servicedienst)."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "257",
+      "title": "Installatiestoring elektronica/ bedieningspaneel",
+      "meaning": "Installatiestoring elektronica/ bedieningspaneel",
+      "causes": [],
+      "checks": [
+        "Los het contactprobleem op.",
+        "Eventueel besturing of cv-toesteldentificatiemodule/codeerstekker vervangen (Nefit neem contact op met de servicedienst)."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "258",
+      "title": "Installatiestoring elektronica/ bedieningspaneel",
+      "meaning": "Installatiestoring elektronica/ bedieningspaneel",
+      "causes": [],
+      "checks": [
+        "Los het contactprobleem op.",
+        "Eventueel besturing of cv-toesteldentificatiemodule/codeerstekker vervangen (Nefit neem contact op met de servicedienst)."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "259",
+      "title": "Installatiestoring elektronica/ bedieningspaneel",
+      "meaning": "Installatiestoring elektronica/ bedieningspaneel",
+      "causes": [],
+      "checks": [
+        "Los het contactprobleem op.",
+        "Eventueel besturing of cv-toesteldentificatiemodule/codeerstekker vervangen (Nefit neem contact op met de servicedienst)."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "260",
+      "title": "Installatiestoring elektronica/ bedieningspaneel",
+      "meaning": "Installatiestoring elektronica/ bedieningspaneel",
+      "causes": [],
+      "checks": [
+        "Los het contactprobleem op.",
+        "Eventueel besturing of cv-toesteldentificatiemodule/codeerstekker vervangen (Nefit neem contact op met de servicedienst)."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "261",
+      "title": "Installatiestoring elektronica/ bedieningspaneel",
+      "meaning": "Installatiestoring elektronica/ bedieningspaneel",
+      "causes": [],
+      "checks": [
+        "Los het contactprobleem op.",
+        "Eventueel besturing of cv-toesteldentificatiemodule/codeerstekker vervangen (Nefit neem contact op met de servicedienst)."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "262",
+      "title": "Installatiestoring elektronica/ bedieningspaneel",
+      "meaning": "Installatiestoring elektronica/ bedieningspaneel",
+      "causes": [],
+      "checks": [
+        "Los het contactprobleem op.",
+        "Eventueel besturing of cv-toesteldentificatiemodule/codeerstekker vervangen (Nefit neem contact op met de servicedienst)."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "263",
+      "title": "Installatiestoring elektronica/ bedieningspaneel",
+      "meaning": "Installatiestoring elektronica/ bedieningspaneel",
+      "causes": [],
+      "checks": [
+        "Los het contactprobleem op.",
+        "Eventueel besturing of cv-toesteldentificatiemodule/codeerstekker vervangen (Nefit neem contact op met de servicedienst)."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "265",
+      "title": "Warmtevraag minder dan geleverde energie",
+      "meaning": "Warmtevraag minder dan geleverde energie",
+      "causes": [],
+      "checks": [],
+      "note": "Statusklasse B volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "268",
+      "title": "Relaistest werd geactiveerd",
+      "meaning": "Relaistest werd geactiveerd",
+      "causes": [],
+      "checks": [],
+      "note": "Statusklasse O volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "269",
+      "title": "Vlambeveiliging",
+      "meaning": "Vlambeveiliging",
+      "causes": [],
+      "checks": [
+        "Vervang besturing/branderautomaat."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "273",
+      "title": "Bedrijfsonderbr. - brander en ventilator",
+      "meaning": "Bedrijfsonderbr. - brander en ventilator",
+      "causes": [],
+      "checks": [],
+      "note": "Statusklasse B volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "281",
+      "title": "Cv-pomp geblokkeerd of lucht in cv-pomp",
+      "meaning": "Cv-pomp geblokkeerd of lucht in cv-pomp",
+      "causes": [],
+      "checks": [
+        "Controleer of de pomp is geblokkeerd en activeer deze opnieuw of vervang deze.",
+        "Waarborg cv-watercirculatie.",
+        "Ontlucht de pomp."
+      ],
+      "note": "Statusklasse B volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "306",
+      "title": "Vlamsignaal na sluiten brandstoftoevoer",
+      "meaning": "Vlamsignaal na sluiten brandstoftoevoer",
+      "causes": [],
+      "checks": [
+        "Vervang het gasblok.",
+        "Vervang de ionisatiekabel.",
+        "Vervang besturing/branderautomaat."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "358",
+      "title": "Pomp / 3WK kick actief",
+      "meaning": "Pomp / 3WK kick actief",
+      "causes": [],
+      "checks": [],
+      "note": "Statusklasse O volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "360",
+      "title": "Installatiestoring elektronica/ bedieningspaneel",
+      "meaning": "Installatiestoring elektronica/ bedieningspaneel",
+      "causes": [],
+      "checks": [
+        "Bouw cv-toesteldentificatiemodule/codeerstekker in.",
+        "Steek de stekker op het cv-toestelidentificatiemodule/codeerstekker.",
+        "Vervang de cv-toestelidentificatiemodule/codeerstekker (Nefit neem contact op met de servicedienst)."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "362",
+      "title": "Identificatiemodule of toestelelektronica storing",
+      "meaning": "Identificatiemodule of toestelelektronica storing",
+      "causes": [],
+      "checks": [
+        "Vervang de cv-toestelidentificatiemodule/codeerstekker (Nefit neem contact op met de servicedienst)."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "363",
+      "title": "Installatiestoring elektronica/ bedieningspaneel",
+      "meaning": "Installatiestoring elektronica/ bedieningspaneel",
+      "causes": [],
+      "checks": [
+        "Vervang besturing/branderautomaat."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "811",
+      "title": "Warmwatervoorziening: thermische desinfectie mislukt",
+      "meaning": "Warmwatervoorziening: thermische desinfectie mislukt",
+      "causes": [],
+      "checks": [
+        "Ga eventuele constante warmwaterafname tegen.",
+        "Positioneer de warmwatertemperatuursensor correct.",
+        "Controleer het contact van de warmwatertemperatuursensor met de boiler.",
+        "Ontlucht het boilercircuit.",
+        "Stel de warmwaterbereiding op \"voorrang\" in.",
+        "Controleer de platenwarmtewisselaar op verkalking.",
+        "Controleer de dimensionering van de circulatieleiding en warmteverlies."
+      ],
+      "note": "Statusklasse A volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "815",
+      "title": "Temperatuursensor open verdeler defect (pompefficiëntiemodule)",
+      "meaning": "Temperatuursensor open verdeler defect (pompefficiëntiemodule)",
+      "causes": [],
+      "checks": [
+        "Controleer en corrigeer eventueel de hydraulische configuratie.",
+        "Controleer de sensoren op kortsluiting of onderbreking en vervang deze eventueel."
+      ],
+      "note": "Statusklasse W volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "1000",
+      "title": "Systeemconfiguratie niet bevestigd",
+      "meaning": "Systeemconfiguratie niet bevestigd",
+      "causes": [],
+      "checks": [
+        "Systeem volledig configureren en bevestigen."
+      ],
+      "note": "Statusklasse B volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "1010",
+      "title": "Geen communicatie via EMS BUS-verbinding",
+      "meaning": "Geen communicatie via EMS BUS-verbinding",
+      "causes": [],
+      "checks": [
+        "Los de bedradingsfouten op en schakel de regelaar weer uit- en in.",
+        "Herstel of vervang BUS-kabel.",
+        "Vervang defecte EMS-BUS-deelnemers."
+      ],
+      "note": "Statusklasse O volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "1013",
+      "title": "Maximale branduren is bereikt",
+      "meaning": "Maximale branduren is bereikt",
+      "causes": [],
+      "checks": [
+        "Voer het onderhoud uit.",
+        "Reset het servicedisplay."
+      ],
+      "note": "Statusklasse W volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "1017",
+      "title": "Waterdruk te laag",
+      "meaning": "Waterdruk te laag",
+      "causes": [],
+      "checks": [
+        "Vul water bij en ontlucht installatie.",
+        "Controleer en vervang eventueel de druksensor."
+      ],
+      "note": "Statusklasse W volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "1018",
+      "title": "Onderhoudsinterval afgelopen",
+      "meaning": "Onderhoudsinterval afgelopen",
+      "causes": [],
+      "checks": [
+        "Voer het onderhoud uit.",
+        "Reset het servicedisplay."
+      ],
+      "note": "Statusklasse W volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "1019",
+      "title": "Verkeerde pomptype herkend",
+      "meaning": "Verkeerde pomptype herkend",
+      "causes": [],
+      "checks": [
+        "Controleer de bekabeling van de pomp.",
+        "Controleer correct pomptype van de cv-pomp in het toestel en vervang deze eventueel."
+      ],
+      "note": "Statusklasse W volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "1022",
+      "title": "Boilertemperatuursensor defect of contactproblemen",
+      "meaning": "Boilertemperatuursensor defect of contactproblemen",
+      "causes": [],
+      "checks": [
+        "Steek de stekker correct op de temperatuursensor.",
+        "Steek de stekker correct op de besturing.",
+        "Controleer en vervang eventueel de temperatuursensor.",
+        "Controleer en vervang eventueel de aansluitkabel van de temperatuursensor."
+      ],
+      "note": "Statusklasse W volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "1023",
+      "title": "Maximale bedrijfsduur inclusief stand-bytijd is bereikt",
+      "meaning": "Maximale bedrijfsduur inclusief stand-bytijd is bereikt",
+      "causes": [],
+      "checks": [
+        "Voer het onderhoud uit.",
+        "Reset het servicedisplay."
+      ],
+      "note": "Statusklasse niet vermeld volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "1025",
+      "title": "Retourtemperatuursensor defect",
+      "meaning": "Retourtemperatuursensor defect",
+      "causes": [],
+      "checks": [
+        "Aansluitstekker op de retourtemperatuursensor is niet aangesloten.",
+        "Retourtemperatuursensor is defect.",
+        "Aansluitkabel naar retourtemperatuursensor is beschadigd.",
+        "Signaalverwerking in besturing defect."
+      ],
+      "note": "Statusklasse W volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "1037",
+      "title": "Buitentemp.sensor defect, verv.bedr. centr. verwarming actief",
+      "meaning": "Buitentemp.sensor defect, verv.bedr. centr. verwarming actief",
+      "causes": [],
+      "checks": [
+        "Er is geen buitentemperatuursensor aangesloten of defect. Kies de configuratie ruimtetemperatuurgeregeld in de regelaar.",
+        "Los de storing op wanneer geen doorgang aanwezig is.",
+        "Reinig gecorrodeerde aansluitklemmen in buitensensorhuis.",
+        "Vervang de sensor wanneer de waarden niet overeenkomen.",
+        "Vervang de regelaar, wanneer de sensorwaarden kloppen maar de spanningswaarden niet overeenkomen."
+      ],
+      "note": "Statusklasse W volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "1038",
+      "title": "Tijd/datum ongeldige waarde",
+      "meaning": "Tijd/datum ongeldige waarde",
+      "causes": [],
+      "checks": [
+        "Stel datum/tijd in.",
+        "Vermijd spanningsuitval"
+      ],
+      "note": "Statusklasse W volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "1039",
+      "title": "Ongemengde groep niet voor drogen afwerkvloer geschikt",
+      "meaning": "Ongemengde groep niet voor drogen afwerkvloer geschikt",
+      "causes": [],
+      "checks": [],
+      "note": "Statusklasse W volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "1040",
+      "title": "Drogen afwerkvloer met ongemengde groepen alleen met totale installatie",
+      "meaning": "Drogen afwerkvloer met ongemengde groepen alleen met totale installatie",
+      "causes": [],
+      "checks": [],
+      "note": "Statusklasse W volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "1041",
+      "title": "Stroomstoring tijdens drogen afwerkvloer",
+      "meaning": "Stroomstoring tijdens drogen afwerkvloer",
+      "causes": [],
+      "checks": [
+        "Vermijd spanningsuitval."
+      ],
+      "note": "Statusklasse B volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "1042",
+      "title": "Interne storing: toegang tot klokbouwsteen geblokkeerd",
+      "meaning": "Interne storing: toegang tot klokbouwsteen geblokkeerd",
+      "causes": [],
+      "checks": [
+        "HMI vervangen."
+      ],
+      "note": "Statusklasse B volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "1065",
+      "title": "Waterdruksensor defect of niet aangesloten",
+      "meaning": "Waterdruksensor defect of niet aangesloten",
+      "causes": [],
+      "checks": [
+        "Steek de stekker correct op de druksensor.",
+        "Controleer en vervang eventueel de aansluitkabel van de druksensor.",
+        "Controleer en vervang eventueel de druksensor."
+      ],
+      "note": "Statusklasse W volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "1068",
+      "title": "Buitentemperatuursensor of lambdasonde defect.",
+      "meaning": "Buitentemperatuursensor of lambdasonde defect.",
+      "causes": [],
+      "checks": [
+        "Steek de stekker correct op de temperatuursensor.",
+        "Steek de stekker correct op de besturing.",
+        "Breng de temperatuursensor correct aan.",
+        "Controleer en vervang eventueel de temperatuursensor.",
+        "Controleer en vervang eventueel de aansluitkabel van de temperatuursensor."
+      ],
+      "note": "Statusklasse W volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "1075",
+      "title": "Kortsluiting warmtewisselaar temp.sensor",
+      "meaning": "Kortsluiting warmtewisselaar temp.sensor",
+      "causes": [],
+      "checks": [
+        "Steek de stekker correct op de temperatuursensor.",
+        "Controleer en vervang eventueel de temperatuursensor.",
+        "Controleer en vervang eventueel de aansluitkabel van de temperatuursensor."
+      ],
+      "note": "Statusklasse W volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "1076",
+      "title": "Geen sign. van warmtewisselaar temp.sensor",
+      "meaning": "Geen sign. van warmtewisselaar temp.sensor",
+      "causes": [],
+      "checks": [
+        "Steek de stekker correct op de temperatuursensor.",
+        "Controleer en vervang eventueel de temperatuursensor.",
+        "Controleer en vervang eventueel de aansluitkabel van de temperatuursensor."
+      ],
+      "note": "Statusklasse W volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2085",
+      "title": "Interne storing",
+      "meaning": "Interne storing",
+      "causes": [],
+      "checks": [
+        "Reset het toestel.",
+        "Schakel de installatie gedurende 30 seconden spanningsloos.",
+        "Vervang branderautomaat."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2908",
+      "title": "Installatiestoring elektronica/ bedieningspaneel",
+      "meaning": "Installatiestoring elektronica/ bedieningspaneel",
+      "causes": [],
+      "checks": [
+        "Blijft de storing na reset bestaan, dan is de branderautomaat defect en moet worden vervangen."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2910",
+      "title": "Storing in het rookgasafvoersysteem",
+      "meaning": "Storing in het rookgasafvoersysteem",
+      "causes": [],
+      "checks": [
+        "Monteer rookgasafvoersysteem.",
+        "Verwijder afzettingen in het rookgasafvoersysteem."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2914",
+      "title": "Systeemstoring elektronica",
+      "meaning": "Systeemstoring elektronica",
+      "causes": [],
+      "checks": [
+        "Wanneer de storing na reset blijft bestaan, is de besturing defect en moet worden vervangen."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2915",
+      "title": "Systeemstoring elektronica",
+      "meaning": "Systeemstoring elektronica",
+      "causes": [],
+      "checks": [
+        "Wanneer de storing na reset blijft bestaan, is de besturing defect en moet worden vervangen."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2916",
+      "title": "Systeemstoring elektronica",
+      "meaning": "Systeemstoring elektronica",
+      "causes": [],
+      "checks": [
+        "Wanneer de storing na reset blijft bestaan, is de besturing defect en moet worden vervangen."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2920",
+      "title": "Storing vlambeveiliging",
+      "meaning": "Storing vlambeveiliging",
+      "causes": [],
+      "checks": [
+        "Controleer en vervang eventueel de besturing."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2923",
+      "title": "Systeemstoring elektronica",
+      "meaning": "Systeemstoring elektronica",
+      "causes": [],
+      "checks": [
+        "Controleer de bekabeling naar het gasblok.",
+        "Controleer gasblok. Wanneer de storing na reset blijft bestaan, is de besturing of het gasblok defect en moet worden vervangen."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2924",
+      "title": "Systeemstoring elektronica",
+      "meaning": "Systeemstoring elektronica",
+      "causes": [],
+      "checks": [
+        "Controleer de bekabeling naar het gasblok.",
+        "Controleer gasblok. Wanneer de storing na reset blijft bestaan, is de besturing of het gasblok defect en moet worden vervangen."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2925",
+      "title": "Systeemstoring elektronica",
+      "meaning": "Systeemstoring elektronica",
+      "causes": [],
+      "checks": [
+        "Controleer de bekabeling naar het gasblok.",
+        "Controleer gasblok. Wanneer de storing na reset blijft bestaan, is de besturing of het gasblok defect en moet worden vervangen."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2926",
+      "title": "Systeemstoring elektronica",
+      "meaning": "Systeemstoring elektronica",
+      "causes": [],
+      "checks": [
+        "Controleer de bekabeling naar het gasblok.",
+        "Controleer gasblok. Wanneer de storing na reset blijft bestaan, is de besturing of het gasblok defect en moet worden vervangen."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2927",
+      "title": "Geen vlamherkenningssignaal tijdens ontsteking",
+      "meaning": "Geen vlamherkenningssignaal tijdens ontsteking",
+      "causes": [],
+      "checks": [
+        "Open de hoofdafsluiter.",
+        "Open de toestelafsluitkraan.",
+        "Onderbreek de voedingsspanning van het toestel en controleer de gasleiding.",
+        "Voer een werkingscontrole van de ontsteking uit.",
+        "Voer een werkingscontrole voor ionisatie uit.",
+        "Sluit de stekker van het ionisatie- en ontstekingstraject correct aan.",
+        "Voer een aarding (PE) in de besturing uit.",
+        "Controleer en vervang eventueel de Ionisatiepen.",
+        "Controleer en vervang eventueel de ontstekingselektrode.",
+        "Controleer en vervang eventueel de aansluitkabel van de ontstekingselektrode.",
+        "Vervang de aansluitkabel van de Ionisatiepen.",
+        "Stel de brander correct in of vervang de inspuiters.",
+        "Stel de brander bij minimale nominale belasting in.",
+        "Controleer en vervang eventueel het gasblok.",
+        "Controleer en herstel eventueel het rookgasafvoersysteem.",
+        "Verbrandingsluchtinstallatie te klein of beluchtingsopening te klein.",
+        "Reinig het verwarmingslichaam aan de rookgaszijde.",
+        "Controleer en vervang eventueel besturing/branderautomaat."
+      ],
+      "note": "Statusklasse B volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2928",
+      "title": "Interne storing",
+      "meaning": "Interne storing",
+      "causes": [],
+      "checks": [
+        "Voer reset uit.",
+        "Vervang besturing/branderautomaat."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2931",
+      "title": "Installatiestoring elektronica/ bedieningspaneel",
+      "meaning": "Installatiestoring elektronica/ bedieningspaneel",
+      "causes": [],
+      "checks": [
+        "Voer reset uit.",
+        "Vervang besturing/branderautomaat."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2940",
+      "title": "Installatiestoring branderautomaat",
+      "meaning": "Installatiestoring branderautomaat",
+      "causes": [],
+      "checks": [
+        "Voer reset uit.",
+        "Vervang besturing/branderautomaat."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2946",
+      "title": "Verk. cod.stekker herkend",
+      "meaning": "Verk. cod.stekker herkend",
+      "causes": [],
+      "checks": [
+        "Vervang de cv-toestelidentificatiemodule/codeerstekker (Nefit neem contact op met de servicedienst)."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2948",
+      "title": "Geen vlamsign. bij klein vermogen",
+      "meaning": "Geen vlamsign. bij klein vermogen",
+      "causes": [],
+      "checks": [
+        "De brander start automatisch na het spoelen. Wanneer deze storing regelmatig voorkomt, controleert u de CO -instelling. 2"
+      ],
+      "note": "Statusklasse B volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2950",
+      "title": "Geen vlamsignaal na startprocedure",
+      "meaning": "Geen vlamsignaal na startprocedure",
+      "causes": [],
+      "checks": [
+        "De brander start automatisch na het spoelen. Stel de gas-luchtverhouding correct in."
+      ],
+      "note": "Statusklasse B volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2951",
+      "title": "De vlam dooft te vaak",
+      "meaning": "De vlam dooft te vaak",
+      "causes": [],
+      "checks": [
+        "Open de hoofdafsluiter.",
+        "Open de toestelafsluitkraan.",
+        "Onderbreek de voedingsspanning van het toestel en controleer de gasleiding.",
+        "Voer een werkingscontrole voor ionisatie uit.",
+        "Sluit de stekker van het ionisatie- en ontstekingstraject correct aan.",
+        "Voer een aarding (PE) in de besturing uit.",
+        "Controleer en vervang eventueel de Ionisatiepen.",
+        "Controleer en vervang eventueel de ontstekingselektrode.",
+        "Controleer en vervang eventueel de aansluitkabel van de ontstekingselektrode.",
+        "Controleer en vervang eventueel de aansluitkabel van de Ionisatiepen.",
+        "Stel de brander correct in of vervang de inspuiters.",
+        "Stel de brander bij minimale nominale belasting in.",
+        "Controleer en vervang eventueel het gasblok.",
+        "Controleer en herstel eventueel het rookgasafvoersysteem.",
+        "Verbrandingsluchtinstallatie te klein of beluchtingsopening te klein.",
+        "Reinig het verwarmingslichaam aan de rookgaszijde.",
+        "Controleer en vervang eventueel besturing/branderautomaat."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2952",
+      "title": "Interne storing bij het testen van het ionisatiesignaal",
+      "meaning": "Interne storing bij het testen van het ionisatiesignaal",
+      "causes": [],
+      "checks": [
+        "Voer reset uit.",
+        "Vervang besturing/branderautomaat."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2955",
+      "title": "Ingestelde parameters van hydraulische configuratie door warmtebron niet ondersteund",
+      "meaning": "Ingestelde parameters van hydraulische configuratie door warmtebron niet ondersteund",
+      "causes": [],
+      "checks": [
+        "Controleer en wijzig eventueel hydraulische instellingen.",
+        "Evenwichtsfles",
+        "Intern warmwatercircuit (boilerlaadcircuit)",
+        "Cv-circuit 1",
+        "CV-pomp in het toestel"
+      ],
+      "note": "Statusklasse B volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2956",
+      "title": "Hydraulische configuratie op warmtebron is geactiveerd",
+      "meaning": "Hydraulische configuratie op warmtebron is geactiveerd",
+      "causes": [],
+      "checks": [],
+      "note": "Statusklasse O volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2957",
+      "title": "Systeemstoring elektronica",
+      "meaning": "Systeemstoring elektronica",
+      "causes": [],
+      "checks": [
+        "Reset besturing/branderautomaat.",
+        "Sluit de elektrische aansluitingen op besturing/branderautomaat weer correct aan.",
+        "Vervang besturing/branderautomaat."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 32,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2961",
+      "title": "Geen vent.signaal aanwezig",
+      "meaning": "Geen vent.signaal aanwezig",
+      "causes": [],
+      "checks": [
+        "Controleer de ventilator en aansluitkabel.",
+        "Controleer de netspanning."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 32,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2962",
+      "title": "Geen vent.signaal aanwezig",
+      "meaning": "Geen vent.signaal aanwezig",
+      "causes": [],
+      "checks": [
+        "Controleer de ventilator en aansluitkabel.",
+        "Controleer de netspanning."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 32,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2963",
+      "title": "Temp. aan warmtewisselaar buiten toeg. bereik",
+      "meaning": "Temp. aan warmtewisselaar buiten toeg. bereik",
+      "causes": [],
+      "checks": [
+        "Steek de stekker correct op de temperatuursensor.",
+        "Steek de stekker correct op de besturing.",
+        "Breng de temperatuursensor correct aan.",
+        "Controleer en vervang eventueel de temperatuursensor.",
+        "Controleer en vervang eventueel de aansluitkabel van de temperatuursensor."
+      ],
+      "note": "Statusklasse B volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 32,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2965",
+      "title": "Te hoge aanvoertemp",
+      "meaning": "Te hoge aanvoertemp",
+      "causes": [],
+      "checks": [
+        "Zorg ervoor dat het cv-water circuleert.",
+        "Controleer de instelling van de pomp en pas deze eventueel aan de cv-installatie aan.",
+        "Steek de stekker correct op de temperatuursensor.",
+        "Steek de stekker correct op de besturing.",
+        "Breng de temperatuursensor correct aan.",
+        "Controleer en vervang eventueel de temperatuursensor.",
+        "Controleer en vervang eventueel de aansluitkabel van de temperatuursensor."
+      ],
+      "note": "Statusklasse B volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 32,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2966",
+      "title": "Te snelle temperatuurverh. van de aanvoertemp. in warmtewisselaar",
+      "meaning": "Te snelle temperatuurverh. van de aanvoertemp. in warmtewisselaar",
+      "causes": [],
+      "checks": [
+        "Zorg ervoor dat het cv-water circuleert.",
+        "Controleer de instelling van de pomp en pas deze eventueel aan de cv-installatie aan.",
+        "Steek de stekker correct op de temperatuursensor.",
+        "Steek de stekker correct op de besturing.",
+        "Breng de temperatuursensor correct aan.",
+        "Controleer en vervang eventueel de temperatuursensor.",
+        "Controleer en vervang eventueel de aansluitkabel van de temperatuursensor."
+      ],
+      "note": "Statusklasse B volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 32,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2968",
+      "title": "Cv-water wordt bijgevuld",
+      "meaning": "Cv-water wordt bijgevuld",
+      "causes": [],
+      "checks": [],
+      "note": "Statusklasse O volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 32,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2969",
+      "title": "Max. aantal keren bijv. bereikt",
+      "meaning": "Max. aantal keren bijv. bereikt",
+      "causes": [],
+      "checks": [],
+      "note": "Statusklasse O volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 32,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2970",
+      "title": "CV-installatie heeft vaak een drukval",
+      "meaning": "CV-installatie heeft vaak een drukval",
+      "causes": [],
+      "checks": [],
+      "note": "Statusklasse B volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 32,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2971",
+      "title": "Bedrijfsdruk te laag",
+      "meaning": "Bedrijfsdruk te laag",
+      "causes": [],
+      "checks": [
+        "Ontlucht de cv-installatie.",
+        "Controleer de cv-installatie op dichtheid.",
+        "Vul water bij tot de gewenste druk is bereikt.",
+        "Controleer en vervang eventueel de druksensor.",
+        "Controleer en vervang eventueel de kabel naar de druksensor."
+      ],
+      "note": "Statusklasse B volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 32,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2972",
+      "title": "Netspanning te laag",
+      "meaning": "Netspanning te laag",
+      "causes": [],
+      "checks": [
+        "Realiseer een voedingsspanning van minimaal 196 VAC.",
+        "Vervang de branderautomaat."
+      ],
+      "note": "Statusklasse B volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 32,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2980",
+      "title": "Meer dan 5 vergrendelende storingen in 15 minuten",
+      "meaning": "Meer dan 5 vergrendelende storingen in 15 minuten",
+      "causes": [],
+      "checks": [
+        "Het cv-toestel wordt uit veiligheidsoverwegingen geblokkeerd, nadat minimaal vijf vergrendelende storingen binnen 15 minuten zijn opgetreden. De veiligheidsblokkering mag alleen door een vakman of de servicedienst na het oplossen van de storingsoorzaak en aansluitende installatietest ter plaatse worden opgeheven.",
+        "Oorzaak van de storing bepalen en oplossen.",
+        "Complete installatie inclusief sensoren en kabelbomen controleren.",
+        "cv-toestel uit- en weer inschakelen. Storingscode 2981 wordt getoond."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 32,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "2981",
+      "title": "Maximaal aantal vergrendelende storingen werdbereikt. Informeer de installateur",
+      "meaning": "Maximaal aantal vergrendelende storingen werdbereikt. Informeer de installateur",
+      "causes": [],
+      "checks": [
+        "Het cv-toestel wordt bij een bestaande veiligheidsblokkering (storingscode 2980) uit- en weer ingeschakeld. De veiligheidsblokkering mag alleen door een vakman of de servicedienst na het oplossen van de storingsoorzaak en aansluitende installatietest ter plaatse worden opgeheven.",
+        "Storing binnen 10 minuten na het inschakelen resetten.",
+        "Reset de storing na 22 tot 28 seconden opnieuw. De blokkering wordt opgeheven en het toestel keert terug naar normaal bedrijf.",
+        "De laatste 10storingen in de storingshistoriek controleren om te waarborgen dat alle problemen zijn opgelost."
+      ],
+      "note": "Statusklasse V volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "sourcePage": 32,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    }
+  ]
+}

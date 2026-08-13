@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "topline-compact",
+  "source": {
+    "title": "Nefit installatie-instructie TopLine Compact HRC, document 6720641180 (2019/07)",
+    "url": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf"
+  },
+  "parameters": [
+    {
+      "code": "1.1",
+      "description": "Cv-bedrijf",
+      "factoryDefault": null,
+      "minimum": null,
+      "maximum": null,
+      "unit": "stand",
+      "technicalExplanation": "Schakelt cv-bedrijf aan of uit.",
+      "note": "Officiële keuzen: On en Off.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "1.2",
+      "description": "Maximale aanvoertemperatuur",
+      "factoryDefault": 80,
+      "minimum": 30,
+      "maximum": 85,
+      "unit": "°C",
+      "technicalExplanation": "Bovengrens van de cv-aanvoertemperatuur.",
+      "note": "De handleiding noemt 80 °C als ingestelde fabriekswaarde.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "1.3",
+      "description": "Cv-vermogen",
+      "factoryDefault": null,
+      "minimum": 30,
+      "maximum": 100,
+      "unit": "%",
+      "technicalExplanation": "Begrenst het cv-vermogen; de display toont tijdens wijzigen ook de waarde in kW.",
+      "note": "De officiële tabel vermeldt hier geen afzonderlijke fabriekswaarde in tekst; daarom is dit veld leeg gelaten.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "Tapwaterbedrijf",
+      "description": "Tapwaterbedrijf",
+      "factoryDefault": "Comf",
+      "minimum": null,
+      "maximum": null,
+      "unit": "stand",
+      "technicalExplanation": "Selecteert Comfort, Eco of uitgeschakeld tapwaterbedrijf.",
+      "note": "Officiële keuzen: Comf, Eco en Off; Comf is de fabrieksinstelling.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "Tapwatertemperatuur",
+      "description": "Tapwatertemperatuur",
+      "factoryDefault": 60,
+      "minimum": 30,
+      "maximum": 60,
+      "unit": "°C",
+      "technicalExplanation": "Instelwaarde voor de tapwatertemperatuur.",
+      "note": "De handleiding noemt 60 °C als fabrieksinstelling.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "Minimale pompmodulatie",
+      "description": "Minimale pompmodulatie",
+      "factoryDefault": null,
+      "minimum": 50,
+      "maximum": "maximale pompmodulatie",
+      "unit": "%",
+      "technicalExplanation": "Ondergrens van de pompmodulatie.",
+      "note": "De officiële tabel vermeldt hier geen afzonderlijke fabriekswaarde in tekst; daarom is dit veld leeg gelaten.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "Maximale pompmodulatie",
+      "description": "Maximale pompmodulatie",
+      "factoryDefault": null,
+      "minimum": "minimale pompmodulatie",
+      "maximum": 100,
+      "unit": "%",
+      "technicalExplanation": "Bovengrens van de pompmodulatie.",
+      "note": "De officiële tabel vermeldt hier geen afzonderlijke fabriekswaarde in tekst; daarom is dit veld leeg gelaten.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    },
+    {
+      "code": "Pompnadraaitijd",
+      "description": "Pompnadraaitijd",
+      "factoryDefault": 5,
+      "minimum": 1,
+      "maximum": 60,
+      "unit": "min",
+      "technicalExplanation": "Nadraaitijd van de cv-pomp.",
+      "note": "Naast 1–60 minuten kan 24 uur worden gekozen; fabrieksinstelling is 5 minuten.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-13"
+    }
+  ]
+}
