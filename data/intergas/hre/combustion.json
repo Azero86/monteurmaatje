@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "hre",
+  "title": "Officiële gas/luchtcontrole Kombi Kompakt HRE",
+  "measurements": [
+    {
+      "id": "o2-high-g25-3",
+      "label": "O₂ hooglast — aardgas 2EK G25.3",
+      "minimum": 3.15,
+      "maximum": 5.7,
+      "unit": "%",
+      "load": "Hooglast, testprogramma H",
+      "condition": "Open mantel; toestel op maximale belasting"
+    },
+    {
+      "id": "o2-high-g31",
+      "label": "O₂ hooglast — propaan 3P G31",
+      "minimum": 4.5,
+      "maximum": 6.05,
+      "unit": "%",
+      "load": "Hooglast, testprogramma H",
+      "condition": "Open mantel; toestel op maximale belasting"
+    },
+    {
+      "id": "o2-high-g20",
+      "label": "O₂ hooglast — aardgas 2E G20",
+      "minimum": 3.85,
+      "maximum": 5.6,
+      "unit": "%",
+      "load": "Hooglast, testprogramma H",
+      "condition": "Open mantel; toestel op maximale belasting"
+    },
+    {
+      "id": "o2-high-g25-3-y20",
+      "label": "O₂ hooglast — aardgas 2EKY20 G25.3Y20",
+      "minimum": 4.7,
+      "maximum": 7.1,
+      "unit": "%",
+      "load": "Hooglast, testprogramma H",
+      "condition": "Open mantel; toestel op maximale belasting"
+    },
+    {
+      "id": "o2-high-g20-y20",
+      "label": "O₂ hooglast — aardgas 2EY20 G20Y20",
+      "minimum": 4.95,
+      "maximum": 6.8,
+      "unit": "%",
+      "load": "Hooglast, testprogramma H",
+      "condition": "Open mantel; toestel op maximale belasting"
+    },
+    {
+      "id": "o2-low-g25-3",
+      "label": "O₂ laaglast — aardgas 2EK G25.3",
+      "minimum": "gemeten O₂(H)",
+      "maximum": 6.05,
+      "unit": "%",
+      "load": "Laaglast, testprogramma L",
+      "condition": "Open mantel; hooglastmeting eerst uitvoeren"
+    },
+    {
+      "id": "o2-low-g31",
+      "label": "O₂ laaglast — propaan 3P G31",
+      "minimum": "gemeten O₂(H) + 0,5",
+      "maximum": 6.65,
+      "unit": "%",
+      "load": "Laaglast, testprogramma L",
+      "condition": "Open mantel; hooglastmeting eerst uitvoeren"
+    },
+    {
+      "id": "o2-low-g20",
+      "label": "O₂ laaglast — aardgas 2E G20",
+      "minimum": "gemeten O₂(H)",
+      "maximum": 6,
+      "unit": "%",
+      "load": "Laaglast, testprogramma L",
+      "condition": "Open mantel; hooglastmeting eerst uitvoeren"
+    },
+    {
+      "id": "o2-low-g25-3-y20",
+      "label": "O₂ laaglast — aardgas 2EKY20 G25.3Y20",
+      "minimum": "gemeten O₂(H)",
+      "maximum": 7.65,
+      "unit": "%",
+      "load": "Laaglast, testprogramma L",
+      "condition": "Open mantel; hooglastmeting eerst uitvoeren"
+    },
+    {
+      "id": "o2-low-g20-y20",
+      "label": "O₂ laaglast — aardgas 2EY20 G20Y20",
+      "minimum": "gemeten O₂(H)",
+      "maximum": 7.35,
+      "unit": "%",
+      "load": "Laaglast, testprogramma L",
+      "condition": "Open mantel; hooglastmeting eerst uitvoeren"
+    },
+    {
+      "id": "co-low",
+      "label": "CO laaglast met gemonteerde voormantel",
+      "maximum": 160,
+      "unit": "ppm",
+      "load": "Laaglast",
+      "condition": "Voormantel gemonteerd"
+    },
+    {
+      "id": "co-high",
+      "label": "CO hooglast met gemonteerde voormantel",
+      "maximum": 160,
+      "unit": "ppm",
+      "load": "Hooglast, testprogramma H",
+      "condition": "Voormantel gemonteerd"
+    },
+    {
+      "id": "gas-consumption-g25-3",
+      "label": "Gasverbruik G25.3 per toestelvariant",
+      "value": "HRE 24/18 A: 0,67–2,92; HRE 28/24 A: 0,85–3,36; HRE 36/30 A: 0,86–3,92; HRE 36/48 A: 0,95–5,10",
+      "unit": "m³/h",
+      "condition": "Officiële technische specificaties"
+    },
+    {
+      "id": "flue-temperature-tap",
+      "label": "Gemiddelde rookgastemperatuur tijdens tapbedrijf",
+      "value": "HRE 24/18 A: 90; HRE 28/24 A: 90; HRE 36/30 A: 90; HRE 36/48 A: 70",
+      "unit": "°C",
+      "condition": "Officiële technische specificaties"
+    },
+    {
+      "id": "flue-mass-flow",
+      "label": "Rookgasmassaflow per toestelvariant",
+      "value": "HRE 24/18 A: 11,4 (41); HRE 28/24 A: 14,0 (50); HRE 36/30 A: 15,3 (55); HRE 36/48 A: 15,3 (55)",
+      "unit": "g/s (kg/h)",
+      "condition": "Officiële technische specificaties"
+    },
+    {
+      "id": "maximum-backpressure",
+      "label": "Maximale tegendruk",
+      "value": 75,
+      "unit": "Pa",
+      "condition": "Geldt voor alle vier HRE-varianten in deze handleiding"
+    }
+  ],
+  "settings": [
+    {
+      "id": "test-high",
+      "label": "Hooglast-teststand",
+      "value": "H",
+      "load": "Maximale belasting",
+      "technicalExplanation": "Druk de servicetoets in en druk gelijktijdig tweemaal op de plus-toets totdat H op het servicedisplay verschijnt."
+    },
+    {
+      "id": "test-low",
+      "label": "Laaglast-teststand",
+      "value": "L",
+      "load": "Minimale belasting",
+      "technicalExplanation": "Druk de servicetoets in en druk gelijktijdig eenmaal op de min-toets totdat L op het servicedisplay verschijnt."
+    },
+    {
+      "id": "rings-ebm-24-18",
+      "label": "Gasdoseerring HRE 24/18 A — EBM-ventilator",
+      "value": "G25.3/G25.3Y20: 640; G31: 473; G20/G20Y20: 600",
+      "condition": "Insertnummer 435"
+    },
+    {
+      "id": "rings-ebm-28-24-36-30",
+      "label": "Gasdoseerring HRE 28/24 A en 36/30 A — EBM-ventilator",
+      "value": "G25.3/G25.3Y20: 725; G31: 535; G20/G20Y20: 660",
+      "condition": "Insertnummer 375"
+    },
+    {
+      "id": "rings-torin-24-18",
+      "label": "Gasdoseerring HRE 24/18 A — Torin-ventilator",
+      "value": "G25.3/G25.3Y20: 645; G31: 480; G20/G20Y20: 600",
+      "condition": "Insertnummer 406"
+    },
+    {
+      "id": "rings-torin-28-24-36-30-36-48",
+      "label": "Gasdoseerring HRE 28/24 A, 36/30 A en 36/48 A — Torin-ventilator",
+      "value": "G25.3/G25.3Y20: 705; G31: 525; G20/G20Y20: 655",
+      "condition": "Insertnummer 362"
+    },
+    {
+      "id": "adjust-g25-3",
+      "label": "Laaglast-afsteltabel aardgas 2EK G25.3",
+      "value": "O₂(H)→O₂(L): 5,70→5,90±0,20; 5,30→5,70±0,20; 5,00→5,55±0,20; 4,70→5,40±0,20; 4,40→5,25±0,20; 4,10→5,10±0,20; 3,80→4,95±0,20; 3,50→4,80±0,20; 3,15→4,65±0,20",
+      "condition": "Open mantel; hooglastmeting is bepalend"
+    },
+    {
+      "id": "adjust-g31",
+      "label": "Laaglast-afsteltabel propaan 3P G31",
+      "value": "O₂(H)→O₂(L): 6,05→6,55±0,20; 5,70→6,20±0,20; 5,40→5,90±0,20; 5,10→5,60±0,20; 4,80→5,30±0,20; 4,50→5,00±0,20",
+      "condition": "Open mantel; hooglastmeting is bepalend"
+    },
+    {
+      "id": "adjust-g20",
+      "label": "Laaglast-afsteltabel aardgas 2E G20",
+      "value": "O₂(H)→O₂(L): 5,60→5,80±0,20; 5,30→5,65±0,20; 5,00→5,50±0,20; 4,70→5,35±0,20; 4,40→5,20±0,20; 4,10→5,05±0,20; 3,85→4,90±0,20",
+      "condition": "Open mantel; hooglastmeting is bepalend"
+    },
+    {
+      "id": "adjust-g25-3-y20",
+      "label": "Laaglast-afsteltabel aardgas 2EKY20 G25.3Y20",
+      "value": "O₂(H)→O₂(L): 7,10→7,40±0,25; 7,00→7,30±0,25; 6,70→7,00±0,25; 6,40→6,70±0,25; 6,10→6,40±0,25; 5,70→6,00±0,25; 5,30→5,60±0,25; 5,00→5,30±0,25; 4,70→5,00±0,25",
+      "condition": "Open mantel; hooglastmeting is bepalend"
+    },
+    {
+      "id": "adjust-g20-y20",
+      "label": "Laaglast-afsteltabel aardgas 2EY20 G20Y20",
+      "value": "O₂(H)→O₂(L): 6,80→7,10±0,25; 6,60→6,90±0,25; 6,30→6,60±0,25; 6,00→6,30±0,25; 5,70→6,00±0,25; 5,40→5,70±0,25; 5,10→5,40±0,25; 4,95→5,25±0,25",
+      "condition": "Open mantel; hooglastmeting is bepalend"
+    }
+  ],
+  "measurementConditions": [
+    "Controleer eerst op het typeplaatje voor welke gassoort het toestel is afgesteld en controleer bij HRE ook of een EBM- of Torin-ventilator is gemonteerd.",
+    "Voer de gas/luchtcontrole met geopende mantel en op basis van O₂ uit; de rookgasanalyzer moet een O₂-sensor hebben en gekalibreerd zijn.",
+    "Verwijder de afdekdop van het rookgasmeetpunt op de rookgasadapter boven het toestel en plaats de meetprobe volledig in het midden van de rookgasstroom; dicht het meetpunt volledig af.",
+    "Laat het toestel minimaal 5 minuten op hooglast draaien en wacht daarna tot de analyzer minimaal 3 minuten stabiel uitleest.",
+    "Rond altijd eerst de hooglastmeting af; de gemeten O₂(H)-waarde bepaalt de toegestane laaglastwaarde.",
+    "Wacht bij laaglast minimaal 3 minuten tot de uitlezing stabiel is. Corrigeer uitsluitend op laaglast en controleer daarna hoog- en laaglast opnieuw.",
+    "Monteer voor de CO-controle de voormantel en controleer na afloop de gasdichtheid van het rookgasmeetpunt."
+  ],
+  "technicalExplanation": "Het toestel is standaard afgesteld op aardgas G25.3. De officiële controlewaarden gelden voor alle HRE-varianten in de handleiding. Een afwijking kan uitsluitend op laaglast met de instelschroef van het gasblok worden gecorrigeerd.",
+  "notes": [
+    "Werkzaamheden aan gasvoerende delen en het afstellen van de gas/luchtregeling mogen uitsluitend door een gecertificeerd installateur worden uitgevoerd.",
+    "De maximale analyzerafwijking is ±0,3% op basis van O₂.",
+    "Een betrouwbare controle is alleen gewaarborgd zonder extreme onderdruk in de rookgasaansluiting ten opzichte van de opstellingsruimte.",
+    "Een afwijking op hooglast mag niet via het gasblok worden gecorrigeerd; controleer dan gasdichtheid en de juiste componenten, met name gasdoseerring, ventilator en venturi.",
+    "Rechtsom draaien van de laaglast-instelschroef verlaagt O₂; linksom draaien verhoogt O₂. Verstel in kleine stappen en wacht telkens tot de meting stabiel is.",
+    "De actuele officiële handleiding geeft voor deze controle O₂-grenzen en geen afzonderlijke vaste CO₂-doelwaarden."
+  ],
+  "source": "https://www.intergas-verwarming.nl/app/uploads/2018/01/88557809-Installatievoorschrift-Kombi-Kompakt-HRE.pdf",
+  "sourcePage": "61–65 en 76",
+  "verified": true,
+  "verifiedDate": "2026-08-13"
+}

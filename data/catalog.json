@@ -8,28 +8,34 @@
       "devices": [
         {
           "id": "hre",
-          "name": "Kombi Kompakt HRE",
-          "family": "HRE 24/18 · 28/24 · 36/30 · 36/48",
-          "faultsPath": "data/intergas/hre/faults.json",
-          "recordCount": 20,
+        "name": "Kombi Kompakt HRE",
+        "family": "HRE 24/18 · 28/24 · 36/30 · 36/48",
+        "faultsPath": "data/intergas/hre/faults.json",
+        "parametersPath": "data/intergas/hre/parameters.json",
+        "combustionPath": "data/intergas/hre/combustion.json",
+        "recordCount": 20,
           "sourceTitle": "Intergas installatievoorschrift Kombi Kompakt HRE",
           "sourceUrl": "https://www.intergas-verwarming.nl/app/uploads/2018/01/200126-IG-88077804-Installatievoorschrift-Kombi-Kompakt-HRE-Solo.pdf"
         },
         {
           "id": "hreco",
-          "name": "Kombi Kompakt HREco",
-          "family": "HREco 24 · 30 · 36",
-          "faultsPath": "data/intergas/hreco/faults.json",
-          "recordCount": 20,
+        "name": "Kombi Kompakt HREco",
+        "family": "HREco 24 · 30 · 36",
+        "faultsPath": "data/intergas/hreco/faults.json",
+        "parametersPath": "data/intergas/hreco/parameters.json",
+        "combustionPath": "data/intergas/hreco/combustion.json",
+        "recordCount": 20,
           "sourceTitle": "Intergas installatievoorschrift Kombi Kompakt HREco",
           "sourceUrl": "https://www.intergas-verwarming.nl/app/uploads/2018/01/88399809-Installatievoorschrift-HReco.pdf"
         },
         {
           "id": "xtreme",
-          "name": "Xtreme",
-          "family": "Xtreme 24 · 30 · 36",
-          "faultsPath": "data/intergas/xtreme/faults.json",
-          "recordCount": 22,
+        "name": "Xtreme",
+        "family": "Xtreme 24 · 30 · 36",
+        "faultsPath": "data/intergas/xtreme/faults.json",
+        "parametersPath": "data/intergas/xtreme/parameters.json",
+        "combustionPath": "data/intergas/xtreme/combustion.json",
+        "recordCount": 22,
           "sourceTitle": "Intergas Xtreme Installation Manual",
           "sourceUrl": "https://www.intergasheating.co.uk/app/uploads/2021/01/Xtreme-installation-manual-IGH-84007408.pdf"
         }
