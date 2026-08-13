@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "recordCount": 1159,
+  "brands": [
+    {
+      "id": "intergas",
+      "name": "Intergas",
+      "devices": [
+        {
+          "id": "hre",
+          "name": "Kombi Kompakt HRE",
+          "family": "HRE 24/18 · 28/24 · 36/30 · 36/48",
+          "faultsPath": "data/intergas/hre/faults.json",
+          "parametersPath": "data/intergas/hre/parameters.json",
+          "recordCount": 20,
+          "sourceTitle": "Intergas installatievoorschrift Kombi Kompakt HRE",
+          "sourceUrl": "https://www.intergas-verwarming.nl/app/uploads/2018/01/200126-IG-88077804-Installatievoorschrift-Kombi-Kompakt-HRE-Solo.pdf"
+        },
+        {
+          "id": "hreco",
+          "name": "Kombi Kompakt HREco",
+          "family": "HREco 24 · 30 · 36",
+          "faultsPath": "data/intergas/hreco/faults.json",
+          "parametersPath": "data/intergas/hreco/parameters.json",
+          "recordCount": 20,
+          "sourceTitle": "Intergas installatievoorschrift Kombi Kompakt HREco",
+          "sourceUrl": "https://www.intergas-verwarming.nl/app/uploads/2018/01/88399809-Installatievoorschrift-HReco.pdf"
+        },
+        {
+          "id": "xtreme",
+          "name": "Xtreme",
+          "family": "Xtreme 24 · 30 · 36",
+          "faultsPath": "data/intergas/xtreme/faults.json",
+          "parametersPath": "data/intergas/xtreme/parameters.json",
+          "recordCount": 22,
+          "sourceTitle": "Intergas Xtreme Installation Manual",
+          "sourceUrl": "https://www.intergasheating.co.uk/app/uploads/2021/01/Xtreme-installation-manual-IGH-84007408.pdf"
+        }
+      ]
+    },
+    {
+      "id": "remeha",
+      "name": "Remeha",
+      "devices": [
+        {
+          "id": "avanta-classic",
+          "name": "Avanta",
+          "family": "Avanta 24c · 28c · 35c",
+          "faultsPath": "data/remeha/avanta-classic/faults.json",
+          "parametersPath": "data/remeha/avanta-classic/parameters.json",
+          "recordCount": 17,
+          "sourceTitle": "Remeha installatie- en servicehandleiding Avanta 24c/28c/35c",
+          "sourceUrl": "https://documentation.remeha.nl/wp-content/uploads/sites/68/2025/12/Avanta-Installatie-en-servicehandleiding-NL-V13.pdf"
+        },
+        {
+          "id": "quinta-classic",
+          "name": "Quinta",
+          "family": "Quinta 25s · 30s · 28c · 35c",
+          "faultsPath": "data/remeha/quinta-classic/faults.json",
+          "parametersPath": "data/remeha/quinta-classic/parameters.json",
+          "recordCount": 19,
+          "sourceTitle": "Remeha technische informatie Quinta 25s/30s/28c/35c",
+          "sourceUrl": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Quinta/110125%20TM%20Quinta%2025s%2030s%2028c%2035c%20NL.pdf"
+        },
+        {
+          "id": "quinta-pro",
+          "name": "Quinta Pro",
+          "family": "Quinta Pro 45 · 65 · 90 · 115",
+          "faultsPath": "data/remeha/quinta-pro/faults.json",
+          "parametersPath": "data/remeha/quinta-pro/parameters.json",
+          "recordCount": 42,
+          "sourceTitle": "Remeha installatie-, gebruikers- en servicehandleiding Quinta Pro",
+          "sourceUrl": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Quinta%20PRO/150302%20UM%20IM%20SM%20%20Quinta%20Pro%2045-115%20NL.pdf"
+        },
+        {
+          "id": "quinta-ace",
+          "name": "Quinta Ace",
+          "family": "Quinta Ace 45 · 65 · 90 · 115",
+          "faultsPath": "data/remeha/quinta-ace/faults.json",
+          "parametersPath": "data/remeha/quinta-ace/parameters.json",
+          "recordCount": 75,
+          "sourceTitle": "Remeha installatie- en gebruikershandleiding Quinta Ace 45–115",
+          "sourceUrl": "https://documentation.remeha.nl/wp-content/uploads/sites/68/2025/12/Quinta-Ace-45-115-Installatie-en-gebruikershandleiding-NL-V14.pdf"
+        },
+        {
+          "id": "tzerra-ace",
+          "name": "Tzerra Ace",
+          "family": "Tzerra Ace 24C · 28C · 39C",
+          "faultsPath": "data/remeha/tzerra-ace/faults.json",
+          "parametersPath": "data/remeha/tzerra-ace/parameters.json",
+          "recordCount": 66,
+          "sourceTitle": "Remeha servicehandleiding Tzerra Ace",
+          "sourceUrl": "https://documentation.remeha.nl/wp-content/uploads/sites/68/2025/12/Tzerra-Ace-Servicehandleiding-NL-V8.pdf"
+        },
+        {
+          "id": "calenta-ace",
+          "name": "Calenta Ace",
+          "family": "Calenta Ace 25ds · 28c · 35ds · 40c",
+          "faultsPath": "data/remeha/calenta-ace/faults.json",
+          "parametersPath": "data/remeha/calenta-ace/parameters.json",
+          "recordCount": 85,
+          "sourceTitle": "Remeha installatie- en servicehandleiding Calenta Ace",
+          "sourceUrl": "https://documentation.remeha.nl/wp-content/uploads/sites/68/2025/12/Installatie-en-servicehandleiding-Calenta-Ace-V11.pdf"
+        },
+        {
+          "id": "avanta-ace",
+          "name": "Avanta Ace",
+          "family": "Avanta Ace 24c · 28c · 35c",
+          "faultsPath": "data/remeha/avanta-ace/faults.json",
+          "parametersPath": "data/remeha/avanta-ace/parameters.json",
+          "recordCount": 62,
+          "sourceTitle": "Remeha installatie- en servicehandleiding Avanta Ace",
+          "sourceUrl": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaNL/RemehaNL/Documentatie/Consument/01---CV-ketels/Avanta-Ace/Documentatie-voor-installateurs/Installatie--en-servicehandleiding-Avanta-Ace.pdf"
+        },
+        {
+          "id": "tzerra-ace-matic",
+          "name": "Tzerra Ace-Matic",
+          "family": "Tzerra Ace-Matic 24c · 28c · 35c",
+          "faultsPath": "data/remeha/tzerra-ace-matic/faults.json",
+          "parametersPath": "data/remeha/tzerra-ace-matic/parameters.json",
+          "recordCount": 97,
+          "sourceTitle": "Remeha installatie- en servicehandleiding Tzerra Ace-Matic",
+          "sourceUrl": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaNL/RemehaNL/Documentatie/Consument/01---CV-ketels/Tzerra-Ace-Matic/Documentatie-voor-installateurs/Installatie--en-servicehandleiding-Tzerra-Ace-Matic.pdf"
+        },
+        {
+          "id": "calenta-ace-matic",
+          "name": "Calenta Ace-Matic",
+          "family": "Calenta Ace-Matic 30c · 35ds · 40c",
+          "faultsPath": "data/remeha/calenta-ace-matic/faults.json",
+          "parametersPath": "data/remeha/calenta-ace-matic/parameters.json",
+          "recordCount": 97,
+          "sourceTitle": "Remeha installatie- en servicehandleiding Calenta Ace-Matic",
+          "sourceUrl": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaNL/RemehaNL/Documentatie/Consument/01---CV-ketels/Calenta-Ace-Matic/Documentatie-voor-installateurs/7861541_Calenta-Ace-Matic-Installatie-service-handleiding.pdf"
+        },
+        {
+          "id": "calenta-ace-matic-40l",
+          "name": "Calenta Ace-Matic 40L",
+          "family": "Calenta Ace-Matic 40L · CW6",
+          "faultsPath": "data/remeha/calenta-ace-matic-40l/faults.json",
+          "parametersPath": "data/remeha/calenta-ace-matic-40l/parameters.json",
+          "recordCount": 106,
+          "sourceTitle": "Remeha installatie- en servicehandleiding Calenta Ace-Matic 40L",
+          "sourceUrl": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaNL/RemehaNL/Documentatie/Consument/01---CV-ketels/Calenta-Ace-Matic/Documentatie-voor-installateurs/7861586_Calenta-Ace-Matic_Installatie-en-servicehandleiding_40L.pdf"
+        }
+      ]
+    },
+    {
+      "id": "vaillant",
+      "name": "Vaillant",
+      "devices": [
+        {
+          "id": "ecotec-plus-cs",
+          "name": "ecoTEC plus IoniDetect",
+          "family": "VHR S 25CS/1-5 · VHR S 35CS/1-5 · VHR I 36CS/1-5 · VHR 20/26CS t/m 35/40CS",
+          "faultsPath": "data/vaillant/ecotec-plus-cs/faults.json",
+          "parametersPath": "data/vaillant/ecotec-plus-cs/parameters.json",
+          "recordCount": 78,
+          "sourceTitle": "Vaillant installatie- en onderhoudshandleiding ecoTEC plus VC/VCW CS",
+          "sourceUrl": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/0020282230-00-2764886.pdf"
+        },
+        {
+          "id": "ecotec-exclusive-cf",
+          "name": "ecoTEC exclusive IoniDetect",
+          "family": "VHR 25/36CF/1-7 · VHR 34/43CF/1-7",
+          "faultsPath": "data/vaillant/ecotec-exclusive-cf/faults.json",
+          "parametersPath": "data/vaillant/ecotec-exclusive-cf/parameters.json",
+          "recordCount": 70,
+          "sourceTitle": "Vaillant installatie- en onderhoudshandleiding ecoTEC exclusive VC/VCW CS/CF",
+          "sourceUrl": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf"
+        },
+        {
+          "id": "ecofit-pro-6-3",
+          "name": "ecoFIT pro",
+          "family": "VUW 256/6-3 · 306/6-3 · 356/6-3",
+          "faultsPath": "data/vaillant/ecofit-pro-6-3/faults.json",
+          "parametersPath": "data/vaillant/ecofit-pro-6-3/parameters.json",
+          "recordCount": 38,
+          "sourceTitle": "Vaillant installatie- en onderhoudshandleiding ecoFIT pro",
+          "sourceUrl": "https://pimassetsprdst.blob.core.windows.net/assets/apc_Original/97/89/18789789.pdf"
+        },
+        {
+          "id": "ecotec-classic-5-3",
+          "name": "ecoTEC classic",
+          "family": "VHR 18-24/5-3 · 23-28/5-3 · 28-34/5-3",
+          "faultsPath": "data/vaillant/ecotec-classic-5-3/faults.json",
+          "parametersPath": "data/vaillant/ecotec-classic-5-3/parameters.json",
+          "recordCount": 33,
+          "sourceTitle": "Vaillant installatie- en onderhoudshandleiding ecoTEC classic",
+          "sourceUrl": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf"
+        },
+        {
+          "id": "ecotec-pro-5-3",
+          "name": "ecoTEC pro",
+          "family": "VC 246/5-3 · VCW 246/5-3 · VCW 286/5-3",
+          "faultsPath": "data/vaillant/ecotec-pro-5-3/faults.json",
+          "parametersPath": "data/vaillant/ecotec-pro-5-3/parameters.json",
+          "recordCount": 33,
+          "sourceTitle": "Vaillant installatie- en onderhoudshandleiding ecoTEC pro /5-3",
+          "sourceUrl": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf"
+        },
+        {
+          "id": "ecotec-plus-5-5",
+          "name": "ecoTEC plus /5-5",
+          "family": "VC 126/5-5 · 206/5-5 · 306/5-5 · VCW 296/5-5 · 346/5-5",
+          "faultsPath": "data/vaillant/ecotec-plus-5-5/faults.json",
+          "parametersPath": "data/vaillant/ecotec-plus-5-5/parameters.json",
+          "recordCount": 49,
+          "sourceTitle": "Vaillant installatie- en onderhoudshandleiding ecoTEC plus /5-5",
+          "sourceUrl": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-onderhoudshandleiding-ecotecplus-vc-w-be-5-5-0020144291-04-779500.pdf"
+        },
+        {
+          "id": "ecotec-exclusive-5-7",
+          "name": "ecoTEC exclusive /5-7",
+          "family": "VC 246/5-7 · VC 286/5-7 · VCW 356/5-7",
+          "faultsPath": "data/vaillant/ecotec-exclusive-5-7/faults.json",
+          "parametersPath": "data/vaillant/ecotec-exclusive-5-7/parameters.json",
+          "recordCount": 45,
+          "sourceTitle": "Vaillant installatie- en onderhoudshandleiding ecoTEC exclusive /5-7",
+          "sourceUrl": "https://www.vaillant.hu/downloads/02-falikazanok/ecotec/ecotec-exclusive/ecotec-exclusive-0020198148-00-szer-858577.pdf"
+        },
+        {
+          "id": "ecotec-pure-7-2",
+          "name": "ecoTEC pure",
+          "family": "VC 186/7-2 · VC 256/7-2 · VCW 226/7-2 · VCW 286/7-2",
+          "faultsPath": "data/vaillant/ecotec-pure-7-2/faults.json",
+          "parametersPath": "data/vaillant/ecotec-pure-7-2/parameters.json",
+          "recordCount": 36,
+          "sourceTitle": "Vaillant installatie- en onderhoudshandleiding ecoTEC pure /7-2",
+          "sourceUrl": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotec-pure-0020231688-02-1923408.pdf"
+        },
+        {
+          "id": "atmotec-turbotec-3",
+          "name": "atmoTEC / turboTEC /3",
+          "family": "atmoTEC VU/VUW 240–280 · turboTEC VU/VUW 242–282",
+          "faultsPath": "data/vaillant/atmotec-turbotec-3/faults.json",
+          "parametersPath": "data/vaillant/atmotec-turbotec-3/parameters.json",
+          "recordCount": 24,
+          "sourceTitle": "Vaillant handleiding atmoTEC/turboTEC plus en pro /3",
+          "sourceUrl": "https://www.vaillant.be/telechargements/documents/mode-emploi/mode-demploi-atmotec-turbotec-plus-318897.pdf"
+        },
+        {
+          "id": "turbomax-plus-2",
+          "name": "turboMAX plus /2",
+          "family": "turboMAX plus 824/2 E · 828/2 E",
+          "faultsPath": "data/vaillant/turbomax-plus-2/faults.json",
+          "parametersPath": "data/vaillant/turbomax-plus-2/parameters.json",
+          "recordCount": 25,
+          "sourceTitle": "Vaillant installatie- en onderhoudshandleiding turboMAX plus /2",
+          "sourceUrl": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf"
+        }
+      ]
+    }
+  ]
+}
