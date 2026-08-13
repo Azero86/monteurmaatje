@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordCount": 1159,
+  "recordCount": 1882,
   "brands": [
     {
       "id": "intergas",
@@ -247,6 +247,92 @@
           "recordCount": 25,
           "sourceTitle": "Vaillant installatie- en onderhoudshandleiding turboMAX plus /2",
           "sourceUrl": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf"
+        }
+      ]
+    },
+    {
+      "id": "nefit",
+      "name": "Nefit",
+      "devices": [
+        {
+          "id": "proline-nxt",
+          "name": "ProLine NxT",
+          "family": "NxT HRC 24/CW3 · HRC 24/CW4 · HRC 30/CW5",
+          "faultsPath": "data/nefit/proline-nxt/faults.json",
+          "parametersPath": "data/nefit/proline-nxt/parameters.json",
+          "recordCount": 48,
+          "sourceTitle": "Nefit Bosch installatie-instructie ProLine NxT, document 6721823664 (2024/09)",
+          "sourceUrl": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823664"
+        },
+        {
+          "id": "proline-eco",
+          "name": "ProLine Eco",
+          "family": "HRC 24/CW4",
+          "faultsPath": "data/nefit/proline-eco/faults.json",
+          "parametersPath": "data/nefit/proline-eco/parameters.json",
+          "recordCount": 48,
+          "sourceTitle": "Nefit Bosch installatie-instructie ProLine Eco, document 6721823665 (2024/09)",
+          "sourceUrl": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665.pdf"
+        },
+        {
+          "id": "topline-compact",
+          "name": "TopLine Compact",
+          "family": "HRC 25/CW4 · HRC 30/CW5",
+          "faultsPath": "data/nefit/topline-compact/faults.json",
+          "parametersPath": "data/nefit/topline-compact/parameters.json",
+          "recordCount": 86,
+          "sourceTitle": "Nefit installatie-instructie TopLine Compact HRC, document 6720641180 (2019/07)",
+          "sourceUrl": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf"
+        },
+        {
+          "id": "topline",
+          "name": "TopLine",
+          "family": "HR 25 · HR 30 · HR 45 · AquaPower HRC 25/CW4 t/m 45/CW6 · AquaPower Plus HRC 25/CW6 · 30/CW6",
+          "faultsPath": "data/nefit/topline/faults.json",
+          "parametersPath": "data/nefit/topline/parameters.json",
+          "recordCount": 95,
+          "sourceTitle": "Nefit installatie-instructie TopLine HR/AquaPower, document 6720641179 (2019/07)",
+          "sourceUrl": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641179.pdf"
+        },
+        {
+          "id": "topline-ii",
+          "name": "TopLine II",
+          "family": "HR 25/30/45 II · AquaPower HRC 25/CW4 t/m 45/CW6 II · AquaPower Plus HRC 25/CW6 · 30/CW6 II",
+          "faultsPath": "data/nefit/topline-ii/faults.json",
+          "parametersPath": "data/nefit/topline-ii/parameters.json",
+          "recordCount": 93,
+          "sourceTitle": "Nefit installatie-instructie TopLine HR II/AquaPower II, document 6720801234 (2019/07)",
+          "sourceUrl": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720801234.pdf"
+        },
+        {
+          "id": "trendline-ii",
+          "name": "TrendLine II",
+          "family": "HRC25/CW4 II · HRC30/CW5 II",
+          "faultsPath": "data/nefit/trendline-ii/faults.json",
+          "parametersPath": "data/nefit/trendline-ii/parameters.json",
+          "recordCount": 124,
+          "sourceTitle": "Nefit Bosch installatie-instructie TrendLine II, document 6721823668 (2024/09)",
+          "sourceUrl": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823668"
+        },
+        {
+          "id": "trendline-ii-aquapower-plus",
+          "name": "TrendLine II AquaPower Plus",
+          "family": "HRC25/CW6 II · HRC30/CW6 II",
+          "faultsPath": "data/nefit/trendline-ii-aquapower-plus/faults.json",
+          "parametersPath": "data/nefit/trendline-ii-aquapower-plus/parameters.json",
+          "recordCount": 124,
+          "sourceTitle": "Nefit Bosch installatie-instructie TrendLine II AquaPower Plus, document 6721823669 (2024/09)",
+          "sourceUrl": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669"
+        },
+        {
+          "id": "9700i",
+          "name": "9700i",
+          "family": "HR 25 · HR 35 · HR 50 · AquaPower Plus HRC 30/CW6 · HRC 45/CW6",
+          "faultsPath": "data/nefit/9700i/faults.json",
+          "parametersPath": "data/nefit/9700i/parameters.json",
+          "recordCount": 105,
+          "sourceTitle": "Nefit Bosch installatie- en onderhoudsinstructie 9700i HR(C), document 6721875843 (2024/02)",
+          "sourceUrl": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf"
         }
       ]
     }
