@@ -1,0 +1,847 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "intergas-xtend-monoblock-r32-5kw",
+  "source": {
+    "title": "Intergas Xtend Mono Installation Instructions — Hybrid air-water heat pump system, document 88302401 (V1.2, 2024)",
+    "url": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+    "documentNumber": "88302401",
+    "revision": "V1.2 (2024)"
+  },
+  "appliesTo": {
+    "generation": "Xtend Monoblock R32",
+    "systemType": "monoblock",
+    "capacity": "5 kW",
+    "refrigerant": "R32",
+    "indoorUnitArticle": "050634",
+    "outdoorUnitArticle": "050644"
+  },
+  "codeGroups": {
+    "F": "storing/fout",
+    "n": "notificatie"
+  },
+  "faults": [
+    {
+      "code": "F001",
+      "codeType": "F-storing/fout",
+      "title": "Storing: No flow in the CH circuit for at least 30 minutes.",
+      "meaning": "F-code (storing/fout). No flow in the CH circuit for at least 30 minutes.",
+      "causes": [],
+      "checks": [
+        "Check the CH pump.",
+        "Check the system for leaks.",
+        "Check the system water pressure."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "F003",
+      "codeType": "F-storing/fout",
+      "title": "Storing: Value of external flow sensor T43 too high (>67°C) or Value of flow sensor T03 over 1 minute too high. (> 90 ºC)",
+      "meaning": "F-code (storing/fout). Value of external flow sensor T43 too high (>67°C) or Value of flow sensor T03 over 1 minute too high. (> 90 ºC)",
+      "causes": [],
+      "checks": [
+        "Check the flow in the system."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "F009",
+      "codeType": "F-storing/fout",
+      "title": "Storing: Memory fault codes.",
+      "meaning": "F-code (storing/fout). Memory fault codes.",
+      "causes": [],
+      "checks": [
+        "Reset the control unit.",
+        "Replace the control unit."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "F010",
+      "codeType": "F-storing/fout",
+      "title": "Storing: Water temperature too low during defrost function.",
+      "meaning": "F-code (storing/fout). Water temperature too low during defrost function.",
+      "causes": [],
+      "checks": [
+        "CH flow too low. Check system flow."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "F018",
+      "codeType": "F-storing/fout",
+      "title": "Storing: Heat pump type not correctly configured.",
+      "meaning": "F-code (storing/fout). Heat pump type not correctly configured.",
+      "causes": [],
+      "checks": [
+        "Consult Intergas Heating Ltd."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "F019",
+      "codeType": "F-storing/fout",
+      "title": "Storing: Incorrect serial number in memory module.",
+      "meaning": "F-code (storing/fout). Incorrect serial number in memory module.",
+      "causes": [],
+      "checks": [
+        "Consult Intergas Heating Ltd."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "F020",
+      "codeType": "F-storing/fout",
+      "title": "Storing: Incorrect firmware.",
+      "meaning": "F-code (storing/fout). Incorrect firmware.",
+      "causes": [],
+      "checks": [
+        "Consult Intergas Heating Ltd."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "F022",
+      "codeType": "F-storing/fout",
+      "title": "Storing: Firmware version not compatible",
+      "meaning": "F-code (storing/fout). Firmware version not compatible",
+      "causes": [],
+      "checks": [
+        "Firmware needs an updating.",
+        "Consult Intergas Heating Ltd."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "F023",
+      "codeType": "F-storing/fout",
+      "title": "Storing: XTP controller internal",
+      "meaning": "F-code (storing/fout). XTP controller internal",
+      "causes": [],
+      "checks": [
+        "Consult Intergas Heating Ltd."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "F024",
+      "codeType": "F-storing/fout",
+      "title": "Storing: XTP controller configuration",
+      "meaning": "F-code (storing/fout). XTP controller configuration",
+      "causes": [],
+      "checks": [
+        "Consult Intergas Heating Ltd."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "F025",
+      "codeType": "F-storing/fout",
+      "title": "Storing: XTP controller communication",
+      "meaning": "F-code (storing/fout). XTP controller communication",
+      "causes": [],
+      "checks": [
+        "Consult Intergas Heating Ltd."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "F026",
+      "codeType": "F-storing/fout",
+      "title": "Storing: Startup",
+      "meaning": "F-code (storing/fout). Startup",
+      "causes": [],
+      "checks": [
+        "Switch off the power at the fused spur for 1 minute, the re-establish.",
+        "Replace the control unit."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "F037",
+      "codeType": "F-storing/fout",
+      "title": "Storing: Return sensor T04.",
+      "meaning": "F-code (storing/fout). Return sensor T04.",
+      "causes": [],
+      "checks": [
+        "Check for any breakages/short circuits in the wiring for the sensor T04.",
+        "Check whether the sensor T04 is connected correctly.",
+        "Replace the sensor T04."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "F038",
+      "codeType": "F-storing/fout",
+      "title": "Storing: Flow sensor T03.",
+      "meaning": "F-code (storing/fout). Flow sensor T03.",
+      "causes": [],
+      "checks": [
+        "Check for any breakages/short circuits in the wiring for the sensor T03.",
+        "Check whether the sensor T03 is connected correctly.",
+        "Replace the sensor T03."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "F039",
+      "codeType": "F-storing/fout",
+      "title": "Storing: External flow sensor T43.",
+      "meaning": "F-code (storing/fout). External flow sensor T43.",
+      "causes": [],
+      "checks": [
+        "Check for any breakages/short circuits in the wiring for the sensor T43.",
+        "Check whether the sensor T43 is correctly connected.",
+        "Replace the sensor T43."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "F040",
+      "codeType": "F-storing/fout",
+      "title": "Storing: External outdoor sensor T42.",
+      "meaning": "F-code (storing/fout). External outdoor sensor T42.",
+      "causes": [],
+      "checks": [
+        "Check for any breakages/short circuits in the wiring for the sensor T42.",
+        "Check whether the sensor T42 is correctly connected.",
+        "Replace the sensor T42."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "F050",
+      "codeType": "F-storing/fout",
+      "title": "Storing: Fault within the outdoor unit",
+      "meaning": "F-code (storing/fout). Fault within the outdoor unit",
+      "causes": [],
+      "checks": [
+        "Access the control screen for additional information"
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
+      "verified": true,
+      "verifiedDate": "2026-08-14",
+      "note": "Intergas publiceert hier geen Storingscode 2 of buitenunit-subcodes; aanvullende informatie staat volgens de handleiding in het WiFi-bedieningsscherm."
+    },
+    {
+      "code": "F051",
+      "codeType": "F-storing/fout",
+      "title": "Storing: Fault within the indoor unit",
+      "meaning": "F-code (storing/fout). Fault within the indoor unit",
+      "causes": [],
+      "checks": [
+        "Access the control screen for additional information"
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "F254",
+      "codeType": "F-storing/fout",
+      "title": "Storing: Bypass mode active",
+      "meaning": "F-code (storing/fout). Bypass mode active",
+      "causes": [],
+      "checks": [
+        "Not a fault code as such, but a forced way to forward the heat request to the boiler.",
+        "Switch off the power at the fused spur then, press and hold the control button whilst re-establishing the power supply to clear the by-pass mode."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n000",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Parameter settings outside range",
+      "meaning": "n-code (notificatie). Parameter settings outside range",
+      "causes": [],
+      "checks": [
+        "Check the settings."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n001",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: System pressure too low, parameter P020",
+      "meaning": "n-code (notificatie). System pressure too low, parameter P020",
+      "causes": [],
+      "checks": [
+        "Check for leaks",
+        "The system water requires refilling or topping up."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n002",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: No water pressure",
+      "meaning": "n-code (notificatie). No water pressure",
+      "causes": [],
+      "checks": [
+        "Check for leaks",
+        "The system water requires refilling or topping up."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n008",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: XTP error heat pump (ODU)",
+      "meaning": "n-code (notificatie). XTP error heat pump (ODU)",
+      "causes": [],
+      "checks": [
+        "Consult Intergas Heating Ltd."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n011",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Communication with the outdoor unit has been lost or the outdoor unit has an internal .",
+      "meaning": "n-code (notificatie). Communication with the outdoor unit has been lost or the outdoor unit has an internal .",
+      "causes": [],
+      "checks": [
+        "Access the Wifi control screen for additional information",
+        "Check the wiring between the indoor unit and outdoor unit for breakages/short circuit.",
+        "Check the connections in the outdoor unit."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n013",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Condenser temperature too high: heating pump disengaged.",
+      "meaning": "n-code (notificatie). Condenser temperature too high: heating pump disengaged.",
+      "causes": [],
+      "checks": [
+        "Potentially insufficient flow.",
+        "System can not loose heat."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n014",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Thermostat not connected.",
+      "meaning": "n-code (notificatie). Thermostat not connected.",
+      "causes": [],
+      "checks": [
+        "Connect the Comfort Touch thermostat; see §8.8.5."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n015",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Crankcase heater function",
+      "meaning": "n-code (notificatie). Crankcase heater function",
+      "causes": [],
+      "checks": [
+        "Possible loose connection to the outdoor unit",
+        "Faulty resistance element."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n016",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Abnormal Delta-T between the flow and return temperature values",
+      "meaning": "n-code (notificatie). Abnormal Delta-T between the flow and return temperature values",
+      "causes": [],
+      "checks": [
+        "Sensors T03 and T04 connected or mounted incorrectly.",
+        "Check the system flow."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n018",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Problem with memory.",
+      "meaning": "n-code (notificatie). Problem with memory.",
+      "causes": [],
+      "checks": [
+        "Consult Intergas Heating Ltd."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n019",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Fault memory module",
+      "meaning": "n-code (notificatie). Fault memory module",
+      "causes": [],
+      "checks": [
+        "Check the wiring.",
+        "Replace the memory module."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n021",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: No flow in the CH circuit for at least 30 seconds.",
+      "meaning": "n-code (notificatie). No flow in the CH circuit for at least 30 seconds.",
+      "causes": [],
+      "checks": [
+        "Venting program (max. 15 minutes) is started. Other system functions are blocked and resumed after the program has completed.",
+        "Pump turns off for 60 seconds.",
+        "Pump runs at maximum capacity.",
+        "If sufficient flow is regained again for 30 seconds, the program will stop and the notification code will clear."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n022",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Problem with automatic flow rate control",
+      "meaning": "n-code (notificatie). Problem with automatic flow rate control",
+      "causes": [],
+      "checks": [
+        "Probably air in the system, vent."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n023",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: System flow too low during commissioning",
+      "meaning": "n-code (notificatie). System flow too low during commissioning",
+      "causes": [],
+      "checks": [
+        "Check the CH-circuit for restrictions, debris, air or isolation valves closed."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n024",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Remote flow system temperature sensor T43 gives an abnormal value",
+      "meaning": "n-code (notificatie). Remote flow system temperature sensor T43 gives an abnormal value",
+      "causes": [],
+      "checks": [
+        "Check if the sensor is attached firmly.",
+        "Check the connector on the main print."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n026",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Clock not set",
+      "meaning": "n-code (notificatie). Clock not set",
+      "causes": [],
+      "checks": [
+        "Set the clock"
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n027",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Problem in the Clock operation",
+      "meaning": "n-code (notificatie). Problem in the Clock operation",
+      "causes": [],
+      "checks": [
+        "Possible hardware error",
+        "Consult Intergas Heating Ltd."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n028",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Notification code that arises because the outdoor unit regularly experiences problems.",
+      "meaning": "n-code (notificatie). Notification code that arises because the outdoor unit regularly experiences problems.",
+      "causes": [],
+      "checks": [
+        "Consult Intergas Heating Ltd."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n030",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Remote flow system temperature sensor T43 not installed.",
+      "meaning": "n-code (notificatie). Remote flow system temperature sensor T43 not installed.",
+      "causes": [],
+      "checks": [
+        "Check in the WiFi control screen if; P066 = 4 (Boiler control On/Off), P123 = 1 (Yes), P123 = 3 (Adjustable relay output)."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n032",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Defrost is taking to long",
+      "meaning": "n-code (notificatie). Defrost is taking to long",
+      "causes": [],
+      "checks": [
+        "Possible a cooling error",
+        "Possible that the outdoor unit is fully exposed to the wind."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n039",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Problem with external flow temperature sensor T43",
+      "meaning": "n-code (notificatie). Problem with external flow temperature sensor T43",
+      "causes": [],
+      "checks": [
+        "Check the position and connection of the sensor on the flow pipework.",
+        "Check wiring. Replace if necessary."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n040",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Problem with external outdoor sensor T42",
+      "meaning": "n-code (notificatie). Problem with external outdoor sensor T42",
+      "causes": [],
+      "checks": [
+        "Check wiring. Replace if necessary."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n041",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Problem with refrigerant liquid sensor.",
+      "meaning": "n-code (notificatie). Problem with refrigerant liquid sensor.",
+      "causes": [],
+      "checks": [
+        "Check wiring. Replace if necessary."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n042",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Problem with refrigerant gas sensor.",
+      "meaning": "n-code (notificatie). Problem with refrigerant gas sensor.",
+      "causes": [],
+      "checks": [
+        "Check wiring. Replace if necessary."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n051",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Boiler locked out of system",
+      "meaning": "n-code (notificatie). Boiler locked out of system",
+      "causes": [],
+      "checks": [
+        "Check for boiler malfunction."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n052",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Error with OpenTherm connection to boiler.",
+      "meaning": "n-code (notificatie). Error with OpenTherm connection to boiler.",
+      "causes": [],
+      "checks": [
+        "Check wiring. Replace if necessary."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n053",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Flow temperature from boiler is too low",
+      "meaning": "n-code (notificatie). Flow temperature from boiler is too low",
+      "causes": [],
+      "checks": [
+        "Set the flow temperature of the boiler at least 10ºC higher then the system flow temperature of the Xtend (P194)."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n054",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Boiler not responding to heating request from Xtend.",
+      "meaning": "n-code (notificatie). Boiler not responding to heating request from Xtend.",
+      "causes": [],
+      "checks": [
+        "Check whether the boiler or CH function is turned off."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n055",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Boiler has a notification",
+      "meaning": "n-code (notificatie). Boiler has a notification",
+      "causes": [],
+      "checks": [
+        "Resolve the Intergas boiler malfunction."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n056",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Boiler supplies too hot water during a heating demand.",
+      "meaning": "n-code (notificatie). Boiler supplies too hot water during a heating demand.",
+      "causes": [],
+      "checks": [
+        "Check the set flow temperature of the boiler.",
+        "Check the set power of the boiler"
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n060",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Thermostat firmware version is not up to date if using the Intergas Comfort Touch.",
+      "meaning": "n-code (notificatie). Thermostat firmware version is not up to date if using the Intergas Comfort Touch.",
+      "causes": [],
+      "checks": [
+        "Install the latest version of Intergas Comfort Touch."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n070",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Heatpump error (indor unit control)",
+      "meaning": "n-code (notificatie). Heatpump error (indor unit control)",
+      "causes": [],
+      "checks": [
+        "Check the Wifi control screen for additional information",
+        "Consult Intergas Heating Ltd."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n071",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Flow error during Heatpump operation",
+      "meaning": "n-code (notificatie). Flow error during Heatpump operation",
+      "causes": [],
+      "checks": [
+        "Check the flow or the system water needs refilling or topping up."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n072",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Flow error during defrost mode",
+      "meaning": "n-code (notificatie). Flow error during defrost mode",
+      "causes": [],
+      "checks": [
+        "Check the flow or the system water needs refilling or topping up."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n073",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Refrigerant temperature too low during defrost mode.",
+      "meaning": "n-code (notificatie). Refrigerant temperature too low during defrost mode.",
+      "causes": [],
+      "checks": [
+        "Check the refrigerant circuit for leaks.",
+        "Possible refrigerant shortage."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n074",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Defrost mode stopped due to a water temperature that is too low.",
+      "meaning": "n-code (notificatie). Defrost mode stopped due to a water temperature that is too low.",
+      "causes": [],
+      "checks": [
+        "Check the flow",
+        "Possibly low water volume"
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "n080",
+      "codeType": "n-notificatie",
+      "title": "Notificatie: Problem with the user interface.",
+      "meaning": "n-code (notificatie). Problem with the user interface.",
+      "causes": [],
+      "checks": [
+        "Restart the Xtend",
+        "Consult Intergas Heating Ltd."
+      ],
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    }
+  ],
+  "limitations": [
+    "Officiële documenten gebruiken niet overal dezelfde typeaanduiding; de artikelnummers zijn leidend.",
+    "Actieve koelfunctionaliteit is in de toepasselijke officiële legacy-documentatie niet voldoende bevestigd."
+  ]
+}
