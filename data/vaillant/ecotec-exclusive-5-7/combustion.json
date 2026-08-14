@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "ecotec-exclusive-5-7",
+  "title": "Officiële adaptieve verbrandingscontrole ecoTEC exclusive /5-7",
+  "measurements": [
+    {
+      "label": "CO₂-bereik — aardgas",
+      "minimum": 8.0,
+      "maximum": 10.5,
+      "unit": "vol.-%",
+      "load": "Schoorsteenvegermodus na automatische kalibratie",
+      "condition": "Voormantel gemonteerd en gesloten VLT/VGA-systeem"
+    },
+    {
+      "label": "CO₂-bereik — LPG",
+      "minimum": 9.0,
+      "maximum": 11.8,
+      "unit": "vol.-%",
+      "load": "Schoorsteenvegermodus na automatische kalibratie",
+      "condition": "Voormantel gemonteerd en gesloten VLT/VGA-systeem"
+    },
+    {
+      "label": "Toegestane gasstroomdruk — G20",
+      "minimum": 18.0,
+      "maximum": 25.0,
+      "unit": "mbar"
+    },
+    {
+      "label": "Toegestane gasstroomdruk — G25",
+      "minimum": 18.0,
+      "maximum": 33.0,
+      "unit": "mbar"
+    },
+    {
+      "label": "Toegestane gasstroomdruk — G31",
+      "minimum": 25.0,
+      "maximum": 35.0,
+      "unit": "mbar"
+    }
+  ],
+  "settings": [
+    {
+      "label": "Kalibratiepunten wissen",
+      "value": "P.04",
+      "technicalExplanation": "Verwijdert de bestaande kalibratiepunten."
+    },
+    {
+      "label": "Kalibratie maximumvermogen",
+      "value": "P.01",
+      "load": "Maximumvermogen",
+      "technicalExplanation": "Duur 7–10 minuten; automatisch einde na 15 minuten."
+    },
+    {
+      "label": "Kalibratie minimumvermogen",
+      "value": "P.02",
+      "load": "Minimumvermogen",
+      "technicalExplanation": "Duur 3–5 minuten; automatisch einde na 15 minuten."
+    }
+  ],
+  "measurementConditions": [
+    "Kalibreer en meet uitsluitend met gemonteerde, gesloten voormantel en volledig gemonteerd VLT/VGA-systeem.",
+    "Activeer de schoorsteenvegermodus en wacht totdat de automatische kalibratie is voltooid (S.093 naar S.004).",
+    "Meet CO₂ aan de verbrandingsgasmeetnippel."
+  ],
+  "technicalExplanation": "Dit toestel heeft een gasadaptieve verbrandingsregeling. De officiële methode is automatische kalibratie; er is geen klassieke handmatige CO₂-schroefprocedure opgenomen.",
+  "notes": [
+    "Tijdens kalibratie is rookgasanalyse volgens de handleiding niet mogelijk."
+  ],
+  "source": "https://www.vaillant.hu/downloads/02-falikazanok/ecotec/ecotec-exclusive/ecotec-exclusive-0020198148-00-szer-858577.pdf",
+  "sourcePage": "18–20",
+  "verified": true,
+  "verifiedDate": "2026-08-14"
+}

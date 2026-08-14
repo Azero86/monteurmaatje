@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "ecotec-plus-5-5",
+  "title": "Officiële gas-/luchtcontrole ecoTEC plus /5-5",
+  "measurements": [
+    {
+      "label": "CO₂ hooglast, voormantel gesloten — G20",
+      "value": 9.2,
+      "tolerance": 1.0,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "CO₂ hooglast, voormantel gesloten — G25",
+      "value": 9.0,
+      "tolerance": 1.0,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "CO₂ hooglast, voormantel verwijderd — G20",
+      "value": 9.0,
+      "tolerance": 1.0,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "CO₂ hooglast, voormantel verwijderd — G25",
+      "value": 8.8,
+      "tolerance": 1.0,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "O₂ hooglast, voormantel gesloten — G20",
+      "value": 4.1,
+      "tolerance": 0.9,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "O₂ hooglast, voormantel gesloten — G25",
+      "value": 4.5,
+      "tolerance": 0.9,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "O₂ hooglast, voormantel verwijderd — G20",
+      "value": 4.5,
+      "tolerance": 1.8,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "O₂ hooglast, voormantel verwijderd — G25",
+      "value": 4.6,
+      "tolerance": 1.8,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    }
+  ],
+  "settings": [],
+  "measurementConditions": [
+    "Start controleprogramma P.01 en wacht minimaal 5 minuten tot bedrijfstemperatuur.",
+    "Meet CO₂ aan de verbrandingsgasmeetnippel.",
+    "Vergelijk met de tabel voor de juiste gassoort en toestand van de voormantel."
+  ],
+  "technicalExplanation": "De officiële handleiding geeft voor deze reeks vollastwaarden; geen afzonderlijke laaglastwaarden zijn opgenomen.",
+  "notes": [
+    "Als de meetwaarde buiten het opgegeven bereik ligt, mag het toestel volgens Vaillant niet in gebruik worden genomen."
+  ],
+  "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-onderhoudshandleiding-ecotecplus-vc-w-be-5-5-0020144291-04-779500.pdf",
+  "sourcePage": "21–22",
+  "verified": true,
+  "verifiedDate": "2026-08-14"
+}

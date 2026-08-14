@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "ecotec-classic-5-3",
+  "title": "Officiële gas-/luchtcontrole ecoTEC classic /5-3",
+  "measurements": [
+    {
+      "label": "CO₂ instelwaarde, voormantel verwijderd — aardgas E",
+      "value": 9.0,
+      "tolerance": 0.3,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "CO₂ instelwaarde, voormantel verwijderd — aardgas K",
+      "value": 9.2,
+      "tolerance": 0.3,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "CO₂ instelwaarde, voormantel verwijderd — propaan",
+      "value": 10.2,
+      "tolerance": 0.2,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "CO₂ controlewaarde na ombouw/vervanging, voormantel verwijderd — aardgas E",
+      "value": 9.0,
+      "tolerance": 1.0,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "CO₂ controlewaarde na ombouw/vervanging, voormantel verwijderd — aardgas K",
+      "value": 9.2,
+      "tolerance": 1.0,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "CO₂ controlewaarde na ombouw/vervanging, voormantel verwijderd — propaan",
+      "value": 10.2,
+      "tolerance": 0.5,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "CO₂ instelwaarde, voormantel gemonteerd — aardgas E",
+      "value": 9.2,
+      "tolerance": 0.3,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "CO₂ instelwaarde, voormantel gemonteerd — aardgas K",
+      "value": 9.4,
+      "tolerance": 0.3,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "CO₂ instelwaarde, voormantel gemonteerd — propaan",
+      "value": 10.4,
+      "tolerance": 0.2,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "CO₂ controlewaarde na ombouw/vervanging, voormantel gemonteerd — aardgas E",
+      "value": 9.2,
+      "tolerance": 1.0,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "CO₂ controlewaarde na ombouw/vervanging, voormantel gemonteerd — aardgas K",
+      "value": 9.4,
+      "tolerance": 1.0,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "CO₂ controlewaarde na ombouw/vervanging, voormantel gemonteerd — propaan",
+      "value": 10.4,
+      "tolerance": 0.5,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "O₂ controlewaarde, voormantel verwijderd — aardgas E",
+      "value": 4.9,
+      "tolerance": 1.8,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "O₂ controlewaarde, voormantel verwijderd — propaan",
+      "value": 5.6,
+      "tolerance": 1.5,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "O₂ controlewaarde, voormantel gemonteerd — aardgas E",
+      "value": 4.5,
+      "tolerance": 1.8,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "O₂ controlewaarde, voormantel gemonteerd — propaan",
+      "value": 5.3,
+      "tolerance": 1.5,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "CO",
+      "maximum": 250,
+      "unit": "ppm",
+      "load": "Vollast"
+    },
+    {
+      "label": "Toegestane gasstroomdruk — aardgas E",
+      "minimum": 17.0,
+      "maximum": 25.0,
+      "unit": "mbar"
+    },
+    {
+      "label": "Toegestane gasstroomdruk — propaan",
+      "minimum": 25.0,
+      "maximum": 45.0,
+      "unit": "mbar"
+    }
+  ],
+  "settings": [
+    {
+      "label": "Handmatige CO₂-afstelling",
+      "value": "Linksom verhoogt CO₂; rechtsom verlaagt CO₂",
+      "technicalExplanation": "Aardgas: stappen van 1/8 omwenteling. Propaan: circa 1/16 omwenteling. Wacht na elke stap circa 1 minuut."
+    }
+  ],
+  "measurementConditions": [
+    "Start controleprogramma P.01.",
+    "Wacht minimaal 5 minuten tot bedrijfstemperatuur.",
+    "Meet CO en CO₂ aan de verbrandingsgasmeetnippel.",
+    "Gebruik de tabel passend bij gassoort en toestand van de voormantel."
+  ],
+  "technicalExplanation": "Vaillant onderscheidt instelwaarden van controlewaarden na gasombouw of vervanging van het gasblok; deze zijn daarom afzonderlijk opgenomen.",
+  "notes": [
+    "Voor aardgas K vermeldt de officiële tabel geen afzonderlijke O₂-waarde; die waarde is niet afgeleid."
+  ],
+  "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+  "sourcePage": "21–22 en 30",
+  "verified": true,
+  "verifiedDate": "2026-08-14"
+}
