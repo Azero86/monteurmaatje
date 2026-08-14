@@ -9,6 +9,7 @@
         {
           "id": "hre",
           "name": "Kombi Kompakt HRE",
+          "deviceType": "boiler",
           "family": "HRE 24/18 · 28/24 · 36/30 · 36/48",
           "faultsPath": "data/intergas/hre/faults.json",
           "parametersPath": "data/intergas/hre/parameters.json",
@@ -20,6 +21,7 @@
         {
           "id": "hreco",
           "name": "Kombi Kompakt HREco",
+          "deviceType": "boiler",
           "family": "HREco 24 · 30 · 36",
           "faultsPath": "data/intergas/hreco/faults.json",
           "parametersPath": "data/intergas/hreco/parameters.json",
@@ -31,6 +33,7 @@
         {
           "id": "xtreme",
           "name": "Xtreme",
+          "deviceType": "boiler",
           "family": "Xtreme 24 · 30 · 36",
           "faultsPath": "data/intergas/xtreme/faults.json",
           "parametersPath": "data/intergas/xtreme/parameters.json",
@@ -48,6 +51,7 @@
         {
           "id": "avanta-classic",
           "name": "Avanta",
+          "deviceType": "boiler",
           "family": "Avanta 24c · 28c · 35c",
           "faultsPath": "data/remeha/avanta-classic/faults.json",
           "parametersPath": "data/remeha/avanta-classic/parameters.json",
@@ -59,6 +63,7 @@
         {
           "id": "quinta-classic",
           "name": "Quinta",
+          "deviceType": "boiler",
           "family": "Quinta 25s · 30s · 28c · 35c",
           "faultsPath": "data/remeha/quinta-classic/faults.json",
           "parametersPath": "data/remeha/quinta-classic/parameters.json",
@@ -70,6 +75,7 @@
         {
           "id": "quinta-pro",
           "name": "Quinta Pro",
+          "deviceType": "boiler",
           "family": "Quinta Pro 45 · 65 · 90 · 115",
           "faultsPath": "data/remeha/quinta-pro/faults.json",
           "parametersPath": "data/remeha/quinta-pro/parameters.json",
@@ -81,6 +87,7 @@
         {
           "id": "quinta-ace",
           "name": "Quinta Ace",
+          "deviceType": "boiler",
           "family": "Quinta Ace 45 · 65 · 90 · 115",
           "faultsPath": "data/remeha/quinta-ace/faults.json",
           "parametersPath": "data/remeha/quinta-ace/parameters.json",
@@ -92,6 +99,7 @@
         {
           "id": "tzerra-ace",
           "name": "Tzerra Ace",
+          "deviceType": "boiler",
           "family": "Tzerra Ace 24C · 28C · 39C",
           "faultsPath": "data/remeha/tzerra-ace/faults.json",
           "parametersPath": "data/remeha/tzerra-ace/parameters.json",
@@ -103,6 +111,7 @@
         {
           "id": "calenta-ace",
           "name": "Calenta Ace",
+          "deviceType": "boiler",
           "family": "Calenta Ace 25ds · 28c · 35ds · 40c",
           "faultsPath": "data/remeha/calenta-ace/faults.json",
           "parametersPath": "data/remeha/calenta-ace/parameters.json",
@@ -114,6 +123,7 @@
         {
           "id": "avanta-ace",
           "name": "Avanta Ace",
+          "deviceType": "boiler",
           "family": "Avanta Ace 24c · 28c · 35c",
           "faultsPath": "data/remeha/avanta-ace/faults.json",
           "parametersPath": "data/remeha/avanta-ace/parameters.json",
@@ -125,6 +135,7 @@
         {
           "id": "tzerra-ace-matic",
           "name": "Tzerra Ace-Matic",
+          "deviceType": "boiler",
           "family": "Tzerra Ace-Matic 24c · 28c · 35c",
           "faultsPath": "data/remeha/tzerra-ace-matic/faults.json",
           "parametersPath": "data/remeha/tzerra-ace-matic/parameters.json",
@@ -136,6 +147,7 @@
         {
           "id": "calenta-ace-matic",
           "name": "Calenta Ace-Matic",
+          "deviceType": "boiler",
           "family": "Calenta Ace-Matic 30c · 35ds · 40c",
           "faultsPath": "data/remeha/calenta-ace-matic/faults.json",
           "parametersPath": "data/remeha/calenta-ace-matic/parameters.json",
@@ -147,6 +159,7 @@
         {
           "id": "calenta-ace-matic-40l",
           "name": "Calenta Ace-Matic 40L",
+          "deviceType": "boiler",
           "family": "Calenta Ace-Matic 40L · CW6",
           "faultsPath": "data/remeha/calenta-ace-matic-40l/faults.json",
           "parametersPath": "data/remeha/calenta-ace-matic-40l/parameters.json",
@@ -164,6 +177,7 @@
         {
           "id": "ecotec-plus-cs",
           "name": "ecoTEC plus IoniDetect",
+          "deviceType": "boiler",
           "family": "VHR S 25CS/1-5 · VHR S 35CS/1-5 · VHR I 36CS/1-5 · VHR 20/26CS t/m 35/40CS",
           "faultsPath": "data/vaillant/ecotec-plus-cs/faults.json",
           "parametersPath": "data/vaillant/ecotec-plus-cs/parameters.json",
@@ -175,6 +189,7 @@
         {
           "id": "ecotec-exclusive-cf",
           "name": "ecoTEC exclusive IoniDetect",
+          "deviceType": "boiler",
           "family": "VHR 25/36CF/1-7 · VHR 34/43CF/1-7",
           "faultsPath": "data/vaillant/ecotec-exclusive-cf/faults.json",
           "parametersPath": "data/vaillant/ecotec-exclusive-cf/parameters.json",
@@ -186,6 +201,7 @@
         {
           "id": "ecofit-pro-6-3",
           "name": "ecoFIT pro",
+          "deviceType": "boiler",
           "family": "VUW 256/6-3 · 306/6-3 · 356/6-3",
           "faultsPath": "data/vaillant/ecofit-pro-6-3/faults.json",
           "parametersPath": "data/vaillant/ecofit-pro-6-3/parameters.json",
@@ -197,6 +213,7 @@
         {
           "id": "ecotec-classic-5-3",
           "name": "ecoTEC classic",
+          "deviceType": "boiler",
           "family": "VHR 18-24/5-3 · 23-28/5-3 · 28-34/5-3",
           "faultsPath": "data/vaillant/ecotec-classic-5-3/faults.json",
           "parametersPath": "data/vaillant/ecotec-classic-5-3/parameters.json",
@@ -208,6 +225,7 @@
         {
           "id": "ecotec-pro-5-3",
           "name": "ecoTEC pro",
+          "deviceType": "boiler",
           "family": "VC 246/5-3 · VCW 246/5-3 · VCW 286/5-3",
           "faultsPath": "data/vaillant/ecotec-pro-5-3/faults.json",
           "parametersPath": "data/vaillant/ecotec-pro-5-3/parameters.json",
@@ -219,6 +237,7 @@
         {
           "id": "ecotec-plus-5-5",
           "name": "ecoTEC plus /5-5",
+          "deviceType": "boiler",
           "family": "VC 126/5-5 · 206/5-5 · 306/5-5 · VCW 296/5-5 · 346/5-5",
           "faultsPath": "data/vaillant/ecotec-plus-5-5/faults.json",
           "parametersPath": "data/vaillant/ecotec-plus-5-5/parameters.json",
@@ -230,6 +249,7 @@
         {
           "id": "ecotec-exclusive-5-7",
           "name": "ecoTEC exclusive /5-7",
+          "deviceType": "boiler",
           "family": "VC 246/5-7 · VC 286/5-7 · VCW 356/5-7",
           "faultsPath": "data/vaillant/ecotec-exclusive-5-7/faults.json",
           "parametersPath": "data/vaillant/ecotec-exclusive-5-7/parameters.json",
@@ -241,6 +261,7 @@
         {
           "id": "ecotec-pure-7-2",
           "name": "ecoTEC pure",
+          "deviceType": "boiler",
           "family": "VC 186/7-2 · VC 256/7-2 · VCW 226/7-2 · VCW 286/7-2",
           "faultsPath": "data/vaillant/ecotec-pure-7-2/faults.json",
           "parametersPath": "data/vaillant/ecotec-pure-7-2/parameters.json",
@@ -252,6 +273,7 @@
         {
           "id": "turbomax-plus-2",
           "name": "turboMAX plus /2",
+          "deviceType": "boiler",
           "family": "turboMAX plus 824/2 E · 828/2 E",
           "faultsPath": "data/vaillant/turbomax-plus-2/faults.json",
           "parametersPath": "data/vaillant/turbomax-plus-2/parameters.json",
@@ -269,6 +291,7 @@
         {
           "id": "proline-nxt",
           "name": "ProLine NxT",
+          "deviceType": "boiler",
           "family": "NxT HRC 24/CW3 · HRC 24/CW4 · HRC 30/CW5",
           "faultsPath": "data/nefit/proline-nxt/faults.json",
           "parametersPath": "data/nefit/proline-nxt/parameters.json",
@@ -280,6 +303,7 @@
         {
           "id": "proline-eco",
           "name": "ProLine Eco",
+          "deviceType": "boiler",
           "family": "HRC 24/CW4",
           "faultsPath": "data/nefit/proline-eco/faults.json",
           "parametersPath": "data/nefit/proline-eco/parameters.json",
@@ -291,6 +315,7 @@
         {
           "id": "topline-compact",
           "name": "TopLine Compact",
+          "deviceType": "boiler",
           "family": "HRC 25/CW4 · HRC 30/CW5",
           "faultsPath": "data/nefit/topline-compact/faults.json",
           "parametersPath": "data/nefit/topline-compact/parameters.json",
@@ -302,6 +327,7 @@
         {
           "id": "topline",
           "name": "TopLine",
+          "deviceType": "boiler",
           "family": "HR 25 · HR 30 · HR 45 · AquaPower HRC 25/CW4 t/m 45/CW6 · AquaPower Plus HRC 25/CW6 · 30/CW6",
           "faultsPath": "data/nefit/topline/faults.json",
           "parametersPath": "data/nefit/topline/parameters.json",
@@ -313,6 +339,7 @@
         {
           "id": "topline-ii",
           "name": "TopLine II",
+          "deviceType": "boiler",
           "family": "HR 25/30/45 II · AquaPower HRC 25/CW4 t/m 45/CW6 II · AquaPower Plus HRC 25/CW6 · 30/CW6 II",
           "faultsPath": "data/nefit/topline-ii/faults.json",
           "parametersPath": "data/nefit/topline-ii/parameters.json",
@@ -324,6 +351,7 @@
         {
           "id": "trendline-ii",
           "name": "TrendLine II",
+          "deviceType": "boiler",
           "family": "HRC25/CW4 II · HRC30/CW5 II",
           "faultsPath": "data/nefit/trendline-ii/faults.json",
           "parametersPath": "data/nefit/trendline-ii/parameters.json",
@@ -335,6 +363,7 @@
         {
           "id": "trendline-ii-aquapower-plus",
           "name": "TrendLine II AquaPower Plus",
+          "deviceType": "boiler",
           "family": "HRC25/CW6 II · HRC30/CW6 II",
           "faultsPath": "data/nefit/trendline-ii-aquapower-plus/faults.json",
           "parametersPath": "data/nefit/trendline-ii-aquapower-plus/parameters.json",
@@ -346,6 +375,7 @@
         {
           "id": "9700i",
           "name": "9700i",
+          "deviceType": "boiler",
           "family": "HR 25 · HR 35 · HR 50 · AquaPower Plus HRC 30/CW6 · HRC 45/CW6",
           "faultsPath": "data/nefit/9700i/faults.json",
           "parametersPath": "data/nefit/9700i/parameters.json",
