@@ -274,7 +274,8 @@
           "parametersPath": "data/nefit/proline-nxt/parameters.json",
           "recordCount": 48,
           "sourceTitle": "Nefit Bosch installatie-instructie ProLine NxT, document 6721823664 (2024/09)",
-          "sourceUrl": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823664"
+          "sourceUrl": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823664",
+          "combustionPath": "data/nefit/proline-nxt/combustion.json"
         },
         {
           "id": "proline-eco",
@@ -284,7 +285,8 @@
           "parametersPath": "data/nefit/proline-eco/parameters.json",
           "recordCount": 48,
           "sourceTitle": "Nefit Bosch installatie-instructie ProLine Eco, document 6721823665 (2024/09)",
-          "sourceUrl": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665.pdf"
+          "sourceUrl": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665.pdf",
+          "combustionPath": "data/nefit/proline-eco/combustion.json"
         },
         {
           "id": "topline-compact",
@@ -294,7 +296,8 @@
           "parametersPath": "data/nefit/topline-compact/parameters.json",
           "recordCount": 86,
           "sourceTitle": "Nefit installatie-instructie TopLine Compact HRC, document 6720641180 (2019/07)",
-          "sourceUrl": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf"
+          "sourceUrl": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
+          "combustionPath": "data/nefit/topline-compact/combustion.json"
         },
         {
           "id": "topline",
@@ -304,7 +307,8 @@
           "parametersPath": "data/nefit/topline/parameters.json",
           "recordCount": 95,
           "sourceTitle": "Nefit installatie-instructie TopLine HR/AquaPower, document 6720641179 (2019/07)",
-          "sourceUrl": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641179.pdf"
+          "sourceUrl": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641179.pdf",
+          "combustionPath": "data/nefit/topline/combustion.json"
         },
         {
           "id": "topline-ii",
@@ -314,7 +318,8 @@
           "parametersPath": "data/nefit/topline-ii/parameters.json",
           "recordCount": 93,
           "sourceTitle": "Nefit installatie-instructie TopLine HR II/AquaPower II, document 6720801234 (2019/07)",
-          "sourceUrl": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720801234.pdf"
+          "sourceUrl": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720801234.pdf",
+          "combustionPath": "data/nefit/topline-ii/combustion.json"
         },
         {
           "id": "trendline-ii",
@@ -324,7 +329,8 @@
           "parametersPath": "data/nefit/trendline-ii/parameters.json",
           "recordCount": 124,
           "sourceTitle": "Nefit Bosch installatie-instructie TrendLine II, document 6721823668 (2024/09)",
-          "sourceUrl": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823668"
+          "sourceUrl": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823668",
+          "combustionPath": "data/nefit/trendline-ii/combustion.json"
         },
         {
           "id": "trendline-ii-aquapower-plus",
@@ -334,7 +340,8 @@
           "parametersPath": "data/nefit/trendline-ii-aquapower-plus/parameters.json",
           "recordCount": 124,
           "sourceTitle": "Nefit Bosch installatie-instructie TrendLine II AquaPower Plus, document 6721823669 (2024/09)",
-          "sourceUrl": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669"
+          "sourceUrl": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
+          "combustionPath": "data/nefit/trendline-ii-aquapower-plus/combustion.json"
         },
         {
           "id": "9700i",
@@ -344,7 +351,8 @@
           "parametersPath": "data/nefit/9700i/parameters.json",
           "recordCount": 105,
           "sourceTitle": "Nefit Bosch installatie- en onderhoudsinstructie 9700i HR(C), document 6721875843 (2024/02)",
-          "sourceUrl": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf"
+          "sourceUrl": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+          "combustionPath": "data/nefit/9700i/combustion.json"
         }
       ]
     }

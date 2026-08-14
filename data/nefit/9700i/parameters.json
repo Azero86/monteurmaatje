@@ -2,23 +2,23 @@
   "schemaVersion": 1,
   "deviceId": "9700i",
   "source": {
-    "title": "Nefit Bosch installatie- en onderhoudsinstructie 9700i HR(C), document 6721875843 (2024/02)",
-    "url": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf"
+    "title": "Nefit Bosch installatie- en onderhoudsinstructie 9700i, document 6721875843 (2024/02)",
+    "url": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843"
   },
   "parameters": [
     {
       "code": "Open verdeler",
       "description": "Configuratie open verdeler",
-      "factoryDefault": null,
+      "factoryDefault": "Uit",
       "minimum": null,
       "maximum": null,
       "unit": "stand",
       "technicalExplanation": "Selecteert geen open verdeler, NTC op toestel, NTC op module of NTC uit.",
-      "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "note": "Keuzen: Uit, NTC aan toestel, NTC aan module en NTC uit.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 24,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "WW configuratie",
@@ -29,10 +29,10 @@
       "unit": "stand",
       "technicalExplanation": "Selecteert de officieel genoemde warmwater-hydrauliekconfiguratie.",
       "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 24,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "VK1-configuratie",
@@ -43,220 +43,220 @@
       "unit": "stand",
       "technicalExplanation": "Selecteert of een eigen pomp achter de open verdeler is geïnstalleerd.",
       "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 24,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Pompconf.",
       "description": "Pompconfiguratie",
-      "factoryDefault": null,
+      "factoryDefault": "Cv-pomp",
       "minimum": null,
       "maximum": null,
       "unit": "stand",
       "technicalExplanation": "Officiële instelling voor de cv-pompconfiguratie.",
-      "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "note": "De officiële tabel noemt Cv-pomp als configuratie.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 24,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Max. cv-verm.",
       "description": "Maximaal cv-vermogen",
-      "factoryDefault": null,
+      "factoryDefault": 100,
       "minimum": 50,
       "maximum": 100,
       "unit": "%",
       "technicalExplanation": "Maximaal vrijgegeven cv-warmtevermogen.",
-      "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "note": "Fabrieksinstelling 100%; instelbereik 50–100%.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 24,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Antipendel tijd",
       "description": "Antipendeltijd",
-      "factoryDefault": null,
+      "factoryDefault": 10,
       "minimum": 5,
       "maximum": 60,
       "unit": "min",
       "technicalExplanation": "Minimale wachttijd tussen uitschakelen en opnieuw inschakelen van de brander.",
-      "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "note": "Fabrieksinstelling 10 min.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 24,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Antipendel T uit",
       "description": "Uitschakeltemperatuurverschil antipendel",
-      "factoryDefault": null,
+      "factoryDefault": 6,
       "minimum": 2,
       "maximum": 15,
       "unit": "K",
       "technicalExplanation": "Temperatuurverschil waarbij de brander uitschakelt.",
-      "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "note": "Fabrieksinstelling 6 K.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 24,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Antipendel T aan",
       "description": "Inschakeltemperatuurverschil antipendel",
-      "factoryDefault": null,
+      "factoryDefault": -6,
       "minimum": -15,
       "maximum": 2,
       "unit": "K",
       "technicalExplanation": "Temperatuurverschil waarbij de brander inschakelt.",
-      "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "note": "Fabrieksinstelling -6 K.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 24,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Max. WW-vermog.",
       "description": "Maximaal warmwatervermogen",
-      "factoryDefault": null,
+      "factoryDefault": 100,
       "minimum": 50,
       "maximum": 100,
       "unit": "%",
       "technicalExplanation": "Maximaal vrijgegeven warmwatervermogen.",
-      "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "note": "Fabrieksinstelling 100%; instelbereik 50–100%.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 24,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Circulatiepomp",
       "description": "Warmwatercirculatiepomp",
-      "factoryDefault": null,
+      "factoryDefault": "Uit",
       "minimum": null,
       "maximum": null,
       "unit": "stand",
       "technicalExplanation": "Schakelt de warmwatercirculatiepomp uit of aan.",
-      "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "note": "Keuzen: Uit en Aan.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 24,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Cyclus circ.pomp",
       "description": "Cyclus circulatiepomp",
-      "factoryDefault": null,
+      "factoryDefault": "2 × 3 minuten/uur",
       "minimum": 1,
       "maximum": 6,
       "unit": "keer/uur",
       "technicalExplanation": "Laat de pomp 1–6 keer per uur drie minuten draaien of continu.",
-      "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "note": "Keuzen: 1–6 maal per uur telkens 3 minuten, of continu.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 24,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "TD-temp.",
       "description": "Temperatuur thermische desinfectie",
-      "factoryDefault": null,
+      "factoryDefault": 70,
       "minimum": 60,
       "maximum": 80,
       "unit": "°C",
       "technicalExplanation": "Warmwatertemperatuur tijdens thermische desinfectie.",
-      "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "note": "Fabrieksinstelling 70 °C.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 24,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Pompschakeltype",
       "description": "Pompschakeltype",
-      "factoryDefault": null,
+      "factoryDefault": "Warmtevraag",
       "minimum": null,
       "maximum": null,
       "unit": "stand",
       "technicalExplanation": "Selecteert energiebesparing of schakelen bij warmtevraag.",
-      "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "note": "Keuzen: Energie besparen en Warmtevraag.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 24,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Min. vermogen",
       "description": "Pompcapaciteit bij minimaal warmtevermogen",
-      "factoryDefault": null,
+      "factoryDefault": 10,
       "minimum": 10,
       "maximum": 100,
       "unit": "%",
       "technicalExplanation": "Alleen beschikbaar bij de in de handleiding genoemde pompkarakteristiek.",
-      "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "note": "Fabrieksinstelling 10%.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 25,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Max. vermogen",
       "description": "Pompcapaciteit bij maximaal warmtevermogen",
-      "factoryDefault": null,
+      "factoryDefault": 100,
       "minimum": 10,
       "maximum": 100,
       "unit": "%",
       "technicalExplanation": "Alleen beschikbaar bij de in de handleiding genoemde pompkarakteristiek.",
-      "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "note": "Fabrieksinstelling 100%.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 25,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Pompblokkeertijd",
       "description": "Pompblokkeertijd",
-      "factoryDefault": null,
+      "factoryDefault": 0,
       "minimum": 0,
       "maximum": 24,
       "unit": "×10 s",
       "technicalExplanation": "Blokkeert de interne pomp totdat de externe 3-wegklep zijn eindpositie heeft bereikt.",
-      "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "note": "Fabrieksinstelling 0 × 10 seconden.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 25,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Pompnaloop",
       "description": "Pompnalooptijd",
-      "factoryDefault": null,
+      "factoryDefault": 5,
       "minimum": 1,
       "maximum": 60,
       "unit": "min",
       "technicalExplanation": "Nalooptijd vanaf het einde van de warmtevraag; 24 uur is ook een keuze.",
-      "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "note": "Fabrieksinstelling 5 minuten; 24 uur is eveneens selecteerbaar.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 25,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Ontluchtingsf.",
       "description": "Ontluchtingsfunctie",
-      "factoryDefault": null,
+      "factoryDefault": "Uit",
       "minimum": null,
       "maximum": null,
       "unit": "stand",
       "technicalExplanation": "Keuzen in de tabel: Uit, Auto en Aan.",
-      "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "note": "Keuzen: Uit, Auto en Aan.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 25,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Sifonvulpr.",
@@ -267,10 +267,10 @@
       "unit": "stand",
       "technicalExplanation": "Keuzen in de tabel: Uit, Aan toestel min en Aan cv min.",
       "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 25,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "3-wegk. m.pos.",
@@ -281,38 +281,38 @@
       "unit": "stand",
       "technicalExplanation": "Houdt de 3-wegklep tijdelijk in de middenstand voor aftappen en demontage.",
       "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 25,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Min. druk",
       "description": "Minimale installatiedruk",
-      "factoryDefault": null,
+      "factoryDefault": 0.8,
       "minimum": 0.6,
       "maximum": 0.8,
       "unit": "bar",
       "technicalExplanation": "Instelbereik voor de minimale druk.",
-      "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "note": "Fabrieksinstelling 0,8 bar.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 25,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Ing. druk",
       "description": "Ingestelde installatiedruk",
-      "factoryDefault": null,
-      "minimum": 1.0,
+      "factoryDefault": 1.3,
+      "minimum": 1,
       "maximum": 1.7,
       "unit": "bar",
       "technicalExplanation": "Gewenste insteldruk van de installatie.",
-      "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "note": "Fabrieksinstelling 1,3 bar.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 25,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Srt onderhoud",
@@ -323,10 +323,10 @@
       "unit": "stand",
       "technicalExplanation": "Keuze uit geen interval, branderlooptijd, onderhoudsdatum of bedrijfsduur.",
       "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 25,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Max. aanvoertemp.",
@@ -337,24 +337,24 @@
       "unit": "°C",
       "technicalExplanation": "Begrenst het instelbereik van de aanvoertemperatuur.",
       "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 25,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Max. WW-temp.",
       "description": "Maximale warmwatertemperatuur",
-      "factoryDefault": null,
+      "factoryDefault": 60,
       "minimum": 35,
       "maximum": 80,
       "unit": "°C",
       "technicalExplanation": "Begrenst het instelbereik van de warmwatertemperatuur.",
-      "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "note": "Fabrieksinstelling 60 °C.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 25,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Min. toestelverm.",
@@ -365,66 +365,66 @@
       "unit": "%",
       "technicalExplanation": "De minimale instelwaarde varieert volgens de handleiding met het toestelvermogen.",
       "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 25,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Activeren",
       "description": "Stooklijn activeren",
-      "factoryDefault": null,
+      "factoryDefault": "Nee",
       "minimum": null,
       "maximum": null,
       "unit": "stand",
       "technicalExplanation": "Activeert een eenvoudige weersafhankelijke regeling met lineaire stooklijn.",
-      "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "note": "Keuzen: Ja en Nee.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 25,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Voetp. stooklijn",
       "description": "Voetpunt stooklijn",
-      "factoryDefault": null,
+      "factoryDefault": 20,
       "minimum": 20,
       "maximum": 90,
       "unit": "°C",
       "technicalExplanation": "Voetpunt van de stooklijn bij +20 °C buitentemperatuur.",
-      "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "note": "Fabrieksinstelling 20 °C; alleen zichtbaar wanneer de eenvoudige weersafhankelijke regeling is geactiveerd.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 25,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Eindp. stooklijn",
       "description": "Eindpunt stooklijn",
-      "factoryDefault": null,
+      "factoryDefault": 90,
       "minimum": 20,
       "maximum": 90,
       "unit": "°C",
       "technicalExplanation": "Eindpunt van de stooklijn bij -10 °C buitentemperatuur.",
-      "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "note": "Fabrieksinstelling 90 °C; alleen zichtbaar wanneer de eenvoudige weersafhankelijke regeling is geactiveerd.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 26,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Zomerbedrijf",
       "description": "Drempel zomerbedrijf",
-      "factoryDefault": null,
+      "factoryDefault": 16,
       "minimum": 0,
       "maximum": 30,
       "unit": "°C",
       "technicalExplanation": "Buitentemperatuurdrempel voor omschakeling naar zomerbedrijf.",
-      "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "note": "Fabrieksinstelling 16 °C; alleen zichtbaar wanneer de regeling is geactiveerd.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 26,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Vorstbesch.",
@@ -435,24 +435,536 @@
       "unit": "stand",
       "technicalExplanation": "Schakelt de vorstbeveiliging aan of uit.",
       "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 26,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Vorstgrenstemp.",
       "description": "Vorstgrenstemperatuur",
-      "factoryDefault": null,
+      "factoryDefault": 5,
       "minimum": 0,
       "maximum": 10,
       "unit": "°C",
       "technicalExplanation": "Temperatuurwaarde voor de vorstbeveiliging van de installatie.",
-      "note": "De officiële servicetabel specificeert in tekst geen afzonderlijke fabriekswaarde; daarom is dit veld leeg gelaten.",
-      "source": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
+      "note": "Fabrieksinstelling 5 °C; alleen beschikbaar bij geactiveerde vorstbeveiliging.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
       "sourcePage": 26,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · bedrijfstoestand",
+      "description": "Bedrijfstoestand",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · actuele storing",
+      "description": "Actuele storing",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · historie",
+      "description": "Storingshistorie",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · max. cv-vermogen",
+      "description": "Maximaal cv-vermogen",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · gemiddelde temperatuur",
+      "description": "Interne toesteltemperatuur",
+      "unit": "°C",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · ingestelde aanvoer",
+      "description": "Ingestelde aanvoertemperatuur",
+      "unit": "°C",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · wisselaartemperatuur",
+      "description": "Warmtewisselaartemperatuur",
+      "unit": "°C",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · open verdeler",
+      "description": "Temperatuur open verdeler",
+      "unit": "°C",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · retour",
+      "description": "Actuele retourtemperatuur",
+      "unit": "°C",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · cv-module",
+      "description": "Cv-module",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · brandermodulatie",
+      "description": "Actuele brandermodulatie",
+      "unit": "%",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · brandervermogen",
+      "description": "Actueel brandervermogen",
+      "unit": "kW",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · ionisatie",
+      "description": "Actuele vlamstroom",
+      "unit": "µA",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · pompmodulatie",
+      "description": "Pompmodulatie",
+      "unit": "%",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · buitentemperatuur",
+      "description": "Actuele buitentemperatuur",
+      "unit": "°C",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · VK1-pomp",
+      "description": "Status pomp cv-circuit 1",
+      "note": "Alleen relevant bij een eigen pomp achter een open verdeler.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · branderstarts",
+      "description": "Aantal branderstarts sinds inbedrijfname",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · bedrijfsuren",
+      "description": "Bedrijfsuren sinds inbedrijfname",
+      "unit": "h",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · waterdruk",
+      "description": "Actuele installatiedruk",
+      "unit": "bar",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · max. WW-vermogen",
+      "description": "Maximaal warmwatervermogen",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · WW-gemiddelde",
+      "description": "Gemiddelde warmwatertemperatuur",
+      "unit": "°C",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · boilertemperatuur",
+      "description": "Actuele boilertemperatuur",
+      "unit": "°C",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · WW-instelling",
+      "description": "Instelwaarde warmwatertemperatuur",
+      "unit": "°C",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · versie bedieningspaneel",
+      "description": "Softwareversie bedieningsunit",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · versie sturing",
+      "description": "Softwareversie sturing",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · SW-subversie",
+      "description": "Softwaresubversie sturing",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · codeerstekkernummer",
+      "description": "Codeerstekkernummer",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · codeerstekkerversie",
+      "description": "Codeerstekkerversie",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Start TD",
+      "description": "Thermische desinfectie starten",
+      "note": "Actie: Nu starten?",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 24,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Stop TD",
+      "description": "Thermische desinfectie afbreken",
+      "note": "Actie: Nu afbreken?",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 24,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Test · ontsteking",
+      "description": "Permanente ontsteking zonder gastoevoer",
+      "factoryDefault": "Uit",
+      "note": "Maximaal 2 minuten ingeschakeld laten om schade aan de ontstekingstransformator te voorkomen.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 26,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Test · ventilator",
+      "description": "Ventilator zonder gastoevoer of ontsteking",
+      "factoryDefault": "Uit",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 26,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Test · pomp",
+      "description": "Interne en externe pompen continu laten draaien",
+      "factoryDefault": "Uit",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 26,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Test · boilerlaadpomp",
+      "description": "Boilerlaadpomp permanent laten draaien",
+      "factoryDefault": "Uit",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 26,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Test · 3-wegklep",
+      "description": "Permanente stand van de 3-wegklep",
+      "factoryDefault": "Centrale verwarming",
+      "note": "Keuzen: Centrale verwarming en Warmwater.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 26,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Test · VK1-pomp",
+      "description": "Pomp cv-circuit 1 permanent laten draaien",
+      "factoryDefault": "Uit",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 26,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Test · circulatiepomp",
+      "description": "Circulatiepomp permanent laten draaien",
+      "factoryDefault": "Uit",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 26,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Test · ionisatie-oscillator",
+      "description": "Ionisatiemeetfunctie aan de vlam controleren",
+      "factoryDefault": "Uit",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 26,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Reset · fabrieksinstelling",
+      "description": "Fabrieksinstellingen herstellen",
+      "note": "Na deze reset moet de installatie opnieuw in bedrijf worden genomen.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 26,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Reset · servicedisplay",
+      "description": "Onderhoudsweergave resetten",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 26,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Reset · historie",
+      "description": "Storingshistorie wissen",
+      "note": "Eerst onderhoud resetten; een nog aanwezige storing wordt direct opnieuw opgenomen.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 26,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Demo-modus",
+      "description": "Demo-modus",
+      "factoryDefault": "Nee",
+      "note": "Keuzen: Ja en Nee. Hoofdschakelaar uit- en inschakelen om de demo-modus te verlaten.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 27,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · WW-debiet",
+      "description": "Warmwaterdebiet",
+      "note": "Het servicemenu-overzicht noemt deze uitleeswaarde; de gedetailleerde tabel specificeert in dit document geen bereik.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 22,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · WW-uitlaattemperatuur",
+      "description": "Warmwateruitlaattemperatuur",
+      "note": "Het servicemenu-overzicht noemt deze uitleeswaarde; de gedetailleerde tabel specificeert in dit document geen bereik.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 22,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · WW-inlaattemperatuur",
+      "description": "Warmwaterinlaattemperatuur",
+      "note": "Het servicemenu-overzicht noemt deze uitleeswaarde; de gedetailleerde tabel specificeert in dit document geen bereik.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 22,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · automatisch vullen · waterdruk",
+      "description": "Waterdruk voor automatisch vullen",
+      "note": "Alleen beschikbaar wanneer de functie automatisch vullen aanwezig is.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 22,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · automatisch vullen · aantal",
+      "description": "Aantal automatische vullingen",
+      "note": "Alleen beschikbaar wanneer de functie automatisch vullen aanwezig is.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 22,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · automatisch vullen · duur",
+      "description": "Duur van de laatste automatische vulling",
+      "note": "Alleen beschikbaar wanneer de functie automatisch vullen aanwezig is.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 22,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · automatisch vullen · actief",
+      "description": "Status automatisch vullen",
+      "note": "Alleen beschikbaar wanneer de functie automatisch vullen aanwezig is.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 22,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · solar · collector",
+      "description": "Collectortemperatuur",
+      "note": "Alleen beschikbaar bij een aangesloten solarconfiguratie.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 22,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · solar · boiler onder",
+      "description": "Boilertemperatuur onder",
+      "note": "Alleen beschikbaar bij een aangesloten solarconfiguratie.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 22,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · solar · pomp",
+      "description": "Status collectorpomp",
+      "note": "Alleen beschikbaar bij een aangesloten solarconfiguratie.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 22,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · solar · storing",
+      "description": "Solarstoring",
+      "note": "Alleen beschikbaar bij een aangesloten solarconfiguratie.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 22,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Autom. vullen",
+      "description": "Automatisch vullen",
+      "note": "Het servicemenu-overzicht noemt deze instelling; de gedetailleerde tabel in dit document specificeert geen keuzewaarden.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 22,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Autom. vullen · max. vultijd",
+      "description": "Maximale vultijd",
+      "note": "Het servicemenu-overzicht noemt deze instelling; de gedetailleerde tabel in dit document specificeert geen instelbereik.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 22,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Autom. vullen · blokkeertijd",
+      "description": "Blokkeertijd automatisch vullen",
+      "note": "Het servicemenu-overzicht noemt deze instelling; de gedetailleerde tabel in dit document specificeert geen instelbereik.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 22,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Autom. vullen · max. vullingen",
+      "description": "Maximaal aantal automatische vullingen",
+      "note": "Het servicemenu-overzicht noemt deze instelling; de gedetailleerde tabel in dit document specificeert geen instelbereik.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 22,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Autom. vullen · reset",
+      "description": "Teller automatische vullingen resetten",
+      "note": "Actie uit het officiële servicemenu-overzicht; geen waarde of bereik opgegeven.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721875843",
+      "sourcePage": 22,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
     }
   ]
 }

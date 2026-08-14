@@ -18,7 +18,7 @@
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823664",
       "sourcePage": 24,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "P2",
@@ -32,7 +32,7 @@
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823664",
       "sourcePage": 24,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "P3",
@@ -46,7 +46,7 @@
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823664",
       "sourcePage": 24,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "P4",
@@ -60,7 +60,7 @@
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823664",
       "sourcePage": 24,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "P5",
@@ -74,7 +74,7 @@
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823664",
       "sourcePage": 24,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "P6",
@@ -88,7 +88,7 @@
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823664",
       "sourcePage": 24,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "P7",
@@ -102,7 +102,108 @@
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823664",
       "sourcePage": 24,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "i1",
+      "description": "Bedrijfs- of storingscode",
+      "technicalExplanation": "Toont de actuele bedrijfs- of storingscode.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823664",
+      "sourcePage": 24,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "i2",
+      "description": "Gemeten cv-waterdruk",
+      "unit": "bar",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823664",
+      "sourcePage": 24,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "i3",
+      "description": "Gemeten ionisatiestroom",
+      "unit": "µA",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823664",
+      "sourcePage": 24,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "i4",
+      "description": "Gemeten aanvoertemperatuur",
+      "unit": "°C",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823664",
+      "sourcePage": 24,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "i5",
+      "description": "Gemeten retourtemperatuur",
+      "unit": "°C",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823664",
+      "sourcePage": 24,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "i6",
+      "description": "Berekende cv-watertemperatuur",
+      "unit": "°C",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823664",
+      "sourcePage": 24,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "i7",
+      "description": "Gemeten brandervermogen",
+      "unit": "%",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823664",
+      "sourcePage": 24,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "i8",
+      "description": "Gemeten pompvermogen",
+      "unit": "%",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823664",
+      "sourcePage": 24,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "i9 · buiten",
+      "description": "Gemeten buitentemperatuur",
+      "unit": "°C",
+      "note": "Alleen zichtbaar bij een aangesloten buitentemperatuursensor.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823664",
+      "sourcePage": 24,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "i9 · tapwater",
+      "description": "Gemeten taphoeveelheid",
+      "unit": "l/min",
+      "note": "Dezelfde displaypositie toont tijdens warmwatergebruik de taphoeveelheid.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823664",
+      "sourcePage": 24,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Historie · vergrendelend",
+      "description": "Laatste drie vergrendelende storingscodes",
+      "technicalExplanation": "Houd de info-toets 5 seconden ingedrukt om het historiemenu te openen.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823664",
+      "sourcePage": 32,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
     }
   ]
 }

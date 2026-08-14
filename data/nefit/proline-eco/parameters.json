@@ -3,7 +3,7 @@
   "deviceId": "proline-eco",
   "source": {
     "title": "Nefit Bosch installatie-instructie ProLine Eco, document 6721823665 (2024/09)",
-    "url": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665.pdf"
+    "url": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665"
   },
   "parameters": [
     {
@@ -15,10 +15,10 @@
       "unit": "°C",
       "technicalExplanation": "Bovengrens voor de ingestelde cv-watertemperatuur.",
       "note": "Fabrieksinstelling staat in de displayweergave van het officiële instelmenu.",
-      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665.pdf",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665",
       "sourcePage": 23,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "P2",
@@ -29,10 +29,10 @@
       "unit": "kW",
       "technicalExplanation": "Maximaal door de installateur instelbaar cv-vermogen.",
       "note": "Waarden gelden voor ProLine Eco HRC 24/CW4.",
-      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665.pdf",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665",
       "sourcePage": 23,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "P3",
@@ -43,10 +43,10 @@
       "unit": "stand",
       "technicalExplanation": "0 is uit; 1 geeft langere wachttijd en lager gasverbruik; 2 is de balansstand; 3 geeft kortere wachttijd en hoger gasverbruik.",
       "note": "Stand 2 en 3 voldoen volgens de handleiding aan de Gaskeur CW-eisen.",
-      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665.pdf",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665",
       "sourcePage": 23,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "P4",
@@ -57,10 +57,10 @@
       "unit": "°C",
       "technicalExplanation": "Instelwaarde voor de warmwatertemperatuur.",
       "note": "Bij een zonneboiler schrijft de handleiding 60 °C voor.",
-      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665.pdf",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665",
       "sourcePage": 23,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "P5",
@@ -71,10 +71,10 @@
       "unit": "%",
       "technicalExplanation": "Ondergrens van het pomptoerental; alleen door de installateur in te stellen.",
       "note": "Fabrieksinstelling staat in de officiële displayweergave.",
-      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665.pdf",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665",
       "sourcePage": 23,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "P6",
@@ -85,10 +85,10 @@
       "unit": "%",
       "technicalExplanation": "Bovengrens van het pomptoerental; alleen door de installateur in te stellen.",
       "note": "Fabrieksinstelling staat in de officiële displayweergave.",
-      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665.pdf",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665",
       "sourcePage": 23,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "P7",
@@ -99,10 +99,111 @@
       "unit": "min",
       "technicalExplanation": "Nadraaitijd van de cv-pomp.",
       "note": "Naast 1–60 minuten kan volgens de handleiding ook 1 dag worden gekozen.",
-      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665.pdf",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665",
       "sourcePage": 23,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "i1",
+      "description": "Bedrijfs- of storingscode",
+      "technicalExplanation": "Toont de actuele bedrijfs- of storingscode.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "i2",
+      "description": "Gemeten cv-waterdruk",
+      "unit": "bar",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "i3",
+      "description": "Gemeten ionisatiestroom",
+      "unit": "µA",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "i4",
+      "description": "Gemeten aanvoertemperatuur",
+      "unit": "°C",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "i5",
+      "description": "Gemeten retourtemperatuur",
+      "unit": "°C",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "i6",
+      "description": "Berekende cv-watertemperatuur",
+      "unit": "°C",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "i7",
+      "description": "Gemeten brandervermogen",
+      "unit": "%",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "i8",
+      "description": "Gemeten pompvermogen",
+      "unit": "%",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "i9 · buiten",
+      "description": "Gemeten buitentemperatuur",
+      "unit": "°C",
+      "note": "Alleen zichtbaar bij een aangesloten buitentemperatuursensor.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "i9 · tapwater",
+      "description": "Gemeten taphoeveelheid",
+      "unit": "l/min",
+      "note": "Dezelfde displaypositie toont tijdens warmwatergebruik de taphoeveelheid.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665",
+      "sourcePage": 23,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Historie · vergrendelend",
+      "description": "Laatste drie vergrendelende storingscodes",
+      "technicalExplanation": "Houd de info-toets 5 seconden ingedrukt om het historiemenu te openen.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823665",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
     }
   ]
 }

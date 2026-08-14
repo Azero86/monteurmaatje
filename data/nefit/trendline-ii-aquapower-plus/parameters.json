@@ -18,7 +18,7 @@
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
       "sourcePage": 27,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Centrale verwarming",
@@ -32,7 +32,7 @@
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
       "sourcePage": 27,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Maximaal cv-vermogen",
@@ -46,7 +46,7 @@
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
       "sourcePage": 27,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Maximale warmwatertemperatuur",
@@ -60,7 +60,7 @@
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
       "sourcePage": 27,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Warmwater",
@@ -74,7 +74,7 @@
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
       "sourcePage": 27,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Warmwaterbedrijf",
@@ -88,7 +88,7 @@
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
       "sourcePage": 27,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Warmwater-standbytijd",
@@ -102,7 +102,7 @@
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
       "sourcePage": 27,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Nadraaitijd",
@@ -116,7 +116,7 @@
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
       "sourcePage": 27,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Maximaal toerental",
@@ -130,7 +130,7 @@
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
       "sourcePage": 27,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Minimaal toerental",
@@ -144,7 +144,7 @@
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
       "sourcePage": 27,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Verhoogd toerental pomp",
@@ -158,7 +158,7 @@
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
       "sourcePage": 27,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Energiebesparing",
@@ -172,7 +172,7 @@
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
       "sourcePage": 28,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Ontluchtingsprogramma",
@@ -186,7 +186,7 @@
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
       "sourcePage": 28,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
     },
     {
       "code": "Periode",
@@ -200,7 +200,228 @@
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
       "sourcePage": 28,
       "verified": true,
-      "verifiedDate": "2026-08-13"
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · bedrijfscode",
+      "description": "Actuele bedrijfscode",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
+      "sourcePage": "26–27",
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · aanvoer",
+      "description": "Gemeten aanvoertemperatuur",
+      "unit": "°C",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
+      "sourcePage": "26–27",
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · retour",
+      "description": "Gemeten retourtemperatuur",
+      "unit": "°C",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
+      "sourcePage": "26–27",
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · ΔT",
+      "description": "Temperatuurverschil tussen aanvoer en retour",
+      "unit": "°C",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
+      "sourcePage": "26–27",
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · safetytemperatuur",
+      "description": "Gemeten warmtewisselaartemperatuur",
+      "unit": "°C",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
+      "sourcePage": "26–27",
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · cv-setpoint",
+      "description": "Ingestelde cv-watertemperatuur",
+      "unit": "°C",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
+      "sourcePage": "26–27",
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · ww-setpoint",
+      "description": "Ingestelde warmwatertemperatuur",
+      "unit": "°C",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
+      "sourcePage": "26–27",
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · ionisatie",
+      "description": "Gemeten ionisatiestroom",
+      "unit": "µA",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
+      "sourcePage": "26–27",
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · brandermodulatie",
+      "description": "Actueel brandervermogen",
+      "unit": "%",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
+      "sourcePage": "26–27",
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · pompmodulatie",
+      "description": "Actueel pomptoerental",
+      "unit": "%",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
+      "sourcePage": "26–27",
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · installatiedruk",
+      "description": "Gemeten cv-waterdruk",
+      "unit": "bar",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
+      "sourcePage": "26–27",
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · taphoeveelheid",
+      "description": "Gemeten taphoeveelheid",
+      "unit": "l/min",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
+      "sourcePage": "26–27",
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · buitentemperatuur",
+      "description": "Gemeten buitentemperatuur",
+      "unit": "°C",
+      "note": "Alleen zichtbaar wanneer een buitentemperatuursensor wordt gedetecteerd.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
+      "sourcePage": "26–27",
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · SW besturingsunit",
+      "description": "Softwareversie besturingsunit",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
+      "sourcePage": "26–27",
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · SW bedieningspaneel",
+      "description": "Softwareversie bedieningspaneel",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
+      "sourcePage": "26–27",
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Info · KIM",
+      "description": "Softwareversie en nummer HCM (KIM)",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
+      "sourcePage": "26–27",
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Test · ontsteking",
+      "description": "Componenttest ontsteking",
+      "factoryDefault": "OFF",
+      "note": "Keuzen: On en OFF.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Test · pomp",
+      "description": "Componenttest pomp",
+      "factoryDefault": "OFF",
+      "note": "Keuzen: On en OFF.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Test · ventilator",
+      "description": "Componenttest ventilator",
+      "factoryDefault": "OFF",
+      "note": "Keuzen: On en OFF.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Test · ionisatie-oscillator",
+      "description": "Test ionisatie-oscillator",
+      "factoryDefault": "OFF",
+      "note": "Bij On wordt een elektrische spanning over de ionisatiepen gezet.",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Historie · vergrendelend",
+      "description": "Laatste acht vergrendelende storingen",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
+      "sourcePage": "28–29",
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Historie · blokkerend",
+      "description": "Laatste acht blokkerende storingen",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Historie · service",
+      "description": "Serviceverzoeken",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Historie · branderuren",
+      "description": "Branderuren",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "Historie · branderstarts",
+      "description": "Branderstarts",
+      "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823669",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
     }
   ]
 }
