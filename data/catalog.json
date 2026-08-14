@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordCount": 1882,
+  "recordCount": 2122,
   "brands": [
     {
       "id": "intergas",
@@ -41,6 +41,50 @@
           "recordCount": 22,
           "sourceTitle": "Intergas Xtreme Installation Manual",
           "sourceUrl": "https://www.intergasheating.co.uk/app/uploads/2021/01/Xtreme-installation-manual-IGH-84007408.pdf"
+        },
+        {
+          "id": "intergas-xtend-split-5kw",
+          "name": "Xtend Split 5 kW",
+          "deviceType": "heatpump",
+          "family": "Oorspronkelijke Xtend Split · buitenunit 050614 · binnenunit 050604",
+          "faultsPath": "data/intergas/xtend-split-5kw/faults.json",
+          "parametersPath": "data/intergas/xtend-split-5kw/parameters.json",
+          "recordCount": 38,
+          "sourceTitle": "Intergas Xtend Installation Instructions, document 88038400 (2023)",
+          "sourceUrl": "https://www.intergasheating.co.uk/app/uploads/2025/11/Xtend-split-manual.pdf"
+        },
+        {
+          "id": "intergas-xtend-cool-grey-5kw",
+          "name": "Xtend Cool Grey 5 kW",
+          "deviceType": "heatpump",
+          "family": "Xtend Cool Grey · buitenunit 050616 · binnenunit 050604",
+          "faultsPath": "data/intergas/xtend-cool-grey-5kw/faults.json",
+          "parametersPath": "data/intergas/xtend-cool-grey-5kw/parameters.json",
+          "recordCount": 69,
+          "sourceTitle": "Intergas Installatievoorschrift Xtend, document 88008407 (december 2024)",
+          "sourceUrl": "https://www.intergas-verwarming.nl/app/uploads/2025/05/88008407-Installatievoorschrift-Xtend-Cool-Grey.pdf"
+        },
+        {
+          "id": "intergas-xtend-monoblock-r32-5kw",
+          "name": "Xtend Monoblock 5 kW R32",
+          "deviceType": "heatpump",
+          "family": "Xtend Monoblock R32 · buitenunit 050644 · binnenunit 050634",
+          "faultsPath": "data/intergas/xtend-monoblock-r32-5kw/faults.json",
+          "parametersPath": "data/intergas/xtend-monoblock-r32-5kw/parameters.json",
+          "recordCount": 56,
+          "sourceTitle": "Intergas Xtend Mono Installation Instructions, document 88302401 (V1.2, 2024)",
+          "sourceUrl": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf"
+        },
+        {
+          "id": "intergas-xtend-eco",
+          "name": "Xtend Eco",
+          "deviceType": "heatpump",
+          "family": "Xtend Eco 5 · Xtend Eco 7 · buitenunits 050674/050684 · binnenunit 050664",
+          "faultsPath": "data/intergas/xtend-eco/faults.json",
+          "parametersPath": "data/intergas/xtend-eco/parameters.json",
+          "recordCount": 77,
+          "sourceTitle": "Intergas Installatievoorschrift Xtend Eco, document 88104401 (juni 2026)",
+          "sourceUrl": "https://www.intergas-verwarming.nl/app/uploads/2025/12/88104401-Installatievoorschrift-Xtend-Eco-1.pdf"
         }
       ]
     },
