@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "calenta-ace",
+  "title": "Officiële O₂-controle en -instelling Calenta Ace 25ds/28c/35ds/40c",
+  "measurements": [
+    {
+      "id": "o2-high-g25-3",
+      "label": "O₂ vollast — G25.3 K-gas",
+      "value": "25ds/28c: 4,4–4,9; 35ds/40c: 4,1–4,6",
+      "unit": "%",
+      "load": "Vollast"
+    },
+    {
+      "id": "o2-low-g25-3",
+      "label": "O₂ laaglast — G25.3 K-gas",
+      "value": "25ds/28c: 5,7–6,1; 35ds/40c: 5,3–5,7",
+      "unit": "%",
+      "load": "Laaglast"
+    },
+    {
+      "id": "o2-high-g20",
+      "label": "O₂ vollast — G20 H-gas",
+      "value": "25ds/28c: 4,7–5,2; 35ds/40c: 4,3–4,8",
+      "unit": "%",
+      "load": "Vollast"
+    },
+    {
+      "id": "o2-low-g20",
+      "label": "O₂ laaglast — G20 H-gas",
+      "value": "25ds/28c: 5,9–6,3; 35ds/40c: 5,5–5,9",
+      "unit": "%",
+      "load": "Laaglast"
+    },
+    {
+      "id": "o2-high-g31",
+      "label": "O₂ vollast — G31 propaan",
+      "minimum": 4.7,
+      "maximum": 5.2,
+      "unit": "%",
+      "load": "Vollast",
+      "condition": "25ds, 28c, 35ds en 40c"
+    },
+    {
+      "id": "o2-low-g31",
+      "label": "O₂ laaglast — G31 propaan",
+      "value": "25ds: 5,8–6,1; 28c: 6,1–6,4; 35ds/40c: 5,8–6,1",
+      "unit": "%",
+      "load": "Laaglast"
+    },
+    {
+      "id": "co-action",
+      "label": "CO — actiegrens",
+      "maximum": 400,
+      "unit": "ppm",
+      "condition": "Bij overschrijding rookgasafvoer, gassoort, brander en gas-/luchtverhouding controleren"
+    },
+    {
+      "id": "co-danger",
+      "label": "CO — uitschakelgrens",
+      "maximum": 1000,
+      "unit": "ppm",
+      "condition": "Boven deze waarde toestel uitschakelen en leverancier contacteren"
+    }
+  ],
+  "settings": [
+    {
+      "id": "test-high",
+      "label": "Vollasttest",
+      "value": "Schoorsteenvegerstand, vollast"
+    },
+    {
+      "id": "test-low",
+      "label": "Laaglasttest",
+      "value": "Schoorsteenvegerstand, laaglast"
+    },
+    {
+      "id": "adjust-high",
+      "label": "Afstelling vollast",
+      "value": "Afstelschroef A"
+    },
+    {
+      "id": "adjust-low",
+      "label": "Afstelling laaglast",
+      "value": "Afstelschroef B"
+    },
+    {
+      "id": "base-setting",
+      "label": "Basisinstelling afstelschroef A",
+      "value": "Na volledig sluiten: G20/G25.3 alle varianten 9 slagen linksom; G31 alle varianten 6 slagen linksom",
+      "technicalExplanation": "Alleen toepassen volgens de officiële basisinstelprocedure."
+    }
+  ],
+  "measurementConditions": [
+    "Meet O₂ bij het rookgasmeetpunt op vollast en laaglast.",
+    "O₂ op vollast moet lager zijn dan O₂ op laaglast.",
+    "Controleer tevens CO volgens de officiële actie- en uitschakelgrenzen."
+  ],
+  "technicalExplanation": "De handleiding geeft toestel- en gassoortspecifieke O₂-bereiken plus CO-veiligheidsgrenzen.",
+  "notes": [
+    "De CO-concentratie moet altijd aan de nationale installatievoorschriften voldoen."
+  ],
+  "source": "https://documentation.remeha.nl/wp-content/uploads/sites/68/2025/12/Installatie-en-servicehandleiding-Calenta-Ace-V11.pdf",
+  "sourcePage": "65–68",
+  "verified": true,
+  "verifiedDate": "2026-08-14"
+}
+

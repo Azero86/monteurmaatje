@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "tzerra-ace",
+  "title": "Officiële O₂-controle en -instelling Tzerra Ace 24C/28C/39C",
+  "measurements": [
+    {
+      "id": "o2-high-g25-3",
+      "label": "O₂ vollast — G25.3 K-gas",
+      "minimum": 3.5,
+      "maximum": 4,
+      "unit": "%",
+      "load": "Vollast H",
+      "condition": "24C, 28C en 39C; zonder frontmantel"
+    },
+    {
+      "id": "o2-low-g25-3",
+      "label": "O₂ laaglast — G25.3 K-gas",
+      "minimum": 4.7,
+      "maximum": 5.2,
+      "unit": "%",
+      "load": "Laaglast L",
+      "condition": "24C, 28C en 39C; zonder frontmantel"
+    },
+    {
+      "id": "o2-high-g20",
+      "label": "O₂ vollast — G20 H-gas",
+      "minimum": 3.8,
+      "maximum": 4.3,
+      "unit": "%",
+      "load": "Vollast H",
+      "condition": "24C, 28C en 39C; zonder frontmantel"
+    },
+    {
+      "id": "o2-low-g20",
+      "label": "O₂ laaglast — G20 H-gas",
+      "minimum": 5,
+      "maximum": 5.5,
+      "unit": "%",
+      "load": "Laaglast L",
+      "condition": "24C, 28C en 39C; zonder frontmantel"
+    },
+    {
+      "id": "o2-high-g31",
+      "label": "O₂ vollast — G31 propaan",
+      "minimum": 4.7,
+      "maximum": 5.2,
+      "unit": "%",
+      "load": "Vollast H",
+      "condition": "24C, 28C en 39C; zonder frontmantel"
+    },
+    {
+      "id": "o2-low-g31",
+      "label": "O₂ laaglast — G31 propaan",
+      "value": "24C/28C: 5,8–6,3; 39C: 4,9–5,4",
+      "unit": "%",
+      "load": "Laaglast L",
+      "condition": "Zonder frontmantel"
+    }
+  ],
+  "settings": [
+    {
+      "id": "test-high",
+      "label": "Vollast inschakelen",
+      "value": "Schoorsteenvegerstand, tweemaal plus",
+      "technicalExplanation": "Wacht totdat H verschijnt."
+    },
+    {
+      "id": "test-low",
+      "label": "Laaglast inschakelen",
+      "value": "Schoorsteenvegerstand",
+      "technicalExplanation": "Wacht totdat L verschijnt."
+    },
+    {
+      "id": "adjust-high",
+      "label": "Afstelling vollast",
+      "value": "Afstelschroef A"
+    },
+    {
+      "id": "adjust-low",
+      "label": "Afstelling laaglast",
+      "value": "Afstelschroef B"
+    }
+  ],
+  "measurementConditions": [
+    "Meet zonder frontmantel.",
+    "Meet bij het rookgasmeetpunt en dicht de opening rond de sensor af.",
+    "Meet zowel vollast als laaglast."
+  ],
+  "technicalExplanation": "De officiële servicehandleiding geeft O₂-bereiken per gassoort; de waarden voor 24C, 28C en 39C zijn gelijk behalve G31 op laaglast.",
+  "notes": [
+    "Bij maximaal 20% waterstof kan O₂ variëren; stel volgens de standaard O₂-waarde van de gebruikte gassoort af."
+  ],
+  "source": "https://documentation.remeha.nl/wp-content/uploads/sites/68/2025/12/Tzerra-Ace-Servicehandleiding-NL-V8.pdf",
+  "sourcePage": "29–31",
+  "verified": true,
+  "verifiedDate": "2026-08-14"
+}
+

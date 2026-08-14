@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "quinta-ace",
+  "title": "Officiële O₂-controle en -instelling Quinta Ace 45/65/90/115",
+  "measurements": [
+    {
+      "id": "o2-high-g25-3",
+      "label": "O₂ vollast — G25.3 K-gas",
+      "value": "45: 4,1–4,6; 65: 4,1–4,6; 90: 3,7–4,1; 115: 4,0–4,4",
+      "unit": "%",
+      "load": "Vollast, HXX°"
+    },
+    {
+      "id": "o2-low-g25-3",
+      "label": "O₂ laaglast — G25.3 K-gas",
+      "value": "45: 5,5–6,0; 65: 4,6–5,1; 90: 5,3–5,6; 115: 5,1–5,5",
+      "unit": "%",
+      "load": "Laaglast, LXX°"
+    },
+    {
+      "id": "o2-high-g20",
+      "label": "O₂ vollast — G20 H-gas",
+      "value": "45: 4,3–4,8; 65: 4,3–4,8; 90: 4,3–4,7; 115: 4,2–4,7",
+      "unit": "%",
+      "load": "Vollast, HXX°"
+    },
+    {
+      "id": "o2-low-g20",
+      "label": "O₂ laaglast — G20 H-gas",
+      "value": "45: 5,7–6,2; 65: 4,8–5,3; 90: 5,2–5,5; 115: 5,6–6,1",
+      "unit": "%",
+      "load": "Laaglast, LXX°"
+    },
+    {
+      "id": "o2-high-g31",
+      "label": "O₂ vollast — G31 propaan",
+      "value": "45: 4,4–4,9; 65: 4,6–4,9; 90: 4,9–5,2; 115: 4,9–5,4",
+      "unit": "%",
+      "load": "Vollast, HXX°"
+    },
+    {
+      "id": "o2-low-g31",
+      "label": "O₂ laaglast — G31 propaan",
+      "value": "45: 5,7–6,2; 65: 5,4–5,7; 90: 5,5–5,8; 115: 5,8–6,3",
+      "unit": "%",
+      "load": "Laaglast, LXX°"
+    }
+  ],
+  "settings": [
+    {
+      "id": "test-high",
+      "label": "Vollast inschakelen",
+      "value": "Schoorsteenvegerstand, daarna tweemaal plus",
+      "technicalExplanation": "Wacht totdat H:XX° in het display staat."
+    },
+    {
+      "id": "test-low",
+      "label": "Laaglast inschakelen",
+      "value": "Schoorsteenvegerstand",
+      "technicalExplanation": "Wacht totdat L:XX° in het display staat."
+    },
+    {
+      "id": "adjust-high",
+      "label": "Afstelling vollast",
+      "value": "Afstelschroef A",
+      "technicalExplanation": "Gasblok 1 geldt voor 45/65/90; gasblok 2 voor 115."
+    },
+    {
+      "id": "adjust-low",
+      "label": "Afstelling laaglast",
+      "value": "Afstelschroef B",
+      "technicalExplanation": "Gasblok 1 geldt voor 45/65/90; gasblok 2 voor 115."
+    }
+  ],
+  "measurementConditions": [
+    "De rookgasanalyser moet minimaal ±0,25% O₂ nauwkeurig zijn.",
+    "Meet zonder frontmantel en dicht het rookgasmeetpunt rond de sensor af.",
+    "O₂ bij vollast moet lager zijn dan bij laaglast."
+  ],
+  "technicalExplanation": "De tabellen geven O₂-bereiken per gassoort en toestelvermogen; niet alle ketels zijn voor iedere gassoort geschikt.",
+  "notes": [
+    "Alleen een erkend installateur mag de gas-/luchtverhouding afstellen.",
+    "Bij maximaal 20% waterstof kan de O₂-waarde variëren; gebruik de standaard O₂-waarden van de toegepaste gassoort."
+  ],
+  "source": "https://documentation.remeha.nl/wp-content/uploads/sites/68/2025/12/Quinta-Ace-45-115-Installatie-en-gebruikershandleiding-NL-V14.pdf",
+  "sourcePage": "45–47",
+  "verified": true,
+  "verifiedDate": "2026-08-14"
+}
+

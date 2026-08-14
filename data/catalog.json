@@ -50,6 +50,8 @@
           "name": "Avanta",
           "family": "Avanta 24c · 28c · 35c",
           "faultsPath": "data/remeha/avanta-classic/faults.json",
+          "parametersPath": "data/remeha/avanta-classic/parameters.json",
+          "combustionPath": "data/remeha/avanta-classic/combustion.json",
           "recordCount": 17,
           "sourceTitle": "Remeha installatie- en servicehandleiding Avanta 24c/28c/35c",
           "sourceUrl": "https://documentation.remeha.nl/wp-content/uploads/sites/68/2025/12/Avanta-Installatie-en-servicehandleiding-NL-V13.pdf"
@@ -59,6 +61,8 @@
           "name": "Quinta",
           "family": "Quinta 25s · 30s · 28c · 35c",
           "faultsPath": "data/remeha/quinta-classic/faults.json",
+          "parametersPath": "data/remeha/quinta-classic/parameters.json",
+          "combustionPath": "data/remeha/quinta-classic/combustion.json",
           "recordCount": 19,
           "sourceTitle": "Remeha technische informatie Quinta 25s/30s/28c/35c",
           "sourceUrl": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Quinta/110125%20TM%20Quinta%2025s%2030s%2028c%2035c%20NL.pdf"
@@ -68,6 +72,8 @@
           "name": "Quinta Pro",
           "family": "Quinta Pro 45 · 65 · 90 · 115",
           "faultsPath": "data/remeha/quinta-pro/faults.json",
+          "parametersPath": "data/remeha/quinta-pro/parameters.json",
+          "combustionPath": "data/remeha/quinta-pro/combustion.json",
           "recordCount": 42,
           "sourceTitle": "Remeha installatie-, gebruikers- en servicehandleiding Quinta Pro",
           "sourceUrl": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Quinta%20PRO/150302%20UM%20IM%20SM%20%20Quinta%20Pro%2045-115%20NL.pdf"
@@ -77,6 +83,8 @@
           "name": "Quinta Ace",
           "family": "Quinta Ace 45 · 65 · 90 · 115",
           "faultsPath": "data/remeha/quinta-ace/faults.json",
+          "parametersPath": "data/remeha/quinta-ace/parameters.json",
+          "combustionPath": "data/remeha/quinta-ace/combustion.json",
           "recordCount": 75,
           "sourceTitle": "Remeha installatie- en gebruikershandleiding Quinta Ace 45–115",
           "sourceUrl": "https://documentation.remeha.nl/wp-content/uploads/sites/68/2025/12/Quinta-Ace-45-115-Installatie-en-gebruikershandleiding-NL-V14.pdf"
@@ -86,6 +94,8 @@
           "name": "Tzerra Ace",
           "family": "Tzerra Ace 24C · 28C · 39C",
           "faultsPath": "data/remeha/tzerra-ace/faults.json",
+          "parametersPath": "data/remeha/tzerra-ace/parameters.json",
+          "combustionPath": "data/remeha/tzerra-ace/combustion.json",
           "recordCount": 66,
           "sourceTitle": "Remeha servicehandleiding Tzerra Ace",
           "sourceUrl": "https://documentation.remeha.nl/wp-content/uploads/sites/68/2025/12/Tzerra-Ace-Servicehandleiding-NL-V8.pdf"
@@ -95,6 +105,8 @@
           "name": "Calenta Ace",
           "family": "Calenta Ace 25ds · 28c · 35ds · 40c",
           "faultsPath": "data/remeha/calenta-ace/faults.json",
+          "parametersPath": "data/remeha/calenta-ace/parameters.json",
+          "combustionPath": "data/remeha/calenta-ace/combustion.json",
           "recordCount": 85,
           "sourceTitle": "Remeha installatie- en servicehandleiding Calenta Ace",
           "sourceUrl": "https://documentation.remeha.nl/wp-content/uploads/sites/68/2025/12/Installatie-en-servicehandleiding-Calenta-Ace-V11.pdf"
@@ -104,6 +116,8 @@
           "name": "Avanta Ace",
           "family": "Avanta Ace 24c · 28c · 35c",
           "faultsPath": "data/remeha/avanta-ace/faults.json",
+          "parametersPath": "data/remeha/avanta-ace/parameters.json",
+          "combustionPath": "data/remeha/avanta-ace/combustion.json",
           "recordCount": 62,
           "sourceTitle": "Remeha installatie- en servicehandleiding Avanta Ace",
           "sourceUrl": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaNL/RemehaNL/Documentatie/Consument/01---CV-ketels/Avanta-Ace/Documentatie-voor-installateurs/Installatie--en-servicehandleiding-Avanta-Ace.pdf"
@@ -113,6 +127,8 @@
           "name": "Tzerra Ace-Matic",
           "family": "Tzerra Ace-Matic 24c · 28c · 35c",
           "faultsPath": "data/remeha/tzerra-ace-matic/faults.json",
+          "parametersPath": "data/remeha/tzerra-ace-matic/parameters.json",
+          "combustionPath": "data/remeha/tzerra-ace-matic/combustion.json",
           "recordCount": 97,
           "sourceTitle": "Remeha installatie- en servicehandleiding Tzerra Ace-Matic",
           "sourceUrl": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaNL/RemehaNL/Documentatie/Consument/01---CV-ketels/Tzerra-Ace-Matic/Documentatie-voor-installateurs/Installatie--en-servicehandleiding-Tzerra-Ace-Matic.pdf"
@@ -122,6 +138,8 @@
           "name": "Calenta Ace-Matic",
           "family": "Calenta Ace-Matic 30c · 35ds · 40c",
           "faultsPath": "data/remeha/calenta-ace-matic/faults.json",
+          "parametersPath": "data/remeha/calenta-ace-matic/parameters.json",
+          "combustionPath": "data/remeha/calenta-ace-matic/combustion.json",
           "recordCount": 97,
           "sourceTitle": "Remeha installatie- en servicehandleiding Calenta Ace-Matic",
           "sourceUrl": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaNL/RemehaNL/Documentatie/Consument/01---CV-ketels/Calenta-Ace-Matic/Documentatie-voor-installateurs/7861541_Calenta-Ace-Matic-Installatie-service-handleiding.pdf"
@@ -131,6 +149,8 @@
           "name": "Calenta Ace-Matic 40L",
           "family": "Calenta Ace-Matic 40L · CW6",
           "faultsPath": "data/remeha/calenta-ace-matic-40l/faults.json",
+          "parametersPath": "data/remeha/calenta-ace-matic-40l/parameters.json",
+          "combustionPath": "data/remeha/calenta-ace-matic-40l/combustion.json",
           "recordCount": 106,
           "sourceTitle": "Remeha installatie- en servicehandleiding Calenta Ace-Matic 40L",
           "sourceUrl": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaNL/RemehaNL/Documentatie/Consument/01---CV-ketels/Calenta-Ace-Matic/Documentatie-voor-installateurs/7861586_Calenta-Ace-Matic_Installatie-en-servicehandleiding_40L.pdf"
