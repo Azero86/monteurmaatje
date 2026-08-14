@@ -1,4 +1,4 @@
-const CACHE_VERSION = "v8";
+const CACHE_VERSION = "v9";
 const CACHE_NAME = "monteurmaatje-" + CACHE_VERSION;
 const APP_ROOT = new URL("./", self.registration.scope).pathname;
 const appUrl = (path = "") => new URL(path, self.registration.scope).pathname;
