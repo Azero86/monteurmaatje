@@ -23,13 +23,13 @@
     {
       "code": "F001",
       "codeType": "F-storing/fout",
-      "title": "Storing: No flow in the CH circuit for at least 30 minutes.",
-      "meaning": "F-code (storing/fout). No flow in the CH circuit for at least 30 minutes.",
+      "title": "Storing: Ten minste 30 minuten geen doorstroming in het CV-circuit.",
+      "meaning": "F-code (storing/fout). Ten minste 30 minuten geen doorstroming in het CV-circuit.",
       "causes": [],
       "checks": [
-        "Check the CH pump.",
-        "Check the system for leaks.",
-        "Check the system water pressure."
+        "Controleer de CV-pomp.",
+        "Controleer het systeem op lekkages.",
+        "Controleer de waterdruk in het systeem."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 72,
@@ -39,11 +39,11 @@
     {
       "code": "F003",
       "codeType": "F-storing/fout",
-      "title": "Storing: Value of external flow sensor T43 too high (>67°C) or Value of flow sensor T03 over 1 minute too high. (> 90 ºC)",
-      "meaning": "F-code (storing/fout). Value of external flow sensor T43 too high (>67°C) or Value of flow sensor T03 over 1 minute too high. (> 90 ºC)",
+      "title": "Storing: Waarde van externe aanvoersensor T43 te hoog (>67°C) of waarde van aanvoersensor T03 gedurende meer dan 1 minuut te hoog (> 90 ºC).",
+      "meaning": "F-code (storing/fout). Waarde van externe aanvoersensor T43 te hoog (>67°C) of waarde van aanvoersensor T03 gedurende meer dan 1 minuut te hoog (> 90 ºC).",
       "causes": [],
       "checks": [
-        "Check the flow in the system."
+        "Controleer de doorstroming in het systeem."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 72,
@@ -53,12 +53,12 @@
     {
       "code": "F009",
       "codeType": "F-storing/fout",
-      "title": "Storing: Memory fault codes.",
-      "meaning": "F-code (storing/fout). Memory fault codes.",
+      "title": "Storing: Geheugenfout in storingscodes.",
+      "meaning": "F-code (storing/fout). Geheugenfout in storingscodes.",
       "causes": [],
       "checks": [
-        "Reset the control unit.",
-        "Replace the control unit."
+        "Reset de regelunit.",
+        "Vervang de regelunit."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 72,
@@ -68,11 +68,11 @@
     {
       "code": "F010",
       "codeType": "F-storing/fout",
-      "title": "Storing: Water temperature too low during defrost function.",
-      "meaning": "F-code (storing/fout). Water temperature too low during defrost function.",
+      "title": "Storing: Watertemperatuur tijdens de ontdooifunctie te laag.",
+      "meaning": "F-code (storing/fout). Watertemperatuur tijdens de ontdooifunctie te laag.",
       "causes": [],
       "checks": [
-        "CH flow too low. Check system flow."
+        "CV-doorstroming te laag. Controleer de doorstroming in het systeem."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 72,
@@ -82,11 +82,11 @@
     {
       "code": "F018",
       "codeType": "F-storing/fout",
-      "title": "Storing: Heat pump type not correctly configured.",
-      "meaning": "F-code (storing/fout). Heat pump type not correctly configured.",
+      "title": "Storing: Warmtepomptype niet correct geconfigureerd.",
+      "meaning": "F-code (storing/fout). Warmtepomptype niet correct geconfigureerd.",
       "causes": [],
       "checks": [
-        "Consult Intergas Heating Ltd."
+        "Raadpleeg Intergas Verwarming BV."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 72,
@@ -96,11 +96,11 @@
     {
       "code": "F019",
       "codeType": "F-storing/fout",
-      "title": "Storing: Incorrect serial number in memory module.",
-      "meaning": "F-code (storing/fout). Incorrect serial number in memory module.",
+      "title": "Storing: Onjuist serienummer in de geheugenmodule.",
+      "meaning": "F-code (storing/fout). Onjuist serienummer in de geheugenmodule.",
       "causes": [],
       "checks": [
-        "Consult Intergas Heating Ltd."
+        "Raadpleeg Intergas Verwarming BV."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 72,
@@ -110,11 +110,11 @@
     {
       "code": "F020",
       "codeType": "F-storing/fout",
-      "title": "Storing: Incorrect firmware.",
-      "meaning": "F-code (storing/fout). Incorrect firmware.",
+      "title": "Storing: Onjuiste firmware.",
+      "meaning": "F-code (storing/fout). Onjuiste firmware.",
       "causes": [],
       "checks": [
-        "Consult Intergas Heating Ltd."
+        "Raadpleeg Intergas Verwarming BV."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 72,
@@ -124,12 +124,12 @@
     {
       "code": "F022",
       "codeType": "F-storing/fout",
-      "title": "Storing: Firmware version not compatible",
-      "meaning": "F-code (storing/fout). Firmware version not compatible",
+      "title": "Storing: Firmwareversie niet compatibel.",
+      "meaning": "F-code (storing/fout). Firmwareversie niet compatibel.",
       "causes": [],
       "checks": [
-        "Firmware needs an updating.",
-        "Consult Intergas Heating Ltd."
+        "De firmware moet worden bijgewerkt.",
+        "Raadpleeg Intergas Verwarming BV."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 72,
@@ -139,11 +139,11 @@
     {
       "code": "F023",
       "codeType": "F-storing/fout",
-      "title": "Storing: XTP controller internal",
-      "meaning": "F-code (storing/fout). XTP controller internal",
+      "title": "Storing: Interne fout XTP-controller.",
+      "meaning": "F-code (storing/fout). Interne fout XTP-controller.",
       "causes": [],
       "checks": [
-        "Consult Intergas Heating Ltd."
+        "Raadpleeg Intergas Verwarming BV."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 72,
@@ -153,11 +153,11 @@
     {
       "code": "F024",
       "codeType": "F-storing/fout",
-      "title": "Storing: XTP controller configuration",
-      "meaning": "F-code (storing/fout). XTP controller configuration",
+      "title": "Storing: Configuratiefout XTP-controller.",
+      "meaning": "F-code (storing/fout). Configuratiefout XTP-controller.",
       "causes": [],
       "checks": [
-        "Consult Intergas Heating Ltd."
+        "Raadpleeg Intergas Verwarming BV."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 72,
@@ -167,11 +167,11 @@
     {
       "code": "F025",
       "codeType": "F-storing/fout",
-      "title": "Storing: XTP controller communication",
-      "meaning": "F-code (storing/fout). XTP controller communication",
+      "title": "Storing: Communicatiefout XTP-controller.",
+      "meaning": "F-code (storing/fout). Communicatiefout XTP-controller.",
       "causes": [],
       "checks": [
-        "Consult Intergas Heating Ltd."
+        "Raadpleeg Intergas Verwarming BV."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 72,
@@ -181,12 +181,12 @@
     {
       "code": "F026",
       "codeType": "F-storing/fout",
-      "title": "Storing: Startup",
-      "meaning": "F-code (storing/fout). Startup",
+      "title": "Storing: Opstartfout.",
+      "meaning": "F-code (storing/fout). Opstartfout.",
       "causes": [],
       "checks": [
-        "Switch off the power at the fused spur for 1 minute, the re-establish.",
-        "Replace the control unit."
+        "Schakel de voeding bij de gezekerde aansluiting 1 minuut uit en schakel deze daarna weer in.",
+        "Vervang de regelunit."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 72,
@@ -196,13 +196,13 @@
     {
       "code": "F037",
       "codeType": "F-storing/fout",
-      "title": "Storing: Return sensor T04.",
-      "meaning": "F-code (storing/fout). Return sensor T04.",
+      "title": "Storing: Retoursensor T04.",
+      "meaning": "F-code (storing/fout). Retoursensor T04.",
       "causes": [],
       "checks": [
-        "Check for any breakages/short circuits in the wiring for the sensor T04.",
-        "Check whether the sensor T04 is connected correctly.",
-        "Replace the sensor T04."
+        "Controleer de bedrading van sensor T04 op breuk of kortsluiting.",
+        "Controleer of sensor T04 correct is aangesloten.",
+        "Vervang sensor T04."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 72,
@@ -212,13 +212,13 @@
     {
       "code": "F038",
       "codeType": "F-storing/fout",
-      "title": "Storing: Flow sensor T03.",
-      "meaning": "F-code (storing/fout). Flow sensor T03.",
+      "title": "Storing: Aanvoersensor T03.",
+      "meaning": "F-code (storing/fout). Aanvoersensor T03.",
       "causes": [],
       "checks": [
-        "Check for any breakages/short circuits in the wiring for the sensor T03.",
-        "Check whether the sensor T03 is connected correctly.",
-        "Replace the sensor T03."
+        "Controleer de bedrading van sensor T03 op breuk of kortsluiting.",
+        "Controleer of sensor T03 correct is aangesloten.",
+        "Vervang sensor T03."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 72,
@@ -228,13 +228,13 @@
     {
       "code": "F039",
       "codeType": "F-storing/fout",
-      "title": "Storing: External flow sensor T43.",
-      "meaning": "F-code (storing/fout). External flow sensor T43.",
+      "title": "Storing: Externe aanvoersensor T43.",
+      "meaning": "F-code (storing/fout). Externe aanvoersensor T43.",
       "causes": [],
       "checks": [
-        "Check for any breakages/short circuits in the wiring for the sensor T43.",
-        "Check whether the sensor T43 is correctly connected.",
-        "Replace the sensor T43."
+        "Controleer de bedrading van sensor T43 op breuk of kortsluiting.",
+        "Controleer of sensor T43 correct is aangesloten.",
+        "Vervang sensor T43."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 72,
@@ -244,13 +244,13 @@
     {
       "code": "F040",
       "codeType": "F-storing/fout",
-      "title": "Storing: External outdoor sensor T42.",
-      "meaning": "F-code (storing/fout). External outdoor sensor T42.",
+      "title": "Storing: Externe buitenvoeler T42.",
+      "meaning": "F-code (storing/fout). Externe buitenvoeler T42.",
       "causes": [],
       "checks": [
-        "Check for any breakages/short circuits in the wiring for the sensor T42.",
-        "Check whether the sensor T42 is correctly connected.",
-        "Replace the sensor T42."
+        "Controleer de bedrading van sensor T42 op breuk of kortsluiting.",
+        "Controleer of sensor T42 correct is aangesloten.",
+        "Vervang sensor T42."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 72,
@@ -260,11 +260,11 @@
     {
       "code": "F050",
       "codeType": "F-storing/fout",
-      "title": "Storing: Fault within the outdoor unit",
-      "meaning": "F-code (storing/fout). Fault within the outdoor unit",
+      "title": "Storing: Storing in de buitenunit.",
+      "meaning": "F-code (storing/fout). Storing in de buitenunit.",
       "causes": [],
       "checks": [
-        "Access the control screen for additional information"
+        "Open het bedieningsscherm voor aanvullende informatie."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 72,
@@ -275,11 +275,11 @@
     {
       "code": "F051",
       "codeType": "F-storing/fout",
-      "title": "Storing: Fault within the indoor unit",
-      "meaning": "F-code (storing/fout). Fault within the indoor unit",
+      "title": "Storing: Storing in de binnenunit.",
+      "meaning": "F-code (storing/fout). Storing in de binnenunit.",
       "causes": [],
       "checks": [
-        "Access the control screen for additional information"
+        "Open het bedieningsscherm voor aanvullende informatie."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 72,
@@ -289,12 +289,12 @@
     {
       "code": "F254",
       "codeType": "F-storing/fout",
-      "title": "Storing: Bypass mode active",
-      "meaning": "F-code (storing/fout). Bypass mode active",
+      "title": "Storing: Bypassmodus actief.",
+      "meaning": "F-code (storing/fout). Bypassmodus actief.",
       "causes": [],
       "checks": [
-        "Not a fault code as such, but a forced way to forward the heat request to the boiler.",
-        "Switch off the power at the fused spur then, press and hold the control button whilst re-establishing the power supply to clear the by-pass mode."
+        "Dit is feitelijk geen storingscode, maar een geforceerde manier om de warmtevraag door te sturen naar de CV-ketel.",
+        "Schakel de voeding bij de gezekerde aansluiting uit. Houd vervolgens de bedieningsknop ingedrukt terwijl de voeding weer wordt ingeschakeld om de bypassmodus op te heffen."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 72,
@@ -304,11 +304,11 @@
     {
       "code": "n000",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Parameter settings outside range",
-      "meaning": "n-code (notificatie). Parameter settings outside range",
+      "title": "Notificatie: Parameterinstellingen buiten bereik.",
+      "meaning": "n-code (notificatie). Parameterinstellingen buiten bereik.",
       "causes": [],
       "checks": [
-        "Check the settings."
+        "Controleer de instellingen."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 73,
@@ -318,12 +318,12 @@
     {
       "code": "n001",
       "codeType": "n-notificatie",
-      "title": "Notificatie: System pressure too low, parameter P020",
-      "meaning": "n-code (notificatie). System pressure too low, parameter P020",
+      "title": "Notificatie: Systeemdruk te laag, parameter P020.",
+      "meaning": "n-code (notificatie). Systeemdruk te laag, parameter P020.",
       "causes": [],
       "checks": [
-        "Check for leaks",
-        "The system water requires refilling or topping up."
+        "Controleer op lekkages.",
+        "Het systeemwater moet worden bijgevuld."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 73,
@@ -333,12 +333,12 @@
     {
       "code": "n002",
       "codeType": "n-notificatie",
-      "title": "Notificatie: No water pressure",
-      "meaning": "n-code (notificatie). No water pressure",
+      "title": "Notificatie: Geen waterdruk.",
+      "meaning": "n-code (notificatie). Geen waterdruk.",
       "causes": [],
       "checks": [
-        "Check for leaks",
-        "The system water requires refilling or topping up."
+        "Controleer op lekkages.",
+        "Het systeemwater moet worden bijgevuld."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 73,
@@ -348,11 +348,11 @@
     {
       "code": "n008",
       "codeType": "n-notificatie",
-      "title": "Notificatie: XTP error heat pump (ODU)",
-      "meaning": "n-code (notificatie). XTP error heat pump (ODU)",
+      "title": "Notificatie: XTP-fout warmtepomp (ODU).",
+      "meaning": "n-code (notificatie). XTP-fout warmtepomp (ODU).",
       "causes": [],
       "checks": [
-        "Consult Intergas Heating Ltd."
+        "Raadpleeg Intergas Verwarming BV."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 73,
@@ -362,13 +362,13 @@
     {
       "code": "n011",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Communication with the outdoor unit has been lost or the outdoor unit has an internal .",
-      "meaning": "n-code (notificatie). Communication with the outdoor unit has been lost or the outdoor unit has an internal .",
+      "title": "Notificatie: Communicatie met de buitenunit is verbroken of de buitenunit heeft een interne fout.",
+      "meaning": "n-code (notificatie). Communicatie met de buitenunit is verbroken of de buitenunit heeft een interne fout.",
       "causes": [],
       "checks": [
-        "Access the Wifi control screen for additional information",
-        "Check the wiring between the indoor unit and outdoor unit for breakages/short circuit.",
-        "Check the connections in the outdoor unit."
+        "Open het WiFi-bedieningsscherm voor aanvullende informatie.",
+        "Controleer de bedrading tussen de binnenunit en buitenunit op breuk of kortsluiting.",
+        "Controleer de aansluitingen in de buitenunit."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 73,
@@ -378,12 +378,12 @@
     {
       "code": "n013",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Condenser temperature too high: heating pump disengaged.",
-      "meaning": "n-code (notificatie). Condenser temperature too high: heating pump disengaged.",
+      "title": "Notificatie: Condensortemperatuur te hoog: warmtepomp uitgeschakeld.",
+      "meaning": "n-code (notificatie). Condensortemperatuur te hoog: warmtepomp uitgeschakeld.",
       "causes": [],
       "checks": [
-        "Potentially insufficient flow.",
-        "System can not loose heat."
+        "Mogelijk onvoldoende doorstroming.",
+        "Het systeem kan de warmte niet afgeven."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 73,
@@ -393,11 +393,11 @@
     {
       "code": "n014",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Thermostat not connected.",
-      "meaning": "n-code (notificatie). Thermostat not connected.",
+      "title": "Notificatie: Thermostaat niet aangesloten.",
+      "meaning": "n-code (notificatie). Thermostaat niet aangesloten.",
       "causes": [],
       "checks": [
-        "Connect the Comfort Touch thermostat; see §8.8.5."
+        "Sluit de Comfort Touch-thermostaat aan; zie §8.8.5."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 73,
@@ -407,12 +407,12 @@
     {
       "code": "n015",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Crankcase heater function",
-      "meaning": "n-code (notificatie). Crankcase heater function",
+      "title": "Notificatie: Functie carterverwarmer.",
+      "meaning": "n-code (notificatie). Functie carterverwarmer.",
       "causes": [],
       "checks": [
-        "Possible loose connection to the outdoor unit",
-        "Faulty resistance element."
+        "Mogelijk een losse aansluiting op de buitenunit.",
+        "Defect weerstandselement."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 73,
@@ -422,12 +422,12 @@
     {
       "code": "n016",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Abnormal Delta-T between the flow and return temperature values",
-      "meaning": "n-code (notificatie). Abnormal Delta-T between the flow and return temperature values",
+      "title": "Notificatie: Abnormale delta-T tussen de aanvoer- en retourtemperatuurwaarden.",
+      "meaning": "n-code (notificatie). Abnormale delta-T tussen de aanvoer- en retourtemperatuurwaarden.",
       "causes": [],
       "checks": [
-        "Sensors T03 and T04 connected or mounted incorrectly.",
-        "Check the system flow."
+        "Sensoren T03 en T04 zijn onjuist aangesloten of gemonteerd.",
+        "Controleer de doorstroming in het systeem."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 73,
@@ -437,11 +437,11 @@
     {
       "code": "n018",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Problem with memory.",
-      "meaning": "n-code (notificatie). Problem with memory.",
+      "title": "Notificatie: Probleem met het geheugen.",
+      "meaning": "n-code (notificatie). Probleem met het geheugen.",
       "causes": [],
       "checks": [
-        "Consult Intergas Heating Ltd."
+        "Raadpleeg Intergas Verwarming BV."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 73,
@@ -451,12 +451,12 @@
     {
       "code": "n019",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Fault memory module",
-      "meaning": "n-code (notificatie). Fault memory module",
+      "title": "Notificatie: Fout in geheugenmodule.",
+      "meaning": "n-code (notificatie). Fout in geheugenmodule.",
       "causes": [],
       "checks": [
-        "Check the wiring.",
-        "Replace the memory module."
+        "Controleer de bedrading.",
+        "Vervang de geheugenmodule."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 73,
@@ -466,14 +466,14 @@
     {
       "code": "n021",
       "codeType": "n-notificatie",
-      "title": "Notificatie: No flow in the CH circuit for at least 30 seconds.",
-      "meaning": "n-code (notificatie). No flow in the CH circuit for at least 30 seconds.",
+      "title": "Notificatie: Ten minste 30 seconden geen doorstroming in het CV-circuit.",
+      "meaning": "n-code (notificatie). Ten minste 30 seconden geen doorstroming in het CV-circuit.",
       "causes": [],
       "checks": [
-        "Venting program (max. 15 minutes) is started. Other system functions are blocked and resumed after the program has completed.",
-        "Pump turns off for 60 seconds.",
-        "Pump runs at maximum capacity.",
-        "If sufficient flow is regained again for 30 seconds, the program will stop and the notification code will clear."
+        "Het ontluchtingsprogramma (max. 15 minuten) wordt gestart. Andere systeemfuncties worden geblokkeerd en hervat nadat het programma is voltooid.",
+        "De pomp wordt 60 seconden uitgeschakeld.",
+        "De pomp draait op maximaal vermogen.",
+        "Wanneer gedurende 30 seconden weer voldoende doorstroming wordt bereikt, stopt het programma en verdwijnt de notificatiecode."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 73,
@@ -483,11 +483,11 @@
     {
       "code": "n022",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Problem with automatic flow rate control",
-      "meaning": "n-code (notificatie). Problem with automatic flow rate control",
+      "title": "Notificatie: Probleem met de automatische debietregeling.",
+      "meaning": "n-code (notificatie). Probleem met de automatische debietregeling.",
       "causes": [],
       "checks": [
-        "Probably air in the system, vent."
+        "Waarschijnlijk lucht in het systeem; ontlucht het systeem."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 73,
@@ -497,11 +497,11 @@
     {
       "code": "n023",
       "codeType": "n-notificatie",
-      "title": "Notificatie: System flow too low during commissioning",
-      "meaning": "n-code (notificatie). System flow too low during commissioning",
+      "title": "Notificatie: Systeemdebiet te laag tijdens inbedrijfstelling.",
+      "meaning": "n-code (notificatie). Systeemdebiet te laag tijdens inbedrijfstelling.",
       "causes": [],
       "checks": [
-        "Check the CH-circuit for restrictions, debris, air or isolation valves closed."
+        "Controleer het CV-circuit op beperkingen, vuil, lucht of gesloten afsluiters."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 73,
@@ -511,12 +511,12 @@
     {
       "code": "n024",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Remote flow system temperature sensor T43 gives an abnormal value",
-      "meaning": "n-code (notificatie). Remote flow system temperature sensor T43 gives an abnormal value",
+      "title": "Notificatie: Externe aanvoertemperatuursensor T43 geeft een abnormale waarde.",
+      "meaning": "n-code (notificatie). Externe aanvoertemperatuursensor T43 geeft een abnormale waarde.",
       "causes": [],
       "checks": [
-        "Check if the sensor is attached firmly.",
-        "Check the connector on the main print."
+        "Controleer of de sensor stevig is bevestigd.",
+        "Controleer de connector op de hoofdprint."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 73,
@@ -526,11 +526,11 @@
     {
       "code": "n026",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Clock not set",
-      "meaning": "n-code (notificatie). Clock not set",
+      "title": "Notificatie: Klok niet ingesteld.",
+      "meaning": "n-code (notificatie). Klok niet ingesteld.",
       "causes": [],
       "checks": [
-        "Set the clock"
+        "Stel de klok in."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 73,
@@ -540,12 +540,12 @@
     {
       "code": "n027",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Problem in the Clock operation",
-      "meaning": "n-code (notificatie). Problem in the Clock operation",
+      "title": "Notificatie: Probleem met de werking van de klok.",
+      "meaning": "n-code (notificatie). Probleem met de werking van de klok.",
       "causes": [],
       "checks": [
-        "Possible hardware error",
-        "Consult Intergas Heating Ltd."
+        "Mogelijk een hardwarefout.",
+        "Raadpleeg Intergas Verwarming BV."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 73,
@@ -555,11 +555,11 @@
     {
       "code": "n028",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Notification code that arises because the outdoor unit regularly experiences problems.",
-      "meaning": "n-code (notificatie). Notification code that arises because the outdoor unit regularly experiences problems.",
+      "title": "Notificatie: Notificatiecode die ontstaat doordat de buitenunit regelmatig problemen ondervindt.",
+      "meaning": "n-code (notificatie). Notificatiecode die ontstaat doordat de buitenunit regelmatig problemen ondervindt.",
       "causes": [],
       "checks": [
-        "Consult Intergas Heating Ltd."
+        "Raadpleeg Intergas Verwarming BV."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 74,
@@ -569,11 +569,11 @@
     {
       "code": "n030",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Remote flow system temperature sensor T43 not installed.",
-      "meaning": "n-code (notificatie). Remote flow system temperature sensor T43 not installed.",
+      "title": "Notificatie: Externe aanvoertemperatuursensor T43 niet geïnstalleerd.",
+      "meaning": "n-code (notificatie). Externe aanvoertemperatuursensor T43 niet geïnstalleerd.",
       "causes": [],
       "checks": [
-        "Check in the WiFi control screen if; P066 = 4 (Boiler control On/Off), P123 = 1 (Yes), P123 = 3 (Adjustable relay output)."
+        "Controleer in het WiFi-bedieningsscherm of: P066 = 4 (CV-ketelaansturing Aan/Uit), P123 = 1 (Ja), P123 = 3 (instelbare relaisuitgang)."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 74,
@@ -583,12 +583,12 @@
     {
       "code": "n032",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Defrost is taking to long",
-      "meaning": "n-code (notificatie). Defrost is taking to long",
+      "title": "Notificatie: Ontdooien duurt te lang.",
+      "meaning": "n-code (notificatie). Ontdooien duurt te lang.",
       "causes": [],
       "checks": [
-        "Possible a cooling error",
-        "Possible that the outdoor unit is fully exposed to the wind."
+        "Mogelijk een koeltechnische fout.",
+        "Mogelijk staat de buitenunit volledig in de wind."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 74,
@@ -598,12 +598,12 @@
     {
       "code": "n039",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Problem with external flow temperature sensor T43",
-      "meaning": "n-code (notificatie). Problem with external flow temperature sensor T43",
+      "title": "Notificatie: Probleem met externe aanvoertemperatuursensor T43.",
+      "meaning": "n-code (notificatie). Probleem met externe aanvoertemperatuursensor T43.",
       "causes": [],
       "checks": [
-        "Check the position and connection of the sensor on the flow pipework.",
-        "Check wiring. Replace if necessary."
+        "Controleer de positie en aansluiting van de sensor op de aanvoerleiding.",
+        "Controleer de bedrading. Vervang deze indien nodig."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 74,
@@ -613,11 +613,11 @@
     {
       "code": "n040",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Problem with external outdoor sensor T42",
-      "meaning": "n-code (notificatie). Problem with external outdoor sensor T42",
+      "title": "Notificatie: Probleem met externe buitentemperatuursensor T42.",
+      "meaning": "n-code (notificatie). Probleem met externe buitentemperatuursensor T42.",
       "causes": [],
       "checks": [
-        "Check wiring. Replace if necessary."
+        "Controleer de bedrading. Vervang deze indien nodig."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 74,
@@ -627,11 +627,11 @@
     {
       "code": "n041",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Problem with refrigerant liquid sensor.",
-      "meaning": "n-code (notificatie). Problem with refrigerant liquid sensor.",
+      "title": "Notificatie: Probleem met koudemiddelvloeistofsensor.",
+      "meaning": "n-code (notificatie). Probleem met koudemiddelvloeistofsensor.",
       "causes": [],
       "checks": [
-        "Check wiring. Replace if necessary."
+        "Controleer de bedrading. Vervang deze indien nodig."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 74,
@@ -641,11 +641,11 @@
     {
       "code": "n042",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Problem with refrigerant gas sensor.",
-      "meaning": "n-code (notificatie). Problem with refrigerant gas sensor.",
+      "title": "Notificatie: Probleem met koudemiddelgassensor.",
+      "meaning": "n-code (notificatie). Probleem met koudemiddelgassensor.",
       "causes": [],
       "checks": [
-        "Check wiring. Replace if necessary."
+        "Controleer de bedrading. Vervang deze indien nodig."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 74,
@@ -655,11 +655,11 @@
     {
       "code": "n051",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Boiler locked out of system",
-      "meaning": "n-code (notificatie). Boiler locked out of system",
+      "title": "Notificatie: CV-ketel geblokkeerd in het systeem.",
+      "meaning": "n-code (notificatie). CV-ketel geblokkeerd in het systeem.",
       "causes": [],
       "checks": [
-        "Check for boiler malfunction."
+        "Controleer de CV-ketel op een storing."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 74,
@@ -669,11 +669,11 @@
     {
       "code": "n052",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Error with OpenTherm connection to boiler.",
-      "meaning": "n-code (notificatie). Error with OpenTherm connection to boiler.",
+      "title": "Notificatie: Fout in OpenTherm-verbinding met de CV-ketel.",
+      "meaning": "n-code (notificatie). Fout in OpenTherm-verbinding met de CV-ketel.",
       "causes": [],
       "checks": [
-        "Check wiring. Replace if necessary."
+        "Controleer de bedrading. Vervang deze indien nodig."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 74,
@@ -683,11 +683,11 @@
     {
       "code": "n053",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Flow temperature from boiler is too low",
-      "meaning": "n-code (notificatie). Flow temperature from boiler is too low",
+      "title": "Notificatie: Aanvoertemperatuur van de CV-ketel is te laag.",
+      "meaning": "n-code (notificatie). Aanvoertemperatuur van de CV-ketel is te laag.",
       "causes": [],
       "checks": [
-        "Set the flow temperature of the boiler at least 10ºC higher then the system flow temperature of the Xtend (P194)."
+        "Stel de aanvoertemperatuur van de CV-ketel ten minste 10ºC hoger in dan de systeemaanvoertemperatuur van de Xtend (P194)."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 74,
@@ -697,11 +697,11 @@
     {
       "code": "n054",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Boiler not responding to heating request from Xtend.",
-      "meaning": "n-code (notificatie). Boiler not responding to heating request from Xtend.",
+      "title": "Notificatie: CV-ketel reageert niet op de warmtevraag van de Xtend.",
+      "meaning": "n-code (notificatie). CV-ketel reageert niet op de warmtevraag van de Xtend.",
       "causes": [],
       "checks": [
-        "Check whether the boiler or CH function is turned off."
+        "Controleer of de CV-ketel of CV-functie is uitgeschakeld."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 74,
@@ -711,11 +711,11 @@
     {
       "code": "n055",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Boiler has a notification",
-      "meaning": "n-code (notificatie). Boiler has a notification",
+      "title": "Notificatie: CV-ketel heeft een notificatie.",
+      "meaning": "n-code (notificatie). CV-ketel heeft een notificatie.",
       "causes": [],
       "checks": [
-        "Resolve the Intergas boiler malfunction."
+        "Verhelp de storing van de Intergas CV-ketel."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 74,
@@ -725,12 +725,12 @@
     {
       "code": "n056",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Boiler supplies too hot water during a heating demand.",
-      "meaning": "n-code (notificatie). Boiler supplies too hot water during a heating demand.",
+      "title": "Notificatie: CV-ketel levert te warm water tijdens een warmtevraag.",
+      "meaning": "n-code (notificatie). CV-ketel levert te warm water tijdens een warmtevraag.",
       "causes": [],
       "checks": [
-        "Check the set flow temperature of the boiler.",
-        "Check the set power of the boiler"
+        "Controleer de ingestelde aanvoertemperatuur van de CV-ketel.",
+        "Controleer het ingestelde vermogen van de CV-ketel."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 74,
@@ -740,11 +740,11 @@
     {
       "code": "n060",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Thermostat firmware version is not up to date if using the Intergas Comfort Touch.",
-      "meaning": "n-code (notificatie). Thermostat firmware version is not up to date if using the Intergas Comfort Touch.",
+      "title": "Notificatie: Firmwareversie van de thermostaat is niet actueel bij gebruik van de Intergas Comfort Touch.",
+      "meaning": "n-code (notificatie). Firmwareversie van de thermostaat is niet actueel bij gebruik van de Intergas Comfort Touch.",
       "causes": [],
       "checks": [
-        "Install the latest version of Intergas Comfort Touch."
+        "Installeer de nieuwste versie van de Intergas Comfort Touch."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 74,
@@ -754,12 +754,12 @@
     {
       "code": "n070",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Heatpump error (indor unit control)",
-      "meaning": "n-code (notificatie). Heatpump error (indor unit control)",
+      "title": "Notificatie: Warmtepompfout (regeling binnenunit).",
+      "meaning": "n-code (notificatie). Warmtepompfout (regeling binnenunit).",
       "causes": [],
       "checks": [
-        "Check the Wifi control screen for additional information",
-        "Consult Intergas Heating Ltd."
+        "Controleer het WiFi-bedieningsscherm voor aanvullende informatie.",
+        "Raadpleeg Intergas Verwarming BV."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 74,
@@ -769,11 +769,11 @@
     {
       "code": "n071",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Flow error during Heatpump operation",
-      "meaning": "n-code (notificatie). Flow error during Heatpump operation",
+      "title": "Notificatie: Debietfout tijdens warmtepompbedrijf.",
+      "meaning": "n-code (notificatie). Debietfout tijdens warmtepompbedrijf.",
       "causes": [],
       "checks": [
-        "Check the flow or the system water needs refilling or topping up."
+        "Controleer de doorstroming of vul het systeemwater bij."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 74,
@@ -783,11 +783,11 @@
     {
       "code": "n072",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Flow error during defrost mode",
-      "meaning": "n-code (notificatie). Flow error during defrost mode",
+      "title": "Notificatie: Debietfout tijdens de ontdooimodus.",
+      "meaning": "n-code (notificatie). Debietfout tijdens de ontdooimodus.",
       "causes": [],
       "checks": [
-        "Check the flow or the system water needs refilling or topping up."
+        "Controleer de doorstroming of vul het systeemwater bij."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 74,
@@ -797,12 +797,12 @@
     {
       "code": "n073",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Refrigerant temperature too low during defrost mode.",
-      "meaning": "n-code (notificatie). Refrigerant temperature too low during defrost mode.",
+      "title": "Notificatie: Koudemiddeltemperatuur tijdens de ontdooimodus te laag.",
+      "meaning": "n-code (notificatie). Koudemiddeltemperatuur tijdens de ontdooimodus te laag.",
       "causes": [],
       "checks": [
-        "Check the refrigerant circuit for leaks.",
-        "Possible refrigerant shortage."
+        "Controleer het koudemiddelcircuit op lekkages.",
+        "Mogelijk koudemiddeltekort."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 74,
@@ -812,12 +812,12 @@
     {
       "code": "n074",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Defrost mode stopped due to a water temperature that is too low.",
-      "meaning": "n-code (notificatie). Defrost mode stopped due to a water temperature that is too low.",
+      "title": "Notificatie: Ontdooimodus gestopt vanwege een te lage watertemperatuur.",
+      "meaning": "n-code (notificatie). Ontdooimodus gestopt vanwege een te lage watertemperatuur.",
       "causes": [],
       "checks": [
-        "Check the flow",
-        "Possibly low water volume"
+        "Controleer de doorstroming.",
+        "Mogelijk een te laag watervolume."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 74,
@@ -827,12 +827,12 @@
     {
       "code": "n080",
       "codeType": "n-notificatie",
-      "title": "Notificatie: Problem with the user interface.",
-      "meaning": "n-code (notificatie). Problem with the user interface.",
+      "title": "Notificatie: Probleem met de gebruikersinterface.",
+      "meaning": "n-code (notificatie). Probleem met de gebruikersinterface.",
       "causes": [],
       "checks": [
-        "Restart the Xtend",
-        "Consult Intergas Heating Ltd."
+        "Start de Xtend opnieuw op.",
+        "Raadpleeg Intergas Verwarming BV."
       ],
       "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
       "sourcePage": 74,
@@ -842,6 +842,6 @@
   ],
   "limitations": [
     "Officiële documenten gebruiken niet overal dezelfde typeaanduiding; de artikelnummers zijn leidend.",
-    "Actieve koelfunctionaliteit is in de toepasselijke officiële legacy-documentatie niet voldoende bevestigd."
+    "Actieve koelfunctionaliteit is in de toepasselijke officiële documentatie van de eerdere generatie niet voldoende bevestigd."
   ]
 }
