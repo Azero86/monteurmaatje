@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordCount": 2122,
+  "recordCount": 2126,
   "brands": [
     {
       "id": "intergas",
@@ -211,6 +211,27 @@
           "recordCount": 106,
           "sourceTitle": "Remeha installatie- en servicehandleiding Calenta Ace-Matic 40L",
           "sourceUrl": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaNL/RemehaNL/Documentatie/Consument/01---CV-ketels/Calenta-Ace-Matic/Documentatie-voor-installateurs/7861586_Calenta-Ace-Matic_Installatie-en-servicehandleiding_40L.pdf"
+        },
+        {
+          "id": "elga-ace",
+          "name": "Elga Ace",
+          "deviceType": "heatpump",
+          "family": "4kw, 6kw",
+          "faultsPath": "data/remeha/elga-ace/faults.json",
+          "parametersPath": "data/remeha/elga-ace/parameters.json",
+          "recordCount": 28,
+          "sourceTitle": "Remeha.nl",
+          "sourceUrl": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaNL/RemehaNL/Documentatie/Consument/02---Hybride-warmtepompen/Elga-Ace/Documentatie-voor-installateurs/Installatie-gebruikers-en-servicehandleiding-Elga-Ace.pdf",
+          "manuals": [
+            {
+              "type": "installation",
+              "title": "Handleiding",
+              "url": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaNL/RemehaNL/Documentatie/Consument/02---Hybride-warmtepompen/Elga-Ace/Documentatie-voor-installateurs/Installatie-gebruikers-en-servicehandleiding-Elga-Ace.pdf",
+              "language": "nl",
+              "market": "NL",
+              "documentNumber": ""
+            }
+          ]
         }
       ]
     },
