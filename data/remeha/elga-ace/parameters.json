@@ -1,0 +1,640 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "elga-ace",
+  "source": {
+    "title": "Remeha.nl",
+    "url": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaNL/RemehaNL/Documentatie/Consument/02---Hybride-warmtepompen/Elga-Ace/Documentatie-voor-installateurs/Installatie-gebruikers-en-servicehandleiding-Elga-Ace.pdf"
+  },
+  "parameters": [
+    {
+      "code": "CP020",
+      "description": "Type aangesloten zone",
+      "category": "",
+      "factoryDefault": "Direct",
+      "settingRange": "Direct; Menggroep",
+      "choices": [],
+      "technicalExplanation": "Type aangesloten zone"
+    },
+    {
+      "code": "CP080",
+      "description": "Activiteittemperatuur Slapen",
+      "category": "",
+      "factoryDefault": "16 °C",
+      "settingRange": "5–30 °C",
+      "choices": [],
+      "technicalExplanation": "Activiteittemperatuur Slapen"
+    },
+    {
+      "code": "CP081",
+      "description": "Activiteittemperatuur Thuis",
+      "category": "",
+      "factoryDefault": "20 °C",
+      "settingRange": "5–30 °C",
+      "choices": [],
+      "technicalExplanation": "Activiteittemperatuur Thuis"
+    },
+    {
+      "code": "CP082",
+      "description": "Activiteittemperatuur Weg",
+      "category": "",
+      "factoryDefault": "6 °C",
+      "settingRange": "5–30 °C",
+      "choices": [],
+      "technicalExplanation": "Activiteittemperatuur Weg"
+    },
+    {
+      "code": "CP083",
+      "description": "Activiteittemperatuur Ochtend",
+      "category": "",
+      "factoryDefault": "21 °C",
+      "settingRange": "5–30 °C",
+      "choices": [],
+      "technicalExplanation": "Activiteittemperatuur Ochtend"
+    },
+    {
+      "code": "CP084",
+      "description": "Activiteittemperatuur Avond",
+      "category": "",
+      "factoryDefault": "22 °C",
+      "settingRange": "5–30 °C",
+      "choices": [],
+      "technicalExplanation": "Activiteittemperatuur Avond"
+    },
+    {
+      "code": "CP320",
+      "description": "Bedrijfsmodus van de groep",
+      "category": "",
+      "factoryDefault": "Schema",
+      "settingRange": "Schema; Handmatig; Uit; Tijdelijk; Vakantie",
+      "choices": [],
+      "technicalExplanation": "Bedrijfsmodus van de groep"
+    },
+    {
+      "code": "CP230",
+      "description": "Helling stooklijn",
+      "category": "",
+      "factoryDefault": 0.7,
+      "settingRange": "0–4",
+      "choices": [],
+      "technicalExplanation": "Helling stooklijn"
+    },
+    {
+      "code": "CP210",
+      "description": "Voetpunt stooklijn dagbedrijf",
+      "category": "",
+      "factoryDefault": "15 °C",
+      "settingRange": "15–90 °C",
+      "choices": [],
+      "technicalExplanation": "Voetpunt stooklijn dagbedrijf"
+    },
+    {
+      "code": "CP220",
+      "description": "Voetpunt stooklijn nachtbedrijf",
+      "category": "",
+      "factoryDefault": "15 °C",
+      "settingRange": "15–90 °C",
+      "choices": [],
+      "technicalExplanation": "Voetpunt stooklijn nachtbedrijf"
+    },
+    {
+      "code": "CP000",
+      "description": "Maximale aanvoertemperatuur groep",
+      "category": "",
+      "factoryDefault": "70 °C",
+      "settingRange": "7–70 °C",
+      "choices": [],
+      "technicalExplanation": "Maximale aanvoertemperatuur groep"
+    },
+    {
+      "code": "CP660",
+      "description": "Icoon voor de groep",
+      "category": "",
+      "factoryDefault": "Alle",
+      "settingRange": "Alle beschikbare iconen",
+      "choices": [],
+      "technicalExplanation": "Icoon voor de groep"
+    },
+    {
+      "code": "CP040",
+      "description": "Nadraaitijd groeppomp",
+      "category": "",
+      "factoryDefault": "3 min",
+      "settingRange": "0–20 min",
+      "choices": [],
+      "technicalExplanation": "Nadraaitijd groeppomp"
+    },
+    {
+      "code": "CP070",
+      "description": "Gewenste ruimtetemperatuur nachtbedrijf",
+      "category": "",
+      "factoryDefault": "16 °C",
+      "settingRange": "5–30 °C",
+      "choices": [],
+      "technicalExplanation": "Gewenste ruimtetemperatuur nachtbedrijf"
+    },
+    {
+      "code": "CP340",
+      "description": "Nachtbedrijf",
+      "category": "",
+      "factoryDefault": "Continue warmtevraag",
+      "settingRange": "Stop warmtevraag; Continue warmtevraag",
+      "choices": [],
+      "technicalExplanation": "Nachtbedrijf"
+    },
+    {
+      "code": "CP640",
+      "description": "Logica aan/uit-contact voor CV",
+      "category": "",
+      "factoryDefault": "Gesloten",
+      "settingRange": "Open; Gesloten",
+      "choices": [],
+      "technicalExplanation": "Logica aan/uit-contact voor CV"
+    },
+    {
+      "code": "CP780",
+      "description": "Regelstrategie groep",
+      "category": "",
+      "factoryDefault": "Automatisch",
+      "settingRange": "Automatisch; Ruimteregeling; Weersafhankelijk; Buiten & ruimte gebaseerd",
+      "choices": [],
+      "technicalExplanation": "Regelstrategie groep"
+    },
+    {
+      "code": "CP470",
+      "description": "Aantal dagen vloerdroogtijd",
+      "category": "",
+      "factoryDefault": "0 dagen",
+      "settingRange": "0–30 dagen",
+      "choices": [],
+      "technicalExplanation": "Aantal dagen vloerdroogtijd"
+    },
+    {
+      "code": "CP480",
+      "description": "Begintemperatuur vloerdroogprogramma",
+      "category": "",
+      "factoryDefault": "20 °C",
+      "settingRange": "20–50 °C",
+      "choices": [],
+      "technicalExplanation": "Begintemperatuur vloerdroogprogramma"
+    },
+    {
+      "code": "CP490",
+      "description": "Eindtemperatuur vloerdroogprogramma",
+      "category": "",
+      "factoryDefault": "20 °C",
+      "settingRange": "20–50 °C",
+      "choices": [],
+      "technicalExplanation": "Eindtemperatuur vloerdroogprogramma"
+    },
+    {
+      "code": "CP750",
+      "description": "Maximale aanwarmtijd groep",
+      "category": "",
+      "factoryDefault": "0 min",
+      "settingRange": "0–240 min",
+      "choices": [],
+      "technicalExplanation": "Maximale aanwarmtijd groep"
+    },
+    {
+      "code": "CP680",
+      "description": "Selectie buskanaal RU van groep",
+      "category": "",
+      "factoryDefault": 0,
+      "settingRange": "—",
+      "choices": [],
+      "technicalExplanation": "Selectie buskanaal RU van groep"
+    },
+    {
+      "code": "AP074",
+      "description": "Zomerbedrijf forceren; CV-functie wordt uitgeschakeld",
+      "category": "",
+      "factoryDefault": "Uit",
+      "settingRange": "Uit; Aan",
+      "choices": [],
+      "technicalExplanation": "Zomerbedrijf forceren; CV-functie wordt uitgeschakeld"
+    },
+    {
+      "code": "AP073",
+      "description": "Buitentemperatuur voor zomerbedrijf; bovengrens verwarming",
+      "category": "",
+      "factoryDefault": "22 °C",
+      "settingRange": "10–30,5 °C",
+      "choices": [],
+      "technicalExplanation": "Buitentemperatuur voor zomerbedrijf; bovengrens verwarming"
+    },
+    {
+      "code": "AP080",
+      "description": "Buitentemperatuur waaronder vorstbeveiliging wordt geactiveerd",
+      "category": "",
+      "factoryDefault": "3 °C",
+      "settingRange": "-30–30,5 °C; -30 = uitgeschakeld",
+      "choices": [],
+      "technicalExplanation": "Buitentemperatuur waaronder vorstbeveiliging wordt geactiveerd"
+    },
+    {
+      "code": "AP075",
+      "description": "Temperatuurverschil t.o.v. bovengrens buitentemperatuur waarbij generator niet verwarmt of koelt",
+      "category": "",
+      "factoryDefault": "4 K",
+      "settingRange": "0–20 °C",
+      "choices": [],
+      "technicalExplanation": "Temperatuurverschil t.o.v. bovengrens buitentemperatuur waarbij generator niet verwarmt of koelt"
+    },
+    {
+      "code": "AP079",
+      "description": "Tijdconstante gebouw voor weersafhankelijk regelen",
+      "category": "",
+      "factoryDefault": 3,
+      "settingRange": "0–10",
+      "choices": [],
+      "technicalExplanation": "Tijdconstante gebouw voor weersafhankelijk regelen"
+    },
+    {
+      "code": "AP056",
+      "description": "Aanwezigheid/type buitentemperatuursensor",
+      "category": "",
+      "factoryDefault": "Geen buitenvoeler",
+      "settingRange": "Geen buitenvoeler; AF60; QAC34",
+      "choices": [],
+      "technicalExplanation": "Aanwezigheid/type buitentemperatuursensor"
+    },
+    {
+      "code": "AP091",
+      "description": "Bron buitensensor",
+      "category": "",
+      "factoryDefault": "Auto",
+      "settingRange": "Auto; Bedrade sensor; Draadloze sensor; Internet gemeten; Geen",
+      "choices": [],
+      "technicalExplanation": "Bron buitensensor"
+    },
+    {
+      "code": "AP063",
+      "description": "Maximale aanvoertemperatuur voor CV-bedrijf",
+      "category": "",
+      "factoryDefault": "70 °C",
+      "settingRange": "20–90 °C",
+      "choices": [],
+      "technicalExplanation": "Maximale aanvoertemperatuur voor CV-bedrijf"
+    },
+    {
+      "code": "AP016",
+      "description": "CV-functie activeren",
+      "category": "",
+      "factoryDefault": "Aan",
+      "settingRange": "Uit; Aan",
+      "choices": [],
+      "technicalExplanation": "CV-functie activeren"
+    },
+    {
+      "code": "PP015",
+      "description": "Nadraaitijd CV-pomp",
+      "category": "",
+      "factoryDefault": "3 min",
+      "settingRange": "0–99 min",
+      "choices": [],
+      "technicalExplanation": "Nadraaitijd CV-pomp"
+    },
+    {
+      "code": "HP011",
+      "description": "Debietniveau waarbij waarschuwing voor onvoldoende debiet ontstaat",
+      "category": "",
+      "factoryDefault": "7 l/min",
+      "settingRange": "0–95 l/min",
+      "choices": [],
+      "technicalExplanation": "Debietniveau waarbij waarschuwing voor onvoldoende debiet ontstaat"
+    },
+    {
+      "code": "PP016",
+      "description": "Maximum pomptoerental CV-bedrijf",
+      "category": "",
+      "factoryDefault": "100 %",
+      "settingRange": "20–100 %",
+      "choices": [],
+      "technicalExplanation": "Maximum pomptoerental CV-bedrijf"
+    },
+    {
+      "code": "PP018",
+      "description": "Minimum pomptoerental CV-bedrijf",
+      "category": "",
+      "factoryDefault": "30 %",
+      "settingRange": "20–100 %",
+      "choices": [],
+      "technicalExplanation": "Minimum pomptoerental CV-bedrijf"
+    },
+    {
+      "code": "AP058",
+      "description": "Waarschuwingsniveau lage waterdruk",
+      "category": "",
+      "factoryDefault": "0,5 bar",
+      "settingRange": "0–2 bar",
+      "choices": [],
+      "technicalExplanation": "Waarschuwingsniveau lage waterdruk"
+    },
+    {
+      "code": "HP069",
+      "description": "Nominaal CV-debiet",
+      "category": "",
+      "factoryDefault": "12 l/min H4KW / 17 l/min H6KW",
+      "settingRange": "7–100 l/min",
+      "choices": [],
+      "technicalExplanation": "Nominaal CV-debiet"
+    },
+    {
+      "code": "AP101",
+      "description": "Instelling ontluchtingsprogramma",
+      "category": "",
+      "factoryDefault": "Alleen bij eerste opstart",
+      "settingRange": "Geen ontluchting bij opstart; Altijd ontluchten bij opstart; Alleen bij eerste opstart",
+      "choices": [],
+      "technicalExplanation": "Instelling ontluchtingsprogramma"
+    },
+    {
+      "code": "HP000",
+      "description": "Bivalente temperatuur; boven deze temperatuur draait de back-up niet",
+      "category": "",
+      "factoryDefault": "15 °C",
+      "settingRange": "-10–20 °C",
+      "choices": [],
+      "technicalExplanation": "Bivalente temperatuur; boven deze temperatuur draait de back-up niet"
+    },
+    {
+      "code": "HP029",
+      "description": "Type reservewarmtebron",
+      "category": "",
+      "factoryDefault": "Ketel is backup",
+      "settingRange": "Geen backup; 1 elektrische fase; 2 elektrische fasen; Ketel is backup",
+      "choices": [],
+      "technicalExplanation": "Type reservewarmtebron"
+    },
+    {
+      "code": "HP030",
+      "description": "Vertraging starten reserve-energiebron CV",
+      "category": "",
+      "factoryDefault": "0 min",
+      "settingRange": "0–600 min",
+      "choices": [],
+      "technicalExplanation": "Vertraging starten reserve-energiebron CV"
+    },
+    {
+      "code": "HP031",
+      "description": "Vertraging stoppen reserve-energiebron CV",
+      "category": "",
+      "factoryDefault": "4 min",
+      "settingRange": "0–600 min",
+      "choices": [],
+      "technicalExplanation": "Vertraging stoppen reserve-energiebron CV"
+    },
+    {
+      "code": "HP047",
+      "description": "Startvertraging back-up bij minimale buitentemperatuur",
+      "category": "",
+      "factoryDefault": "8 min",
+      "settingRange": "0–60 min",
+      "choices": [],
+      "technicalExplanation": "Startvertraging back-up bij minimale buitentemperatuur"
+    },
+    {
+      "code": "HP048",
+      "description": "Startvertraging back-up bij maximale buitentemperatuur",
+      "category": "",
+      "factoryDefault": "30 min",
+      "settingRange": "0–60 min",
+      "choices": [],
+      "technicalExplanation": "Startvertraging back-up bij maximale buitentemperatuur"
+    },
+    {
+      "code": "HP049",
+      "description": "Minimale buitentemperatuur behorend bij HP047",
+      "category": "",
+      "factoryDefault": "-10 °C",
+      "settingRange": "-30–0 °C",
+      "choices": [],
+      "technicalExplanation": "Minimale buitentemperatuur behorend bij HP047"
+    },
+    {
+      "code": "HP050",
+      "description": "Maximale buitentemperatuur behorend bij HP048",
+      "category": "",
+      "factoryDefault": "15 °C",
+      "settingRange": "-30–20 °C",
+      "choices": [],
+      "technicalExplanation": "Maximale buitentemperatuur behorend bij HP048"
+    },
+    {
+      "code": "AP029",
+      "description": "Toestemming geven voor koelen",
+      "category": "",
+      "factoryDefault": "Niet toegestaan",
+      "settingRange": "Niet toegestaan; Toegestaan",
+      "choices": [],
+      "technicalExplanation": "Toestemming geven voor koelen"
+    },
+    {
+      "code": "AP028",
+      "description": "Configuratie koelmodus",
+      "category": "",
+      "factoryDefault": "Uit",
+      "settingRange": "Uit; Actieve koeling",
+      "choices": [],
+      "technicalExplanation": "Configuratie koelmodus"
+    },
+    {
+      "code": "HP003",
+      "description": "Minimale aanvoertemperatuur warmtepomp tijdens koeling",
+      "category": "",
+      "factoryDefault": "15 °C",
+      "settingRange": "15–30 °C",
+      "choices": [],
+      "technicalExplanation": "Minimale aanvoertemperatuur warmtepomp tijdens koeling"
+    },
+    {
+      "code": "AP015",
+      "description": "Koelmodus forceren ongeacht buitentemperatuur",
+      "category": "",
+      "factoryDefault": "Nee",
+      "settingRange": "Nee; Ja",
+      "choices": [],
+      "technicalExplanation": "Koelmodus forceren ongeacht buitentemperatuur"
+    },
+    {
+      "code": "AP072",
+      "description": "Configuratie vochtigheidssensor",
+      "category": "",
+      "factoryDefault": "Nee",
+      "settingRange": "Nee; Aan-Uit; 0-10V",
+      "choices": [],
+      "technicalExplanation": "Configuratie vochtigheidssensor"
+    },
+    {
+      "code": "HP080",
+      "description": "Relatieve vochtigheid waarbij offset bij koelingsetpunt wordt opgeteld",
+      "category": "",
+      "factoryDefault": "50 %",
+      "settingRange": "0–100 %",
+      "choices": [],
+      "technicalExplanation": "Relatieve vochtigheid waarbij offset bij koelingsetpunt wordt opgeteld"
+    },
+    {
+      "code": "HP079",
+      "description": "Maximale offset koelingsetpunt bij 0-10V vochtigheidssensor",
+      "category": "",
+      "factoryDefault": "5 K",
+      "settingRange": "0–5 °C",
+      "choices": [],
+      "technicalExplanation": "Maximale offset koelingsetpunt bij 0-10V vochtigheidssensor"
+    },
+    {
+      "code": "HP033",
+      "description": "Pulswaarde elektrische teller",
+      "category": "",
+      "factoryDefault": "1 Wh",
+      "settingRange": "0–1000 Wh",
+      "choices": [],
+      "technicalExplanation": "Pulswaarde elektrische teller"
+    },
+    {
+      "code": "HP061",
+      "description": "Optimalisatiemethode hybride systeem",
+      "category": "",
+      "factoryDefault": "Kosten",
+      "settingRange": "Geen; Kosten; Primaire energie; Hybride CO2",
+      "choices": [],
+      "technicalExplanation": "Optimalisatiemethode hybride systeem"
+    },
+    {
+      "code": "AP001",
+      "description": "Functie blokkerende ingang",
+      "category": "",
+      "factoryDefault": "Gedeeltelijke blokkering",
+      "settingRange": "Volledig geblokkeerd; Gedeeltelijke blokkering; Reset vergrendeling gebruiker; Backup vrijgegeven; Generator vrijgegeven; Generator & backup vrijgegeven; Hoog-laagtarief; Alleen fotovoltaïsch WP; FV WP en back-up; Smart Grid gereed; Verwarming-koeling",
+      "choices": [],
+      "technicalExplanation": "Functie blokkerende ingang"
+    },
+    {
+      "code": "AP098",
+      "description": "Configuratie contact blokkerende ingang 1",
+      "category": "",
+      "factoryDefault": "Open",
+      "settingRange": "Open; Gesloten",
+      "choices": [],
+      "technicalExplanation": "Configuratie contact blokkerende ingang 1"
+    },
+    {
+      "code": "AP099",
+      "description": "Configuratie contact blokkerende ingang 2",
+      "category": "",
+      "factoryDefault": "Open",
+      "settingRange": "Open; Gesloten",
+      "choices": [],
+      "technicalExplanation": "Configuratie contact blokkerende ingang 2"
+    },
+    {
+      "code": "AP100",
+      "description": "Functie blokkerende ingang 2",
+      "category": "",
+      "factoryDefault": "Gedeeltelijke blokkering",
+      "settingRange": "Selecteerbare BL-functie",
+      "choices": [],
+      "technicalExplanation": "Functie blokkerende ingang 2"
+    },
+    {
+      "code": "HP091",
+      "description": "Temperatuuroffset verwarmingssetpunt bij beschikbare PV-energie",
+      "category": "",
+      "factoryDefault": "0 K",
+      "settingRange": "0–30 °C",
+      "choices": [],
+      "technicalExplanation": "Temperatuuroffset verwarmingssetpunt bij beschikbare PV-energie"
+    },
+    {
+      "code": "AP002",
+      "description": "Handmatige warmtevraag activeren",
+      "category": "",
+      "factoryDefault": "Uit",
+      "settingRange": "Uit; Setpunt; TBuiten regelaar",
+      "choices": [],
+      "technicalExplanation": "Handmatige warmtevraag activeren"
+    },
+    {
+      "code": "AP026",
+      "description": "Aanvoertemperatuursetpunt bij handmatige warmtevraag",
+      "category": "",
+      "factoryDefault": "40 °C",
+      "settingRange": "7–70 °C",
+      "choices": [],
+      "technicalExplanation": "Aanvoertemperatuursetpunt bij handmatige warmtevraag"
+    },
+    {
+      "code": "HP058",
+      "description": "Stille modus warmtepomp",
+      "category": "",
+      "factoryDefault": "Stille modus level 1",
+      "settingRange": "Stille modusinstelling",
+      "choices": [],
+      "technicalExplanation": "Stille modus warmtepomp"
+    },
+    {
+      "code": "HP094",
+      "description": "Starttijd stille werking",
+      "category": "",
+      "factoryDefault": "22:00",
+      "settingRange": "Tijdinstelling",
+      "choices": [],
+      "technicalExplanation": "Starttijd stille werking"
+    },
+    {
+      "code": "HP095",
+      "description": "Eindtijd stille werking",
+      "category": "",
+      "factoryDefault": "08:00",
+      "settingRange": "Tijdinstelling",
+      "choices": [],
+      "technicalExplanation": "Eindtijd stille werking"
+    },
+    {
+      "code": "AP010",
+      "description": "Servicemelding apparaat",
+      "category": "",
+      "factoryDefault": "Geen",
+      "settingRange": "Geen; Zelf ingesteld",
+      "choices": [],
+      "technicalExplanation": "Servicemelding apparaat"
+    },
+    {
+      "code": "AP009",
+      "description": "Bedrijfsuren voor genereren servicemelding",
+      "category": "",
+      "factoryDefault": "8700 uur",
+      "settingRange": "0–32768 uur",
+      "choices": [],
+      "technicalExplanation": "Bedrijfsuren voor genereren servicemelding"
+    },
+    {
+      "code": "AP011",
+      "description": "Uren onder spanning tussen servicemeldingen",
+      "category": "",
+      "factoryDefault": "8700 uur",
+      "settingRange": "0–32768 uur",
+      "choices": [],
+      "technicalExplanation": "Uren onder spanning tussen servicemeldingen"
+    },
+    {
+      "code": "AP129",
+      "description": "Bluetooth-functie",
+      "category": "",
+      "factoryDefault": "Aan",
+      "settingRange": "Aan; Uit",
+      "choices": [],
+      "technicalExplanation": "Bluetooth-functie"
+    },
+    {
+      "code": "HP051",
+      "description": "Minimum bedrijfstemperatuur voor de buitenunit",
+      "category": "",
+      "factoryDefault": "-15 °C",
+      "settingRange": "—",
+      "choices": [],
+      "technicalExplanation": "Minimum bedrijfstemperatuur voor de buitenunit"
+    }
+  ]
+}

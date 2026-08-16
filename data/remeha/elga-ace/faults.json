@@ -1,0 +1,475 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "elga-ace",
+  "source": {
+    "title": "Remeha.nl",
+    "url": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaNL/RemehaNL/Documentatie/Consument/02---Hybride-warmtepompen/Elga-Ace/Documentatie-voor-installateurs/Installatie-gebruikers-en-servicehandleiding-Elga-Ace.pdf"
+  },
+  "faults": [
+    {
+      "code": "A02.06",
+      "codeType": "storing",
+      "title": "Waarschuwing waterdruk",
+      "meaning": "Waterdrukwaarschuwing actief",
+      "causes": [
+        "Waterdruk te laag",
+        "Waterdruk te hoog",
+        "Mogelijke lekkage bij te lage systeemdruk"
+      ],
+      "checks": [
+        "Controleer de waterdruk",
+        "Controleer bij te lage druk op lekkage",
+        "Vul het systeem bij indien nodig",
+        "Open bij te hoge druk de aftapkraan om de druk te verlagen"
+      ]
+    },
+    {
+      "code": "H00.32",
+      "codeType": "storing",
+      "title": "T Buiten open",
+      "meaning": "Buitentemperatuursensor is verwijderd of meet een temperatuur beneden het bereik",
+      "causes": [
+        "Onderbroken of slechte sensorverbinding",
+        "Sensor niet goed gemonteerd",
+        "Defecte buitentemperatuursensor"
+      ],
+      "checks": [
+        "Controleer de bekabeling tussen besturingsprint en sensor",
+        "Controleer de montage van de sensor",
+        "Controleer de weerstand van de sensor",
+        "Vervang de sensor indien nodig"
+      ]
+    },
+    {
+      "code": "H00.33",
+      "codeType": "storing",
+      "title": "T Buiten kortgesl.",
+      "meaning": "Buitentemperatuursensor is kortgesloten of meet een temperatuur boven het bereik",
+      "causes": [
+        "Kortsluiting of slechte sensorverbinding",
+        "Sensor niet goed gemonteerd",
+        "Defecte buitentemperatuursensor"
+      ],
+      "checks": [
+        "Controleer de bekabeling tussen besturingsprint en sensor",
+        "Controleer de montage van de sensor",
+        "Controleer de weerstand van de sensor",
+        "Vervang de sensor indien nodig"
+      ]
+    },
+    {
+      "code": "H00.40",
+      "codeType": "storing",
+      "title": "Waterdruk open",
+      "meaning": "Waterdruksensor is verwijderd of meet een druk beneden het bereik",
+      "causes": [
+        "Onderbroken of slechte sensorverbinding",
+        "Sensor niet goed gemonteerd",
+        "Defecte waterdruksensor"
+      ],
+      "checks": [
+        "Controleer de bekabeling tussen besturingsprint en sensor",
+        "Controleer de montage van de sensor",
+        "Controleer de weerstand van de sensor",
+        "Vervang de sensor indien nodig"
+      ]
+    },
+    {
+      "code": "H00.41",
+      "codeType": "storing",
+      "title": "Waterdruk kortgsl",
+      "meaning": "Waterdruksensor is kortgesloten of meet boven het bereik",
+      "causes": [
+        "Kortsluiting of slechte sensorverbinding",
+        "Sensor niet goed gemonteerd",
+        "Defecte waterdruksensor"
+      ],
+      "checks": [
+        "Controleer de bekabeling tussen besturingsprint en sensor",
+        "Controleer de montage van de sensor",
+        "Controleer de weerstand van de sensor",
+        "Vervang de sensor indien nodig"
+      ]
+    },
+    {
+      "code": "H00.47",
+      "codeType": "storing",
+      "title": "T WP aanvoer open",
+      "meaning": "Aanvoertemperatuursensor van de warmtepomp is verwijderd of meet een temperatuur beneden het bereik",
+      "causes": [
+        "Onderbroken of slechte sensorverbinding",
+        "Sensor niet goed gemonteerd",
+        "Defecte temperatuursensor"
+      ],
+      "checks": [
+        "Controleer de bekabeling tussen besturingsprint en sensor",
+        "Controleer de montage van de sensor",
+        "Controleer de weerstand van de sensor",
+        "Vervang de sensor indien nodig"
+      ]
+    },
+    {
+      "code": "H00.48",
+      "codeType": "storing",
+      "title": "T WP aanvoer dicht",
+      "meaning": "Temperatuursensor van de warmtepomp is kortgesloten of meet een temperatuur boven het bereik",
+      "causes": [
+        "Kortsluiting of slechte sensorverbinding",
+        "Sensor niet goed gemonteerd",
+        "Defecte temperatuursensor"
+      ],
+      "checks": [
+        "Controleer de bekabeling tussen besturingsprint en sensor",
+        "Controleer de montage van de sensor",
+        "Controleer de weerstand van de sensor",
+        "Vervang de sensor indien nodig"
+      ]
+    },
+    {
+      "code": "H00.51",
+      "codeType": "storing",
+      "title": "T WP retour open",
+      "meaning": "Retourtemperatuursensor van de warmtepomp is verwijderd of meet een temperatuur beneden het bereik",
+      "causes": [
+        "Onderbroken of slechte sensorverbinding",
+        "Sensor niet goed gemonteerd",
+        "Defecte retourtemperatuursensor"
+      ],
+      "checks": [
+        "Controleer de bekabeling tussen besturingsprint en sensor",
+        "Controleer de montage van de sensor",
+        "Controleer de weerstand van de sensor",
+        "Vervang de sensor indien nodig"
+      ]
+    },
+    {
+      "code": "H00.52",
+      "codeType": "storing",
+      "title": "T WP retour dicht",
+      "meaning": "Retourtemperatuursensor van de warmtepomp is kortgesloten of meet een temperatuur boven het bereik",
+      "causes": [
+        "Kortsluiting of slechte sensorverbinding",
+        "Sensor niet goed gemonteerd",
+        "Defecte retourtemperatuursensor"
+      ],
+      "checks": [
+        "Controleer de bekabeling tussen besturingsprint en sensor",
+        "Controleer de montage van de sensor",
+        "Controleer de weerstand van de sensor",
+        "Vervang de sensor indien nodig"
+      ]
+    },
+    {
+      "code": "H02.02",
+      "codeType": "storing",
+      "title": "Wacht op config.nr.",
+      "meaning": "Het toestel wacht op een configuratienummer",
+      "causes": [
+        "CN1/CN2 verkeerd geconfigureerd",
+        "Besturingsprint vervangen zonder toestelconfiguratie"
+      ],
+      "checks": [
+        "Controleer CN1 en CN2 aan de hand van het typeplaatje",
+        "Configureer CN1/CN2 correct",
+        "Voer na vervanging van de besturingsprint automatische detectie uit"
+      ]
+    },
+    {
+      "code": "H02.03",
+      "codeType": "storing",
+      "title": "Configuratiefout",
+      "meaning": "De toestelconfiguratie is onjuist",
+      "causes": [
+        "CN1/CN2 verkeerd ingesteld",
+        "Besturingsprint vervangen zonder juiste configuratie"
+      ],
+      "checks": [
+        "Controleer CN1 en CN2 aan de hand van het typeplaatje",
+        "Configureer CN1/CN2 correct",
+        "Voer automatische detectie uit"
+      ]
+    },
+    {
+      "code": "H02.04",
+      "codeType": "storing",
+      "title": "Parameterfout",
+      "meaning": "Verkeerde configuratie van de parameters van de besturingsprint",
+      "causes": [
+        "Parameters van de besturingsprint verkeerd geconfigureerd",
+        "Mogelijk defecte besturingsprint"
+      ],
+      "checks": [
+        "Herstel de fabrieksinstellingen",
+        "Controleer of de storing verdwijnt",
+        "Vervang de besturingsprint als de storing aanwezig blijft"
+      ]
+    },
+    {
+      "code": "H02.05",
+      "codeType": "storing",
+      "title": "CSU & CU komen niet overeen",
+      "meaning": "CSU komt niet overeen met het CU-type",
+      "causes": [
+        "Programmeerfout"
+      ],
+      "checks": [
+        "Controleer de toestelconfiguratie",
+        "Neem contact op met de servicedienst"
+      ]
+    },
+    {
+      "code": "H02.07",
+      "codeType": "storing",
+      "title": "Fout waterdruk",
+      "meaning": "Waterdrukfout actief",
+      "causes": [
+        "Onvoldoende systeemdruk"
+      ],
+      "checks": [
+        "Controleer de systeemdruk",
+        "Vul de installatie tot 2 bar"
+      ]
+    },
+    {
+      "code": "H02.09",
+      "codeType": "storing",
+      "title": "Deelblokkering",
+      "meaning": "Gedeeltelijke blokkering van het apparaat gedetecteerd",
+      "causes": [
+        "BL-ingang op de klemmenstrook staat open",
+        "Probleem met extern BL-contact",
+        "Bedradingsprobleem",
+        "Onjuiste BL-parameterinstellingen"
+      ],
+      "checks": [
+        "Controleer het contact op de BL-ingang",
+        "Controleer de bedrading",
+        "Controleer AP001",
+        "Controleer AP098",
+        "Controleer AP099",
+        "Controleer AP100"
+      ]
+    },
+    {
+      "code": "H02.10",
+      "codeType": "storing",
+      "title": "Volledige blokkering",
+      "meaning": "Volledige blokkering van het apparaat gedetecteerd",
+      "causes": [
+        "BL-ingang op de klemmenstrook staat open",
+        "Probleem met extern BL-contact",
+        "Bedradingsprobleem",
+        "Onjuiste BL-parameterinstellingen"
+      ],
+      "checks": [
+        "Controleer het contact op de BL-ingang",
+        "Controleer de bedrading",
+        "Controleer AP001",
+        "Controleer AP098",
+        "Controleer AP099",
+        "Controleer AP100"
+      ]
+    },
+    {
+      "code": "H02.23",
+      "codeType": "storing",
+      "title": "Systeemdebiet fout",
+      "meaning": "Waterdoorstromingsfout van het systeem actief",
+      "causes": [
+        "Afsluiter warmtepomp of CV-installatie gesloten",
+        "Radiatoren of vloerverwarmingsgroepen gesloten",
+        "Lucht in installatie",
+        "Circulatiepomp werkt niet of is verkeerd afgesteld",
+        "Bypass verkeerd ingesteld",
+        "Retourfilter vervuild",
+        "Aanvoersensor vervuild"
+      ],
+      "checks": [
+        "Controleer of afsluiters van warmtepomp en CV-installatie geopend zijn",
+        "Controleer of radiatoren en vloerverwarmingsgroepen geopend zijn",
+        "Ontlucht de warmtepomp/installatie",
+        "Controleer of de circulatiepomp draait",
+        "Controleer de instelling van de bypassklep",
+        "Controleer en reinig het retourfilter",
+        "Controleer bij optreden tijdens CV-bedrijf de pompinstelling en AP016/AP018",
+        "Controleer en reinig de aanvoersensor"
+      ]
+    },
+    {
+      "code": "H02.36",
+      "codeType": "storing",
+      "title": "Functioneel apparaat mist",
+      "meaning": "Functioneel apparaat is ontkoppeld",
+      "causes": [
+        "Geen communicatie tussen hoofdbesturingsprint en optionele besturingsprint",
+        "Voedingskabel niet goed aangesloten",
+        "BUS-kabel niet goed aangesloten"
+      ],
+      "checks": [
+        "Controleer de voedingskabel tussen de besturingsprints",
+        "Controleer de BUS-kabel tussen de besturingsprints",
+        "Voer automatische detectie uit"
+      ]
+    },
+    {
+      "code": "H02.37",
+      "codeType": "storing",
+      "title": "Niet kritisch apparaat mist",
+      "meaning": "Niet-kritisch apparaat is ontkoppeld",
+      "causes": [
+        "Geen communicatie tussen hoofdbesturingsprint en optionele besturingsprint",
+        "Voedingskabel niet goed aangesloten",
+        "BUS-verbinding niet goed aangesloten"
+      ],
+      "checks": [
+        "Controleer de voedingskabel tussen de besturingsprints",
+        "Controleer de BUS-kabel en aansluitingen van de besturingsprints",
+        "Voer automatische detectie uit"
+      ]
+    },
+    {
+      "code": "H02.56",
+      "codeType": "storing",
+      "title": "OpenTherm fout",
+      "meaning": "De OpenTherm-interface was operationeel maar is gestopt met werken",
+      "causes": [
+        "OpenTherm-communicatie/interface gestopt"
+      ],
+      "checks": [
+        "Schakel de voeding van de warmtepomp uit",
+        "Schakel de voeding weer in",
+        "Controleer of de storing terugkomt"
+      ]
+    },
+    {
+      "code": "H02.60",
+      "codeType": "storing",
+      "title": "Niet-ondersteunde functie",
+      "meaning": "De gekozen functie wordt niet ondersteund door de groep",
+      "causes": [
+        "Verkeerde functie voor de betreffende zone/groep ingesteld"
+      ],
+      "checks": [
+        "Controleer de ingestelde zonefunctie",
+        "Wijzig de functiezone"
+      ]
+    },
+    {
+      "code": "H02.71",
+      "codeType": "storing",
+      "title": "ModBus fout",
+      "meaning": "De ModBus-interface was in werking maar is gestopt",
+      "causes": [
+        "Communicatiefout tussen EHC-07 en besturingsprint van de Modbus-set"
+      ],
+      "checks": [
+        "Controleer de communicatie tussen EHC-07 en Modbus-set",
+        "Controleer de aansluitingen",
+        "Neem contact op met de servicedienst indien de storing blijft bestaan"
+      ]
+    },
+    {
+      "code": "H06.02",
+      "codeType": "storing",
+      "title": "BL hydraulische bijverwarming",
+      "meaning": "Hydraulische bijverwarming is geblokkeerd",
+      "causes": [
+        "Aangesloten back-upketel werkt niet naar behoren",
+        "Storing in de cv-ketel"
+      ],
+      "checks": [
+        "Controleer de aangesloten back-upketel",
+        "Lees de ketelstoring uit",
+        "Verhelp de storing van de ketel"
+      ]
+    },
+    {
+      "code": "E00.00",
+      "codeType": "storing",
+      "title": "T Aanvoer open",
+      "meaning": "Aanvoertemperatuursensor is verwijderd of meet een temperatuur beneden het bereik",
+      "causes": [
+        "Slechte sensorverbinding",
+        "Sensor niet goed gemonteerd",
+        "Defecte sensor"
+      ],
+      "checks": [
+        "Controleer de bekabeling tussen besturingsprint en sensor",
+        "Controleer of de sensor goed gemonteerd is",
+        "Controleer de weerstand van de sensor",
+        "Vervang de sensor indien nodig"
+      ]
+    },
+    {
+      "code": "E00.01",
+      "codeType": "storing",
+      "title": "Aanvoertemperatuursensor kortgesloten",
+      "meaning": "Aanvoertemperatuursensor is kortgesloten of meet een temperatuur boven het bereik",
+      "causes": [
+        "Slechte sensorverbinding of kortsluiting",
+        "Sensor niet goed gemonteerd",
+        "Defecte sensor"
+      ],
+      "checks": [
+        "Controleer de bekabeling tussen besturingsprint en sensor",
+        "Controleer of de sensor goed gemonteerd is",
+        "Controleer de weerstand van de sensor",
+        "Vervang de sensor indien nodig"
+      ]
+    },
+    {
+      "code": "E02.13",
+      "codeType": "storing",
+      "title": "Blokkerende ingang",
+      "meaning": "Blokkerende ingang van de besturingsautomaat is door de buitenomgeving van het apparaat geactiveerd",
+      "causes": [
+        "Probleem in bedrading van BL-contact",
+        "Extern onderdeel op BL-contact activeert blokkering"
+      ],
+      "checks": [
+        "Controleer de bedrading",
+        "Controleer het onderdeel dat op het BL-contact is aangesloten"
+      ]
+    },
+    {
+      "code": "E02.24",
+      "codeType": "storing",
+      "title": "Systeemdebiet vergrendeld",
+      "meaning": "Vergrendeling van de waterdoorstroming in het systeem is actief",
+      "causes": [
+        "Afsluiter warmtepomp of CV-installatie gesloten",
+        "Radiatoren of vloerverwarmingsgroepen gesloten",
+        "Lucht in installatie",
+        "Circulatiepomp niet in bedrijf",
+        "Retourfilter vervuild",
+        "Aanvoersensor vervuild",
+        "Verwarmingscircuit vervuild"
+      ],
+      "checks": [
+        "Controleer of afsluiters van warmtepomp en CV-installatie geopend zijn",
+        "Controleer of radiatoren en vloerverwarmingsgroepen geopend zijn",
+        "Ontlucht de warmtepomp/installatie",
+        "Controleer of de circulatiepomp in bedrijf is",
+        "Controleer en reinig het retourfilter",
+        "Controleer en reinig de aanvoersensor",
+        "Reinig indien nodig het verwarmingscircuit"
+      ]
+    },
+    {
+      "code": "H06.01",
+      "codeType": "storing",
+      "title": "WP-eenheid fout",
+      "meaning": "Er is een storing in de warmtepomp/buitenunit opgetreden",
+      "causes": [
+        "Buitenunit heeft een eigen storingscode geregistreerd"
+      ],
+      "checks": [
+        "Open Installateur",
+        "Open Storingsgeschiedenis",
+        "Selecteer H06.01",
+        "Lees varHpOutdoorUnitErro uit",
+        "Zoek de bijbehorende buitenunitcode op in de buitenunit-storingstabel"
+      ]
+    }
+  ]
+}
