@@ -1,8 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="112" fill="#142b26"/>
-  <path d="M128 142h276l-27 58H101z" fill="#cbe957"/>
-  <path d="M157 229h196l-27 58H130z" fill="#cbe957"/>
-  <path d="M187 316h116l-27 58H160z" fill="#cbe957"/>
-  <circle cx="390" cy="361" r="35" fill="#087858"/>
-  <path d="m378 361 9 9 18-20" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="MonteurMaatje">
+  <rect width="512" height="512" rx="108" fill="#142b26"/>
+  <path d="M118 338V174c0-17 14-31 31-31h27c12 0 23 7 28 18l52 112 52-112c5-11 16-18 28-18h27c17 0 31 14 31 31v164h-64V239l-43 92c-5 11-16 18-28 18h-6c-12 0-23-7-28-18l-43-92v99z" fill="#cbe957"/>
+  <path d="M256 273l26-56 25 54-26 57c-5 11-15 18-27 18h-3c-11 0-22-7-27-18l-20-43 28-61z" fill="#087858"/>
 </svg>
