@@ -49,7 +49,7 @@
                                            "faultsPath":  "data/intergas/xtreme/faults.json",
                                            "parametersPath":  "data/intergas/xtreme/parameters.json",
                                            "combustionPath":  "data/intergas/xtreme/combustion.json",
-                                           "combustionPath":  "data/intergas/xtreme/diagnostics.json",
+                                           "diagnosticsPath":  "data/intergas/xtreme/diagnostics.json",
                                            "recordCount":  22,
                                            "sourceTitle":  "Intergas Xtreme Installatie handleiding",
                                            "sourceUrl":  "https://www.intergas-verwarming.nl/app/uploads/2018/01/84004414.pdf"
