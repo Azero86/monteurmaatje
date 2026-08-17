@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "hre",
+  "source": {
+    "title": "Intergas installatievoorschrift Kombi Kompakt HRE",
+    "url": "https://www.intergas-verwarming.nl/app/uploads/2018/01/88557809-Installatievoorschrift-Kombi-Kompakt-HRE.pdf",
+    "section": "8.2.3",
+    "page": 67
+  },
+  "diagnostics": [
+    {
+      "id": "geen-verwarming-cv",
+      "title": "Geen verwarming (CV)",
+      "sourceSection": "8.2.3",
+      "startStep": "toestel-uit",
+      "steps": [
+        {
+          "id": "toestel-uit",
+          "question": "Toont het servicedisplay een balkje en staat het toestel uit?",
+          "yes": {
+            "actions": [
+              "Schakel het toestel in met de aan/uit-toets."
+            ],
+            "next": "regeling"
+          },
+          "no": "regeling"
+        },
+        {
+          "id": "regeling",
+          "question": "Is de kamerthermostaat of weersafhankelijke regeling niet gesloten of mogelijk defect?",
+          "yes": {
+            "actions": [
+              "Controleer de bedrading.",
+              "Controleer de OpenTherm- en aan/uit-aansluiting op het toestel.",
+              "Controleer de thermostaat en vervang deze indien defect.",
+              "Controleer de weersafhankelijke regeling en vervang deze indien defect."
+            ],
+            "next": "pomp"
+          },
+          "no": "pomp"
+        },
+        {
+          "id": "pomp",
+          "question": "Draait de pomp niet terwijl het display 80 en 1 weergeeft?",
+          "yes": {
+            "actions": [
+              "Controleer de voedingsspanning van de pomp.",
+              "Controleer connector X2.",
+              "Controleer of de pompas vrij kan draaien.",
+              "Vervang de pomp als deze defect is."
+            ],
+            "next": "voeding-24v"
+          },
+          "no": "voeding-24v"
+        },
+        {
+          "id": "voeding-24v",
+          "question": "Ontbreekt de 24 V-spanning?",
+          "yes": {
+            "actions": [
+              "Controleer de bedrading aan de hand van het elektrisch schema.",
+              "Controleer connector X4.",
+              "Vervang de branderautomaat als deze defect is."
+            ],
+            "next": "einde"
+          },
+          "no": "einde"
+        },
+        {
+          "id": "einde",
+          "type": "end",
+          "message": "Binnen fabrikantprocedure 8.2.3 is geen volgende controle beschreven. Raadpleeg de officiële Intergas-handleiding voor verdere diagnose."
+        }
+      ]
+    }
+  ]
+}
