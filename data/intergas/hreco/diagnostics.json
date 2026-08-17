@@ -16,7 +16,7 @@
       "steps": [
         {
           "id": "voordruk-hoog",
-          "question": "Is de gasvoordruk te hoog?",
+          "question": "Is de voordruk te hoog?",
           "yes": {
             "actions": [
               "Mogelijk is de huisdrukregelaar defect. Neem contact op met het energiebedrijf."
@@ -30,7 +30,7 @@
           "question": "Is de ontsteekafstand onjuist?",
           "yes": {
             "actions": [
-              "Controleer de ontsteekpenafstand met de controlemal (art. nr. 074617).",
+              "Controleer de ontsteekpenafstand met controlemal art. nr. 074617.",
               "Vervang de ontsteekpen indien nodig."
             ],
             "next": "gas-lucht"
@@ -42,7 +42,7 @@
           "question": "Is de gas-luchtregeling niet goed ingeregeld?",
           "yes": {
             "actions": [
-              "Controleer de afstelling volgens § 7.8 en § 7.9 van de officiële handleiding."
+              "Controleer de afstelling volgens § 7.8 en § 7.9."
             ],
             "next": "zwakke-vonk"
           },
@@ -50,12 +50,13 @@
         },
         {
           "id": "zwakke-vonk",
-          "question": "Is de ontstekingsvonk zwak?",
+          "question": "Is de vonk zwak?",
           "yes": {
             "actions": [
-              "Controleer de ontsteekpenafstand met de controlemal (art. nr. 074617).",
+              "Controleer de ontsteekpenafstand met controlemal art. nr. 074617.",
               "Controleer en/of vervang de ontsteekkabel.",
-              "Vervang zo nodig de ontsteekunit op het gasblok en de ontsteekpen."
+              "Vervang de ontsteekunit op het gasblok.",
+              "Vervang de ontsteekpen."
             ],
             "next": "einde"
           },
@@ -76,7 +77,7 @@
       "steps": [
         {
           "id": "voordruk-laag",
-          "question": "Is de gasvoordruk lager dan 20 mbar?",
+          "question": "Is de voordruk te laag (lager dan 20 mbar)?",
           "yes": {
             "actions": [
               "Mogelijk is de huisdrukregelaar defect. Neem contact op met het energiebedrijf."
@@ -101,7 +102,7 @@
           "question": "Is de gas-luchtregeling niet goed ingeregeld?",
           "yes": {
             "actions": [
-              "Controleer de afstelling volgens § 7.8 en § 7.9 van de officiële handleiding."
+              "Controleer de afstelling volgens § 7.8 en § 7.9."
             ],
             "next": "branderpakking"
           },
@@ -140,25 +141,25 @@
       "id": "geen-verwarming-cv",
       "title": "Geen verwarming (CV)",
       "sourceSection": "8.2.3",
-      "startStep": "display-leeg-stekker",
+      "startStep": "display-stekker",
       "steps": [
         {
-          "id": "display-leeg-stekker",
-          "question": "Geeft het servicedisplay niets aan en zit de stekker niet goed in de wandcontactdoos?",
+          "id": "display-stekker",
+          "question": "Geeft het servicedisplay niets aan?",
           "yes": {
             "actions": [
               "Controleer of de stekker in de wandcontactdoos is gestoken."
             ],
-            "next": "display-leeg-zekering"
+            "next": "display-zekering"
           },
-          "no": "display-leeg-zekering"
+          "no": "display-zekering"
         },
         {
-          "id": "display-leeg-zekering",
+          "id": "display-zekering",
           "question": "Geeft het servicedisplay nog steeds niets aan?",
           "yes": {
             "actions": [
-              "Controleer de zekering volgens het elektrisch schema in § 10.2."
+              "Controleer de zekering volgens het elektrisch schema § 10.2."
             ],
             "next": "toestel-uit"
           },
@@ -177,12 +178,13 @@
         },
         {
           "id": "regeling",
-          "question": "Is de kamerthermostaat of weersafhankelijke regeling niet aangesloten of defect?",
+          "question": "Is de kamerthermostaat/weersafhankelijke regeling niet aangesloten of defect?",
           "yes": {
             "actions": [
               "Controleer de bedrading.",
-              "Controleer OpenTherm en de aan/uit-aansluiting of de RF-verbinding.",
-              "Vervang de thermostaat of weersafhankelijke regeling indien defect."
+              "Controleer OpenTherm, de aan/uit-aansluiting of de verbinding tussen CV-ketel en RF-kamerthermostaat.",
+              "Vervang de thermostaat indien defect.",
+              "Vervang de weersafhankelijke regeling indien defect."
             ],
             "next": "pomp"
           },
@@ -190,24 +192,24 @@
         },
         {
           "id": "pomp",
-          "question": "Draait de pomp niet en toont het display 80 en 1?",
+          "question": "Draait de pomp niet en geeft het display 80 en 1 weer?",
           "yes": {
             "actions": [
               "Controleer de spanning.",
               "Controleer connector X2 en X4."
             ],
-            "next": "voeding-24v"
+            "next": "24v"
           },
-          "no": "voeding-24v"
+          "no": "24v"
         },
         {
-          "id": "voeding-24v",
-          "question": "Ontbreekt de 24 V-voeding?",
+          "id": "24v",
+          "question": "Ontbreekt de 24 V-spanning?",
           "yes": {
             "actions": [
-              "Controleer de bedrading volgens het elektrisch schema.",
-              "Controleer connector X4.",
-              "Vervang de defecte automaat indien nodig."
+              "Vervang de defecte automaat.",
+              "Controleer de bedrading volgens het schema.",
+              "Controleer connector X4."
             ],
             "next": "einde"
           },
@@ -224,11 +226,11 @@
       "id": "vermogen-verminderd",
       "title": "Het vermogen is verminderd",
       "sourceSection": "8.2.4",
-      "startStep": "vermogen-afgenomen",
+      "startStep": "vermogen",
       "steps": [
         {
-          "id": "vermogen-afgenomen",
-          "question": "Is het vermogen op hoog toerental afgenomen?",
+          "id": "vermogen",
+          "question": "Is op hoog toerental het vermogen afgenomen?",
           "yes": {
             "actions": [
               "Reinig het toestel en de sifon.",
@@ -269,17 +271,17 @@
             "actions": [
               "Controleer de instelling en pas deze eventueel aan."
             ],
-            "next": "cv-temperatuur"
+            "next": "temperatuur"
           },
-          "no": "cv-temperatuur"
+          "no": "temperatuur"
         },
         {
-          "id": "cv-temperatuur",
-          "question": "Is de CV-temperatuur te laag ingesteld?",
+          "id": "temperatuur",
+          "question": "Is de temperatuur te laag ingesteld?",
           "yes": {
             "actions": [
               "Verhoog de CV-temperatuur.",
-              "Controleer bij aanwezigheid van een buitenvoeler deze op kortsluiting en hef de oorzaak op."
+              "Als een buitenvoeler aanwezig is: controleer deze op kortsluiting en hef de oorzaak op."
             ],
             "next": "doorstroming"
           },
@@ -287,22 +289,22 @@
         },
         {
           "id": "doorstroming",
-          "question": "Is er onvoldoende doorstroming in de installatie?",
+          "question": "Is er geen doorstroming in de installatie?",
           "yes": {
             "actions": [
-              "Controleer de ΔT tussen CV-aanvoer en retour (circa 20 °C).",
+              "Controleer de ΔT (circa 20 °C) tussen aanvoer en retour CV.",
               "Zorg voor goede doorstroming in de installatie."
             ],
-            "next": "ketelvermogen"
+            "next": "vermogen"
           },
-          "no": "ketelvermogen"
+          "no": "vermogen"
         },
         {
-          "id": "ketelvermogen",
+          "id": "vermogen",
           "question": "Is het ketelvermogen niet goed ingesteld?",
           "yes": {
             "actions": [
-              "Pas het ketelvermogen aan volgens de procedure voor maximaal CV-vermogen."
+              "Pas het ketelvermogen aan volgens 'Instelling maximaal CV-vermogen'."
             ],
             "next": "warmteoverdracht"
           },
@@ -310,10 +312,10 @@
         },
         {
           "id": "warmteoverdracht",
-          "question": "Is de warmteoverdracht onvoldoende door vervuiling in toestel of installatie?",
+          "question": "Is er geen warmteoverdracht door vervuiling in toestel/installatie?",
           "yes": {
             "actions": [
-              "Spoel het toestel/de installatie CV-zijdig."
+              "Spoel het toestel/installatie CV-zijdig."
             ],
             "next": "einde"
           },
@@ -330,25 +332,25 @@
       "id": "geen-warmwater-ww",
       "title": "Geen warmwater (WW)",
       "sourceSection": "8.2.6",
-      "startStep": "display-leeg-stekker",
+      "startStep": "display-stekker",
       "steps": [
         {
-          "id": "display-leeg-stekker",
-          "question": "Geeft het servicedisplay niets aan en zit de stekker niet goed in de wandcontactdoos?",
+          "id": "display-stekker",
+          "question": "Geeft het servicedisplay niets aan?",
           "yes": {
             "actions": [
               "Controleer of de stekker in de wandcontactdoos is gestoken."
             ],
-            "next": "display-leeg-zekering"
+            "next": "display-zekering"
           },
-          "no": "display-leeg-zekering"
+          "no": "display-zekering"
         },
         {
-          "id": "display-leeg-zekering",
+          "id": "display-zekering",
           "question": "Geeft het servicedisplay nog steeds niets aan?",
           "yes": {
             "actions": [
-              "Controleer de zekering volgens het elektrisch schema in § 10.2."
+              "Controleer de zekering volgens het elektrisch schema § 10.2."
             ],
             "next": "stromingssensor"
           },
@@ -372,16 +374,16 @@
             "actions": [
               "Vergroot de tapflow."
             ],
-            "next": "sensor-5v"
+            "next": "5v"
           },
-          "no": "sensor-5v"
+          "no": "5v"
         },
         {
-          "id": "sensor-5v",
-          "question": "Ontbreekt de 5 V DC-voeding op de stromingssensor?",
+          "id": "5v",
+          "question": "Ontbreekt de 5 V DC-spanning op de stromingssensor?",
           "yes": {
             "actions": [
-              "Controleer de bedrading volgens het elektrisch schema."
+              "Controleer de bedrading volgens het schema."
             ],
             "next": "s3"
           },
@@ -389,21 +391,21 @@
         },
         {
           "id": "s3",
-          "question": "Is warmwatersensor S3 defect?",
+          "question": "Is S3 defect?",
           "yes": {
             "actions": [
               "Vervang S3."
             ],
-            "next": "thermostatische-kraan"
+            "next": "kraan"
           },
-          "no": "thermostatische-kraan"
+          "no": "kraan"
         },
         {
-          "id": "thermostatische-kraan",
+          "id": "kraan",
           "question": "Is de thermostatische douche- of badkraan defect?",
           "yes": {
             "actions": [
-              "Controleer de thermostatische kraan; een defect kan alleen koud water doorlaten waardoor de tapflow door het toestel onder 1,5 l/min blijft."
+              "Controleer de thermostatische kraan. Een defecte kraan kan alleen koud water doorlaten, waardoor de tapflow door het toestel onder 1,5 l/min blijft."
             ],
             "next": "einde"
           },
@@ -430,35 +432,35 @@
               "Reduceer de tapflow.",
               "Controleer de doseerschijf bij HReco 24 en HReco 30."
             ],
-            "next": "ww-instelling"
+            "next": "wwtemp"
           },
-          "no": "ww-instelling"
+          "no": "wwtemp"
         },
         {
-          "id": "ww-instelling",
-          "question": "Is de ingestelde warmwatertemperatuur te laag?",
+          "id": "wwtemp",
+          "question": "Is de warmwatertemperatuur te laag ingesteld?",
           "yes": {
             "actions": [
               "Verhoog de warmwatertemperatuur volgens § 7.2."
             ],
-            "next": "cv-wordt-warm"
+            "next": "cv-warm"
           },
-          "no": "cv-wordt-warm"
+          "no": "cv-warm"
         },
         {
-          "id": "cv-wordt-warm",
-          "question": "Wordt de CV-installatie warm tijdens het tappen?",
+          "id": "cv-warm",
+          "question": "Wordt de CV-installatie tijdens het tappen warm?",
           "yes": {
             "actions": [
-              "Controleer op ongewenste circulatie door thermosifonwerking of een tweede CV-pomp.",
-              "Plaats volgens de fabrikant zo nodig een keerklep of tweewegklep."
+              "Controleer op ongewenste circulatie in het CV-circuit door thermosifonwerking of een tweede pomp.",
+              "Plaats bij thermosifonwerking een keerklep of bij een tweede pomp een tweewegklep."
             ],
-            "next": "warmteoverdracht"
+            "next": "overdracht"
           },
-          "no": "warmteoverdracht"
+          "no": "overdracht"
         },
         {
-          "id": "warmteoverdracht",
+          "id": "overdracht",
           "question": "Is de warmteoverdracht tapwaterzijdig onvoldoende door kalk of vervuiling?",
           "yes": {
             "actions": [
@@ -487,8 +489,9 @@
           "yes": {
             "actions": [
               "Controleer de bedrading.",
-              "Controleer OpenTherm, de aan/uit-aansluiting en bij RF de verbinding met de kamerthermostaat.",
-              "Vervang de thermostaat of weersafhankelijke regeling indien defect."
+              "Controleer OpenTherm, de aan/uit-aansluiting of de verbinding tussen CV-ketel en RF-kamerthermostaat.",
+              "Vervang de thermostaat indien defect.",
+              "Vervang de weersafhankelijke regeling indien defect."
             ],
             "next": "tapcomfort"
           },
@@ -496,11 +499,11 @@
         },
         {
           "id": "tapcomfort",
-          "question": "Wordt de CV-installatie door Tapcomfort opgewarmd en verschijnt regelmatig code 7?",
+          "question": "Wordt de CV-installatie door Tapcomfort opgewarmd en geeft het servicedisplay regelmatig code 7 weer?",
           "yes": {
             "actions": [
-              "Controleer op ongewenste circulatie door thermosifonwerking of een tweede CV-pomp.",
-              "Plaats volgens de fabrikant zo nodig een keerklep of tweewegklep."
+              "Controleer op ongewenste circulatie in het CV-circuit door thermosifonwerking of een tweede pomp.",
+              "Plaats bij thermosifonwerking een keerklep of bij een tweede pomp een tweewegklep."
             ],
             "next": "einde"
           },
@@ -526,12 +529,12 @@
             "actions": [
               "Controleer de netspanning."
             ],
-            "next": "temperatuur"
+            "next": "pomptemp"
           },
-          "no": "temperatuur"
+          "no": "pomptemp"
         },
         {
-          "id": "temperatuur",
+          "id": "pomptemp",
           "question": "Is de temperatuur van de pomp te hoog?",
           "yes": {
             "actions": [
@@ -552,16 +555,16 @@
       "id": "a-label-pomp-rood",
       "title": "A-label pomp LED knippert rood",
       "sourceSection": "8.2.10",
-      "startStep": "pomp-gestopt",
+      "startStep": "pomp",
       "steps": [
         {
-          "id": "pomp-gestopt",
-          "question": "Is de pomp gestopt en knippert de LED rood?",
+          "id": "pomp",
+          "question": "Is de pomp gestopt?",
           "yes": {
             "actions": [
               "Reset de pomp door het toestel minimaal 20 seconden met de aan/uit-knop uit te zetten.",
-              "Als de pomp op continu staat: reset door de stekker uit de wandcontactdoos te nemen.",
-              "Vervang de pomp als de storing blijft bestaan."
+              "Als de pomp op continu is ingesteld, kan deze alleen worden gereset door de stekker uit het stopcontact te nemen.",
+              "Vervang de pomp als resetten niet helpt."
             ],
             "next": "einde"
           },
@@ -575,7 +578,7 @@
       ]
     },
     {
-      "id": "storingen-cv-pomp-type-b",
+      "id": "cv-pomp-type-b",
       "title": "Storingen CV-pomp (alleen type B)",
       "sourceSection": "8.2.11",
       "startStep": "rotor",
@@ -588,7 +591,7 @@
               "Maak het schoepenrad los.",
               "Vervang de pomp indien nodig."
             ],
-            "next": "einde"
+            "next": "spanning"
           },
           "no": "spanning"
         },
@@ -597,10 +600,10 @@
           "question": "Is de ingangsspanning lager dan 170 V of hoger dan 270 V?",
           "yes": {
             "actions": [
-              "Controleer de netspanning; de pomp start opnieuw wanneer de ingangsspanning weer tussen 170 V en 270 V ligt.",
-              "Controleer de randaarde."
+              "Controleer de netspanning.",
+              "Controleer de randaarde. De pomp start opnieuw zodra de spanning weer tussen 170 V en 270 V ligt."
             ],
-            "next": "einde"
+            "next": "faseverlies"
           },
           "no": "faseverlies"
         },
@@ -612,7 +615,7 @@
               "Controleer kabels en verbindingen.",
               "Vervang de pomp als de fout blijft bestaan."
             ],
-            "next": "einde"
+            "next": "kortsluiting"
           },
           "no": "kortsluiting"
         },
@@ -621,9 +624,9 @@
           "question": "Is er kortsluiting in de pomp of raakt de pomp oververhit?",
           "yes": {
             "actions": [
-              "De pomp probeert elke seconde opnieuw te starten en meldt een elektrische fout. Controleer de pomp en de elektrische aansluiting volgens de officiële procedure."
+              "Controleer de pomp en de elektrische aansluiting. De pomp probeert volgens de handleiding elke seconde opnieuw te starten."
             ],
-            "next": "einde"
+            "next": "droogloop"
           },
           "no": "droogloop"
         },
@@ -632,8 +635,8 @@
           "question": "Heeft de pomp gedurende ongeveer 1 minuut drooggelopen?",
           "yes": {
             "actions": [
-              "De pomp probeert vervolgens elke 10 minuten opnieuw te starten.",
-              "Vervang de pomp als de fout na de beschreven herstartcycli blijft bestaan."
+              "De pomp probeert volgens de handleiding elke 10 minuten opnieuw te starten.",
+              "Vervang de pomp als de fout na de herstartcycli blijft bestaan."
             ],
             "next": "einde"
           },
