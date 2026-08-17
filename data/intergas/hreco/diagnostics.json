@@ -1,0 +1,650 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "hreco",
+  "title": "Diagnose",
+  "source": {
+    "title": "Intergas installatievoorschrift Kombi Kompakt HREco",
+    "url": "https://www.intergas-verwarming.nl/app/uploads/2018/01/88399809-Installatievoorschrift-HReco.pdf",
+    "sections": "8.2.1 t/m 8.2.11"
+  },
+  "diagnostics": [
+    {
+      "id": "brander-ontsteekt-luidruchtig",
+      "title": "Brander ontsteekt luidruchtig",
+      "sourceSection": "8.2.1",
+      "startStep": "voordruk-hoog",
+      "steps": [
+        {
+          "id": "voordruk-hoog",
+          "question": "Is de gasvoordruk te hoog?",
+          "yes": {
+            "actions": [
+              "Mogelijk is de huisdrukregelaar defect. Neem contact op met het energiebedrijf."
+            ],
+            "next": "ontsteekafstand"
+          },
+          "no": "ontsteekafstand"
+        },
+        {
+          "id": "ontsteekafstand",
+          "question": "Is de ontsteekafstand onjuist?",
+          "yes": {
+            "actions": [
+              "Controleer de ontsteekpenafstand met de controlemal (art. nr. 074617).",
+              "Vervang de ontsteekpen indien nodig."
+            ],
+            "next": "gas-lucht"
+          },
+          "no": "gas-lucht"
+        },
+        {
+          "id": "gas-lucht",
+          "question": "Is de gas-luchtregeling niet goed ingeregeld?",
+          "yes": {
+            "actions": [
+              "Controleer de afstelling volgens § 7.8 en § 7.9 van de officiële handleiding."
+            ],
+            "next": "zwakke-vonk"
+          },
+          "no": "zwakke-vonk"
+        },
+        {
+          "id": "zwakke-vonk",
+          "question": "Is de ontstekingsvonk zwak?",
+          "yes": {
+            "actions": [
+              "Controleer de ontsteekpenafstand met de controlemal (art. nr. 074617).",
+              "Controleer en/of vervang de ontsteekkabel.",
+              "Vervang zo nodig de ontsteekunit op het gasblok en de ontsteekpen."
+            ],
+            "next": "einde"
+          },
+          "no": "einde"
+        },
+        {
+          "id": "einde",
+          "type": "end",
+          "message": "Geen verdere stap in deze Intergas-procedure. Raadpleeg zo nodig de officiële handleiding."
+        }
+      ]
+    },
+    {
+      "id": "brander-resoneert",
+      "title": "Brander resoneert",
+      "sourceSection": "8.2.2",
+      "startStep": "voordruk-laag",
+      "steps": [
+        {
+          "id": "voordruk-laag",
+          "question": "Is de gasvoordruk lager dan 20 mbar?",
+          "yes": {
+            "actions": [
+              "Mogelijk is de huisdrukregelaar defect. Neem contact op met het energiebedrijf."
+            ],
+            "next": "recirculatie"
+          },
+          "no": "recirculatie"
+        },
+        {
+          "id": "recirculatie",
+          "question": "Is er recirculatie van rookgassen?",
+          "yes": {
+            "actions": [
+              "Controleer de rookgasafvoer en het luchttoevoersysteem."
+            ],
+            "next": "gas-lucht"
+          },
+          "no": "gas-lucht"
+        },
+        {
+          "id": "gas-lucht",
+          "question": "Is de gas-luchtregeling niet goed ingeregeld?",
+          "yes": {
+            "actions": [
+              "Controleer de afstelling volgens § 7.8 en § 7.9 van de officiële handleiding."
+            ],
+            "next": "branderpakking"
+          },
+          "no": "branderpakking"
+        },
+        {
+          "id": "branderpakking",
+          "question": "Is de branderpakking defect?",
+          "yes": {
+            "actions": [
+              "Vervang de branderpakking."
+            ],
+            "next": "brander"
+          },
+          "no": "brander"
+        },
+        {
+          "id": "brander",
+          "question": "Is de brander defect?",
+          "yes": {
+            "actions": [
+              "Vervang de brander."
+            ],
+            "next": "einde"
+          },
+          "no": "einde"
+        },
+        {
+          "id": "einde",
+          "type": "end",
+          "message": "Geen verdere stap in deze Intergas-procedure. Raadpleeg zo nodig de officiële handleiding."
+        }
+      ]
+    },
+    {
+      "id": "geen-verwarming-cv",
+      "title": "Geen verwarming (CV)",
+      "sourceSection": "8.2.3",
+      "startStep": "display-leeg-stekker",
+      "steps": [
+        {
+          "id": "display-leeg-stekker",
+          "question": "Geeft het servicedisplay niets aan en zit de stekker niet goed in de wandcontactdoos?",
+          "yes": {
+            "actions": [
+              "Controleer of de stekker in de wandcontactdoos is gestoken."
+            ],
+            "next": "display-leeg-zekering"
+          },
+          "no": "display-leeg-zekering"
+        },
+        {
+          "id": "display-leeg-zekering",
+          "question": "Geeft het servicedisplay nog steeds niets aan?",
+          "yes": {
+            "actions": [
+              "Controleer de zekering volgens het elektrisch schema in § 10.2."
+            ],
+            "next": "toestel-uit"
+          },
+          "no": "toestel-uit"
+        },
+        {
+          "id": "toestel-uit",
+          "question": "Geeft het servicedisplay een balkje weer en staat het toestel uit?",
+          "yes": {
+            "actions": [
+              "Schakel het toestel in met de aan/uit-toets."
+            ],
+            "next": "regeling"
+          },
+          "no": "regeling"
+        },
+        {
+          "id": "regeling",
+          "question": "Is de kamerthermostaat of weersafhankelijke regeling niet aangesloten of defect?",
+          "yes": {
+            "actions": [
+              "Controleer de bedrading.",
+              "Controleer OpenTherm en de aan/uit-aansluiting of de RF-verbinding.",
+              "Vervang de thermostaat of weersafhankelijke regeling indien defect."
+            ],
+            "next": "pomp"
+          },
+          "no": "pomp"
+        },
+        {
+          "id": "pomp",
+          "question": "Draait de pomp niet en toont het display 80 en 1?",
+          "yes": {
+            "actions": [
+              "Controleer de spanning.",
+              "Controleer connector X2 en X4."
+            ],
+            "next": "voeding-24v"
+          },
+          "no": "voeding-24v"
+        },
+        {
+          "id": "voeding-24v",
+          "question": "Ontbreekt de 24 V-voeding?",
+          "yes": {
+            "actions": [
+              "Controleer de bedrading volgens het elektrisch schema.",
+              "Controleer connector X4.",
+              "Vervang de defecte automaat indien nodig."
+            ],
+            "next": "einde"
+          },
+          "no": "einde"
+        },
+        {
+          "id": "einde",
+          "type": "end",
+          "message": "Geen verdere stap in deze Intergas-procedure. Raadpleeg zo nodig de officiële handleiding."
+        }
+      ]
+    },
+    {
+      "id": "vermogen-verminderd",
+      "title": "Het vermogen is verminderd",
+      "sourceSection": "8.2.4",
+      "startStep": "vermogen-afgenomen",
+      "steps": [
+        {
+          "id": "vermogen-afgenomen",
+          "question": "Is het vermogen op hoog toerental afgenomen?",
+          "yes": {
+            "actions": [
+              "Reinig het toestel en de sifon.",
+              "Controleer de rookgasafvoer en het luchttoevoersysteem op weerstand."
+            ],
+            "next": "einde"
+          },
+          "no": "einde"
+        },
+        {
+          "id": "einde",
+          "type": "end",
+          "message": "Geen verdere stap in deze Intergas-procedure. Raadpleeg zo nodig de officiële handleiding."
+        }
+      ]
+    },
+    {
+      "id": "cv-niet-op-temperatuur",
+      "title": "CV komt niet op temperatuur",
+      "sourceSection": "8.2.5",
+      "startStep": "waterdruk",
+      "steps": [
+        {
+          "id": "waterdruk",
+          "question": "Is de waterdruk in de installatie te laag?",
+          "yes": {
+            "actions": [
+              "Vul de installatie bij volgens § 6.1.1."
+            ],
+            "next": "thermostaat"
+          },
+          "no": "thermostaat"
+        },
+        {
+          "id": "thermostaat",
+          "question": "Is de kamerthermostaat niet in orde?",
+          "yes": {
+            "actions": [
+              "Controleer de instelling en pas deze eventueel aan."
+            ],
+            "next": "cv-temperatuur"
+          },
+          "no": "cv-temperatuur"
+        },
+        {
+          "id": "cv-temperatuur",
+          "question": "Is de CV-temperatuur te laag ingesteld?",
+          "yes": {
+            "actions": [
+              "Verhoog de CV-temperatuur.",
+              "Controleer bij aanwezigheid van een buitenvoeler deze op kortsluiting en hef de oorzaak op."
+            ],
+            "next": "doorstroming"
+          },
+          "no": "doorstroming"
+        },
+        {
+          "id": "doorstroming",
+          "question": "Is er onvoldoende doorstroming in de installatie?",
+          "yes": {
+            "actions": [
+              "Controleer de ΔT tussen CV-aanvoer en retour (circa 20 °C).",
+              "Zorg voor goede doorstroming in de installatie."
+            ],
+            "next": "ketelvermogen"
+          },
+          "no": "ketelvermogen"
+        },
+        {
+          "id": "ketelvermogen",
+          "question": "Is het ketelvermogen niet goed ingesteld?",
+          "yes": {
+            "actions": [
+              "Pas het ketelvermogen aan volgens de procedure voor maximaal CV-vermogen."
+            ],
+            "next": "warmteoverdracht"
+          },
+          "no": "warmteoverdracht"
+        },
+        {
+          "id": "warmteoverdracht",
+          "question": "Is de warmteoverdracht onvoldoende door vervuiling in toestel of installatie?",
+          "yes": {
+            "actions": [
+              "Spoel het toestel/de installatie CV-zijdig."
+            ],
+            "next": "einde"
+          },
+          "no": "einde"
+        },
+        {
+          "id": "einde",
+          "type": "end",
+          "message": "Geen verdere stap in deze Intergas-procedure. Raadpleeg zo nodig de officiële handleiding."
+        }
+      ]
+    },
+    {
+      "id": "geen-warmwater-ww",
+      "title": "Geen warmwater (WW)",
+      "sourceSection": "8.2.6",
+      "startStep": "display-leeg-stekker",
+      "steps": [
+        {
+          "id": "display-leeg-stekker",
+          "question": "Geeft het servicedisplay niets aan en zit de stekker niet goed in de wandcontactdoos?",
+          "yes": {
+            "actions": [
+              "Controleer of de stekker in de wandcontactdoos is gestoken."
+            ],
+            "next": "display-leeg-zekering"
+          },
+          "no": "display-leeg-zekering"
+        },
+        {
+          "id": "display-leeg-zekering",
+          "question": "Geeft het servicedisplay nog steeds niets aan?",
+          "yes": {
+            "actions": [
+              "Controleer de zekering volgens het elektrisch schema in § 10.2."
+            ],
+            "next": "stromingssensor"
+          },
+          "no": "stromingssensor"
+        },
+        {
+          "id": "stromingssensor",
+          "question": "Werkt de stromingssensor niet?",
+          "yes": {
+            "actions": [
+              "Vervang de stromingssensor."
+            ],
+            "next": "tapflow"
+          },
+          "no": "tapflow"
+        },
+        {
+          "id": "tapflow",
+          "question": "Is de tapflow lager dan 1,5 l/min?",
+          "yes": {
+            "actions": [
+              "Vergroot de tapflow."
+            ],
+            "next": "sensor-5v"
+          },
+          "no": "sensor-5v"
+        },
+        {
+          "id": "sensor-5v",
+          "question": "Ontbreekt de 5 V DC-voeding op de stromingssensor?",
+          "yes": {
+            "actions": [
+              "Controleer de bedrading volgens het elektrisch schema."
+            ],
+            "next": "s3"
+          },
+          "no": "s3"
+        },
+        {
+          "id": "s3",
+          "question": "Is warmwatersensor S3 defect?",
+          "yes": {
+            "actions": [
+              "Vervang S3."
+            ],
+            "next": "thermostatische-kraan"
+          },
+          "no": "thermostatische-kraan"
+        },
+        {
+          "id": "thermostatische-kraan",
+          "question": "Is de thermostatische douche- of badkraan defect?",
+          "yes": {
+            "actions": [
+              "Controleer de thermostatische kraan; een defect kan alleen koud water doorlaten waardoor de tapflow door het toestel onder 1,5 l/min blijft."
+            ],
+            "next": "einde"
+          },
+          "no": "einde"
+        },
+        {
+          "id": "einde",
+          "type": "end",
+          "message": "Geen verdere stap in deze Intergas-procedure. Raadpleeg zo nodig de officiële handleiding."
+        }
+      ]
+    },
+    {
+      "id": "warmwater-niet-op-temperatuur",
+      "title": "Warmwater komt niet op temperatuur",
+      "sourceSection": "8.2.7",
+      "startStep": "tapflow",
+      "steps": [
+        {
+          "id": "tapflow",
+          "question": "Is de tapflow te hoog?",
+          "yes": {
+            "actions": [
+              "Reduceer de tapflow.",
+              "Controleer de doseerschijf bij HReco 24 en HReco 30."
+            ],
+            "next": "ww-instelling"
+          },
+          "no": "ww-instelling"
+        },
+        {
+          "id": "ww-instelling",
+          "question": "Is de ingestelde warmwatertemperatuur te laag?",
+          "yes": {
+            "actions": [
+              "Verhoog de warmwatertemperatuur volgens § 7.2."
+            ],
+            "next": "cv-wordt-warm"
+          },
+          "no": "cv-wordt-warm"
+        },
+        {
+          "id": "cv-wordt-warm",
+          "question": "Wordt de CV-installatie warm tijdens het tappen?",
+          "yes": {
+            "actions": [
+              "Controleer op ongewenste circulatie door thermosifonwerking of een tweede CV-pomp.",
+              "Plaats volgens de fabrikant zo nodig een keerklep of tweewegklep."
+            ],
+            "next": "warmteoverdracht"
+          },
+          "no": "warmteoverdracht"
+        },
+        {
+          "id": "warmteoverdracht",
+          "question": "Is de warmteoverdracht tapwaterzijdig onvoldoende door kalk of vervuiling?",
+          "yes": {
+            "actions": [
+              "Ontkalk of spoel het toestel tapwaterzijdig."
+            ],
+            "next": "einde"
+          },
+          "no": "einde"
+        },
+        {
+          "id": "einde",
+          "type": "end",
+          "message": "Geen verdere stap in deze Intergas-procedure. Raadpleeg zo nodig de officiële handleiding."
+        }
+      ]
+    },
+    {
+      "id": "cv-blijft-ongewenst-warm",
+      "title": "CV-installatie blijft ongewenst warm",
+      "sourceSection": "8.2.8",
+      "startStep": "regeling",
+      "steps": [
+        {
+          "id": "regeling",
+          "question": "Is de kamerthermostaat/weersafhankelijke regeling defect of kortgesloten?",
+          "yes": {
+            "actions": [
+              "Controleer de bedrading.",
+              "Controleer OpenTherm, de aan/uit-aansluiting en bij RF de verbinding met de kamerthermostaat.",
+              "Vervang de thermostaat of weersafhankelijke regeling indien defect."
+            ],
+            "next": "tapcomfort"
+          },
+          "no": "tapcomfort"
+        },
+        {
+          "id": "tapcomfort",
+          "question": "Wordt de CV-installatie door Tapcomfort opgewarmd en verschijnt regelmatig code 7?",
+          "yes": {
+            "actions": [
+              "Controleer op ongewenste circulatie door thermosifonwerking of een tweede CV-pomp.",
+              "Plaats volgens de fabrikant zo nodig een keerklep of tweewegklep."
+            ],
+            "next": "einde"
+          },
+          "no": "einde"
+        },
+        {
+          "id": "einde",
+          "type": "end",
+          "message": "Geen verdere stap in deze Intergas-procedure. Raadpleeg zo nodig de officiële handleiding."
+        }
+      ]
+    },
+    {
+      "id": "a-label-pomp-rood-groen",
+      "title": "A-label pomp LED knippert afwisselend rood/groen",
+      "sourceSection": "8.2.9",
+      "startStep": "netspanning",
+      "steps": [
+        {
+          "id": "netspanning",
+          "question": "Is de netspanning te hoog of te laag?",
+          "yes": {
+            "actions": [
+              "Controleer de netspanning."
+            ],
+            "next": "temperatuur"
+          },
+          "no": "temperatuur"
+        },
+        {
+          "id": "temperatuur",
+          "question": "Is de temperatuur van de pomp te hoog?",
+          "yes": {
+            "actions": [
+              "Controleer de water- en omgevingstemperatuur."
+            ],
+            "next": "einde"
+          },
+          "no": "einde"
+        },
+        {
+          "id": "einde",
+          "type": "end",
+          "message": "Geen verdere stap in deze Intergas-procedure. Raadpleeg zo nodig de officiële handleiding."
+        }
+      ]
+    },
+    {
+      "id": "a-label-pomp-rood",
+      "title": "A-label pomp LED knippert rood",
+      "sourceSection": "8.2.10",
+      "startStep": "pomp-gestopt",
+      "steps": [
+        {
+          "id": "pomp-gestopt",
+          "question": "Is de pomp gestopt en knippert de LED rood?",
+          "yes": {
+            "actions": [
+              "Reset de pomp door het toestel minimaal 20 seconden met de aan/uit-knop uit te zetten.",
+              "Als de pomp op continu staat: reset door de stekker uit de wandcontactdoos te nemen.",
+              "Vervang de pomp als de storing blijft bestaan."
+            ],
+            "next": "einde"
+          },
+          "no": "einde"
+        },
+        {
+          "id": "einde",
+          "type": "end",
+          "message": "Geen verdere stap in deze Intergas-procedure. Raadpleeg zo nodig de officiële handleiding."
+        }
+      ]
+    },
+    {
+      "id": "storingen-cv-pomp-type-b",
+      "title": "Storingen CV-pomp (alleen type B)",
+      "sourceSection": "8.2.11",
+      "startStep": "rotor",
+      "steps": [
+        {
+          "id": "rotor",
+          "question": "Is de rotoras van de pomp geblokkeerd?",
+          "yes": {
+            "actions": [
+              "Maak het schoepenrad los.",
+              "Vervang de pomp indien nodig."
+            ],
+            "next": "einde"
+          },
+          "no": "spanning"
+        },
+        {
+          "id": "spanning",
+          "question": "Is de ingangsspanning lager dan 170 V of hoger dan 270 V?",
+          "yes": {
+            "actions": [
+              "Controleer de netspanning; de pomp start opnieuw wanneer de ingangsspanning weer tussen 170 V en 270 V ligt.",
+              "Controleer de randaarde."
+            ],
+            "next": "einde"
+          },
+          "no": "faseverlies"
+        },
+        {
+          "id": "faseverlies",
+          "question": "Is er een faseverliesfout door kabelschade, open circuit of slechte/losse verbindingen?",
+          "yes": {
+            "actions": [
+              "Controleer kabels en verbindingen.",
+              "Vervang de pomp als de fout blijft bestaan."
+            ],
+            "next": "einde"
+          },
+          "no": "kortsluiting"
+        },
+        {
+          "id": "kortsluiting",
+          "question": "Is er kortsluiting in de pomp of raakt de pomp oververhit?",
+          "yes": {
+            "actions": [
+              "De pomp probeert elke seconde opnieuw te starten en meldt een elektrische fout. Controleer de pomp en de elektrische aansluiting volgens de officiële procedure."
+            ],
+            "next": "einde"
+          },
+          "no": "droogloop"
+        },
+        {
+          "id": "droogloop",
+          "question": "Heeft de pomp gedurende ongeveer 1 minuut drooggelopen?",
+          "yes": {
+            "actions": [
+              "De pomp probeert vervolgens elke 10 minuten opnieuw te starten.",
+              "Vervang de pomp als de fout na de beschreven herstartcycli blijft bestaan."
+            ],
+            "next": "einde"
+          },
+          "no": "einde"
+        },
+        {
+          "id": "einde",
+          "type": "end",
+          "message": "Geen verdere stap in deze Intergas-procedure. Raadpleeg zo nodig de officiële handleiding."
+        }
+      ]
+    }
+  ]
+}
