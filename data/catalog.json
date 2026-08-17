@@ -36,7 +36,6 @@
                                            "faultsPath":  "data/intergas/hreco/faults.json",
                                            "parametersPath":  "data/intergas/hreco/parameters.json",
                                            "combustionPath":  "data/intergas/hreco/combustion.json",
-                                           "diagnosticsPath": "data/intergas/hreco/diagnostics.json",
                                            "recordCount":  20,
                                            "sourceTitle":  "Intergas installatievoorschrift Kombi Kompakt HREco",
                                            "sourceUrl":  "https://www.intergas-verwarming.nl/app/uploads/2018/01/88399809-Installatievoorschrift-HReco.pdf"
