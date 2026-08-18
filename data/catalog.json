@@ -62,8 +62,8 @@
                                            "faultsPath":  "data/intergas/xtend-split-5kw/faults.json",
                                            "parametersPath":  "data/intergas/xtend-split-5kw/parameters.json",
                                            "recordCount":  38,
-                                           "sourceTitle":  "Intergas Xtend Installation Instructions, document 88038400 (2023)",
-                                           "sourceUrl":  "https://www.intergasheating.co.uk/app/uploads/2025/11/Xtend-split-manual.pdf"
+                                           "sourceTitle":  "Intergas Xtend Handleiding",
+                                           "sourceUrl":  "https://www.intergas-verwarming.nl/app/uploads/2025/05/88008407-Installatievoorschrift-Xtend-Cool-Grey.pdf"
                                        },
                                        {
                                            "id":  "intergas-xtend-cool-grey-5kw",
@@ -73,7 +73,7 @@
                                            "faultsPath":  "data/intergas/xtend-cool-grey-5kw/faults.json",
                                            "parametersPath":  "data/intergas/xtend-cool-grey-5kw/parameters.json",
                                            "recordCount":  69,
-                                           "sourceTitle":  "Intergas Installatievoorschrift Xtend, document 88008407 (december 2024)",
+                                           "sourceTitle":  "Intergas Installatievoorschrift Xtend",
                                            "sourceUrl":  "https://www.intergas-verwarming.nl/app/uploads/2025/05/88008407-Installatievoorschrift-Xtend-Cool-Grey.pdf"
                                        },
                                        {
@@ -84,8 +84,8 @@
                                            "faultsPath":  "data/intergas/xtend-monoblock-r32-5kw/faults.json",
                                            "parametersPath":  "data/intergas/xtend-monoblock-r32-5kw/parameters.json",
                                            "recordCount":  56,
-                                           "sourceTitle":  "Intergas Xtend Mono Installation Instructions, document 88302401 (V1.2, 2024)",
-                                           "sourceUrl":  "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf"
+                                           "sourceTitle":  "Intergas Xtend Mono Handleiding",
+                                           "sourceUrl":  "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf"
                                        },
                                        {
                                            "id":  "intergas-xtend-eco",
