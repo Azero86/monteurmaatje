@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "ecotec-exclusive-cf",
+  "title": "Officiële IoniDetect-verbrandingscontrole ecoTEC exclusive CF",
+  "measurements": [
+    {
+      "label": "Toegestane gasstroomdruk — aardgas N (België)",
+      "minimum": 17.0,
+      "maximum": 30.0,
+      "unit": "mbar",
+      "condition": "Met P.001; gemeten ten opzichte van de atmosferische druk"
+    }
+  ],
+  "settings": [
+    {
+      "label": "Belastingsafhankelijke CO₂-/O₂-grenzen",
+      "value": "Gebruik het officiële modeldiagram op pagina 175–176",
+      "load": "Passende verwarmingsbelasting",
+      "condition": "Afzonderlijke diagrammen voor VC 20CS/1-7 I, VC 30CS/1-7 I, VCW 36CF/1-7 I en VCW 43CF/1-7 I",
+      "technicalExplanation": "De grenzen veranderen met de belasting; er zijn geen tussenwaarden uit de grafiek berekend."
+    },
+    {
+      "label": "Correctie gas-luchtverhouding",
+      "value": "D.158: 0 (standaard) tot -5 (vermagering 5)",
+      "condition": "Alleen aardgasbedrijf",
+      "technicalExplanation": "Pas alleen toe wanneer de meetwaarde na controle van VLT/VGA, recirculatie en blokkades buiten het officiële modeldiagram blijft."
+    }
+  ],
+  "measurementConditions": [
+    "Monteer de voormantel.",
+    "Start de schoorsteenvegermodus.",
+    "Gebruik maximaal warmwatervermogen of de ingestelde verwarmingsbelasting.",
+    "Wacht op kalibratie S.093 en vervolgens S.004, S.014 of S.024.",
+    "Plaats de sonde in het midden van de kernstroom en wacht tot de waarde stabiel is."
+  ],
+  "technicalExplanation": "IoniDetect regelt de verbranding adaptief. De toegestane CO₂-/O₂-band is model- en belastingsafhankelijk en staat als grafiek in de officiële handleiding; MonteurMaatje interpoleert die grafiek niet.",
+  "notes": [
+    "Als correctie via D.158 en vervanging van de regelelektrode geen geldige waarde oplevert, schrijft Vaillant voor het toestel niet in bedrijf te nemen en contact op te nemen met de klantenservice."
+  ],
+  "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+  "sourcePage": "174–176 en 201",
+  "verified": true,
+  "verifiedDate": "2026-08-14"
+}

@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "topline-compact",
+  "title": "Officiële gas-luchtcontrole TopLine Compact",
+  "measurements": [
+    {
+      "id": "gas-pressure-g25",
+      "label": "Dynamische gasvoordruk — aardgas G25",
+      "value": 25,
+      "minimum": 20,
+      "maximum": 30,
+      "unit": "mbar",
+      "load": "Vollast"
+    },
+    {
+      "id": "gas-air-low",
+      "label": "Drukverschil gas/lucht laaglast",
+      "value": -5,
+      "minimum": -10,
+      "maximum": 0,
+      "unit": "Pa",
+      "load": "Minimaal vermogen",
+      "condition": "Digitale manometer op de gas-luchtmeetnippel"
+    },
+    {
+      "id": "co",
+      "label": "CO in rookgas",
+      "maximum": 400,
+      "unit": "ppm",
+      "load": "Laaglast én vollast",
+      "condition": "Verbranding zonder luchtovermaat"
+    },
+    {
+      "id": "ionisation-low",
+      "label": "Ionisatiestroom laaglast",
+      "minimum": 2,
+      "unit": "µA",
+      "load": "Laaglast"
+    }
+  ],
+  "settings": [
+    {
+      "id": "service-mode",
+      "label": "Schoorsteenvegerbedrijf",
+      "value": "Toestelminimum–100%",
+      "load": "Start op deellast; tijdelijk instelbaar met de pijltoetsen",
+      "technicalExplanation": "Houd de schoorsteenvegertoets 5 seconden ingedrukt."
+    }
+  ],
+  "measurementConditions": [
+    "Open minimaal twee radiatorafsluiters en zorg dat de installatie warmte kan afgeven.",
+    "Meet de dynamische gasvoordruk in schoorsteenvegerbedrijf op vollast en wacht na ontsteken één minuut.",
+    "Kalibreer de digitale manometer in dezelfde positie waarin wordt gemeten.",
+    "Controleer en stel het drukverschil uitsluitend op laaglast af.",
+    "Meet CO afzonderlijk op laaglast en vollast via het rookgasmeetpunt."
+  ],
+  "technicalExplanation": "De gas-luchtverhouding wordt uitsluitend met het drukverschil op laaglast gecontroleerd en afgesteld.",
+  "notes": [
+    "Gebruik CO-, CO₂- of NOx-metingen nooit om de gas-luchtverhouding van dit toestel af te stellen."
+  ],
+  "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180",
+  "sourcePage": "35–38",
+  "verified": true,
+  "verifiedDate": "2026-08-14"
+}

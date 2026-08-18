@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "turbomax-plus-2",
+  "source": {
+    "title": "Vaillant turboMAX plus Instructions for Installation and Servicing 833786_GB43_112005",
+    "url": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf"
+  },
+  "parameters": [
+    {
+      "code": "d.00",
+      "description": "Part load setting",
+      "technicalExplanation": "0 - 15 (0 - 30, 837/637 only)",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.01",
+      "description": "Water pump over run",
+      "technicalExplanation": "1, 2, 3, ...60 min (factory adjusted setting: 5 min)",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.02",
+      "description": "Maximum burner anti cycling period at 20 °C flow temperature",
+      "technicalExplanation": "8 - 60 min (predelivery setting: 15 min)",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.05",
+      "description": "Flow temperature setting",
+      "technicalExplanation": "°C",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.07",
+      "description": "1. Vantage hot water temperature (not applicable) 2. Warmstart temperature setting (applies to turboMAX plus only)",
+      "technicalExplanation": "1. 15 - 75 °C 2. 40 - 65 °C",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.08",
+      "description": "External controls heat demand",
+      "technicalExplanation": "0 = open, no demand; 1 = closed, demand",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.10",
+      "description": "Pump status",
+      "technicalExplanation": "1=ON; 0=OFF",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.11",
+      "description": "External pump status",
+      "technicalExplanation": "1 = ON; 0=OFF",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.21",
+      "description": "Flame rectification",
+      "technicalExplanation": "1 =ON; 0 = OFF",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.22",
+      "description": "Domestic hot water demand",
+      "technicalExplanation": "1 =ON; 0 =OFF",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.23",
+      "description": "Summer/winter function (control knob)",
+      "technicalExplanation": "1 = winter; 0 = summer",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.24",
+      "description": "Air pressure switch",
+      "technicalExplanation": "1 = ON; 0 = OFF",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.25",
+      "description": "Warmstart status (turboMAX plus)",
+      "technicalExplanation": "1 = ON; 0 = OFF",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.30",
+      "description": "Gas valve status",
+      "technicalExplanation": "1 = ON; 0=OFF",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.33",
+      "description": "Required value of the rotary speed of the fan",
+      "technicalExplanation": "r.p.m. (837/637 only)",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.34",
+      "description": "Actual value of the rotary speed of the fan",
+      "technicalExplanation": "r.p.m. (837/637 only)",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.35",
+      "description": "Diverter valve position",
+      "technicalExplanation": "1 = hot water; 0 = heating system",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.37",
+      "description": "Modulator current",
+      "technicalExplanation": "mA",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.40",
+      "description": "Actual flow temperature",
+      "technicalExplanation": "°C",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.41",
+      "description": "Current return temperature (837/637 only)",
+      "technicalExplanation": "in °C",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.50",
+      "description": "Maximum flow temperature",
+      "technicalExplanation": "°C",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.60",
+      "description": "Number over heat cut off operations",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.61",
+      "description": "Number of lock outs",
+      "technicalExplanation": "s",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.64",
+      "description": "Average ignition time",
+      "technicalExplanation": "s",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.65",
+      "description": "Maximum ignition time",
+      "technicalExplanation": "s",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.67",
+      "description": "Remaining anti cycling period",
+      "technicalExplanation": "min",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.68",
+      "description": "Number of unsuccessful attempted 1st ignitions",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.69",
+      "description": "Number of unsuccessful attempted 2st ignitions",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.71",
+      "description": "Maximum target value for heating system flow temperature",
+      "technicalExplanation": "0 = 82 ° C ; 1 = 87 °C (factory setting: 82 °C)",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.72",
+      "description": "Pump over run (for loading warmstart)",
+      "technicalExplanation": "0, 1, 2, ... 250 s (factory-adjusted to: 80 s)",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.73",
+      "description": "Offset warmstart temperature value",
+      "technicalExplanation": "-15, -14.......+5 K (factory-adjusted - 5 K)",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.75",
+      "description": "Maximum hot water priority operation time (Vantage only)",
+      "technicalExplanation": "20, 21, 22 ... 90 min (factory-adjusted to: 30 min)",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.76",
+      "description": "Gas type set (837/637 only)",
+      "technicalExplanation": "H36 (nat gas) P36 (LPG) E36 (E+ gas). Factory setting H36",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.80",
+      "description": "Number of heating system operating hours (Total)",
+      "technicalExplanation": "h",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.81",
+      "description": "Number of hot water system operating hours (Total)",
+      "technicalExplanation": "h",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.82",
+      "description": "Number of heating system cycles (Total)",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "d.83",
+      "description": "Number of hot water system cycles (Total)",
+      "source": "https://professional.vaillant.co.uk/downloads/z/turbomax-1/turbomax-plus-inst-and-serv-manual-6202005-3104685.pdf",
+      "sourcePage": 39,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    }
+  ]
+}

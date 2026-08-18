@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "topline-ii",
+  "title": "Officiële gas-luchtcontrole TopLine II",
+  "measurements": [
+    {
+      "id": "gas-pressure-g25-3",
+      "label": "Dynamische gasvoordruk — aardgas G25.3",
+      "value": 25,
+      "minimum": 20,
+      "maximum": 30,
+      "unit": "mbar",
+      "load": "Schoorsteenvegerbedrijf"
+    },
+    {
+      "id": "gas-pressure-g31",
+      "label": "Dynamische gasvoordruk — propaan G31",
+      "value": "30–50",
+      "minimum": 25,
+      "maximum": 57.5,
+      "unit": "mbar",
+      "load": "Schoorsteenvegerbedrijf"
+    },
+    {
+      "id": "gas-air-low",
+      "label": "Drukverschil gas/lucht laaglast",
+      "value": -5,
+      "minimum": -10,
+      "maximum": 0,
+      "unit": "Pa",
+      "load": "Minimale waarde"
+    },
+    {
+      "id": "co",
+      "label": "CO in rookgas",
+      "maximum": 400,
+      "unit": "ppm",
+      "load": "Laaglast én vollast",
+      "condition": "Verbranding zonder luchtovermaat"
+    },
+    {
+      "id": "o2-full",
+      "label": "O₂ technische waarde bij vollast — aardgas",
+      "value": "HR/HRC25: 5,1; HR/HRC30: 4,7; HR/HRC45: 4,2",
+      "unit": "%",
+      "load": "Vollast",
+      "condition": "Technische gegevenstabel",
+      "note": "Niet gebruiken als afstelgrootheid; de officiële afstelprocedure gebruikt drukverschil op laaglast."
+    },
+    {
+      "id": "co2-full",
+      "label": "CO₂ technische waarde bij vollast — aardgas",
+      "value": "HR/HRC25: 8,7; HR/HRC30: 8,9; HR/HRC45: 9,2",
+      "unit": "%",
+      "load": "Vollast",
+      "condition": "Technische gegevenstabel",
+      "note": "Niet gebruiken als afstelgrootheid."
+    },
+    {
+      "id": "flue-temp-hr25-80-60",
+      "label": "Rookgastemperatuur HR/HRC25 bij 80/60 °C",
+      "value": "56–67",
+      "unit": "°C",
+      "load": "Laaglast–vollast"
+    },
+    {
+      "id": "flue-temp-hr30-80-60",
+      "label": "Rookgastemperatuur HR/HRC30 bij 80/60 °C",
+      "value": "56–67",
+      "unit": "°C",
+      "load": "Laaglast–vollast"
+    },
+    {
+      "id": "flue-temp-hr45-80-60",
+      "label": "Rookgastemperatuur HR/HRC45 bij 80/60 °C",
+      "value": "58–74",
+      "unit": "°C",
+      "load": "Laaglast–vollast"
+    },
+    {
+      "id": "flue-temp-hr25-50-30",
+      "label": "Rookgastemperatuur HR/HRC25 bij 50/30 °C",
+      "value": "42–47",
+      "unit": "°C",
+      "load": "Laaglast–vollast"
+    },
+    {
+      "id": "flue-temp-hr30-50-30",
+      "label": "Rookgastemperatuur HR/HRC30 bij 50/30 °C",
+      "value": "41–50",
+      "unit": "°C",
+      "load": "Laaglast–vollast"
+    },
+    {
+      "id": "flue-temp-hr45-50-30",
+      "label": "Rookgastemperatuur HR/HRC45 bij 50/30 °C",
+      "value": "36–51",
+      "unit": "°C",
+      "load": "Laaglast–vollast"
+    }
+  ],
+  "settings": [
+    {
+      "id": "chimney-sweep-full",
+      "label": "Schoorsteenvegerbedrijf vollast",
+      "value": 100,
+      "unit": "%",
+      "load": "Vollast",
+      "technicalExplanation": "Houd de schoorsteenvegertoets 5 seconden ingedrukt."
+    },
+    {
+      "id": "chimney-sweep-low",
+      "label": "Schoorsteenvegerbedrijf laaglast",
+      "value": "Minimum",
+      "load": "Laaglast",
+      "technicalExplanation": "Stel het cv-vermogen met de pijltoets in op de minimale waarde."
+    }
+  ],
+  "measurementConditions": [
+    "Open minimaal twee radiatorafsluiters en zorg dat de installatie warmte kan afgeven.",
+    "Meet de dynamische gasvoordruk in schoorsteenvegerbedrijf.",
+    "Controleer en stel het gas/lucht-drukverschil uitsluitend op laaglast af.",
+    "Meet CO afzonderlijk op laaglast en vollast via het rookgasmeetpunt.",
+    "Sluit de meetnippels en controleer het toestel na werkzaamheden op gasdichtheid."
+  ],
+  "technicalExplanation": "De officiële afstelprocedure gebruikt het drukverschil op laaglast; O₂- en CO₂-cijfers uit de technische tabel zijn alleen als technische referentie opgenomen.",
+  "notes": [
+    "Stel niet af op basis van O₂-, CO₂- of CO-metingen."
+  ],
+  "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720801234",
+  "sourcePage": "12–13, 35–37",
+  "verified": true,
+  "verifiedDate": "2026-08-14"
+}

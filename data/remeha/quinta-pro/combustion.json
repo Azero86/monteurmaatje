@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "quinta-pro",
+  "title": "Officiële O₂-controle en -instelling Quinta Pro 45/65/90/115",
+  "measurements": [
+    {
+      "id": "o2-high-g25",
+      "label": "O₂ vollast — G25 L-gas",
+      "value": "45: 4,3–4,8; 65: 4,3–4,8; 90: 3,4–3,9; 115: 3,8–4,3",
+      "unit": "%",
+      "load": "Vollast H3"
+    },
+    {
+      "id": "o2-low-g25",
+      "label": "O₂ laaglast — G25 L-gas",
+      "value": "45: 5,7–6,2; 65: 4,8–5,3; 90: 4,8–5,3; 115: 4,3–4,8",
+      "unit": "%",
+      "load": "Laaglast L3"
+    },
+    {
+      "id": "o2-high-g20",
+      "label": "O₂ vollast — G20 H-gas",
+      "value": "45: 4,3–4,8; 65: 4,3–4,8; 90: 3,4–3,9; 115: 4,2–4,7",
+      "unit": "%",
+      "load": "Vollast H3"
+    },
+    {
+      "id": "o2-low-g20",
+      "label": "O₂ laaglast — G20 H-gas",
+      "value": "45: 5,7–6,2; 65: 4,8–5,3; 90: 4,8–5,3; 115: 5,6–6,1",
+      "unit": "%",
+      "load": "Laaglast L3"
+    },
+    {
+      "id": "o2-high-g25-3",
+      "label": "O₂ vollast — G25.3 K-gas",
+      "value": "45: 4,1–4,6; 65: 4,1–4,6; 90: 3,2–3,7; 115: 3,5–4,0",
+      "unit": "%",
+      "load": "Vollast H3"
+    },
+    {
+      "id": "o2-low-g25-3",
+      "label": "O₂ laaglast — G25.3 K-gas",
+      "value": "45: 5,5–6,0; 65: 4,6–5,1; 90: 4,6–5,1; 115: 4,0–4,5",
+      "unit": "%",
+      "load": "Laaglast L3"
+    },
+    {
+      "id": "o2-high-g31",
+      "label": "O₂ vollast — G31 propaan",
+      "value": "45: 4,1–4,6; 65: 4,1–4,6; 90: 4,1–4,6; 115: 4,4–4,9",
+      "unit": "%",
+      "load": "Vollast H3"
+    },
+    {
+      "id": "o2-low-g31",
+      "label": "O₂ laaglast — G31 propaan",
+      "value": "45: 5,4–5,9; 65: 5,1–5,6; 90: 5,4–5,9; 115: 5,7–6,2",
+      "unit": "%",
+      "load": "Laaglast L3"
+    }
+  ],
+  "settings": [
+    {
+      "id": "test-high",
+      "label": "Vollasttest",
+      "value": "H3",
+      "technicalExplanation": "Druk tegelijk op de twee schoorsteenvegertoetsen."
+    },
+    {
+      "id": "test-low",
+      "label": "Laaglasttest",
+      "value": "L3",
+      "technicalExplanation": "Druk meerdere malen op min totdat L3 verschijnt."
+    },
+    {
+      "id": "adjust-high",
+      "label": "Afstelling vollast",
+      "value": "Afstelschroef A",
+      "technicalExplanation": "Stel op de nominale waarde af, binnen de grenzen."
+    },
+    {
+      "id": "adjust-low",
+      "label": "Afstelling laaglast",
+      "value": "Afstelschroef B",
+      "technicalExplanation": "Stel op de nominale waarde af, binnen de grenzen."
+    }
+  ],
+  "measurementConditions": [
+    "Gebruik een gekalibreerde rookgasanalyser en meet bij het rookgasmeetpunt.",
+    "Meet eerst vollast en daarna laaglast.",
+    "O₂ bij vollast moet lager zijn dan bij laaglast."
+  ],
+  "technicalExplanation": "Alle gassoorten zijn afzonderlijk weergegeven; de handleiding geeft voor deze procedure O₂-bereiken.",
+  "notes": [
+    "Gebruik uitsluitend de rij voor de ingestelde gassoort en de juiste 45/65/90/115-variant."
+  ],
+  "source": "https://documentation.remeha.nl/wp-content/uploads/sites/68/2025/12/Installatie-gebruikers-en-servicehandleiding-Quinta-Pro-45-65-90-%E2%80%93-115-%E2%80%93-V12.pdf",
+  "sourcePage": "51–54",
+  "verified": true,
+  "verifiedDate": "2026-08-14"
+}
+

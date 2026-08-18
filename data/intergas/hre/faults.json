@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "hre",
+  "source": {
+    "title": "Intergas installatievoorschrift Kombi Kompakt HRE",
+    "url": "https://www.intergas-verwarming.nl/app/uploads/2018/01/200126-IG-88077804-Installatievoorschrift-Kombi-Kompakt-HRE-Solo.pdf"
+  },
+  "faults": [
+    {
+      "code": "0",
+      "title": "Sensorfout na zelfcontrole",
+      "meaning": "Tijdens de interne zelfcontrole wordt een fout in sensor S1 en/of S2 vastgesteld.",
+      "causes": [
+        "Sensor S1 geeft een ongeldige waarde",
+        "Sensor S2 geeft een ongeldige waarde"
+      ],
+      "checks": [
+        "Controleer aansluiting en bedrading van S1 en S2",
+        "Meet beide sensoren",
+        "Vervang S1 en/of S2 indien defect"
+      ]
+    },
+    {
+      "code": "1",
+      "title": "Temperatuur te hoog",
+      "meaning": "De temperatuurbeveiliging grijpt in doordat de toesteltemperatuur te hoog oploopt.",
+      "causes": [
+        "Lucht in ketel of cv-installatie",
+        "Pomp draait niet",
+        "Terugslagklep onder de pomp blokkeert de doorstroming"
+      ],
+      "checks": [
+        "Ontlucht ketel en cv-installatie",
+        "Controleer of de pomp draait; reset of vervang de pomp indien nodig",
+        "Controleer een eventueel aanwezige terugslagklep onder de pomp"
+      ]
+    },
+    {
+      "code": "2",
+      "title": "S1 en S2 verwisseld",
+      "meaning": "De branderautomaat stelt vast dat de aanvoer- en retoursensor waarschijnlijk zijn verwisseld.",
+      "causes": [
+        "Stekkers of kabelboom van S1 en S2 verwisseld",
+        "Sensor S1 of S2 defect"
+      ],
+      "checks": [
+        "Controleer de kabelboom en sensoraansluitingen",
+        "Controleer of S1 en S2 op de juiste positie zitten",
+        "Meet en vervang de defecte sensor"
+      ]
+    },
+    {
+      "code": "4",
+      "title": "Geen vlamsignaal",
+      "meaning": "Na de ontstekingspoging wordt geen vlamsignaal gedetecteerd.",
+      "causes": [
+        "Gaskraan dicht of gasvoordruk buiten bereik",
+        "Rookgasterugslagklep werkt niet goed",
+        "Condensafvoer verstopt",
+        "Ontsteekunit, ontsteekkabel, branderbed of branderpakking defect",
+        "Ontsteekafstand onjuist",
+        "Gasblok of ontsteekunit krijgt geen spanning",
+        "Aarding niet in orde"
+      ],
+      "checks": [
+        "Controleer gaskraan en gasvoordruk",
+        "Controleer rookgasterugslagklep en condensafvoer",
+        "Inspecteer ontsteekunit, kabel, branderbed en pakking",
+        "Controleer de ontsteekafstand met de voorgeschreven controlemal",
+        "Controleer spanning op gasblok en ontsteekunit",
+        "Controleer de aarding"
+      ],
+      "note": "Gaszijdige metingen en afstellingen alleen laten uitvoeren door een gecertificeerd monteur."
+    },
+    {
+      "code": "5",
+      "title": "Slecht vlamsignaal",
+      "meaning": "Er is wel vlamdetectie, maar het gemeten vlamsignaal is onvoldoende of instabiel.",
+      "causes": [
+        "Condensafvoer verstopt",
+        "Gasvoordruk te laag of valt weg",
+        "Probleem met ontsteekunit of ontsteekkabel",
+        "Gasblok niet correct afgesteld",
+        "Aarding wandcontactdoos niet in orde",
+        "Recirculatie van rookgassen"
+      ],
+      "checks": [
+        "Controleer en reinig de condensafvoer",
+        "Controleer de gasvoordruk",
+        "Controleer ontsteekunit en ontsteekkabel",
+        "Controleer de gasblokafstelling volgens voorschrift",
+        "Controleer de aarding",
+        "Controleer luchttoevoer en rookgasafvoer op recirculatie"
+      ],
+      "note": "Gaszijdige metingen en afstellingen alleen laten uitvoeren door een gecertificeerd monteur."
+    },
+    {
+      "code": "6",
+      "title": "Vlamdetectiefout",
+      "meaning": "De branderautomaat ontvangt een onjuist vlamsignaal buiten de normale ontstekingscyclus.",
+      "causes": [
+        "Ontsteekkabel of bougiedop defect",
+        "Ontsteekunit defect",
+        "Branderautomaat defect"
+      ],
+      "checks": [
+        "Controleer en vervang ontsteekkabel en bougiedop indien nodig",
+        "Controleer de ontsteekunit",
+        "Vervang de branderautomaat indien de voorgaande controles goed zijn"
+      ]
+    },
+    {
+      "code": "8",
+      "title": "Ventilatortoerental niet juist",
+      "meaning": "Het werkelijke ventilatortoerental komt niet overeen met het gevraagde toerental.",
+      "causes": [
+        "Ventilator loopt tegen mantelisolatie",
+        "Bedrading of stekker heeft slecht contact",
+        "Ventilator defect",
+        "Branderautomaat defect"
+      ],
+      "checks": [
+        "Controleer of de ventilator vrij loopt",
+        "Controleer bedrading en stekkerverbinding",
+        "Controleer de voedingsspanning volgens voorschrift",
+        "Controleer of vervang de ventilator",
+        "Vervang de branderautomaat indien nodig"
+      ]
+    },
+    {
+      "code": "10",
+      "title": "Sensorfout S1",
+      "meaning": "De branderautomaat ontvangt geen geldige meetwaarde van temperatuursensor S1.",
+      "causes": [
+        "Lucht in ketel of cv-installatie",
+        "Klem-NTC niet goed bevestigd op de warmwaterbuis",
+        "Breuk of slecht contact in de bedrading",
+        "Sensor S1 defect"
+      ],
+      "checks": [
+        "Ontlucht ketel en cv-installatie",
+        "Controleer de bevestiging van de klem-NTC",
+        "Controleer de bedrading op breuk en slecht contact",
+        "Meet en vervang S1 indien nodig"
+      ]
+    },
+    {
+      "code": "11",
+      "title": "Sensorfout S1",
+      "meaning": "De branderautomaat ontvangt geen geldige meetwaarde van temperatuursensor S1.",
+      "causes": [
+        "Lucht in ketel of cv-installatie",
+        "Klem-NTC niet goed bevestigd op de warmwaterbuis",
+        "Breuk of slecht contact in de bedrading",
+        "Sensor S1 defect"
+      ],
+      "checks": [
+        "Ontlucht ketel en cv-installatie",
+        "Controleer de bevestiging van de klem-NTC",
+        "Controleer de bedrading op breuk en slecht contact",
+        "Meet en vervang S1 indien nodig"
+      ]
+    },
+    {
+      "code": "12",
+      "title": "Sensorfout S1",
+      "meaning": "De branderautomaat ontvangt geen geldige meetwaarde van temperatuursensor S1.",
+      "causes": [
+        "Lucht in ketel of cv-installatie",
+        "Klem-NTC niet goed bevestigd op de warmwaterbuis",
+        "Breuk of slecht contact in de bedrading",
+        "Sensor S1 defect"
+      ],
+      "checks": [
+        "Ontlucht ketel en cv-installatie",
+        "Controleer de bevestiging van de klem-NTC",
+        "Controleer de bedrading op breuk en slecht contact",
+        "Meet en vervang S1 indien nodig"
+      ]
+    },
+    {
+      "code": "13",
+      "title": "Sensorfout S1",
+      "meaning": "De branderautomaat ontvangt geen geldige meetwaarde van temperatuursensor S1.",
+      "causes": [
+        "Lucht in ketel of cv-installatie",
+        "Klem-NTC niet goed bevestigd op de warmwaterbuis",
+        "Breuk of slecht contact in de bedrading",
+        "Sensor S1 defect"
+      ],
+      "checks": [
+        "Ontlucht ketel en cv-installatie",
+        "Controleer de bevestiging van de klem-NTC",
+        "Controleer de bedrading op breuk en slecht contact",
+        "Meet en vervang S1 indien nodig"
+      ]
+    },
+    {
+      "code": "14",
+      "title": "Sensorfout S1",
+      "meaning": "De branderautomaat ontvangt geen geldige meetwaarde van temperatuursensor S1.",
+      "causes": [
+        "Lucht in ketel of cv-installatie",
+        "Klem-NTC niet goed bevestigd op de warmwaterbuis",
+        "Breuk of slecht contact in de bedrading",
+        "Sensor S1 defect"
+      ],
+      "checks": [
+        "Ontlucht ketel en cv-installatie",
+        "Controleer de bevestiging van de klem-NTC",
+        "Controleer de bedrading op breuk en slecht contact",
+        "Meet en vervang S1 indien nodig"
+      ]
+    },
+    {
+      "code": "20",
+      "title": "Sensorfout S2",
+      "meaning": "De branderautomaat ontvangt geen geldige meetwaarde van temperatuursensor S2.",
+      "causes": [
+        "Breuk of slecht contact in de bedrading",
+        "Sensor S2 defect"
+      ],
+      "checks": [
+        "Controleer de bedrading op breuk en slecht contact",
+        "Meet sensor S2",
+        "Vervang S2 indien nodig"
+      ]
+    },
+    {
+      "code": "21",
+      "title": "Sensorfout S2",
+      "meaning": "De branderautomaat ontvangt geen geldige meetwaarde van temperatuursensor S2.",
+      "causes": [
+        "Breuk of slecht contact in de bedrading",
+        "Sensor S2 defect"
+      ],
+      "checks": [
+        "Controleer de bedrading op breuk en slecht contact",
+        "Meet sensor S2",
+        "Vervang S2 indien nodig"
+      ]
+    },
+    {
+      "code": "22",
+      "title": "Sensorfout S2",
+      "meaning": "De branderautomaat ontvangt geen geldige meetwaarde van temperatuursensor S2.",
+      "causes": [
+        "Breuk of slecht contact in de bedrading",
+        "Sensor S2 defect"
+      ],
+      "checks": [
+        "Controleer de bedrading op breuk en slecht contact",
+        "Meet sensor S2",
+        "Vervang S2 indien nodig"
+      ]
+    },
+    {
+      "code": "23",
+      "title": "Sensorfout S2",
+      "meaning": "De branderautomaat ontvangt geen geldige meetwaarde van temperatuursensor S2.",
+      "causes": [
+        "Breuk of slecht contact in de bedrading",
+        "Sensor S2 defect"
+      ],
+      "checks": [
+        "Controleer de bedrading op breuk en slecht contact",
+        "Meet sensor S2",
+        "Vervang S2 indien nodig"
+      ]
+    },
+    {
+      "code": "24",
+      "title": "Sensorfout S2",
+      "meaning": "De branderautomaat ontvangt geen geldige meetwaarde van temperatuursensor S2.",
+      "causes": [
+        "Breuk of slecht contact in de bedrading",
+        "Sensor S2 defect"
+      ],
+      "checks": [
+        "Controleer de bedrading op breuk en slecht contact",
+        "Meet sensor S2",
+        "Vervang S2 indien nodig"
+      ]
+    },
+    {
+      "code": "27",
+      "title": "Kortsluiting buitenvoeler",
+      "meaning": "De ingang van de buitenvoeler meet een kortsluiting of een niet-toegestane aansluiting.",
+      "causes": [
+        "Kortsluiting in de buitenvoelerbedrading",
+        "Buitenvoeler defect",
+        "Ongeschikt BRINK WTW-koppelstuk of verkeerde branderautomaat toegepast"
+      ],
+      "checks": [
+        "Controleer de bedrading van de buitenvoeler",
+        "Meet en vervang de buitenvoeler indien nodig",
+        "Controleer bij een BRINK WTW-koppeling of de juiste branderautomaat is toegepast"
+      ]
+    },
+    {
+      "code": "29",
+      "title": "Vlamdetectiefout",
+      "meaning": "De branderautomaat registreert een fout in de vlamdetectie.",
+      "causes": [
+        "Rookgasterugslagklep ontbreekt of werkt niet goed",
+        "Ontsteekunit defect"
+      ],
+      "checks": [
+        "Controleer de aanwezigheid en werking van de rookgasterugslagklep",
+        "Plaats de terugslagklep indien deze ontbreekt",
+        "Controleer en vervang de ontsteekunit indien nodig"
+      ]
+    },
+    {
+      "code": "30",
+      "title": "Vlamdetectiefout",
+      "meaning": "De branderautomaat registreert een fout in de vlamdetectie.",
+      "causes": [
+        "Rookgasterugslagklep ontbreekt of werkt niet goed",
+        "Ontsteekunit defect"
+      ],
+      "checks": [
+        "Controleer de aanwezigheid en werking van de rookgasterugslagklep",
+        "Plaats de terugslagklep indien deze ontbreekt",
+        "Controleer en vervang de ontsteekunit indien nodig"
+      ]
+    }
+  ]
+}

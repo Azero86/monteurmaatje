@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "ecofit-pro-6-3",
+  "title": "Officiële verbrandingscontrole ecoFIT pro",
+  "measurements": [
+    {
+      "label": "CO₂ bij vollast — aardgas K",
+      "value": 9.0,
+      "tolerance": 1.0,
+      "unit": "vol.-%",
+      "load": "P.01 op 100%",
+      "condition": "Waarde geldt met verwijderde én gemonteerde voormantel"
+    },
+    {
+      "label": "O₂ bij vollast — aardgas K",
+      "value": 4.6,
+      "tolerance": 1.8,
+      "unit": "vol.-%",
+      "load": "P.01 op 100%",
+      "condition": "Waarde geldt met verwijderde én gemonteerde voormantel"
+    },
+    {
+      "label": "CO/CO₂-verhouding",
+      "maximum": 0.0028,
+      "load": "Vollast",
+      "condition": "Aardgas K"
+    },
+    {
+      "label": "Toegestane gasaansluitdruk — aardgas K",
+      "minimum": 20.0,
+      "maximum": 30.0,
+      "unit": "mbar",
+      "load": "P.01 op 100%",
+      "condition": "Gemeten op het gasblok ten opzichte van de atmosferische druk"
+    }
+  ],
+  "settings": [
+    {
+      "label": "CO₂-afstelling gasblok",
+      "value": "Linksom verhoogt CO₂; rechtsom verlaagt CO₂",
+      "condition": "Alleen wanneer afstelling vereist",
+      "technicalExplanation": "Verstel per 1/8 omwenteling en wacht na iedere stap circa 1 minuut tot de waarde stabiel is."
+    }
+  ],
+  "measurementConditions": [
+    "Start testprogramma P.01 met instelwaarde 100.",
+    "Wacht 5 minuten tot de meetwaarde stabiel is.",
+    "Meet aan de verbrandingsgasmeetnippel."
+  ],
+  "technicalExplanation": "De handleiding geeft voor deze toestelreeks alleen vollastwaarden. Er is geen afzonderlijke officiële laaglastwaarde opgenomen.",
+  "notes": [
+    "Bij een waarde buiten het opgegeven bereik mag het toestel volgens Vaillant niet in gebruik worden genomen; neem contact op met het serviceteam."
+  ],
+  "source": "https://pimassetsprdst.blob.core.windows.net/assets/apc_Original/97/89/18789789.pdf",
+  "sourcePage": "24–25 en 31",
+  "verified": true,
+  "verifiedDate": "2026-08-14"
+}

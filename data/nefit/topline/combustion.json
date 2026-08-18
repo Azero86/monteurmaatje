@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "topline",
+  "title": "Officiële gas-luchtcontrole TopLine",
+  "measurements": [
+    {
+      "id": "gas-pressure-natural",
+      "label": "Dynamische gasvoordruk — aardgas L",
+      "value": 25,
+      "minimum": 20,
+      "maximum": 30,
+      "unit": "mbar",
+      "load": "Maximaal cv-vermogen"
+    },
+    {
+      "id": "gas-pressure-lpg",
+      "label": "Dynamische gasvoordruk — propaan 3P",
+      "value": 50,
+      "minimum": 42.5,
+      "maximum": 57.5,
+      "unit": "mbar",
+      "load": "Maximaal cv-vermogen"
+    },
+    {
+      "id": "gas-air-low",
+      "label": "Drukverschil gas/lucht laaglast",
+      "value": -5,
+      "minimum": -10,
+      "maximum": 0,
+      "unit": "Pa",
+      "load": "Minimale waarde"
+    },
+    {
+      "id": "co",
+      "label": "CO in rookgas",
+      "maximum": 400,
+      "unit": "ppm",
+      "load": "Laaglast én vollast",
+      "condition": "Verbranding zonder luchtovermaat"
+    },
+    {
+      "id": "ionisation-low",
+      "label": "Ionisatiestroom laaglast",
+      "minimum": 2,
+      "unit": "µA",
+      "load": "Laaglast"
+    }
+  ],
+  "settings": [
+    {
+      "id": "chimney-sweep",
+      "label": "Schoorsteenvegerbedrijf",
+      "value": "Minimaal–maximaal cv-vermogen",
+      "technicalExplanation": "Houd de schoorsteenvegertoets 5 seconden ingedrukt en stel het vermogen tijdelijk met de pijltoetsen in."
+    }
+  ],
+  "measurementConditions": [
+    "Zorg dat de cv-installatie warmte kan afgeven.",
+    "Meet de dynamische gasvoordruk in schoorsteenvegerbedrijf binnen het bereik dat bij de gebruikte gassoort hoort.",
+    "Controleer en stel het drukverschil uitsluitend op laaglast af.",
+    "Meet CO via het rookgasmeetpunt eerst op laaglast en daarna op vollast.",
+    "Sluit de meetnippels en controleer het toestel na werkzaamheden op gasdichtheid."
+  ],
+  "technicalExplanation": "De officiële procedure gebruikt het gas/lucht-drukverschil op laaglast als afstelgrootheid.",
+  "notes": [
+    "Stel nooit af op basis van gemeten rookgaswaarden."
+  ],
+  "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641179",
+  "sourcePage": "35–36",
+  "verified": true,
+  "verifiedDate": "2026-08-14"
+}
