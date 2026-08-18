@@ -3,41 +3,111 @@
   "deviceId": "xtreme",
   "title": "Officiële gas/luchtcontrole Xtreme 24/30/36",
   "measurements": [
-    { "id": "o2-high-g25-3", "label": "O₂ hooglast — aardgas 2EK G25.3", "minimum": 3.15, "maximum": 5.7, "unit": "%", "load": "Hooglast, testprogramma H", "condition": "Open mantel; toestel op maximale belasting" },
-    { "id": "o2-high-g31", "label": "O₂ hooglast — propaan 3P G31", "minimum": 4.5, "maximum": 6.05, "unit": "%", "load": "Hooglast, testprogramma H", "condition": "Open mantel; toestel op maximale belasting" },
-    { "id": "o2-high-g20", "label": "O₂ hooglast — aardgas 2E G20", "minimum": 3.85, "maximum": 5.6, "unit": "%", "load": "Hooglast, testprogramma H", "condition": "Open mantel; toestel op maximale belasting" },
-    { "id": "o2-high-g25-3-y20", "label": "O₂ hooglast — aardgas 2EKY20 G25.3Y20", "minimum": 4.7, "maximum": 7.1, "unit": "%", "load": "Hooglast, testprogramma H", "condition": "Open mantel; toestel op maximale belasting" },
-    { "id": "o2-high-g20-y20", "label": "O₂ hooglast — aardgas 2EY20 G20Y20", "minimum": 4.95, "maximum": 6.8, "unit": "%", "load": "Hooglast, testprogramma H", "condition": "Open mantel; toestel op maximale belasting" },
-    { "id": "o2-low-g25-3", "label": "O₂ laaglast — aardgas 2EK G25.3", "minimum": "gemeten O₂(H)", "maximum": 6.05, "unit": "%", "load": "Laaglast, testprogramma L", "condition": "Open mantel; hooglastmeting eerst uitvoeren" },
-    { "id": "o2-low-g31", "label": "O₂ laaglast — propaan 3P G31", "minimum": "gemeten O₂(H) + 0,5", "maximum": 6.65, "unit": "%", "load": "Laaglast, testprogramma L", "condition": "Open mantel; hooglastmeting eerst uitvoeren" },
-    { "id": "o2-low-g20", "label": "O₂ laaglast — aardgas 2E G20", "minimum": "gemeten O₂(H)", "maximum": 6, "unit": "%", "load": "Laaglast, testprogramma L", "condition": "Open mantel; hooglastmeting eerst uitvoeren" },
-    { "id": "o2-low-g25-3-y20", "label": "O₂ laaglast — aardgas 2EKY20 G25.3Y20", "minimum": "gemeten O₂(H)", "maximum": 7.65, "unit": "%", "load": "Laaglast, testprogramma L", "condition": "Open mantel; hooglastmeting eerst uitvoeren" },
-    { "id": "o2-low-g20-y20", "label": "O₂ laaglast — aardgas 2EY20 G20Y20", "minimum": "gemeten O₂(H)", "maximum": 7.35, "unit": "%", "load": "Laaglast, testprogramma L", "condition": "Open mantel; hooglastmeting eerst uitvoeren" },
-    { "id": "co-low", "label": "CO laaglast met gemonteerde voormantel", "maximum": 160, "unit": "ppm", "load": "Laaglast", "condition": "Voormantel gemonteerd" },
-    { "id": "co-high", "label": "CO hooglast met gemonteerde voormantel", "maximum": 160, "unit": "ppm", "load": "Hooglast, testprogramma H", "condition": "Voormantel gemonteerd" },
-    { "id": "gas-consumption-g20", "label": "Gasverbruik G20 per toestelvariant", "value": "Xtreme 24: 0,38–2,66; Xtreme 30: 0,38–3,23; Xtreme 36: 0,38–3,46", "unit": "m³/h", "condition": "Officiële technische specificaties" },
-    { "id": "gas-consumption-g20-y20", "label": "Gasverbruik G20Y20 per toestelvariant", "value": "Xtreme 24: 0,42–2,95; Xtreme 30: 0,42–3,58; Xtreme 36: 0,42–3,84", "unit": "m³/h", "condition": "Officiële technische specificaties" },
-    { "id": "gas-consumption-g25-3", "label": "Gasverbruik G25.3 per toestelvariant", "value": "Xtreme 24: 0,43–3,02; Xtreme 30: 0,43–3,67; Xtreme 36: 0,43–3,93", "unit": "m³/h", "condition": "Officiële technische specificaties" },
-    { "id": "gas-consumption-g25-3-y20", "label": "Gasverbruik G25.3Y20 per toestelvariant", "value": "Xtreme 24: 0,47–3,32; Xtreme 30: 0,47–4,03; Xtreme 36: 0,47–4,32", "unit": "m³/h", "condition": "Officiële technische specificaties" },
-    { "id": "gas-consumption-g31", "label": "Gasverbruik G31 per toestelvariant", "value": "Xtreme 24: 0,15–1,03; Xtreme 30: 0,15–1,25; Xtreme 36: 0,15–1,34", "unit": "m³/h", "condition": "Officiële technische specificaties" },
-    { "id": "flue-temperature-tap", "label": "Gemiddelde rookgastemperatuur tijdens tapbedrijf", "value": 35, "unit": "°C", "condition": "Geldt voor Xtreme 24, 30 en 36" },
-    { "id": "flue-mass-flow", "label": "Rookgasmassaflow minimum–maximum per toestelvariant", "value": "Xtreme 24: 5,9–41,6; Xtreme 30: 5,9–50,5; Xtreme 36: 5,9–54,1", "unit": "kg/h", "condition": "Officiële technische specificaties" },
-    { "id": "maximum-backpressure", "label": "Maximale tegendruk", "value": 250, "unit": "Pa", "condition": "Geldt voor Xtreme 24, 30 en 36" }
+    {
+      "id": "o2-high-g25-3",
+      "label": "O₂ hooglast — aardgas 2EK G25.3",
+      "minimum": 3.15,
+      "maximum": 5.7,
+      "unit": "%",
+      "load": "Hooglast, testprogramma H",
+      "condition": "Open mantel; toestel op maximale belasting"
+    },
+    {
+      "id": "o2-low-g25-3",
+      "label": "O₂ laaglast — aardgas 2EK G25.3",
+      "minimum": "gemeten O₂(H)",
+      "maximum": 6.05,
+      "unit": "%",
+      "load": "Laaglast, testprogramma L",
+      "condition": "Open mantel; hooglastmeting eerst uitvoeren"
+    },
+    {
+      "id": "co-low",
+      "label": "CO laaglast met gemonteerde voormantel",
+      "maximum": 160,
+      "unit": "ppm",
+      "load": "Laaglast",
+      "condition": "Voormantel gemonteerd"
+    },
+    {
+      "id": "co-high",
+      "label": "CO hooglast met gemonteerde voormantel",
+      "maximum": 160,
+      "unit": "ppm",
+      "load": "Hooglast, testprogramma H",
+      "condition": "Voormantel gemonteerd"
+    },
+    {
+      "id": "gas-consumption-g25-3",
+      "label": "Gasverbruik G25.3 per toestelvariant",
+      "value": "Xtreme 24: 0,43–3,02; Xtreme 30: 0,43–3,67; Xtreme 36: 0,43–3,93",
+      "unit": "m³/h",
+      "condition": "Officiële technische specificaties"
+    },
+    {
+      "id": "flue-temperature-tap",
+      "label": "Gemiddelde rookgastemperatuur tijdens tapbedrijf",
+      "value": 35,
+      "unit": "°C",
+      "condition": "Geldt voor Xtreme 24, 30 en 36"
+    },
+    {
+      "id": "flue-mass-flow",
+      "label": "Rookgasmassaflow minimum–maximum per toestelvariant",
+      "value": "Xtreme 24: 5,9–41,6; Xtreme 30: 5,9–50,5; Xtreme 36: 5,9–54,1",
+      "unit": "kg/h",
+      "condition": "Officiële technische specificaties"
+    },
+    {
+      "id": "maximum-backpressure",
+      "label": "Maximale tegendruk",
+      "value": 250,
+      "unit": "Pa",
+      "condition": "Geldt voor Xtreme 24, 30 en 36"
+    }
   ],
   "settings": [
-    { "id": "test-high", "label": "Hooglast-teststand", "value": "H", "load": "Maximale belasting", "technicalExplanation": "Houd de servicetoets vast en tik tweemaal op de plus-toets totdat H op het rechter display verschijnt." },
-    { "id": "test-low", "label": "Laaglast-teststand", "value": "L", "load": "Minimale belasting", "technicalExplanation": "Tik op de servicetoets en gelijktijdig op de min-toets totdat L op het rechter display verschijnt." },
-    { "id": "rings-24", "label": "Gasdoseerring Xtreme 24", "value": "G25.3/G25.3Y20: 426; G31: 315; G20/G20Y20: 392", "condition": "Insertnummer 528" },
-    { "id": "rings-30", "label": "Gasdoseerring Xtreme 30", "value": "G25.3/G25.3Y20: 490; G31: 370; G20/G20Y20: 450", "condition": "Insertnummer 500" },
-    { "id": "rings-36", "label": "Gasdoseerring Xtreme 36", "value": "G25.3/G25.3Y20: 490; G31: 370; G20/G20Y20: 450", "condition": "Insertnummer 500" },
-    { "id": "adjust-g25-3", "label": "Laaglast-afsteltabel aardgas 2EK G25.3", "value": "O₂(H)→O₂(L): 5,70→5,90±0,20; 5,30→5,70±0,20; 5,00→5,55±0,20; 4,70→5,40±0,20; 4,40→5,25±0,20; 4,10→5,10±0,20; 3,80→4,95±0,20; 3,50→4,80±0,20; 3,15→4,65±0,20", "condition": "Open mantel; hooglastmeting is bepalend" },
-    { "id": "adjust-g31", "label": "Laaglast-afsteltabel propaan 3P G31", "value": "O₂(H)→O₂(L): 6,05→6,55±0,20; 5,70→6,20±0,20; 5,40→5,90±0,20; 5,10→5,60±0,20; 4,80→5,30±0,20; 4,50→5,00±0,20", "condition": "Open mantel; hooglastmeting is bepalend" },
-    { "id": "adjust-g20", "label": "Laaglast-afsteltabel aardgas 2E G20", "value": "O₂(H)→O₂(L): 5,60→5,80±0,20; 5,30→5,65±0,20; 5,00→5,50±0,20; 4,70→5,35±0,20; 4,40→5,20±0,20; 4,10→5,05±0,20; 3,85→4,90±0,20", "condition": "Open mantel; hooglastmeting is bepalend" },
-    { "id": "adjust-g25-3-y20", "label": "Laaglast-afsteltabel aardgas 2EKY20 G25.3Y20", "value": "O₂(H)→O₂(L): 7,10→7,40±0,25; 7,00→7,30±0,25; 6,70→7,00±0,25; 6,40→6,70±0,25; 6,10→6,40±0,25; 5,70→6,00±0,25; 5,30→5,60±0,25; 5,00→5,30±0,25; 4,70→5,00±0,25", "condition": "Open mantel; hooglastmeting is bepalend" },
-    { "id": "adjust-g20-y20", "label": "Laaglast-afsteltabel aardgas 2EY20 G20Y20", "value": "O₂(H)→O₂(L): 6,80→7,10±0,25; 6,60→6,90±0,25; 6,30→6,60±0,25; 6,00→6,30±0,25; 5,70→6,00±0,25; 5,40→5,70±0,25; 5,10→5,40±0,25; 4,95→5,25±0,25", "condition": "Open mantel; hooglastmeting is bepalend" }
+    {
+      "id": "test-high",
+      "label": "Hooglast-teststand",
+      "value": "H",
+      "load": "Maximale belasting",
+      "technicalExplanation": "Houd de servicetoets vast en tik tweemaal op de plus-toets totdat H op het rechter display verschijnt."
+    },
+    {
+      "id": "test-low",
+      "label": "Laaglast-teststand",
+      "value": "L",
+      "load": "Minimale belasting",
+      "technicalExplanation": "Tik op de servicetoets en gelijktijdig op de min-toets totdat L op het rechter display verschijnt."
+    },
+    {
+      "id": "rings-24",
+      "label": "Gasdoseerring Xtreme 24",
+      "value": "G25.3: 426",
+      "condition": "Insertnummer 528"
+    },
+    {
+      "id": "rings-30",
+      "label": "Gasdoseerring Xtreme 30",
+      "value": "G25.3: 490",
+      "condition": "Insertnummer 500"
+    },
+    {
+      "id": "rings-36",
+      "label": "Gasdoseerring Xtreme 36",
+      "value": "G25.3: 490",
+      "condition": "Insertnummer 500"
+    },
+    {
+      "id": "adjust-g25-3",
+      "label": "Laaglast-afsteltabel aardgas 2EK G25.3",
+      "value": "O₂(H)→O₂(L): 5,70→5,90±0,20; 5,30→5,70±0,20; 5,00→5,55±0,20; 4,70→5,40±0,20; 4,40→5,25±0,20; 4,10→5,10±0,20; 3,80→4,95±0,20; 3,50→4,80±0,20; 3,15→4,65±0,20",
+      "condition": "Open mantel; hooglastmeting is bepalend"
+    }
   ],
   "measurementConditions": [
-    "Controleer eerst op het typeplaatje voor welke gassoort het toestel is afgesteld.",
+    "Controleer op het typeplaatje dat het toestel voor aardgas G25.3 is uitgevoerd.",
     "Voer de gas/luchtcontrole met geopende mantel en op basis van O₂ uit; de rookgasanalyzer moet een O₂-sensor hebben en gekalibreerd zijn.",
     "Verwijder de afdekdop van het rookgasmeetpunt op de rookgasadapter boven het toestel en plaats de meetprobe volledig in het midden van de rookgasstroom; dicht het meetpunt volledig af.",
     "Zet het toestel op hooglast en wacht minimaal 3 minuten tot de analyzer stabiel uitleest.",
