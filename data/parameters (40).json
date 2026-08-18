@@ -1,0 +1,992 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "ecotec-exclusive-cf",
+  "source": {
+    "title": "Vaillant ecoTEC exclusive installatie- en onderhoudshandleiding 0020282231_03",
+    "url": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf"
+  },
+  "parameters": [
+    {
+      "code": "D.000",
+      "description": "MaximalebelastinginCV-functie",
+      "factoryDefault": "Auto",
+      "minimum": "productafhankelijk",
+      "unit": "kW",
+      "technicalExplanation": "InstelbareCV-deellast:hetinstelbereikisvermeld indetechnischegegevens.Nietalleproducten hebbeneeninstelbereik. Auto:productpast.max.CV-deellastautomatisch aanactuelebehoeftevandeinstallatieaan.",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 197,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.001",
+      "description": "NalooptijdCV-pomp",
+      "factoryDefault": "5",
+      "minimum": "1",
+      "maximum": "60",
+      "unit": "min",
+      "technicalExplanation": "1 NalooptijdinternepompvoorCV-bedrijf",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 197,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.002",
+      "description": "Maximalebranderwachttijd",
+      "factoryDefault": "20",
+      "minimum": "2",
+      "maximum": "60",
+      "unit": "min",
+      "technicalExplanation": "1 Maximalebranderwachttijdverwarmingbij20°C aanvoertemperatuur",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 197,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.003",
+      "description": "Warmwatertemp.gemeten",
+      "unit": "°C",
+      "technicalExplanation": "1",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 197,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.004",
+      "description": "Boilertemperatuur",
+      "unit": "°C",
+      "technicalExplanation": "Meetwaardevandeboilertemperatuursensor.",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 197,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.005",
+      "description": "CV-aanvoertemperatuurgewenste waarde",
+      "unit": "°C",
+      "technicalExplanation": "MaximaaldeinD.071ingesteldewaarde,begrensddooreeneBUS-thermostaat,indienaangesloten.",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 197,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.006",
+      "description": "Gewenstewarmwatertemperatuur",
+      "factoryDefault": "35",
+      "unit": "°C",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 197,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.008",
+      "description": "Statuskamerthermostaat(230V)",
+      "technicalExplanation": "Uit,Aan",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 198,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.009",
+      "description": "GewenstewaardevandeeBUS-thermostaat",
+      "technicalExplanation": "Wordtweergegevenalseenthermostaatisaangesloten.",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 198,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.010",
+      "description": "StatusCV-pomp",
+      "technicalExplanation": "Uit,Aan",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 198,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.011",
+      "description": "Statusexternepomp",
+      "technicalExplanation": "Uit,Aan",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 198,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.012",
+      "description": "Statusboilerlaadpomp",
+      "technicalExplanation": "Uit,Aan",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 198,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.013",
+      "description": "Statuscirculatiepomp",
+      "technicalExplanation": "Uit,Aan",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 198,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.015",
+      "description": "Pomptoerentalwerkelijkewaarde",
+      "unit": "%",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 198,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.016",
+      "description": "Statuskamerthermostaat(24V)",
+      "technicalExplanation": "Uit,Aan",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 198,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.017",
+      "description": "Typeverwarmingsregeling",
+      "factoryDefault": "Aanvoertemperatuurregeling",
+      "technicalExplanation": "Aanvoertemperatuurreg. Retourtemp.regeling(wanneeruderetourtemperatuurregelingheeftgeactiveerd,danisde functievanhetautomatischbepalenvanhetverwarmingsvermogennietactief.)",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 198,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.018",
+      "description": "ModusCV-pomp",
+      "factoryDefault": "Eco",
+      "technicalExplanation": "Continu(pomploopttijdensaanvraagkamerthermostaat) Eco(pomplooptintermitterendnabranderbedrijf. Pompcyclus:5minaan/25minuit.)",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 198,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.020",
+      "description": "Instellingmax.warmwatertemperatuur",
+      "factoryDefault": "70(CVtoestel) 65(combitoestel)",
+      "minimum": "50",
+      "maximum": "70",
+      "unit": "°C",
+      "technicalExplanation": "1 Alleenproductmetwarmwaterbereiding",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 198,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.021",
+      "description": "Statuswarmestartvoorwarmwater",
+      "technicalExplanation": "Uit,Aan",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 198,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.022",
+      "description": "Statuswarmwatervraag",
+      "technicalExplanation": "Uit,Aan",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 198,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.023",
+      "description": "Statusverwarmingsvraag",
+      "technicalExplanation": "Uit,Aan",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 198,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.025",
+      "description": "StatuswarmwatervraageBUS-thermostaat",
+      "technicalExplanation": "Uit,Aan (Wordtweergegevenalseenthermostaatisaangesloten.)",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 198,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.026",
+      "description": "Functie intern extra relais",
+      "factoryDefault": "2",
+      "minimum": "1",
+      "maximum": "9",
+      "technicalExplanation": "1:Circulatiepomp 2:Externepomp 3:Boilerlaadpomp 4:Afzuigkap 5:Externemagneetklep 6:Externefoutmelding 7:eBUSafstandsbediening 8:Legionellabev.pomp 9:Bypassventilzonneboiler",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 198,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.029",
+      "description": "DoorstromingCV-circuit",
+      "unit": "l/h",
+      "technicalExplanation": "Actueledoorstromingshoeveelheiddoorwaterdoorstromingssensor",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 198,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.031",
+      "description": "Automatischevulvoorziening",
+      "technicalExplanation": "1.Halfautomatisch 2.Automatisch",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 198,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.033",
+      "description": "Gewenstewaardeventilatortoerental",
+      "unit": "o/min",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 198,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.034",
+      "description": "Actuelewaardeventilatortoerental",
+      "unit": "o/min",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 198,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.035",
+      "description": "Standdriewegklep",
+      "factoryDefault": "1",
+      "unit": "%",
+      "technicalExplanation": "0:Positieverwarmen 1:Parallelbedrijf(middenpositie) 2:Warmwater",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 198,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.036",
+      "description": "Doorstromingwarmwatercircuit",
+      "unit": "l/min",
+      "technicalExplanation": "Actueledoorstromingshoeveelheiddoorstromingsrotor-waterdoorstromingssensor",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 199,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.039",
+      "description": "Koudwatertemperatuur",
+      "unit": "°C",
+      "technicalExplanation": "Warmwaterinlaattemperatuur",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 199,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.040",
+      "description": "Gewenstewaardeaanvoertemperatuur",
+      "unit": "°C",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 199,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.041",
+      "description": "RetourtemperatuurCV-circuit",
+      "unit": "°C",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 199,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.043",
+      "description": "Stooklijn",
+      "factoryDefault": "1,2",
+      "minimum": "0,1",
+      "maximum": "4,0",
+      "technicalExplanation": "0,05",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 199,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.045",
+      "description": "Offsetstooklijn",
+      "factoryDefault": "21",
+      "minimum": "5",
+      "maximum": "30",
+      "unit": "°C",
+      "technicalExplanation": "1",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 199,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.047",
+      "description": "Buitentemp.Offset",
+      "unit": "°C",
+      "technicalExplanation": "Alleenincombinatiemeteenbuitentemperatuursensor.",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 199,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.052",
+      "description": "Offsetstappenmotorgasblok",
+      "factoryDefault": "100",
+      "minimum": "101",
+      "maximum": "188",
+      "technicalExplanation": "Geldigvoordeeerste3cijfersvande3-of5cijferigeoffset.Offsetaandeachterkantvanhet gasblokaangegeven.",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 199,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.058",
+      "description": "Naverwarmenzonnecircuit",
+      "factoryDefault": "5",
+      "minimum": "3",
+      "maximum": "5",
+      "technicalExplanation": "3:Min.gew.waardeWW60°C 5:Auto Uitlooptemperatuur40°C: – Bijeeninlaattemperatuur≤35°Cstartde warmteopwekker,omdeingesteldeuitlooptemperatuurtebereiken. – Bijeeninlaattemperatuur>35°Cstoptde warmteopwekker,resp.dezestartniet.Wanneerdeinlaattemperatuur<30°C,startde warmteopwekkerweer. Uitlooptemperatuur60°C: – Bijeeninlaattemperatuur≤55°Cstartde warmteopwekker,omdeingesteldeuitlooptemperatuurtebereiken. – Bijeeninlaattemperatuur>55°Cstoptde warmteopwekker,resp.dezestartniet.Wanneerdeinlaattemperatuur<50°C,startde warmteopwekkerweer. Alleenvoorproductmetgeïntegreerdewarmwaterbereiding.",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 199,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.060",
+      "description": "Aantaloververhittingsfouten",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 199,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.061",
+      "description": "Aantalontstekingsfouten",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 199,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.062",
+      "description": "Nachtverlaging",
+      "factoryDefault": "0",
+      "minimum": "0",
+      "maximum": "30",
+      "unit": "°C",
+      "technicalExplanation": "1",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 199,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.064",
+      "description": "Gemiddeldeontstekingstijd",
+      "unit": "s",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 199,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.065",
+      "description": "Maximaleontstekingstijd",
+      "unit": "s",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 199,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.066",
+      "description": "Warmestartactivering",
+      "factoryDefault": "Productafhankelijk",
+      "technicalExplanation": "Warmestartgedeactiveerd Warmestartgeactiveerd",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 199,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.067",
+      "description": "Resterendebranderwachttijd",
+      "unit": "min",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 199,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.068",
+      "description": "Aantalmislukteontstekingenbijde1e poging",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 199,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.069",
+      "description": "Aantalmislukteontstekingenbijde2e poging",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 200,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.070",
+      "description": "Instellingdriewegklep",
+      "factoryDefault": "0",
+      "minimum": "0",
+      "maximum": "2",
+      "technicalExplanation": "0:Auto 1:Positieverwarmen Alleenvoorproductzondergeïntegreerdewarmwaterbereiding.",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 200,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.071",
+      "description": "Maximalegewensteaanvoertemperatuur",
+      "factoryDefault": "75",
+      "minimum": "40",
+      "maximum": "80",
+      "unit": "°C",
+      "technicalExplanation": "1",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 200,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.072",
+      "description": "Pompnaloopnaboilerlading",
+      "factoryDefault": "2",
+      "minimum": "0",
+      "maximum": "10",
+      "unit": "min",
+      "technicalExplanation": "Internepomp",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 200,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.073",
+      "description": "Offsetgewenstewaardewarmwater",
+      "factoryDefault": "0",
+      "minimum": "-15",
+      "maximum": "5",
+      "unit": "K",
+      "technicalExplanation": "1",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 200,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.074",
+      "description": "Boilermetgeïntegreerdelegionellabeveiliging",
+      "factoryDefault": "Aan",
+      "technicalExplanation": "Uit,Aan",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 200,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.075",
+      "description": "Maximaleduurvandeboilerlading",
+      "factoryDefault": "45",
+      "minimum": "20",
+      "maximum": "90",
+      "unit": "min",
+      "technicalExplanation": "1",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 200,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.077",
+      "description": "Maximalebelastingwarmwaterfunctie",
+      "factoryDefault": "Max. belasting",
+      "minimum": "afhankelijkvan hetvermogen",
+      "unit": "kW",
+      "technicalExplanation": "1",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 200,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.078",
+      "description": "Maximaleaanvoertemperatuurgewenstewaardewarmwater",
+      "factoryDefault": "75",
+      "minimum": "50",
+      "maximum": "80",
+      "unit": "°C",
+      "technicalExplanation": "1 Aanwijzing Degekozenwaardemoetmin.15Kresp.15°C bovendeingesteldegewensteboilerwaardeliggen.",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 200,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.080",
+      "description": "Bedrijfsurenverwarming",
+      "unit": "h",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 200,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.081",
+      "description": "Bedrijfsurenwarmwater",
+      "unit": "h",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 200,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.082",
+      "description": "BranderstartsCV-bedrijf",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 200,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.083",
+      "description": "Branderstartswarmwater",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 200,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.084",
+      "description": "Bedrijfsurentotonderhoud",
+      "factoryDefault": "5000",
+      "minimum": "„–––”",
+      "maximum": "7000",
+      "unit": "h",
+      "technicalExplanation": "1 \"–––\"=gedeactiveerd",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 200,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.085",
+      "description": "Minimalebelastingvanhettoestel",
+      "factoryDefault": "Min. belasting",
+      "minimum": "afhankelijkvan hetvermogen",
+      "unit": "kW",
+      "technicalExplanation": "1",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 200,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.088",
+      "description": "Minimalewarmwaterdoorstroming",
+      "technicalExplanation": "1,5l/min(zondervertr.) 3,7l/min(2svertraagd)",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 200,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.090",
+      "description": "eBUS-thermostaat",
+      "technicalExplanation": "Nietherkend Herkend",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 200,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.091",
+      "description": "StatusDCF-verbinding",
+      "technicalExplanation": "Geenontvangst Gegevensontvangst Gesynchroniseerd Geldig",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 200,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.092",
+      "description": "Gelaagdeboiler",
+      "technicalExplanation": "Nietverbonden Communicatiefout Verbindingactief",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 200,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.093",
+      "description": "Toestelidentificatie(DSN)",
+      "factoryDefault": "Productafhankelijk",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 200,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.094",
+      "description": "Foutgeschiedenisweergeven/wissen",
+      "technicalExplanation": "Nee,Ja",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 200,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.095",
+      "description": "Sofwareversies",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 200,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.096",
+      "description": "Fabrieksinstellingen",
+      "technicalExplanation": "Nee,Ja",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 200,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.098",
+      "description": "Waardecodeerweerstand",
+      "technicalExplanation": "Codeerweerstand1 Codeerweerstand3",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 201,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.124",
+      "description": "SmartECOactuelestatus",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 201,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.125",
+      "description": "Uitlooptemperatuurwarmwaterboiler",
+      "unit": "°C",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 201,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.128",
+      "description": "MinimalegewensteaanvoertemperatuurCV",
+      "factoryDefault": "40",
+      "unit": "°C",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 201,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.129",
+      "description": "Minimalegewenstewaardewarmwater",
+      "factoryDefault": "40",
+      "unit": "°C",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 201,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.145",
+      "description": "DeactiveringherkenningVLT/VGA geblokkeerd",
+      "technicalExplanation": "Diagnosecodevoordeactiverenvandecontrole vandeverbrandingsgasblokkade. Gebruikdezediagnosecodealleen,wanneerhet producttijdensdeeersteIngebruiknemingde foutcodeF.035weergeeft. NadatdeVLT/VGAisgecontroleerdendeeventueleblokkadeisopgeheven,moetdecontrole vandeverbrandingsgasblokkadeviaD.145wordengedeactiveerd.",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 201,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.146",
+      "description": "Vrijgavevervangenregelelektrode",
+      "technicalExplanation": "Nee,Ja",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 201,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.147",
+      "description": "Vervangenregelelektrode",
+      "technicalExplanation": "Nee Nieuweelektrode (selectieNieuweelektrodealleenmogelijk,wanneerD.146isvrijgeschakeld)",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 201,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.156",
+      "description": "Vrijgavegasombouw",
+      "technicalExplanation": "Nee,Ja",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 201,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.157",
+      "description": "Keuzegassoort",
+      "factoryDefault": "Productafhankelijk",
+      "technicalExplanation": "0:Nietgekozen 1:Aardgas 2:Propaan30/37mbar 3:SpeciaalgasFR 4:SpeciaalgasGB 5:SpeciaalgasIT 6:Propaan50mbar 7:Lsgas Alleendekeuzevoorhetbetreffendeproduct wordthiergetoond.",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 201,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.158",
+      "description": "Instellinggas-luchtverhouding",
+      "factoryDefault": "0",
+      "minimum": "0",
+      "maximum": "5",
+      "technicalExplanation": "0:Standaardwaarde 1:Vermagering1 2:Vermagering2 3:Vermagering3 4:Vermagering4 5:Vermagering5 Alleenbijaardgasbedrijf.",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 201,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.159",
+      "description": "Blokkeertijdomschakelprocedure",
+      "factoryDefault": "Geactiveerd",
+      "technicalExplanation": "Gedeactiveerd.,Geactiveerd Blokkeertijdomschakelproceduretussenwarm waterenCV-functie.",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 201,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.160",
+      "description": "Waterdrukgewenstewaarde",
+      "factoryDefault": "1,5",
+      "minimum": "1,0",
+      "maximum": "2,0",
+      "unit": "bar",
+      "technicalExplanation": "0,1 Productafhankelijk",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 201,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.161",
+      "description": "Onderhoudsdatum",
+      "factoryDefault": "Actuele datum+1 jaar",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 201,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.162",
+      "description": "Weersafhankelijkeregeling",
+      "factoryDefault": "1",
+      "technicalExplanation": "0:Gedeactiveerd. 1:Geactiveerd Geldtalleen,wanneereenbuitentemperatuurvoelerengeenkamerthermostaatisgeïnstalleerd. Productafhankelijk",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 201,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.163",
+      "description": "Functieinterntoebehorenrelais2",
+      "factoryDefault": "Productafhankelijk",
+      "technicalExplanation": "1:Circulatiepomp 11:Autom.vulvoorziening Bijproductenmeteenautomatischevulvoorzieningisdefabrieksinstelling11ingesteld.",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 202,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.164",
+      "description": "Verbrandingsgasinstallatieenkelvoudigebezetting",
+      "factoryDefault": "0",
+      "minimum": "-5",
+      "maximum": "5",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 202,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.166",
+      "description": "ADCstoringsindex",
+      "minimum": "0",
+      "maximum": "13",
+      "technicalExplanation": "1:retourtemperatuursensorcontroleren 3:codeerweerstandventilatorcontroleren 5:codeerweerstandwarmtecelcontroleren 6:regelelektrodecontroleren 7‐8:ontstekingselektrodecontroleren 9:aanvoertemperatuurvoelercontroleren 11:warmwater-inlaattemperatuursensorcontroleren 12‐13:regelelektrodecontroleren",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 202,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.167",
+      "description": "Verbindingboiler",
+      "factoryDefault": "0",
+      "minimum": "0",
+      "maximum": "1",
+      "technicalExplanation": "0:Boilernietaangesloten. 1:Boileraangesloten",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 202,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.170",
+      "description": "Hydraulischemodus",
+      "factoryDefault": "Productafhankelijk",
+      "minimum": "0",
+      "maximum": "4",
+      "technicalExplanation": "0:ZonderbypassΔp-const. 1:Zonderbyp.Δp-const.-kick 2:BypassΔp-const. 3:SpreidingΔT 4:Vastepompfase DediagnosecodesD.171-D.175hebbenbetrekkingopdekeuzeinD.170.",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 202,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.171",
+      "description": "Gewenstewaardedrukniveau",
+      "factoryDefault": "200",
+      "minimum": "100",
+      "maximum": "400",
+      "unit": "mbar",
+      "technicalExplanation": "GeldigvoorZonderbypassΔp-const.,Zonder byp.Δp-const.-kickenBypassΔp-const..",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 202,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.172",
+      "description": "Gewenstewaardespreiding",
+      "factoryDefault": "20",
+      "unit": "K",
+      "technicalExplanation": "GeldigvoorSpreidingΔT.",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 202,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.173",
+      "description": "Minimaledrukniveau",
+      "factoryDefault": "100",
+      "unit": "mbar",
+      "technicalExplanation": "GeldigvoorSpreidingΔT.",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 202,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.174",
+      "description": "Maximaledrukniveau",
+      "factoryDefault": "400",
+      "unit": "mbar",
+      "technicalExplanation": "GeldigvoorZonderbyp.Δp-const.-kick,BypassΔp-const.enSpreidingΔT.",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 202,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.175",
+      "description": "Pompfase",
+      "factoryDefault": "100",
+      "unit": "%",
+      "technicalExplanation": "10 GeldigvoorVastepompfase.",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 202,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.182",
+      "description": "Offsetstappenmotorgasblok2",
+      "factoryDefault": "100",
+      "minimum": "10",
+      "maximum": "80",
+      "technicalExplanation": "Geldigvoordelaatstebeidepositiesvangasblokkenmeteenoffsetvan5cijfers. Geldigvoorproductenmetdeingesteldegassoort vloeibaargas.",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 202,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.027",
+      "description": "Functie extern toebehorenrelais 1",
+      "factoryDefault": "2",
+      "minimum": "1",
+      "maximum": "9",
+      "technicalExplanation": "1:Circulatiepomp 2:Externepomp 3:Boilerlaadpomp 4:Afzuigkap 5:Externemagneetklep 6:Externefoutmelding 7:eBUSafstandsbediening 8:Legionellabev.pomp 9:Bypassventilzonneboiler",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 198,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.028",
+      "description": "Functie extern toebehorenrelais 2",
+      "factoryDefault": "2",
+      "minimum": "1",
+      "maximum": "9",
+      "technicalExplanation": "1:Circulatiepomp 2:Externepomp 3:Boilerlaadpomp 4:Afzuigkap 5:Externemagneetklep 6:Externefoutmelding 7:eBUSafstandsbediening 8:Legionellabev.pomp 9:Bypassventilzonneboiler",
+      "source": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotecexclusive-0020282231-03-2425013.pdf",
+      "sourcePage": 198,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    }
+  ]
+}

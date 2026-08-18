@@ -1,0 +1,629 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "ecotec-pure-7-2",
+  "source": {
+    "title": "Vaillant installatie- en onderhoudshandleiding ecoTEC pure /7-2",
+    "url": "https://www.vaillant.be/downloads/documenten/installatievoorschrift/installatievoorschrift-ecotec-pure-0020231688-02-1923408.pdf"
+  },
+  "faults": [
+    {
+      "code": "F.00",
+      "title": "Aanvoertemperatuurvoeler onderbroken",
+      "meaning": "De ecoTEC pure meldt F.00: aanvoertemperatuurvoeler onderbroken.",
+      "causes": [
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
+      ],
+      "checks": [
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
+    },
+    {
+      "code": "F.01",
+      "title": "Retourtemperatuurvoeler onderbroken",
+      "meaning": "De ecoTEC pure meldt F.01: retourtemperatuurvoeler onderbroken.",
+      "causes": [
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
+      ],
+      "checks": [
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
+    },
+    {
+      "code": "F.10",
+      "title": "Aanvoertemperatuurvoeler kortgesloten",
+      "meaning": "De ecoTEC pure meldt F.10: aanvoertemperatuurvoeler kortgesloten.",
+      "causes": [
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
+      ],
+      "checks": [
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
+    },
+    {
+      "code": "F.11",
+      "title": "Retourtemperatuurvoeler kortgesloten",
+      "meaning": "De ecoTEC pure meldt F.11: retourtemperatuurvoeler kortgesloten.",
+      "causes": [
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
+      ],
+      "checks": [
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
+    },
+    {
+      "code": "F.13",
+      "title": "Warmstart- of boilertemperatuurvoeler kortgesloten",
+      "meaning": "De ecoTEC pure meldt F.13: warmstart- of boilertemperatuurvoeler kortgesloten.",
+      "causes": [
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
+      ],
+      "checks": [
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
+    },
+    {
+      "code": "F.20",
+      "title": "Veiligheidstemperatuurbegrenzer actief",
+      "meaning": "De ecoTEC pure meldt F.20: veiligheidstemperatuurbegrenzer actief.",
+      "causes": [
+        "Te lage systeemdruk, lucht of onvoldoende circulatie",
+        "Pomp, druksensor of bekabeling reageert niet correct",
+        "Afsluiter, filter, bypass of hydraulisch circuit is geblokkeerd"
+      ],
+      "checks": [
+        "Controleer systeemdruk en installatie op lekkage",
+        "Ontlucht volgens het installatievoorschrift",
+        "Controleer pompwerking, stekkers en vrije doorstroming",
+        "Controleer druksensor, filters, bypass en expansievat"
+      ],
+      "note": "Vul niet herhaaldelijk bij zonder eerst lekkage en expansievat te controleren."
+    },
+    {
+      "code": "F.22",
+      "title": "Veiligheidsuitschakeling door watertekort",
+      "meaning": "De ecoTEC pure meldt F.22: veiligheidsuitschakeling door watertekort.",
+      "causes": [
+        "Te lage systeemdruk, lucht of onvoldoende circulatie",
+        "Pomp, druksensor of bekabeling reageert niet correct",
+        "Afsluiter, filter, bypass of hydraulisch circuit is geblokkeerd"
+      ],
+      "checks": [
+        "Controleer systeemdruk en installatie op lekkage",
+        "Ontlucht volgens het installatievoorschrift",
+        "Controleer pompwerking, stekkers en vrije doorstroming",
+        "Controleer druksensor, filters, bypass en expansievat"
+      ],
+      "note": "Vul niet herhaaldelijk bij zonder eerst lekkage en expansievat te controleren."
+    },
+    {
+      "code": "F.23",
+      "title": "Temperatuurspreiding te groot",
+      "meaning": "De ecoTEC pure meldt F.23: temperatuurspreiding te groot.",
+      "causes": [
+        "Te lage systeemdruk, lucht of onvoldoende circulatie",
+        "Pomp, druksensor of bekabeling reageert niet correct",
+        "Afsluiter, filter, bypass of hydraulisch circuit is geblokkeerd"
+      ],
+      "checks": [
+        "Controleer systeemdruk en installatie op lekkage",
+        "Ontlucht volgens het installatievoorschrift",
+        "Controleer pompwerking, stekkers en vrije doorstroming",
+        "Controleer druksensor, filters, bypass en expansievat"
+      ],
+      "note": "Vul niet herhaaldelijk bij zonder eerst lekkage en expansievat te controleren."
+    },
+    {
+      "code": "F.24",
+      "title": "Temperatuurstijging te snel",
+      "meaning": "De ecoTEC pure meldt F.24: temperatuurstijging te snel.",
+      "causes": [
+        "Te lage systeemdruk, lucht of onvoldoende circulatie",
+        "Pomp, druksensor of bekabeling reageert niet correct",
+        "Afsluiter, filter, bypass of hydraulisch circuit is geblokkeerd"
+      ],
+      "checks": [
+        "Controleer systeemdruk en installatie op lekkage",
+        "Ontlucht volgens het installatievoorschrift",
+        "Controleer pompwerking, stekkers en vrije doorstroming",
+        "Controleer druksensor, filters, bypass en expansievat"
+      ],
+      "note": "Vul niet herhaaldelijk bij zonder eerst lekkage en expansievat te controleren."
+    },
+    {
+      "code": "F.27",
+      "title": "Vlamsimulatie terwijl de brander uit is",
+      "meaning": "De ecoTEC pure meldt F.27: vlamsimulatie terwijl de brander uit is.",
+      "causes": [
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
+      ],
+      "checks": [
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
+    },
+    {
+      "code": "F.28",
+      "title": "Geen ontsteking bij de start",
+      "meaning": "De ecoTEC pure meldt F.28: geen ontsteking bij de start.",
+      "causes": [
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
+      ],
+      "checks": [
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
+    },
+    {
+      "code": "F.29",
+      "title": "Geen herontsteking na vlamuitval",
+      "meaning": "De ecoTEC pure meldt F.29: geen herontsteking na vlamuitval.",
+      "causes": [
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
+      ],
+      "checks": [
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
+    },
+    {
+      "code": "F.32",
+      "title": "Ventilator defect of niet aangesloten",
+      "meaning": "De ecoTEC pure meldt F.32: ventilator defect of niet aangesloten.",
+      "causes": [
+        "Luchttoevoer of rookgasafvoer geblokkeerd of verkeerd geconfigureerd",
+        "Ventilator, sensor, klep of condenspomp defect",
+        "Condensweg, sifon of warmtewisselaar vervuild"
+      ],
+      "checks": [
+        "Stel het toestel veilig buiten bedrijf bij rookgasgevaar",
+        "Controleer lucht-/rookgastraject, sifon en condensafvoer",
+        "Controleer ventilator, kleppen, sensoren en bekabeling",
+        "Controleer configuratie en voer de voorgeschreven rookgasmeting uit"
+      ],
+      "note": "Werk aan het rookgas- en verbrandingssysteem alleen als gecertificeerd monteur."
+    },
+    {
+      "code": "F.46",
+      "title": "Temperatuurvoeler zonnecircuit kortgesloten",
+      "meaning": "De ecoTEC pure meldt F.46: temperatuurvoeler zonnecircuit kortgesloten.",
+      "causes": [
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
+      ],
+      "checks": [
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
+    },
+    {
+      "code": "F.49",
+      "title": "eBUS-spanning te laag of kortgesloten",
+      "meaning": "De ecoTEC pure meldt F.49: ebus-spanning te laag of kortgesloten.",
+      "causes": [
+        "Voeding of busspanning buiten bereik",
+        "Stekker, buskabel of polariteit niet in orde",
+        "Configuratie, display of printplaat defect"
+      ],
+      "checks": [
+        "Controleer netvoeding, zekeringen en aarding",
+        "Controleer bus- en stekkerverbindingen op polariteit en kortsluiting",
+        "Controleer toestelconfiguratie en aangesloten modules",
+        "Vervang elektronica pas na uitsluiten van externe oorzaken"
+      ],
+      "note": "Maak het toestel spanningsvrij en controleer op spanningsloosheid voordat de elektronica wordt geopend."
+    },
+    {
+      "code": "F.61",
+      "title": "Gasblok kan niet worden aangestuurd",
+      "meaning": "De ecoTEC pure meldt F.61: gasblok kan niet worden aangestuurd.",
+      "causes": [
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
+      ],
+      "checks": [
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
+    },
+    {
+      "code": "F.62",
+      "title": "Gasklep schakelt vertraagd uit",
+      "meaning": "De ecoTEC pure meldt F.62: gasklep schakelt vertraagd uit.",
+      "causes": [
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
+      ],
+      "checks": [
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
+    },
+    {
+      "code": "F.63",
+      "title": "EEPROM-fout",
+      "meaning": "De ecoTEC pure meldt F.63: eeprom-fout.",
+      "causes": [
+        "Voeding of busspanning buiten bereik",
+        "Stekker, buskabel of polariteit niet in orde",
+        "Configuratie, display of printplaat defect"
+      ],
+      "checks": [
+        "Controleer netvoeding, zekeringen en aarding",
+        "Controleer bus- en stekkerverbindingen op polariteit en kortsluiting",
+        "Controleer toestelconfiguratie en aangesloten modules",
+        "Vervang elektronica pas na uitsluiten van externe oorzaken"
+      ],
+      "note": "Maak het toestel spanningsvrij en controleer op spanningsloosheid voordat de elektronica wordt geopend."
+    },
+    {
+      "code": "F.64",
+      "title": "Elektronica, sensor of kabel defect",
+      "meaning": "De ecoTEC pure meldt F.64: elektronica, sensor of kabel defect.",
+      "causes": [
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
+      ],
+      "checks": [
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
+    },
+    {
+      "code": "F.65",
+      "title": "Elektronica te warm",
+      "meaning": "De ecoTEC pure meldt F.65: elektronica te warm.",
+      "causes": [
+        "Voeding of busspanning buiten bereik",
+        "Stekker, buskabel of polariteit niet in orde",
+        "Configuratie, display of printplaat defect"
+      ],
+      "checks": [
+        "Controleer netvoeding, zekeringen en aarding",
+        "Controleer bus- en stekkerverbindingen op polariteit en kortsluiting",
+        "Controleer toestelconfiguratie en aangesloten modules",
+        "Vervang elektronica pas na uitsluiten van externe oorzaken"
+      ],
+      "note": "Maak het toestel spanningsvrij en controleer op spanningsloosheid voordat de elektronica wordt geopend."
+    },
+    {
+      "code": "F.67",
+      "title": "Vlamsignaal niet plausibel",
+      "meaning": "De ecoTEC pure meldt F.67: vlamsignaal niet plausibel.",
+      "causes": [
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
+      ],
+      "checks": [
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
+    },
+    {
+      "code": "F.68",
+      "title": "Vlamsignaal instabiel",
+      "meaning": "De ecoTEC pure meldt F.68: vlamsignaal instabiel.",
+      "causes": [
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
+      ],
+      "checks": [
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
+    },
+    {
+      "code": "F.70",
+      "title": "Toestelcode of codeerweerstand ongeldig",
+      "meaning": "De ecoTEC pure meldt F.70: toestelcode of codeerweerstand ongeldig.",
+      "causes": [
+        "Toestel- of installatieconfiguratie komt niet overeen",
+        "Codeerweerstand, vervangend onderdeel of parameters passen niet bij het toestel",
+        "Inbedrijfstelling of ombouwprocedure is niet afgerond"
+      ],
+      "checks": [
+        "Controleer volledig typenummer en ingestelde toestelcode",
+        "Controleer codeerweerstand, onderdelen en parameterinstellingen",
+        "Rond de officiële inbedrijfstellings- of ombouwprocedure af",
+        "Controleer daarna de foutstatus opnieuw"
+      ],
+      "note": "Gebruik uitsluitend configuratiegegevens en onderdelen die voor het exacte toesteltype zijn vrijgegeven."
+    },
+    {
+      "code": "F.71",
+      "title": "Aanvoertemperatuurvoeler geeft onwaarschijnlijke waarde",
+      "meaning": "De ecoTEC pure meldt F.71: aanvoertemperatuurvoeler geeft onwaarschijnlijke waarde.",
+      "causes": [
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
+      ],
+      "checks": [
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
+    },
+    {
+      "code": "F.72",
+      "title": "Temperatuurverschil aanvoer/retour te groot",
+      "meaning": "De ecoTEC pure meldt F.72: temperatuurverschil aanvoer/retour te groot.",
+      "causes": [
+        "Onderdeel, aansluiting of configuratie reageert niet zoals verwacht",
+        "Interne veiligheidscontrole heeft een afwijking vastgesteld"
+      ],
+      "checks": [
+        "Noteer de code en lees het foutgeheugen uit",
+        "Controleer stekkers, kabelboom en toestelconfiguratie",
+        "Volg de maatregelentabel in de officiële handleiding",
+        "Reset pas nadat de oorzaak is verholpen"
+      ]
+    },
+    {
+      "code": "F.73",
+      "title": "Waterdruksensorsignaal te laag",
+      "meaning": "De ecoTEC pure meldt F.73: waterdruksensorsignaal te laag.",
+      "causes": [
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
+      ],
+      "checks": [
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
+    },
+    {
+      "code": "F.74",
+      "title": "Waterdruksensorsignaal te hoog",
+      "meaning": "De ecoTEC pure meldt F.74: waterdruksensorsignaal te hoog.",
+      "causes": [
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
+      ],
+      "checks": [
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
+    },
+    {
+      "code": "F.77",
+      "title": "Geen terugmelding rookgasklep of condenspomp",
+      "meaning": "De ecoTEC pure meldt F.77: geen terugmelding rookgasklep of condenspomp.",
+      "causes": [
+        "Luchttoevoer of rookgasafvoer geblokkeerd of verkeerd geconfigureerd",
+        "Ventilator, sensor, klep of condenspomp defect",
+        "Condensweg, sifon of warmtewisselaar vervuild"
+      ],
+      "checks": [
+        "Stel het toestel veilig buiten bedrijf bij rookgasgevaar",
+        "Controleer lucht-/rookgastraject, sifon en condensafvoer",
+        "Controleer ventilator, kleppen, sensoren en bekabeling",
+        "Controleer configuratie en voer de voorgeschreven rookgasmeting uit"
+      ],
+      "note": "Werk aan het rookgas- en verbrandingssysteem alleen als gecertificeerd monteur."
+    },
+    {
+      "code": "F.83",
+      "title": "Temperatuurverandering van NTC-sensoren te klein",
+      "meaning": "De ecoTEC pure meldt F.83: temperatuurverandering van ntc-sensoren te klein.",
+      "causes": [
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
+      ],
+      "checks": [
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
+    },
+    {
+      "code": "F.84",
+      "title": "NTC-temperatuurverschil niet plausibel",
+      "meaning": "De ecoTEC pure meldt F.84: ntc-temperatuurverschil niet plausibel.",
+      "causes": [
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
+      ],
+      "checks": [
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
+    },
+    {
+      "code": "F.85",
+      "title": "NTC-sensoren verkeerd gemonteerd",
+      "meaning": "De ecoTEC pure meldt F.85: ntc-sensoren verkeerd gemonteerd.",
+      "causes": [
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
+      ],
+      "checks": [
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
+    },
+    {
+      "code": "F.87",
+      "title": "Ontstekingselektrode of ontstekingsaansluiting defect",
+      "meaning": "De ecoTEC pure meldt F.87: ontstekingselektrode of ontstekingsaansluiting defect.",
+      "causes": [
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
+      ],
+      "checks": [
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
+    },
+    {
+      "code": "F.88",
+      "title": "Elektrische aansluiting van het gasblok onderbroken",
+      "meaning": "De ecoTEC pure meldt F.88: elektrische aansluiting van het gasblok onderbroken.",
+      "causes": [
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
+      ],
+      "checks": [
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
+    },
+    {
+      "code": "F.89",
+      "title": "Pomp niet passend, geblokkeerd of defect",
+      "meaning": "De ecoTEC pure meldt F.89: pomp niet passend, geblokkeerd of defect.",
+      "causes": [
+        "Te lage systeemdruk, lucht of onvoldoende circulatie",
+        "Pomp, druksensor of bekabeling reageert niet correct",
+        "Afsluiter, filter, bypass of hydraulisch circuit is geblokkeerd"
+      ],
+      "checks": [
+        "Controleer systeemdruk en installatie op lekkage",
+        "Ontlucht volgens het installatievoorschrift",
+        "Controleer pompwerking, stekkers en vrije doorstroming",
+        "Controleer druksensor, filters, bypass en expansievat"
+      ],
+      "note": "Vul niet herhaaldelijk bij zonder eerst lekkage en expansievat te controleren."
+    },
+    {
+      "code": "F.97",
+      "title": "Zelftest van de hoofdprintplaat mislukt",
+      "meaning": "De ecoTEC pure meldt F.97: zelftest van de hoofdprintplaat mislukt.",
+      "causes": [
+        "Voeding of busspanning buiten bereik",
+        "Stekker, buskabel of polariteit niet in orde",
+        "Configuratie, display of printplaat defect"
+      ],
+      "checks": [
+        "Controleer netvoeding, zekeringen en aarding",
+        "Controleer bus- en stekkerverbindingen op polariteit en kortsluiting",
+        "Controleer toestelconfiguratie en aangesloten modules",
+        "Vervang elektronica pas na uitsluiten van externe oorzaken"
+      ],
+      "note": "Maak het toestel spanningsvrij en controleer op spanningsloosheid voordat de elektronica wordt geopend."
+    },
+    {
+      "code": "Err",
+      "title": "Communicatiefout met het bedieningsinterface",
+      "meaning": "De ecoTEC pure meldt Err: communicatiefout met het bedieningsinterface.",
+      "causes": [
+        "Voeding of busspanning buiten bereik",
+        "Stekker, buskabel of polariteit niet in orde",
+        "Configuratie, display of printplaat defect"
+      ],
+      "checks": [
+        "Controleer netvoeding, zekeringen en aarding",
+        "Controleer bus- en stekkerverbindingen op polariteit en kortsluiting",
+        "Controleer toestelconfiguratie en aangesloten modules",
+        "Vervang elektronica pas na uitsluiten van externe oorzaken"
+      ],
+      "note": "Maak het toestel spanningsvrij en controleer op spanningsloosheid voordat de elektronica wordt geopend."
+    }
+  ]
+}

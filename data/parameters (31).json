@@ -1,0 +1,663 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "ecotec-pro-5-3",
+  "source": {
+    "title": "Vaillant ecoTEC pro installatie- en onderhoudshandleiding 0020244981_02",
+    "url": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf"
+  },
+  "parameters": [
+    {
+      "code": "D.000",
+      "description": "Cv-deellast",
+      "factoryDefault": "auto",
+      "technicalExplanation": "InstelbareCV-deellastinkW auto:productpastmax.deellastautomatischaande actuelebehoeftevandeinstallatieaan",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.001",
+      "description": "Pompnaloopverwarming",
+      "factoryDefault": "5min",
+      "technicalExplanation": "1...60min",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.002",
+      "description": "Max.wachttijdverwarming",
+      "factoryDefault": "20min",
+      "technicalExplanation": "2...60min",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.003",
+      "description": "Uitlaattemperatuurwerk.waarde",
+      "technicalExplanation": "in°C",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.004",
+      "description": "Boilertemperatuurwerk.waarde",
+      "technicalExplanation": "in°C",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.005",
+      "description": "CV-aanvoertemp.gewenstetemp.",
+      "technicalExplanation": "in°C,max.vandeinD.071ingesteldewaarde,begrensddooreeneBUS-regelaar,indienaangesloten",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.006",
+      "description": "Uitlooptemp.gew.waarde",
+      "technicalExplanation": "35...65°C",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.007",
+      "description": "Comfortmodusgew.waarde APCgew.waarde Boilertemperatuurgew.waarde",
+      "technicalExplanation": "Productmetgeïntegreerdewarmwaterbereidingenproductmetgeïntegreerdewarmwaterbereidingengelaagdeboiler 35...65°C ProductalleenmetCV-functie 15°Cisvorstbeveiliging,dan40tot70°C(max.temperatuuronderD.020instelbaar)",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.008",
+      "description": "Thermostaat3-4",
+      "technicalExplanation": "Kamerthermostaatgeopend(geenwarmtevraag) Kamerthermostaatgesloten(warmtevraag)",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.009",
+      "description": "eBUSthermostaatgew.waarde",
+      "technicalExplanation": "in°C",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.010",
+      "description": "Internepomp",
+      "technicalExplanation": "Aan,Uit",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.011",
+      "description": "Externepomp",
+      "technicalExplanation": "Aan,Uit",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.012",
+      "description": "Boilerlaadpomp",
+      "technicalExplanation": "Aan,Uit",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.013",
+      "description": "Circulatiepomp",
+      "technicalExplanation": "Aan,Uit",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.014",
+      "description": "Pomptoerentalgew.waarde",
+      "factoryDefault": "0=auto",
+      "technicalExplanation": "Gewenstewaardehoogefficiëntepompin%.Mogelijke instellingen: 0=auto 1=53 2=60 3=70 4=85 5=100",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.015",
+      "description": "Pomptoerentalwerk.waarde",
+      "technicalExplanation": "Werkelijkewaardehoogefficiëntepompin%",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.016",
+      "description": "Thermostaat24VDCCv-bedrijf",
+      "technicalExplanation": "CV-bedrijfuit/aan",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.017",
+      "description": "Thermostaattype",
+      "factoryDefault": "0=aanvoer",
+      "technicalExplanation": "Regelingswijze: 0=aanvoer,1=retour Retour:functievandeautomatischeberekeningvanhet verwarmingsvermogennietactief.Max.mogelijkeCVdeellast,indienD.000opAuto.",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 28,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.018",
+      "description": "Pompmodus",
+      "factoryDefault": "3=Eco",
+      "technicalExplanation": "1=Comfort(verderlopendepomp) Internepompwordtingeschakeld,indienCV-aanvoertemperatuurnietopVerwarminguitenwarmtevraagvia externethermostaatvrijgeschakeld 3=Eco(intermitterendepomp) Internepompwordtnaafloopvandenalooptijdiedere 25minutenvoor5minuteningeschakeld",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.019",
+      "description": "Pompmodus2-trapspomp",
+      "factoryDefault": "2",
+      "technicalExplanation": "Instellingvandewerkwijze2-trapspomp 0:branderbedrijftrap2,pompvoorloop/-nalooptrap1 1:CV-bedrijfenpompvoorloop/-nalooptrap1,warmwaterbedrijftrap2 2:CV-bedrijfautomatisch,pompvoorloop/-nalooptrap1, warmwaterbedrijftrap2 3:altijdtrap2 4:CV-bedrijfautomatisch,pompvoorloop/-nalooptrap1, warmwaterbedrijftrap1",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.020",
+      "description": "Max.warmwatertemp.gew. waarde",
+      "factoryDefault": "65°C",
+      "technicalExplanation": "Instelbereik:50-70°C(actoSTOR65°C)",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.022",
+      "description": "Warmwateraanvraag",
+      "technicalExplanation": "Aan,Uit",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.023",
+      "description": "Statuscv-bedrijf",
+      "technicalExplanation": "Verwarmingaan,verwarminguit(zomermodus)",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.025",
+      "description": "ext.eBUSsignaalboilerlading",
+      "technicalExplanation": "Aan,Uit",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.026",
+      "description": "Hulprelais",
+      "factoryDefault": "2=externe pomp",
+      "technicalExplanation": "1=circulatiepomp 2=externepomp 3=boilerlaadpomp 4=afzuigkap 5=externemagneetklep 6=externestoringsmelding 7=zonnepomp(nietactief) 8=afstandsbedieningeBUS(nietactief) 9=legionellabeveiligingspomp(nietactief) 10=zonneklep(nietactief)",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.027",
+      "description": "Toebehorenrelais1",
+      "factoryDefault": "2=externe pomp",
+      "technicalExplanation": "Omschakelingrelais1naarde„2uit7“multifunctionele moduleVR40 1=circulatiepomp 2=externepomp 3=boilerlaadpomp 4=afzuigkap 5=externemagneetklep 6=externestoringsmelding 7=zonnepomp(nietactief) 8=afstandsbedieningeBUS(nietactief) 9=legionellabeveiligingspomp(nietactief) 10=zonneklep(nietactief)",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.028",
+      "description": "Toebehorenrelais2",
+      "factoryDefault": "2=externe pomp",
+      "technicalExplanation": "Omschakelingrelais2naarde„2uit7“multifunctionele moduleVR40 1=circulatiepomp 2=externepomp 3=boilerlaadpomp 4=afzuigkap 5=externemagneetklep 6=externestoringsmelding 7=zonnepomp(nietactief) 8=afstandsbedieningeBUS(nietactief) 9=legionellabeveiligingspomp(nietactief) 10=zonneklep(nietactief)",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.029",
+      "description": "Watercirculatiehoev.werk.waarde",
+      "technicalExplanation": "Actuelewaardeinm3/h",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 29,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.033",
+      "description": "Gew.waardeventilatortoerental",
+      "technicalExplanation": "Inrpm",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.034",
+      "description": "Gew.waardeventilatortoerental",
+      "technicalExplanation": "Inrpm",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.035",
+      "description": "Driewegklepstand",
+      "technicalExplanation": "CV-bedrijf Parallelbedrijf(middelstestand) Warmwaterbedrijf",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.036",
+      "description": "Warmwaterdoorst.hoeveelheid",
+      "technicalExplanation": "inl/min",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.039",
+      "description": "Zonne-inlaattemp.werk.waarde",
+      "technicalExplanation": "Werkelijkewaardein°C",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.040",
+      "description": "Aanvoertemp.werk.waarde",
+      "technicalExplanation": "Werkelijkewaardein°C",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.041",
+      "description": "Retourtemperatuurwerk.waarde",
+      "technicalExplanation": "Werkelijkewaardein°C",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.044",
+      "description": "Ionisatiewaardewerk.waarde",
+      "technicalExplanation": "Weergavebereik0tot1020 >800geenvlam <400goedvlambeeld",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.046",
+      "description": "Pompmodus",
+      "factoryDefault": "0=uitschakelenviarelais",
+      "technicalExplanation": "0=uitschakelenviarelais 1=uitschakelenviaPWM",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.047",
+      "description": "Actuelebuitentemperatuur",
+      "technicalExplanation": "(metweersafhankelijkeVaillantthermostaat) Werkelijkewaardein°C",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.050",
+      "description": "Offsetmin.toerental",
+      "factoryDefault": "Nominale waarde affabriek ingesteld",
+      "technicalExplanation": "inrpm,instelbereik:0tot3000",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.051",
+      "description": "Offsetmax.toerental",
+      "factoryDefault": "Nominale waarde affabriek ingesteld",
+      "technicalExplanation": "inrpm,instelbereik:-990tot0",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.058",
+      "description": "Naverwarmingzonne-energie",
+      "factoryDefault": "0=naverwarmingvia zonne-energiegedeactiveerd",
+      "technicalExplanation": "0=naverwarmingviazonne-energiegedeactiveerd 3=WW-activeringgewenstewaardeminimum60°C; thermostatischemengkleptussenproductentappunt nodig",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.060",
+      "description": "AantalVTB-uitschakelingen",
+      "technicalExplanation": "Aantaluitschakelingen",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.061",
+      "description": "Aant.uitschakelingenbranderautomaat",
+      "technicalExplanation": "Aantalmislukteontstekingenbijlaatstepoging",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.064",
+      "description": "Gem.ontstekingstijd",
+      "technicalExplanation": "Inseconden",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.065",
+      "description": "Max.ontstekingstijd",
+      "technicalExplanation": "Inseconden",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.067",
+      "description": "Rest.wachttijdverwarming",
+      "technicalExplanation": "Inminuten",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.068",
+      "description": "EerstestartpogingAantal",
+      "technicalExplanation": "Aantalmislukteontstekingen",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.069",
+      "description": "TweedestartpogingAantal",
+      "technicalExplanation": "Aantalmislukteontstekingen",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.070",
+      "description": "Modusdriewegklep",
+      "factoryDefault": "0=normaal bedrijf",
+      "technicalExplanation": "0=normaalbedrijf 1=parallelbedrijf(middelstestand) 2=permanentestandCV-bedrijf",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.071",
+      "description": "Max.gew.CV-aanvoertemp.",
+      "factoryDefault": "75°C",
+      "technicalExplanation": "40...80°C",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.072",
+      "description": "Pompnalooptijdnaladenboiler",
+      "factoryDefault": "2min",
+      "technicalExplanation": "Instelbaarvan0-10minuteninstappenvan1minuut",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.073",
+      "description": "Instellingoffsetvoorcomfortmodus",
+      "factoryDefault": "0",
+      "technicalExplanation": "Instelbaarvan-15Ktot5K",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.074",
+      "description": "Legion.beveiliginggeïntegreerde boiler",
+      "factoryDefault": "1=aan",
+      "technicalExplanation": "0=uit 1=aan",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.075",
+      "description": "Max.boileroplaadtijd",
+      "factoryDefault": "45min",
+      "technicalExplanation": "20-90min",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 30,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.076",
+      "description": "Toestelidentificatie",
+      "technicalExplanation": "Devicespecificnumber=DSN 28=VC246/5-3(E-BE)ecoTECpro;VCW246/5-3(EBE)ecoTECpro 25=VCW286/5-3(E-BE)ecoTECpro",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.077",
+      "description": "Deellastwarmwater",
+      "technicalExplanation": "InstelbaarboilerlaadvermogeninkW",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.078",
+      "description": "Max.aanvoertemp.warmwater",
+      "technicalExplanation": "Begrenzingvandeboilerlaadtemperatuurin°C 50°C-80°C Aanwijzing Degekozenwaardemoetmin.15Kresp.15°Cboven deingesteldegewensteboilerwaardeliggen.",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.080",
+      "description": "Bedrijfsurenverwarming",
+      "technicalExplanation": "inh",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.081",
+      "description": "Bedrijfsurenwarmwater",
+      "technicalExplanation": "inh",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.082",
+      "description": "Branderstartsverwarming",
+      "technicalExplanation": "Aantalbranderstarts",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.083",
+      "description": "Branderstartswarmwater",
+      "technicalExplanation": "Aantalbranderstarts",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.084",
+      "description": "Onderhoudover",
+      "factoryDefault": "„---”",
+      "technicalExplanation": "Instelbereik:0tot3000hen\"---\"voorgedeactiveerd",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.088",
+      "description": "Min.warmwaterdoorstroming",
+      "factoryDefault": "1,5l/min engeen vertraging",
+      "technicalExplanation": "Inschakelvertragingvoorwarmwatertapherkenningvia vleugelrad(alleenproductmetgeïntegreerdewarmwaterbereiding) 0=1,5l/minengeenvertraging, 1=3,7l/minen2svertraging",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.090",
+      "description": "eBUS-thermostaat",
+      "technicalExplanation": "Statusdigitalethermostaat herkend,nietherkend",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.091",
+      "description": "StatusDCF77",
+      "technicalExplanation": "StatusDCFbijaangeslotenbuitentemperatuurvoeler geenontvangst ontvangst gesynchroniseerd geldig",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.092",
+      "description": "CommunicatiestatusactoSTOR",
+      "technicalExplanation": "actoSTORmoduleherkenning 0=nietaangesloten 1=verbindingsfout:geencommunicatieviaPeBus, actoSTORmodulewerdvroegerherkend 2=verbindingactief",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.093",
+      "description": "Toestelcodeinstellen",
+      "technicalExplanation": "Toestelidentificatie=DeviceSpecificNumber(DSN) Instelbereik:0tot99",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.094",
+      "description": "Foutgeschiedenisverwijderen",
+      "technicalExplanation": "Wissenvandefoutlijst 0=nee 1=ja",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.095",
+      "description": "SoftwareversiePebus-deelnemer",
+      "technicalExplanation": "Printplaat(BMU) Display(AI) actoSTOR(APC) HBI/VR34",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    },
+    {
+      "code": "D.096",
+      "description": "Fabrieksinstellingterugzetten?",
+      "technicalExplanation": "Resetvanalleinstelbareparametersnaarfabrieksinstelling 0=nee 1=ja",
+      "source": "https://www.vaillant.be/ecotec-pro/0020244981-02-1722498.pdf",
+      "sourcePage": 31,
+      "verified": true,
+      "verifiedDate": "2026-08-14"
+    }
+  ]
+}

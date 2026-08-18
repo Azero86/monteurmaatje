@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "avanta-classic",
+  "source": {
+    "title": "Remeha installatie- en servicehandleiding Avanta 24c/28c/35c",
+    "url": "https://documentation.remeha.nl/wp-content/uploads/sites/68/2025/12/Avanta-Installatie-en-servicehandleiding-NL-V13.pdf"
+  },
+  "faults": [
+    {
+      "code": "E.00",
+      "title": "Aanvoer- of retoursensor defect",
+      "meaning": "De besturing ontvangt geen geldige waarde van de aanvoer- of retoursensor.",
+      "causes": [
+        "Kortsluiting of kabelbreuk",
+        "Sensor slecht aangesloten",
+        "Aanvoer- of retoursensor defect"
+      ],
+      "checks": [
+        "Controleer bedrading en beschermdoppen",
+        "Controleer montage en aansluitingen",
+        "Meet de sensor; richtwaarde 12–15 kΩ bij 20–25 °C",
+        "Vervang de defecte sensor"
+      ]
+    },
+    {
+      "code": "E.01",
+      "title": "Aanvoertemperatuur te hoog",
+      "meaning": "De gemeten aanvoertemperatuur is hoger dan de maximale werktemperatuur.",
+      "causes": [
+        "Waterdruk of waterpeil te laag",
+        "Geen of te weinig doorstroming",
+        "Lucht in het toestel",
+        "Temperatuursensor wijkt af"
+      ],
+      "checks": [
+        "Controleer waterdruk",
+        "Controleer circulatiepomp en pompbedrading",
+        "Ontlucht het toestel met uitgeschakelde pomp",
+        "Meet aanvoer- en retoursensor"
+      ]
+    },
+    {
+      "code": "E.02",
+      "title": "Retourtemperatuur hoger dan aanvoer",
+      "meaning": "De retourtemperatuur wordt hoger gemeten dan de aanvoertemperatuur.",
+      "causes": [
+        "Geen doorstroming",
+        "Sensoren of bekabeling verwisseld",
+        "Sensorafwijking",
+        "Lucht in het toestel"
+      ],
+      "checks": [
+        "Controleer waterdruk en doorstroming",
+        "Controleer pomp en pompbedrading",
+        "Controleer sensorpositie en bekabeling",
+        "Meet beide sensoren"
+      ]
+    },
+    {
+      "code": "E.03",
+      "title": "Bedieningspaneelstoring",
+      "meaning": "De besturing detecteert een probleem met het bedieningspaneel of de voeding daarvan.",
+      "causes": [
+        "Bedieningspaneel defect",
+        "Voedingskabel defect of slecht aangesloten"
+      ],
+      "checks": [
+        "Controleer elektrische aansluitingen",
+        "Controleer voedingskabel",
+        "Vervang het bedieningspaneel indien nodig"
+      ]
+    },
+    {
+      "code": "E.04",
+      "title": "Geen vlam na vijf startpogingen",
+      "meaning": "Na vijf startpogingen is geen betrouwbare vlamvorming of ionisatie gemeten.",
+      "causes": [
+        "Geen ontstekingsvonk",
+        "Geen of onvoldoende gastoevoer",
+        "Ontstekingselektrode vervuild of defect",
+        "Lucht-/rookgasweg of sifon geblokkeerd",
+        "Onvoldoende ionisatie of slechte aarding"
+      ],
+      "checks": [
+        "Controleer gaskraan en gasvoordruk",
+        "Controleer ontstekingstrafo, kabel, elektrodeafstand 3–4 mm en aarding",
+        "Controleer sifon, luchttoevoer en rookgasafvoer",
+        "Controleer ionisatie-elektrode",
+        "Meet O₂ op vollast en laaglast"
+      ],
+      "note": "Gaszijdige metingen en afstellingen alleen door een gecertificeerd monteur."
+    },
+    {
+      "code": "E.05",
+      "title": "Ionisatiefout",
+      "meaning": "De gemeten ionisatie is niet betrouwbaar.",
+      "causes": [
+        "O₂-afstelling onjuist",
+        "Ionisatie-/ontstekingselektrode vervuild of defect",
+        "Probleem in luchttoevoer of rookgasafvoer"
+      ],
+      "checks": [
+        "Controleer elektrode",
+        "Controleer concentrische lucht-/rookgaspijpen",
+        "Meet O₂ en controleer gas/luchtverhouding"
+      ],
+      "note": "Gaszijdige metingen en afstellingen alleen door een gecertificeerd monteur."
+    },
+    {
+      "code": "E.06",
+      "title": "Ongewenste vlamvorming",
+      "meaning": "Er wordt een vlamsignaal gedetecteerd terwijl geen vlam aanwezig hoort te zijn.",
+      "causes": [
+        "Ontstekingstrafo defect",
+        "Besturingsautomaat defect"
+      ],
+      "checks": [
+        "Controleer ontstekingstrafo en bekabeling",
+        "Vervang de automaat indien de fout blijft"
+      ]
+    },
+    {
+      "code": "E.07",
+      "title": "Geen water of pomp draait niet",
+      "meaning": "Het toestel detecteert onvoldoende watercirculatie.",
+      "causes": [
+        "Waterdruk te laag of lekkage",
+        "Circulatiepomp geblokkeerd",
+        "Lucht in het toestel",
+        "Pomp verkeerd aangesloten"
+      ],
+      "checks": [
+        "Controleer waterdruk en lekkage",
+        "Controleer pompwerking en bedrading",
+        "Ontlucht met uitgeschakelde pomp",
+        "Controleer elektrische pompaansluiting"
+      ]
+    },
+    {
+      "code": "E.08",
+      "title": "Ventilatorstoring",
+      "meaning": "Het ventilatortoerental ontbreekt of wijkt af van de aansturing.",
+      "causes": [
+        "Ventilator draait niet",
+        "Ventilatorbedrading defect",
+        "Ventilator stopt niet",
+        "Schoorsteentrek buiten bereik"
+      ],
+      "checks": [
+        "Controleer ventilator en bedrading",
+        "Controleer of het schoepenrad vrij draait",
+        "Controleer de trek volgens voorschrift",
+        "Vervang de ventilator indien nodig"
+      ]
+    },
+    {
+      "code": "E.09",
+      "title": "Geen water in de ketel",
+      "meaning": "De waterdrukschakelaar geeft onvoldoende waterdruk of geen water aan.",
+      "causes": [
+        "Waterdruk te laag",
+        "Lekkage",
+        "Expansievat defect",
+        "Waterdrukschakelaar defect"
+      ],
+      "checks": [
+        "Controleer waterdruk en lekkage",
+        "Controleer expansievat",
+        "Vul en ontlucht de installatie",
+        "Controleer of vervang de waterdrukschakelaar"
+      ]
+    },
+    {
+      "code": "E.10",
+      "title": "Geen water of pomp draait niet",
+      "meaning": "Het toestel detecteert onvoldoende circulatie tijdens bedrijf.",
+      "causes": [
+        "Waterdruk te laag",
+        "Pomp geblokkeerd of verkeerd aangesloten",
+        "Lucht in de ketel"
+      ],
+      "checks": [
+        "Controleer waterdruk en lekkage",
+        "Controleer pomp en bedrading",
+        "Ontlucht met uitgeschakelde pomp"
+      ]
+    },
+    {
+      "code": "E.11",
+      "title": "Luchtkasttemperatuur te hoog",
+      "meaning": "De temperatuur in de luchtkast overschrijdt de toegestane waarde.",
+      "causes": [
+        "Mogelijke rookgaslekkage"
+      ],
+      "checks": [
+        "Schakel het toestel veilig uit",
+        "Controleer het rookgastraject en de afdichtingen",
+        "Neem bij aangesproken thermische beveiliging contact op met Remeha"
+      ],
+      "note": "Rookgaszijdige controles alleen door een gecertificeerd monteur."
+    },
+    {
+      "code": "E.12",
+      "title": "Warmteterugwinunit niet correct aangesloten",
+      "meaning": "De ingestelde WTW-koppeling wordt niet correct herkend.",
+      "causes": [
+        "WTW-eenheid niet aangesloten",
+        "Parameter P23 niet passend ingesteld"
+      ],
+      "checks": [
+        "Controleer de aansluiting van de WTW-eenheid",
+        "Controleer parameter P23 volgens het voorschrift"
+      ]
+    },
+    {
+      "code": "E.13",
+      "title": "Sensor-, automaat- of warmtewisselaarbeveiliging",
+      "meaning": "Een sensorverbinding, de automaat of een thermische beveiliging van de warmtewisselaar geeft een fout.",
+      "causes": [
+        "Sensor of bedrading los",
+        "Besturingsautomaat defect",
+        "Smelt- of thermische beveiliging aangesproken",
+        "Geen doorstroming of rookgaslekkage"
+      ],
+      "checks": [
+        "Controleer sensoren en bedrading",
+        "Controleer waterdruk, pomp en ontluchting",
+        "Meet smeltbeveiliging en bekabeling door",
+        "Controleer warmtewisselaar en rookgasdichtheid"
+      ],
+      "note": "Bij aangesproken thermische beveiliging: toestel buiten bedrijf stellen en Remeha raadplegen."
+    },
+    {
+      "code": "E.43",
+      "title": "Parametergrenzen onjuist",
+      "meaning": "Een of meer parameterwaarden liggen buiten de geldige grenzen.",
+      "causes": [
+        "Parameterinstellingen gewijzigd of beschadigd"
+      ],
+      "checks": [
+        "Controleer de parameterlijst",
+        "Zet de parameters terug naar fabrieksinstellingen"
+      ]
+    },
+    {
+      "code": "E.44",
+      "title": "Parametergrenzen onjuist",
+      "meaning": "Een of meer parameterwaarden liggen buiten de geldige grenzen.",
+      "causes": [
+        "Parameterinstellingen gewijzigd of beschadigd"
+      ],
+      "checks": [
+        "Controleer de parameterlijst",
+        "Zet de parameters terug naar fabrieksinstellingen"
+      ]
+    },
+    {
+      "code": "E.45",
+      "title": "Besturingsautomaat parameterfout",
+      "meaning": "De besturingsautomaat bevat ongeldige parametergrenzen.",
+      "causes": [
+        "Besturingsautomaat defect"
+      ],
+      "checks": [
+        "Controleer toestelconfiguratie",
+        "Vervang de besturingsautomaat indien de fout blijft"
+      ]
+    }
+  ]
+}
