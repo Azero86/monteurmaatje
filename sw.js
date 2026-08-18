@@ -1,48 +1,55 @@
-const APP_VERSION = new URL(self.location.href).searchParams.get("app") || "legacy";
 const CACHE_PREFIX = "monteurmaatje-";
-const CACHE_NAME = `${CACHE_PREFIX}app-${APP_VERSION.replace(/[^a-z0-9_-]/gi, "")}`;
-const APP_ROOT = new URL("./", self.registration.scope).pathname;
-const appUrl = (path = "") => new URL(path, self.registration.scope).pathname;
+const APP_CACHE = `${CACHE_PREFIX}app-foundation-v2`;
+const DATA_CACHE = `${CACHE_PREFIX}data-foundation-v2`;
+const APP_ROOT = new URL("./", self.registration.scope).href;
+const appUrl = (path = "") => new URL(path, self.registration.scope).href;
+
 const CORE_SHELL = [
   APP_ROOT,
+  appUrl("index.html"),
+  appUrl("style.css"),
+  appUrl("app.js"),
   appUrl("manifest.webmanifest"),
   appUrl("favicon.svg"),
   appUrl("icons/icon-192.png"),
   appUrl("icons/icon-512.png"),
   appUrl("icons/icon-maskable-512.png"),
   appUrl("icons/apple-touch-icon.png"),
-  appUrl("data/catalog.json"),
+  appUrl("assets/fonts/569ce4b8f30dc480-s.p.woff2"),
+  appUrl("assets/fonts/93f479601ee12b01-s.p.woff2"),
 ];
 
-async function precacheAppShell() {
-  const cache = await caches.open(CACHE_NAME);
-  const rootRequest = new Request(APP_ROOT, { cache: "reload" });
-  const rootResponse = await fetch(rootRequest);
+const CATALOG_URL = appUrl("data/catalog.json");
 
-  if (!rootResponse.ok) throw new Error(`Kon app-shell niet laden (${rootResponse.status})`);
-
-  const html = await rootResponse.clone().text();
-  const shellUrls = new Set(CORE_SHELL);
-
-  for (const match of html.matchAll(/(?:src|href)="([^"]+)"/g)) {
-    const url = new URL(match[1], self.registration.scope);
-    if (url.origin === self.location.origin && url.pathname.startsWith(APP_ROOT)) {
-      shellUrls.add(url.pathname + url.search);
+function freshRequest(request, extraHeaders) {
+  const headers = new Headers(request instanceof Request ? request.headers : undefined);
+  if (extraHeaders) {
+    for (const [name, value] of Object.entries(extraHeaders)) {
+      if (value) headers.set(name, value);
     }
   }
+  return new Request(request, { cache: "no-store", headers });
+}
 
-  await cache.put(APP_ROOT, rootResponse);
-  shellUrls.delete(APP_ROOT);
-
-  await Promise.all([...shellUrls].map(async (url) => {
-    const response = await fetch(new Request(url, { cache: "reload" }));
+async function precache() {
+  const appCache = await caches.open(APP_CACHE);
+  await Promise.all(CORE_SHELL.map(async (url) => {
+    const response = await fetch(freshRequest(url));
     if (!response.ok) throw new Error(`Kon app-shellbestand niet laden: ${url}`);
-    await cache.put(url, response);
+    await appCache.put(url, response);
   }));
+
+  // De catalogus is de minimale offline kennisbank. Toesteldata wordt daarna
+  // automatisch gecachet zodra een toestel wordt geopend.
+  const dataCache = await caches.open(DATA_CACHE);
+  try {
+    const response = await fetch(freshRequest(CATALOG_URL));
+    if (response.ok) await dataCache.put(CATALOG_URL, response);
+  } catch (_) {}
 }
 
 self.addEventListener("install", (event) => {
-  event.waitUntil(precacheAppShell());
+  event.waitUntil(precache());
 });
 
 self.addEventListener("activate", (event) => {
@@ -50,7 +57,7 @@ self.addEventListener("activate", (event) => {
     caches.keys()
       .then((keys) => Promise.all(
         keys
-          .filter((key) => key.startsWith(CACHE_PREFIX) && key !== CACHE_NAME)
+          .filter((key) => key.startsWith(CACHE_PREFIX) && key !== APP_CACHE && key !== DATA_CACHE)
           .map((key) => caches.delete(key)),
       ))
       .then(() => self.clients.claim()),
@@ -61,16 +68,99 @@ self.addEventListener("message", (event) => {
   if (event.data?.type === "SKIP_WAITING") self.skipWaiting();
 });
 
-async function networkFirst(request, fallbackKey = request) {
-  const cache = await caches.open(CACHE_NAME);
+/**
+ * Altijd controleren of een statisch bestand op de server gewijzigd is, zonder
+ * het bestand opnieuw te downloaden als het gelijk is.
+ *
+ * - Met ETag/Last-Modified: server antwoordt 304 -> alleen enkele headers.
+ * - Zonder conditional-cache ondersteuning: server antwoordt 200 -> nog steeds
+ *   altijd actuele informatie (correctheid gaat voor dataverbruik).
+ * - Offline/netwerkfout: laatst geldige Cache Storage-response blijft bruikbaar.
+ */
+function validatorsFrom(cached) {
+  const validators = {};
+  if (!cached) return validators;
+  const etag = cached.headers.get("etag");
+  const modified = cached.headers.get("last-modified");
+  if (etag) validators["If-None-Match"] = etag;
+  if (modified) validators["If-Modified-Since"] = modified;
+  return validators;
+}
+
+async function revalidate(cacheName, request, fallbackKey = request) {
+  const cache = await caches.open(cacheName);
+  const cached = await cache.match(fallbackKey);
 
   try {
-    const networkRequest = new Request(request, { cache: "no-store" });
-    const response = await fetch(networkRequest);
-    if (response.ok) await cache.put(fallbackKey, response.clone());
-    return response;
-  } catch {
-    const cached = await cache.match(fallbackKey);
+    const response = await fetch(freshRequest(request, validatorsFrom(cached)));
+    if (response.status === 304 && cached) return cached;
+
+    if (response.ok) {
+      await cache.put(fallbackKey, response.clone());
+      return response;
+    }
+
+    // Een expliciet ontbrekend/verwijderd bestand niet verbergen met oude data.
+    if (response.status === 404 || response.status === 410) return response;
+    return cached || response;
+  } catch (_) {
+    return cached || Response.error();
+  }
+}
+
+function dataShapeIsValid(url, payload) {
+  if (!payload || typeof payload !== "object" || Array.isArray(payload)) return false;
+
+  if (url.pathname.endsWith("/data/catalog.json")) {
+    return Array.isArray(payload.brands) && payload.brands.every(
+      brand => brand && typeof brand === "object" && Array.isArray(brand.devices),
+    );
+  }
+
+  const parts = url.pathname.split("/").filter(Boolean);
+  const fileName = parts.at(-1) || "";
+  const expectedDeviceId = parts.at(-2) || "";
+  if (!expectedDeviceId || payload.deviceId !== expectedDeviceId) return false;
+
+  if (fileName === "faults.json") return Array.isArray(payload.faults);
+  if (fileName === "parameters.json") return Array.isArray(payload.parameters);
+  if (fileName === "diagnostics.json") return Array.isArray(payload.diagnostics);
+  if (fileName === "combustion.json") {
+    return Array.isArray(payload.measurements) || Array.isArray(payload.settings);
+  }
+  return true;
+}
+
+async function revalidateData(request) {
+  const cache = await caches.open(DATA_CACHE);
+  const cached = await cache.match(request);
+  const url = new URL(request.url);
+
+  try {
+    const response = await fetch(freshRequest(request, validatorsFrom(cached)));
+    if (response.status === 304 && cached) return cached;
+
+    if (response.ok) {
+      try {
+        const payload = await response.clone().json();
+        if (!dataShapeIsValid(url, payload)) throw new Error("ongeldige datastructuur");
+      } catch (error) {
+        console.error(`Nieuwe kennisbankdata geweigerd (${url.pathname})`, error);
+        // Nooit een malformed/wrong-device JSON over de laatst geldige cache heen schrijven.
+        return cached || new Response("Ongeldige kennisbankdata", {
+          status: 502,
+          statusText: "Invalid knowledge data",
+          headers: { "Content-Type": "text/plain; charset=utf-8" },
+        });
+      }
+
+      await cache.put(request, response.clone());
+      return response;
+    }
+
+    if (response.status === 404 || response.status === 410) return response;
+    return cached || response;
+  } catch (_) {
     return cached || Response.error();
   }
 }
@@ -82,27 +172,19 @@ self.addEventListener("fetch", (event) => {
   if (request.method !== "GET" || url.origin !== self.location.origin) return;
 
   if (request.mode === "navigate") {
-    event.respondWith(networkFirst(request, APP_ROOT));
+    event.respondWith(revalidate(APP_CACHE, request, APP_ROOT));
     return;
   }
 
-  if (url.pathname.startsWith(appUrl("data/")) && url.pathname.endsWith(".json")) {
-    event.respondWith(networkFirst(request));
+  const dataRoot = new URL("data/", self.registration.scope).pathname;
+  if (url.pathname.startsWith(dataRoot) && url.pathname.endsWith(".json")) {
+    event.respondWith(revalidateData(request));
     return;
   }
 
-  if (request.destination === "script" || request.destination === "style") {
-    event.respondWith(networkFirst(request));
-    return;
-  }
-
-  event.respondWith(
-    caches.match(request).then((cached) => cached || fetch(request).then((response) => {
-      if (response.ok) {
-        const copy = response.clone();
-        event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.put(request, copy)));
-      }
-      return response;
-    })),
-  );
+  // Ook frontend-assets worden conditioneel gevalideerd. Een gewijzigde app.js,
+  // stylesheet of icoon is daardoor bij de volgende load direct actueel zonder
+  // dat hiervoor een handmatige appRevision nodig is. Alleen een wijziging van
+  // sw.js zelf doorloopt de normale serviceworker-updateflow.
+  event.respondWith(revalidate(APP_CACHE, request));
 });
