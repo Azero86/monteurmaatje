@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "avanta-ace",
+  "title": "Officiële CO/CO₂/O₂-controle Avanta Ace 24c/28c/35c",
+  "measurements": [
+    {
+      "id": "closed-g20",
+      "label": "G20 — voorpaneel gesloten",
+      "value": "Hooglast: CO₂ 9,0% (8,8–9,4), O₂ 4,8% (4,1–5,2). Laaglast: CO₂ 8,5% (8,1–8,6), O₂ 5,7% (5,6–6,5).",
+      "load": "Max. Pn en Pmin",
+      "condition": "Voorpaneel gesloten; CO <250 ppm"
+    },
+    {
+      "id": "closed-g25-3",
+      "label": "G25.3 — voorpaneel gesloten",
+      "value": "Hooglast: CO₂ 9,0% (8,8–9,4), O₂ 4,6% (3,8–4,9). Laaglast: CO₂ 8,5% (8,1–8,6), O₂ 5,5% (5,3–6,2).",
+      "load": "Max. Pn en Pmin",
+      "condition": "Voorpaneel gesloten; CO <250 ppm"
+    },
+    {
+      "id": "closed-g30",
+      "label": "G30 — voorpaneel gesloten",
+      "value": "Hooglast: CO₂ 10,4% (10,2–10,8), O₂ 5,4% (4,8–5,7). Laaglast: CO₂ 9,8% (9,2–9,8), O₂ 6,3% (6,3–7,2).",
+      "load": "Max. Pn en Pmin",
+      "condition": "Voorpaneel gesloten; CO <250 ppm"
+    },
+    {
+      "id": "closed-g31",
+      "label": "G31 — voorpaneel gesloten",
+      "value": "Hooglast: CO₂ 10,3% (10,2–10,8), O₂ 5,2% (4,4–5,4). Laaglast: CO₂ 9,7% (9,2–9,8), O₂ 6,1% (6,0–6,9).",
+      "load": "Max. Pn en Pmin",
+      "condition": "Voorpaneel gesloten; CO <250 ppm"
+    },
+    {
+      "id": "open-g20",
+      "label": "G20 — voorpaneel open",
+      "value": "Hooglast: CO₂ 8,8% (8,6–9,2), O₂ 5,2% (4,5–5,6). Laaglast: CO₂ 8,4% (8,1–8,5), O₂ 5,9% (5,7–6,5).",
+      "load": "Max. Pn en Pmin",
+      "condition": "Voorpaneel open; CO <250 ppm"
+    },
+    {
+      "id": "open-g25-3",
+      "label": "G25.3 — voorpaneel open",
+      "value": "Hooglast: CO₂ 8,8% (8,6–9,2), O₂ 4,9% (4,2–5,3). Laaglast: CO₂ 8,4% (8,1–8,5), O₂ 5,7% (5,5–6,2).",
+      "load": "Max. Pn en Pmin",
+      "condition": "Voorpaneel open; CO <250 ppm"
+    },
+    {
+      "id": "open-g30",
+      "label": "G30 — voorpaneel open",
+      "value": "Hooglast: CO₂ 10,2% (10,0–10,6), O₂ 5,7% (5,1–6,0). Laaglast: CO₂ 9,7% (9,2–9,7), O₂ 6,5% (6,5–7,2).",
+      "load": "Max. Pn en Pmin",
+      "condition": "Voorpaneel open; CO <250 ppm"
+    },
+    {
+      "id": "open-g31",
+      "label": "G31 — voorpaneel open",
+      "value": "Hooglast: CO₂ 10,1% (10,0–10,6), O₂ 5,5% (4,8–5,7). Laaglast: CO₂ 9,6% (9,2–9,7), O₂ 6,3% (6,1–6,9).",
+      "load": "Max. Pn en Pmin",
+      "condition": "Voorpaneel open; CO <250 ppm"
+    },
+    {
+      "id": "co-limit",
+      "label": "Maximale CO-waarde",
+      "maximum": 250,
+      "unit": "ppm",
+      "condition": "Voor alle opgenomen gassoorten en beide paneelcondities"
+    }
+  ],
+  "settings": [
+    {
+      "id": "test-high",
+      "label": "Vollasttest",
+      "value": "Schoorsteenvegermodus — maximaal vermogen"
+    },
+    {
+      "id": "test-low",
+      "label": "Laaglasttest",
+      "value": "Schoorsteenvegermodus — minimaal vermogen"
+    },
+    {
+      "id": "adjustment",
+      "label": "CO₂/O₂-afstelling",
+      "value": "Gasblok volgens officiële afstelprocedure",
+      "technicalExplanation": "Gebruik de aparte tabel voor open of gesloten voorpaneel en de juiste gassoort."
+    }
+  ],
+  "measurementConditions": [
+    "Gebruik een gekalibreerde rookgasanalyser op het rookgasmeetpunt.",
+    "Controleer de voorpaneelconditie: de handleiding geeft afzonderlijke tabellen voor open en gesloten.",
+    "Meet op maximaal nominaal vermogen en minimumvermogen."
+  ],
+  "technicalExplanation": "De handleiding geeft nominale CO₂- en O₂-waarden met tolerantiebereiken. De bereiknotatie is genormaliseerd van laag naar hoog.",
+  "notes": [
+    "Bij G20/G25.3 met maximaal 20% waterstof uitsluitend op de O₂-waarde kalibreren.",
+    "Combineer nooit waarden van verschillende gassoorten of paneelcondities."
+  ],
+  "source": "https://documentation.remeha.nl/wp-content/uploads/sites/68/2025/09/Avanta-Ace-Installatie-en-servicehandleiding-NL-V7.pdf",
+  "sourcePage": 55,
+  "verified": true,
+  "verifiedDate": "2026-08-14"
+}
+

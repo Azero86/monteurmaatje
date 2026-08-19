@@ -1,0 +1,25 @@
+MonteurMaatje Foundation 1.1
+
+DATA-UPDATES
+- data/version.json is niet meer nodig en is verwijderd.
+- Wijzig een JSON-bestand in data/ en upload dat bestand: klaar.
+- Bij de eerstvolgende online aanvraag valideert de PWA het bestand direct met
+  ETag/Last-Modified. Ongewijzigde bestanden leveren normaal alleen een 304-response
+  (enkele headers) op; gewijzigde bestanden worden direct vervangen.
+- Bij offline gebruik blijft altijd de laatst geldige gecachte kennisbank beschikbaar.
+- Bij terugkeer naar de app wordt catalogus + het geselecteerde toestel stil op
+  actualiteit gecontroleerd zonder de huidige selectie onnodig te resetten.
+
+APP-UPDATES
+- index.html, app.js, style.css en overige statische assets worden eveneens
+  conditioneel gevalideerd. Gewijzigde frontendbestanden zijn bij een volgende load
+  direct actueel.
+- Alleen een wijziging van sw.js doorloopt de serviceworker-updateflow en kan de
+  knop 'Update app' tonen. Die workerwissel vereist maximaal één klik.
+
+HOSTING
+- Geen hardcoded domein of submap. De build werkt vanaf de root of een submap.
+- HTTPS is vereist voor PWA/serviceworker buiten localhost.
+- Elke normale statische webserver met ETag of Last-Modified profiteert van minimale
+  datatransfer. Zonder 304-ondersteuning blijft correctheid behouden; dan wordt het
+  bestand volledig opnieuw opgehaald.

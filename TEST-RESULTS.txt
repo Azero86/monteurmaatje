@@ -1,0 +1,28 @@
+MonteurMaatje Foundation 1.1 - uitgevoerde technische controles
+
+GESLAAGD
+- app.js JavaScript syntax: OK (Node 22)
+- sw.js JavaScript syntax: OK (Node 22)
+- 107 JSON-bestanden parsebaar: OK
+- alle cataloguspaden bestaan: OK
+- deviceId van gekoppelde toestelbestanden komt overeen met catalogus: OK
+- index.html lokale assetverwijzingen bestaan: OK
+- geen runtime-afhankelijkheid meer van data/version.json: OK
+- serviceworker logicasimulatie: 304 -> cached response: OK
+- serviceworker logicasimulatie: gewijzigde geldige JSON -> direct vervangen: OK
+- serviceworker logicasimulatie: wrong-device/ongeldige JSON -> laatste geldige cache behouden: OK
+- serviceworker logicasimulatie: offline -> laatste geldige cache behouden: OK
+- HTTP conditional request: gelijk ETag -> 304: OK
+- HTTP conditional request: gewijzigd bestand -> 200 + nieuwe ETag: OK
+
+BELANGRIJKE ONTWERPREGELS
+- Geen 24-uurs TTL.
+- Geen handmatig data/version.json.
+- Elke opgevraagde JSON wordt online direct conditioneel gevalideerd.
+- Catalogus + geselecteerd toestel worden bij terugkeer naar de app stil opnieuw gevalideerd.
+- Offline blijft laatst geldige data beschikbaar.
+- Frontend-assets worden eveneens conditioneel gevalideerd.
+- Alleen een wijziging van sw.js gebruikt de serviceworker-updateknop.
+
+NIET ALS GESLAAGD GECLAIMD
+- Een echte headless-Chromium E2E-run kon in de ChatGPT-container niet worden uitgevoerd omdat lokaal browsernetwerk door de omgeving wordt geblokkeerd. Dit is daarom bewust niet als testresultaat meegeteld. De release moet na upload op de VPS nog door de korte praktijkcheck: online, wijziging JSON, vliegtuigstand en één sw.js-update.

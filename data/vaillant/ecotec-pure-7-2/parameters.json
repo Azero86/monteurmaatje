@@ -1,0 +1,611 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "ecotec-pure-7-2",
+  "source": {
+    "title": "Vaillant ecoTEC pure VHR /7-2 installatie- en onderhoudshandleiding 0020231718_01 (NL, K-NL)",
+    "url": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html"
+  },
+  "parameters": [
+    {
+      "code": "d.00",
+      "description": "Maximaalverwarmingsvermogenvastingesteld ofautoadaptief",
+      "factoryDefault": "→Hoofdstuk \"Technischegegevens\"",
+      "unit": "kW",
+      "technicalExplanation": "Hetmaximaleverwarmingsvermogenvarieertperproduct. →Hoofdstuk\"Technischegegevens\" Automatisch:toestelpastmaximumvermogenaandeactuele behoeftevandeinstallatieaan",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 34,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.01",
+      "description": "Nalooptijdvandepomp inCV-bedrijf",
+      "factoryDefault": "5",
+      "minimum": "1",
+      "maximum": "60",
+      "unit": "min",
+      "technicalExplanation": "1",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 34,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.02",
+      "description": "MaximalebranderwachttijdinCV-bedrijf",
+      "factoryDefault": "20",
+      "minimum": "2",
+      "maximum": "60",
+      "unit": "min",
+      "technicalExplanation": "1",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 34,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.04",
+      "description": "Watertemperatuurinde boiler",
+      "unit": "°C",
+      "technicalExplanation": "Geldigheid:productalleen metCV-functieaangesloten opwarmwaterboilermet temperatuursensor",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 34,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.05",
+      "description": "Berekendegewenste CV-aanvoertemperatuur",
+      "unit": "°C",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 34,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.06",
+      "description": "Gewenstewarmwatertemperatuur",
+      "unit": "°C",
+      "technicalExplanation": "Geldigheid:combitoestel",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 34,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.07",
+      "description": "Gewenstetemperatuur vandewarmwaterboiler",
+      "unit": "°C",
+      "technicalExplanation": "Geldigheid:productalleen metCV-functieaangesloten opwarmwaterboilermet temperatuursensor",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 34,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.09",
+      "description": "OpdeeBUS-kamerthermostaatingesteldegewensteCV-aanvoertemperatuur",
+      "unit": "°C",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 34,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.10",
+      "description": "Statusvandeinterne pompvanhetCV-circuit",
+      "technicalExplanation": "off/on",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.11",
+      "description": "StatusvandebijmengpompvanhetCV-circuit",
+      "technicalExplanation": "Geldigheid:bypassvanhetCVcircuitgeïnstalleerd(optioneel) off/on",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.13",
+      "description": "Statusvandecirculatiepompvanhetwarmwatercircuit",
+      "technicalExplanation": "Geldigheid:circulatiepompvan hetwarmwatercircuitgeïnstalleerd(optioneel) off/on",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.14",
+      "description": "Modusvandemodulerendepomp",
+      "factoryDefault": "0",
+      "minimum": "0",
+      "maximum": "5",
+      "technicalExplanation": "0=toerentalgeregeld(automatischepompwerkingindestanden1tot5) 1=pulsbreedtemodulatie=65% 2=pulsbreedtemodulatie=73% 3=pulsbreedtemodulatie=80% 4=pulsbreedtemodulatie=88% 5=pulsbreedtemodulatie=(95 ...100%) 1;2;3;4;5=vastetoerentallen →Hoofdstuk\"Pompvermogen instellen\"",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.15",
+      "description": "Pomptoerental",
+      "unit": "%",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.16",
+      "description": "Toestandvande24Vkamerthermostaat (ON/OFF)",
+      "technicalExplanation": "off=verwarminguit on=CVgeactiveerdofeBUSregelaargebruikt",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.17",
+      "description": "Verwarmingsregeling",
+      "factoryDefault": "0",
+      "technicalExplanation": "off=aanvoertemperatuur on=retourtemperatuur(omstellingvoorvloerverwarming. Alsuderetourtemperatuurregelinggeactiveerdhebt,danisde functievanhetautomatischbepalenvanhetverwarmingsvermogennietactief)",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.18",
+      "description": "Naloopmodusvande pomp",
+      "factoryDefault": "3",
+      "minimum": "1",
+      "maximum": "3",
+      "technicalExplanation": "1=Comfort(verderlopende pomp) 3=Eco(pomplooptintermitterend)",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.20",
+      "description": "Maximalegewenste warmwatertemperatuur",
+      "factoryDefault": "60",
+      "minimum": "50",
+      "maximum": "60",
+      "unit": "°C",
+      "technicalExplanation": "1",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.21",
+      "description": "Statusvandewarme startvoorwarmwater",
+      "technicalExplanation": "off=functiegedeactiveerd on=functiegeactiveerdenbeschikbaar",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.22",
+      "description": "Statusvandewarmwatervraag",
+      "technicalExplanation": "off=geenlopendevraag on=lopendevraag",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.23",
+      "description": "Statusvandeverwarmingsvraag",
+      "technicalExplanation": "off=verwarminguit(zomermodus) on=verwarmingaan",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.25",
+      "description": "Statusvandevraagvoor hetnaverwarmenvande boilerofvoordewarme warmwaterstartvande eBUS-thermostaat",
+      "technicalExplanation": "off=functiegedeactiveerd on=functiegeactiveerd",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.27",
+      "description": "Functierelais1(multifunctionelemodule)",
+      "factoryDefault": "1",
+      "minimum": "1",
+      "maximum": "10",
+      "technicalExplanation": "1=circulatiepomp 2=externepomp 3=boilerlaadpomp 4=afzuigkap 5=externemagneetklep 6=externestoringsmelding 7=Zonnepomp(vervalt) 8=eBUS-afstandsbediening 9=Legionellabeveiligingspomp 10=Zonneklep",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 36,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.28",
+      "description": "Functierelais2(multifunctionelemodule)",
+      "factoryDefault": "2",
+      "minimum": "1",
+      "maximum": "10",
+      "technicalExplanation": "1=circulatiepomp 2=externepomp 3=boilerlaadpomp 4=afzuigkap 5=externemagneetklep 6=externestoringsmelding 7=Zonnepomp(vervalt) 8=eBUS-afstandsbediening 9=Legionellabeveiligingspomp 10=Zonneklep",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 36,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.33",
+      "description": "Gewenstewaardevan hetventilatortoerental",
+      "unit": "o/min",
+      "technicalExplanation": "Ventilatortoerental=weergegevenwaardex100",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 36,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.34",
+      "description": "Waardevanhetventilatortoerental",
+      "unit": "o/min",
+      "technicalExplanation": "Ventilatortoerental=weergegevenwaardex100",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 36,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.35",
+      "description": "Standvandedriewegklep",
+      "technicalExplanation": "0=verwarming 40=middenstand(vorstbeveiligingofvulling) 100=warmwater",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 36,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.36",
+      "description": "Waardevandewarmwaterdoorstroming",
+      "unit": "l/min",
+      "technicalExplanation": "Geldigheid:combitoestel",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 36,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.39",
+      "description": "Watertemperatuurinhet zonnecircuit",
+      "unit": "°C",
+      "technicalExplanation": "Geldigheid:zonnesetgeïnstalleerd(optioneel)",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 36,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.40",
+      "description": "CV-aanvoertemperatuur",
+      "unit": "°C",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 36,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.41",
+      "description": "RetourtemperatuurCV",
+      "unit": "°C",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 36,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.47",
+      "description": "Buitentemp.Offset",
+      "unit": "°C",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 36,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.50",
+      "description": "Correctievanhetminimaleventilatortoerental",
+      "factoryDefault": "600",
+      "minimum": "300",
+      "maximum": "1500",
+      "unit": "o/min",
+      "technicalExplanation": "1 Ventilatortoerental=weergegevenwaardex10",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 36,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.51",
+      "description": "Correctievanhetmaximaleventilatortoerental",
+      "factoryDefault": "-1000",
+      "minimum": "-1500",
+      "maximum": "-500",
+      "unit": "o/min",
+      "technicalExplanation": "1 Ventilatortoerental=weergegevenwaardex10",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 36,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.58",
+      "description": "Naverwarmenzonnecircuit",
+      "factoryDefault": "0",
+      "minimum": "0",
+      "maximum": "3",
+      "technicalExplanation": "Geldigheid:zonnesetgeïnstalleerd(optioneel) 0=legionellabeschermingvan hetproductgedeactiveerd 3=warmwatergeactiveerd (gewenstewaardemin.60°C)",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 36,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.60",
+      "description": "Aantalblokkeringendoor temperatuurbegrenzer (grenstemperatuur)",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 36,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.61",
+      "description": "Aantalmislukteontstekingen",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 36,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.64",
+      "description": "Gemid.ontstekingstijd vandebrander",
+      "unit": "s",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 36,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.65",
+      "description": "Maximaleontstekingstijd vandebrander",
+      "unit": "s",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 36,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.66",
+      "description": "Activeringvandewarmtestartfunctievoorwarm water",
+      "factoryDefault": "1",
+      "technicalExplanation": "off=functiegedeactiveerd on=functiegeactiveerd",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 37,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.67",
+      "description": "Resterendebranderwachttijd(instellingonderd.02)",
+      "unit": "min",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 37,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.68",
+      "description": "Aantalmislukteontstekingenbijde1epoging",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 37,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.69",
+      "description": "Aantalmislukteontstekingenbijde2epoging",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 37,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.71",
+      "description": "MaximalegewensteCVaanvoertemperatuur",
+      "factoryDefault": "→Hoofdstuk \"Technischegegevens\"",
+      "minimum": "30",
+      "maximum": "80",
+      "unit": "°C",
+      "technicalExplanation": "1",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 37,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.73",
+      "description": "Correctievandetemperatuurvandewarmwarm-waterstart",
+      "factoryDefault": "0",
+      "minimum": "-15",
+      "maximum": "5",
+      "unit": "K",
+      "technicalExplanation": "Geldigheid:combitoestel 1",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 37,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.75",
+      "description": "Maximalenaverwarmtijd vandeboiler",
+      "factoryDefault": "45",
+      "minimum": "20",
+      "maximum": "90",
+      "unit": "min",
+      "technicalExplanation": "Geldigheid:productalleenmet CV-bedrijf 1",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 37,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.77",
+      "description": "Max.naverwarmingvan deboiler",
+      "unit": "kW",
+      "technicalExplanation": "Geldigheid:productalleenmet CV-bedrijf 1 →Hoofdstuk\"Technischegegevens\"",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 37,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.80",
+      "description": "LooptijdinCV-bedrijf",
+      "unit": "h",
+      "technicalExplanation": "Looptijd=weergegevenwaarde x100",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 37,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.81",
+      "description": "Looptijdinwarmwaterbedrijf",
+      "unit": "h",
+      "technicalExplanation": "Looptijd=weergegevenwaarde x100",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 37,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.82",
+      "description": "Aantalontstekingenvan debranderinCV-bedrijf",
+      "technicalExplanation": "Aantalontstekingen=weergegevenwaardex100",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 37,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.83",
+      "description": "Aantalontstekingenvan debranderinwarmwaterbedrijf",
+      "technicalExplanation": "Aantalontstekingen=weergegevenwaardex100",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 37,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.84",
+      "description": "Onderhoudover",
+      "factoryDefault": "___",
+      "minimum": "0",
+      "maximum": "3000",
+      "unit": "h",
+      "technicalExplanation": "Aantaluren=weergegeven waardex10",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 37,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.85",
+      "description": "Verhogingvanhetmin. vermogen(CV-enwarmwaterbedrijf)",
+      "unit": "kW",
+      "technicalExplanation": "1",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 37,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.88",
+      "description": "Doorstromingsgrenswaardevoorontsteking inwarmwaterbedrijf",
+      "factoryDefault": "0",
+      "minimum": "0",
+      "maximum": "1",
+      "technicalExplanation": "Geldigheid:combitoestel 0=1,5l/min(geenvertraging) 1=3,7l/min(2svertraging)",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 37,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.90",
+      "description": "StatusvandeeBUSkamerthermostaat",
+      "technicalExplanation": "off=nietaangesloten on=aangesloten",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 37,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.91",
+      "description": "StatusDCF77",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 37,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.93",
+      "description": "Instellingvandeproductcode",
+      "minimum": "0",
+      "maximum": "99",
+      "technicalExplanation": "1 Despecifiekeproductcode (DSN)isophettypeplaatjete vinden.",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 37,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.94",
+      "description": "Wissenvandefoutlijst",
+      "minimum": "0",
+      "maximum": "1",
+      "technicalExplanation": "0=nee 1=ja",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 37,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.95",
+      "description": "Softwareversies",
+      "technicalExplanation": "1=hoofdprintplaat 2=interfaceprintplaat",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 37,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "d.96",
+      "description": "Fabrieksinstellingresetten",
+      "minimum": "0",
+      "maximum": "1",
+      "technicalExplanation": "0=nee 1=ja",
+      "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+      "sourcePage": 37,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    }
+  ]
+}

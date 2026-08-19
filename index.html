@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#fffaf6">
+  <meta name="description" content="Technische informatie voor Nederlandse cv-ketels en warmtepompen.">
+  <meta name="application-name" content="MonteurMaatje">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="MonteurMaatje">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>MonteurMaatje</title>
+  <link rel="manifest" href="./manifest-v3.webmanifest?v=3">
+  <link rel="icon" href="./favicon-v3.svg?v=3" type="image/svg+xml">
+  <link rel="icon" href="./icons/mm-app-v3-192.png?v=3" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="./icons/mm-app-v3-180.png?v=3" sizes="180x180" type="image/png">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="__variable_f91424 __variable_dd0526 antialiased">
+<main>
+  <header class="topbar">
+    <div class="brand-lockup">
+      <img class="brand-logo" src="./icons/mm-app-v3.svg?v=3" alt="" aria-hidden="true">
+      <div><strong>MonteurMaatje</strong><small>Technische serviceassistent</small></div>
+    </div>
+    <div class="top-actions">
+      <button id="updateButton" class="install-button hidden" type="button">Update app</button>
+      <button id="installButton" class="install-button hidden" type="button">Installeer app</button>
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Schakel donkere modus in" title="Licht/donker">
+        <span class="theme-sun" aria-hidden="true">☀</span><span class="theme-moon" aria-hidden="true">☾</span>
+      </button>
+      <div id="statusPill" class="status-pill status-hidden" aria-live="polite"><span></span><b id="statusText">Kennisbank laden…</b></div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">TECHNISCHE INFO. DIRECT BIJ DE HAND.</p>
+      <h1>Vind het toestel.<br><em>Werk gericht verder.</em></h1>
+      <p class="intro">Kies merk en toestel. Storingscodes, parameters, afstelgegevens en diagnose direct overzichtelijk bij de hand.</p>
+    </div>
+    <div class="hero-stat" id="recordStat" aria-label="Aantal officiële storingsrecords">
+      <span class="stat-number" id="recordCount">—</span><span>officiële storingsrecords</span>
+      <div class="mini-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    </div>
+  </section>
+
+  <section class="workspace" aria-label="Technische informatiezoeker">
+    <aside class="selector-card">
+      <div class="card-heading">
+        <div><p class="step-label">TECHNISCHE INFO OPZOEKEN</p><h2>Selecteer het toestel</h2></div>
+        <button id="resetButton" class="reset-button hidden" type="button">Wis keuze</button>
+      </div>
+
+      <div class="field-group">
+        <label for="brand"><span>1</span> Merk</label>
+        <div class="select-wrap"><select id="brand" disabled><option>Kennisbank laden…</option></select><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></div>
+      </div>
+
+      <div id="deviceGroup" class="field-group field-muted">
+        <label for="device"><span>2</span> Type toestel</label>
+        <div class="select-wrap"><select id="device" disabled><option>Kies eerst een merk</option></select><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></div>
+        <p id="familyHint" class="field-hint hidden"></p>
+      </div>
+
+      <div id="tabs" class="content-tabs hidden" aria-label="Technische informatie"></div>
+      <div id="thirdStep"></div>
+      <p id="dataMessage" class="data-message hidden"></p>
+      <div class="progress-rail" aria-label="Voortgang"><span id="p1"></span><span id="p2"></span><span id="p3"></span></div>
+    </aside>
+
+    <article id="result" class="result-card" aria-live="polite"></article>
+  </section>
+</main>
+<script src="./app.js" defer></script>
+</body>
+</html>

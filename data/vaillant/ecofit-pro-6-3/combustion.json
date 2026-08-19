@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "ecofit-pro-6-3",
+  "title": "Verbrandingscontrole ecoFIT pro /6-3 (Nederland, aardgas K)",
+  "measurements": [
+    {
+      "label": "CO₂ — voormantel gedemonteerd",
+      "value": 9.2,
+      "tolerance": 1.0,
+      "unit": "vol.-%",
+      "load": "P.01 op 100%",
+      "condition": "Aardgas K"
+    },
+    {
+      "label": "CO₂ instelwaarde — voormantel gedemonteerd",
+      "value": 9.2,
+      "tolerance": 0.3,
+      "unit": "vol.-%",
+      "load": "P.01 op 100%",
+      "condition": "Aardgas K"
+    },
+    {
+      "label": "O₂ — voormantel gedemonteerd",
+      "value": 4.9,
+      "tolerance": 1.8,
+      "unit": "vol.-%",
+      "load": "P.01 op 100%",
+      "condition": "Aardgas K"
+    },
+    {
+      "label": "O₂ instelwaarde — voormantel gedemonteerd",
+      "value": 4.9,
+      "tolerance": 0.3,
+      "unit": "vol.-%",
+      "load": "P.01 op 100%",
+      "condition": "Aardgas K"
+    },
+    {
+      "label": "CO₂ — voormantel gemonteerd",
+      "value": 9.4,
+      "tolerance": 1.0,
+      "unit": "vol.-%",
+      "load": "P.01 op 100%",
+      "condition": "Aardgas K"
+    },
+    {
+      "label": "CO₂ instelwaarde — voormantel gemonteerd",
+      "value": 9.4,
+      "tolerance": 0.3,
+      "unit": "vol.-%",
+      "load": "P.01 op 100%",
+      "condition": "Aardgas K"
+    },
+    {
+      "label": "O₂ — voormantel gemonteerd",
+      "value": 4.5,
+      "tolerance": 1.8,
+      "unit": "vol.-%",
+      "load": "P.01 op 100%",
+      "condition": "Aardgas K"
+    },
+    {
+      "label": "O₂ instelwaarde — voormantel gemonteerd",
+      "value": 4.5,
+      "tolerance": 0.3,
+      "unit": "vol.-%",
+      "load": "P.01 op 100%",
+      "condition": "Aardgas K"
+    },
+    {
+      "label": "CO in rookgas",
+      "maximum": 250,
+      "unit": "ppm",
+      "load": "P.01 op 100%"
+    }
+  ],
+  "settings": [
+    {
+      "label": "Testprogramma vollast",
+      "value": "P.01 = 100",
+      "technicalExplanation": "Gebruik het testprogramma op maximaal vermogen voor de gas-/luchtcontrole."
+    }
+  ],
+  "measurementConditions": [
+    "Breng het toestel met P.01 op vollast.",
+    "Wacht minimaal 5 minuten voor beoordeling van de meetwaarde.",
+    "Gebruik de waarden die horen bij de toestand van de voormantel."
+  ],
+  "technicalExplanation": "Nederlandse ecoFIT pro /6-3: controleer gas-/luchtverhouding met P.01 op vollast. De handleiding geeft afzonderlijke CO₂/O₂-bereiken voor gemonteerde en gedemonteerde voormantel.",
+  "notes": [
+    "Bij een waarde buiten het toegestane bereik eerst gasvoorziening, VLT/VGA en toestelconditie controleren.",
+    "Werk aan gasblok/verbranding uitsluitend volgens de fabrikantprocedure."
+  ],
+  "source": "https://www.vaillant.nl/api/download/product/nl/_ecofit-pro_1463408.pdf",
+  "sourcePage": "gas-/luchtcontrole / technische gegevens",
+  "verified": true,
+  "verifiedDate": "2026-08-18"
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "ecotec-plus-5-5",
+  "title": "Officiële gas-/luchtcontrole ecoTEC plus /5-5",
+  "measurements": [
+    {
+      "label": "CO₂ vollast — aardgas G25, voormantel gesloten",
+      "value": 9.0,
+      "tolerance": 1.0,
+      "unit": "vol.-%",
+      "load": "P.01",
+      "condition": "Na minimaal 5 minuten op bedrijfstemperatuur"
+    },
+    {
+      "label": "CO₂ vollast — aardgas G25, voormantel verwijderd",
+      "value": 8.8,
+      "tolerance": 1.0,
+      "unit": "vol.-%",
+      "load": "P.01",
+      "condition": "Na minimaal 5 minuten op bedrijfstemperatuur"
+    },
+    {
+      "label": "CO₂ vollast — propaan G31, voormantel gesloten",
+      "value": 10.4,
+      "tolerance": 0.5,
+      "unit": "vol.-%",
+      "load": "P.01",
+      "condition": "Na minimaal 5 minuten op bedrijfstemperatuur"
+    },
+    {
+      "label": "CO₂ vollast — propaan G31, voormantel verwijderd",
+      "value": 10.2,
+      "tolerance": 0.5,
+      "unit": "vol.-%",
+      "load": "P.01",
+      "condition": "Na minimaal 5 minuten op bedrijfstemperatuur"
+    },
+    {
+      "label": "Gasaansluitdruk — aardgas G25",
+      "value": 25,
+      "unit": "mbar"
+    },
+    {
+      "label": "Gasaansluitdruk — propaan G31",
+      "value": 30,
+      "unit": "mbar"
+    }
+  ],
+  "settings": [],
+  "measurementConditions": [
+    "Start controleprogramma P.01 en wacht minimaal 5 minuten tot bedrijfstemperatuur.",
+    "Meet CO₂ aan de verbrandingsgasmeetnippel.",
+    "Vergelijk met de tabel voor de juiste gassoort en toestand van de voormantel."
+  ],
+  "technicalExplanation": "Nederlandse VHR NL /5-5-reeks: controleer CO₂ bij P.01 na minimaal vijf minuten op bedrijfstemperatuur en gebruik de tabel voor G25 of G31 en de toestand van de voormantel.",
+  "notes": [
+    "Als de meetwaarde buiten het opgegeven bereik ligt, mag het toestel volgens Vaillant niet in gebruik worden genomen."
+  ],
+  "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-plus-VHR-NL-25-30-5-5/handleiding-5-616414.html",
+  "sourcePage": "CO₂-controle p. 25; technische gegevens p. 71 (NL-handleiding 0020116691)",
+  "verified": true,
+  "verifiedDate": "2026-08-18"
+}

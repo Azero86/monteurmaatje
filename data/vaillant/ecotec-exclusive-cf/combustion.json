@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "ecotec-exclusive-cf",
+  "title": "Verbrandingscontrole ecoTEC exclusive CF IoniDetect (Nederland)",
+  "measurements": [
+    {
+      "label": "Toegestane gasaansluitdruk — aardgas E",
+      "minimum": 17.0,
+      "maximum": 25.0,
+      "unit": "mbar"
+    },
+    {
+      "label": "Toegestane gasaansluitdruk — aardgas K",
+      "minimum": 20.0,
+      "maximum": 30.0,
+      "unit": "mbar"
+    },
+    {
+      "label": "CO₂/O₂-bereik",
+      "value": "Gebruik het model- en belastingsafhankelijke diagram voor VHR 25/36CF/1-7 of VHR 34/43CF/1-7",
+      "condition": "Voormantel gemonteerd; juiste gassoort en belasting gebruiken"
+    }
+  ],
+  "settings": [
+    {
+      "label": "Verbrandingskalibratie",
+      "value": "S.093",
+      "technicalExplanation": "Voer de voorgeschreven kalibratie uit voordat de verbrandingswaarden worden beoordeeld."
+    },
+    {
+      "label": "Correctiewaarde gas-luchtverhouding",
+      "value": "D.158",
+      "technicalExplanation": "Alleen gebruiken nadat gasvoorziening en volledig VLT/VGA-traject conform handleiding zijn gecontroleerd."
+    }
+  ],
+  "measurementConditions": [
+    "Meet met gemonteerde voormantel.",
+    "Voer eerst S.093 uit.",
+    "Beoordeel CO₂/O₂ aan de hand van het diagram voor exact toesteltype, gassoort en belasting.",
+    "Bij afwijking eerst VLT/VGA, recirculatie, blokkades en gasvoorziening controleren; pas daarna D.158 volgens fabrikantprocedure."
+  ],
+  "technicalExplanation": "IoniDetect gebruikt geen enkel universeel CO₂-setpoint. De Nederlandse handleiding schrijft belastings- en modelspecifieke grenscurven voor.",
+  "notes": [
+    "Gebruik geen vaste CO₂-waarde van een andere ecoTEC-generatie."
+  ],
+  "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-exclusive_1387681.pdf",
+  "sourcePage": "gas-/luchtcontrole en technische gegevens",
+  "verified": true,
+  "verifiedDate": "2026-08-18"
+}

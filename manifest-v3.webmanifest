@@ -1,0 +1,36 @@
+{
+  "name": "MonteurMaatje – Technische serviceassistent",
+  "short_name": "MonteurMaatje",
+  "description": "Technische informatie, storingscodes, parameters, verbranding en diagnose voor Nederlandse cv-toestellen en warmtepompen.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fffaf6",
+  "theme_color": "#fffaf6",
+  "lang": "nl-NL",
+  "categories": [
+    "utilities",
+    "productivity"
+  ],
+  "icons": [
+    {
+      "src": "./icons/mm-app-v3-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/mm-app-v3-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/mm-app-v3-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

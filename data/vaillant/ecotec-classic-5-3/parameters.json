@@ -1,0 +1,654 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "ecotec-classic-5-3",
+  "source": {
+    "title": "Vaillant ecoTEC classic installatie- en onderhoudshandleiding 0020275648_03 (NL)",
+    "url": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf"
+  },
+  "parameters": [
+    {
+      "code": "D.000",
+      "description": "CV-deellast",
+      "factoryDefault": "auto",
+      "technicalExplanation": "Instelbare CV-deellast in kW auto: product past max. deellast automatisch aan de actuele behoefte van de installatie aan",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 33,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.001",
+      "description": "Nalooptijd interne pomp voor CVbedrijf",
+      "factoryDefault": "5 min",
+      "technicalExplanation": "1 … 60 min",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 33,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.002",
+      "description": "Max. branderwachttijd verwarming bij 20 °C aanvoertemperatuur",
+      "factoryDefault": "20 min",
+      "technicalExplanation": "2 … 60 min",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 33,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.003",
+      "description": "Warmwater temp. gemeten",
+      "technicalExplanation": "in °C",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 33,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.004",
+      "description": "Meetwaarde van de warmwatersensor",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 33,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.005",
+      "description": "Gewenste aanvoertemperatuur (of gewenste retourtemperatuur)",
+      "technicalExplanation": "in °C, max. van de in d.071 ingestelde waarde, begrensd door een eBus-thermostaat, indien aangesloten",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 33,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.006",
+      "description": "Gewenste waarde warmwatertemperatuur (alleen product met geïntegreerde warmwaterbereiding)",
+      "technicalExplanation": "35 … 65 ℃",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 33,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.007",
+      "description": "Gewenste waarde warmestarttemperatuur (alleen product met geïntegreerde warmwaterbereiding) Boilertemperatuur gewenste waarde (alleen product alleen met CV-bedrijf)",
+      "technicalExplanation": "35 … 65 ℃ 15 °C is vorstbeveiliging, dan 40 tot 70 °C (max. temperatuur onder D.020 instelbaar)",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 33,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.008",
+      "description": "Kamerthermostaat aan klemmen RT",
+      "technicalExplanation": "Kamerthermostaat geopend (geen warmtevraag) Kamerthermostaat gesloten (warmtevraag)",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 33,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.009",
+      "description": "Gewenste waarde van externe eBUS thermostaat",
+      "technicalExplanation": "in °C",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 33,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.010",
+      "description": "Status interne pomp",
+      "technicalExplanation": "1 = aan, 0= uit",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 33,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.011",
+      "description": "Status externe CV-pomp",
+      "technicalExplanation": "1 - 100 = aan, 0 = uit",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 33,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.012",
+      "description": "Status boilerlaadpomp",
+      "technicalExplanation": "1 = aan, 0= uit",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 33,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.013",
+      "description": "Status warmwater - circulatiepomp",
+      "technicalExplanation": "1 = aan, 0= uit",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 33,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.014",
+      "description": "omp snelheid ingesteld (hoogeffici- G nte pomp) g 0 1 2 3 4 5",
+      "factoryDefault": "0 = auto",
+      "technicalExplanation": "ewenste waarde hoogefficiënte pomp in %. Moelijke instellingen: = auto = 53 = 60 = 70 = 85 = 100",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 34,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.015",
+      "description": "omptoerental werkelijke waarde W hoogefficiënte pomp)",
+      "technicalExplanation": "erkelijke waarde hoogefficiënte pomp in %",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 34,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.016",
+      "description": "amerthermostaat 24V DC geo- 0 end/gesloten 1",
+      "technicalExplanation": "= kamerthermostaat geopend/CV-functie uit = kamerthermostaat gesloten/CV-functie aan",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 34,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.017",
+      "description": "mschakeling aanvoer-/retourtempe- R atuurregeling verwarming 0 R v m",
+      "factoryDefault": "0 = aanvoer",
+      "technicalExplanation": "egelingswijze: = aanvoer, 1 = retour etour: functie van de automatische berekening an het verwarmingsvermogen niet actief. Max. ogelijke CV-deellast, indien D.000 op Auto.",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 34,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.018",
+      "description": "nstelling van de pompmodus 1 I v t 3 I i",
+      "factoryDefault": "3 = Eco",
+      "technicalExplanation": "= Comfort (verderlopende pomp) nterne pomp wordt ingeschakeld, indien CV-aanoertemperatuur niet op Verwarming uit en warmevraag via externe thermostaat vrijgeschakeld = Eco (intermitterende pomp) nterne pomp wordt na afloop van de nalooptijd edere 25 minuten voor 5 minuten ingeschakeld",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 34,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.019",
+      "description": "odus van de 2-traps pomp n",
+      "technicalExplanation": "iet relevant",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 34,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.020",
+      "description": "ax. instelwaarde voor gewenste I oilerwaarde",
+      "factoryDefault": "65 °C",
+      "technicalExplanation": "nstelbereik 50 - 70 °C (actoSTOR 65 °C)",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 33,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.022",
+      "description": "raag warm water (via C1/C2, stro- 0 ingsrotor of APC)",
+      "technicalExplanation": "= aan, 1= uit",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 34,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.023",
+      "description": "omer-/winterstand (verwarming 1 an/uit)",
+      "technicalExplanation": "= CV aan, 0 = CV uit (zomerbedrijf)",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 34,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.025",
+      "description": "armwaterbereiding vrijgegeven 1 oor eBus-thermostaat",
+      "technicalExplanation": "= aan, 0= uit",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 34,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.026",
+      "description": "ansturing hulprelais n",
+      "factoryDefault": "2 = externe pomp",
+      "technicalExplanation": "iet relevant",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 34,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.027",
+      "description": "mschakeling relais 1 naar de „2 uit 1 “ multifunctionele module VR 40 2 3 4 5 6 7 8 9 1",
+      "factoryDefault": "2 = externe pomp",
+      "technicalExplanation": "= circulatiepomp = externe pomp = boilerlaadpomp = afzuigkap = externe magneetklep = externe storingsmelding = zonnepomp (niet actief) = afstandsbediening eBUS (niet actief) = legionellabeveiligingspomp (niet actief) 0 = zonneklep (niet actief)",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 34,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.028",
+      "description": "mschakeling relais 2 naar de „2 uit 1 “ multifunctionele module VR 40 2 3 4 5 6 7 8 9 1",
+      "factoryDefault": "2 = externe pomp",
+      "technicalExplanation": "= circulatiepomp = externe pomp = boilerlaadpomp = afzuigkap = externe magneetklep = externe storingsmelding = zonnepomp (niet actief) = afstandsbediening eBUS (niet actief) = legionellabeveiligingspomp (niet actief) 0 = zonneklep (niet actief)",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 34,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.033",
+      "description": "ewenste waarde ventilatortoerental I",
+      "technicalExplanation": "n rpm",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 34,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.034",
+      "description": "ctuele waarde ventilatortoerental I",
+      "technicalExplanation": "n rpm",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 34,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.035",
+      "description": "tand van de driewegklep 0 4 1",
+      "technicalExplanation": "= CV-bedrijf 0 = parallel bedrijf (middelste stand) 00 = warmwaterbedrijf",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 34,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.036",
+      "description": "armwaterdebiet (stromingssensor) i",
+      "technicalExplanation": "n l/min",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 34,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.039",
+      "description": "Zonne-inlooptemperatuur",
+      "technicalExplanation": "Werkelijke waarde in °C",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.040",
+      "description": "Aanvoertemperatuur",
+      "technicalExplanation": "Werkelijke waarde in °C",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.041",
+      "description": "Retourtemperatuur",
+      "technicalExplanation": "Werkelijke waarde in °C",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.044",
+      "description": "Gedigitaliseerde ionisatiewaarde",
+      "technicalExplanation": "Weergavebereik 0 tot 1020 > 800 geen vlam < 400 goed vlambeeld",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.046",
+      "description": "Soort pomp",
+      "factoryDefault": "0 = uitschakelen via relais",
+      "technicalExplanation": "0 = uitschakelen via relais 1 = uitschakelen via PWM",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.047",
+      "description": "Buitentemperatuur (met weersafhankelijke Vaillant thermostaat)",
+      "technicalExplanation": "Werkelijke waarde in °C",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.050",
+      "description": "Offset voor minimaal toerental",
+      "factoryDefault": "Nominale waarde af fabriek ingesteld",
+      "technicalExplanation": "in rpm, instelbereik: 0 tot 3000",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.051",
+      "description": "Offset voor maximaal toerental",
+      "factoryDefault": "Nominale waarde af fabriek ingesteld",
+      "technicalExplanation": "in rpm, instelbereik: -990 tot 0",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.058",
+      "description": "Activeren naverwarming via zonneenergie (alleen product met geïntegreerde warmwaterbereiding)",
+      "factoryDefault": "0 = naverwarming via zonne-energie gedeactiveerd",
+      "technicalExplanation": "0 = naverwarming via zonne-energie gedeactiveerd 3 = WW-activering gewenste waarde minimum 60 °C; thermostatische mengklep tussen product en tappunt nodig",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.060",
+      "description": "Aantal uitschakelingen door temperatuurbegrenzer",
+      "technicalExplanation": "Aantal uitschakelingen",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.061",
+      "description": "Aantal storingen branderautomaat",
+      "technicalExplanation": "Aantal mislukte ontstekingen bij laatste poging",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.064",
+      "description": "Gemiddelde ontstekingstijd",
+      "technicalExplanation": "In seconden",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.065",
+      "description": "Maximale ontstekingstijd",
+      "technicalExplanation": "In seconden",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.067",
+      "description": "Resterende branderwachttijd",
+      "technicalExplanation": "In minuten",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.068",
+      "description": "Mislukte ontstekingen bij 1e poging",
+      "technicalExplanation": "Aantal mislukte ontstekingen",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.069",
+      "description": "Mislukte ontstekingen bij 2e poging",
+      "technicalExplanation": "Aantal mislukte ontstekingen",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.070",
+      "description": "Instellen stand driewegklep",
+      "factoryDefault": "0 = normaal bedrijf",
+      "technicalExplanation": "0 = normaal bedrijf 1 = parallel bedrijf (middelste stand) 2 = permanente stand CV-bedrijf",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.071",
+      "description": "Gewenste waarde max. aanvoertemperatuur verwarming",
+      "factoryDefault": "75 ℃",
+      "technicalExplanation": "40 … 80 ℃",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.072",
+      "description": "Nalooptijd interne pomp na boilerlading",
+      "factoryDefault": "2 min",
+      "technicalExplanation": "Instelbaar van 0-10 minuten in stappen van 1 minuut",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.073",
+      "description": "Gewenste warme start offset",
+      "factoryDefault": "0",
+      "technicalExplanation": "Instelbaar van -15 K tot 5 K",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.074",
+      "description": "Legionellabeveiligingsfunctie actoSTOR",
+      "factoryDefault": "1 = aan",
+      "technicalExplanation": "0 = uit 1 = aan",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.075",
+      "description": "Max. laadtijd voor warmwaterboiler zonder eigen regeling",
+      "factoryDefault": "45 min",
+      "technicalExplanation": "20 - 90 min",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.076",
+      "description": "Toestelidentificatie Device specific number = DSN)",
+      "technicalExplanation": "9 = VHR NL 18-24/5-3, VHR NL 18-24/5-3 EXP 23= VHR NL 23-28/5-3, VHR NL 23-28/5-3 EXP 15= VHR NL 28-34/5-3",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.077",
+      "description": "Begrenzing van het boilerlaadvermogen in kW",
+      "technicalExplanation": "Instelbaar boilerlaadvermogen in kW",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.078",
+      "description": "Begrenzing van de boilerlaadtemperatuur in °C",
+      "factoryDefault": "75 °C",
+      "technicalExplanation": "50 °C - 80 °C Aanwijzing De gekozen waarde moet min. 15 K resp. 15 °C boven de ingestelde gewenste boilerwaarde liggen.",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.080",
+      "description": "Bedrijfsuren verwarming",
+      "technicalExplanation": "in h",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.081",
+      "description": "Bedrijfsuren warmwaterbereiding",
+      "technicalExplanation": "in h",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.082",
+      "description": "Aantal branderstarts in CV-bedrijf",
+      "technicalExplanation": "Aantal branderstarts",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.083",
+      "description": "Aantal branderstarts in warmwaterbedrijf",
+      "technicalExplanation": "Aantal branderstarts",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 35,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.084",
+      "description": "Onderhoudsindicatie: aantal uren tot de volgende onderhoudsbeurt",
+      "factoryDefault": "„---”",
+      "technicalExplanation": "Instelbereik: 0 tot 3000 h en \"---\" voor gedeactiveerd",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 36,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.088",
+      "description": "Inschakelvertraging voor warmwatertapherkenning via vleugelrad (alleen product met geïntegreerde warmwaterbereiding)",
+      "factoryDefault": "1,5 l/min en geen vertraging",
+      "technicalExplanation": "0 = 1,5 l/min en geen vertraging, 1 = 3,7 l/min en 2 s vertraging",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 36,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.090",
+      "description": "Status digitale thermostaat",
+      "technicalExplanation": "1 = herkend, 0 = niet herkend",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 36,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.091",
+      "description": "Status DCF bij aangesloten buitentemperatuurvoeler",
+      "technicalExplanation": "0 = geen ontvangst 1 = ontvangst 2 = gesynchroniseerd 3 = geldig",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 36,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.092",
+      "description": "actoSTOR moduleherkenning",
+      "technicalExplanation": "niet relevant",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 36,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.093",
+      "description": "Instelling toestelidentificatie (Device Specific Number = DSN)",
+      "technicalExplanation": "Instelbereik: 0 tot 99",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 36,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.094",
+      "description": "Foutcode historie verwijderen",
+      "technicalExplanation": "Wissen van de foutlijst 0 = nee 1 = ja",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 36,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.095",
+      "description": "Softwareversie PeBUS-componenten",
+      "technicalExplanation": "Printplaat (BMU) Display (AI) HBI/VR34",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 36,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    },
+    {
+      "code": "D.096",
+      "description": "Fabrieksinstelling",
+      "factoryDefault": "-",
+      "technicalExplanation": "Reset van alle instelbare parameters naar fabrieks instelling 0 = nee 1 = ja",
+      "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+      "sourcePage": 36,
+      "verified": true,
+      "verifiedDate": "2026-08-18"
+    }
+  ]
+}

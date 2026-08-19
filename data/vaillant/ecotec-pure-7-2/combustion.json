@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "ecotec-pure-7-2",
+  "title": "Verbrandingscontrole ecoTEC pure /7-2 (K-NL)",
+  "measurements": [
+    {
+      "label": "CO₂ vollast — aardgas G25, voormantel verwijderd",
+      "value": 8.8,
+      "tolerance": 0.3,
+      "unit": "vol.-%",
+      "load": "P.01 / vollast",
+      "condition": "Nederland, K-NL"
+    },
+    {
+      "label": "CO₂ vollast — aardgas G25, voormantel gemonteerd",
+      "value": 9.0,
+      "tolerance": 0.3,
+      "unit": "vol.-%",
+      "load": "P.01 / vollast",
+      "condition": "Nederland, K-NL"
+    },
+    {
+      "label": "Gastoevoerdruk G25",
+      "value": 25,
+      "unit": "mbar",
+      "condition": "Volgens technische gegevens K-NL"
+    }
+  ],
+  "settings": [
+    {
+      "label": "Vollast-testprogramma",
+      "value": "P.01",
+      "technicalExplanation": "Gebruik het testprogramma voor de gas-/luchtcontrole volgens de Nederlandse installatiehandleiding."
+    }
+  ],
+  "measurementConditions": [
+    "Controleer uitsluitend volgens de K-NL procedure van 0020231718_01.",
+    "Gebruik geen E/ES-waarden uit de Belgische VC/VCW-handleiding.",
+    "Laat de meetwaarde stabiliseren zoals in de fabrikantprocedure voorgeschreven."
+  ],
+  "technicalExplanation": "De Nederlandse K-NL-handleiding geeft voor de G25-instelling 8,8 ±0,3 vol.-% CO₂ met verwijderde voormantel en 9,0 ±0,3 vol.-% met gemonteerde voormantel. Buitenlandse E/ES-waarden zijn verwijderd.",
+  "notes": [
+    "K-NL-modellen: VHR 18-24/7-2, 18-24/7-2 EXP, 23-28/7-2, 23-28/7-2 EXP en 28-34/7-2 zoals door de NL-handleiding gedekt."
+  ],
+  "source": "https://www.gebruikershandleiding.com/Vaillant-ecoTEC-pure-VHR-23-28-7--2/preview-handleiding-951469.html",
+  "sourcePage": "gas-/luchtcontrole / G25-instelling; technische gegevens p. 57–62; foutcodes p. 45 e.v.",
+  "verified": true,
+  "verifiedDate": "2026-08-18"
+}

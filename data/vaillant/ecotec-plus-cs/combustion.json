@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "ecotec-plus-cs",
+  "title": "ecoTEC plus CS — officiële CO₂/O₂-verbrandingscontrole (NL)",
+  "measurements": [
+    {
+      "label": "CO₂/O₂ toegestaan bereik",
+      "value": "Model-, gassoort- en belastingsafhankelijk Vaillant-grensdiagram",
+      "load": "Actuele verwarmingsbelasting",
+      "condition": "Voormantel gemonteerd; na S.093-kalibratie"
+    }
+  ],
+  "settings": [
+    {
+      "label": "CO₂/O₂-toegestaan bereik",
+      "value": "Gebruik het Vaillant-diagram voor exact toestel, gassoort en actuele verwarmingsbelasting",
+      "load": "Actuele verwarmingsbelasting",
+      "condition": "De toegestane grenscurven zijn toestel- en belastingsafhankelijk; geen vaste universele CO₂/O₂-waarde gebruiken.",
+      "technicalExplanation": "Vaillant geeft afzonderlijke diagrammen voor VHR S 10CS/VHR 20/26CS, VHR S 25CS/VHR 25/32CS/VHR 30/36CS en VHR S 35CS/VHR 35/40CS."
+    },
+    {
+      "label": "Correctie gas-luchtverhouding",
+      "value": "D.158",
+      "condition": "Alleen wanneer CO₂/O₂ na controle van VLT/VGA, recirculatie en blokkades buiten het toegestane diagram blijft.",
+      "technicalExplanation": "Na correctie opnieuw meten. Blijft de waarde buiten bereik, volg de Vaillant-procedure voor de regelelektrode en zet D.158 daarna terug naar fabrieksinstelling."
+    }
+  ],
+  "measurementConditions": [
+    "Monteer de voormantel; Vaillant schrijft voor dat de meting alleen met gemonteerde voormantel wordt uitgevoerd.",
+    "Open de meetopening op de verbrandingsgasmeetnippel en plaats de sonde van het rookgasanalysetoestel.",
+    "Start de schoorsteenvegermodus.",
+    "Let op de actuele verwarmingsbelasting en wacht tot de kalibratie via S.093 is afgesloten en de status naar S.004, S.014 of S.024 verandert.",
+    "Plaats de sonde in het midden van de kernstroom, wacht tot de meetwaarde stabiel is en vergelijk met het juiste officiële diagram."
+  ],
+  "technicalExplanation": "Deze generatie gebruikt Sitherm Pro met toestel-, gassoort- en belastingsafhankelijke CO₂/O₂-grenscurven. MonteurMaatje neemt daarom bewust geen geïnterpoleerde vaste waarden uit de grafieken op.",
+  "notes": [
+    "Buiten bereik: controleer eerst totale VLT/VGA-leidinglengte, recirculatie en blokkades; meet opnieuw; corrigeer zo nodig via D.158 volgens de handleiding."
+  ],
+  "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-plus_1410230.pdf",
+  "sourcePage": "26–27",
+  "verified": true,
+  "verifiedDate": "2026-08-18"
+}

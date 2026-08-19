@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "ecotec-classic-5-3",
+  "title": "Officiële gas-/luchtcontrole ecoTEC classic /5-3 (NL)",
+  "measurements": [
+    {
+      "label": "CO₂ vollast, voormantel gemonteerd — aardgas K",
+      "value": 9.4,
+      "tolerance": 1.0,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "O₂ vollast, voormantel gemonteerd — aardgas K",
+      "value": 4.5,
+      "tolerance": 1.8,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "CO₂ instelwaarde, voormantel gemonteerd — aardgas K",
+      "value": 9.4,
+      "tolerance": 0.3,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "O₂ instelwaarde, voormantel gemonteerd — aardgas K",
+      "value": 4.5,
+      "tolerance": 0.3,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "CO₂ vollast, voormantel verwijderd — aardgas K",
+      "value": 9.2,
+      "tolerance": 1.0,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "O₂ vollast, voormantel verwijderd — aardgas K",
+      "value": 4.9,
+      "tolerance": 1.8,
+      "unit": "vol.-%",
+      "load": "Vollast, P.01"
+    },
+    {
+      "label": "CO (max.)",
+      "value": 250,
+      "unit": "ppm",
+      "load": "Vollast"
+    }
+  ],
+  "settings": [],
+  "measurementConditions": [
+    "Gebruik controleprogramma P.01 (maximumlast).",
+    "Wacht minimaal 5 minuten tot het toestel bedrijfstemperatuur heeft bereikt.",
+    "Meet CO en CO₂ aan de verbrandingsgasmeetnippel.",
+    "Vergelijk met de fabriekswaarden voor de juiste gassoort en manteltoestand."
+  ],
+  "technicalExplanation": "Voor de Nederlandse ecoTEC classic /5-3 is aardgas K (G25.3) de af-fabriek gasgroep. De officiële tabel geeft waarden bij vollast en maakt onderscheid tussen gemonteerde en verwijderde voormantel.",
+  "notes": [
+    "Toegestane gasstroomdruk aardgas E: 17,0–25,0 mbar.",
+    "Als een CO₂-instelling binnen het opgegeven bereik niet mogelijk is, mag het toestel volgens Vaillant niet in gebruik worden genomen."
+  ],
+  "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
+  "sourcePage": "21–22 en 30",
+  "verified": true,
+  "verifiedDate": "2026-08-18"
+}

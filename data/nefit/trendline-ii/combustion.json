@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "trendline-ii",
+  "title": "Officiële verbrandingscontrole TrendLine II",
+  "measurements": [
+    {
+      "id": "o2-full-2l",
+      "label": "O₂ vollast — aardgas 2L",
+      "value": 4.1,
+      "tolerance": "±0,3",
+      "unit": "%",
+      "load": "Vollast 100%",
+      "condition": "Voorpaneel verwijderd"
+    },
+    {
+      "id": "o2-full-2e-2k",
+      "label": "O₂ vollast — aardgas 2E/2K",
+      "value": 3.9,
+      "tolerance": "±0,3",
+      "unit": "%",
+      "load": "Vollast 100%",
+      "condition": "Voorpaneel verwijderd"
+    },
+    {
+      "id": "gas-air-low",
+      "label": "Drukverschil gas/lucht laaglast",
+      "minimum": -10,
+      "maximum": 0,
+      "unit": "Pa",
+      "load": "Minimale waarde",
+      "condition": "Voorpaneel verwijderd"
+    },
+    {
+      "id": "co",
+      "label": "CO in rookgas",
+      "maximum": 250,
+      "unit": "ppm",
+      "condition": "Verbranding zonder luchtoverschot"
+    },
+    {
+      "id": "gas-pressure-2e",
+      "label": "Dynamische gasvoordruk — aardgas 2E",
+      "value": 20,
+      "minimum": 17,
+      "maximum": 25,
+      "unit": "mbar",
+      "load": "Vollast 100%"
+    },
+    {
+      "id": "gas-pressure-2k-2l",
+      "label": "Dynamische gasvoordruk — aardgas 2K/2L",
+      "value": 25,
+      "minimum": 20,
+      "maximum": 30,
+      "unit": "mbar",
+      "load": "Vollast 100%"
+    },
+    {
+      "id": "gas-pressure-3p",
+      "label": "Dynamische gasvoordruk — propaan 3P",
+      "value": "30–50",
+      "minimum": 25,
+      "maximum": 57.5,
+      "unit": "mbar",
+      "load": "Vollast 100%"
+    },
+    {
+      "id": "flue-temp-hrc25-80-60",
+      "label": "Rookgastemperatuur HRC25 bij 80/60 °C",
+      "value": "57–62",
+      "unit": "°C",
+      "load": "Laaglast–vollast"
+    },
+    {
+      "id": "flue-temp-hrc30-80-60",
+      "label": "Rookgastemperatuur HRC30 bij 80/60 °C",
+      "value": "57–69",
+      "unit": "°C",
+      "load": "Laaglast–vollast"
+    },
+    {
+      "id": "flue-temp-hrc25-50-30",
+      "label": "Rookgastemperatuur HRC25 bij 50/30 °C",
+      "value": "35–45",
+      "unit": "°C",
+      "load": "Laaglast–vollast"
+    },
+    {
+      "id": "flue-temp-hrc30-50-30",
+      "label": "Rookgastemperatuur HRC30 bij 50/30 °C",
+      "value": "35–50",
+      "unit": "°C",
+      "load": "Laaglast–vollast"
+    }
+  ],
+  "settings": [
+    {
+      "id": "service-full",
+      "label": "Servicebedrijf vollast",
+      "value": 100,
+      "unit": "%",
+      "load": "Vollast"
+    },
+    {
+      "id": "service-low",
+      "label": "Servicebedrijf laaglast",
+      "value": "Minimum",
+      "load": "Laaglast"
+    }
+  ],
+  "measurementConditions": [
+    "Verwijder het voorpaneel; de gasinstelling wordt bij geopend toestel gecontroleerd.",
+    "Activeer servicebedrijf met de toets d en stel met de pijltoetsen 100% in.",
+    "Als de brander op cv-vollast niet continu kan blijven branden, voer de O₂-meting uit in warmwaterbedrijf met meerdere volledig geopende kranen.",
+    "Voer de laaglastmeting uit in servicebedrijf en controleer het drukverschil.",
+    "Sluit na de metingen alle meetpunten en controleer de drukvereffeningsslang."
+  ],
+  "technicalExplanation": "O₂ wordt op vollast gecontroleerd; de gas-luchtverhouding wordt op laaglast met het drukverschil gecontroleerd en indien nodig afgesteld.",
+  "notes": [
+    "De handleiding geeft voor deze toestellen geen toepasbare propaan-O₂-afstelwaarde; daarom is die niet opgenomen."
+  ],
+  "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6721823668",
+  "sourcePage": "32–34, 45",
+  "verified": true,
+  "verifiedDate": "2026-08-14"
+}
