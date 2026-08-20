@@ -12,7 +12,7 @@
       "meaning": "Het cv-toestel bevindt zich in schoorsteenvegerbedrijf of in servicebedrijf.",
       "causes": [],
       "checks": [],
-      "note": "Displaycode -A; aanvullende code 208; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode -A; aanvullende code 208; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 40,
       "verified": true,
@@ -24,7 +24,7 @@
       "meaning": "Het cv-toestel bevindt zich in cv-bedrijf.",
       "causes": [],
       "checks": [],
-      "note": "Displaycode -H; aanvullende code 200; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode -H; aanvullende code 200; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 40,
       "verified": true,
@@ -36,7 +36,7 @@
       "meaning": "Het cv-toestel bevindt zich in warmwaterbedrijf.",
       "causes": [],
       "checks": [],
-      "note": "Displaycode =H; aanvullende code 201; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode =H; aanvullende code 201; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 40,
       "verified": true,
@@ -48,7 +48,7 @@
       "meaning": "Het cv-toestel wacht. Er is vaker dan 1x per 10 minuten een warmtevraag van een aan/uit- of een ModuLine-regeling is geweest.",
       "causes": [],
       "checks": [],
-      "note": "Displaycode 0A; aanvullende code 202; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 0A; aanvullende code 202; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 40,
       "verified": true,
@@ -60,7 +60,7 @@
       "meaning": "Het cv-toestel wacht na einde warmwaterbedrijf.",
       "causes": [],
       "checks": [],
-      "note": "Displaycode 0A; aanvullende code 305; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 0A; aanvullende code 305; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 40,
       "verified": true,
@@ -72,7 +72,7 @@
       "meaning": "Het cv-toestel bereidt zich voor op een branderstart. De ventilator en de pomp worden aangestuurd.",
       "causes": [],
       "checks": [],
-      "note": "Displaycode 0C; aanvullende code 283; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 0C; aanvullende code 283; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 40,
       "verified": true,
@@ -84,7 +84,7 @@
       "meaning": "Het cv-toestel wacht. Het cv-toestel schakelt geregeld in op laaglast om aan de warmtevraag te voldoen.",
       "causes": [],
       "checks": [],
-      "note": "Displaycode 0E; aanvullende code 265; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 0E; aanvullende code 265; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 40,
       "verified": true,
@@ -96,7 +96,7 @@
       "meaning": "Het cv-toestel staat stand-by.",
       "causes": [],
       "checks": [],
-      "note": "Displaycode 0H; aanvullende code 203; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 0H; aanvullende code 203; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 40,
       "verified": true,
@@ -108,7 +108,7 @@
       "meaning": "Het gasregelblok wordt aangestuurd.",
       "causes": [],
       "checks": [],
-      "note": "Displaycode 0L; aanvullende code 284; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 0L; aanvullende code 284; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 40,
       "verified": true,
@@ -120,7 +120,7 @@
       "meaning": "Het cv-toestel wordt opgestart.",
       "causes": [],
       "checks": [],
-      "note": "Displaycode 0U; aanvullende code 270; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 0U; aanvullende code 270; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 40,
       "verified": true,
@@ -137,7 +137,7 @@
         "Controleer de bekabeling en de werking van de boilertemperatuursensor.",
         "Controleer de werking van het cv-toestel door het onderdeel te vervangen."
       ],
-      "note": "Displaycode 0Y; aanvullende code 204; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 0Y; aanvullende code 204; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 40,
       "verified": true,
@@ -145,8 +145,8 @@
     },
     {
       "code": "0Y-276",
-      "title": "De aanvoertemperatuursensor heeft een temperatuur gemeten die hoger is dan 95°C.",
-      "meaning": "De aanvoertemperatuursensor heeft een temperatuur gemeten die hoger is dan 95°C.",
+      "title": "De aanvoertemperatuursensor heeft een temperatuur gemeten die hoger is dan 95 °C.",
+      "meaning": "De aanvoertemperatuursensor heeft een temperatuur gemeten die hoger is dan 95 °C.",
       "causes": [],
       "checks": [
         "Controleer de cv-waterdruk en ontlucht de cv-installatie en het cv-toestel.",
@@ -155,7 +155,7 @@
         "Controleer de bekabeling en de werking van de aanvoertemperatuursensor.",
         "Controleer de werking van het cv-toestel door het onderdeel te vervangen."
       ],
-      "note": "Displaycode 0Y; aanvullende code 276; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 0Y; aanvullende code 276; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 40,
       "verified": true,
@@ -163,8 +163,8 @@
     },
     {
       "code": "0Y-277",
-      "title": "De safetytemperatuursensor heeft een temperatuur gemeten die hoger is dan 95°C.",
-      "meaning": "De safetytemperatuursensor heeft een temperatuur gemeten die hoger is dan 95°C.",
+      "title": "De safetytemperatuursensor heeft een temperatuur gemeten die hoger is dan 95 °C.",
+      "meaning": "De safetytemperatuursensor heeft een temperatuur gemeten die hoger is dan 95 °C.",
       "causes": [],
       "checks": [
         "Controleer de cv-waterdruk en ontlucht de cv-installatie en het cv-toestel.",
@@ -173,7 +173,7 @@
         "Controleer de bekabeling en de werking van de safetytemperatuursensor.",
         "Controleer de werking van het cv-toestel door het onderdeel te vervangen."
       ],
-      "note": "Displaycode 0Y; aanvullende code 277; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 0Y; aanvullende code 277; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 41,
       "verified": true,
@@ -181,8 +181,8 @@
     },
     {
       "code": "0Y-285",
-      "title": "De retourtemperatuursensor heeft een temperatuur gemeten die hoger is dan 95°C.",
-      "meaning": "De retourtemperatuursensor heeft een temperatuur gemeten die hoger is dan 95°C.",
+      "title": "De retourtemperatuursensor heeft een temperatuur gemeten die hoger is dan 95 °C.",
+      "meaning": "De retourtemperatuursensor heeft een temperatuur gemeten die hoger is dan 95 °C.",
       "causes": [],
       "checks": [
         "Controleer de cv-waterdruk en ontlucht de cv-installatie en het cv-toestel.",
@@ -191,7 +191,7 @@
         "Controleer de bekabeling en de werking van de pomp en de retourtemperatuursensor.",
         "Controleer de werking van het cv-toestel door het onderdeel te vervangen."
       ],
-      "note": "Displaycode 0Y; aanvullende code 285; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 0Y; aanvullende code 285; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 41,
       "verified": true,
@@ -205,9 +205,10 @@
       "checks": [
         "Controleer de werking en de bekabeling van de rookgassensor.",
         "Controleer de werking van het cv-toestel door het onderdeel te vervangen.",
-        "Controleer het cv-toestel op vervuiling. Voer zo nodig onderhoud uit."
+        "Controleer het cv-toestel op vervuiling.",
+        "Voer zo nodig onderhoud uit."
       ],
-      "note": "Displaycode 1C; aanvullende code 210; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 1C; aanvullende code 210; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 41,
       "verified": true,
@@ -215,8 +216,8 @@
     },
     {
       "code": "2E-207",
-      "title": "De cv-waterdruk is te laag, lager dan 0,2bar.",
-      "meaning": "De cv-waterdruk is te laag, lager dan 0,2bar.",
+      "title": "De cv-waterdruk is te laag, lager dan 0,2 bar.",
+      "meaning": "De cv-waterdruk is te laag, lager dan 0,2 bar.",
       "causes": [],
       "checks": [
         "Vul de cv-installatie bij tot 2 bar.",
@@ -225,7 +226,7 @@
         "Controleer de bekabeling en de werking van de druksensor.",
         "Controleer de werking van het cv-toestel door het onderdeel te vervangen."
       ],
-      "note": "Displaycode 2E; aanvullende code 207; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 2E; aanvullende code 207; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 41,
       "verified": true,
@@ -243,7 +244,7 @@
         "Controleer de werking en de bekabeling van de aanvoertemperatuursensor.",
         "Controleer de werking van het cv-toestel door het onderdeel te vervangen."
       ],
-      "note": "Displaycode 2F; aanvullende code 260; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 2F; aanvullende code 260; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 41,
       "verified": true,
@@ -261,7 +262,7 @@
         "Controleer de werking en de bekabeling van de betreffende sensor.",
         "Controleer de werking van het cv-toestel door het onderdeel te vervangen."
       ],
-      "note": "Displaycode 2F; aanvullende code 271; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 2F; aanvullende code 271; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 41,
       "verified": true,
@@ -279,7 +280,7 @@
         "Controleer de werking en de bekabeling van de betreffende sensoren.",
         "Controleer de werking van het cv-toestel door het onderdeel te vervangen."
       ],
-      "note": "Displaycode 2P; aanvullende code 212; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 2P; aanvullende code 212; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 41,
       "verified": true,
@@ -297,7 +298,7 @@
         "Controleer de werking en de bekabeling van de betreffende sensoren.",
         "Controleer de werking van het cv-toestel door het onderdeel te vervangen."
       ],
-      "note": "Displaycode 2U; aanvullende code 213; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 2U; aanvullende code 213; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 42,
       "verified": true,
@@ -312,7 +313,7 @@
         "Controleer de werking en de bekabeling van de ventilator.",
         "Controleer de werking van het cv-toestel door het onderdeel te vervangen."
       ],
-      "note": "Displaycode 3A; aanvullende code 264; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 3A; aanvullende code 264; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 42,
       "verified": true,
@@ -329,7 +330,7 @@
         "Controleer de connectors van de branderautomaat.",
         "Controleer de werking van het cv-toestel door de branderautomaat te vervangen."
       ],
-      "note": "Displaycode 3C; aanvullende code 217; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 3C; aanvullende code 217; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 42,
       "verified": true,
@@ -341,7 +342,7 @@
       "meaning": "Het cv-toestel is maximaal 2 minuten uitgeschakeld geweest, omdat het cv-toestel gedurende 24 uur continu in bedrijf is geweest. Dit is een veiligheidscontrole.",
       "causes": [],
       "checks": [],
-      "note": "Displaycode 3F; aanvullende code 273; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 3F; aanvullende code 273; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 42,
       "verified": true,
@@ -359,7 +360,7 @@
         "Controleer de connectors van de branderautomaat.",
         "Controleer de werking van het cv-toestel door de branderautomaat te vervangen."
       ],
-      "note": "Displaycode 3L; aanvullende code 214; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 3L; aanvullende code 214; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 42,
       "verified": true,
@@ -370,14 +371,8 @@
       "title": "De ventilator draait te langzaam.",
       "meaning": "De ventilator draait te langzaam.",
       "causes": [],
-      "checks": [
-        "Controleer de werking van de ClickOn sensor indien aanwezig.",
-        "Controleer de werking en de bekabeling van de ventilator.",
-        "Controleer de werking van het cv-toestel door de ventilator te vervangen.",
-        "Controleer de connectors van de branderautomaat.",
-        "Controleer de werking van het cv-toestel door de branderautomaat te vervangen."
-      ],
-      "note": "Displaycode 3P; aanvullende code 216; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "checks": [],
+      "note": "Displaycode 3P; aanvullende code 216; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 42,
       "verified": true,
@@ -393,7 +388,7 @@
         "Controleer de connectors van de branderautomaat.",
         "Controleer de werking van het cv-toestel door de branderautomaat te vervangen."
       ],
-      "note": "Displaycode 3Y; aanvullende code 215; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 3Y; aanvullende code 215; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 42,
       "verified": true,
@@ -401,8 +396,8 @@
     },
     {
       "code": "4A-218",
-      "title": "De aanvoertemperatuursensor heeft een temperatuur gemeten die hoger is dan 105°C.",
-      "meaning": "De aanvoertemperatuursensor heeft een temperatuur gemeten die hoger is dan 105°C.",
+      "title": "De aanvoertemperatuursensor heeft een temperatuur gemeten die hoger is dan 105 °C.",
+      "meaning": "De aanvoertemperatuursensor heeft een temperatuur gemeten die hoger is dan 105 °C.",
       "causes": [],
       "checks": [
         "Controleer de cv-waterdruk en ontlucht de cv-installatie en het cv-toestel.",
@@ -411,7 +406,7 @@
         "Controleer de werking en de bekabeling van de aanvoertemperatuursensor.",
         "Controleer de werking van het cv-toestel door het onderdeel te vervangen."
       ],
-      "note": "Displaycode 4A; aanvullende code 218; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 4A; aanvullende code 218; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 42,
       "verified": true,
@@ -419,17 +414,11 @@
     },
     {
       "code": "4A-332",
-      "title": "De aanvoertemperatuursensor heeft een temperatuur gemeten die hoger is dan 110°C.",
-      "meaning": "De aanvoertemperatuursensor heeft een temperatuur gemeten die hoger is dan 110°C.",
+      "title": "De aanvoertemperatuursensor heeft een temperatuur gemeten die hoger is dan 110 °C.",
+      "meaning": "De aanvoertemperatuursensor heeft een temperatuur gemeten die hoger is dan 110 °C.",
       "causes": [],
-      "checks": [
-        "Controleer de cv-waterdruk en ontlucht de cv-installatie en het cv-toestel.",
-        "Controleer of er voldoende stroming over de cv-installatie mogelijk is.",
-        "Controleer de werking en de bekabeling van de pomp.",
-        "Controleer de werking en de bekabeling van de aanvoertemperatuursensor.",
-        "Controleer de werking van het cv-toestel door het onderdeel te vervangen."
-      ],
-      "note": "Displaycode 4A; aanvullende code 332; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "checks": [],
+      "note": "Displaycode 4A; aanvullende code 332; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 42,
       "verified": true,
@@ -447,7 +436,7 @@
         "Controleer de werking en de bekabeling van de safetytemperatuursensor.",
         "Controleer de werking van het cv-toestel door het onderdeel te vervangen."
       ],
-      "note": "Displaycode 4C; aanvullende code 224; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 4C; aanvullende code 224; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 42,
       "verified": true,
@@ -455,8 +444,8 @@
     },
     {
       "code": "4F-219",
-      "title": "De safetytemperatuursensor heeft een temperatuur gemeten die hoger is dan 105°C.",
-      "meaning": "De safetytemperatuursensor heeft een temperatuur gemeten die hoger is dan 105°C.",
+      "title": "De safetytemperatuursensor heeft een temperatuur gemeten die hoger is dan 105 °C.",
+      "meaning": "De safetytemperatuursensor heeft een temperatuur gemeten die hoger is dan 105 °C.",
       "causes": [],
       "checks": [
         "Controleer de cv-waterdruk en ontlucht de cv-installatie en het cv-toestel.",
@@ -465,7 +454,7 @@
         "Controleer de werking en de bekabeling van de safetytemperatuursensor.",
         "Controleer de werking van het cv-toestel door het onderdeel te vervangen."
       ],
-      "note": "Displaycode 4F; aanvullende code 219; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 4F; aanvullende code 219; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 43,
       "verified": true,
@@ -473,8 +462,8 @@
     },
     {
       "code": "4L-220",
-      "title": "De contacten van de safetytemperatuursensor zijn kortgesloten of de safetytemperatuursensor heeft een temperatuur gemeten die hoger is dan 130°C.",
-      "meaning": "De contacten van de safetytemperatuursensor zijn kortgesloten of de safetytemperatuursensor heeft een temperatuur gemeten die hoger is dan 130°C.",
+      "title": "De contacten van de safetytemperatuursensor zijn kortgesloten of de safetytemperatuursensor heeft een temperatuur gemeten die hoger is dan 130 °C.",
+      "meaning": "De contacten van de safetytemperatuursensor zijn kortgesloten of de safetytemperatuursensor heeft een temperatuur gemeten die hoger is dan 130 °C.",
       "causes": [],
       "checks": [
         "Controleer de cv-waterdruk en ontlucht de cv-installatie en het cv-toestel.",
@@ -483,7 +472,7 @@
         "Controleer de werking en de bekabeling van de safetytemperatuursensor.",
         "Controleer de werking van het cv-toestel door het onderdeel te vervangen."
       ],
-      "note": "Displaycode 4L; aanvullende code 220; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 4L; aanvullende code 220; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 43,
       "verified": true,
@@ -498,7 +487,7 @@
         "Controleer de bekabeling en de connector van de safetytemperatuursensor.",
         "Controleer de werking van het cv-toestel door het onderdeel te vervangen."
       ],
-      "note": "Displaycode 4P; aanvullende code 221; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 4P; aanvullende code 221; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 43,
       "verified": true,
@@ -513,7 +502,7 @@
         "Controleer de werking en de bekabeling van de aanvoertemperatuursensor.",
         "Controleer de werking van het cv-toestel door het onderdeel te vervangen."
       ],
-      "note": "Displaycode 4U; aanvullende code 222; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 4U; aanvullende code 222; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 43,
       "verified": true,
@@ -524,11 +513,8 @@
       "title": "De contacten van de aanvoertemperatuursensor zijn onderbroken.",
       "meaning": "De contacten van de aanvoertemperatuursensor zijn onderbroken.",
       "causes": [],
-      "checks": [
-        "Controleer de werking en de bekabeling van de aanvoertemperatuursensor.",
-        "Controleer de werking van het cv-toestel door het onderdeel te vervangen."
-      ],
-      "note": "Displaycode 4Y; aanvullende code 223; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "checks": [],
+      "note": "Displaycode 4Y; aanvullende code 223; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 43,
       "verified": true,
@@ -540,7 +526,7 @@
       "meaning": "Service Tool is aangesloten geweest.",
       "causes": [],
       "checks": [],
-      "note": "Displaycode SC; aanvullende code 226; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode SC; aanvullende code 226; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 43,
       "verified": true,
@@ -554,7 +540,7 @@
       "checks": [
         "Reset het cv-toestel."
       ],
-      "note": "Displaycode SF; geen aanvullende code vermeld; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Statusklasse — volgens de officiële tabel.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 43,
       "verified": true,
@@ -566,7 +552,7 @@
       "meaning": "Service Tool: componententestfase.",
       "causes": [],
       "checks": [],
-      "note": "Displaycode SH; aanvullende code 268; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode SH; aanvullende code 268; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 43,
       "verified": true,
@@ -580,7 +566,7 @@
       "checks": [
         "Reset het cv-toestel."
       ],
-      "note": "Displaycode SY; geen aanvullende code vermeld; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Statusklasse — volgens de officiële tabel.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 43,
       "verified": true,
@@ -600,7 +586,7 @@
         "Controleer de ontstekingsunit op beschadigingen.",
         "Controleer de werking van het cv-toestel door het onderdeel te vervangen."
       ],
-      "note": "Displaycode 6A; aanvullende code 227; soortaanduiding in de tabel: +. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 6A; aanvullende code 227; soortaanduiding in de tabel: +.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 43,
       "verified": true,
@@ -616,7 +602,7 @@
         "Controleer de ontstekingsunit op beschadigingen.",
         "Controleer de werking van het cv-toestel door het onderdeel te vervangen."
       ],
-      "note": "Displaycode 6C; aanvullende code 228; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 6C; aanvullende code 228; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 43,
       "verified": true,
@@ -634,7 +620,7 @@
         "Controleer of er na einde branderfase spanning op het gasregelblok blijft staan.",
         "Controleer de werking van het toestel door de branderautomaat te vervangen"
       ],
-      "note": "Displaycode 6C; aanvullende code 306; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 6C; aanvullende code 306; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 43,
       "verified": true,
@@ -649,7 +635,7 @@
         "Controleer de dynamische gasvoordruk.",
         "Controleer de rookgasafvoer op verstopping of recirculatie van rookgassen."
       ],
-      "note": "Displaycode 6L; aanvullende code 229; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 6L; aanvullende code 229; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 43,
       "verified": true,
@@ -664,7 +650,7 @@
         "Controleer de connectoren en de bekabeling van de branderautomaat.",
         "Controleer de werking van het cv-toestel door de branderautomaat te vervangen."
       ],
-      "note": "Displaycode 6P; aanvullende code 269; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 6P; aanvullende code 269; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 43,
       "verified": true,
@@ -678,7 +664,7 @@
       "checks": [
         "Reset het cv-toestel."
       ],
-      "note": "Displaycode 7C; aanvullende code 231; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 7C; aanvullende code 231; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 44,
       "verified": true,
@@ -693,7 +679,7 @@
         "Controleer of de storing het gevolg kan zijn geweest door de aanwezigheid van een aggregaat, windmolen of andere apperatuur die een onderbreking kan veroorzaken.",
         "Controleer de elektrische installatie."
       ],
-      "note": "Displaycode 7H; aanvullende code 328; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 7H; aanvullende code 328; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 44,
       "verified": true,
@@ -708,7 +694,7 @@
         "Controleer de connectoren en de bekabeling van de branderautomaat.",
         "Controleer de werking van het cv-toestel door de branderautomaat te vervangen."
       ],
-      "note": "Displaycode 7L; aanvullende code 261; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 7L; aanvullende code 261; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 44,
       "verified": true,
@@ -719,11 +705,8 @@
       "title": "De branderautomaat is defect.",
       "meaning": "De branderautomaat is defect.",
       "causes": [],
-      "checks": [
-        "Controleer de connectoren en de bekabeling van de branderautomaat.",
-        "Controleer de werking van het cv-toestel door de branderautomaat te vervangen."
-      ],
-      "note": "Displaycode 7L; aanvullende code 280; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "checks": [],
+      "note": "Displaycode 7L; aanvullende code 280; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 44,
       "verified": true,
@@ -738,7 +721,7 @@
         "Controleer de draadbrug op de aansluiting van het externe schakelcontact.",
         "Controleer de werking van het externe schakelcontact."
       ],
-      "note": "Displaycode 8Y; aanvullende code 232; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 8Y; aanvullende code 232; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 44,
       "verified": true,
@@ -752,7 +735,7 @@
       "checks": [
         "Vervang de branderautomaat door één met de meest recente software. Op de barcode van de branderautomaat staat de softwareversie vermeld."
       ],
-      "note": "Displaycode 9A; aanvullende code 235; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 9A; aanvullende code 235; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 44,
       "verified": true,
@@ -767,7 +750,7 @@
         "Controleer de connectoren en de bekabeling van de branderautomaat.",
         "Controleer de werking van het cv-toestel door de branderautomaat te vervangen."
       ],
-      "note": "Displaycode 9H; aanvullende code 237; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 9H; aanvullende code 237; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 44,
       "verified": true,
@@ -778,11 +761,8 @@
       "title": "De branderautomaat of de KIM is defect.",
       "meaning": "De branderautomaat of de KIM is defect.",
       "causes": [],
-      "checks": [
-        "Controleer de connectoren en de bekabeling van de branderautomaat.",
-        "Controleer de werking van het cv-toestel door de branderautomaat te vervangen."
-      ],
-      "note": "Displaycode 9H; aanvullende code 267; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "checks": [],
+      "note": "Displaycode 9H; aanvullende code 267; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 44,
       "verified": true,
@@ -793,11 +773,8 @@
       "title": "De branderautomaat of de KIM is defect.",
       "meaning": "De branderautomaat of de KIM is defect.",
       "causes": [],
-      "checks": [
-        "Controleer de connectoren en de bekabeling van de branderautomaat.",
-        "Controleer de werking van het cv-toestel door de branderautomaat te vervangen."
-      ],
-      "note": "Displaycode 9H; aanvullende code 272; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "checks": [],
+      "note": "Displaycode 9H; aanvullende code 272; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 44,
       "verified": true,
@@ -814,7 +791,7 @@
         "Controleer de werking van het toestel door de branderautomaat te vervangen.",
         "Controleer de werking van het toestel door de kabelboom te vervangen."
       ],
-      "note": "Displaycode 9L; aanvullende code 234; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 9L; aanvullende code 234; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 44,
       "verified": true,
@@ -829,7 +806,7 @@
         "Controleer de connectoren en de bekabeling van de branderautomaat.",
         "Controleer de werking van het cv-toestel door de branderautomaat te vervangen."
       ],
-      "note": "Displaycode 9L; aanvullende code 238; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode 9L; aanvullende code 238; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 44,
       "verified": true,
@@ -840,11 +817,8 @@
       "title": "De branderautomaat of de KIM is defect.",
       "meaning": "De branderautomaat of de KIM is defect.",
       "causes": [],
-      "checks": [
-        "Controleer de connectoren en de bekabeling van de branderautomaat.",
-        "Controleer de werking van het cv-toestel door de branderautomaat te vervangen."
-      ],
-      "note": "Displaycode 9P; aanvullende code 239; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "checks": [],
+      "note": "Displaycode 9P; aanvullende code 239; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 44,
       "verified": true,
@@ -855,11 +829,8 @@
       "title": "De branderautomaat of de KIM is defect.",
       "meaning": "De branderautomaat of de KIM is defect.",
       "causes": [],
-      "checks": [
-        "Controleer de connectoren en de bekabeling van de branderautomaat.",
-        "Controleer de werking van het cv-toestel door de branderautomaat te vervangen."
-      ],
-      "note": "Displaycode 9U; aanvullende code 233; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "checks": [],
+      "note": "Displaycode 9U; aanvullende code 233; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 44,
       "verified": true,
@@ -874,7 +845,7 @@
         "Controleer de werking en de bekabeling van de retourtemperatuursensor.",
         "Controleer de werking van het cv-toestel door het onderdeel te vervangen."
       ],
-      "note": "Displaycode CA; aanvullende code 286; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode CA; aanvullende code 286; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 44,
       "verified": true,
@@ -885,11 +856,8 @@
       "title": "De contacten van de retourtemperatuursensor zijn kortgesloten.",
       "meaning": "De contacten van de retourtemperatuursensor zijn kortgesloten.",
       "causes": [],
-      "checks": [
-        "Controleer de werking en de bekabeling van de retourtemperatuursensor.",
-        "Controleer de werking van het cv-toestel door het onderdeel te vervangen."
-      ],
-      "note": "Displaycode CU; aanvullende code 240; soortaanduiding in de tabel: +. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "checks": [],
+      "note": "Displaycode CU; aanvullende code 240; soortaanduiding in de tabel: +. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 44,
       "verified": true,
@@ -900,11 +868,8 @@
       "title": "De contacten van de retourtemperatuursensor zijn onderbroken.",
       "meaning": "De contacten van de retourtemperatuursensor zijn onderbroken.",
       "causes": [],
-      "checks": [
-        "Controleer de werking en de bekabeling van de retourtemperatuursensor.",
-        "Controleer de werking van het cv-toestel door het onderdeel te vervangen."
-      ],
-      "note": "Displaycode CY; aanvullende code 241; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "checks": [],
+      "note": "Displaycode CY; aanvullende code 241; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 44,
       "verified": true,
@@ -919,7 +884,7 @@
         "Controleer de connectoren en de bekabeling van de branderautomaat.",
         "Controleer de werking van het cv-toestel door de branderautomaat te vervangen."
       ],
-      "note": "Displaycode E1; aanvullende code 242; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode E1; aanvullende code 242; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 44,
       "verified": true,
@@ -1050,11 +1015,8 @@
       "title": "De branderautomaat of de KIM is defect.",
       "meaning": "De branderautomaat of de KIM is defect.",
       "causes": [],
-      "checks": [
-        "Controleer de connectoren en de bekabeling van de branderautomaat.",
-        "Controleer de werking van het cv-toestel door de branderautomaat te vervangen."
-      ],
-      "note": "Displaycode EA; aanvullende code 246; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "checks": [],
+      "note": "Displaycode EA; aanvullende code 246; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 44,
       "verified": true,
@@ -1095,11 +1057,8 @@
       "title": "De branderautomaat of de KIM is defect.",
       "meaning": "De branderautomaat of de KIM is defect.",
       "causes": [],
-      "checks": [
-        "Controleer de connectoren en de bekabeling van de branderautomaat.",
-        "Controleer de werking van het cv-toestel door de branderautomaat te vervangen."
-      ],
-      "note": "Displaycode EC; aanvullende code 251; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "checks": [],
+      "note": "Displaycode EC; aanvullende code 251; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 44,
       "verified": true,
@@ -1125,11 +1084,8 @@
       "title": "De branderautomaat of de KIM is defect.",
       "meaning": "De branderautomaat of de KIM is defect.",
       "causes": [],
-      "checks": [
-        "Controleer de connectoren en de bekabeling van de branderautomaat.",
-        "Controleer de werking van het cv-toestel door de branderautomaat te vervangen."
-      ],
-      "note": "Displaycode EF; aanvullende code 254; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "checks": [],
+      "note": "Displaycode EF; aanvullende code 254; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 44,
       "verified": true,
@@ -1144,7 +1100,7 @@
         "Controleer de connectoren en de bekabeling van de branderautomaat.",
         "Controleer de werking van het cv-toestel door de branderautomaat te vervangen."
       ],
-      "note": "Displaycode EH; aanvullende code 250; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Displaycode EH; aanvullende code 250; soortaanduiding in de tabel: —.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 45,
       "verified": true,
@@ -1185,11 +1141,8 @@
       "title": "De branderautomaat of de KIM is defect.",
       "meaning": "De branderautomaat of de KIM is defect.",
       "causes": [],
-      "checks": [
-        "Controleer de connectoren en de bekabeling van de branderautomaat.",
-        "Controleer de werking van het cv-toestel door de branderautomaat te vervangen."
-      ],
-      "note": "Displaycode EL; aanvullende code 259; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "checks": [],
+      "note": "Displaycode EL; aanvullende code 259; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 45,
       "verified": true,
@@ -1215,11 +1168,8 @@
       "title": "De branderautomaat of de KIM is defect.",
       "meaning": "De branderautomaat of de KIM is defect.",
       "causes": [],
-      "checks": [
-        "Controleer de connectoren en de bekabeling van de branderautomaat.",
-        "Controleer de werking van het cv-toestel door de branderautomaat te vervangen."
-      ],
-      "note": "Displaycode EL; aanvullende code 290; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "checks": [],
+      "note": "Displaycode EL; aanvullende code 290; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 45,
       "verified": true,
@@ -1230,11 +1180,8 @@
       "title": "De branderautomaat of de KIM is defect.",
       "meaning": "De branderautomaat of de KIM is defect.",
       "causes": [],
-      "checks": [
-        "Controleer de connectoren en de bekabeling van de branderautomaat.",
-        "Controleer de werking van het cv-toestel door de branderautomaat te vervangen."
-      ],
-      "note": "Displaycode EP; aanvullende code 287; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "checks": [],
+      "note": "Displaycode EP; aanvullende code 287; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 45,
       "verified": true,
@@ -1245,11 +1192,8 @@
       "title": "De branderautomaat of de KIM is defect.",
       "meaning": "De branderautomaat of de KIM is defect.",
       "causes": [],
-      "checks": [
-        "Controleer de connectoren en de bekabeling van de branderautomaat.",
-        "Controleer de werking van het cv-toestel door de branderautomaat te vervangen."
-      ],
-      "note": "Displaycode EY; aanvullende code 263; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "checks": [],
+      "note": "Displaycode EY; aanvullende code 263; soortaanduiding in de tabel: —. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 45,
       "verified": true,
@@ -1263,7 +1207,7 @@
       "checks": [
         "Vul de cv-installatie bij tot 2 bar."
       ],
-      "note": "Displaycode H07; geen aanvullende code vermeld; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Statusklasse — volgens de officiële tabel.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 45,
       "verified": true,
@@ -1278,7 +1222,7 @@
         "Controleer de connector en de bekabeling van de betreffende sensor.",
         "Controleer de werking van het cv-toestel door de sensor te vervangen."
       ],
-      "note": "Displaycode H11; geen aanvullende code vermeld; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Statusklasse — volgens de officiële tabel.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 45,
       "verified": true,
@@ -1290,7 +1234,7 @@
       "meaning": "Een reset van het cv-toestel wordt uitgevoerd.",
       "causes": [],
       "checks": [],
-      "note": "Displaycode HrE; geen aanvullende code vermeld; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Statusklasse — volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 45,
       "verified": true,
@@ -1302,7 +1246,7 @@
       "meaning": "Een reset van het cv-toestel wordt uitgevoerd.",
       "causes": [],
       "checks": [],
-      "note": "Displaycode rE; geen aanvullende code vermeld; soortaanduiding in de tabel: niet vermeld. De officiële tabel noemt geen afzonderlijke oorzaken.",
+      "note": "Statusklasse — volgens de officiële tabel. De officiële tabel noemt geen afzonderlijke oplossing.",
       "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720641180.pdf",
       "sourcePage": 45,
       "verified": true,

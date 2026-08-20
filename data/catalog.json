@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordCount": 2146,
+  "recordCount": 2147,
   "brands": [
     {
       "id": "intergas",
@@ -136,7 +136,7 @@
           "faultsPath": "data/remeha/quinta-pro/faults.json",
           "parametersPath": "data/remeha/quinta-pro/parameters.json",
           "combustionPath": "data/remeha/quinta-pro/combustion.json",
-          "recordCount": 42,
+          "recordCount": 43,
           "sourceTitle": "Remeha installatie-, gebruikers- en servicehandleiding Quinta Pro",
           "sourceUrl": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Quinta%20PRO/150302%20UM%20IM%20SM%20%20Quinta%20Pro%2045-115%20NL.pdf"
         },

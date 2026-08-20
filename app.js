@@ -496,7 +496,7 @@
     });
     if (updateHistory) {
       const hash = target === "home" ? "#home" : `#${target}`;
-      if (location.hash !== hash) history.pushState({ mmView: target }, "", hash);
+      if (location.hash !== hash) history.replaceState({ mmView: target }, "", hash);
     }
     window.scrollTo({ top: 0, behavior: "auto" });
   }
