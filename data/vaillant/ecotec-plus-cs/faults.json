@@ -17,8 +17,7 @@
       "checks": [
         "Controleer en vervang eventueel de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
         "Controleer en vervang eventueel de aanvoertemperatuursensor."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.001",
@@ -31,8 +30,7 @@
       "checks": [
         "Controleer en vervang eventueel de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
         "Controleer en vervang eventueel de retourtemperatuursensor."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.002",
@@ -45,8 +43,7 @@
       "checks": [
         "Controleer en vervang eventueel de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
         "Controleer en vervang eventueel de warmwatertemperatuursensor."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.003",
@@ -59,8 +56,7 @@
       "checks": [
         "Controleer en vervang eventueel de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
         "Controleer en vervang eventueel de boilertemperatuursensor."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.010",
@@ -73,8 +69,7 @@
       "checks": [
         "Controleer en vervang eventueel de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
         "Controleer en vervang eventueel de aanvoertemperatuursensor."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.011",
@@ -87,8 +82,7 @@
       "checks": [
         "Controleer en vervang eventueel de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
         "Controleer en vervang eventueel de retourtemperatuursensor."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.012",
@@ -101,8 +95,7 @@
       "checks": [
         "Controleer en vervang eventueel de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
         "Controleer en vervang eventueel de warmwatertemperatuursensor."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.013",
@@ -115,8 +108,7 @@
       "checks": [
         "Controleer en vervang eventueel de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
         "Controleer en vervang eventueel de boilertemperatuursensor."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.020",
@@ -129,13 +121,14 @@
         "Aanvoertemperatuursensor defect",
         "Retourtemperatuursensor defect",
         "De pomp is defect.",
-        "3-wegventiel defect of geblokkeerd",
+        "3- wegventiel defect of geblokkeerd",
         "Waterdruksensor defect",
         "Volumesensor defect",
         "Zwarte ontlading via ontstekingskabel, ontstekingsstekker of ontstekingselektrode"
       ],
       "checks": [
-        "1. Vul de CV-installatie. 2. Controleer het product en het systeem op lekkage.",
+        "1. Vul de CV-installatie.",
+        "2. Controleer het product en het systeem op lekkage.",
         "Controleer en vervang eventueel de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
         "Controleer en vervang eventueel de aanvoertemperatuursensor.",
         "Controleer en vervang eventueel de retourtemperatuursensor.",
@@ -144,8 +137,7 @@
         "Controleer en vervang eventueel de waterdruksensor.",
         "Controleer en vervang eventueel de volumesensor.",
         "Controleer ontstekingskabel, ontstekingsstekker en ontstekingselektrode."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.022",
@@ -161,15 +153,15 @@
         "Intern expansievat defect"
       ],
       "checks": [
-        "1. Vul de CV-installatie. 2. Controleer het product en het systeem op lekkage.",
+        "1. Vul de CV-installatie.",
+        "2. Controleer het product en het systeem op lekkage.",
         "Controleer en vervang eventueel de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
         "Controleer de kabel naar de pomp/naar de waterdruksensor.",
         "Controleer en vervang eventueel de waterdruksensor.",
         "Controleer en vervang eventueel de kabel naar de pomp/naar de waterdruksensor.",
         "Controleer de automatische vulvoorziening en vervang eventueel de vulvoorziening.",
         "Controleer en vervang eventueel het interne expansievat."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.023",
@@ -183,7 +175,7 @@
         "Retourtemperatuursensor defect",
         "Pomp geblokkeerd",
         "Pump loopt met verminderd vermogen",
-        "3-wegventiel defect of geblokkeerd",
+        "3- wegventiel defect of geblokkeerd",
         "Intern expansievat defect"
       ],
       "checks": [
@@ -194,8 +186,7 @@
         "Controleer of de pomp goed functioneert.",
         "Controleer en vervang eventueel de 3-wegklep.",
         "Controleer en vervang eventueel het interne expansievat."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.024",
@@ -210,7 +201,7 @@
         "Retourtemperatuursensor defect",
         "Pomp geblokkeerd",
         "Pump loopt met verminderd vermogen",
-        "3-wegventiel defect of geblokkeerd",
+        "3- wegventiel defect of geblokkeerd",
         "Intern expansievat defect"
       ],
       "checks": [
@@ -222,8 +213,7 @@
         "Controleer of de pomp goed functioneert.",
         "Controleer en vervang eventueel de 3-wegklep.",
         "Controleer en vervang eventueel het interne expansievat."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.025",
@@ -236,8 +226,7 @@
       "checks": [
         "Controleer en vervang eventueel de kabelboom inclusief alle stekkerverbindingen (printplaat stekker X20, contact 14/15).",
         "Controleer en vervang eventueel de verbrandingsgastemperatuurbewaking."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.027",
@@ -250,8 +239,7 @@
       "checks": [
         "Controleer het gasblok op goede werking en vervang deze eventueel.",
         "Vervang de printplaat."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.028",
@@ -263,15 +251,16 @@
         "Gasaansluitdruk te gering",
         "Lucht in de gasleiding (bijv. bij eerste inbedrijfstelling)",
         "Verkeerde gassoort ingesteld",
-        "Offset gasblok in D.052 en evt. D.182 verkeerd ingesteld",
+        "Offset gasblok in D.052 en evt.",
+        "D.182 verkeerd ingesteld",
         "Luchtaanzuigbuis geblokkeerd",
         "Ontsteking mislukt",
         "Dynamische gasdruk te gering",
-        "regelelektrode heeft contact met de brander",
+        "Regelelektrode heeft contact met de brander",
         "Ontstekingselektrode defect",
         "Ontsteking mislukt (alleen bij vloeibaar gas)",
         "Brander defect",
-        "Gasblok defect/verkeerde ET-gasblok",
+        "Gasblok defect/verkeerde ETgasblok",
         "Onderbreking in de kabelboom",
         "Aarding foutief",
         "Ionisatiestroom onderbroken",
@@ -283,16 +272,21 @@
         "Condenspomp (indien aanwezig) defect"
       ],
       "checks": [
-        "1. Controleer de warmtewisselaar, sifon, sifonadapter, sifonslang (verbinding tussen primaire warmtewisselaar en sifon en sifonslang buiten het product), verbrandingsgasafvoerbuisadapter, productbehuizing, voormantel en zijdelen op mogelijke beschadigingen. 2. Vervang beschadigde onderdelen direct.",
+        "1. Controleer de warmtewisselaar, sifon, sifonadapter, sifonslang (verbinding tussen primaire warmtewisselaar en sifon en sifonslang buiten het product), verbrandingsgasafvoerbuisadapter, productbehuizing, voormantel en zijdelen op mogelijke beschadigingen.",
+        "2. Vervang beschadigde onderdelen direct.",
         "Open de gasafsluitkraan.",
         "Controleer de gasaansluitdruk.",
         "Reset het product eenmalig.",
-        "Controleer de gassoort en de instelling van de gassoort onder D.156 en D.157.",
+        "Controleer de gassoort en de instelling van de gassoort onder",
+        "D.156 en D.157.",
         "Controleer de offsetinstelling van het gasblok.",
         "Controleren en vervang eventueel de luchtaanzuigbuis.",
-        "1. Controleer de ontsteking met het testprogramma P.021. 2. Product start: ontstekingselektrode, ontstekingstransformator, gasblok en ventilator werken, gas stroomt en het gasvolume is correct, geen blokkade of recirculatie instellen. 3. Product start niet en toont weer een foutcode: voer de volgende controles uit.",
+        "1. Controleer de ontsteking met het testprogramma P.021.",
+        "2. Product start: ontstekingselektrode, ontstekingstransformator, gasblok en ventilator werken, gas stroomt en het gasvolume is correct, geen blokkade of recirculatie instellen.",
+        "3. Product start niet en toont weer een foutcode: voer de volgende controles uit.",
         "Controleer de dynamische gasdruk en de externe gasdrukregelaar.",
-        "1. Controleer de afstand tussen de regelelektrode en de brander. 2. Controleer en vervang de eventueel de regelelektrode.",
+        "1. Controleer de afstand tussen de regelelektrode en de brander.",
+        "2. Controleer en vervang de eventueel de regelelektrode.",
         "Controleer en vervang de ontstekingselektrode eventueel.",
         "Voer het testprogramma P.022 uit.",
         "Controleer en vervang eventueel de brander.",
@@ -304,10 +298,12 @@
         "Controleer de stekker en de stekkerverbinding.",
         "Controleer de ontstekingstransformator op goede werking en vervang deze eventueel.",
         "Vervang de printplaat.",
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon. 2. Controleer de correcte installatie van de condensafvoer. 3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander). 4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
+        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
+        "2. Controleer de correcte installatie van de condensafvoer.",
+        "3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
+        "4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
         "Controleer en reinig de condenspomp. Vervang de condenspomp eventueel."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.029",
@@ -320,11 +316,11 @@
         "Luchtaanzuigbuis geblokkeerd",
         "Ontsteking mislukt",
         "Haperende ontsteking",
-        "regelelektrode heeft contact met de brander",
+        "Regelelektrode heeft contact met de brander",
         "Brander defect",
         "Onderbreking in de kabelboom",
         "Ontstekingselektrode defect",
-        "Gasblok defect/verkeerde ET-gasblok",
+        "Gasblok defect/verkeerde ETgasblok",
         "Condenswater in de verbrandingskamer vanwege een verstopte condensafvoer",
         "Condenspomp (indien aanwezig) defect"
       ],
@@ -333,17 +329,22 @@
         "Controleer het complete verbrandingsgastraject.",
         "Controleer de aarding van het product.",
         "Controleren en vervang eventueel de luchtaanzuigbuis.",
-        "1. Controleer de ontsteking met het testprogramma P.021. 2. Product start: ontstekingselektrode, ontstekingstransformator, gasblok en ventilator werken, gas stroomt en het gasvolume is correct, geen blokkade of recirculatie instellen. 3. Product start niet en toont weer een foutcode: voer de volgende controles uit.",
+        "1. Controleer de ontsteking met het testprogramma P.021.",
+        "2. Product start: ontstekingselektrode, ontstekingstransformator, gasblok en ventilator werken, gas stroomt en het gasvolume is correct, geen blokkade of recirculatie instellen.",
+        "3. Product start niet en toont weer een foutcode: voer de volgende controles uit.",
         "Controleer of de ontstekingstransformator goed functioneert.",
-        "1. Controleer de afstand tussen de regelelektrode en de brander. 2. Controleer en vervang de eventueel de regelelektrode.",
+        "1. Controleer de afstand tussen de regelelektrode en de brander.",
+        "2. Controleer en vervang de eventueel de regelelektrode.",
         "Controleer en vervang eventueel de brander.",
         "Controleer en vervang eventueel de kabelboom inclusief alle stekkerverbindingen.",
         "Controleer en vervang de ontstekingselektrode eventueel.",
         "Controleer en vervang eventueel het gasblok.",
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon. 2. Controleer de correcte installatie van de condensafvoer. 3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander). 4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
+        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
+        "2. Controleer de correcte installatie van de condensafvoer.",
+        "3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
+        "4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
         "Controleer en reinig de condenspomp. Vervang de condenspomp eventueel."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.032",
@@ -353,17 +354,16 @@
         "Fout in de elektrische verbinding van de ventilator",
         "Ventilator geblokkeerd",
         "Ventilator defect",
-        "Storing in verbrandingsgastraject door recirculatie of verbr dingsgasblokkade",
+        "Storing in verbrandingsgastraject door recirculatie of verbrandingsgasblokkade",
         "Printplaat defect"
       ],
       "checks": [
         "Controleer de kabelboom tussen printplaat en de ventilator inclusief alle stekkerverbindingen.",
         "Controleer of de ventilator goed functioneert.",
         "Controleer en vervang de eventueel de ventilator.",
-        "Controleer het complete verbrandingsgastraject. an",
+        "Controleer het complete verbrandingsgastraject.",
         "Vervang de printplaat."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.035",
@@ -372,52 +372,59 @@
       "causes": [
         "Luchtaanzuigbuis geblokkeerd",
         "Dynamische gasdruk te gering",
-        "Storing in verbrandingsgastraject door recirculatie of verbr dingsgasblokkade",
+        "Storing in verbrandingsgastraject door recirculatie of verbrandingsgasblokkade",
         "Condenswater in de verbrandingskamer vanwege een verstopte condensafvoer",
         "Condenspomp (indien aanwezig) defect",
         "Verbrandingsluchttoevoer niet voldoende",
-        "regelelektrode defect",
+        "Regelelektrode defect",
         "Brander defect",
-        "Gasblok defect/verkeerde ET-gasblok"
+        "Gasblok defect/verkeerde ETgasblok"
       ],
       "checks": [
         "Controleren en vervang eventueel de luchtaanzuigbuis.",
         "Controleer de dynamische gasdruk en de externe gasdrukregelaar.",
-        "Controleer het complete verbrandingsgastraject. an",
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon. 2. Controleer de correcte installatie van de condensafvoer. 3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander). 4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
+        "Controleer het complete verbrandingsgastraject.",
+        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
+        "2. Controleer de correcte installatie van de condensafvoer.",
+        "3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
+        "4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
         "Controleer en reinig de condenspomp. Vervang de condenspomp eventueel.",
         "Controleer de verbrandingsluchttoevoer.",
         "Controleer en vervang de eventueel de regelelektrode.",
         "Controleer en vervang eventueel de brander.",
         "Controleer en vervang eventueel het gasblok."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.040",
       "title": "De hoeveelheid lucht is te gering.",
       "meaning": "De hoeveelheid lucht is te gering.",
       "causes": [
-        "Storing in verbrandingsgastraject door recirculatie of verbr dingsgasblokkade",
+        "Storing in verbrandingsgastraject door recirculatie of verbrandingsgasblokkade",
         "Luchtaanzuigbuis geblokkeerd",
         "Condenswater in de verbrandingskamer vanwege een verstopte condensafvoer",
         "Condenspomp (indien aanwezig) defect",
         "Verkeerde gassoort ingesteld",
-        "Offset gasblok in D.052 en evt. D.182 verkeerd ingesteld",
+        "Offset gasblok in D.052 en evt.",
+        "D.182 verkeerd ingesteld",
         "Fout in de elektrische verbinding van het gasblok",
         "Gasblok elektrisch niet aangesloten/verkeerd aangesloten",
-        "regelelektrode defect",
+        "Regelelektrode defect",
         "Brander defect",
         "Printplaat defect",
         "Ventilator defect",
         "Lucht-massastroomsensor vervuild of defect (alleen in combinatie met de ombouwset luchtaanzuigbuis met geïntegreerde terugstroomblokkering en luchtmassastroomsensor)"
       ],
       "checks": [
-        "Controleer het complete verbrandingsgastraject. an",
+        "Controleer het complete verbrandingsgastraject.",
         "Controleren en vervang eventueel de luchtaanzuigbuis.",
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon. 2. Controleer de correcte installatie van de condensafvoer. 3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander). 4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
+        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
+        "2. Controleer de correcte installatie van de condensafvoer.",
+        "3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
+        "4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
         "Controleer en reinig de condenspomp. Vervang de condenspomp eventueel.",
-        "Controleer de gassoort en de instelling van de gassoort onder D.156 en D.157.",
+        "Controleer de gassoort en de instelling van de gassoort onder",
+        "D.156 en D.157.",
         "Controleer de offsetinstelling van het gasblok.",
         "Controleer en vervang eventueel de kabelboom naar het gasblok.",
         "Controleer de elektrische aansluiting van het gasblok.",
@@ -425,9 +432,9 @@
         "Controleer en vervang eventueel de brander.",
         "Vervang de printplaat.",
         "Controleer en vervang de eventueel de ventilator.",
-        "1. Controleer de lucht-massastroomsensor op vervuiling. 2. Vervang eventueel de complete luchtaanzuigbuis."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+        "1. Controleer de lucht-massastroomsensor op vervuiling.",
+        "2. Vervang eventueel de complete luchtaanzuigbuis."
+      ]
     },
     {
       "code": "F.042",
@@ -442,8 +449,7 @@
         "Controleer de kabelboom tussen printplaat en de ventilator inclusief alle stekkerverbindingen (met name op de printplaat).",
         "Controleer het artikelnummer van de kabelboom tussen printplaat en gasblok resp. warmtecel en vervang eventueel de kabelboom.",
         "Controleer de codeerweerstand (printplaat stekker X25, contact 11/12)."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.044",
@@ -458,19 +464,24 @@
         "Verkeerde gassoort ingesteld",
         "Onderbreking in de kabelboom",
         "Brander defect",
-        "Gasblok defect/verkeerde ET-gasblok",
-        "Offset gasblok in D.052 en evt. D.182 verkeerd ingesteld",
-        "regelelektrode defect",
+        "Gasblok defect/verkeerde ETgasblok",
+        "Offset gasblok in D.052 en evt.",
+        "D.182 verkeerd ingesteld",
+        "Regelelektrode defect",
         "Gasblok defect",
         "Printplaat defect"
       ],
       "checks": [
         "Controleer het complete verbrandingsgastraject.",
         "Controleren en vervang eventueel de luchtaanzuigbuis.",
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon. 2. Controleer de correcte installatie van de condensafvoer. 3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander). 4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
+        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
+        "2. Controleer de correcte installatie van de condensafvoer.",
+        "3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
+        "4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
         "Controleer en reinig de condenspomp. Vervang de condenspomp eventueel.",
         "Controleer de dynamische gasdruk en de externe gasdrukregelaar.",
-        "Controleer de gassoort en de instelling van de gassoort onder D.156 en D.157.",
+        "Controleer de gassoort en de instelling van de gassoort onder",
+        "D.156 en D.157.",
         "Controleer en vervang eventueel de kabelboom inclusief alle stekkerverbindingen.",
         "Controleer en vervang eventueel de brander.",
         "Controleer en vervang eventueel het gasblok.",
@@ -478,8 +489,7 @@
         "Controleer en vervang de eventueel de regelelektrode.",
         "Vervang het gasblok.",
         "Vervang de printplaat."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.047",
@@ -492,8 +502,7 @@
       "checks": [
         "Controleer de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
         "Vervang de boileruitlaattemperatuursensor."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.049",
@@ -508,8 +517,7 @@
         "Controleer alle eBUS-aansluitingen.",
         "Controleer de polariteit (+/-) van de eBUS-aansluitingen.",
         "Vervang de printplaat."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.057",
@@ -522,7 +530,8 @@
         "Condenswater in de verbrandingskamer vanwege een verstopte condensafvoer",
         "Condenspomp (indien aanwezig) defect",
         "Dynamische gasdruk te gering",
-        "Offset gasblok in D.052 en evt. D.182 verkeerd ingesteld",
+        "Offset gasblok in D.052 en evt.",
+        "D.182 verkeerd ingesteld",
         "Onderbreking in de kabelboom",
         "Printplaat defect",
         "Ventilator defect",
@@ -532,16 +541,19 @@
         "Controleer de noodbedrijf en fouthistorie en voer de noodzakelijke maatregelen uit.",
         "Controleer het complete verbrandingsgastraject.",
         "Controleren en vervang eventueel de luchtaanzuigbuis.",
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon. 2. Controleer de correcte installatie van de condensafvoer. 3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander). 4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
+        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
+        "2. Controleer de correcte installatie van de condensafvoer.",
+        "3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
+        "4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
         "Controleer en reinig de condenspomp. Vervang de condenspomp eventueel.",
         "Controleer de dynamische gasdruk en de externe gasdrukregelaar.",
         "Controleer de offsetinstelling van het gasblok.",
         "Controleer en vervang eventueel de kabelboom inclusief alle stekkerverbindingen.",
         "Vervang de printplaat.",
         "Controleer via D.033 en D.034 of het ventilatortoerental meer dan 20-30 rpm afwijkt.",
-        "1. Controleer de lucht-massastroomsensor op vervuiling. 2. Vervang eventueel de complete luchtaanzuigbuis."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+        "1. Controleer de lucht-massastroomsensor op vervuiling.",
+        "2. Vervang eventueel de complete luchtaanzuigbuis."
+      ]
     },
     {
       "code": "F.061",
@@ -554,8 +566,7 @@
       "checks": [
         "Controleer en vervang eventueel de kabelboom naar het gasblok.",
         "Vervang de printplaat."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.062",
@@ -570,8 +581,7 @@
         "Vervang het gasblok.",
         "Vervang de printplaat.",
         "Controleer en vervang de ontstekingselektrode eventueel."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.063",
@@ -582,8 +592,7 @@
       ],
       "checks": [
         "Vervang de printplaat."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.064",
@@ -596,8 +605,7 @@
       "checks": [
         "Controleer de onder D.166 weergegeven sensor.",
         "Wanneer de getoonde waarde voor D.166 > 30 en niet is geregistreerd, vervang dan de printplaat."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.065",
@@ -610,8 +618,7 @@
       "checks": [
         "Controleer de externe warmte-inwerkingen op de elektronica.",
         "Vervang de printplaat."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.067",
@@ -624,8 +631,7 @@
       "checks": [
         "Controleer het vlammensignaal.",
         "Vervang de printplaat."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.068",
@@ -636,22 +642,21 @@
       ],
       "checks": [
         "Vervang de printplaat."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.070",
-      "title": "De toestelherkenning (DSN) is foutief, ontbreekt of past niet bi de codeerweerstand.",
-      "meaning": "De toestelherkenning (DSN) is foutief, ontbreekt of past niet bi de codeerweerstand.",
+      "title": "De toestelherkenning (DSN) is foutief, ontbreekt of past niet bij de codeerweerstand.",
+      "meaning": "De toestelherkenning (DSN) is foutief, ontbreekt of past niet bij de codeerweerstand.",
       "causes": [
-        "Toestelidentificatie na tegeli tijd vervangen van printplaat j display niet correct ingesteld",
+        "Toestelidentificatie na tegelijkertijd vervangen van printplaat en display niet correct ingesteld",
         "Fout in de elektrische verbinding van het gasblok"
       ],
       "checks": [
-        "jker- 1. Stel de juiste toestelherkenning in. en 2. Vervang na tegelijkertijd vervangen van de printplaat en het display de regelelektrode.",
+        "1. Stel de juiste toestelherkenning in.",
+        "2. Vervang na tegelijkertijd vervangen van de printplaat en het display de regelelektrode.",
         "Controleer de kabelboom tussen printplaat en het gasblok inclusief alle stekkerverbindingen."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.071",
@@ -664,8 +669,7 @@
       "checks": [
         "Controleer de positionering van de aanvoertemperatuursensor.",
         "Controleer en vervang eventueel de aanvoertemperatuursensor."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.072",
@@ -681,8 +685,7 @@
         "Controleer en vervang eventueel de aanvoertemperatuursensor.",
         "Controleer en vervang eventueel de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
         "Controleer en vervang eventueel de retourtemperatuursensor."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.074",
@@ -695,8 +698,7 @@
       "checks": [
         "Controleer en vervang eventueel de kabelboom inclusief alle stekkerverbindingen.",
         "Controleer en vervang eventueel de waterdruksensor."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.075",
@@ -717,12 +719,12 @@
         "Vervang de interne CV-pomp.",
         "Controleer de installatiedruk.",
         "Controleer en vervang eventueel het interne expansievat.",
-        "1. Vul de CV-installatie. 2. Controleer het product en het systeem op lekkage.",
+        "1. Vul de CV-installatie.",
+        "2. Controleer het product en het systeem op lekkage.",
         "Ontlucht de verwarmingsinstallatie.",
         "Controleer de kabelboom (Lin-kabel).",
         "Controleer en vervang eventueel de kabelboom inclusief alle stekkerverbindingen."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.076",
@@ -733,8 +735,7 @@
       ],
       "checks": [
         "Controleer en vervang eventueel de kabelboom inclusief alle stekkerverbindingen (printplaat stekker X20, contact 3/14)."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.077",
@@ -751,8 +752,7 @@
         "Vervang de verbrandingsgasklep.",
         "Controleer de elektrische verbinding met de condenspomp.",
         "Vervang de condenspomp."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.078",
@@ -764,9 +764,9 @@
       ],
       "checks": [
         "Controleren of de regelmodule compatibel is met het product.",
-        "1. Bij producten zonder geïntegreerde warmwaterbereiding: controleer of de brug aan de stekker X2 tussen de contacten 2 en 5 aangesloten en zonder onderbreking is. 2. Als de brug zonder fouten is, controleer en vervang dan evt. de kabelboon tussen printplaat en sensor."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+        "1. Bij producten zonder geïntegreerde warmwaterbereiding: controleer of de brug aan de stekker X2 tussen de contacten 2 en 5 aangesloten en zonder onderbreking is.",
+        "2. Als de brug zonder fouten is, controleer en vervang dan evt. de kabelboon tussen printplaat en sensor."
+      ]
     },
     {
       "code": "F.080",
@@ -777,8 +777,7 @@
       ],
       "checks": [
         "Controleer en vervang eventueel de NTC-sensor, stekker, kabelboom en de printplaat."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.081",
@@ -792,7 +791,7 @@
         "Warmwateraansluiting-temperatuursensor verkeerde gemonteerd",
         "Pomp geblokkeerd",
         "De pomp is defect.",
-        "3-wegventiel defect of geblokkeerd",
+        "3- wegventiel defect of geblokkeerd",
         "Vleugelwielsensor in de gelaagde boiler defect"
       ],
       "checks": [
@@ -805,8 +804,7 @@
         "Vervang de pomp in de interne boiler.",
         "Controleer en vervang eventueel de 3-wegklep.",
         "Controleer en vervang eventueel de vleugelwielsensor in de gelaagde boiler."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.083",
@@ -825,9 +823,9 @@
         "Controleer of de aanvoertemperatuursensor correct tegen de aanvoerbuis ligt.",
         "Controleer en vervang eventueel de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
         "Controleer of de retourtemperatuursensor correct tegen de retourbuis ligt.",
-        "1. Vul de CV-installatie. 2. Controleer het product en het systeem op lekkage."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+        "1. Vul de CV-installatie.",
+        "2. Controleer het product en het systeem op lekkage."
+      ]
     },
     {
       "code": "F.084",
@@ -842,8 +840,7 @@
         "Controleer of de aanvoertemperatuursensor correct gemonteerd is.",
         "Controleer of de retourtemperatuursensor correct gemonteerd is.",
         "Controleer of de aanvoer- en retourtemperatuursensor correct gemonteerd is."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.085",
@@ -854,8 +851,7 @@
       ],
       "checks": [
         "Controleer of de aanvoer- en retourtemperatuursensor aan de correcte buis gemonteerd zijn."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.087",
@@ -868,8 +864,7 @@
       "checks": [
         "Controleer de kabelboom tussen printplaat en de ontstekingstransformator inclusief alle stekkerverbindingen.",
         "Controleer de ontstekingstransformator op goede werking en vervang deze eventueel."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.088",
@@ -883,8 +878,7 @@
       "checks": [
         "Controleer de aansluiting van het gasblok.",
         "Controleer de kabelboom en vervang de kabelboom eventueel."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.089",
@@ -895,8 +889,7 @@
       ],
       "checks": [
         "Controleer, of de aangesloten pomp de voor het product aanbevolen pomp is."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.090",
@@ -909,8 +902,7 @@
       "checks": [
         "Controleer en vervang eventueel de kabelboom inclusief alle stekkerverbindingen.",
         "Controleer de stekker en de stekkerverbinding."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.092",
@@ -921,8 +913,7 @@
       ],
       "checks": [
         "Controleer de instelling in D.156."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.095",
@@ -933,28 +924,33 @@
         "Condenswater in de verbrandingskamer vanwege een verstopte condensafvoer",
         "Condenspomp (indien aanwezig) defect",
         "Verkeerde gassoort ingesteld",
-        "Offset gasblok in D.052 en evt. D.182 verkeerd ingesteld",
+        "Offset gasblok in D.052 en evt.",
+        "D.182 verkeerd ingesteld",
         "Brander defect",
-        "Gasblok defect/verkeerde ET-gasblok",
+        "Gasblok defect/verkeerde ETgasblok",
         "Fout in de elektrische verbinding van het gasblok",
-        "regelelektrode defect",
+        "Regelelektrode defect",
         "Printplaat defect",
-        "Lucht-massastroomsensor vervuild of defect (alleen in combi natie met de ombouwset luchtaanzuigbuis met geïntegreerde terugstroomblokkering en luchtmassastroomsensor)"
+        "Lucht-massastroomsensor vervuild of defect (alleen in combinatie met de ombouwset luchtaanzuigbuis met geïntegreerde terugstroomblokkering en luchtmassastroomsensor)"
       ],
       "checks": [
         "Controleer het complete verbrandingsgastraject.",
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon. 2. Controleer de correcte installatie van de condensafvoer. 3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander). 4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
+        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
+        "2. Controleer de correcte installatie van de condensafvoer.",
+        "3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
+        "4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
         "Controleer en reinig de condenspomp. Vervang de condenspomp eventueel.",
-        "Controleer de gassoort en de instelling van de gassoort onder D.156 en D.157.",
+        "Controleer de gassoort en de instelling van de gassoort onder",
+        "D.156 en D.157.",
         "Controleer de offsetinstelling van het gasblok.",
         "Controleer en vervang eventueel de brander.",
         "Controleer en vervang eventueel het gasblok.",
         "Controleer de kabelboom tussen printplaat en het gasblok inclusief alle stekkerverbindingen.",
         "Controleer en vervang de eventueel de regelelektrode.",
         "Vervang de printplaat.",
-        "1. Controleer de lucht-massastroomsensor op vervuiling. - 2. Vervang eventueel de complete luchtaanzuigbuis."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+        "1. Controleer de lucht-massastroomsensor op vervuiling.",
+        "2. Vervang eventueel de complete luchtaanzuigbuis."
+      ]
     },
     {
       "code": "F.096",
@@ -962,33 +958,38 @@
       "meaning": "De gasklepstappenmotor heeft het maximaal toegestane aantal stappen bereikt.",
       "causes": [
         "Gasaansluitdruk te gering",
-        "Storing in verbrandingsgastraject door recirculatie of verbra dingsgasblokkade",
+        "Storing in verbrandingsgastraject door recirculatie of verbrandingsgasblokkade",
         "Verkeerde gassoort ingesteld",
-        "Offset gasblok in D.052 en evt. D.182 verkeerd ingesteld",
+        "Offset gasblok in D.052 en evt.",
+        "D.182 verkeerd ingesteld",
         "Condenswater in de verbrandingskamer vanwege een verstopte condensafvoer",
         "Condenspomp (indien aanwezig) defect",
         "Fout in de elektrische verbinding van het gasblok",
-        "regelelektrode defect",
+        "Regelelektrode defect",
         "Brander defect",
-        "Gasblok defect/verkeerde ET-gasblok",
+        "Gasblok defect/verkeerde ETgasblok",
         "Printplaat defect",
-        "Lucht-massastroomsensor vervuild of defect (alleen in combi natie met de ombouwset luchtaanzuigbuis met geïntegreerde terugstroomblokkering en luchtmassastroomsensor)"
+        "Lucht-massastroomsensor vervuild of defect (alleen in combinatie met de ombouwset luchtaanzuigbuis met geïntegreerde terugstroomblokkering en luchtmassastroomsensor)"
       ],
       "checks": [
         "Controleer de gasaansluitdruk.",
-        "Controleer het complete verbrandingsgastraject. n",
-        "Controleer de gassoort en de instelling van de gassoort onder D.156 en D.157.",
+        "Controleer het complete verbrandingsgastraject.",
+        "Controleer de gassoort en de instelling van de gassoort onder",
+        "D.156 en D.157.",
         "Controleer de offsetinstelling van het gasblok.",
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon. 2. Controleer de correcte installatie van de condensafvoer. 3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander). 4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
+        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
+        "2. Controleer de correcte installatie van de condensafvoer.",
+        "3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
+        "4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
         "Controleer en reinig de condenspomp. Vervang de condenspomp eventueel.",
         "Controleer de kabelboom tussen printplaat en het gasblok inclusief alle stekkerverbindingen.",
         "Controleer en vervang de eventueel de regelelektrode.",
         "Controleer en vervang eventueel de brander.",
         "Controleer en vervang eventueel het gasblok.",
         "Vervang de printplaat.",
-        "1. Controleer de lucht-massastroomsensor op vervuiling. - 2. Vervang eventueel de complete luchtaanzuigbuis."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+        "1. Controleer de lucht-massastroomsensor op vervuiling.",
+        "2. Vervang eventueel de complete luchtaanzuigbuis."
+      ]
     },
     {
       "code": "F.097",
@@ -999,22 +1000,21 @@
       ],
       "checks": [
         "Vervang de printplaat."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.105",
       "title": "Bij een vervangen van het gasblok of een gelijktijdige vervanging van printplaat en display moet de gasblok-offset passend bij het actuele gasblok worden ingesteld.",
       "meaning": "Bij een vervangen van het gasblok of een gelijktijdige vervanging van printplaat en display moet de gasblok-offset passend bij het actuele gasblok worden ingesteld.",
       "causes": [
-        "Offset gasblok in D.052 en evt. D.182 verkeerd ingesteld",
+        "Offset gasblok in D.052 en evt.",
+        "D.182 verkeerd ingesteld",
         "Fout in de elektrische verbinding van het gasblok"
       ],
       "checks": [
         "Controleer de offsetinstelling van het gasblok.",
         "Controleer de kabelboom tussen printplaat en het gasblok inclusief alle stekkerverbindingen."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.110",
@@ -1027,16 +1027,17 @@
         "Gasaansluitdruk te gering",
         "Lucht in de gasleiding (bijv. bij eerste inbedrijfstelling)",
         "Verkeerde gassoort ingesteld",
-        "Offset gasblok in D.052 en evt. D.182 verkeerd ingesteld",
+        "Offset gasblok in D.052 en evt.",
+        "D.182 verkeerd ingesteld",
         "Luchtaanzuigbuis geblokkeerd",
         "Ontsteking mislukt",
         "Dynamische gasdruk te gering",
         "Storing in verbrandingsgastraject door recirculatie of verbrandingsgasblokkade",
-        "regelelektrode heeft contact met de brander",
+        "Regelelektrode heeft contact met de brander",
         "Onderbreking in de kabelboom",
         "Ontstekingselektrode defect",
         "Brander defect",
-        "Gasblok defect/verkeerde ET-gasblok",
+        "Gasblok defect/verkeerde ETgasblok",
         "Aarding foutief",
         "Ionisatiestroom onderbroken",
         "Ontstekingstransformator niet aangesloten",
@@ -1047,30 +1048,37 @@
       ],
       "checks": [
         "Waarborg, dat het CV-toestel de aanwezige warmte in voldoende mate kan afgeven.",
-        "1. Controleer de warmtewisselaar, sifon, sifonadapter, sifonslang (verbinding tussen primaire warmtewisselaar en sifon en sifonslang buiten het product), verbrandingsgasafvoerbuisadapter, productbehuizing, voormantel en zijdelen op mogelijke beschadigingen. 2. Vervang beschadigde onderdelen direct.",
+        "1. Controleer de warmtewisselaar, sifon, sifonadapter, sifonslang (verbinding tussen primaire warmtewisselaar en sifon en sifonslang buiten het product), verbrandingsgasafvoerbuisadapter, productbehuizing, voormantel en zijdelen op mogelijke beschadigingen.",
+        "2. Vervang beschadigde onderdelen direct.",
         "Open de gasafsluitkraan.",
         "Controleer de gasaansluitdruk.",
         "Reset het product eenmalig.",
-        "Controleer de gassoort en de instelling van de gassoort onder D.156 en D.157.",
+        "Controleer de gassoort en de instelling van de gassoort onder",
+        "D.156 en D.157.",
         "Controleer de offsetinstelling van het gasblok.",
         "Controleren en vervang eventueel de luchtaanzuigbuis.",
-        "1. Controleer de ontsteking met het testprogramma P.021. 2. Product start: ontstekingselektrode, ontstekingstransformator, gasblok en ventilator werken, gas stroomt en het gasvolume is correct, geen blokkade of recirculatie instellen. 3. Product start niet en toont weer een foutcode: voer de volgende controles uit.",
+        "1. Controleer de ontsteking met het testprogramma P.021.",
+        "2. Product start: ontstekingselektrode, ontstekingstransformator, gasblok en ventilator werken, gas stroomt en het gasvolume is correct, geen blokkade of recirculatie instellen.",
+        "3. Product start niet en toont weer een foutcode: voer de volgende controles uit.",
         "Controleer de dynamische gasdruk en de externe gasdrukregelaar.",
         "Controleer het complete verbrandingsgastraject.",
-        "1. Controleer de afstand tussen de regelelektrode en de brander. 2. Controleer en vervang de eventueel de regelelektrode.",
+        "1. Controleer de afstand tussen de regelelektrode en de brander.",
+        "2. Controleer en vervang de eventueel de regelelektrode.",
         "Controleer en vervang eventueel de kabelboom inclusief alle stekkerverbindingen.",
         "Controleer en vervang de ontstekingselektrode eventueel.",
         "Controleer en vervang eventueel de brander.",
         "Controleer en vervang eventueel het gasblok.",
         "Controleer de aarding van het product.",
-        "Controleer de regelelektrode, de verbindingskabel en de stekkerverbinding.",
+        "Controleer de Regelelektrode, de verbindingskabel en de stekkerverbinding.",
         "Controleer de stekker en de stekkerverbinding.",
         "Controleer de ontstekingstransformator op goede werking en vervang deze eventueel.",
         "Vervang de printplaat.",
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon. 2. Controleer de correcte installatie van de condensafvoer. 3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander). 4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
+        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
+        "2. Controleer de correcte installatie van de condensafvoer.",
+        "3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
+        "4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
         "Controleer en reinig de condenspomp. Vervang de condenspomp eventueel."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.194",
@@ -1081,16 +1089,14 @@
       ],
       "checks": [
         "Vervang de printplaat."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.195",
       "title": "Het toestel heeft een significante onderspanning in de voedingsspanning gedetecteerd.",
       "meaning": "Het toestel heeft een significante onderspanning in de voedingsspanning gedetecteerd.",
       "causes": [
-        "Te lage spanning in de stroom",
-        "voorziening",
+        "Te lage spanning in de stroomvoorziening",
         "Pomp defect",
         "Fout in de elektrische verbinding van de pomp"
       ],
@@ -1099,8 +1105,7 @@
         "Wanneer de netspanning niet in orde is, neem dan contact op met het energiebedrijf.",
         "Wanneer de netspanning in orde is, vervang dan de pomp (spanningsmeting via de pompelektronica).",
         "Controleer de kabelboom tussen printplaat en pomp inclusief alle stekkerverbindingen."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.196",
@@ -1115,8 +1120,7 @@
         "Wanneer de netspanning niet in orde is, neem dan contact op met het energiebedrijf.",
         "Wanneer de netspanning in orde is, vervang dan de pomp (spanningsmeting via de pompelektronica).",
         "Controleer de kabelboom tussen printplaat en pomp inclusief alle stekkerverbindingen."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.228",
@@ -1128,9 +1132,10 @@
         "Gasaansluitdruk te gering",
         "Dynamische gasdruk te gering",
         "Verkeerde gassoort ingesteld",
-        "Offset gasblok in D.052 en evt. D.182 verkeerd ingesteld",
-        "Gasblok defect/verkeerde ET-gasblok",
-        "Storing in verbrandingsgastraject door recirculatie of verbr dingsgasblokkade",
+        "Offset gasblok in D.052 en evt.",
+        "D.182 verkeerd ingesteld",
+        "Gasblok defect/verkeerde ETgasblok",
+        "Storing in verbrandingsgastraject door recirculatie of verbrandingsgasblokkade",
         "Luchtaanzuigbuis geblokkeerd",
         "Gasafsluitkraan gesloten",
         "Ontstekingselektrode defect",
@@ -1143,14 +1148,16 @@
         "Condenspomp (indien aanwezig) defect"
       ],
       "checks": [
-        "1. Controleer de warmtewisselaar, sifon, sifonadapter, sifonslang (verbinding tussen primaire warmtewisselaar en sifon en sifonslang buiten het product), verbrandingsgasafvoerbuisadapter, productbehuizing, voormantel en zijdelen op mogelijke beschadigingen. 2. Vervang beschadigde onderdelen direct.",
+        "1. Controleer de warmtewisselaar, sifon, sifonadapter, sifonslang (verbinding tussen primaire warmtewisselaar en sifon en sifonslang buiten het product), verbrandingsgasafvoerbuisadapter, productbehuizing, voormantel en zijdelen op mogelijke beschadigingen.",
+        "2. Vervang beschadigde onderdelen direct.",
         "Controleer de noodbedrijf en fouthistorie en voer de noodzakelijke maatregelen uit.",
         "Controleer de gasaansluitdruk.",
         "Controleer de dynamische gasdruk en de externe gasdrukregelaar.",
-        "Controleer de gassoort en de instelling van de gassoort onder D.156 en D.157.",
+        "Controleer de gassoort en de instelling van de gassoort onder",
+        "D.156 en D.157.",
         "Controleer de offsetinstelling van het gasblok.",
         "Controleer en vervang eventueel het gasblok.",
-        "Controleer het complete verbrandingsgastraject. an",
+        "Controleer het complete verbrandingsgastraject.",
         "Controleren en vervang eventueel de luchtaanzuigbuis.",
         "Open de gasafsluitkraan.",
         "Controleer en vervang de ontstekingselektrode eventueel.",
@@ -1159,10 +1166,12 @@
         "Controleer de kabelboom van de ontstekingstransformator en vervang deze eventueel.",
         "Controleer de aarding van het product.",
         "Controleer en vervang eventueel de brander.",
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon. 2. Controleer de correcte installatie van de condensafvoer. 3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander). 4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
+        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
+        "2. Controleer de correcte installatie van de condensafvoer.",
+        "3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
+        "4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
         "Controleer en reinig de condenspomp. Vervang de condenspomp eventueel."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.229",
@@ -1171,13 +1180,14 @@
       "causes": [
         "Ontsteking na valmuitval in noodbedrijf mislukt",
         "Gastoevoer onderbroken",
-        "Storing in verbrandingsgastraject door recirculatie of verbr dingsgasblokkade",
+        "Storing in verbrandingsgastraject door recirculatie of verbrandingsgasblokkade",
         "Luchtaanzuigbuis geblokkeerd",
         "Ontstekingstransformator defect",
         "Kabelboom ontstekingstransformator defect",
         "Dynamische gasdruk te gering",
-        "Gasblok defect/verkeerde ET-gasblok",
-        "Offset gasblok in D.052 en evt. D.182 verkeerd ingesteld",
+        "Gasblok defect/verkeerde ETgasblok",
+        "Offset gasblok in D.052 en evt.",
+        "D.182 verkeerd ingesteld",
         "Verkeerde gassoort ingesteld",
         "Aarding foutief",
         "Ontstekingselektrode defect",
@@ -1188,21 +1198,24 @@
       "checks": [
         "Controleer de noodbedrijf en fouthistorie en voer de noodzakelijke maatregelen uit.",
         "Controleer de gastoevoer.",
-        "Controleer het complete verbrandingsgastraject. an",
+        "Controleer het complete verbrandingsgastraject.",
         "Controleren en vervang eventueel de luchtaanzuigbuis.",
         "Controleer de ontstekingstransformator op goede werking en vervang deze eventueel.",
         "Controleer de kabelboom van de ontstekingstransformator en vervang deze eventueel.",
         "Controleer de dynamische gasdruk en de externe gasdrukregelaar.",
         "Controleer en vervang eventueel het gasblok.",
         "Controleer de offsetinstelling van het gasblok.",
-        "Controleer de gassoort en de instelling van de gassoort onder D.156 en D.157.",
+        "Controleer de gassoort en de instelling van de gassoort onder",
+        "D.156 en D.157.",
         "Controleer de aarding van het product.",
         "Controleer en vervang de ontstekingselektrode eventueel.",
         "Controleer de kabelboom van de ontstekingselektrode en vervang deze eventueel.",
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon. 2. Controleer de correcte installatie van de condensafvoer. 3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander). 4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
+        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
+        "2. Controleer de correcte installatie van de condensafvoer.",
+        "3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
+        "4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
         "Controleer en reinig de condenspomp. Vervang de condenspomp eventueel."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.235",
@@ -1215,8 +1228,7 @@
       "checks": [
         "Controleer het complete verbrandingsgastraject en deactiveer vervolgens D.145.",
         "Controleren en vervang eventueel de luchtaanzuigbuis."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.281",
@@ -1227,38 +1239,45 @@
         "Dynamische gasdruk te gering",
         "Gasaansluitdruk te gering",
         "Lucht in de gasleiding (bijv. bij eerste inbedrijfstelling)",
-        "Offset gasblok in D.052 en evt. D.182 verkeerd ingesteld",
+        "Offset gasblok in D.052 en evt.",
+        "D.182 verkeerd ingesteld",
         "Verkeerde gassoort ingesteld",
-        "Gasblok defect/verkeerde ET-gasblok",
+        "Gasblok defect/verkeerde ETgasblok",
         "Storing in verbrandingsgastraject door recirculatie of verbrandingsgasblokkade",
         "Vlamverlies bij vloeibaar gas:",
         "Luchtaanzuigbuis geblokkeerd",
         "Ontsteking mislukt",
-        "regelelektrode defect",
+        "Regelelektrode defect",
         "Kabelboom regelelektrode defect",
         "Brander defect",
         "Condenswater in de verbrandingskamer vanwege een verstopte condensafvoer",
         "Condenspomp (indien aanwezig) defect"
       ],
       "checks": [
-        "1. Controleer de warmtewisselaar, sifon, sifonadapter, sifonslang (verbinding tussen primaire warmtewisselaar en sifon en sifonslang buiten het product), verbrandingsgasafvoerbuisadapter, productbehuizing, voormantel en zijdelen op mogelijke beschadigingen. 2. Vervang beschadigde onderdelen direct.",
+        "1. Controleer de warmtewisselaar, sifon, sifonadapter, sifonslang (verbinding tussen primaire warmtewisselaar en sifon en sifonslang buiten het product), verbrandingsgasafvoerbuisadapter, productbehuizing, voormantel en zijdelen op mogelijke beschadigingen.",
+        "2. Vervang beschadigde onderdelen direct.",
         "Controleer de dynamische gasdruk en de externe gasdrukregelaar.",
         "Controleer de gasaansluitdruk.",
         "Reset het product eenmalig.",
         "Controleer de offsetinstelling van het gasblok.",
-        "Controleer de gassoort en de instelling van de gassoort onder D.156 en D.157.",
+        "Controleer de gassoort en de instelling van de gassoort onder",
+        "D.156 en D.157.",
         "Controleer en vervang eventueel het gasblok.",
         "Controleer het complete verbrandingsgastraject.",
         "Voer het testprogramma P.022 uit.",
         "Controleren en vervang eventueel de luchtaanzuigbuis.",
-        "1. Controleer de ontsteking met het testprogramma P.021. 2. Product start: ontstekingselektrode, ontstekingstransformator, gasblok en ventilator werken, gas stroomt en het gasvolume is correct, geen blokkade of recirculatie instellen. 3. Product start niet en toont weer een foutcode: voer de volgende controles uit.",
+        "1. Controleer de ontsteking met het testprogramma P.021.",
+        "2. Product start: ontstekingselektrode, ontstekingstransformator, gasblok en ventilator werken, gas stroomt en het gasvolume is correct, geen blokkade of recirculatie instellen.",
+        "3. Product start niet en toont weer een foutcode: voer de volgende controles uit.",
         "Controleer en vervang de eventueel de regelelektrode.",
         "Controleer de kabelboom van de regelelektrode en vervang deze eventueel.",
         "Controleer en vervang eventueel de brander.",
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon. 2. Controleer de correcte installatie van de condensafvoer. 3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander). 4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
+        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
+        "2. Controleer de correcte installatie van de condensafvoer.",
+        "3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
+        "4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
         "Controleer en reinig de condenspomp. Vervang de condenspomp eventueel."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.291",
@@ -1266,13 +1285,14 @@
       "meaning": "De vlam is tijdens de stabilisatietijd na uitval van de vlam tijdens de werking uitgevallen.",
       "causes": [
         "Dynamische gasdruk te gering",
-        "Offset gasblok in D.052 en evt. D.182 verkeerd ingesteld",
+        "Offset gasblok in D.052 en evt.",
+        "D.182 verkeerd ingesteld",
         "Verkeerde gassoort ingesteld",
-        "Gasblok defect/verkeerde ET-gasblok",
-        "Storing in verbrandingsgastraject door recirculatie of verbr dingsgasblokkade",
+        "Gasblok defect/verkeerde ETgasblok",
+        "Storing in verbrandingsgastraject door recirculatie of verbrandingsgasblokkade",
         "Luchtaanzuigbuis geblokkeerd",
         "Ontsteking mislukt",
-        "regelelektrode defect",
+        "Regelelektrode defect",
         "Kabelboom regelelektrode defect",
         "Condenswater in de verbrandingskamer vanwege een verstopte condensafvoer",
         "Condenspomp (indien aanwezig) defect"
@@ -1280,17 +1300,22 @@
       "checks": [
         "Controleer de dynamische gasdruk en de externe gasdrukregelaar.",
         "Controleer de offsetinstelling van het gasblok.",
-        "Controleer de gassoort en de instelling van de gassoort onder D.156 en D.157.",
+        "Controleer de gassoort en de instelling van de gassoort onder",
+        "D.156 en D.157.",
         "Controleer en vervang eventueel het gasblok.",
-        "Controleer het complete verbrandingsgastraject. an",
+        "Controleer het complete verbrandingsgastraject.",
         "Controleren en vervang eventueel de luchtaanzuigbuis.",
-        "1. Controleer de ontsteking met het testprogramma P.021. 2. Product start: ontstekingselektrode, ontstekingstransformator, gasblok en ventilator werken, gas stroomt en het gasvolume is correct, geen blokkade of recirculatie instellen. 3. Product start niet en toont weer een foutcode: voer de volgende controles uit.",
+        "1. Controleer de ontsteking met het testprogramma P.021.",
+        "2. Product start: ontstekingselektrode, ontstekingstransformator, gasblok en ventilator werken, gas stroomt en het gasvolume is correct, geen blokkade of recirculatie instellen.",
+        "3. Product start niet en toont weer een foutcode: voer de volgende controles uit.",
         "Controleer en vervang de eventueel de regelelektrode.",
         "Controleer de kabelboom van de regelelektrode en vervang deze eventueel.",
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon. 2. Controleer de correcte installatie van de condensafvoer. 3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander). 4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
+        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
+        "2. Controleer de correcte installatie van de condensafvoer.",
+        "3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
+        "4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
         "Controleer en reinig de condenspomp. Vervang de condenspomp eventueel."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.317",
@@ -1303,8 +1328,7 @@
       "checks": [
         "Controleer de kabelboom tussen printplaat en volumestroomsensor inclusief alle stekkerverbindingen.",
         "Vervang de volumestroomsensor in het warmwatercircuit."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.318",
@@ -1312,13 +1336,12 @@
       "meaning": "Het 3-weg motorventiel beweegt niet.",
       "causes": [
         "Fout in de elektrische verbinding van de 3-weg-omschakelklep",
-        "3-wegventiel defect of geblokkeerd"
+        "3- wegventiel defect of geblokkeerd"
       ],
       "checks": [
         "Controleer de kabelboom tussen printplaat en de 3-weg-omschakelklep inclusief alle stekkerverbindingen.",
         "Controleer en vervang eventueel de 3-wegklep."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.320",
@@ -1329,8 +1352,7 @@
       ],
       "checks": [
         "Reinig de pomp, vervang de pomp eventueel."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.321",
@@ -1341,8 +1363,7 @@
       ],
       "checks": [
         "Controleer en vervang de pomp eventueel."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.322",
@@ -1353,8 +1374,7 @@
       ],
       "checks": [
         "Controleer de pomp, vervang de pomp eventueel."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.323",
@@ -1367,8 +1387,7 @@
       "checks": [
         "Ontlucht de verwarmingsinstallatie.",
         "Vervang de pomp."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.324",
@@ -1381,8 +1400,7 @@
       "checks": [
         "Controleer de kabel voor de 230 V voedingsspanning naar de pomp, vervang de kabel voor de 230 V voedingsspanning eventueel.",
         "Controleer en vervang de pomp eventueel."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.325",
@@ -1395,15 +1413,14 @@
       "checks": [
         "Controleer of de pomp goed functioneert.",
         "Controleer en vervang de pomp eventueel."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.326",
       "title": "De hydraulische sensor- en actortest heeft minimaal twee hydraulische componenten vastgesteld, die niet functioneren.",
       "meaning": "De hydraulische sensor- en actortest heeft minimaal twee hydraulische componenten vastgesteld, die niet functioneren.",
       "causes": [
-        "3-wegventiel defect of geblokkeerd",
+        "3- wegventiel defect of geblokkeerd",
         "Stekker op 3-weg motorventiel niet aangesloten/los",
         "Onderbreking in de kabelboom",
         "Warmwatercircuit niet aangesloten",
@@ -1417,8 +1434,7 @@
         "Sluit het warmwatercircuit aan.",
         "Controleer de externe pomp en de systeemconfiguratie.",
         "Controleer en vervang de pomp eventueel."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.327",
@@ -1431,8 +1447,7 @@
       "checks": [
         "Controleer de boileraansluitleidingen.",
         "Controleer de secundaire warmtewisselaar op vervuiling."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.330",
@@ -1445,8 +1460,7 @@
       "checks": [
         "Controleer de kabelboom tussen printplaat en pomp inclusief alle stekkerverbindingen.",
         "Controleer en vervang de pomp eventueel."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.334",
@@ -1457,8 +1471,7 @@
       ],
       "checks": [
         "Controleer de configuratie van het verbrandingsgasafvoersysteem en sluit deze af."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.336",
@@ -1470,9 +1483,9 @@
       ],
       "checks": [
         "Stel de toegelaten configuratie voor het verbrandingsgasafvoersysteem in.",
-        "Controleer de gassoort en de instelling van de gassoort onder D.156 en D.157."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+        "Controleer de gassoort en de instelling van de gassoort onder",
+        "D.156 en D.157."
+      ]
     },
     {
       "code": "F.337",
@@ -1483,8 +1496,7 @@
       ],
       "checks": [
         "Controleer en vervang eventueel de ombouwset luchtaanzuigbuis met geïntegreerde terugstroomblokkering en lucht-massastroomsensor."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.338",
@@ -1495,8 +1507,7 @@
       ],
       "checks": [
         "Stel de toegelaten configuratie voor het verbrandingsgasafvoersysteem in."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.342",
@@ -1517,8 +1528,7 @@
         "Controleer de stekker en de stekkerverbinding van de luchtmassastroomsensor..",
         "Vervang de complete luchtaanzuigbuis .",
         "Controleer de volledige VGA."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.343",
@@ -1539,8 +1549,7 @@
         "Controleer de lucht-massastroomsensor op vervuiling.",
         "Vervang de complete luchtaanzuigbuis .",
         "Vervang de printplaat."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.344",
@@ -1551,32 +1560,31 @@
       ],
       "checks": [
         "Vervang de regelelektrode (D.146, D.147)."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+      ]
     },
     {
       "code": "F.347",
-      "title": "Er is condensaat in de verbrandingskamer geconstateerd. Het bedrijf van de brander is onder broken.",
-      "meaning": "Er is condensaat in de verbrandingskamer geconstateerd. Het bedrijf van de brander is onder broken.",
+      "title": "Er is condensaat in de verbrandingskamer geconstateerd. Het bedrijf van de brander is onderbroken.",
+      "meaning": "Er is condensaat in de verbrandingskamer geconstateerd. Het bedrijf van de brander is onderbroken.",
       "causes": [
         "Condenswater in de verbrandingskamer vanwege een verstopte condensafvoer"
       ],
       "checks": [
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon. 2. Controleer de verbrandingskamer (elektrode, isolatiematten, brander). 3. Vervang eventueel de isolatiematten in de verbrandingskamer."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
+        "2. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
+        "3. Vervang eventueel de isolatiematten in de verbrandingskamer."
+      ]
     },
     {
       "code": "F.363",
-      "title": "EEPROM van het display meldt een fout bij de lees-/schrijfte",
-      "meaning": "EEPROM van het display meldt een fout bij de lees-/schrijfte",
+      "title": "EEPROM van het display meldt een fout bij de lees-/schrijftest.",
+      "meaning": "EEPROM van het display meldt een fout bij de lees-/schrijftest.",
       "causes": [
-        "Elektronica van het display fect st."
+        "Elektronica van het display defect"
       ],
       "checks": [
-        "de- ▶ Vervang het display."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+        "Vervang het display."
+      ]
     },
     {
       "code": "F.707",
@@ -1586,9 +1594,10 @@
         "Communicatie tussen display en printplaat is in storing"
       ],
       "checks": [
-        "1. Controleer de verbinding tussen display en printplaat. 2. Vervang de kabel tussen het display en de printplaat eventueel. 3. Vervang het display of de printplaat eventueel."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+        "1. Controleer de verbinding tussen display en printplaat.",
+        "2. Vervang de kabel tussen het display en de printplaat eventueel.",
+        "3. Vervang het display of de printplaat eventueel."
+      ]
     },
     {
       "code": "F.905",
@@ -1598,9 +1607,9 @@
         "Te hoge stroom op de communicatie-interface"
       ],
       "checks": [
-        "1. Controleer de verbinding tussen printplaat en de op de interface aangesloten modules. 2. Controleer de aangesloten module en vervang deze eventueel."
-      ],
-      "note": "Werk aan gas, verbranding en geopende elektrische delen alleen volgens de geldende voorschriften en door een bevoegd vakman."
+        "1. Controleer de verbinding tussen printplaat en de op de interface aangesloten modules.",
+        "2. Controleer de aangesloten module en vervang deze eventueel."
+      ]
     }
   ]
 }

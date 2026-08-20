@@ -1,6 +1,6 @@
 const CACHE_PREFIX = "monteurmaatje-";
-const APP_CACHE = `${CACHE_PREFIX}app-github-v5`;
-const DATA_CACHE = `${CACHE_PREFIX}data-github-v5`;
+const APP_CACHE = `${CACHE_PREFIX}app-20260819-v4`;
+const DATA_CACHE = `${CACHE_PREFIX}data-20260819-v4`;
 const APP_ROOT = new URL("./", self.registration.scope).href;
 const appUrl = (path = "") => new URL(path, self.registration.scope).href;
 
@@ -9,8 +9,8 @@ const CORE_SHELL = [
   appUrl("index.html"),
   appUrl("style.css"),
   appUrl("app.js"),
-  appUrl("manifest-v3.webmanifest?v=3"),
-  appUrl("favicon-v3.svg?v=3"),
+  appUrl("manifest.webmanifest"),
+  appUrl("favicon.svg"),
   appUrl("icons/mm-app-v3-192.png?v=3"),
   appUrl("icons/mm-app-v3-512.png?v=3"),
   appUrl("icons/mm-app-v3-maskable-512.png?v=3"),
@@ -120,7 +120,12 @@ function dataShapeIsValid(url, payload) {
   const parts = url.pathname.split("/").filter(Boolean);
   const fileName = parts.at(-1) || "";
   const expectedDeviceId = parts.at(-2) || "";
-  if (!expectedDeviceId || payload.deviceId !== expectedDeviceId) return false;
+  const brandId = parts.at(-3) || "";
+  const acceptedDeviceIds = new Set([
+    expectedDeviceId,
+    brandId && expectedDeviceId ? `${brandId}-${expectedDeviceId}` : "",
+  ]);
+  if (!expectedDeviceId || !acceptedDeviceIds.has(payload.deviceId)) return false;
 
   if (fileName === "faults.json") return Array.isArray(payload.faults);
   if (fileName === "parameters.json") return Array.isArray(payload.parameters);

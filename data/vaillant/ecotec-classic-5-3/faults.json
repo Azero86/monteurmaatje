@@ -9,7 +9,7 @@
     {
       "code": "F.00",
       "title": "Onderbreking aanvoertemperatuursensor",
-      "meaning": "De ecoTEC classic /5-3 meldt F.00: Onderbreking aanvoertemperatuursensor.",
+      "meaning": "Onderbreking aanvoertemperatuursensor",
       "causes": [
         "Aanvoertemperatuursensor defect of niet aangesloten"
       ],
@@ -24,7 +24,7 @@
     {
       "code": "F.01",
       "title": "Onderbreking retourtemperatuursensor",
-      "meaning": "De ecoTEC classic /5-3 meldt F.01: Onderbreking retourtemperatuursensor.",
+      "meaning": "Onderbreking retourtemperatuursensor",
       "causes": [
         "Retourtemperatuursensor defect of niet aangesloten"
       ],
@@ -39,7 +39,7 @@
     {
       "code": "F.10",
       "title": "Kortsluiting aanvoertemperatuursensor",
-      "meaning": "De ecoTEC classic /5-3 meldt F.10: Kortsluiting aanvoertemperatuursensor.",
+      "meaning": "Kortsluiting aanvoertemperatuursensor",
       "causes": [
         "Aanvoertemperatuursensor defect of kortgesloten"
       ],
@@ -54,12 +54,13 @@
     {
       "code": "F.11",
       "title": "Kortsluiting retourtemperatuursensor",
-      "meaning": "De ecoTEC classic /5-3 meldt F.11: Kortsluiting retourtemperatuursensor.",
+      "meaning": "Kortsluiting retourtemperatuursensor",
       "causes": [
         "Retourtemperatuursensor defect of kortgesloten"
       ],
       "checks": [
-        "Controleren: NTC-stekker, kabelboom, behuizing, printplaat, NTC-sensor."
+        "Controleren: NTC-stekker, kabelboom, behuizing, printplaat,",
+        "NTC-sensor."
       ],
       "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
       "sourcePage": 38,
@@ -69,9 +70,10 @@
     {
       "code": "F.20",
       "title": "Veiligheidsuitschak. temp.begrenzer",
-      "meaning": "De ecoTEC classic /5-3 meldt F.20: Veiligheidsuitschak. temp.begrenzer.",
+      "meaning": "Veiligheidsuitschak. temp.begrenzer",
       "causes": [
-        "Maximumtemperatuur aan de aanvoer-/retourtemperatuursensor te hoog bij veiligheidstemperatuurbegrenzerfunctie via NTC"
+        "Maximumtemperatuur aan de aanvoer-/retourtemperatuursensor te hoog bij veiligheidstemperatuurbegrenzerfunctie via",
+        "NTC"
       ],
       "checks": [
         "Controleren: aanvoertemperatuurvoeler (correcte thermische verbinding), kabelboom, voldoende ventilatie."
@@ -84,12 +86,13 @@
     {
       "code": "F.22",
       "title": "Veiligheidsuitschak. watertekort",
-      "meaning": "De ecoTEC classic /5-3 meldt F.22: Veiligheidsuitschak. watertekort.",
+      "meaning": "Veiligheidsuitschak. watertekort",
       "causes": [
         "Geen of te weinig water in het product of waterdruk te laag"
       ],
       "checks": [
-        "1. Controleren: stekker, kabel naar CV-pomp of waterdruksensor, waterdruksensor, CV-pomp. 2. Testprogramma P.0 activeren en ontluchten."
+        "1. Controleren: stekker, kabel naar CV-pomp of waterdruksensor, waterdruksensor, CV-pomp.",
+        "2. Testprogramma P.0 activeren en ontluchten."
       ],
       "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
       "sourcePage": 38,
@@ -99,12 +102,14 @@
     {
       "code": "F.23",
       "title": "Veiligheidsuitschak. temp.spreid. te groot",
-      "meaning": "De ecoTEC classic /5-3 meldt F.23: Veiligheidsuitschak. temp.spreid. te groot.",
+      "meaning": "Veiligheidsuitschak. temp.spreid. te groot",
       "causes": [
-        "Temperatuurspreiding te groot. Watercirculatie te gering"
+        "Temperatuurspreiding te groot.",
+        "Watercirculatie te gering"
       ],
       "checks": [
-        "Controleren: stekker, kabel naar CV-pomp / waterdruksensor, lucht / te weinig water in het CV-circuit, aanvoer- en retourtemperatuursensor verwisseld, zeef in het hydraulische blok, waterdruksensor, CV-pomp (voldoende omloop, trap 2: D.19, D.14, zwaartekrachtrem). Testprogramma P.0 activeren."
+        "Controleren: stekker, kabel naar CV-pomp / waterdruksensor, lucht / te weinig water in het CV-circuit, aanvoer- en retourtemperatuursensor verwisseld, zeef in het hydraulische blok, waterdruksensor, CV-pomp (voldoende omloop, trap 2: D.19,",
+        "D.14, zwaartekrachtrem). Testprogramma P.0 activeren."
       ],
       "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
       "sourcePage": 38,
@@ -114,12 +119,13 @@
     {
       "code": "F.24",
       "title": "Veiligheidsuitschak. temp.stijg. te snel",
-      "meaning": "De ecoTEC classic /5-3 meldt F.24: Veiligheidsuitschak. temp.stijg. te snel.",
+      "meaning": "Veiligheidsuitschak. temp.stijg. te snel",
       "causes": [
         "temperatuurstijging te snel"
       ],
       "checks": [
-        "Controleren: stekker, kabel naar CV-pomp, lucht / te weinig water in het CV-circuit, interne ontluchter (functie), CV-pomp (te geringe systeemdruk, te grote temperatuurgradiënt aan de CV-aanvoerleiding, zwaartekrachtrem). Testprogramma P.0 activeren."
+        "Controleren: stekker, kabel naar CV-pomp, lucht / te weinig water in het CV-circuit, interne ontluchter (functie), CV-pomp (te geringe systeemdruk, te grote temperatuurgradiënt aan de",
+        "CV-aanvoerleiding, zwaartekrachtrem). Testprogramma P.0 activeren."
       ],
       "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
       "sourcePage": 38,
@@ -129,7 +135,7 @@
     {
       "code": "F.25",
       "title": "Veiligheidsuitschak. rookgastemp. te hoog",
-      "meaning": "De ecoTEC classic /5-3 meldt F.25: Veiligheidsuitschak. rookgastemp. te hoog.",
+      "meaning": "Veiligheidsuitschak. rookgastemp. te hoog",
       "causes": [
         "Verbrandingsgastemperatuur te hoog"
       ],
@@ -144,7 +150,7 @@
     {
       "code": "F.26",
       "title": "Fout brandstofklep zonder functie",
-      "meaning": "De ecoTEC classic /5-3 meldt F.26: Fout brandstofklep zonder functie.",
+      "meaning": "Fout brandstofklep zonder functie",
       "causes": [
         "Gasblokstappenmotor defect of niet aangesloten"
       ],
@@ -159,7 +165,7 @@
     {
       "code": "F.27",
       "title": "Veiligheidsuitschak. vlamsimulatie",
-      "meaning": "De ecoTEC classic /5-3 meldt F.27: Veiligheidsuitschak. vlamsimulatie.",
+      "meaning": "Veiligheidsuitschak. vlamsimulatie",
       "causes": [
         "Bewakingselektrode meldt foute vlam"
       ],
@@ -174,12 +180,14 @@
     {
       "code": "F.28",
       "title": "Uitval bij opstarten geen ontsteking",
-      "meaning": "De ecoTEC classic /5-3 meldt F.28: Uitval bij opstarten geen ontsteking.",
+      "meaning": "Uitval bij opstarten geen ontsteking",
       "causes": [
         "Uitval tijdens de startfase of ontsteking mislukt. Gasdrukregelaar of thermisch aansprekende afsluitinrichting is geactiveerd."
       ],
       "checks": [
-        "1. Controleer: gasstopkraan, dynamische gasdruk, gasblok, luchtaanzuigbuis (blokkering, losgeraakte schroef), condenstraject (verstopping), multistekker, kabelboom, ontstekingstransformator, ontstekingskabel, ontstekingsstekker, ontstekingselektrode, bewakingselektrode, elektronica, aarding, CO₂-instelling. 2. Geldigheid: alleen producten, die zijn omgebouwd naar meervoudige bezetting in overdrukbedrijf. – Controleer: werking van de terugstroomblokkering (in verbrandingsgastraject of mengbuis), luchtaanzuigbuis (blokkering)"
+        "1. Controleer: gasstopkraan, dynamische gasdruk, gasblok, luchtaanzuigbuis (blokkering, losgeraakte schroef), condenstraject (verstopping), multistekker, kabelboom, ontstekingstransformator, ontstekingskabel, ontstekingsstekker, ontstekingselektrode, bewakingselektrode, elektronica, aarding, CO₂-instelling.",
+        "2. Geldigheid: alleen producten, die zijn omgebouwd naar meervoudige bezetting in overdrukbedrijf.",
+        "Controleer: werking van de terugstroomblokkering (in verbrandingsgastraject of mengbuis), luchtaanzuigbuis (blokkering)"
       ],
       "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
       "sourcePage": 38,
@@ -189,7 +197,7 @@
     {
       "code": "F.29",
       "title": "Uitval in bedrijf geen ontsteking",
-      "meaning": "De ecoTEC classic /5-3 meldt F.29: Uitval in bedrijf geen ontsteking.",
+      "meaning": "Uitval in bedrijf geen ontsteking",
       "causes": [
         "Gastoevoer tijdelijk onderbroken. Nieuwe ontsteking zonder succes."
       ],
@@ -204,7 +212,7 @@
     {
       "code": "F.32",
       "title": "Fout ventilator",
-      "meaning": "De ecoTEC classic /5-3 meldt F.32: Fout ventilator.",
+      "meaning": "Fout ventilator",
       "causes": [
         "Ventilator defect of niet aangesloten"
       ],
@@ -219,7 +227,7 @@
     {
       "code": "F.49",
       "title": "Fout eBUS",
-      "meaning": "De ecoTEC classic /5-3 meldt F.49: Fout eBUS.",
+      "meaning": "Fout eBUS",
       "causes": [
         "Onderspanning aan de eBUS"
       ],
@@ -234,7 +242,7 @@
     {
       "code": "F.61",
       "title": "Fout brandstofklepaansturing",
-      "meaning": "De ecoTEC classic /5-3 meldt F.61: Fout brandstofklepaansturing.",
+      "meaning": "Fout brandstofklepaansturing",
       "causes": [
         "Gasblok kan niet aangestuurd worden"
       ],
@@ -249,7 +257,7 @@
     {
       "code": "F.62",
       "title": "Fout brandstofklep uitschakelvertr.",
-      "meaning": "De ecoTEC classic /5-3 meldt F.62: Fout brandstofklep uitschakelvertr..",
+      "meaning": "Fout brandstofklep uitschakelvertr.",
       "causes": [
         "Vertraagde uitschakeling van de gasklep na het doven van de vlam"
       ],
@@ -264,7 +272,7 @@
     {
       "code": "F.63",
       "title": "Fout EEPROM",
-      "meaning": "De ecoTEC classic /5-3 meldt F.63: Fout EEPROM.",
+      "meaning": "Fout EEPROM",
       "causes": [
         "EEPROM defect"
       ],
@@ -279,7 +287,7 @@
     {
       "code": "F.64",
       "title": "Fout elektronica/sensor",
-      "meaning": "De ecoTEC classic /5-3 meldt F.64: Fout elektronica/sensor.",
+      "meaning": "Fout elektronica/sensor",
       "causes": [
         "Elektronica, veiligheidsrelevante sensor of kabel defect"
       ],
@@ -294,12 +302,13 @@
     {
       "code": "F.65",
       "title": "Fout elektronicatemp.",
-      "meaning": "De ecoTEC classic /5-3 meldt F.65: Fout elektronicatemp..",
+      "meaning": "Fout elektronicatemp.",
       "causes": [
         "Elektronica defect of door externe inwerking te heet"
       ],
       "checks": [
-        "1. Controleren: printplaat. 2. Evt. omgevingstemperatuur verlagen."
+        "1. Controleren: printplaat.",
+        "2. Evt. omgevingstemperatuur verlagen."
       ],
       "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
       "sourcePage": 39,
@@ -309,7 +318,7 @@
     {
       "code": "F.67",
       "title": "Fout elektronica/vlam",
-      "meaning": "De ecoTEC classic /5-3 meldt F.67: Fout elektronica/vlam.",
+      "meaning": "Fout elektronica/vlam",
       "causes": [
         "Niet plausibel vlamsignaal"
       ],
@@ -324,7 +333,7 @@
     {
       "code": "F.68",
       "title": "Fout vlamsignaal instabiel",
-      "meaning": "De ecoTEC classic /5-3 meldt F.68: Fout vlamsignaal instabiel.",
+      "meaning": "Fout vlamsignaal instabiel",
       "causes": [
         "Vlambeveiliging meldt instabiel vlamsignaal"
       ],
@@ -339,7 +348,7 @@
     {
       "code": "F.70",
       "title": "Fout ongeldige toestelcode",
-      "meaning": "De ecoTEC classic /5-3 meldt F.70: Fout ongeldige toestelcode.",
+      "meaning": "Fout ongeldige toestelcode",
       "causes": [
         "Verkeerde/ontbrekende toestelherkenning of verkeerde/ontbrekende codeerweerstand"
       ],
@@ -354,7 +363,7 @@
     {
       "code": "F.71",
       "title": "Fout aanvoertemperatuursensor",
-      "meaning": "De ecoTEC classic /5-3 meldt F.71: Fout aanvoertemperatuursensor.",
+      "meaning": "Fout aanvoertemperatuursensor",
       "causes": [
         "Aanvoertemperatuursensor levert niet plausibele waarde"
       ],
@@ -369,9 +378,9 @@
     {
       "code": "F.72",
       "title": "Fout aanvoer-/retourtemperatuursensor",
-      "meaning": "De ecoTEC classic /5-3 meldt F.72: Fout aanvoer-/retourtemperatuursensor.",
+      "meaning": "Fout aanvoer-/retourtemperatuursensor",
       "causes": [
-        "Temperatuurverschil aanvoer/retourtemperatuursensor is te groot"
+        "Temperatuurverschil aanvoer- /retourtemperatuursensor is te groot"
       ],
       "checks": [
         "Controleren: aanvoertemperatuursensor/retourtemperatuursensor (functie, correcte thermische verbinding)."
@@ -384,7 +393,7 @@
     {
       "code": "F.73",
       "title": "Fout waterdruksensor (signaal te laag)",
-      "meaning": "De ecoTEC classic /5-3 meldt F.73: Fout waterdruksensor (signaal te laag).",
+      "meaning": "Fout waterdruksensor (signaal te laag)",
       "causes": [
         "Waterdruksensor meldt te lage waterdruk"
       ],
@@ -399,12 +408,13 @@
     {
       "code": "F.74",
       "title": "Fout waterdruksensor (signaal te hoog)",
-      "meaning": "De ecoTEC classic /5-3 meldt F.74: Fout waterdruksensor (signaal te hoog).",
+      "meaning": "Fout waterdruksensor (signaal te hoog)",
       "causes": [
         "Waterdruk te hoog"
       ],
       "checks": [
-        "1. Tap water af. 2. Controleer de waterdruksensor."
+        "1. Tap water af.",
+        "2. Controleer de waterdruksensor."
       ],
       "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
       "sourcePage": 39,
@@ -414,12 +424,13 @@
     {
       "code": "F.75",
       "title": "Fout pomp/watertekort",
-      "meaning": "De ecoTEC classic /5-3 meldt F.75: Fout pomp/watertekort.",
+      "meaning": "Fout pomp/watertekort",
       "causes": [
         "Bij de start van de pomp wordt onvoldoende druksprong herkend"
       ],
       "checks": [
-        "1. Controleren: waterdruksensor, CV-pomp (blokkering), CVcircuit (lucht, voldoende waterhoeveelheid), instelbare bypass, extern expansievat (moet op de retourleiding zijn aangesloten). Testprogramma P.0 activeren. 2. Indien open verdeler of retourbuis >1 1/2 inch geïnstalleerd, dan 3/4-inch afdichting in de CV-aanvoerleiding door afscherming vervangen. Evt. servicekit F.75 installeren."
+        "1. Controleren: waterdruksensor, CV-pomp (blokkering), CVcircuit (lucht, voldoende waterhoeveelheid), instelbare bypass, extern expansievat (moet op de retourleiding zijn aangesloten). Testprogramma P.0 activeren.",
+        "2. Indien open verdeler of retourbuis >1 1/2 inch geïnstalleerd, dan 3/4-inch afdichting in de CV-aanvoerleiding door afscherming vervangen. Evt. servicekit F.75 installeren."
       ],
       "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
       "sourcePage": 39,
@@ -429,7 +440,7 @@
     {
       "code": "F.77",
       "title": "Fout rookgasklep/ condenspomp",
-      "meaning": "De ecoTEC classic /5-3 meldt F.77: Fout rookgasklep/ condenspomp.",
+      "meaning": "Fout rookgasklep/ condenspomp",
       "causes": [
         "Ontbrekende terugmelding van de verbrandingsgasklep; overloop van de condenspomp"
       ],
@@ -444,12 +455,13 @@
     {
       "code": "F.78",
       "title": "Onderbr. WW-uitloopsensor aan ext. thermostaat",
-      "meaning": "De ecoTEC classic /5-3 meldt F.78: Onderbr. WW-uitloopsensor aan ext. thermostaat.",
+      "meaning": "Onderbr. WW-uitloopsensor aan ext. thermostaat",
       "causes": [
         "UK link box is aangesloten zonder dat de warmwatertemperatuursensor is gebrugd"
       ],
       "checks": [
-        "1. Controleren: toebehoren (configuratie/elektrische aansluiting). 2. Het toestel geeft de storing weer, er is echter geen storing aan het toestel."
+        "1. Controleren: toebehoren (configuratie/elektrische aansluiting).",
+        "2. Het toestel geeft de storing weer, er is echter geen storing aan het toestel."
       ],
       "source": "https://www.vaillant.nl/api/download/product/nl/_ecotec-classic_1452305.pdf",
       "sourcePage": 39,
@@ -459,9 +471,9 @@
     {
       "code": "F.83",
       "title": "Fout NTC temp.wijziging",
-      "meaning": "De ecoTEC classic /5-3 meldt F.83: Fout NTC temp.wijziging.",
+      "meaning": "Fout NTC temp.wijziging",
       "causes": [
-        "Temperatuurverschil aanvoer/retourtemperatuursensor is te klein"
+        "Temperatuurverschil aanvoer- /retourtemperatuursensor is te klein"
       ],
       "checks": [
         "Controleren: aanvoer-/retourtemperatuursensor (werking, correcte thermische verbinding), voldoende waterhoeveelheid."
@@ -474,7 +486,7 @@
     {
       "code": "F.84",
       "title": "Fout NTC-temp. niet plausibel",
-      "meaning": "De ecoTEC classic /5-3 meldt F.84: Fout NTC-temp. niet plausibel.",
+      "meaning": "Fout NTC-temp. niet plausibel",
       "causes": [
         "Temperatuurverschil is niet plausibel"
       ],
@@ -489,7 +501,7 @@
     {
       "code": "F.85",
       "title": "Fout NTC's fout gemonteerd",
-      "meaning": "De ecoTEC classic /5-3 meldt F.85: Fout NTC's fout gemonteerd.",
+      "meaning": "Fout NTC's fout gemonteerd",
       "causes": [
         "Aanvoer-/retourtemperatuursensoren leveren verkeerde/niet plausibele waarden"
       ],
