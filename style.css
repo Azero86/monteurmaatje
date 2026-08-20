@@ -299,3 +299,154 @@ html[data-theme="dark"] .parameter-addition strong{color:#f5eee9}
   .parameter-list dd{max-width:none;text-align:left}
   .parameter-list .parameter-choices-row{grid-template-columns:1fr}
 }
+
+
+/* MonteurMaatje vaste hoofdnavigatie — sluit aan op bestaande huisstijl */
+body{padding-bottom:calc(82px + env(safe-area-inset-bottom))}
+.bottom-nav{
+  position:fixed;
+  z-index:1200;
+  left:50%;
+  bottom:0;
+  transform:translateX(-50%);
+  width:min(1180px,100%);
+  min-height:68px;
+  padding:7px max(14px,env(safe-area-inset-right)) calc(7px + env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left));
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:6px;
+  background:rgba(255,255,255,.96);
+  border:1px solid var(--line);
+  border-bottom:0;
+  border-radius:20px 20px 0 0;
+  box-shadow:0 -10px 35px rgba(86,48,31,.09);
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+}
+.bottom-nav-item{
+  appearance:none;
+  border:0;
+  background:transparent;
+  color:var(--muted);
+  border-radius:13px;
+  min-height:54px;
+  padding:7px 10px 6px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:3px;
+  cursor:pointer;
+  font-size:11px;
+  font-weight:800;
+  line-height:1;
+  transition:background .16s,color .16s,transform .16s;
+}
+.bottom-nav-item svg{
+  width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;
+  stroke-linecap:round;stroke-linejoin:round;
+}
+.bottom-nav-item:hover{background:var(--accent-soft);color:var(--accent)}
+.bottom-nav-item:active{transform:translateY(1px)}
+.bottom-nav-item.active{
+  color:var(--accent);
+  background:var(--accent-soft);
+}
+.bottom-nav-item.active svg{stroke-width:2.1}
+
+.hidden-view{display:none!important}
+.info-view{width:min(1180px,100% - 48px);margin:0 auto;padding:62px 0 54px}
+.info-shell{max-width:900px}
+.info-shell .section-kicker{color:var(--accent)}
+.info-shell>h1{
+  margin:12px 0 14px;
+  color:var(--ink);
+  font-size:clamp(38px,5vw,64px);
+  line-height:1;
+  letter-spacing:-.05em;
+  font-weight:760;
+}
+.info-intro{max-width:700px;color:var(--muted);font-size:16px;line-height:1.65;margin:0 0 30px}
+.info-grid{display:grid;gap:12px}
+.info-card{
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.93);
+  border-radius:23px;
+  min-height:104px;
+  padding:18px 20px;
+  display:grid;
+  grid-template-columns:48px 1fr auto;
+  gap:15px;
+  align-items:center;
+  box-shadow:var(--shadow);
+}
+.info-icon{
+  width:46px;height:46px;border-radius:13px;
+  background:var(--accent-soft);
+  color:var(--accent);
+  display:grid;place-items:center;
+  font-weight:900;font-size:15px;
+}
+.info-card h2{margin:0 0 5px;color:var(--ink);font-size:17px;letter-spacing:-.02em}
+.info-card p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}
+.coming-badge{
+  border:1px solid var(--line);
+  background:var(--surface-muted);
+  color:var(--muted);
+  border-radius:999px;
+  padding:7px 10px;
+  font-size:10px;
+  font-weight:800;
+  white-space:nowrap;
+}
+.info-note{margin:20px 2px 0;color:var(--muted);font-size:12px;line-height:1.6}
+
+/* Dark mode: exact dezelfde warme charcoal/koraal taal als bestaande app. */
+html[data-theme="dark"] .bottom-nav{
+  background:rgba(36,32,30,.97);
+  border-color:#443b36;
+  box-shadow:0 -10px 35px rgba(0,0,0,.28);
+}
+html[data-theme="dark"] .bottom-nav-item{color:#a99c94}
+html[data-theme="dark"] .bottom-nav-item:hover,
+html[data-theme="dark"] .bottom-nav-item.active{
+  background:#342c28;
+  color:#ff8a69;
+}
+html[data-theme="dark"] .info-card{
+  background:rgba(36,32,30,.96);
+  border-color:#443b36;
+  box-shadow:none;
+}
+html[data-theme="dark"] .info-icon{
+  background:#342c28;
+  color:#ff8a69;
+}
+html[data-theme="dark"] .coming-badge{
+  background:#2b2623;
+  border-color:#4b403a;
+  color:#c8bbb3;
+}
+html[data-theme="dark"] .info-intro,
+html[data-theme="dark"] .info-card p,
+html[data-theme="dark"] .info-note{color:#b9aca4}
+html[data-theme="dark"] .info-shell>h1,
+html[data-theme="dark"] .info-card h2{color:#f6eee9}
+html[data-theme="dark"] .info-shell .section-kicker{color:#ff6750}
+
+@media(max-width:640px){
+  body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+  .bottom-nav{
+    width:100%;
+    border-left:0;border-right:0;
+    border-radius:18px 18px 0 0;
+    min-height:64px;
+    padding-top:6px;
+  }
+  .bottom-nav-item{min-height:50px;font-size:10px}
+  .bottom-nav-item svg{width:21px;height:21px}
+  .info-view{width:min(100% - 28px,1180px);padding:42px 0 40px}
+  .info-card{grid-template-columns:44px 1fr;padding:15px}
+  .coming-badge{grid-column:2;justify-self:start}
+  .info-intro{font-size:14px}
+}

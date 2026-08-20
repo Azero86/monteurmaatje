@@ -446,7 +446,7 @@
   async function registerServiceWorker() {
     if (!("serviceWorker" in navigator) || location.protocol === "file:") return;
     try {
-      const registration = await navigator.serviceWorker.register(appUrl("sw.js?v=4"), { updateViaCache: "none" });
+      const registration = await navigator.serviceWorker.register(appUrl("sw.js?v=7"), { updateViaCache: "none" });
       if (registration.waiting && navigator.serviceWorker.controller) exposeWaiting(registration.waiting);
       registration.addEventListener("updatefound", () => {
         const installing = registration.installing;
@@ -472,6 +472,46 @@
     }
     registerServiceWorker();
   }
+
+
+  // Hoofdnavigatie: Home is de bestaande MonteurMaatje-flow.
+  const appViews = {
+    home: document.getElementById("homeView"),
+    regulations: document.getElementById("regulationsView"),
+    knowledge: document.getElementById("knowledgeView"),
+  };
+  const navButtons = [...document.querySelectorAll("[data-nav-target]")];
+
+  function showAppView(target, { updateHistory = true } = {}) {
+    if (!appViews[target]) target = "home";
+    for (const [name, view] of Object.entries(appViews)) {
+      view?.classList.toggle("hidden-view", name !== target);
+      view?.classList.toggle("active", name === target);
+    }
+    navButtons.forEach(button => {
+      const active = button.dataset.navTarget === target;
+      button.classList.toggle("active", active);
+      if (active) button.setAttribute("aria-current", "page");
+      else button.removeAttribute("aria-current");
+    });
+    if (updateHistory) {
+      const hash = target === "home" ? "#home" : `#${target}`;
+      if (location.hash !== hash) history.pushState({ mmView: target }, "", hash);
+    }
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }
+
+  function viewFromLocation() {
+    const value = location.hash.replace(/^#/, "");
+    return ["home", "regulations", "knowledge"].includes(value) ? value : "home";
+  }
+
+  navButtons.forEach(button => {
+    button.addEventListener("click", () => showAppView(button.dataset.navTarget));
+  });
+  window.addEventListener("popstate", () => showAppView(viewFromLocation(), { updateHistory: false }));
+  window.addEventListener("hashchange", () => showAppView(viewFromLocation(), { updateHistory: false }));
+  showAppView(viewFromLocation(), { updateHistory: false });
 
   init();
 })();

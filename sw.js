@@ -1,6 +1,6 @@
 const CACHE_PREFIX = "monteurmaatje-";
-const APP_CACHE = `${CACHE_PREFIX}app-20260819-v4`;
-const DATA_CACHE = `${CACHE_PREFIX}data-20260819-v4`;
+const APP_CACHE = `${CACHE_PREFIX}app-20260820-v7`;
+const DATA_CACHE = `${CACHE_PREFIX}data-20260820-v7`;
 const APP_ROOT = new URL("./", self.registration.scope).href;
 const appUrl = (path = "") => new URL(path, self.registration.scope).href;
 
