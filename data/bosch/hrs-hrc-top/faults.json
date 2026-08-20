@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "hrs-hrc-top",
+  "source": {
+    "title": "Bosch HRS/HRC Top installatievoorschrift, document 6 720 611 393 NL (04.12)",
+    "url": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720611393"
+  },
+  "faults": [
+    {
+      "code": "00",
+      "codeType": "melding",
+      "title": "Ontluchtingsfunctie, zie pagina 47",
+      "meaning": "Ontluchtingsfunctie, zie pagina 47.",
+      "causes": [],
+      "checks": [],
+      "sourcePage": 56
+    },
+    {
+      "code": "-II-",
+      "codeType": "melding",
+      "title": "Sifonvulprogramma in werking, zie pagina 47",
+      "meaning": "Sifonvulprogramma in werking, zie pagina 47.",
+      "causes": [],
+      "checks": [],
+      "sourcePage": 56
+    },
+    {
+      "code": "A1",
+      "codeType": "storing",
+      "title": "Dialoogpomp drooggelopen",
+      "meaning": "Dialoogpomp drooggelopen.",
+      "causes": [],
+      "checks": [
+        "Controleer de vuldruk van de installatie. Vul eventueel bij en ontlucht."
+      ],
+      "sourcePage": 56
+    },
+    {
+      "code": "A5",
+      "codeType": "storing",
+      "title": "Boiler-NTC 2 defect (HRC Top.. met voorraadsysteem)",
+      "meaning": "Boiler-NTC 2 defect (HRC Top.. met voorraadsysteem).",
+      "causes": [],
+      "checks": [
+        "Controleer boiler-NTC 2 en aansluitkabel op onderbreking of kortsluiting."
+      ],
+      "sourcePage": 56
+    },
+    {
+      "code": "A7",
+      "codeType": "storing",
+      "title": "Warmwater-NTC defect (HRC Top...)",
+      "meaning": "Warmwater-NTC defect (HRC Top...).",
+      "causes": [],
+      "checks": [
+        "Controleer warmwater-NTC 2 en aansluitkabel op onderbreking of kortsluiting."
+      ],
+      "sourcePage": 56
+    },
+    {
+      "code": "A8",
+      "codeType": "storing",
+      "title": "Communicatie onderbroken",
+      "meaning": "Communicatie onderbroken.",
+      "causes": [],
+      "checks": [
+        "Controleer verbindingskabel, busmodule en regelaar."
+      ],
+      "sourcePage": 56
+    },
+    {
+      "code": "AC",
+      "codeType": "storing",
+      "title": "Module niet herkend",
+      "meaning": "Module niet herkend.",
+      "causes": [],
+      "checks": [
+        "Controleer de verbindingskabel tussen busmo- dule en Heatronic. Vervang de busmodule."
+      ],
+      "sourcePage": 56
+    },
+    {
+      "code": "Ad",
+      "codeType": "storing",
+      "title": "Boiler-NTC 1 wordt niet herkend",
+      "meaning": "Boiler-NTC 1 wordt niet herkend.",
+      "causes": [],
+      "checks": [
+        "Controleer boiler-NTC 1 en aansluitkabel."
+      ],
+      "sourcePage": 56
+    },
+    {
+      "code": "C1",
+      "codeType": "storing",
+      "title": "Ventilatortoerental te laag",
+      "meaning": "Ventilatortoerental te laag.",
+      "causes": [],
+      "checks": [
+        "Controleer ventilator, kabel en stekker en ver- vang indien nodig."
+      ],
+      "sourcePage": 56
+    },
+    {
+      "code": "CC",
+      "codeType": "storing",
+      "title": "Buitentemperatuur-NTC niet herkend",
+      "meaning": "Buitentemperatuur-NTC niet herkend.",
+      "causes": [],
+      "checks": [
+        "Controleer buitenvoeler en aansluitkabel op onderbreking. Vervang de busmodule."
+      ],
+      "sourcePage": 56
+    },
+    {
+      "code": "E2",
+      "codeType": "storing",
+      "title": "Aanvoer NTC heeft onderbreking of kortsluiting",
+      "meaning": "Aanvoer NTC heeft onderbreking of kortsluiting.",
+      "causes": [],
+      "checks": [
+        "Controleer aanvoer-NTC en aansluitkabel."
+      ],
+      "sourcePage": 56
+    },
+    {
+      "code": "E9",
+      "codeType": "storing",
+      "title": "Temperatuurbegrenzer in aanvoer is geacti- veerd",
+      "meaning": "Temperatuurbegrenzer in aanvoer is geacti- veerd.",
+      "causes": [],
+      "checks": [
+        "Controleer de installatiedruk, de temperatuurbegrenzers, het lopen van de pomp en de zekering op de printplaat. Ontlucht het toestel."
+      ],
+      "sourcePage": 56
+    },
+    {
+      "code": "EA",
+      "codeType": "storing",
+      "title": "Vlam wordt niet herkend (geen ionisatie)",
+      "meaning": "Vlam wordt niet herkend (geen ionisatie).",
+      "causes": [],
+      "checks": [
+        "Is de gaskraan open? Controleer gasvoordruk, netaansluiting, ontstekingselektrode en kabel, ionisatie-elektrode en kabel, rookgaspijp en CO₂"
+      ],
+      "sourcePage": 56
+    },
+    {
+      "code": "F0",
+      "codeType": "storing",
+      "title": "Interne fout",
+      "meaning": "Interne fout",
+      "causes": [],
+      "checks": [
+        "Controleer of elektrische steekcontacten, ont- stekingsleidingen RAM en busmodule goed vastzitten. Vervang indien nodig printplaat of busmodule."
+      ],
+      "sourcePage": 56
+    },
+    {
+      "code": "F7",
+      "codeType": "storing",
+      "title": "Vlam wordt herkend, hoewel toestel uitgescha- keld is",
+      "meaning": "Vlam wordt herkend, hoewel toestel uitgescha- keld is.",
+      "causes": [],
+      "checks": [
+        "Controleer elektrodenset, maak de printplaat droog. Rookgasafvoer in orde?"
+      ],
+      "sourcePage": 56
+    },
+    {
+      "code": "FA",
+      "codeType": "storing",
+      "title": "Vlam wordt herkend na gasuitschakeling",
+      "meaning": "Vlam wordt herkend na gasuitschakeling.",
+      "causes": [],
+      "checks": [
+        "Controleer gasarmatuur en kabels naar gasarmatuur. Reinig de condenswatersifon en de elektrodenset. Rookgasafvoer in orde?"
+      ],
+      "sourcePage": 56
+    },
+    {
+      "code": "FC",
+      "codeType": "storing",
+      "title": "Tekstdisplay wordt niet herkend",
+      "meaning": "Tekstdisplay wordt niet herkend.",
+      "causes": [],
+      "checks": [
+        "Controleer de verbindingskabel tussen tekstdis- play en Heatronic. Vervang het tekstdisplay."
+      ],
+      "sourcePage": 56
+    },
+    {
+      "code": "Fd",
+      "codeType": "storing",
+      "title": "Ontstoringsknop is ingedrukt, hoewel de ontsto- ringsknop niet verlicht is geweest",
+      "meaning": "Ontstoringsknop is ingedrukt, hoewel de ontsto- ringsknop niet verlicht is geweest.",
+      "causes": [],
+      "checks": [
+        "Druk opnieuw op de ontstoringsknop."
+      ],
+      "sourcePage": 56
+    },
+    {
+      "code": "b1",
+      "codeType": "storing",
+      "title": "Codeerstekker wordt niet herkend",
+      "meaning": "Codeerstekker wordt niet herkend.",
+      "causes": [],
+      "checks": [
+        "Steek de codeerstekker goed vast, meet deze en vervang indien nodig."
+      ],
+      "sourcePage": 56
+    },
+    {
+      "code": "d1",
+      "codeType": "storing",
+      "title": "LSM vergrendeld",
+      "meaning": "LSM vergrendeld.",
+      "causes": [],
+      "checks": [
+        "Controleer de bedrading van de LSM 5. Begrenzer van de vloerverwarming is geacti- veerd."
+      ],
+      "sourcePage": 56
+    },
+    {
+      "code": "d3",
+      "codeType": "storing",
+      "title": "Brug 8-9 niet herkend",
+      "meaning": "Brug 8-9 niet herkend.",
+      "causes": [],
+      "checks": [
+        "Stekker niet vastgestoken, brug ontbreekt, begrenzer van vloerverwarming geactiveerd."
+      ],
+      "sourcePage": 56
+    }
+  ]
+}

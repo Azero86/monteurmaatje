@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "title": "Verbrandingsinstellingen Bosch HRS/HRC Top",
+  "measurements": [
+    {
+      "label": "CO₂ Bosch 22 HRS Top — aardgas maximaal",
+      "value": 9.0,
+      "unit": "%",
+      "load": "Maximaal",
+      "condition": "Aardgas"
+    },
+    {
+      "label": "CO₂ Bosch 22 HRS Top — aardgas minimaal",
+      "value": 8.8,
+      "unit": "%",
+      "load": "Minimaal",
+      "condition": "Aardgas"
+    },
+    {
+      "label": "CO₂ Bosch 22 HRS Top — propaan maximaal",
+      "value": 10.8,
+      "unit": "%",
+      "load": "Maximaal",
+      "condition": "Propaan"
+    },
+    {
+      "label": "CO₂ Bosch 22 HRS Top — propaan minimaal",
+      "value": 10.5,
+      "unit": "%",
+      "load": "Minimaal",
+      "condition": "Propaan"
+    },
+    {
+      "label": "CO₂ Bosch 28 HRS Top — aardgas maximaal",
+      "value": 9.0,
+      "unit": "%",
+      "load": "Maximaal",
+      "condition": "Aardgas"
+    },
+    {
+      "label": "CO₂ Bosch 28 HRS Top — aardgas minimaal",
+      "value": 8.8,
+      "unit": "%",
+      "load": "Minimaal",
+      "condition": "Aardgas"
+    },
+    {
+      "label": "CO₂ Bosch 28 HRS Top — propaan maximaal",
+      "value": 10.8,
+      "unit": "%",
+      "load": "Maximaal",
+      "condition": "Propaan"
+    },
+    {
+      "label": "CO₂ Bosch 28 HRS Top — propaan minimaal",
+      "value": 10.5,
+      "unit": "%",
+      "load": "Minimaal",
+      "condition": "Propaan"
+    },
+    {
+      "label": "CO₂ Bosch 35 HRC Top — aardgas maximaal/minimaal",
+      "value": 9.0,
+      "unit": "%",
+      "load": "Maximaal en minimaal",
+      "condition": "Aardgas"
+    },
+    {
+      "label": "CO₂ Bosch 35 HRC Top — propaan maximaal/minimaal",
+      "value": 10.8,
+      "unit": "%",
+      "load": "Maximaal en minimaal",
+      "condition": "Propaan"
+    },
+    {
+      "label": "CO₂ Bosch 42 HRS Top — aardgas maximaal/minimaal",
+      "value": 9.2,
+      "unit": "%",
+      "load": "Maximaal en minimaal",
+      "condition": "Aardgas"
+    },
+    {
+      "label": "CO₂ Bosch 42 HRS Top — propaan maximaal/minimaal",
+      "value": 10.8,
+      "unit": "%",
+      "load": "Maximaal en minimaal",
+      "condition": "Propaan"
+    }
+  ],
+  "settings": [],
+  "measurementConditions": [
+    "Gas/luchtverhouding uitsluitend via CO₂ met elektronisch meetapparaat op minimaal en maximaal vermogen instellen."
+  ],
+  "technicalExplanation": "Expliciete CO₂-waarden uit tabel 18 t/m 21 van de Bosch HRS/HRC Top installatiehandleiding.",
+  "notes": [
+    "Rookgasafvoerdichtheidscontrole: O₂ in verbrandingslucht niet onder 20,6%; CO₂ niet boven 0,2%."
+  ],
+  "sourcePage": "49",
+  "verified": true,
+  "deviceId": "hrs-hrc-top",
+  "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720611393"
+}

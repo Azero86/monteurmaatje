@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "hrs-hrc-top",
+  "source": {
+    "title": "Bosch HRS/HRC Top installatievoorschrift, document 6 720 611 393 NL (04.12)",
+    "url": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720611393"
+  },
+  "parameters": [
+    {
+      "code": "2.3",
+      "description": "Boiler opwarmvermogen",
+      "category": "",
+      "factoryDefault": "100 %",
+      "settingRange": "min. nominaal - max. warmwatervermogen",
+      "choices": [],
+      "technicalExplanation": "Boileropwarmvermogen afstemmen op het overdrachtsvermogen van de warmwaterboiler.",
+      "sourcePage": 45
+    },
+    {
+      "code": "2.4",
+      "description": "Antipendelprogramma",
+      "category": "",
+      "factoryDefault": "3 min",
+      "settingRange": "0 - 15 min",
+      "choices": [],
+      "technicalExplanation": "Alleen actief wanneer automatisch antipendelprogramma 2.7 is uitgeschakeld. Bij 0 is het antipendelprogramma uitgeschakeld; kortste schakeltijd 1 minuut.",
+      "sourcePage": 45
+    },
+    {
+      "code": "2.5",
+      "description": "Max. aanvoertemperatuur",
+      "category": "",
+      "factoryDefault": "88 °C",
+      "settingRange": "35 - 88 °C",
+      "choices": [],
+      "technicalExplanation": "Begrenst de maximale aanvoertemperatuur.",
+      "sourcePage": 45
+    },
+    {
+      "code": "2.7",
+      "description": "Automatisch antipendelprogramma",
+      "category": "",
+      "factoryDefault": "aan",
+      "settingRange": "aan / uit",
+      "choices": [
+        "Automatische antipendelblokkering aan",
+        "Automatische aanpassing uit; stel daarna 2.4 in"
+      ],
+      "technicalExplanation": "Bij een weersafhankelijke regelaar wordt het antipendelprogramma automatisch aangepast.",
+      "sourcePage": 45
+    },
+    {
+      "code": "3.4",
+      "description": "Pompmodus",
+      "category": "",
+      "factoryDefault": "2",
+      "settingRange": "0 - 3",
+      "choices": [
+        "0 = voorraadsysteem aangesloten",
+        "1 = verwarmingspomp + externe driewegklep voor boileropwarming",
+        "2 = circulatie- en boileropwarmpomp; bij ECO afwisselend 12 min verwarmen / 12 min boiler (fabrieksinstelling)",
+        "3 = circulatie- en boileropwarmpomp gelijktijdig; boileropwarmtemperatuur heeft voorrang tot 85 °C"
+      ],
+      "technicalExplanation": "Alleen Bosch 22/28/42 HRS Top.",
+      "sourcePage": 45
+    },
+    {
+      "code": "3.5",
+      "description": "Blokkeertijd verwarmingspomp",
+      "category": "",
+      "factoryDefault": "30 s",
+      "settingRange": "0 - 240 s",
+      "choices": [],
+      "technicalExplanation": "Alleen Bosch 22/28/42 HRS Top en alleen bij pompmodus 1; gelijk instellen aan de omlooptijd van de externe driewegklep.",
+      "sourcePage": 45
+    },
+    {
+      "code": "5.0",
+      "description": "Verwarmingscapaciteit",
+      "category": "",
+      "factoryDefault": "modelafhankelijk",
+      "settingRange": "min. - max. nominaal vermogen",
+      "choices": [
+        "Bosch 22 HRS Top: fabrieksinstelling 80 %",
+        "Bosch 28 HRS Top: fabrieksinstelling 100 %",
+        "Bosch 35 HRC Top: fabrieksinstelling 100 %",
+        "Bosch 42 HRS Top: fabrieksinstelling 100 %"
+      ],
+      "technicalExplanation": "Verwarmingsvermogen begrenzen op de specifieke warmtebehoefte; warmwater/boiler houdt maximaal nominaal vermogen beschikbaar.",
+      "sourcePage": 46
+    },
+    {
+      "code": "6.8",
+      "description": "Antipendeltijd warmhouden",
+      "category": "",
+      "factoryDefault": "20 min",
+      "settingRange": "20 - 60 min",
+      "choices": [],
+      "technicalExplanation": "Alleen HRC Top; bepaalt de tijd tot opnieuw inschakelen voor warmhouden in comfortfunctie.",
+      "sourcePage": 46
+    },
+    {
+      "code": "7.0",
+      "description": "Pompkarakteristiek",
+      "category": "",
+      "factoryDefault": "3 Constante druk laag",
+      "settingRange": "0 / 1 / 2 / 3 / 4 / 5",
+      "choices": [
+        "0 = pompstand instelbaar via servicefunctie 7.1",
+        "1 = constante druk hoog",
+        "2 = constante druk middel",
+        "3 = constante druk laag",
+        "4 = proportionele druk hoog",
+        "5 = proportionele druk laag"
+      ],
+      "technicalExplanation": "Kiest hoe de dialoogpomp in verwarmingsbedrijf wordt geregeld.",
+      "sourcePage": 46
+    },
+    {
+      "code": "7.1",
+      "description": "Stand dialoogpomp",
+      "category": "",
+      "factoryDefault": "7",
+      "settingRange": "2 - 7",
+      "choices": [],
+      "technicalExplanation": "Alleen actief wanneer bij servicefunctie 7.0 de optie pompstand instelbaar is gekozen.",
+      "sourcePage": 47
+    },
+    {
+      "code": "7.3",
+      "description": "Ontluchtingsfunctie",
+      "category": "",
+      "factoryDefault": "aan, automatische deactivering",
+      "settingRange": "uit / automatisch / continu",
+      "choices": [
+        "Ontluchtingsfunctie uit",
+        "Ontluchtingsfunctie aan, automatische deactivering",
+        "Ontluchtingsfunctie continu aan"
+      ],
+      "technicalExplanation": "De verwarmingspomp wordt in intervallen in- en uitgeschakeld; de functie duurt bij automatische uitvoering circa 8 minuten.",
+      "sourcePage": 47
+    },
+    {
+      "code": "8.5",
+      "description": "Sifonvulprogramma",
+      "category": "",
+      "factoryDefault": "min. geprogrammeerd vermogen",
+      "settingRange": "min. geprogrammeerd / min. cv / uit",
+      "choices": [
+        "Sifonvulprogramma in werking, min. geprogrammeerd vermogen",
+        "Sifonvulprogramma in werking, min. cv vermogen",
+        "Sifonvulprogramma uit"
+      ],
+      "technicalExplanation": "Waarborgt dat de condenswatersifon gevuld wordt. Na onderhoud weer inschakelen.",
+      "sourcePage": 47
+    }
+  ]
+}

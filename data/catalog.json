@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordCount": 2125,
+  "recordCount": 2146,
   "brands": [
     {
       "id": "intergas",
@@ -556,6 +556,28 @@
               "documentNumber": "",
               "revision": "",
               "notes": ""
+            }
+          ]
+        },
+        {
+          "id": "hrs-hrc-top",
+          "name": "HRS/HRC Top",
+          "deviceType": "boiler",
+          "family": "22 HRS Top / 28 HRS Top / 35 HRC Top / 42 HRS Top",
+          "faultsPath": "data/bosch/hrs-hrc-top/faults.json",
+          "parametersPath": "data/bosch/hrs-hrc-top/parameters.json",
+          "combustionPath": "data/bosch/hrs-hrc-top/combustion.json",
+          "recordCount": 21,
+          "sourceTitle": "Bosch HRS/HRC Top installatievoorschrift, document 6 720 611 393 NL (04.12)",
+          "sourceUrl": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720611393",
+          "manuals": [
+            {
+              "type": "installation",
+              "title": "Bosch HRS/HRC Top installatievoorschrift, document 6 720 611 393 NL (04.12)",
+              "url": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720611393",
+              "language": "nl",
+              "market": "NL",
+              "official": true
             }
           ]
         }
