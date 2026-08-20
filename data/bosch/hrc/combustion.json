@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "title": "Verbrandingsinstellingen Bosch HRC",
+  "measurements": [
+    {
+      "label": "CO₂ Bosch 26 HRC — aardgas nominaal",
+      "value": 9,
+      "unit": "%",
+      "load": "Nominaal",
+      "condition": "Aardgas"
+    },
+    {
+      "label": "CO₂ Bosch 26 HRC — aardgas minimaal",
+      "value": 8.8,
+      "unit": "%",
+      "load": "Minimaal",
+      "condition": "Aardgas"
+    },
+    {
+      "label": "CO₂ Bosch 26 HRC — propaan nominaal",
+      "value": 10.8,
+      "unit": "%",
+      "load": "Nominaal",
+      "condition": "Propaan"
+    },
+    {
+      "label": "CO₂ Bosch 26 HRC — propaan minimaal",
+      "value": 10.5,
+      "unit": "%",
+      "load": "Minimaal",
+      "condition": "Propaan"
+    },
+    {
+      "label": "CO₂ Bosch 30/35 HRC — aardgas nominaal/minimaal",
+      "value": 9,
+      "unit": "%",
+      "load": "Nominaal en minimaal",
+      "condition": "Aardgas"
+    },
+    {
+      "label": "CO₂ Bosch 30/35 HRC — propaan nominaal/minimaal",
+      "value": 10.8,
+      "unit": "%",
+      "load": "Nominaal en minimaal",
+      "condition": "Propaan"
+    },
+    {
+      "label": "CO₂ Bosch 42 HRC — aardgas nominaal/minimaal",
+      "value": 9.2,
+      "unit": "%",
+      "load": "Nominaal en minimaal",
+      "condition": "Aardgas"
+    },
+    {
+      "label": "CO₂ Bosch 42 HRC — propaan nominaal/minimaal",
+      "value": 10.8,
+      "unit": "%",
+      "load": "Nominaal en minimaal",
+      "condition": "Propaan"
+    }
+  ],
+  "settings": [],
+  "measurementConditions": [
+    "Gas/luchtverhouding volgens de officiële Bosch HRC installatiehandleiding instellen met elektronisch CO₂-meetapparaat."
+  ],
+  "technicalExplanation": "Expliciete CO₂-waarden uit tabel 17, 18 en 19 van de Bosch HRC installatiehandleiding.",
+  "notes": [],
+  "sourcePage": "46",
+  "verified": false,
+  "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720611390",
+  "deviceId": "hrc"
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordCount": 2106,
+  "recordCount": 2125,
   "brands": [
     {
       "id": "intergas",
@@ -525,6 +525,37 @@
               "language": "nl",
               "market": "NL",
               "official": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bosch",
+      "name": "Bosch",
+      "devices": [
+        {
+          "id": "hrc",
+          "name": "HRC",
+          "deviceType": "boiler",
+          "family": "26 HRC / 30 HRC / 35 HRC / 42 HRC",
+          "faultsPath": "data/bosch/hrc/faults.json",
+          "parametersPath": "data/bosch/hrc/parameters.json",
+          "recordCount": 19,
+          "sourceTitle": "OBJ_DOKU_6720611390_07.fm",
+          "sourceUrl": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720611390",
+          "combustionPath": "data/bosch/hrc/combustion.json",
+          "manuals": [
+            {
+              "type": "installation",
+              "title": "OBJ_DOKU_6720611390_07.fm",
+              "url": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720611390",
+              "language": "nl",
+              "market": "NL",
+              "official": true,
+              "documentNumber": "",
+              "revision": "",
+              "notes": ""
             }
           ]
         }

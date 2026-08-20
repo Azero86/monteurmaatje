@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "hrc",
+  "source": {
+    "title": "OBJ_DOKU_6720611390_07.fm",
+    "url": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720611390"
+  },
+  "faults": [
+    {
+      "code": "00",
+      "codeType": "storing",
+      "title": "Ontluchtingsfunctie, zie blz. 42",
+      "meaning": "Ontluchtingsfunctie, zie blz. 42.",
+      "causes": [],
+      "checks": []
+    },
+    {
+      "code": "-II-",
+      "codeType": "storing",
+      "title": "Sifonvulprogramma in werking, zie blz. 43",
+      "meaning": "Sifonvulprogramma in werking, zie blz. 43.",
+      "causes": [],
+      "checks": []
+    },
+    {
+      "code": "A5",
+      "codeType": "storing",
+      "title": "Boiler-NTC 2 defect (HRC.. met voorraadsysteem)",
+      "meaning": "Boiler-NTC 2 defect (HRC.. met voorraadsysteem).",
+      "causes": [],
+      "checks": [
+        "Controleer boiler-NTC 2 en aansluitkabel op onderbreking of kortsluiting."
+      ]
+    },
+    {
+      "code": "A7",
+      "codeType": "storing",
+      "title": "Warmwater-NTC defect (HRC...)",
+      "meaning": "Warmwater-NTC defect (HRC...).",
+      "causes": [],
+      "checks": [
+        "Controleer warmwater-NTC 2 en aansluitkabel op onderbreking of kortsluiting."
+      ]
+    },
+    {
+      "code": "A8",
+      "codeType": "storing",
+      "title": "CAN-communicatie onderbroken",
+      "meaning": "CAN-communicatie onderbroken.",
+      "causes": [],
+      "checks": [
+        "Controleer verbindingskabel, busmodule en regelaar."
+      ]
+    },
+    {
+      "code": "AC",
+      "codeType": "storing",
+      "title": "Module niet herkend",
+      "meaning": "Module niet herkend.",
+      "causes": [],
+      "checks": [
+        "Controleer de verbindingskabel tussen busmodule en Heatronic. Vervang de busmodule."
+      ]
+    },
+    {
+      "code": "Ad",
+      "codeType": "storing",
+      "title": "Boiler-NTC 1 wordt niet herkend",
+      "meaning": "Boiler-NTC 1 wordt niet herkend.",
+      "causes": [],
+      "checks": [
+        "Controleer boiler-NTC 1 en aansluitkabel."
+      ]
+    },
+    {
+      "code": "B1",
+      "codeType": "storing",
+      "title": "Codeerstekker wordt niet herkend",
+      "meaning": "Codeerstekker wordt niet herkend.",
+      "causes": [],
+      "checks": [
+        "Steek de codeerstekker goed vast, meet deze en vervang indien nodig."
+      ]
+    },
+    {
+      "code": "C1",
+      "codeType": "storing",
+      "title": "Ventilatortoerental te laag",
+      "meaning": "Ventilatortoerental te laag.",
+      "causes": [],
+      "checks": [
+        "Controleer ventilator, kabel en stekker en vervang indien nodig."
+      ]
+    },
+    {
+      "code": "CC",
+      "codeType": "storing",
+      "title": "Buitentemperatuur-NTC niet herkend",
+      "meaning": "Buitentemperatuur-NTC niet herkend.",
+      "causes": [],
+      "checks": [
+        "Controleer buitenvoeler en aansluitkabel op onderbreking. Vervang de busmodule."
+      ]
+    },
+    {
+      "code": "D1",
+      "codeType": "storing",
+      "title": "LSM vergrendeld",
+      "meaning": "LSM vergrendeld.",
+      "causes": [],
+      "checks": [
+        "Controleer de bedrading van de LSM 5. Begrenzer van de vloerverwarming is geactiveerd."
+      ]
+    },
+    {
+      "code": "D3",
+      "codeType": "storing",
+      "title": "Brug 8-9 niet herkend",
+      "meaning": "Brug 8-9 niet herkend.",
+      "causes": [],
+      "checks": [
+        "Stekker niet vastgestoken, brug ontbreekt, begrenzer van vloerverwarming geactiveerd."
+      ]
+    },
+    {
+      "code": "E2",
+      "codeType": "storing",
+      "title": "Aanvoer NTC heeft onderbreking of kortsluiting",
+      "meaning": "Aanvoer NTC heeft onderbreking of kortsluiting.",
+      "causes": [],
+      "checks": [
+        "Controleer aanvoer-NTC en aansluitkabel."
+      ]
+    },
+    {
+      "code": "E9",
+      "codeType": "storing",
+      "title": "Temperatuurbegrenzer in aanvoer is geactiveerd",
+      "meaning": "Temperatuurbegrenzer in aanvoer is geactiveerd.",
+      "causes": [],
+      "checks": [
+        "Controleer de installatiedruk, de temperatuurbegrenzers, het lopen van de pomp en de zekering op de printplaat. Ontlucht het toestel."
+      ]
+    },
+    {
+      "code": "EA",
+      "codeType": "storing",
+      "title": "Vlam wordt niet herkend (geen ionisatie)",
+      "meaning": "Vlam wordt niet herkend (geen ionisatie).",
+      "causes": [],
+      "checks": [
+        "Is de gaskraan open? Controleer gasvoordruk, netaansluiting, ontstekingselektrode en kabel, ionisatie-elektrode en kabel, rookgaspijp en CO₂"
+      ]
+    },
+    {
+      "code": "F0",
+      "codeType": "storing",
+      "title": "Interne fout",
+      "meaning": "Interne fout",
+      "causes": [],
+      "checks": [
+        "Controleer of elektrische steekcontacten, ontstekingsleidingen RAM en busmodule goed vastzitten. Vervang indien nodig printplaat of busmodule."
+      ]
+    },
+    {
+      "code": "F7",
+      "codeType": "storing",
+      "title": "Vlam wordt herkend, hoewel toestel uitgeschakeld is",
+      "meaning": "Vlam wordt herkend, hoewel toestel uitgeschakeld is.",
+      "causes": [],
+      "checks": [
+        "Controleer elektrodenset, maak de printplaat droog. Rookgasafvoer in orde?"
+      ]
+    },
+    {
+      "code": "FA",
+      "codeType": "storing",
+      "title": "Vlam wordt herkend na gasuitschakeling",
+      "meaning": "Vlam wordt herkend na gasuitschakeling.",
+      "causes": [],
+      "checks": [
+        "Controleer gasarmatuur en kabels naar gasarmatuur. Reinig de condenswatersifon en de elektrodenset. Rookgasafvoer in orde?"
+      ]
+    },
+    {
+      "code": "Fd",
+      "codeType": "storing",
+      "title": "Ontstoringsknop is ingedrukt, hoewel de ontstoringsknop niet verlicht is geweest",
+      "meaning": "Ontstoringsknop is ingedrukt, hoewel de ontstoringsknop niet verlicht is geweest.",
+      "causes": [],
+      "checks": [
+        "Druk opnieuw op de ontstoringsknop."
+      ]
+    }
+  ]
+}

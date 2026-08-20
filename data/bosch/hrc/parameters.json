@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "hrc",
+  "source": {
+    "title": "OBJ_DOKU_6720611390_07.fm",
+    "url": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720611390"
+  },
+  "parameters": [
+    {
+      "code": "2.2",
+      "description": "Pompschakeling",
+      "category": "",
+      "factoryDefault": "2",
+      "settingRange": "1 - 3",
+      "choices": [
+        "1 = installaties zonder externe regelaar",
+        "2 = installaties met ruimtetemperatuurregeling (fabrieksinstelling)",
+        "3 = pomp door weersafhankelijke regelaar geschakeld"
+      ],
+      "technicalExplanation": "Pompschakeling kiezen voor verwarmingsbedrijf."
+    },
+    {
+      "code": "2.3",
+      "description": "Boiler opwarmvermogen",
+      "category": "",
+      "factoryDefault": "99",
+      "settingRange": "min. - max. opwarmvermogen",
+      "choices": [],
+      "technicalExplanation": "Boileropwarmvermogen kan tussen het kleinste en maximale opwarmvermogen worden ingesteld. Fabrieksinstelling is het nominale verwarmingsvermogen; aanduiding 99 op de display."
+    },
+    {
+      "code": "2.4",
+      "description": "Antipendelprogramma",
+      "category": "",
+      "factoryDefault": "3 min",
+      "settingRange": "0 - 15 min",
+      "choices": [],
+      "technicalExplanation": "Antipendelblokkering. Bij 0 is het antipendelprogramma uitgeschakeld. Kortste schakeltijd is 1 minuut."
+    },
+    {
+      "code": "2.5",
+      "description": "Max. aanvoertemperatuur",
+      "category": "",
+      "factoryDefault": "88 °C",
+      "settingRange": "35 - 88 °C",
+      "choices": [],
+      "technicalExplanation": "Begrenst de maximale aanvoertemperatuur."
+    },
+    {
+      "code": "2.6",
+      "description": "Schakeldifferentie",
+      "category": "",
+      "factoryDefault": "0 K",
+      "settingRange": "0 - 30 K",
+      "choices": [],
+      "technicalExplanation": "Toegestane afwijking van de gevraagde aanvoertemperatuur; instelbaar in stappen van 1 K."
+    },
+    {
+      "code": "2.7",
+      "description": "Automatisch antipendelprogramma",
+      "category": "",
+      "factoryDefault": "1",
+      "settingRange": "0 / 1",
+      "choices": [
+        "0 = uitgeschakeld",
+        "1 = ingeschakeld"
+      ],
+      "technicalExplanation": "Automatische aanpassing van het antipendelprogramma. Fabrieksinstelling is 1 (ingeschakeld)."
+    },
+    {
+      "code": "5.0",
+      "description": "Max. verwarmingsvermogen",
+      "category": "",
+      "factoryDefault": "max.",
+      "settingRange": "min. - max. nominaal vermogen",
+      "choices": [
+        "HRC 26: fabrieksweergave 68",
+        "HRC 30: fabrieksweergave 88",
+        "HRC 35: fabrieksweergave 88",
+        "HRC 42: fabrieksweergave 99"
+      ],
+      "technicalExplanation": "Begrenst het verwarmingsvermogen op de specifieke warmtebehoefte. Warmwater/boiler blijft maximaal nominaal vermogen beschikbaar."
+    },
+    {
+      "code": "6.8",
+      "description": "Antipendeltijd warmhouden",
+      "category": "",
+      "factoryDefault": "20 min",
+      "settingRange": "20 - 60 min",
+      "choices": [],
+      "technicalExplanation": "Tijdsduur tot de volgende inschakeling voor warmhouden in comfortfunctie."
+    },
+    {
+      "code": "7.3",
+      "description": "Ontluchtingsfunctie",
+      "category": "",
+      "factoryDefault": "0",
+      "settingRange": "0 / 1",
+      "choices": [
+        "0 = uit",
+        "1 = ontluchtingsfunctie starten"
+      ],
+      "technicalExplanation": "Na inschakelen wordt de ontluchtingsfunctie na afloop automatisch op 0 teruggezet."
+    },
+    {
+      "code": "8.5",
+      "description": "Sifonvulprogramma",
+      "category": "",
+      "factoryDefault": "1",
+      "settingRange": "0 / 1",
+      "choices": [
+        "0 = uitgeschakeld",
+        "1 = ingeschakeld"
+      ],
+      "technicalExplanation": "Waarborgt dat de condenswatersifon gevuld wordt. Alleen tijdens onderhoud uitschakelen en daarna weer inschakelen."
+    }
+  ]
+}
