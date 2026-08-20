@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "title": "Verbrandingsinstellingen Bosch HRS/HRC Heatronic 3",
+  "measurements": [
+    {
+      "label": "CO₂ 28 HRS / 24 HRC / 30 HRC / 30 HRC Turbo Comfort 65 — aardgas maximaal",
+      "value": 9.4,
+      "unit": "%",
+      "load": "Maximaal",
+      "condition": "Aardgas L"
+    },
+    {
+      "label": "CO₂ 28 HRS / 24 HRC / 30 HRC / 30 HRC Turbo Comfort 65 — aardgas minimaal",
+      "value": 8.6,
+      "unit": "%",
+      "load": "Minimaal",
+      "condition": "Aardgas L"
+    },
+    {
+      "label": "O₂ 28 HRS / 24 HRC / 30 HRC / 30 HRC Turbo Comfort 65 — aardgas maximaal",
+      "value": 4.0,
+      "unit": "%",
+      "load": "Maximaal",
+      "condition": "Aardgas L"
+    },
+    {
+      "label": "O₂ 28 HRS / 24 HRC / 30 HRC / 30 HRC Turbo Comfort 65 — aardgas minimaal",
+      "value": 5.5,
+      "unit": "%",
+      "load": "Minimaal",
+      "condition": "Aardgas L"
+    },
+    {
+      "label": "CO₂ 28 HRS / 24 HRC / 30 HRC / 30 HRC Turbo Comfort 65 — propaan maximaal",
+      "value": 10.8,
+      "unit": "%",
+      "load": "Maximaal",
+      "condition": "Propaan"
+    },
+    {
+      "label": "CO₂ 28 HRS / 24 HRC / 30 HRC / 30 HRC Turbo Comfort 65 — propaan minimaal",
+      "value": 10.5,
+      "unit": "%",
+      "load": "Minimaal",
+      "condition": "Propaan"
+    },
+    {
+      "label": "O₂ 28 HRS / 24 HRC / 30 HRC / 30 HRC Turbo Comfort 65 — propaan maximaal",
+      "value": 4.6,
+      "unit": "%",
+      "load": "Maximaal",
+      "condition": "Propaan"
+    },
+    {
+      "label": "O₂ 28 HRS / 24 HRC / 30 HRC / 30 HRC Turbo Comfort 65 — propaan minimaal",
+      "value": 5.0,
+      "unit": "%",
+      "load": "Minimaal",
+      "condition": "Propaan"
+    },
+    {
+      "label": "CO₂ 35 HRS / 42 HRS / 35 HRC / 42 HRC / 35 HRC Turbo Comfort 65 — aardgas maximaal/minimaal",
+      "value": 9.4,
+      "unit": "%",
+      "load": "Maximaal en minimaal",
+      "condition": "Aardgas L"
+    },
+    {
+      "label": "O₂ 35 HRS / 42 HRS / 35 HRC / 42 HRC / 35 HRC Turbo Comfort 65 — aardgas maximaal/minimaal",
+      "value": 4.0,
+      "unit": "%",
+      "load": "Maximaal en minimaal",
+      "condition": "Aardgas L"
+    },
+    {
+      "label": "CO₂ 35 HRS / 42 HRS / 35 HRC / 42 HRC / 35 HRC Turbo Comfort 65 — propaan maximaal/minimaal",
+      "value": 10.8,
+      "unit": "%",
+      "load": "Maximaal en minimaal",
+      "condition": "Propaan"
+    },
+    {
+      "label": "O₂ 35 HRS / 42 HRS / 35 HRC / 42 HRC / 35 HRC Turbo Comfort 65 — propaan maximaal/minimaal",
+      "value": 4.6,
+      "unit": "%",
+      "load": "Maximaal en minimaal",
+      "condition": "Propaan"
+    }
+  ],
+  "settings": [
+    {
+      "label": "Nominale gasvoordruk aardgas L",
+      "value": "25 mbar",
+      "condition": "Toegestaan bereik bij maximaal nominaal vermogen: 20 - 30 mbar"
+    },
+    {
+      "label": "Nominale gasvoordruk propaan",
+      "value": "30 mbar",
+      "condition": "Toegestaan bereik bij maximaal nominaal vermogen: 25 - 35 mbar"
+    }
+  ],
+  "measurementConditions": [
+    "Gas-luchtverhouding via CO₂ of O₂ instellen met elektronisch meetapparaat.",
+    "Instellen/controleren bij maximaal en minimaal nominaal warmtevermogen."
+  ],
+  "technicalExplanation": "CO₂/O₂-setpoints uit hoofdstuk 11.2 en de toesteltechnische tabellen 4 t/m 7.",
+  "notes": [
+    "Bij aardgas L buiten 20-30 mbar en bij propaan buiten 25-35 mbar mag het toestel niet in bedrijf worden genomen."
+  ],
+  "sourcePage": "16, 18, 20, 22, 64-65",
+  "verified": true,
+  "deviceId": "hrs-hrc-heatronic3",
+  "source": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720616855"
+}

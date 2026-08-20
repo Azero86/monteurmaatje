@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "hrs-hrc-heatronic3",
+  "source": {
+    "title": "Bosch HRS/HRC / Turbo Comfort Systeem 65 installatie- en onderhoudshandleiding, 6 720 616 855 (2008/05) NL",
+    "url": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720616855"
+  },
+  "faults": [
+    {
+      "code": "A1",
+      "codeType": "storing",
+      "title": "Elektronische CV-pomp droog gelopen.",
+      "meaning": "Elektronische CV-pomp droog gelopen.",
+      "causes": [],
+      "checks": [
+        "Installatievuldruk controleren, evt. bijvullen en ontluchten."
+      ],
+      "sourcePage": 75
+    },
+    {
+      "code": "A5",
+      "codeType": "storing",
+      "title": "Boilertemperatuurvoeler 2 defect. (alleen HRC Turbo Comfort Systeem 65)",
+      "meaning": "Boilertemperatuurvoeler 2 defect. (alleen HRC Turbo Comfort Systeem 65)",
+      "causes": [],
+      "checks": [
+        "Controleer temperatuurvoeler (NTC) 2 van voorraadsysteem en aansluitkabel op onderbreking of kortsluiting."
+      ],
+      "sourcePage": 75
+    },
+    {
+      "code": "A7",
+      "codeType": "storing",
+      "title": "Tapwatertemperatuurvoeler defect. (alleen HRC en HRC Turbo Comfort Systeem 65)",
+      "meaning": "Tapwatertemperatuurvoeler defect. (alleen HRC en HRC Turbo Comfort Systeem 65)",
+      "causes": [],
+      "checks": [
+        "Tapwatertemperatuurvoeler en aansluitkabel op onderbreking resp. kortsluiting controleren."
+      ],
+      "sourcePage": 75
+    },
+    {
+      "code": "A8",
+      "codeType": "storing",
+      "title": "Communicatie onderbroken.",
+      "meaning": "Communicatie onderbroken.",
+      "causes": [],
+      "checks": [
+        "Verbindingskabel BUS-deelnemer controleren."
+      ],
+      "sourcePage": 75
+    },
+    {
+      "code": "Ad",
+      "codeType": "storing",
+      "title": "Boilertemperatuurvoeler niet herkend. Boilertemperatuurvoeler werd als bus-deelnemer herkend en vervolgens anders aangesloten.",
+      "meaning": "Boilertemperatuurvoeler niet herkend. Boilertemperatuurvoeler werd als bus-deelnemer herkend en vervolgens anders aangesloten.",
+      "causes": [],
+      "checks": [
+        "Controleer temperatuurvoeler (NTC) 1 van voorraadsysteem en aansluitkabel. Heatronic 3 op fabrieksinstellingen (servicefunctie 8.E, pagina 62), IPM 1 of IPM 2 op basisinstelling terugzetten en op kamerthermostaat de automatische systeemconfiguratie uitvoeren."
+      ],
+      "sourcePage": 75
+    },
+    {
+      "code": "b1",
+      "codeType": "storing",
+      "title": "Codeerstekker wordt niet herkend.",
+      "meaning": "Codeerstekker wordt niet herkend.",
+      "causes": [],
+      "checks": [
+        "Steek de codeerstekker goed vast, meet deze en vervang indien nodig."
+      ],
+      "sourcePage": 75
+    },
+    {
+      "code": "b2/b3",
+      "codeType": "storing",
+      "title": "Interne data fout",
+      "meaning": "Interne data fout",
+      "causes": [],
+      "checks": [
+        "Zie service instructie voor de installateur."
+      ],
+      "sourcePage": 75
+    },
+    {
+      "code": "C6",
+      "codeType": "storing",
+      "title": "Ventilator draait niet.",
+      "meaning": "Ventilator draait niet.",
+      "causes": [],
+      "checks": [
+        "Ventilator met stekker en ventilator controleren, evt. vervangen."
+      ],
+      "sourcePage": 75
+    },
+    {
+      "code": "CC",
+      "codeType": "storing",
+      "title": "Buitentemperatuurvoeler niet herkend.",
+      "meaning": "Buitentemperatuurvoeler niet herkend.",
+      "causes": [],
+      "checks": [
+        "Controleer buitenvoeler en aansluitkabel op onderbreking. Vervang de busmodule."
+      ],
+      "sourcePage": 75
+    },
+    {
+      "code": "CE",
+      "codeType": "storing",
+      "title": "De bedrijfsdruk voor de verwarming is te laag.",
+      "meaning": "De bedrijfsdruk voor de verwarming is te laag.",
+      "causes": [],
+      "checks": [
+        "CV-water bijvullen."
+      ],
+      "sourcePage": 75
+    },
+    {
+      "code": "CF",
+      "codeType": "storing",
+      "title": "Drukvoeler is aangesproken.",
+      "meaning": "Drukvoeler is aangesproken.",
+      "causes": [],
+      "checks": [
+        "CV-water bijvullen. Drukvoeler controleren, evt. vervangen."
+      ],
+      "sourcePage": 75
+    },
+    {
+      "code": "d1",
+      "codeType": "storing",
+      "title": "Retourtemperatuurvoeler defect (open verdeler).",
+      "meaning": "Retourtemperatuurvoeler defect (open verdeler).",
+      "causes": [],
+      "checks": [
+        "Controleer temperatuurvoeler (NTC) en aansluitkabel op onderbreking resp. kortsluiting."
+      ],
+      "sourcePage": 75
+    },
+    {
+      "code": "d3",
+      "codeType": "storing",
+      "title": "Externe bewaking heeft aangesproken.",
+      "meaning": "Externe bewaking heeft aangesproken.",
+      "causes": [],
+      "checks": [
+        "Temperatuurbewaking TB1 heeft aangesproken. Brug 8 - 9 of brug PR - P0 ontbreekt."
+      ],
+      "sourcePage": 75
+    },
+    {
+      "code": "d5",
+      "codeType": "storing",
+      "title": "Externe aanvoertemperatuurvoeler defect (open verdeler). Externe aanvoertemperatuurvoeler werd als bus-deelnemer herkend en vervolgens anders aangesloten.",
+      "meaning": "Externe aanvoertemperatuurvoeler defect (open verdeler). Externe aanvoertemperatuurvoeler werd als bus-deelnemer herkend en vervolgens anders aangesloten.",
+      "causes": [],
+      "checks": [
+        "Controleer temperatuurvoeler (NTC) en aansluitkabel op onderbreking resp. kortsluiting. Heatronic 3 op fabrieksinstellingen (servicefunctie 8.E, pagina 62), IPM 1 of IPM 2 op basisinstelling terugzetten en op kamerthermostaat de automatische systeemconfiguratie uitvoeren."
+      ],
+      "sourcePage": 75
+    },
+    {
+      "code": "E2",
+      "codeType": "storing",
+      "title": "Aanvoertemperatuurvoeler (NTC) defect.",
+      "meaning": "Aanvoertemperatuurvoeler (NTC) defect.",
+      "causes": [],
+      "checks": [
+        "Controleer temperatuurvoeler (NTC) en aansluitkabel."
+      ],
+      "sourcePage": 75
+    },
+    {
+      "code": "E9",
+      "codeType": "storing",
+      "title": "Warmtewisselaar-maximaal thermostaat of rookgasmaximaal thermostaat heeft aangesproken.",
+      "meaning": "Warmtewisselaar-maximaal thermostaat of rookgasmaximaal thermostaat heeft aangesproken.",
+      "causes": [],
+      "checks": [
+        "Bedrijfsdruk, maximaal thermostaat en pomp controleren; zekering op printplaat controleren; toestel ontluchten; warmtewisselaar waterzijdig controleren. Bij toestellen met verdringingslichamen in de warmtewisselaar controleren of verdringingslichamen zijn ingebouwd."
+      ],
+      "sourcePage": 75
+    },
+    {
+      "code": "EA",
+      "codeType": "storing",
+      "title": "Vlam wordt niet herkend.",
+      "meaning": "Vlam wordt niet herkend.",
+      "causes": [],
+      "checks": [
+        "Gaskraan open? Gasaansluitdruk, netaansluiting, elektroden met kabel, rookgaskanaal en gas-luchtverhouding controleren. Bij aardgas externe gasdoorstroombewaking controleren."
+      ],
+      "sourcePage": 75
+    },
+    {
+      "code": "F0",
+      "codeType": "storing",
+      "title": "Interne fout.",
+      "meaning": "Interne fout.",
+      "causes": [],
+      "checks": [
+        "Elektrische contacten en ontstekingskabels controleren, evt. printplaat vervangen. Gas-luchtverhouding controleren."
+      ],
+      "sourcePage": 76
+    },
+    {
+      "code": "F1",
+      "codeType": "storing",
+      "title": "Interne data fout",
+      "meaning": "Interne data fout",
+      "causes": [],
+      "checks": [
+        "Zie service instructie voor de installateur."
+      ],
+      "sourcePage": 76
+    },
+    {
+      "code": "F7",
+      "codeType": "storing",
+      "title": "Vlam wordt herkend, hoewel toestel uitgeschakeld is.",
+      "meaning": "Vlam wordt herkend, hoewel toestel uitgeschakeld is.",
+      "causes": [],
+      "checks": [
+        "Controleer de elektrodenset. Rookgasafvoer in orde?"
+      ],
+      "sourcePage": 76
+    },
+    {
+      "code": "FA",
+      "codeType": "storing",
+      "title": "Na gasuitschakeling: Vlam wordt herkend.",
+      "meaning": "Na gasuitschakeling: Vlam wordt herkend.",
+      "causes": [],
+      "checks": [
+        "Controleer het gasblok. Condenssifon reinigen en elektroden controleren. Rookgaskanaal in orde?"
+      ],
+      "sourcePage": 76
+    },
+    {
+      "code": "Fd",
+      "codeType": "storing",
+      "title": "Resettoets werd per ongeluk ingedrukt.",
+      "meaning": "Resettoets werd per ongeluk ingedrukt.",
+      "causes": [],
+      "checks": [
+        "Resettoets opnieuw indrukken."
+      ],
+      "sourcePage": 76
+    }
+  ]
+}

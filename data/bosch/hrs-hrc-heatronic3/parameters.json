@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "hrs-hrc-heatronic3",
+  "source": {
+    "title": "Bosch HRS/HRC / Turbo Comfort Systeem 65 installatie- en onderhoudshandleiding, 6 720 616 855 (2008/05) NL",
+    "url": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720616855"
+  },
+  "parameters": [
+    {
+      "code": "1.A",
+      "description": "Maximaal verwarmingsvermogen",
+      "category": "",
+      "factoryDefault": "Maximaal nominaal warmtevermogen",
+      "settingRange": "Minimaal t/m maximaal nominaal warmtevermogen; modelafhankelijk",
+      "choices": [],
+      "technicalExplanation": "CV-vermogen in procenten instelbaar. Bijbehorende kengetallen/kW zijn modelafhankelijk en staan in de insteltabellen op pagina 77 t/m 85.",
+      "sourcePage": 57
+    },
+    {
+      "code": "1.b",
+      "description": "Warmwatervermogen",
+      "category": "",
+      "factoryDefault": "U0 (maximaal nominaal warmtevermogen tapwater)",
+      "settingRange": "Minimaal t/m maximaal nominaal warmtevermogen; modelafhankelijk",
+      "choices": [],
+      "technicalExplanation": "Tapwater-/boilervermogen afstemmen op de overdrachtscapaciteit; kengetallen/kW zijn modelafhankelijk en staan in de insteltabellen op pagina 77 t/m 85.",
+      "sourcePage": 58
+    },
+    {
+      "code": "1.C",
+      "description": "Pompidentificatieveld",
+      "category": "",
+      "factoryDefault": "4",
+      "settingRange": "0 - 5",
+      "choices": [
+        "0 = pompkarakteristiek instelbaar via 1.d",
+        "1 = constante druk hoog",
+        "2 = constante druk gemiddeld",
+        "3 = constante druk laag",
+        "4 = proportionele druk hoog",
+        "5 = proportionele druk laag"
+      ],
+      "technicalExplanation": "Bepaalt hoe de CV-pomp wordt geregeld.",
+      "sourcePage": 58
+    },
+    {
+      "code": "1.d",
+      "description": "Pompkarakteristiek",
+      "category": "",
+      "factoryDefault": "7",
+      "settingRange": "1 - 7",
+      "choices": [],
+      "technicalExplanation": "Alleen actief wanneer bij servicefunctie 1.C waarde 0 is gekozen.",
+      "sourcePage": 59
+    },
+    {
+      "code": "1.E",
+      "description": "Soort pompschakeling",
+      "category": "",
+      "factoryDefault": "0",
+      "settingRange": "0 - 4",
+      "choices": [
+        "0 = automatisch bedrijf; BUS-regelaar stuurt CV-pomp",
+        "1 = CV-installatie zonder regeling; aanvoertemperatuurregelaar schakelt pomp",
+        "2 = kamerthermostaat op klemmen 1-2-4 (24 V)",
+        "3 = CV-pomp draait continu",
+        "4 = intelligente CV-pompafschakeling bij weersafhankelijke regelaar"
+      ],
+      "technicalExplanation": "Bij aansluiting van een buitentemperatuurvoeler wordt automatisch pompschakeltype 4 ingesteld.",
+      "sourcePage": 59
+    },
+    {
+      "code": "1.F",
+      "description": "Pompmodus (HRS)",
+      "category": "",
+      "factoryDefault": "0",
+      "settingRange": "0 - 3",
+      "choices": [
+        "0 = alleen als CV-toestel",
+        "1 = CV-pomp + 3-wegklep voor boilerverwarming",
+        "2 = CV-pomp + boilerlaadpomp; afwisselend",
+        "3 = CV-pomp + boilerlaadpomp; bij boilerbedrijf beide pompen"
+      ],
+      "technicalExplanation": "Alleen voor HRS-toestellen.",
+      "sourcePage": 59
+    },
+    {
+      "code": "2.A",
+      "description": "Blokkeertijd van de CV-pomp (HRS)",
+      "category": "",
+      "factoryDefault": "18 (180 s)",
+      "settingRange": "0 - 24 (0 - 240 s)",
+      "choices": [],
+      "technicalExplanation": "Alleen bij pompmodus 1. Instellen gelijk aan de looptijd van de externe 3-wegklep.",
+      "sourcePage": 59
+    },
+    {
+      "code": "2.b",
+      "description": "Max. CV-aanvoertemperatuur",
+      "category": "",
+      "factoryDefault": "88 °C",
+      "settingRange": "35 - 88 °C",
+      "choices": [],
+      "technicalExplanation": "Begrenst de maximale CV-aanvoertemperatuur.",
+      "sourcePage": 59
+    },
+    {
+      "code": "2.C",
+      "description": "Ontluchtingsfunctie",
+      "category": "",
+      "factoryDefault": "1",
+      "settingRange": "0 - 2",
+      "choices": [
+        "0 = uit",
+        "1 = actief; na ca. 4 minuten automatisch terug naar 0",
+        "2 = continu ingeschakeld"
+      ],
+      "technicalExplanation": "Na onderhoud kan de ontluchtingsfunctie worden ingeschakeld.",
+      "sourcePage": 60
+    },
+    {
+      "code": "3.A",
+      "description": "Automatische schakelblokkering",
+      "category": "",
+      "factoryDefault": "0 (uitgeschakeld)",
+      "settingRange": "0 / 1",
+      "choices": [
+        "0 = uitgeschakeld",
+        "1 = automatische aanpassing ingeschakeld"
+      ],
+      "technicalExplanation": "Bij uitgeschakelde automatische aanpassing moet de blokkering met 3.b worden ingesteld.",
+      "sourcePage": 60
+    },
+    {
+      "code": "3.b",
+      "description": "Antipendelprogramma",
+      "category": "",
+      "factoryDefault": "3 min",
+      "settingRange": "0 - 15 min",
+      "choices": [],
+      "technicalExplanation": "Alleen actief als 3.A uitgeschakeld is. Bij 0 is het antipendelprogramma uitgeschakeld; kortste schakelafstand 1 minuut.",
+      "sourcePage": 60
+    },
+    {
+      "code": "3.C",
+      "description": "Schakeldifferentie NTC aanvoer",
+      "category": "",
+      "factoryDefault": "10 K",
+      "settingRange": "0 - 30 K",
+      "choices": [],
+      "technicalExplanation": "Toegestane afwijking van de gewenste aanvoertemperatuur, instelbaar in stappen van 1 K. Alleen actief wanneer 3.A uitgeschakeld is.",
+      "sourcePage": 60
+    },
+    {
+      "code": "4.d",
+      "description": "Waarschuwingstoon",
+      "category": "",
+      "factoryDefault": "1 (ingeschakeld)",
+      "settingRange": "0 / 1",
+      "choices": [
+        "0 = uit",
+        "1 = ingeschakeld"
+      ],
+      "technicalExplanation": "Schakelt de waarschuwingstoon bij een storing in of uit.",
+      "sourcePage": 60
+    },
+    {
+      "code": "4.F",
+      "description": "Sifonvulprogramma",
+      "category": "",
+      "factoryDefault": "1",
+      "settingRange": "0 - 2",
+      "choices": [
+        "0 = sifonvulprogramma uit",
+        "1 = sifonvulprogramma met minimaal verwarmingsvermogen",
+        "2 = sifonvulprogramma met laagste ingestelde verwarmingsvermogen"
+      ],
+      "technicalExplanation": "Houdt het toestel bij de volgende warmtevraag 15 minuten op laag warmtevermogen om de condenswatersifon te vullen.",
+      "sourcePage": 61
+    },
+    {
+      "code": "5.A",
+      "description": "Inspectie-interval resetten",
+      "category": "",
+      "factoryDefault": "0",
+      "settingRange": "0",
+      "choices": [
+        "0 = inspectieweergave resetten"
+      ],
+      "technicalExplanation": "Reset na uitgevoerd inspectie/onderhoud de inspectieweergave in het display.",
+      "sourcePage": 61
+    },
+    {
+      "code": "5.C",
+      "description": "Schakelklok kanaal instellen",
+      "category": "",
+      "factoryDefault": "0",
+      "settingRange": "0 - 2",
+      "choices": [
+        "0 = 2-kanaals (verwarming en warm water)",
+        "1 = 1-kanaals verwarming",
+        "2 = 1-kanaals warm water"
+      ],
+      "technicalExplanation": "Wijzigt het gebruik van het kanaal bij een 1-kanaals schakelklok.",
+      "sourcePage": 61
+    },
+    {
+      "code": "5.E",
+      "description": "Aansluiting NP - LP",
+      "category": "",
+      "factoryDefault": "0",
+      "settingRange": "0 - 2",
+      "choices": [
+        "0 = uit",
+        "1 = circulatiepomp",
+        "2 = externe CV-pomp in ongemengd verbruikerscircuit"
+      ],
+      "technicalExplanation": "Configureert de aansluiting NP-LP.",
+      "sourcePage": 61
+    },
+    {
+      "code": "5.F",
+      "description": "Inspectie weergeven",
+      "category": "",
+      "factoryDefault": "0 (niet actief)",
+      "settingRange": "0 - 72 maanden",
+      "choices": [],
+      "technicalExplanation": "Stelt het aantal maanden in waarna de inspectiemelding in het display verschijnt.",
+      "sourcePage": 61
+    },
+    {
+      "code": "6.A",
+      "description": "Laatst opgeslagen storingscode oproepen",
+      "category": "",
+      "factoryDefault": "n.v.t.",
+      "settingRange": "Alleen uitlezen",
+      "choices": [],
+      "technicalExplanation": "Toont de laatst opgeslagen storingscode.",
+      "sourcePage": 61
+    },
+    {
+      "code": "7.d",
+      "description": "Aansluiting externe aanvoertemperatuurvoeler",
+      "category": "",
+      "factoryDefault": "0 (basisinstelling / automatische herkenning)",
+      "settingRange": "0 - 2",
+      "choices": [
+        "0 = basisinstelling",
+        "1 = externe aanvoertemperatuurvoeler op Heatronic 3",
+        "2 = externe aanvoertemperatuurvoeler op IPM1 of IPM2"
+      ],
+      "technicalExplanation": "De aansluiting wordt vanuit de basisinstelling automatisch eenmalig herkend.",
+      "sourcePage": 61
+    },
+    {
+      "code": "7.F",
+      "description": "Kamerthermostaat, configuratie klemmen 1-2-4",
+      "category": "",
+      "factoryDefault": "1",
+      "settingRange": "0 - 4",
+      "choices": [
+        "0 = ingang uitgeschakeld",
+        "1 = 0-24 V ingang, vermogensinstelling, warmtevraag bij open contact",
+        "2 = 0-10 V ingang, vermogensinstelling",
+        "3 = 0-10 V ingang, temperatuurinstelling",
+        "4 = warmtevraag bij gesloten contact"
+      ],
+      "technicalExplanation": "Stelt ingangsspanning en schakelfunctie van de kamerthermostaatingang in.",
+      "sourcePage": 62
+    },
+    {
+      "code": "8.E",
+      "description": "Heatronic 3 terugzetten op basisinstelling",
+      "category": "",
+      "factoryDefault": "n.v.t.",
+      "settingRange": "Resetfunctie",
+      "choices": [],
+      "technicalExplanation": "Zet alle gewijzigde servicefuncties terug naar de basisinstelling.",
+      "sourcePage": 62
+    }
+  ]
+}

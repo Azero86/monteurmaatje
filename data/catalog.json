@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordCount": 2147,
+  "recordCount": 2169,
   "brands": [
     {
       "id": "intergas",
@@ -575,6 +575,28 @@
               "type": "installation",
               "title": "Bosch HRS/HRC Top installatievoorschrift, document 6 720 611 393 NL (04.12)",
               "url": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720611393",
+              "language": "nl",
+              "market": "NL",
+              "official": true
+            }
+          ]
+        },
+        {
+          "id": "hrs-hrc-heatronic3",
+          "name": "HRS/HRC Heatronic 3",
+          "deviceType": "boiler",
+          "family": "28 HRS · 35 HRS · 42 HRS · 24 HRC · 30 HRC · 35 HRC · 42 HRC · 30 HRC Turbo Comfort Systeem 65 · 35 HRC Turbo Comfort Systeem 65",
+          "faultsPath": "data/bosch/hrs-hrc-heatronic3/faults.json",
+          "parametersPath": "data/bosch/hrs-hrc-heatronic3/parameters.json",
+          "combustionPath": "data/bosch/hrs-hrc-heatronic3/combustion.json",
+          "recordCount": 22,
+          "sourceTitle": "Bosch HRS/HRC / Turbo Comfort Systeem 65 installatie- en onderhoudshandleiding, 6 720 616 855 (2008/05) NL",
+          "sourceUrl": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720616855",
+          "manuals": [
+            {
+              "type": "installation",
+              "title": "Bosch HRS/HRC / Turbo Comfort Systeem 65 installatie- en onderhoudshandleiding, 6 720 616 855 (2008/05) NL",
+              "url": "https://nefit-nl-nl-b.boschhc-documents.com/download/pdf/file/6720616855",
               "language": "nl",
               "market": "NL",
               "official": true
