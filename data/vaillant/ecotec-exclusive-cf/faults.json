@@ -8,1608 +8,1405 @@
   "faults": [
     {
       "code": "F.000",
-      "title": "Het signaal van de aanvoertemperatuursensor is onderbroken.",
-      "meaning": "Het signaal van de aanvoertemperatuursensor is onderbroken.",
+      "title": "Aanvoertemperatuursensor onderbroken",
+      "meaning": "De Vaillant-besturing meldt F.000: aanvoertemperatuursensor onderbroken.",
       "causes": [
-        "Fout in de elektrische verbinding van de aanvoertemperatuursensor",
-        "Aanvoertemperatuursensor defect"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
       "checks": [
-        "Controleer en vervang eventueel de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
-        "Controleer en vervang eventueel de aanvoertemperatuursensor."
-      ]
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.001",
-      "title": "Het signaal van de retourtemperatuursensor is onderbroken.",
-      "meaning": "Het signaal van de retourtemperatuursensor is onderbroken.",
+      "title": "Retourtemperatuursensor onderbroken",
+      "meaning": "De Vaillant-besturing meldt F.001: retourtemperatuursensor onderbroken.",
       "causes": [
-        "Fout in de elektrische verbinding van de retourtemperatuursensor",
-        "Retourtemperatuursensor defect"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
       "checks": [
-        "Controleer en vervang eventueel de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
-        "Controleer en vervang eventueel de retourtemperatuursensor."
-      ]
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.002",
-      "title": "Het signaal van de temperatuursensor warmwateraansluiting is onderbroken.",
-      "meaning": "Het signaal van de temperatuursensor warmwateraansluiting is onderbroken.",
+      "title": "Warmwatertemperatuursensor onderbroken",
+      "meaning": "De Vaillant-besturing meldt F.002: warmwatertemperatuursensor onderbroken.",
       "causes": [
-        "Fout in de elektrische verbinding van de warmwatertemperatuursensor",
-        "Warmwatertemperatuursensor defect"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
       "checks": [
-        "Controleer en vervang eventueel de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
-        "Controleer en vervang eventueel de warmwatertemperatuursensor."
-      ]
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.003",
-      "title": "Het signaal van de boilertemperatuursensor is onderbroken.",
-      "meaning": "Het signaal van de boilertemperatuursensor is onderbroken.",
+      "title": "Boilertemperatuursensor onderbroken",
+      "meaning": "De Vaillant-besturing meldt F.003: boilertemperatuursensor onderbroken.",
       "causes": [
-        "Fout in de elektrische verbinding van de boilertemperatuursensor",
-        "Boilertemperatuursensor defect"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
       "checks": [
-        "Controleer en vervang eventueel de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
-        "Controleer en vervang eventueel de boilertemperatuursensor."
-      ]
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.010",
-      "title": "De aanvoertemperatuursensor is kortgesloten.",
-      "meaning": "De aanvoertemperatuursensor is kortgesloten.",
+      "title": "Aanvoertemperatuursensor kortgesloten",
+      "meaning": "De Vaillant-besturing meldt F.010: aanvoertemperatuursensor kortgesloten.",
       "causes": [
-        "Fout in de elektrische verbinding van de aanvoertemperatuursensor",
-        "Aanvoertemperatuursensor defect"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
       "checks": [
-        "Controleer en vervang eventueel de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
-        "Controleer en vervang eventueel de aanvoertemperatuursensor."
-      ]
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.011",
-      "title": "De retourtemperatuursensor is kortgesloten.",
-      "meaning": "De retourtemperatuursensor is kortgesloten.",
+      "title": "Retourtemperatuursensor kortgesloten",
+      "meaning": "De Vaillant-besturing meldt F.011: retourtemperatuursensor kortgesloten.",
       "causes": [
-        "Fout in de elektrische verbinding van de retourtemperatuursensor",
-        "Retourtemperatuursensor defect"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
       "checks": [
-        "Controleer en vervang eventueel de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
-        "Controleer en vervang eventueel de retourtemperatuursensor."
-      ]
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.012",
-      "title": "De temperatuursensor warmwateraansluiting is kortgesloten.",
-      "meaning": "De temperatuursensor warmwateraansluiting is kortgesloten.",
+      "title": "Warmwatertemperatuursensor kortgesloten",
+      "meaning": "De Vaillant-besturing meldt F.012: warmwatertemperatuursensor kortgesloten.",
       "causes": [
-        "Fout in de elektrische verbinding van de warmwatertemperatuursensor",
-        "Warmwatertemperatuursensor defect"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
       "checks": [
-        "Controleer en vervang eventueel de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
-        "Controleer en vervang eventueel de warmwatertemperatuursensor."
-      ]
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.013",
-      "title": "De boilertemperatuursensor is kortgesloten.",
-      "meaning": "De boilertemperatuursensor is kortgesloten.",
+      "title": "Boilertemperatuursensor kortgesloten",
+      "meaning": "De Vaillant-besturing meldt F.013: boilertemperatuursensor kortgesloten.",
       "causes": [
-        "Fout in de elektrische verbinding van de boilertemperatuursensor",
-        "Boilertemperatuursensor defect"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
       "checks": [
-        "Controleer en vervang eventueel de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
-        "Controleer en vervang eventueel de boilertemperatuursensor."
-      ]
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.020",
-      "title": "De veiligheidstemperatuurbegrenzer (STB) onderbreekt de gasklepbesturing. De gasklep werd gesloten, omdat de temperatuur van de aanvoer- of retourtemperatuursensor de maximale grenswaarde heeft overschreden.",
-      "meaning": "De veiligheidstemperatuurbegrenzer (STB) onderbreekt de gasklepbesturing. De gasklep werd gesloten, omdat de temperatuur van de aanvoer- of retourtemperatuursensor de maximale grenswaarde heeft overschreden.",
+      "title": "Veiligheidstemperatuurbegrenzer actief",
+      "meaning": "De Vaillant-besturing meldt F.020: veiligheidstemperatuurbegrenzer actief.",
       "causes": [
-        "Te weinig/geen water in het product.",
-        "Fout in de elektrische verbinding van de aanvoertemperatuursensor",
-        "Fout in de elektrische verbinding van de retourtemperatuursensor",
-        "Aanvoertemperatuursensor defect",
-        "Retourtemperatuursensor defect",
-        "De pomp is defect.",
-        "3- wegventiel defect of geblokkeerd",
-        "Waterdruksensor defect",
-        "Volumesensor defect",
-        "Zwarte ontlading via ontstekingskabel, ontstekingsstekker of ontstekingselektrode"
+        "Te lage systeemdruk, lucht of onvoldoende circulatie",
+        "Pomp, druksensor of bekabeling reageert niet correct",
+        "Afsluiter, filter, bypass of hydraulisch circuit is geblokkeerd"
       ],
       "checks": [
-        "1. Vul de CV-installatie.",
-        "2. Controleer het product en het systeem op lekkage.",
-        "Controleer en vervang eventueel de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
-        "Controleer en vervang eventueel de aanvoertemperatuursensor.",
-        "Controleer en vervang eventueel de retourtemperatuursensor.",
-        "Controleer en vervang de pomp eventueel.",
-        "Controleer en vervang eventueel de 3-wegklep.",
-        "Controleer en vervang eventueel de waterdruksensor.",
-        "Controleer en vervang eventueel de volumesensor.",
-        "Controleer ontstekingskabel, ontstekingsstekker en ontstekingselektrode."
-      ]
+        "Controleer systeemdruk en installatie op lekkage",
+        "Ontlucht volgens het installatievoorschrift",
+        "Controleer pompwerking, stekkers en vrije doorstroming",
+        "Controleer druksensor, filters, bypass en expansievat"
+      ],
+      "note": "Vul niet herhaaldelijk bij zonder eerst lekkage en expansievat te controleren."
     },
     {
       "code": "F.022",
-      "title": "Er is geen of te weinig water in het product of de waterdruk is te laag.",
-      "meaning": "Er is geen of te weinig water in het product of de waterdruk is te laag.",
+      "title": "Te weinig water of waterdruk te laag",
+      "meaning": "De Vaillant-besturing meldt F.022: te weinig water of waterdruk te laag.",
       "causes": [
-        "Te weinig/geen water in het product.",
-        "Fout in de elektrische verbinding van de waterdruksensor",
-        "Kabel naar de pomp/waterdruksensor los/niet aangesloten/defect",
-        "Waterdruksensor defect",
-        "Pompbedrijf in storing",
-        "Magneetklep van de automatische vulvoorziening defect",
-        "Intern expansievat defect"
+        "Te lage systeemdruk, lucht of onvoldoende circulatie",
+        "Pomp, druksensor of bekabeling reageert niet correct",
+        "Afsluiter, filter, bypass of hydraulisch circuit is geblokkeerd"
       ],
       "checks": [
-        "1. Vul de CV-installatie.",
-        "2. Controleer het product en het systeem op lekkage.",
-        "Controleer en vervang eventueel de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
-        "Controleer de kabel naar de pomp/naar de waterdruksensor.",
-        "Controleer en vervang eventueel de waterdruksensor.",
-        "Controleer en vervang eventueel de kabel naar de pomp/naar de waterdruksensor.",
-        "Controleer de automatische vulvoorziening en vervang eventueel de vulvoorziening.",
-        "Controleer en vervang eventueel het interne expansievat."
-      ]
+        "Controleer systeemdruk en installatie op lekkage",
+        "Ontlucht volgens het installatievoorschrift",
+        "Controleer pompwerking, stekkers en vrije doorstroming",
+        "Controleer druksensor, filters, bypass en expansievat"
+      ],
+      "note": "Vul niet herhaaldelijk bij zonder eerst lekkage en expansievat te controleren."
     },
     {
       "code": "F.023",
-      "title": "De temperatuurspreiding tussen aanvoer en retour is te groot.",
-      "meaning": "De temperatuurspreiding tussen aanvoer en retour is te groot.",
+      "title": "Temperatuurspreiding tussen aanvoer en retour te groot",
+      "meaning": "De Vaillant-besturing meldt F.023: temperatuurspreiding tussen aanvoer en retour te groot.",
       "causes": [
-        "Lucht in het product",
-        "Fout in de elektrische verbinding van de aanvoertemperatuursensor",
-        "Fout in de elektrische verbinding van de retourtemperatuursensor",
-        "Aanvoertemperatuursensor defect",
-        "Retourtemperatuursensor defect",
-        "Pomp geblokkeerd",
-        "Pump loopt met verminderd vermogen",
-        "3- wegventiel defect of geblokkeerd",
-        "Intern expansievat defect"
+        "Te lage systeemdruk, lucht of onvoldoende circulatie",
+        "Pomp, druksensor of bekabeling reageert niet correct",
+        "Afsluiter, filter, bypass of hydraulisch circuit is geblokkeerd"
       ],
       "checks": [
-        "Ontlucht de verwarmingsinstallatie.",
-        "Controleer en vervang eventueel de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
-        "Controleer en vervang eventueel de aanvoertemperatuursensor.",
-        "Controleer en vervang eventueel de retourtemperatuursensor.",
-        "Controleer of de pomp goed functioneert.",
-        "Controleer en vervang eventueel de 3-wegklep.",
-        "Controleer en vervang eventueel het interne expansievat."
-      ]
+        "Controleer systeemdruk en installatie op lekkage",
+        "Ontlucht volgens het installatievoorschrift",
+        "Controleer pompwerking, stekkers en vrije doorstroming",
+        "Controleer druksensor, filters, bypass en expansievat"
+      ],
+      "note": "Vul niet herhaaldelijk bij zonder eerst lekkage en expansievat te controleren."
     },
     {
       "code": "F.024",
-      "title": "De temperatuurstijging gaat te snel.",
-      "meaning": "De temperatuurstijging gaat te snel.",
+      "title": "Temperatuurstijging te snel",
+      "meaning": "De Vaillant-besturing meldt F.024: temperatuurstijging te snel.",
       "causes": [
-        "Lucht in het product",
-        "Systeemdruk te gering",
-        "Fout in de elektrische verbinding van de aanvoertemperatuursensor",
-        "Fout in de elektrische verbinding van de retourtemperatuursensor",
-        "Aanvoertemperatuursensor defect",
-        "Retourtemperatuursensor defect",
-        "Pomp geblokkeerd",
-        "Pump loopt met verminderd vermogen",
-        "3- wegventiel defect of geblokkeerd",
-        "Intern expansievat defect"
+        "Te lage systeemdruk, lucht of onvoldoende circulatie",
+        "Pomp, druksensor of bekabeling reageert niet correct",
+        "Afsluiter, filter, bypass of hydraulisch circuit is geblokkeerd"
       ],
       "checks": [
-        "Ontlucht de verwarmingsinstallatie.",
-        "Controleer de installatiedruk.",
-        "Controleer en vervang eventueel de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
-        "Controleer en vervang eventueel de aanvoertemperatuursensor.",
-        "Controleer en vervang eventueel de retourtemperatuursensor.",
-        "Controleer of de pomp goed functioneert.",
-        "Controleer en vervang eventueel de 3-wegklep.",
-        "Controleer en vervang eventueel het interne expansievat."
-      ]
+        "Controleer systeemdruk en installatie op lekkage",
+        "Ontlucht volgens het installatievoorschrift",
+        "Controleer pompwerking, stekkers en vrije doorstroming",
+        "Controleer druksensor, filters, bypass en expansievat"
+      ],
+      "note": "Vul niet herhaaldelijk bij zonder eerst lekkage en expansievat te controleren."
     },
     {
       "code": "F.025",
-      "title": "De verbrandingsgastemperatuur is te hoog.",
-      "meaning": "De verbrandingsgastemperatuur is te hoog.",
+      "title": "Rookgastemperatuur te hoog",
+      "meaning": "De Vaillant-besturing meldt F.025: rookgastemperatuur te hoog.",
       "causes": [
-        "Kabelboom defect",
-        "Indien aanwezig: verbrandingsgastemperatuurbewaking is geactiveerd"
+        "Luchttoevoer of rookgasafvoer geblokkeerd of verkeerd geconfigureerd",
+        "Ventilator, sensor, klep of condenspomp defect",
+        "Condensweg, sifon of warmtewisselaar vervuild"
       ],
       "checks": [
-        "Controleer en vervang eventueel de kabelboom inclusief alle stekkerverbindingen (printplaat stekker X20, contact 14/15).",
-        "Controleer en vervang eventueel de verbrandingsgastemperatuurbewaking."
-      ]
+        "Stel het toestel veilig buiten bedrijf bij rookgasgevaar",
+        "Controleer lucht-/rookgastraject, sifon en condensafvoer",
+        "Controleer ventilator, kleppen, sensoren en bekabeling",
+        "Controleer configuratie en voer de voorgeschreven rookgasmeting uit"
+      ],
+      "note": "Werk aan het rookgas- en verbrandingssysteem alleen als gecertificeerd monteur."
     },
     {
       "code": "F.027",
-      "title": "Een vlamsignaal is herkend, terwijl de brander uit is.",
-      "meaning": "Een vlamsignaal is herkend, terwijl de brander uit is.",
+      "title": "Vlamsignaal herkend terwijl de brander uit is",
+      "meaning": "De Vaillant-besturing meldt F.027: vlamsignaal herkend terwijl de brander uit is.",
       "causes": [
-        "Gasmagneetventiel lek",
-        "Printplaat defect"
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
       ],
       "checks": [
-        "Controleer het gasblok op goede werking en vervang deze eventueel.",
-        "Vervang de printplaat."
-      ]
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
     },
     {
       "code": "F.028",
-      "title": "Het vlamsignaal is tijdens de ontstekingsfase niet herkend.",
-      "meaning": "Het vlamsignaal is tijdens de ontstekingsfase niet herkend.",
+      "title": "Geen vlamsignaal tijdens de ontstekingsfase",
+      "meaning": "De Vaillant-besturing meldt F.028: geen vlamsignaal tijdens de ontstekingsfase.",
       "causes": [
-        "Harde ontsteking plaatsgevonden",
-        "Gasafsluitkraan gesloten",
-        "Gasaansluitdruk te gering",
-        "Lucht in de gasleiding (bijv. bij eerste inbedrijfstelling)",
-        "Verkeerde gassoort ingesteld",
-        "Offset gasblok in D.052 en evt.",
-        "D.182 verkeerd ingesteld",
-        "Luchtaanzuigbuis geblokkeerd",
-        "Ontsteking mislukt",
-        "Dynamische gasdruk te gering",
-        "Regelelektrode heeft contact met de brander",
-        "Ontstekingselektrode defect",
-        "Ontsteking mislukt (alleen bij vloeibaar gas)",
-        "Brander defect",
-        "Gasblok defect/verkeerde ETgasblok",
-        "Onderbreking in de kabelboom",
-        "Aarding foutief",
-        "Ionisatiestroom onderbroken",
-        "Storing in verbrandingsgastraject door recirculatie of verbrandingsgasblokkade",
-        "Ontstekingstransformator niet aangesloten",
-        "Ontstekingstransformator defect",
-        "Printplaat defect",
-        "Condenswater in de verbrandingskamer vanwege een verstopte condensafvoer",
-        "Condenspomp (indien aanwezig) defect"
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
       ],
       "checks": [
-        "1. Controleer de warmtewisselaar, sifon, sifonadapter, sifonslang (verbinding tussen primaire warmtewisselaar en sifon en sifonslang buiten het product), verbrandingsgasafvoerbuisadapter, productbehuizing, voormantel en zijdelen op mogelijke beschadigingen.",
-        "2. Vervang beschadigde onderdelen direct.",
-        "Open de gasafsluitkraan.",
-        "Controleer de gasaansluitdruk.",
-        "Reset het product eenmalig.",
-        "Controleer de gassoort en de instelling van de gassoort onder",
-        "D.156 en D.157.",
-        "Controleer de offsetinstelling van het gasblok.",
-        "Controleren en vervang eventueel de luchtaanzuigbuis.",
-        "1. Controleer de ontsteking met het testprogramma P.021.",
-        "2. Product start: ontstekingselektrode, ontstekingstransformator, gasblok en ventilator werken, gas stroomt en het gasvolume is correct, geen blokkade of recirculatie instellen.",
-        "3. Product start niet en toont weer een foutcode: voer de volgende controles uit.",
-        "Controleer de dynamische gasdruk en de externe gasdrukregelaar.",
-        "1. Controleer de afstand tussen de regelelektrode en de brander.",
-        "2. Controleer en vervang de eventueel de regelelektrode.",
-        "Controleer en vervang de ontstekingselektrode eventueel.",
-        "Voer het testprogramma P.022 uit.",
-        "Controleer en vervang eventueel de brander.",
-        "Controleer en vervang eventueel het gasblok.",
-        "Controleer en vervang eventueel de kabelboom inclusief alle stekkerverbindingen.",
-        "Controleer de aarding van het product.",
-        "Controleer de regelelektrode, de verbindingskabel en de stekkerverbinding.",
-        "Controleer het complete verbrandingsgastraject.",
-        "Controleer de stekker en de stekkerverbinding.",
-        "Controleer de ontstekingstransformator op goede werking en vervang deze eventueel.",
-        "Vervang de printplaat.",
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
-        "2. Controleer de correcte installatie van de condensafvoer.",
-        "3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
-        "4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
-        "Controleer en reinig de condenspomp. Vervang de condenspomp eventueel."
-      ]
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
     },
     {
       "code": "F.029",
-      "title": "De ontsteking na een vlamuitval tijdens het bedrijf is mislukt.",
-      "meaning": "De ontsteking na een vlamuitval tijdens het bedrijf is mislukt.",
+      "title": "Herontsteking na vlamuitval mislukt",
+      "meaning": "De Vaillant-besturing meldt F.029: herontsteking na vlamuitval mislukt.",
       "causes": [
-        "Gastoevoer onderbroken",
-        "Storing in verbrandingsgastraject door recirculatie of verbrandingsgasblokkade",
-        "Aarding foutief",
-        "Luchtaanzuigbuis geblokkeerd",
-        "Ontsteking mislukt",
-        "Haperende ontsteking",
-        "Regelelektrode heeft contact met de brander",
-        "Brander defect",
-        "Onderbreking in de kabelboom",
-        "Ontstekingselektrode defect",
-        "Gasblok defect/verkeerde ETgasblok",
-        "Condenswater in de verbrandingskamer vanwege een verstopte condensafvoer",
-        "Condenspomp (indien aanwezig) defect"
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
       ],
       "checks": [
-        "Controleer de gastoevoer.",
-        "Controleer het complete verbrandingsgastraject.",
-        "Controleer de aarding van het product.",
-        "Controleren en vervang eventueel de luchtaanzuigbuis.",
-        "1. Controleer de ontsteking met het testprogramma P.021.",
-        "2. Product start: ontstekingselektrode, ontstekingstransformator, gasblok en ventilator werken, gas stroomt en het gasvolume is correct, geen blokkade of recirculatie instellen.",
-        "3. Product start niet en toont weer een foutcode: voer de volgende controles uit.",
-        "Controleer of de ontstekingstransformator goed functioneert.",
-        "1. Controleer de afstand tussen de regelelektrode en de brander.",
-        "2. Controleer en vervang de eventueel de regelelektrode.",
-        "Controleer en vervang eventueel de brander.",
-        "Controleer en vervang eventueel de kabelboom inclusief alle stekkerverbindingen.",
-        "Controleer en vervang de ontstekingselektrode eventueel.",
-        "Controleer en vervang eventueel het gasblok.",
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
-        "2. Controleer de correcte installatie van de condensafvoer.",
-        "3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
-        "4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
-        "Controleer en reinig de condenspomp. Vervang de condenspomp eventueel."
-      ]
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
     },
     {
       "code": "F.032",
-      "title": "Het ventilatortoerental ligt buiten de tolerantie.",
-      "meaning": "Het ventilatortoerental ligt buiten de tolerantie.",
+      "title": "Ventilatortoerental buiten tolerantie",
+      "meaning": "De Vaillant-besturing meldt F.032: ventilatortoerental buiten tolerantie.",
       "causes": [
-        "Fout in de elektrische verbinding van de ventilator",
-        "Ventilator geblokkeerd",
-        "Ventilator defect",
-        "Storing in verbrandingsgastraject door recirculatie of verbrandingsgasblokkade",
-        "Printplaat defect"
+        "Luchttoevoer of rookgasafvoer geblokkeerd of verkeerd geconfigureerd",
+        "Ventilator, sensor, klep of condenspomp defect",
+        "Condensweg, sifon of warmtewisselaar vervuild"
       ],
       "checks": [
-        "Controleer de kabelboom tussen printplaat en de ventilator inclusief alle stekkerverbindingen.",
-        "Controleer of de ventilator goed functioneert.",
-        "Controleer en vervang de eventueel de ventilator.",
-        "Controleer het complete verbrandingsgastraject.",
-        "Vervang de printplaat."
-      ]
+        "Stel het toestel veilig buiten bedrijf bij rookgasgevaar",
+        "Controleer lucht-/rookgastraject, sifon en condensafvoer",
+        "Controleer ventilator, kleppen, sensoren en bekabeling",
+        "Controleer configuratie en voer de voorgeschreven rookgasmeting uit"
+      ],
+      "note": "Werk aan het rookgas- en verbrandingssysteem alleen als gecertificeerd monteur."
     },
     {
       "code": "F.035",
-      "title": "De VLT/VGA is geblokkeerd.",
-      "meaning": "De VLT/VGA is geblokkeerd.",
+      "title": "Lucht-/rookgasafvoer geblokkeerd",
+      "meaning": "De Vaillant-besturing meldt F.035: lucht-/rookgasafvoer geblokkeerd.",
       "causes": [
-        "Luchtaanzuigbuis geblokkeerd",
-        "Dynamische gasdruk te gering",
-        "Storing in verbrandingsgastraject door recirculatie of verbrandingsgasblokkade",
-        "Condenswater in de verbrandingskamer vanwege een verstopte condensafvoer",
-        "Condenspomp (indien aanwezig) defect",
-        "Verbrandingsluchttoevoer niet voldoende",
-        "Regelelektrode defect",
-        "Brander defect",
-        "Gasblok defect/verkeerde ETgasblok"
+        "Luchttoevoer of rookgasafvoer geblokkeerd of verkeerd geconfigureerd",
+        "Ventilator, sensor, klep of condenspomp defect",
+        "Condensweg, sifon of warmtewisselaar vervuild"
       ],
       "checks": [
-        "Controleren en vervang eventueel de luchtaanzuigbuis.",
-        "Controleer de dynamische gasdruk en de externe gasdrukregelaar.",
-        "Controleer het complete verbrandingsgastraject.",
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
-        "2. Controleer de correcte installatie van de condensafvoer.",
-        "3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
-        "4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
-        "Controleer en reinig de condenspomp. Vervang de condenspomp eventueel.",
-        "Controleer de verbrandingsluchttoevoer.",
-        "Controleer en vervang de eventueel de regelelektrode.",
-        "Controleer en vervang eventueel de brander.",
-        "Controleer en vervang eventueel het gasblok."
-      ]
+        "Stel het toestel veilig buiten bedrijf bij rookgasgevaar",
+        "Controleer lucht-/rookgastraject, sifon en condensafvoer",
+        "Controleer ventilator, kleppen, sensoren en bekabeling",
+        "Controleer configuratie en voer de voorgeschreven rookgasmeting uit"
+      ],
+      "note": "Werk aan het rookgas- en verbrandingssysteem alleen als gecertificeerd monteur."
     },
     {
       "code": "F.040",
-      "title": "De hoeveelheid lucht is te gering.",
-      "meaning": "De hoeveelheid lucht is te gering.",
+      "title": "Luchthoeveelheid te laag",
+      "meaning": "De Vaillant-besturing meldt F.040: luchthoeveelheid te laag.",
       "causes": [
-        "Storing in verbrandingsgastraject door recirculatie of verbrandingsgasblokkade",
-        "Luchtaanzuigbuis geblokkeerd",
-        "Condenswater in de verbrandingskamer vanwege een verstopte condensafvoer",
-        "Condenspomp (indien aanwezig) defect",
-        "Verkeerde gassoort ingesteld",
-        "Offset gasblok in D.052 en evt.",
-        "D.182 verkeerd ingesteld",
-        "Fout in de elektrische verbinding van het gasblok",
-        "Gasblok elektrisch niet aangesloten/verkeerd aangesloten",
-        "Regelelektrode defect",
-        "Brander defect",
-        "Printplaat defect",
-        "Ventilator defect",
-        "Lucht-massastroomsensor vervuild of defect (alleen in combinatie met de ombouwset luchtaanzuigbuis met geïntegreerde terugstroomblokkering en luchtmassastroomsensor)"
+        "Luchttoevoer of rookgasafvoer geblokkeerd of verkeerd geconfigureerd",
+        "Ventilator, sensor, klep of condenspomp defect",
+        "Condensweg, sifon of warmtewisselaar vervuild"
       ],
       "checks": [
-        "Controleer het complete verbrandingsgastraject.",
-        "Controleren en vervang eventueel de luchtaanzuigbuis.",
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
-        "2. Controleer de correcte installatie van de condensafvoer.",
-        "3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
-        "4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
-        "Controleer en reinig de condenspomp. Vervang de condenspomp eventueel.",
-        "Controleer de gassoort en de instelling van de gassoort onder",
-        "D.156 en D.157.",
-        "Controleer de offsetinstelling van het gasblok.",
-        "Controleer en vervang eventueel de kabelboom naar het gasblok.",
-        "Controleer de elektrische aansluiting van het gasblok.",
-        "Controleer en vervang de eventueel de regelelektrode.",
-        "Controleer en vervang eventueel de brander.",
-        "Vervang de printplaat.",
-        "Controleer en vervang de eventueel de ventilator.",
-        "1. Controleer de lucht-massastroomsensor op vervuiling.",
-        "2. Vervang eventueel de complete luchtaanzuigbuis."
-      ]
+        "Stel het toestel veilig buiten bedrijf bij rookgasgevaar",
+        "Controleer lucht-/rookgastraject, sifon en condensafvoer",
+        "Controleer ventilator, kleppen, sensoren en bekabeling",
+        "Controleer configuratie en voer de voorgeschreven rookgasmeting uit"
+      ],
+      "note": "Werk aan het rookgas- en verbrandingssysteem alleen als gecertificeerd monteur."
     },
     {
       "code": "F.042",
-      "title": "De codeerweerstand (in de kabelboom) of de gasgroepweerstand (op de printplaat, indien aanwezig) is ongeldig.",
-      "meaning": "De codeerweerstand (in de kabelboom) of de gasgroepweerstand (op de printplaat, indien aanwezig) is ongeldig.",
+      "title": "Codeer- of gasgroepweerstand ongeldig",
+      "meaning": "De Vaillant-besturing meldt F.042: codeer- of gasgroepweerstand ongeldig.",
       "causes": [
-        "Onderbreking in de kabelboom naar de ventilator",
-        "Gebruik van een verkeerde kabelboom tussen printplaat en gasblok",
-        "Codeerweerstand van de warmtecel wordt niet herkend"
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
       ],
       "checks": [
-        "Controleer de kabelboom tussen printplaat en de ventilator inclusief alle stekkerverbindingen (met name op de printplaat).",
-        "Controleer het artikelnummer van de kabelboom tussen printplaat en gasblok resp. warmtecel en vervang eventueel de kabelboom.",
-        "Controleer de codeerweerstand (printplaat stekker X25, contact 11/12)."
-      ]
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
     },
     {
       "code": "F.044",
-      "title": "Het ionisatiesignaal van de regelingselektrode is te laag. De driftadaptie is mislukt.",
-      "meaning": "Het ionisatiesignaal van de regelingselektrode is te laag. De driftadaptie is mislukt.",
+      "title": "Ionisatiesignaal te laag; driftadaptie mislukt",
+      "meaning": "De Vaillant-besturing meldt F.044: ionisatiesignaal te laag; driftadaptie mislukt.",
       "causes": [
-        "Storing in verbrandingsgastraject door recirculatie of verbrandingsgasblokkade",
-        "Luchtaanzuigbuis geblokkeerd",
-        "Condenswater in de verbrandingskamer vanwege een verstopte condensafvoer",
-        "Condenspomp (indien aanwezig) defect",
-        "Dynamische gasdruk te gering",
-        "Verkeerde gassoort ingesteld",
-        "Onderbreking in de kabelboom",
-        "Brander defect",
-        "Gasblok defect/verkeerde ETgasblok",
-        "Offset gasblok in D.052 en evt.",
-        "D.182 verkeerd ingesteld",
-        "Regelelektrode defect",
-        "Gasblok defect",
-        "Printplaat defect"
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
       ],
       "checks": [
-        "Controleer het complete verbrandingsgastraject.",
-        "Controleren en vervang eventueel de luchtaanzuigbuis.",
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
-        "2. Controleer de correcte installatie van de condensafvoer.",
-        "3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
-        "4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
-        "Controleer en reinig de condenspomp. Vervang de condenspomp eventueel.",
-        "Controleer de dynamische gasdruk en de externe gasdrukregelaar.",
-        "Controleer de gassoort en de instelling van de gassoort onder",
-        "D.156 en D.157.",
-        "Controleer en vervang eventueel de kabelboom inclusief alle stekkerverbindingen.",
-        "Controleer en vervang eventueel de brander.",
-        "Controleer en vervang eventueel het gasblok.",
-        "Controleer de offsetinstelling van het gasblok.",
-        "Controleer en vervang de eventueel de regelelektrode.",
-        "Vervang het gasblok.",
-        "Vervang de printplaat."
-      ]
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
     },
     {
       "code": "F.047",
-      "title": "Het signaal van de warmwatertemperatuursensor aan de uitgang van de interne boiler is niet plausibel",
-      "meaning": "Het signaal van de warmwatertemperatuursensor aan de uitgang van de interne boiler is niet plausibel",
+      "title": "Warmwateruitloopsensor geeft onwaarschijnlijke waarde",
+      "meaning": "De Vaillant-besturing meldt F.047: warmwateruitloopsensor geeft onwaarschijnlijke waarde.",
       "causes": [
-        "Fout in de elektronische verbinding van de boileruitlaattemperatuursensor",
-        "Boileruitlaattemperatuursensor defect"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
       "checks": [
-        "Controleer de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
-        "Vervang de boileruitlaattemperatuursensor."
-      ]
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.049",
-      "title": "De eBUS is kortgesloten of twee actieve eBUS-bronnen hebben een verwisselde polariteit.",
-      "meaning": "De eBUS is kortgesloten of twee actieve eBUS-bronnen hebben een verwisselde polariteit.",
+      "title": "eBUS kortgesloten of polariteit verwisseld",
+      "meaning": "De Vaillant-besturing meldt F.049: ebus kortgesloten of polariteit verwisseld.",
       "causes": [
-        "Kortsluiting op de eBUS-aansluiting",
-        "verschillende polariteiten op de eBUS-aansluiting",
-        "Printplaat defect"
+        "Voeding of busspanning buiten bereik",
+        "Stekker, buskabel of polariteit niet in orde",
+        "Configuratie, display of printplaat defect"
       ],
       "checks": [
-        "Controleer alle eBUS-aansluitingen.",
-        "Controleer de polariteit (+/-) van de eBUS-aansluitingen.",
-        "Vervang de printplaat."
-      ]
+        "Controleer netvoeding, zekeringen en aarding",
+        "Controleer bus- en stekkerverbindingen op polariteit en kortsluiting",
+        "Controleer toestelconfiguratie en aangesloten modules",
+        "Vervang elektronica pas na uitsluiten van externe oorzaken"
+      ],
+      "note": "Maak het toestel spanningsvrij en controleer op spanningsloosheid voordat de elektronica wordt geopend."
     },
     {
       "code": "F.057",
-      "title": "De verbrandingsregeling is uitgevallen en het bijbehorende noodbedrijf is mislukt.",
-      "meaning": "De verbrandingsregeling is uitgevallen en het bijbehorende noodbedrijf is mislukt.",
+      "title": "Verbrandingsregeling en noodbedrijf uitgevallen",
+      "meaning": "De Vaillant-besturing meldt F.057: verbrandingsregeling en noodbedrijf uitgevallen.",
       "causes": [
-        "Noodbedrijf mislukt",
-        "Storing in verbrandingsgastraject door recirculatie of verbrandingsgasblokkade",
-        "Luchtaanzuigbuis geblokkeerd",
-        "Condenswater in de verbrandingskamer vanwege een verstopte condensafvoer",
-        "Condenspomp (indien aanwezig) defect",
-        "Dynamische gasdruk te gering",
-        "Offset gasblok in D.052 en evt.",
-        "D.182 verkeerd ingesteld",
-        "Onderbreking in de kabelboom",
-        "Printplaat defect",
-        "Ventilator defect",
-        "Lucht-massastroomsensor vervuild of defect (alleen in combinatie met de ombouwset luchtaanzuigbuis met geïntegreerde terugstroomblokkering en luchtmassastroomsensor)"
+        "Onderdeel, aansluiting of configuratie reageert niet zoals verwacht",
+        "Interne veiligheidscontrole heeft een afwijking vastgesteld"
       ],
       "checks": [
-        "Controleer de noodbedrijf en fouthistorie en voer de noodzakelijke maatregelen uit.",
-        "Controleer het complete verbrandingsgastraject.",
-        "Controleren en vervang eventueel de luchtaanzuigbuis.",
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
-        "2. Controleer de correcte installatie van de condensafvoer.",
-        "3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
-        "4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
-        "Controleer en reinig de condenspomp. Vervang de condenspomp eventueel.",
-        "Controleer de dynamische gasdruk en de externe gasdrukregelaar.",
-        "Controleer de offsetinstelling van het gasblok.",
-        "Controleer en vervang eventueel de kabelboom inclusief alle stekkerverbindingen.",
-        "Vervang de printplaat.",
-        "Controleer via D.033 en D.034 of het ventilatortoerental meer dan 20-30 rpm afwijkt.",
-        "1. Controleer de lucht-massastroomsensor op vervuiling.",
-        "2. Vervang eventueel de complete luchtaanzuigbuis."
+        "Noteer de code en lees het foutgeheugen uit",
+        "Controleer stekkers, kabelboom en toestelconfiguratie",
+        "Volg de maatregelentabel in de officiële handleiding",
+        "Reset pas nadat de oorzaak is verholpen"
       ]
     },
     {
       "code": "F.061",
-      "title": "De ASIC of de µController werkt niet in de gedefinieerde tijdsinstellingen.",
-      "meaning": "De ASIC of de µController werkt niet in de gedefinieerde tijdsinstellingen.",
+      "title": "Interne tijdcontrole van de elektronica mislukt",
+      "meaning": "De Vaillant-besturing meldt F.061: interne tijdcontrole van de elektronica mislukt.",
       "causes": [
-        "Fout in de elektrische verbinding van het gasblok",
-        "Printplaat defect"
+        "Voeding of busspanning buiten bereik",
+        "Stekker, buskabel of polariteit niet in orde",
+        "Configuratie, display of printplaat defect"
       ],
       "checks": [
-        "Controleer en vervang eventueel de kabelboom naar het gasblok.",
-        "Vervang de printplaat."
-      ]
+        "Controleer netvoeding, zekeringen en aarding",
+        "Controleer bus- en stekkerverbindingen op polariteit en kortsluiting",
+        "Controleer toestelconfiguratie en aangesloten modules",
+        "Vervang elektronica pas na uitsluiten van externe oorzaken"
+      ],
+      "note": "Maak het toestel spanningsvrij en controleer op spanningsloosheid voordat de elektronica wordt geopend."
     },
     {
       "code": "F.062",
-      "title": "De uitschakeling van de vlam wordt vertraagd gedetecteerd.",
-      "meaning": "De uitschakeling van de vlam wordt vertraagd gedetecteerd.",
+      "title": "Uitschakeling van de vlam vertraagd gedetecteerd",
+      "meaning": "De Vaillant-besturing meldt F.062: uitschakeling van de vlam vertraagd gedetecteerd.",
       "causes": [
-        "Gasblok defect",
-        "Printplaat defect",
-        "Ontstekingselektrode defect"
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
       ],
       "checks": [
-        "Vervang het gasblok.",
-        "Vervang de printplaat.",
-        "Controleer en vervang de ontstekingselektrode eventueel."
-      ]
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
     },
     {
       "code": "F.063",
-      "title": "EEPROM meldt een fout bij de lees-/schrijftest.",
-      "meaning": "EEPROM meldt een fout bij de lees-/schrijftest.",
+      "title": "EEPROM lees-/schrijffout",
+      "meaning": "De Vaillant-besturing meldt F.063: eeprom lees-/schrijffout.",
       "causes": [
-        "Printplaat defect"
+        "Voeding of busspanning buiten bereik",
+        "Stekker, buskabel of polariteit niet in orde",
+        "Configuratie, display of printplaat defect"
       ],
       "checks": [
-        "Vervang de printplaat."
-      ]
+        "Controleer netvoeding, zekeringen en aarding",
+        "Controleer bus- en stekkerverbindingen op polariteit en kortsluiting",
+        "Controleer toestelconfiguratie en aangesloten modules",
+        "Vervang elektronica pas na uitsluiten van externe oorzaken"
+      ],
+      "note": "Maak het toestel spanningsvrij en controleer op spanningsloosheid voordat de elektronica wordt geopend."
     },
     {
       "code": "F.064",
-      "title": "Het sensorsignaal kon niet correct worden omgevormd.",
-      "meaning": "Het sensorsignaal kon niet correct worden omgevormd.",
+      "title": "Sensorsignaal niet correct verwerkt",
+      "meaning": "De Vaillant-besturing meldt F.064: sensorsignaal niet correct verwerkt.",
       "causes": [
-        "Sensor defect",
-        "Printplaat defect"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
       "checks": [
-        "Controleer de onder D.166 weergegeven sensor.",
-        "Wanneer de getoonde waarde voor D.166 > 30 en niet is geregistreerd, vervang dan de printplaat."
-      ]
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.065",
-      "title": "Het toegestane bedrijfstemperatuurbereik van een elektronicacomponent is overschreden.",
-      "meaning": "Het toegestane bedrijfstemperatuurbereik van een elektronicacomponent is overschreden.",
+      "title": "Elektronicatemperatuur buiten toegestaan bereik",
+      "meaning": "De Vaillant-besturing meldt F.065: elektronicatemperatuur buiten toegestaan bereik.",
       "causes": [
-        "Elektronica oververhit",
-        "Printplaat defect"
+        "Voeding of busspanning buiten bereik",
+        "Stekker, buskabel of polariteit niet in orde",
+        "Configuratie, display of printplaat defect"
       ],
       "checks": [
-        "Controleer de externe warmte-inwerkingen op de elektronica.",
-        "Vervang de printplaat."
-      ]
+        "Controleer netvoeding, zekeringen en aarding",
+        "Controleer bus- en stekkerverbindingen op polariteit en kortsluiting",
+        "Controleer toestelconfiguratie en aangesloten modules",
+        "Vervang elektronica pas na uitsluiten van externe oorzaken"
+      ],
+      "note": "Maak het toestel spanningsvrij en controleer op spanningsloosheid voordat de elektronica wordt geopend."
     },
     {
       "code": "F.067",
-      "title": "Het vlambeveiliging is defect.",
-      "meaning": "Het vlambeveiliging is defect.",
+      "title": "Vlambeveiliging defect",
+      "meaning": "De Vaillant-besturing meldt F.067: vlambeveiliging defect.",
       "causes": [
-        "Vlammensignaal niet aannemelijk",
-        "Printplaat defect"
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
       ],
       "checks": [
-        "Controleer het vlammensignaal.",
-        "Vervang de printplaat."
-      ]
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
     },
     {
       "code": "F.068",
-      "title": "De vlambeveiliging meldt een instabiel signaal",
-      "meaning": "De vlambeveiliging meldt een instabiel signaal",
+      "title": "Instabiel vlamsignaal",
+      "meaning": "De Vaillant-besturing meldt F.068: instabiel vlamsignaal.",
       "causes": [
-        "Printplaat defect"
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
       ],
       "checks": [
-        "Vervang de printplaat."
-      ]
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
     },
     {
       "code": "F.070",
-      "title": "De toestelherkenning (DSN) is foutief, ontbreekt of past niet bij de codeerweerstand.",
-      "meaning": "De toestelherkenning (DSN) is foutief, ontbreekt of past niet bij de codeerweerstand.",
+      "title": "Toestelherkenning of codeerweerstand ongeldig",
+      "meaning": "De Vaillant-besturing meldt F.070: toestelherkenning of codeerweerstand ongeldig.",
       "causes": [
-        "Toestelidentificatie na tegelijkertijd vervangen van printplaat en display niet correct ingesteld",
-        "Fout in de elektrische verbinding van het gasblok"
+        "Toestel- of installatieconfiguratie komt niet overeen",
+        "Codeerweerstand, vervangend onderdeel of parameters passen niet bij het toestel",
+        "Inbedrijfstelling of ombouwprocedure is niet afgerond"
       ],
       "checks": [
-        "1. Stel de juiste toestelherkenning in.",
-        "2. Vervang na tegelijkertijd vervangen van de printplaat en het display de regelelektrode.",
-        "Controleer de kabelboom tussen printplaat en het gasblok inclusief alle stekkerverbindingen."
-      ]
+        "Controleer volledig typenummer en ingestelde toestelcode",
+        "Controleer codeerweerstand, onderdelen en parameterinstellingen",
+        "Rond de officiële inbedrijfstellings- of ombouwprocedure af",
+        "Controleer daarna de foutstatus opnieuw"
+      ],
+      "note": "Gebruik uitsluitend configuratiegegevens en onderdelen die voor het exacte toesteltype zijn vrijgegeven."
     },
     {
       "code": "F.071",
-      "title": "Aanvoertemperatuursensor levert onwaarschijnlijke waarden.",
-      "meaning": "Aanvoertemperatuursensor levert onwaarschijnlijke waarden.",
+      "title": "Aanvoertemperatuursensor geeft onwaarschijnlijke waarde",
+      "meaning": "De Vaillant-besturing meldt F.071: aanvoertemperatuursensor geeft onwaarschijnlijke waarde.",
       "causes": [
-        "Aanvoertemperatuursensor verkeerde positie",
-        "Aanvoertemperatuursensor defect"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
       "checks": [
-        "Controleer de positionering van de aanvoertemperatuursensor.",
-        "Controleer en vervang eventueel de aanvoertemperatuursensor."
-      ]
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.072",
-      "title": "De temperatuurspreiding tussen aanvoer- en retourtemperatuursensor is ongeldig.",
-      "meaning": "De temperatuurspreiding tussen aanvoer- en retourtemperatuursensor is ongeldig.",
+      "title": "Temperatuurverschil aanvoer/retour niet plausibel",
+      "meaning": "De Vaillant-besturing meldt F.072: temperatuurverschil aanvoer/retour niet plausibel.",
       "causes": [
-        "Aanvoertemperatuursensor defect",
-        "Fout in de elektrische verbinding van de aanvoertemperatuursensor",
-        "Retourtemperatuursensor defect",
-        "Fout in de elektrische verbinding van de retourtemperatuursensor"
+        "Onderdeel, aansluiting of configuratie reageert niet zoals verwacht",
+        "Interne veiligheidscontrole heeft een afwijking vastgesteld"
       ],
       "checks": [
-        "Controleer en vervang eventueel de aanvoertemperatuursensor.",
-        "Controleer en vervang eventueel de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
-        "Controleer en vervang eventueel de retourtemperatuursensor."
+        "Noteer de code en lees het foutgeheugen uit",
+        "Controleer stekkers, kabelboom en toestelconfiguratie",
+        "Volg de maatregelentabel in de officiële handleiding",
+        "Reset pas nadat de oorzaak is verholpen"
       ]
     },
     {
       "code": "F.074",
-      "title": "Het signaal van de waterdruksensor is onderbroken.",
-      "meaning": "Het signaal van de waterdruksensor is onderbroken.",
+      "title": "Waterdruksensorsignaal onderbroken",
+      "meaning": "De Vaillant-besturing meldt F.074: waterdruksensorsignaal onderbroken.",
       "causes": [
-        "Fout in de elektrische verbinding van de waterdruksensor",
-        "Waterdruksensor defect"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
       "checks": [
-        "Controleer en vervang eventueel de kabelboom inclusief alle stekkerverbindingen.",
-        "Controleer en vervang eventueel de waterdruksensor."
-      ]
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.075",
-      "title": "De druksprong bij het starten van de CV-pomp is te laag.",
-      "meaning": "De druksprong bij het starten van de CV-pomp is te laag.",
+      "title": "Druksprong bij pompstart te laag",
+      "meaning": "De Vaillant-besturing meldt F.075: druksprong bij pompstart te laag.",
       "causes": [
-        "Waterdruksensor defect",
-        "Interne CV-pomp defect",
-        "Systeemdruk te gering",
-        "Intern expansievat defect",
-        "Te weinig/geen water in het product.",
-        "Lucht in het product",
-        "Onderbreking in de kabelboom (Lin-kabel)",
-        "Onderbreking in de kabelboom"
+        "Te lage systeemdruk, lucht of onvoldoende circulatie",
+        "Pomp, druksensor of bekabeling reageert niet correct",
+        "Afsluiter, filter, bypass of hydraulisch circuit is geblokkeerd"
       ],
       "checks": [
-        "Controleer en vervang eventueel de waterdruksensor.",
-        "Vervang de interne CV-pomp.",
-        "Controleer de installatiedruk.",
-        "Controleer en vervang eventueel het interne expansievat.",
-        "1. Vul de CV-installatie.",
-        "2. Controleer het product en het systeem op lekkage.",
-        "Ontlucht de verwarmingsinstallatie.",
-        "Controleer de kabelboom (Lin-kabel).",
-        "Controleer en vervang eventueel de kabelboom inclusief alle stekkerverbindingen."
-      ]
+        "Controleer systeemdruk en installatie op lekkage",
+        "Ontlucht volgens het installatievoorschrift",
+        "Controleer pompwerking, stekkers en vrije doorstroming",
+        "Controleer druksensor, filters, bypass en expansievat"
+      ],
+      "note": "Vul niet herhaaldelijk bij zonder eerst lekkage en expansievat te controleren."
     },
     {
       "code": "F.076",
-      "title": "De oververhittingsbescherming van de primaire warmtewisselaar is actief.",
-      "meaning": "De oververhittingsbescherming van de primaire warmtewisselaar is actief.",
+      "title": "Oververhittingsbeveiliging primaire warmtewisselaar actief",
+      "meaning": "De ecoTEC exclusive CF meldt F.076: oververhittingsbeveiliging primaire warmtewisselaar actief.",
       "causes": [
-        "Onderbreking in de kabelboom"
+        "Kabelboom of aansluiting van de oververhittingsbeveiliging onderbroken"
       ],
       "checks": [
-        "Controleer en vervang eventueel de kabelboom inclusief alle stekkerverbindingen (printplaat stekker X20, contact 3/14)."
-      ]
+        "Controleer de oorzaak volgens de foutcodetabel van Vaillant 0020282268_07.",
+        "Controleer relevante stekkers, bekabeling, gasvoorziening en/of VLT/VGA afhankelijk van de foutcode.",
+        "Herstel de vastgestelde oorzaak en voer de voorgeschreven functietest uit."
+      ],
+      "note": "Metingen en werkzaamheden aan gasweg, netspanning en geopende elektronica alleen door een bevoegd monteur en volgens de Vaillant-procedure."
     },
     {
       "code": "F.077",
-      "title": "Een condenspomp of een externe verbrandingsgasklep blokkeert het branderbedrijf.",
-      "meaning": "Een condenspomp of een externe verbrandingsgasklep blokkeert het branderbedrijf.",
+      "title": "Condenspomp of externe rookgasklep blokkeert de brander",
+      "meaning": "De Vaillant-besturing meldt F.077: condenspomp of externe rookgasklep blokkeert de brander.",
       "causes": [
-        "geen/foutieve terugmelding van de verbrandingsgasklep",
-        "Verbrandingsgasklep defect",
-        "Fout in de elektrische verbinding met de condenspomp",
-        "Condenspomp defect"
+        "Luchttoevoer of rookgasafvoer geblokkeerd of verkeerd geconfigureerd",
+        "Ventilator, sensor, klep of condenspomp defect",
+        "Condensweg, sifon of warmtewisselaar vervuild"
       ],
       "checks": [
-        "Controleer of de verbrandingsgasklep goed functioneert.",
-        "Vervang de verbrandingsgasklep.",
-        "Controleer de elektrische verbinding met de condenspomp.",
-        "Vervang de condenspomp."
-      ]
+        "Stel het toestel veilig buiten bedrijf bij rookgasgevaar",
+        "Controleer lucht-/rookgastraject, sifon en condensafvoer",
+        "Controleer ventilator, kleppen, sensoren en bekabeling",
+        "Controleer configuratie en voer de voorgeschreven rookgasmeting uit"
+      ],
+      "note": "Werk aan het rookgas- en verbrandingssysteem alleen als gecertificeerd monteur."
     },
     {
       "code": "F.078",
-      "title": "De regelmodule wordt door het toestel niet ondersteund.",
-      "meaning": "De regelmodule wordt door het toestel niet ondersteund.",
+      "title": "Regelmodule wordt niet ondersteund",
+      "meaning": "De Vaillant-besturing meldt F.078: regelmodule wordt niet ondersteund.",
       "causes": [
-        "Verkeerde regelmodule aangesloten",
-        "Fout in de elektrische verbinding van de warmwateraansluiting-temperatuursensor"
+        "Klep, boilercomponent of regelmodule reageert niet",
+        "Bedrading, stekker of configuratie is onjuist",
+        "Hydraulische blokkade of onvoldoende doorstroming"
       ],
       "checks": [
-        "Controleren of de regelmodule compatibel is met het product.",
-        "1. Bij producten zonder geïntegreerde warmwaterbereiding: controleer of de brug aan de stekker X2 tussen de contacten 2 en 5 aangesloten en zonder onderbreking is.",
-        "2. Als de brug zonder fouten is, controleer en vervang dan evt. de kabelboon tussen printplaat en sensor."
+        "Controleer toestelconfiguratie en warmwatervraag",
+        "Controleer stekkers, sensoren en bekabeling",
+        "Test klep of module via het voorgeschreven testprogramma",
+        "Controleer het warmwatercircuit op vrije doorstroming"
       ]
     },
     {
       "code": "F.080",
-      "title": "De koudwater-inlaattemperatuursensor in de interne boiler is defect.",
-      "meaning": "De koudwater-inlaattemperatuursensor in de interne boiler is defect.",
+      "title": "Koudwater-inlaattemperatuursensor interne boiler defect",
+      "meaning": "De Vaillant-besturing meldt F.080: koudwater-inlaattemperatuursensor interne boiler defect.",
       "causes": [
-        "Inlaattemperatuursensor defect of niet aangesloten"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
       "checks": [
-        "Controleer en vervang eventueel de NTC-sensor, stekker, kabelboom en de printplaat."
-      ]
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.081",
-      "title": "De boilerlading is mislukt.",
-      "meaning": "De boilerlading is mislukt.",
+      "title": "Boilerlading mislukt",
+      "meaning": "De Vaillant-besturing meldt F.081: boilerlading mislukt.",
       "causes": [
-        "Onderbreking in de kabelboom",
-        "Secundaire warmtewisselaar verstopt/geblokkeerd",
-        "Terugslagklep pomp geblokkeerd",
-        "Stekker temperatuursensor warmwateraansluiting niet aangesloten/los",
-        "Warmwateraansluiting-temperatuursensor verkeerde gemonteerd",
-        "Pomp geblokkeerd",
-        "De pomp is defect.",
-        "3- wegventiel defect of geblokkeerd",
-        "Vleugelwielsensor in de gelaagde boiler defect"
+        "Klep, boilercomponent of regelmodule reageert niet",
+        "Bedrading, stekker of configuratie is onjuist",
+        "Hydraulische blokkade of onvoldoende doorstroming"
       ],
       "checks": [
-        "Controleer de kabelboom naar de interne boiler.",
-        "Controleer de secundaire warmtewisselaar op vervuiling.",
-        "Controleer de terugslagklep van de pomp in de interne boiler op goede werking.",
-        "Controleer de stekker en de stekkerverbinding van de temperatuursensor warmwateraansluiting.",
-        "Controleer of de warmwatertemperatuursensor correct is gemonteerd op de buis.",
-        "Controleer of de pomp in de interne boiler goed functioneert.",
-        "Vervang de pomp in de interne boiler.",
-        "Controleer en vervang eventueel de 3-wegklep.",
-        "Controleer en vervang eventueel de vleugelwielsensor in de gelaagde boiler."
+        "Controleer toestelconfiguratie en warmwatervraag",
+        "Controleer stekkers, sensoren en bekabeling",
+        "Test klep of module via het voorgeschreven testprogramma",
+        "Controleer het warmwatercircuit op vrije doorstroming"
       ]
     },
     {
       "code": "F.083",
-      "title": "Bij branderstart wordt geen of een te langzame temperatuurtoename aan de aanvoer- of retourtemperatuursensor geregistreerd.",
-      "meaning": "Bij branderstart wordt geen of een te langzame temperatuurtoename aan de aanvoer- of retourtemperatuursensor geregistreerd.",
+      "title": "Geen of te langzame temperatuurstijging bij branderstart",
+      "meaning": "De Vaillant-besturing meldt F.083: geen of te langzame temperatuurstijging bij branderstart.",
       "causes": [
-        "Systeemdruk te gering",
-        "Aanvoertemperatuursensor geen contact",
-        "Fout in de elektrische verbinding van de aanvoertemperatuursensor",
-        "Retourtemperatuursensor geen contact",
-        "Fout in de elektrische verbinding van de retourtemperatuursensor",
-        "Te weinig/geen water in het product."
+        "Te lage systeemdruk, lucht of onvoldoende circulatie",
+        "Pomp, druksensor of bekabeling reageert niet correct",
+        "Afsluiter, filter, bypass of hydraulisch circuit is geblokkeerd"
       ],
       "checks": [
-        "Controleer de installatiedruk.",
-        "Controleer of de aanvoertemperatuursensor correct tegen de aanvoerbuis ligt.",
-        "Controleer en vervang eventueel de kabelboom tussen printplaat en sensor inclusief alle stekkerverbindingen.",
-        "Controleer of de retourtemperatuursensor correct tegen de retourbuis ligt.",
-        "1. Vul de CV-installatie.",
-        "2. Controleer het product en het systeem op lekkage."
-      ]
+        "Controleer systeemdruk en installatie op lekkage",
+        "Ontlucht volgens het installatievoorschrift",
+        "Controleer pompwerking, stekkers en vrije doorstroming",
+        "Controleer druksensor, filters, bypass en expansievat"
+      ],
+      "note": "Vul niet herhaaldelijk bij zonder eerst lekkage en expansievat te controleren."
     },
     {
       "code": "F.084",
-      "title": "Het temperatuurverschil van aanvoer- en retourtemperatuursensor geeft niet-plausibele waarden.",
-      "meaning": "Het temperatuurverschil van aanvoer- en retourtemperatuursensor geeft niet-plausibele waarden.",
+      "title": "Temperatuurverschil aanvoer/retour onwaarschijnlijk",
+      "meaning": "De Vaillant-besturing meldt F.084: temperatuurverschil aanvoer/retour onwaarschijnlijk.",
       "causes": [
-        "Aanvoertemperatuursensor verkeerd gemonteerd",
-        "Retourtemperatuursensor verkeerd gemonteerd",
-        "Aanvoer- en retourtemperatuursensor verwisseld"
+        "Onderdeel, aansluiting of configuratie reageert niet zoals verwacht",
+        "Interne veiligheidscontrole heeft een afwijking vastgesteld"
       ],
       "checks": [
-        "Controleer of de aanvoertemperatuursensor correct gemonteerd is.",
-        "Controleer of de retourtemperatuursensor correct gemonteerd is.",
-        "Controleer of de aanvoer- en retourtemperatuursensor correct gemonteerd is."
+        "Noteer de code en lees het foutgeheugen uit",
+        "Controleer stekkers, kabelboom en toestelconfiguratie",
+        "Volg de maatregelentabel in de officiële handleiding",
+        "Reset pas nadat de oorzaak is verholpen"
       ]
     },
     {
       "code": "F.085",
-      "title": "De NTC-sensoren zijn verkeerd gemonteerd.",
-      "meaning": "De NTC-sensoren zijn verkeerd gemonteerd.",
+      "title": "Aanvoer- en retoursensor verkeerd gemonteerd",
+      "meaning": "De Vaillant-besturing meldt F.085: aanvoer- en retoursensor verkeerd gemonteerd.",
       "causes": [
-        "Aanvoer-/retourtemperatuursensor op dezelfde/foute buis gemonteerd"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
       "checks": [
-        "Controleer of de aanvoer- en retourtemperatuursensor aan de correcte buis gemonteerd zijn."
-      ]
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.087",
-      "title": "De ontstekingstransformator is niet op de printplaat aangesloten.",
-      "meaning": "De ontstekingstransformator is niet op de printplaat aangesloten.",
+      "title": "Ontstekingstransformator niet aangesloten",
+      "meaning": "De Vaillant-besturing meldt F.087: ontstekingstransformator niet aangesloten.",
       "causes": [
-        "Fout in de elektrische verbinding van de ontstekingstransformator",
-        "Ontstekingstransformator defect"
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
       ],
       "checks": [
-        "Controleer de kabelboom tussen printplaat en de ontstekingstransformator inclusief alle stekkerverbindingen.",
-        "Controleer de ontstekingstransformator op goede werking en vervang deze eventueel."
-      ]
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
     },
     {
       "code": "F.088",
-      "title": "De elektrische verbinding met de gasklep is onderbroken.",
-      "meaning": "De elektrische verbinding met de gasklep is onderbroken.",
+      "title": "Elektrische verbinding met de gasklep onderbroken",
+      "meaning": "De Vaillant-besturing meldt F.088: elektrische verbinding met de gasklep onderbroken.",
       "causes": [
-        "Gasblok niet aangesloten",
-        "Gasblok verkeerd aangesloten",
-        "Kortsluiting in de kabelboom"
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
       ],
       "checks": [
-        "Controleer de aansluiting van het gasblok.",
-        "Controleer de kabelboom en vervang de kabelboom eventueel."
-      ]
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
     },
     {
       "code": "F.089",
-      "title": "De ingebouwde CV-pomp past niet bij het toesteltype.",
-      "meaning": "De ingebouwde CV-pomp past niet bij het toesteltype.",
+      "title": "Ingebouwde CV-pomp past niet bij het toesteltype",
+      "meaning": "De Vaillant-besturing meldt F.089: ingebouwde cv-pomp past niet bij het toesteltype.",
       "causes": [
-        "Verkeerde pomp aangesloten"
+        "Te lage systeemdruk, lucht of onvoldoende circulatie",
+        "Pomp, druksensor of bekabeling reageert niet correct",
+        "Afsluiter, filter, bypass of hydraulisch circuit is geblokkeerd"
       ],
       "checks": [
-        "Controleer, of de aangesloten pomp de voor het product aanbevolen pomp is."
-      ]
+        "Controleer systeemdruk en installatie op lekkage",
+        "Ontlucht volgens het installatievoorschrift",
+        "Controleer pompwerking, stekkers en vrije doorstroming",
+        "Controleer druksensor, filters, bypass en expansievat"
+      ],
+      "note": "Vul niet herhaaldelijk bij zonder eerst lekkage en expansievat te controleren."
     },
     {
       "code": "F.090",
-      "title": "De communicatie met de interne boiler is onderbroken.",
-      "meaning": "De communicatie met de interne boiler is onderbroken.",
+      "title": "Communicatie met de interne boiler onderbroken",
+      "meaning": "De Vaillant-besturing meldt F.090: communicatie met de interne boiler onderbroken.",
       "causes": [
-        "Onderbreking in de kabelboom",
-        "Stekker op printplaat niet aangesloten/los"
+        "Voeding of busspanning buiten bereik",
+        "Stekker, buskabel of polariteit niet in orde",
+        "Configuratie, display of printplaat defect"
       ],
       "checks": [
-        "Controleer en vervang eventueel de kabelboom inclusief alle stekkerverbindingen.",
-        "Controleer de stekker en de stekkerverbinding."
-      ]
+        "Controleer netvoeding, zekeringen en aarding",
+        "Controleer bus- en stekkerverbindingen op polariteit en kortsluiting",
+        "Controleer toestelconfiguratie en aangesloten modules",
+        "Vervang elektronica pas na uitsluiten van externe oorzaken"
+      ],
+      "note": "Maak het toestel spanningsvrij en controleer op spanningsloosheid voordat de elektronica wordt geopend."
     },
     {
       "code": "F.092",
-      "title": "De omstelling van de gassoort is niet correct afgesloten.",
-      "meaning": "De omstelling van de gassoort is niet correct afgesloten.",
+      "title": "Omstelling van de gassoort niet correct afgerond",
+      "meaning": "De Vaillant-besturing meldt F.092: omstelling van de gassoort niet correct afgerond.",
       "causes": [
-        "Gasombouw in D.156 niet afgesloten"
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
       ],
       "checks": [
-        "Controleer de instelling in D.156."
-      ]
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
     },
     {
       "code": "F.095",
-      "title": "De gasklepstappenmotor heeft het minimaal toegestane aantal stappen bereikt.",
-      "meaning": "De gasklepstappenmotor heeft het minimaal toegestane aantal stappen bereikt.",
+      "title": "Gasklepstappenmotor op minimumaantal stappen",
+      "meaning": "De Vaillant-besturing meldt F.095: gasklepstappenmotor op minimumaantal stappen.",
       "causes": [
-        "Storing in verbrandingsgastraject door recirculatie of verbrandingsgasblokkade",
-        "Condenswater in de verbrandingskamer vanwege een verstopte condensafvoer",
-        "Condenspomp (indien aanwezig) defect",
-        "Verkeerde gassoort ingesteld",
-        "Offset gasblok in D.052 en evt.",
-        "D.182 verkeerd ingesteld",
-        "Brander defect",
-        "Gasblok defect/verkeerde ETgasblok",
-        "Fout in de elektrische verbinding van het gasblok",
-        "Regelelektrode defect",
-        "Printplaat defect",
-        "Lucht-massastroomsensor vervuild of defect (alleen in combinatie met de ombouwset luchtaanzuigbuis met geïntegreerde terugstroomblokkering en luchtmassastroomsensor)"
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
       ],
       "checks": [
-        "Controleer het complete verbrandingsgastraject.",
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
-        "2. Controleer de correcte installatie van de condensafvoer.",
-        "3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
-        "4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
-        "Controleer en reinig de condenspomp. Vervang de condenspomp eventueel.",
-        "Controleer de gassoort en de instelling van de gassoort onder",
-        "D.156 en D.157.",
-        "Controleer de offsetinstelling van het gasblok.",
-        "Controleer en vervang eventueel de brander.",
-        "Controleer en vervang eventueel het gasblok.",
-        "Controleer de kabelboom tussen printplaat en het gasblok inclusief alle stekkerverbindingen.",
-        "Controleer en vervang de eventueel de regelelektrode.",
-        "Vervang de printplaat.",
-        "1. Controleer de lucht-massastroomsensor op vervuiling.",
-        "2. Vervang eventueel de complete luchtaanzuigbuis."
-      ]
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
     },
     {
       "code": "F.096",
-      "title": "De gasklepstappenmotor heeft het maximaal toegestane aantal stappen bereikt.",
-      "meaning": "De gasklepstappenmotor heeft het maximaal toegestane aantal stappen bereikt.",
+      "title": "Gasklepstappenmotor op maximumaantal stappen",
+      "meaning": "De Vaillant-besturing meldt F.096: gasklepstappenmotor op maximumaantal stappen.",
       "causes": [
-        "Gasaansluitdruk te gering",
-        "Storing in verbrandingsgastraject door recirculatie of verbrandingsgasblokkade",
-        "Verkeerde gassoort ingesteld",
-        "Offset gasblok in D.052 en evt.",
-        "D.182 verkeerd ingesteld",
-        "Condenswater in de verbrandingskamer vanwege een verstopte condensafvoer",
-        "Condenspomp (indien aanwezig) defect",
-        "Fout in de elektrische verbinding van het gasblok",
-        "Regelelektrode defect",
-        "Brander defect",
-        "Gasblok defect/verkeerde ETgasblok",
-        "Printplaat defect",
-        "Lucht-massastroomsensor vervuild of defect (alleen in combinatie met de ombouwset luchtaanzuigbuis met geïntegreerde terugstroomblokkering en luchtmassastroomsensor)"
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
       ],
       "checks": [
-        "Controleer de gasaansluitdruk.",
-        "Controleer het complete verbrandingsgastraject.",
-        "Controleer de gassoort en de instelling van de gassoort onder",
-        "D.156 en D.157.",
-        "Controleer de offsetinstelling van het gasblok.",
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
-        "2. Controleer de correcte installatie van de condensafvoer.",
-        "3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
-        "4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
-        "Controleer en reinig de condenspomp. Vervang de condenspomp eventueel.",
-        "Controleer de kabelboom tussen printplaat en het gasblok inclusief alle stekkerverbindingen.",
-        "Controleer en vervang de eventueel de regelelektrode.",
-        "Controleer en vervang eventueel de brander.",
-        "Controleer en vervang eventueel het gasblok.",
-        "Vervang de printplaat.",
-        "1. Controleer de lucht-massastroomsensor op vervuiling.",
-        "2. Vervang eventueel de complete luchtaanzuigbuis."
-      ]
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
     },
     {
       "code": "F.097",
-      "title": "Het uitvoeren van een zelftest van de hoofdprintplaat is mislukt.",
-      "meaning": "Het uitvoeren van een zelftest van de hoofdprintplaat is mislukt.",
+      "title": "Zelftest hoofdprintplaat mislukt",
+      "meaning": "De ecoTEC exclusive CF meldt F.097: zelftest hoofdprintplaat mislukt.",
       "causes": [
-        "Zelftest printplaat mislukt (printplaat defect)"
+        "Hoofdprintplaat defect of interne zelftest mislukt"
       ],
       "checks": [
-        "Vervang de printplaat."
-      ]
+        "Controleer de oorzaak volgens de foutcodetabel van Vaillant 0020282268_07.",
+        "Controleer relevante stekkers, bekabeling, gasvoorziening en/of VLT/VGA afhankelijk van de foutcode.",
+        "Herstel de vastgestelde oorzaak en voer de voorgeschreven functietest uit."
+      ],
+      "note": "Metingen en werkzaamheden aan gasweg, netspanning en geopende elektronica alleen door een bevoegd monteur en volgens de Vaillant-procedure."
     },
     {
       "code": "F.105",
-      "title": "Bij een vervangen van het gasblok of een gelijktijdige vervanging van printplaat en display moet de gasblok-offset passend bij het actuele gasblok worden ingesteld.",
-      "meaning": "Bij een vervangen van het gasblok of een gelijktijdige vervanging van printplaat en display moet de gasblok-offset passend bij het actuele gasblok worden ingesteld.",
+      "title": "Gasklep-offset nog niet correct ingesteld",
+      "meaning": "De Vaillant-besturing meldt F.105: gasklep-offset nog niet correct ingesteld.",
       "causes": [
-        "Offset gasblok in D.052 en evt.",
-        "D.182 verkeerd ingesteld",
-        "Fout in de elektrische verbinding van het gasblok"
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
       ],
       "checks": [
-        "Controleer de offsetinstelling van het gasblok.",
-        "Controleer de kabelboom tussen printplaat en het gasblok inclusief alle stekkerverbindingen."
-      ]
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
     },
     {
       "code": "F.110",
-      "title": "Er is geen succesvolle ontsteking met het verrijkte gas-luchtmengsel gedetecteerd.",
-      "meaning": "Er is geen succesvolle ontsteking met het verrijkte gas-luchtmengsel gedetecteerd.",
+      "title": "Ontsteking met verrijkt gas-luchtmengsel niet succesvol",
+      "meaning": "De ecoTEC exclusive CF meldt F.110: ontsteking met verrijkt gas-luchtmengsel niet succesvol.",
       "causes": [
-        "Warmte-afname niet voldoende",
-        "Harde ontsteking plaatsgevonden",
-        "Gasafsluitkraan gesloten",
-        "Gasaansluitdruk te gering",
-        "Lucht in de gasleiding (bijv. bij eerste inbedrijfstelling)",
-        "Verkeerde gassoort ingesteld",
-        "Offset gasblok in D.052 en evt.",
-        "D.182 verkeerd ingesteld",
-        "Luchtaanzuigbuis geblokkeerd",
-        "Ontsteking mislukt",
-        "Dynamische gasdruk te gering",
-        "Storing in verbrandingsgastraject door recirculatie of verbrandingsgasblokkade",
-        "Regelelektrode heeft contact met de brander",
-        "Onderbreking in de kabelboom",
-        "Ontstekingselektrode defect",
-        "Brander defect",
-        "Gasblok defect/verkeerde ETgasblok",
-        "Aarding foutief",
-        "Ionisatiestroom onderbroken",
-        "Ontstekingstransformator niet aangesloten",
-        "Ontstekingstransformator defect",
-        "Printplaat defect",
-        "Condenswater in de verbrandingskamer vanwege een verstopte condensafvoer",
-        "Condenspomp (indien aanwezig) defect"
+        "Onvoldoende warmteafvoer",
+        "Harde of instabiele ontsteking",
+        "Gas-/luchttoevoer of ontstekingssysteem controleren"
       ],
       "checks": [
-        "Waarborg, dat het CV-toestel de aanwezige warmte in voldoende mate kan afgeven.",
-        "1. Controleer de warmtewisselaar, sifon, sifonadapter, sifonslang (verbinding tussen primaire warmtewisselaar en sifon en sifonslang buiten het product), verbrandingsgasafvoerbuisadapter, productbehuizing, voormantel en zijdelen op mogelijke beschadigingen.",
-        "2. Vervang beschadigde onderdelen direct.",
-        "Open de gasafsluitkraan.",
-        "Controleer de gasaansluitdruk.",
-        "Reset het product eenmalig.",
-        "Controleer de gassoort en de instelling van de gassoort onder",
-        "D.156 en D.157.",
-        "Controleer de offsetinstelling van het gasblok.",
-        "Controleren en vervang eventueel de luchtaanzuigbuis.",
-        "1. Controleer de ontsteking met het testprogramma P.021.",
-        "2. Product start: ontstekingselektrode, ontstekingstransformator, gasblok en ventilator werken, gas stroomt en het gasvolume is correct, geen blokkade of recirculatie instellen.",
-        "3. Product start niet en toont weer een foutcode: voer de volgende controles uit.",
-        "Controleer de dynamische gasdruk en de externe gasdrukregelaar.",
-        "Controleer het complete verbrandingsgastraject.",
-        "1. Controleer de afstand tussen de regelelektrode en de brander.",
-        "2. Controleer en vervang de eventueel de regelelektrode.",
-        "Controleer en vervang eventueel de kabelboom inclusief alle stekkerverbindingen.",
-        "Controleer en vervang de ontstekingselektrode eventueel.",
-        "Controleer en vervang eventueel de brander.",
-        "Controleer en vervang eventueel het gasblok.",
-        "Controleer de aarding van het product.",
-        "Controleer de Regelelektrode, de verbindingskabel en de stekkerverbinding.",
-        "Controleer de stekker en de stekkerverbinding.",
-        "Controleer de ontstekingstransformator op goede werking en vervang deze eventueel.",
-        "Vervang de printplaat.",
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
-        "2. Controleer de correcte installatie van de condensafvoer.",
-        "3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
-        "4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
-        "Controleer en reinig de condenspomp. Vervang de condenspomp eventueel."
-      ]
+        "Controleer de oorzaak volgens de foutcodetabel van Vaillant 0020282268_07.",
+        "Controleer relevante stekkers, bekabeling, gasvoorziening en/of VLT/VGA afhankelijk van de foutcode.",
+        "Herstel de vastgestelde oorzaak en voer de voorgeschreven functietest uit."
+      ],
+      "note": "Metingen en werkzaamheden aan gasweg, netspanning en geopende elektronica alleen door een bevoegd monteur en volgens de Vaillant-procedure."
     },
     {
       "code": "F.194",
-      "title": "De netadapter van de printplaat is defect.",
-      "meaning": "De netadapter van de printplaat is defect.",
+      "title": "Netadapter van de printplaat defect",
+      "meaning": "De Vaillant-besturing meldt F.194: netadapter van de printplaat defect.",
       "causes": [
-        "Netadapter van de printplaat defect"
+        "Voeding of busspanning buiten bereik",
+        "Stekker, buskabel of polariteit niet in orde",
+        "Configuratie, display of printplaat defect"
       ],
       "checks": [
-        "Vervang de printplaat."
-      ]
+        "Controleer netvoeding, zekeringen en aarding",
+        "Controleer bus- en stekkerverbindingen op polariteit en kortsluiting",
+        "Controleer toestelconfiguratie en aangesloten modules",
+        "Vervang elektronica pas na uitsluiten van externe oorzaken"
+      ],
+      "note": "Maak het toestel spanningsvrij en controleer op spanningsloosheid voordat de elektronica wordt geopend."
     },
     {
       "code": "F.195",
-      "title": "Het toestel heeft een significante onderspanning in de voedingsspanning gedetecteerd.",
-      "meaning": "Het toestel heeft een significante onderspanning in de voedingsspanning gedetecteerd.",
+      "title": "Voedingsspanning te laag",
+      "meaning": "De Vaillant-besturing meldt F.195: voedingsspanning te laag.",
       "causes": [
-        "Te lage spanning in de stroomvoorziening",
-        "Pomp defect",
-        "Fout in de elektrische verbinding van de pomp"
+        "Voeding of busspanning buiten bereik",
+        "Stekker, buskabel of polariteit niet in orde",
+        "Configuratie, display of printplaat defect"
       ],
       "checks": [
-        "Controleer de netspanning.",
-        "Wanneer de netspanning niet in orde is, neem dan contact op met het energiebedrijf.",
-        "Wanneer de netspanning in orde is, vervang dan de pomp (spanningsmeting via de pompelektronica).",
-        "Controleer de kabelboom tussen printplaat en pomp inclusief alle stekkerverbindingen."
-      ]
+        "Controleer netvoeding, zekeringen en aarding",
+        "Controleer bus- en stekkerverbindingen op polariteit en kortsluiting",
+        "Controleer toestelconfiguratie en aangesloten modules",
+        "Vervang elektronica pas na uitsluiten van externe oorzaken"
+      ],
+      "note": "Maak het toestel spanningsvrij en controleer op spanningsloosheid voordat de elektronica wordt geopend."
     },
     {
       "code": "F.196",
-      "title": "Het toestel heeft een significante overspanning in de voedingsspanning gedetecteerd.",
-      "meaning": "Het toestel heeft een significante overspanning in de voedingsspanning gedetecteerd.",
+      "title": "Voedingsspanning te hoog",
+      "meaning": "De Vaillant-besturing meldt F.196: voedingsspanning te hoog.",
       "causes": [
-        "Te hoge spanning in de stroomvoorziening",
-        "Pomp defect",
-        "Fout in de elektrische verbinding van de pomp"
+        "Voeding of busspanning buiten bereik",
+        "Stekker, buskabel of polariteit niet in orde",
+        "Configuratie, display of printplaat defect"
       ],
       "checks": [
-        "Wanneer de netspanning niet in orde is, neem dan contact op met het energiebedrijf.",
-        "Wanneer de netspanning in orde is, vervang dan de pomp (spanningsmeting via de pompelektronica).",
-        "Controleer de kabelboom tussen printplaat en pomp inclusief alle stekkerverbindingen."
-      ]
+        "Controleer netvoeding, zekeringen en aarding",
+        "Controleer bus- en stekkerverbindingen op polariteit en kortsluiting",
+        "Controleer toestelconfiguratie en aangesloten modules",
+        "Vervang elektronica pas na uitsluiten van externe oorzaken"
+      ],
+      "note": "Maak het toestel spanningsvrij en controleer op spanningsloosheid voordat de elektronica wordt geopend."
     },
     {
       "code": "F.228",
-      "title": "Het product bevond zich in noodbedrijf. In deze toestand is het ontsteken tijdens de startfase niet succesvol.",
-      "meaning": "Het product bevond zich in noodbedrijf. In deze toestand is het ontsteken tijdens de startfase niet succesvol.",
+      "title": "Noodbedrijf: ontsteking tijdens startfase niet succesvol",
+      "meaning": "De ecoTEC exclusive CF meldt F.228: noodbedrijf: ontsteking tijdens startfase niet succesvol.",
       "causes": [
-        "Harde ontsteking plaatsgevonden",
-        "Ontsteking in noodbedrijf mislukt",
-        "Gasaansluitdruk te gering",
-        "Dynamische gasdruk te gering",
-        "Verkeerde gassoort ingesteld",
-        "Offset gasblok in D.052 en evt.",
-        "D.182 verkeerd ingesteld",
-        "Gasblok defect/verkeerde ETgasblok",
-        "Storing in verbrandingsgastraject door recirculatie of verbrandingsgasblokkade",
-        "Luchtaanzuigbuis geblokkeerd",
-        "Gasafsluitkraan gesloten",
-        "Ontstekingselektrode defect",
-        "Kabelboom ontstekingselektrode defect",
-        "Ontstekingstransformator defect",
-        "Kabelboom ontstekingstransformator defect",
-        "Aarding foutief",
-        "Brander defect",
-        "Condenswater in de verbrandingskamer vanwege een verstopte condensafvoer",
-        "Condenspomp (indien aanwezig) defect"
+        "Harde ontsteking",
+        "Ontstekings-/ionisatieprobleem",
+        "Gasvoorziening of gas-luchttraject controleren"
       ],
       "checks": [
-        "1. Controleer de warmtewisselaar, sifon, sifonadapter, sifonslang (verbinding tussen primaire warmtewisselaar en sifon en sifonslang buiten het product), verbrandingsgasafvoerbuisadapter, productbehuizing, voormantel en zijdelen op mogelijke beschadigingen.",
-        "2. Vervang beschadigde onderdelen direct.",
-        "Controleer de noodbedrijf en fouthistorie en voer de noodzakelijke maatregelen uit.",
-        "Controleer de gasaansluitdruk.",
-        "Controleer de dynamische gasdruk en de externe gasdrukregelaar.",
-        "Controleer de gassoort en de instelling van de gassoort onder",
-        "D.156 en D.157.",
-        "Controleer de offsetinstelling van het gasblok.",
-        "Controleer en vervang eventueel het gasblok.",
-        "Controleer het complete verbrandingsgastraject.",
-        "Controleren en vervang eventueel de luchtaanzuigbuis.",
-        "Open de gasafsluitkraan.",
-        "Controleer en vervang de ontstekingselektrode eventueel.",
-        "Controleer de kabelboom van de ontstekingselektrode en vervang deze eventueel.",
-        "Controleer de ontstekingstransformator op goede werking en vervang deze eventueel.",
-        "Controleer de kabelboom van de ontstekingstransformator en vervang deze eventueel.",
-        "Controleer de aarding van het product.",
-        "Controleer en vervang eventueel de brander.",
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
-        "2. Controleer de correcte installatie van de condensafvoer.",
-        "3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
-        "4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
-        "Controleer en reinig de condenspomp. Vervang de condenspomp eventueel."
-      ]
+        "Controleer de oorzaak volgens de foutcodetabel van Vaillant 0020282268_07.",
+        "Controleer relevante stekkers, bekabeling, gasvoorziening en/of VLT/VGA afhankelijk van de foutcode.",
+        "Herstel de vastgestelde oorzaak en voer de voorgeschreven functietest uit."
+      ],
+      "note": "Metingen en werkzaamheden aan gasweg, netspanning en geopende elektronica alleen door een bevoegd monteur en volgens de Vaillant-procedure."
     },
     {
       "code": "F.229",
-      "title": "Het product bevond zich in noodbedrijf. In deze toestand is het ontsteken na een vlamuitval niet succesvol.",
-      "meaning": "Het product bevond zich in noodbedrijf. In deze toestand is het ontsteken na een vlamuitval niet succesvol.",
+      "title": "Noodbedrijf: herontsteking na vlamuitval niet succesvol",
+      "meaning": "De ecoTEC exclusive CF meldt F.229: noodbedrijf: herontsteking na vlamuitval niet succesvol.",
       "causes": [
-        "Ontsteking na valmuitval in noodbedrijf mislukt",
         "Gastoevoer onderbroken",
-        "Storing in verbrandingsgastraject door recirculatie of verbrandingsgasblokkade",
-        "Luchtaanzuigbuis geblokkeerd",
-        "Ontstekingstransformator defect",
-        "Kabelboom ontstekingstransformator defect",
-        "Dynamische gasdruk te gering",
-        "Gasblok defect/verkeerde ETgasblok",
-        "Offset gasblok in D.052 en evt.",
-        "D.182 verkeerd ingesteld",
-        "Verkeerde gassoort ingesteld",
-        "Aarding foutief",
-        "Ontstekingselektrode defect",
-        "Kabelboom ontstekingselektrode defect",
-        "Condenswater in de verbrandingskamer vanwege een verstopte condensafvoer",
-        "Condenspomp (indien aanwezig) defect"
+        "VLT/VGA geblokkeerd of recirculatie",
+        "Gas-offset of ontstekingssysteem controleren"
       ],
       "checks": [
-        "Controleer de noodbedrijf en fouthistorie en voer de noodzakelijke maatregelen uit.",
-        "Controleer de gastoevoer.",
-        "Controleer het complete verbrandingsgastraject.",
-        "Controleren en vervang eventueel de luchtaanzuigbuis.",
-        "Controleer de ontstekingstransformator op goede werking en vervang deze eventueel.",
-        "Controleer de kabelboom van de ontstekingstransformator en vervang deze eventueel.",
-        "Controleer de dynamische gasdruk en de externe gasdrukregelaar.",
-        "Controleer en vervang eventueel het gasblok.",
-        "Controleer de offsetinstelling van het gasblok.",
-        "Controleer de gassoort en de instelling van de gassoort onder",
-        "D.156 en D.157.",
-        "Controleer de aarding van het product.",
-        "Controleer en vervang de ontstekingselektrode eventueel.",
-        "Controleer de kabelboom van de ontstekingselektrode en vervang deze eventueel.",
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
-        "2. Controleer de correcte installatie van de condensafvoer.",
-        "3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
-        "4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
-        "Controleer en reinig de condenspomp. Vervang de condenspomp eventueel."
-      ]
+        "Controleer de oorzaak volgens de foutcodetabel van Vaillant 0020282268_07.",
+        "Controleer relevante stekkers, bekabeling, gasvoorziening en/of VLT/VGA afhankelijk van de foutcode.",
+        "Herstel de vastgestelde oorzaak en voer de voorgeschreven functietest uit."
+      ],
+      "note": "Metingen en werkzaamheden aan gasweg, netspanning en geopende elektronica alleen door een bevoegd monteur en volgens de Vaillant-procedure."
     },
     {
       "code": "F.235",
-      "title": "De verbrandingsluchttoevoer/verbrandingsgasafvoer is geblokkeerd tijdens de eerste ingebruikneming.",
-      "meaning": "De verbrandingsluchttoevoer/verbrandingsgasafvoer is geblokkeerd tijdens de eerste ingebruikneming.",
+      "title": "VLT/VGA tijdens eerste ingebruikname geblokkeerd",
+      "meaning": "De ecoTEC exclusive CF meldt F.235: vlt/vga tijdens eerste ingebruikname geblokkeerd.",
       "causes": [
-        "VLT/VGA bij eerste ingebruikneming geblokkeerd",
-        "Luchtaanzuigbuis geblokkeerd"
+        "Verbrandingsluchttoevoer of rookgasafvoer geblokkeerd",
+        "Configuratie/controle via D.145 vereist"
       ],
       "checks": [
-        "Controleer het complete verbrandingsgastraject en deactiveer vervolgens D.145.",
-        "Controleren en vervang eventueel de luchtaanzuigbuis."
-      ]
+        "Controleer de oorzaak volgens de foutcodetabel van Vaillant 0020282268_07.",
+        "Controleer relevante stekkers, bekabeling, gasvoorziening en/of VLT/VGA afhankelijk van de foutcode.",
+        "Herstel de vastgestelde oorzaak en voer de voorgeschreven functietest uit."
+      ],
+      "note": "Metingen en werkzaamheden aan gasweg, netspanning en geopende elektronica alleen door een bevoegd monteur en volgens de Vaillant-procedure."
     },
     {
       "code": "F.281",
-      "title": "De vlam is tijdens de stabilisatietijd uitgevallen.",
-      "meaning": "De vlam is tijdens de stabilisatietijd uitgevallen.",
+      "title": "Vlamuitval tijdens stabilisatiefase",
+      "meaning": "De ecoTEC exclusive CF meldt F.281: vlamuitval tijdens stabilisatiefase.",
       "causes": [
-        "Harde ontsteking plaatsgevonden",
-        "Dynamische gasdruk te gering",
-        "Gasaansluitdruk te gering",
-        "Lucht in de gasleiding (bijv. bij eerste inbedrijfstelling)",
-        "Offset gasblok in D.052 en evt.",
-        "D.182 verkeerd ingesteld",
-        "Verkeerde gassoort ingesteld",
-        "Gasblok defect/verkeerde ETgasblok",
-        "Storing in verbrandingsgastraject door recirculatie of verbrandingsgasblokkade",
-        "Vlamverlies bij vloeibaar gas:",
-        "Luchtaanzuigbuis geblokkeerd",
-        "Ontsteking mislukt",
-        "Regelelektrode defect",
-        "Kabelboom regelelektrode defect",
-        "Brander defect",
-        "Condenswater in de verbrandingskamer vanwege een verstopte condensafvoer",
-        "Condenspomp (indien aanwezig) defect"
+        "Harde ontsteking",
+        "Instabiele vlam",
+        "Gasvoorziening of verbrandingstraject controleren"
       ],
       "checks": [
-        "1. Controleer de warmtewisselaar, sifon, sifonadapter, sifonslang (verbinding tussen primaire warmtewisselaar en sifon en sifonslang buiten het product), verbrandingsgasafvoerbuisadapter, productbehuizing, voormantel en zijdelen op mogelijke beschadigingen.",
-        "2. Vervang beschadigde onderdelen direct.",
-        "Controleer de dynamische gasdruk en de externe gasdrukregelaar.",
-        "Controleer de gasaansluitdruk.",
-        "Reset het product eenmalig.",
-        "Controleer de offsetinstelling van het gasblok.",
-        "Controleer de gassoort en de instelling van de gassoort onder",
-        "D.156 en D.157.",
-        "Controleer en vervang eventueel het gasblok.",
-        "Controleer het complete verbrandingsgastraject.",
-        "Voer het testprogramma P.022 uit.",
-        "Controleren en vervang eventueel de luchtaanzuigbuis.",
-        "1. Controleer de ontsteking met het testprogramma P.021.",
-        "2. Product start: ontstekingselektrode, ontstekingstransformator, gasblok en ventilator werken, gas stroomt en het gasvolume is correct, geen blokkade of recirculatie instellen.",
-        "3. Product start niet en toont weer een foutcode: voer de volgende controles uit.",
-        "Controleer en vervang de eventueel de regelelektrode.",
-        "Controleer de kabelboom van de regelelektrode en vervang deze eventueel.",
-        "Controleer en vervang eventueel de brander.",
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
-        "2. Controleer de correcte installatie van de condensafvoer.",
-        "3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
-        "4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
-        "Controleer en reinig de condenspomp. Vervang de condenspomp eventueel."
-      ]
+        "Controleer de oorzaak volgens de foutcodetabel van Vaillant 0020282268_07.",
+        "Controleer relevante stekkers, bekabeling, gasvoorziening en/of VLT/VGA afhankelijk van de foutcode.",
+        "Herstel de vastgestelde oorzaak en voer de voorgeschreven functietest uit."
+      ],
+      "note": "Metingen en werkzaamheden aan gasweg, netspanning en geopende elektronica alleen door een bevoegd monteur en volgens de Vaillant-procedure."
     },
     {
       "code": "F.291",
-      "title": "De vlam is tijdens de stabilisatietijd na uitval van de vlam tijdens de werking uitgevallen.",
-      "meaning": "De vlam is tijdens de stabilisatietijd na uitval van de vlam tijdens de werking uitgevallen.",
+      "title": "Vlamuitval tijdens stabilisatie na eerdere vlamuitval",
+      "meaning": "De ecoTEC exclusive CF meldt F.291: vlamuitval tijdens stabilisatie na eerdere vlamuitval.",
       "causes": [
-        "Dynamische gasdruk te gering",
-        "Offset gasblok in D.052 en evt.",
-        "D.182 verkeerd ingesteld",
-        "Verkeerde gassoort ingesteld",
-        "Gasblok defect/verkeerde ETgasblok",
-        "Storing in verbrandingsgastraject door recirculatie of verbrandingsgasblokkade",
-        "Luchtaanzuigbuis geblokkeerd",
-        "Ontsteking mislukt",
-        "Regelelektrode defect",
-        "Kabelboom regelelektrode defect",
-        "Condenswater in de verbrandingskamer vanwege een verstopte condensafvoer",
-        "Condenspomp (indien aanwezig) defect"
+        "Dynamische gasdruk te laag",
+        "Gas-offset afwijkend",
+        "Verbrandingstraject controleren"
       ],
       "checks": [
-        "Controleer de dynamische gasdruk en de externe gasdrukregelaar.",
-        "Controleer de offsetinstelling van het gasblok.",
-        "Controleer de gassoort en de instelling van de gassoort onder",
-        "D.156 en D.157.",
-        "Controleer en vervang eventueel het gasblok.",
-        "Controleer het complete verbrandingsgastraject.",
-        "Controleren en vervang eventueel de luchtaanzuigbuis.",
-        "1. Controleer de ontsteking met het testprogramma P.021.",
-        "2. Product start: ontstekingselektrode, ontstekingstransformator, gasblok en ventilator werken, gas stroomt en het gasvolume is correct, geen blokkade of recirculatie instellen.",
-        "3. Product start niet en toont weer een foutcode: voer de volgende controles uit.",
-        "Controleer en vervang de eventueel de regelelektrode.",
-        "Controleer de kabelboom van de regelelektrode en vervang deze eventueel.",
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
-        "2. Controleer de correcte installatie van de condensafvoer.",
-        "3. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
-        "4. Vervang eventueel de isolatiematten in de verbrandingskamer.",
-        "Controleer en reinig de condenspomp. Vervang de condenspomp eventueel."
-      ]
+        "Controleer de oorzaak volgens de foutcodetabel van Vaillant 0020282268_07.",
+        "Controleer relevante stekkers, bekabeling, gasvoorziening en/of VLT/VGA afhankelijk van de foutcode.",
+        "Herstel de vastgestelde oorzaak en voer de voorgeschreven functietest uit."
+      ],
+      "note": "Metingen en werkzaamheden aan gasweg, netspanning en geopende elektronica alleen door een bevoegd monteur en volgens de Vaillant-procedure."
     },
     {
       "code": "F.317",
-      "title": "Het signaal van de volumesensor in warmwatercircuit is onwaarschijnlijk.",
-      "meaning": "Het signaal van de volumesensor in warmwatercircuit is onwaarschijnlijk.",
+      "title": "Volumestroomsensor warmwatercircuit geeft onwaarschijnlijke waarde",
+      "meaning": "De Vaillant-besturing meldt F.317: volumestroomsensor warmwatercircuit geeft onwaarschijnlijke waarde.",
       "causes": [
-        "Fout in de elektrische verbinding van de volumesensor in het warmwatercircuit",
-        "Volumesensor in warmwatercircuit defect"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
       "checks": [
-        "Controleer de kabelboom tussen printplaat en volumestroomsensor inclusief alle stekkerverbindingen.",
-        "Vervang de volumestroomsensor in het warmwatercircuit."
-      ]
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.318",
-      "title": "Het 3-weg motorventiel beweegt niet.",
-      "meaning": "Het 3-weg motorventiel beweegt niet.",
+      "title": "Driewegklep beweegt niet",
+      "meaning": "De Vaillant-besturing meldt F.318: driewegklep beweegt niet.",
       "causes": [
-        "Fout in de elektrische verbinding van de 3-weg-omschakelklep",
-        "3- wegventiel defect of geblokkeerd"
+        "Onderdeel, aansluiting of configuratie reageert niet zoals verwacht",
+        "Interne veiligheidscontrole heeft een afwijking vastgesteld"
       ],
       "checks": [
-        "Controleer de kabelboom tussen printplaat en de 3-weg-omschakelklep inclusief alle stekkerverbindingen.",
-        "Controleer en vervang eventueel de 3-wegklep."
+        "Noteer de code en lees het foutgeheugen uit",
+        "Controleer stekkers, kabelboom en toestelconfiguratie",
+        "Volg de maatregelentabel in de officiële handleiding",
+        "Reset pas nadat de oorzaak is verholpen"
       ]
     },
     {
       "code": "F.320",
-      "title": "De CV-pomp is geblokkeerd. De vrijgavefunctie was niet succesvol.",
-      "meaning": "De CV-pomp is geblokkeerd. De vrijgavefunctie was niet succesvol.",
+      "title": "CV-pomp geblokkeerd; vrijgave mislukt",
+      "meaning": "De Vaillant-besturing meldt F.320: cv-pomp geblokkeerd; vrijgave mislukt.",
       "causes": [
-        "Vervuilingen of vreemde voorwerpen in de pomp"
+        "Te lage systeemdruk, lucht of onvoldoende circulatie",
+        "Pomp, druksensor of bekabeling reageert niet correct",
+        "Afsluiter, filter, bypass of hydraulisch circuit is geblokkeerd"
       ],
       "checks": [
-        "Reinig de pomp, vervang de pomp eventueel."
-      ]
+        "Controleer systeemdruk en installatie op lekkage",
+        "Ontlucht volgens het installatievoorschrift",
+        "Controleer pompwerking, stekkers en vrije doorstroming",
+        "Controleer druksensor, filters, bypass en expansievat"
+      ],
+      "note": "Vul niet herhaaldelijk bij zonder eerst lekkage en expansievat te controleren."
     },
     {
       "code": "F.321",
-      "title": "De pompelektronica is defect.",
-      "meaning": "De pompelektronica is defect.",
+      "title": "Pompelektronica defect",
+      "meaning": "De Vaillant-besturing meldt F.321: pompelektronica defect.",
       "causes": [
-        "De pomp is defect."
+        "Te lage systeemdruk, lucht of onvoldoende circulatie",
+        "Pomp, druksensor of bekabeling reageert niet correct",
+        "Afsluiter, filter, bypass of hydraulisch circuit is geblokkeerd"
       ],
       "checks": [
-        "Controleer en vervang de pomp eventueel."
-      ]
+        "Controleer systeemdruk en installatie op lekkage",
+        "Ontlucht volgens het installatievoorschrift",
+        "Controleer pompwerking, stekkers en vrije doorstroming",
+        "Controleer druksensor, filters, bypass en expansievat"
+      ],
+      "note": "Vul niet herhaaldelijk bij zonder eerst lekkage en expansievat te controleren."
     },
     {
       "code": "F.322",
-      "title": "De CV-pomp is oververhit. De temperatuur kon niet via het noodbedrijf worden verlaagd.",
-      "meaning": "De CV-pomp is oververhit. De temperatuur kon niet via het noodbedrijf worden verlaagd.",
+      "title": "CV-pomp oververhit",
+      "meaning": "De Vaillant-besturing meldt F.322: cv-pomp oververhit.",
       "causes": [
-        "Pomp meldt kortstondig te hoge temperaturen in de elektronica"
+        "Te lage systeemdruk, lucht of onvoldoende circulatie",
+        "Pomp, druksensor of bekabeling reageert niet correct",
+        "Afsluiter, filter, bypass of hydraulisch circuit is geblokkeerd"
       ],
       "checks": [
-        "Controleer de pomp, vervang de pomp eventueel."
-      ]
+        "Controleer systeemdruk en installatie op lekkage",
+        "Ontlucht volgens het installatievoorschrift",
+        "Controleer pompwerking, stekkers en vrije doorstroming",
+        "Controleer druksensor, filters, bypass en expansievat"
+      ],
+      "note": "Vul niet herhaaldelijk bij zonder eerst lekkage en expansievat te controleren."
     },
     {
       "code": "F.323",
-      "title": "De CV-pomp loopt droog.",
-      "meaning": "De CV-pomp loopt droog.",
+      "title": "CV-pomp loopt droog",
+      "meaning": "De Vaillant-besturing meldt F.323: cv-pomp loopt droog.",
       "causes": [
-        "Lucht in het product",
-        "Pomp is droog gelopen"
+        "Te lage systeemdruk, lucht of onvoldoende circulatie",
+        "Pomp, druksensor of bekabeling reageert niet correct",
+        "Afsluiter, filter, bypass of hydraulisch circuit is geblokkeerd"
       ],
       "checks": [
-        "Ontlucht de verwarmingsinstallatie.",
-        "Vervang de pomp."
-      ]
+        "Controleer systeemdruk en installatie op lekkage",
+        "Ontlucht volgens het installatievoorschrift",
+        "Controleer pompwerking, stekkers en vrije doorstroming",
+        "Controleer druksensor, filters, bypass en expansievat"
+      ],
+      "note": "Vul niet herhaaldelijk bij zonder eerst lekkage en expansievat te controleren."
     },
     {
       "code": "F.324",
-      "title": "De elektrische verbinding van de pomp is onderbroken.",
-      "meaning": "De elektrische verbinding van de pomp is onderbroken.",
+      "title": "Elektrische verbinding met de pomp onderbroken",
+      "meaning": "De Vaillant-besturing meldt F.324: elektrische verbinding met de pomp onderbroken.",
       "causes": [
-        "Kabel naar pomp is defect",
-        "De pomp is defect."
+        "Te lage systeemdruk, lucht of onvoldoende circulatie",
+        "Pomp, druksensor of bekabeling reageert niet correct",
+        "Afsluiter, filter, bypass of hydraulisch circuit is geblokkeerd"
       ],
       "checks": [
-        "Controleer de kabel voor de 230 V voedingsspanning naar de pomp, vervang de kabel voor de 230 V voedingsspanning eventueel.",
-        "Controleer en vervang de pomp eventueel."
-      ]
+        "Controleer systeemdruk en installatie op lekkage",
+        "Ontlucht volgens het installatievoorschrift",
+        "Controleer pompwerking, stekkers en vrije doorstroming",
+        "Controleer druksensor, filters, bypass en expansievat"
+      ],
+      "note": "Vul niet herhaaldelijk bij zonder eerst lekkage en expansievat te controleren."
     },
     {
       "code": "F.325",
-      "title": "De CV-pomp heeft een fout.",
-      "meaning": "De CV-pomp heeft een fout.",
+      "title": "CV-pomp meldt een fout",
+      "meaning": "De Vaillant-besturing meldt F.325: cv-pomp meldt een fout.",
       "causes": [
-        "Pomp geblokkeerd",
-        "De pomp is defect."
+        "Te lage systeemdruk, lucht of onvoldoende circulatie",
+        "Pomp, druksensor of bekabeling reageert niet correct",
+        "Afsluiter, filter, bypass of hydraulisch circuit is geblokkeerd"
       ],
       "checks": [
-        "Controleer of de pomp goed functioneert.",
-        "Controleer en vervang de pomp eventueel."
-      ]
+        "Controleer systeemdruk en installatie op lekkage",
+        "Ontlucht volgens het installatievoorschrift",
+        "Controleer pompwerking, stekkers en vrije doorstroming",
+        "Controleer druksensor, filters, bypass en expansievat"
+      ],
+      "note": "Vul niet herhaaldelijk bij zonder eerst lekkage en expansievat te controleren."
     },
     {
       "code": "F.326",
-      "title": "De hydraulische sensor- en actortest heeft minimaal twee hydraulische componenten vastgesteld, die niet functioneren.",
-      "meaning": "De hydraulische sensor- en actortest heeft minimaal twee hydraulische componenten vastgesteld, die niet functioneren.",
+      "title": "Hydraulische sensor- en actortest vindt meerdere defecten",
+      "meaning": "De Vaillant-besturing meldt F.326: hydraulische sensor- en actortest vindt meerdere defecten.",
       "causes": [
-        "3- wegventiel defect of geblokkeerd",
-        "Stekker op 3-weg motorventiel niet aangesloten/los",
-        "Onderbreking in de kabelboom",
-        "Warmwatercircuit niet aangesloten",
-        "Externe pomp draait permanent",
-        "De pomp is defect."
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
       "checks": [
-        "Controleer en vervang eventueel de 3-wegklep.",
-        "Controleer de stekker en de stekkerverbinding op het 3-weg motorventiel.",
-        "Controleer en vervang eventueel de kabelboom inclusief alle stekkerverbindingen.",
-        "Sluit het warmwatercircuit aan.",
-        "Controleer de externe pomp en de systeemconfiguratie.",
-        "Controleer en vervang de pomp eventueel."
-      ]
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.327",
-      "title": "Vanwege een niet aangesloten warmwatercircuit is de minimale verwarmingsvolumestroom beperkt.",
-      "meaning": "Vanwege een niet aangesloten warmwatercircuit is de minimale verwarmingsvolumestroom beperkt.",
+      "title": "Niet-aangesloten warmwatercircuit beperkt de verwarmingsdoorstroming",
+      "meaning": "De Vaillant-besturing meldt F.327: niet-aangesloten warmwatercircuit beperkt de verwarmingsdoorstroming.",
       "causes": [
-        "Boiler-bypass niet aangesloten",
-        "Warmwatercircuit verstopt/geblokkeerd"
+        "Te lage systeemdruk, lucht of onvoldoende circulatie",
+        "Pomp, druksensor of bekabeling reageert niet correct",
+        "Afsluiter, filter, bypass of hydraulisch circuit is geblokkeerd"
       ],
       "checks": [
-        "Controleer de boileraansluitleidingen.",
-        "Controleer de secundaire warmtewisselaar op vervuiling."
-      ]
+        "Controleer systeemdruk en installatie op lekkage",
+        "Ontlucht volgens het installatievoorschrift",
+        "Controleer pompwerking, stekkers en vrije doorstroming",
+        "Controleer druksensor, filters, bypass en expansievat"
+      ],
+      "note": "Vul niet herhaaldelijk bij zonder eerst lekkage en expansievat te controleren."
     },
     {
       "code": "F.330",
-      "title": "De pomp reageert niet op commando's tijdens de hydraulische testen.",
-      "meaning": "De pomp reageert niet op commando's tijdens de hydraulische testen.",
+      "title": "Pomp reageert niet tijdens hydraulische test",
+      "meaning": "De ecoTEC exclusive CF meldt F.330: pomp reageert niet tijdens hydraulische test.",
       "causes": [
-        "Fout in de elektrische verbinding van de pomp",
-        "De pomp is defect."
+        "Pomp defect",
+        "Kabel of stekker van pomp onderbroken"
       ],
       "checks": [
-        "Controleer de kabelboom tussen printplaat en pomp inclusief alle stekkerverbindingen.",
-        "Controleer en vervang de pomp eventueel."
-      ]
+        "Controleer de oorzaak volgens de foutcodetabel van Vaillant 0020282268_07.",
+        "Controleer relevante stekkers, bekabeling, gasvoorziening en/of VLT/VGA afhankelijk van de foutcode.",
+        "Herstel de vastgestelde oorzaak en voer de voorgeschreven functietest uit."
+      ],
+      "note": "Metingen en werkzaamheden aan gasweg, netspanning en geopende elektronica alleen door een bevoegd monteur en volgens de Vaillant-procedure."
     },
     {
       "code": "F.334",
-      "title": "De configuratie van het verbrandingsgasafvoersysteem is niet afgesloten.",
-      "meaning": "De configuratie van het verbrandingsgasafvoersysteem is niet afgesloten.",
+      "title": "Configuratie VLT/VGA niet voltooid",
+      "meaning": "De ecoTEC exclusive CF meldt F.334: configuratie vlt/vga niet voltooid.",
       "causes": [
-        "Configuratie verbrandingsgasafvoersysteem niet afgerond"
+        "Rookgasconfiguratie niet volledig uitgevoerd"
       ],
       "checks": [
-        "Controleer de configuratie van het verbrandingsgasafvoersysteem en sluit deze af."
-      ]
+        "Controleer de oorzaak volgens de foutcodetabel van Vaillant 0020282268_07.",
+        "Controleer relevante stekkers, bekabeling, gasvoorziening en/of VLT/VGA afhankelijk van de foutcode.",
+        "Herstel de vastgestelde oorzaak en voer de voorgeschreven functietest uit."
+      ],
+      "note": "Metingen en werkzaamheden aan gasweg, netspanning en geopende elektronica alleen door een bevoegd monteur en volgens de Vaillant-procedure."
     },
     {
       "code": "F.336",
-      "title": "Het product is niet in deze configuratie toegelaten.",
-      "meaning": "Het product is niet in deze configuratie toegelaten.",
+      "title": "Product niet toegestaan in geconfigureerd VLT/VGA-systeem",
+      "meaning": "De ecoTEC exclusive CF meldt F.336: product niet toegestaan in geconfigureerd vlt/vga-systeem.",
       "causes": [
-        "Configuratie van het verbrandingsgasafvoersysteem verkeerd ingesteld",
-        "Verkeerde gassoort ingesteld"
+        "Onjuiste VLT/VGA-configuratie",
+        "Gastype/toestelconfiguratie controleren"
       ],
       "checks": [
-        "Stel de toegelaten configuratie voor het verbrandingsgasafvoersysteem in.",
-        "Controleer de gassoort en de instelling van de gassoort onder",
-        "D.156 en D.157."
-      ]
+        "Controleer de oorzaak volgens de foutcodetabel van Vaillant 0020282268_07.",
+        "Controleer relevante stekkers, bekabeling, gasvoorziening en/of VLT/VGA afhankelijk van de foutcode.",
+        "Herstel de vastgestelde oorzaak en voer de voorgeschreven functietest uit."
+      ],
+      "note": "Metingen en werkzaamheden aan gasweg, netspanning en geopende elektronica alleen door een bevoegd monteur en volgens de Vaillant-procedure."
     },
     {
       "code": "F.337",
-      "title": "De omschakelset meervoudige bezetting past niet bij de warmtecel.",
-      "meaning": "De omschakelset meervoudige bezetting past niet bij de warmtecel.",
+      "title": "Ombouwset meervoudige bewoning past niet bij warmtecel",
+      "meaning": "De ecoTEC exclusive CF meldt F.337: ombouwset meervoudige bewoning past niet bij warmtecel.",
       "causes": [
-        "Ombouwset meervoudige bezetting past niet bij warmtecel"
+        "Onjuiste of niet-passende ombouwset/configuratie"
       ],
       "checks": [
-        "Controleer en vervang eventueel de ombouwset luchtaanzuigbuis met geïntegreerde terugstroomblokkering en lucht-massastroomsensor."
-      ]
+        "Controleer de oorzaak volgens de foutcodetabel van Vaillant 0020282268_07.",
+        "Controleer relevante stekkers, bekabeling, gasvoorziening en/of VLT/VGA afhankelijk van de foutcode.",
+        "Herstel de vastgestelde oorzaak en voer de voorgeschreven functietest uit."
+      ],
+      "note": "Metingen en werkzaamheden aan gasweg, netspanning en geopende elektronica alleen door een bevoegd monteur en volgens de Vaillant-procedure."
     },
     {
       "code": "F.338",
-      "title": "Instelling meervoudige bezetting foutief",
-      "meaning": "Instelling meervoudige bezetting foutief",
+      "title": "Instelling meervoudige bewoning onjuist",
+      "meaning": "De ecoTEC exclusive CF meldt F.338: instelling meervoudige bewoning onjuist.",
       "causes": [
-        "Meervoudige bezetting verkeerd ingesteld"
+        "Configuratie voor meervoudige bewoning incorrect"
       ],
       "checks": [
-        "Stel de toegelaten configuratie voor het verbrandingsgasafvoersysteem in."
-      ]
+        "Controleer de oorzaak volgens de foutcodetabel van Vaillant 0020282268_07.",
+        "Controleer relevante stekkers, bekabeling, gasvoorziening en/of VLT/VGA afhankelijk van de foutcode.",
+        "Herstel de vastgestelde oorzaak en voer de voorgeschreven functietest uit."
+      ],
+      "note": "Metingen en werkzaamheden aan gasweg, netspanning en geopende elektronica alleen door een bevoegd monteur en volgens de Vaillant-procedure."
     },
     {
       "code": "F.342",
-      "title": "De luchtmassastroom bevindt zich niet binnen de toegestane grenswaarden.",
-      "meaning": "De luchtmassastroom bevindt zich niet binnen de toegestane grenswaarden.",
+      "title": "Luchtmassastroom buiten toegestaan bereik",
+      "meaning": "De ecoTEC exclusive CF meldt F.342: luchtmassastroom buiten toegestaan bereik.",
       "causes": [
-        "Ventilatortoerental komt niet overeen met de gewenste waarde",
-        "Stekker op printplaat niet aangesloten/los",
-        "Onderbreking in de kabelboom",
-        "Stekker lucht-massastroomsensor niet aangesloten/los",
-        "Meetbereik wordt continu verlaten. Lucht-massastroomsensor defect",
-        "VGA geblokkeerd"
+        "Ventilatortoerental afwijkend",
+        "Bekabeling/stekker",
+        "Blokkade of weerstand in VLT/VGA"
       ],
       "checks": [
-        "Controleer via D.033 en D.034 of het ventilatortoerental meer dan 20-30 rpm afwijkt.",
-        "Controleer de stekker en de stekkerverbinding.",
-        "Controleer en vervang eventueel de kabelboom inclusief alle stekkerverbindingen.",
-        "Controleer de stekker en de stekkerverbinding van de luchtmassastroomsensor..",
-        "Vervang de complete luchtaanzuigbuis .",
-        "Controleer de volledige VGA."
-      ]
+        "Controleer de oorzaak volgens de foutcodetabel van Vaillant 0020282268_07.",
+        "Controleer relevante stekkers, bekabeling, gasvoorziening en/of VLT/VGA afhankelijk van de foutcode.",
+        "Herstel de vastgestelde oorzaak en voer de voorgeschreven functietest uit."
+      ],
+      "note": "Metingen en werkzaamheden aan gasweg, netspanning en geopende elektronica alleen door een bevoegd monteur en volgens de Vaillant-procedure."
     },
     {
       "code": "F.343",
-      "title": "Het signaal van de lucht-massastroomsensor is niet plausibel.",
-      "meaning": "Het signaal van de lucht-massastroomsensor is niet plausibel.",
+      "title": "Signaal luchtmassasensor niet plausibel",
+      "meaning": "De ecoTEC exclusive CF meldt F.343: signaal luchtmassasensor niet plausibel.",
       "causes": [
-        "Stekker lucht-massastroomsensor niet aangesloten/los",
-        "Stekker op printplaat niet aangesloten/los",
-        "Onderbreking in de kabelboom",
-        "Meetafwijking te hoog. Luchtmassastroomsensor vervuild.",
-        "Meetbereik wordt continu verlaten. Lucht-massastroomsensor defect",
-        "Printplaat defect"
+        "Stekker/kabel luchtmassasensor",
+        "Sensor of signaalpad defect"
       ],
       "checks": [
-        "Controleer de stekker en de stekkerverbinding van de luchtmassastroomsensor..",
-        "Controleer de stekker en de stekkerverbinding.",
-        "Controleer en vervang eventueel de kabelboom inclusief alle stekkerverbindingen.",
-        "Controleer de lucht-massastroomsensor op vervuiling.",
-        "Vervang de complete luchtaanzuigbuis .",
-        "Vervang de printplaat."
-      ]
+        "Controleer de oorzaak volgens de foutcodetabel van Vaillant 0020282268_07.",
+        "Controleer relevante stekkers, bekabeling, gasvoorziening en/of VLT/VGA afhankelijk van de foutcode.",
+        "Herstel de vastgestelde oorzaak en voer de voorgeschreven functietest uit."
+      ],
+      "note": "Metingen en werkzaamheden aan gasweg, netspanning en geopende elektronica alleen door een bevoegd monteur en volgens de Vaillant-procedure."
     },
     {
       "code": "F.344",
-      "title": "De regelingselektrode kan niet worden gebruikt.",
-      "meaning": "De regelingselektrode kan niet worden gebruikt.",
+      "title": "Regelingselektrode kan niet worden gebruikt",
+      "meaning": "De Vaillant-besturing meldt F.344: regelingselektrode kan niet worden gebruikt.",
       "causes": [
-        "Overdrachtsfout kalibratiewaarden"
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
       ],
       "checks": [
-        "Vervang de regelelektrode (D.146, D.147)."
-      ]
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
     },
     {
       "code": "F.347",
-      "title": "Er is condensaat in de verbrandingskamer geconstateerd. Het bedrijf van de brander is onderbroken.",
-      "meaning": "Er is condensaat in de verbrandingskamer geconstateerd. Het bedrijf van de brander is onderbroken.",
+      "title": "Condensaat in verbrandingskamer",
+      "meaning": "De ecoTEC exclusive CF meldt F.347: condensaat in verbrandingskamer.",
       "causes": [
-        "Condenswater in de verbrandingskamer vanwege een verstopte condensafvoer"
+        "Condensafvoer of sifon geblokkeerd",
+        "Afvoertraject controleren"
       ],
       "checks": [
-        "1. Controleer en reinig eventueel de condensafvoerleiding incl. sifon.",
-        "2. Controleer de verbrandingskamer (elektrode, isolatiematten, brander).",
-        "3. Vervang eventueel de isolatiematten in de verbrandingskamer."
-      ]
+        "Controleer de oorzaak volgens de foutcodetabel van Vaillant 0020282268_07.",
+        "Controleer relevante stekkers, bekabeling, gasvoorziening en/of VLT/VGA afhankelijk van de foutcode.",
+        "Herstel de vastgestelde oorzaak en voer de voorgeschreven functietest uit."
+      ],
+      "note": "Metingen en werkzaamheden aan gasweg, netspanning en geopende elektronica alleen door een bevoegd monteur en volgens de Vaillant-procedure."
     },
     {
       "code": "F.363",
-      "title": "EEPROM van het display meldt een fout bij de lees-/schrijftest.",
-      "meaning": "EEPROM van het display meldt een fout bij de lees-/schrijftest.",
+      "title": "EEPROM-fout in het display",
+      "meaning": "De Vaillant-besturing meldt F.363: eeprom-fout in het display.",
       "causes": [
-        "Elektronica van het display defect"
+        "Voeding of busspanning buiten bereik",
+        "Stekker, buskabel of polariteit niet in orde",
+        "Configuratie, display of printplaat defect"
       ],
       "checks": [
-        "Vervang het display."
-      ]
+        "Controleer netvoeding, zekeringen en aarding",
+        "Controleer bus- en stekkerverbindingen op polariteit en kortsluiting",
+        "Controleer toestelconfiguratie en aangesloten modules",
+        "Vervang elektronica pas na uitsluiten van externe oorzaken"
+      ],
+      "note": "Maak het toestel spanningsvrij en controleer op spanningsloosheid voordat de elektronica wordt geopend."
     },
     {
       "code": "F.707",
-      "title": "Tussen display en printplaat is geen communicatie mogelijk.",
-      "meaning": "Tussen display en printplaat is geen communicatie mogelijk.",
+      "title": "Geen communicatie tussen display en printplaat",
+      "meaning": "De Vaillant-besturing meldt F.707: geen communicatie tussen display en printplaat.",
       "causes": [
-        "Communicatie tussen display en printplaat is in storing"
+        "Voeding of busspanning buiten bereik",
+        "Stekker, buskabel of polariteit niet in orde",
+        "Configuratie, display of printplaat defect"
       ],
       "checks": [
-        "1. Controleer de verbinding tussen display en printplaat.",
-        "2. Vervang de kabel tussen het display en de printplaat eventueel.",
-        "3. Vervang het display of de printplaat eventueel."
-      ]
+        "Controleer netvoeding, zekeringen en aarding",
+        "Controleer bus- en stekkerverbindingen op polariteit en kortsluiting",
+        "Controleer toestelconfiguratie en aangesloten modules",
+        "Vervang elektronica pas na uitsluiten van externe oorzaken"
+      ],
+      "note": "Maak het toestel spanningsvrij en controleer op spanningsloosheid voordat de elektronica wordt geopend."
     },
     {
       "code": "F.905",
       "title": "Communicatie-interface uitgeschakeld",
-      "meaning": "Communicatie-interface uitgeschakeld",
+      "meaning": "De Vaillant-besturing meldt F.905: communicatie-interface uitgeschakeld.",
       "causes": [
-        "Te hoge stroom op de communicatie-interface"
+        "Voeding of busspanning buiten bereik",
+        "Stekker, buskabel of polariteit niet in orde",
+        "Configuratie, display of printplaat defect"
       ],
       "checks": [
-        "1. Controleer de verbinding tussen printplaat en de op de interface aangesloten modules.",
-        "2. Controleer de aangesloten module en vervang deze eventueel."
-      ]
+        "Controleer netvoeding, zekeringen en aarding",
+        "Controleer bus- en stekkerverbindingen op polariteit en kortsluiting",
+        "Controleer toestelconfiguratie en aangesloten modules",
+        "Vervang elektronica pas na uitsluiten van externe oorzaken"
+      ],
+      "note": "Maak het toestel spanningsvrij en controleer op spanningsloosheid voordat de elektronica wordt geopend."
     }
   ]
 }

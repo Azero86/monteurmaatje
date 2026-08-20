@@ -2,8 +2,10 @@
   "schemaVersion": 1,
   "deviceId": "intergas-xtend-monoblock-r32-5kw",
   "source": {
-    "title": "Intergas installatievoorschrift Xtend Monoblock, document 88102401",
-    "url": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf"
+    "title": "Intergas Xtend Mono Installation Instructions — Hybrid air-water heat pump system, document 88302401 (V1.2, 2024)",
+    "url": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+    "documentNumber": "88302401",
+    "revision": "V1.2 (2024)"
   },
   "appliesTo": {
     "generation": "Xtend Monoblock R32",
@@ -29,8 +31,8 @@
         "Controleer het systeem op lekkages.",
         "Controleer de waterdruk in het systeem."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 70,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -43,8 +45,8 @@
       "checks": [
         "Controleer de doorstroming in het systeem."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 70,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -58,8 +60,8 @@
         "Reset de regelunit.",
         "Vervang de regelunit."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 70,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -72,8 +74,8 @@
       "checks": [
         "CV-doorstroming te laag. Controleer de doorstroming in het systeem."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 70,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -86,8 +88,8 @@
       "checks": [
         "Raadpleeg Intergas Verwarming BV."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 70,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -100,8 +102,8 @@
       "checks": [
         "Raadpleeg Intergas Verwarming BV."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 70,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -114,8 +116,8 @@
       "checks": [
         "Raadpleeg Intergas Verwarming BV."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 70,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -129,8 +131,8 @@
         "De firmware moet worden bijgewerkt.",
         "Raadpleeg Intergas Verwarming BV."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 70,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -143,8 +145,8 @@
       "checks": [
         "Raadpleeg Intergas Verwarming BV."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 70,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -157,8 +159,8 @@
       "checks": [
         "Raadpleeg Intergas Verwarming BV."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 70,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -171,8 +173,8 @@
       "checks": [
         "Raadpleeg Intergas Verwarming BV."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 70,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -186,8 +188,8 @@
         "Schakel de voeding bij de gezekerde aansluiting 1 minuut uit en schakel deze daarna weer in.",
         "Vervang de regelunit."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 70,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -202,8 +204,8 @@
         "Controleer of sensor T04 correct is aangesloten.",
         "Vervang sensor T04."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 70,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -218,8 +220,8 @@
         "Controleer of sensor T03 correct is aangesloten.",
         "Vervang sensor T03."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 70,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -234,8 +236,8 @@
         "Controleer of sensor T43 correct is aangesloten.",
         "Vervang sensor T43."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 70,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -250,8 +252,8 @@
         "Controleer of sensor T42 correct is aangesloten.",
         "Vervang sensor T42."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 70,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -264,8 +266,8 @@
       "checks": [
         "Open het bedieningsscherm voor aanvullende informatie."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 70,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
       "verified": true,
       "verifiedDate": "2026-08-14",
       "note": "Intergas publiceert hier geen Storingscode 2 of buitenunit-subcodes; aanvullende informatie staat volgens de handleiding in het WiFi-bedieningsscherm."
@@ -279,8 +281,8 @@
       "checks": [
         "Open het bedieningsscherm voor aanvullende informatie."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 70,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -294,8 +296,8 @@
         "Dit is feitelijk geen storingscode, maar een geforceerde manier om de warmtevraag door te sturen naar de CV-ketel.",
         "Schakel de voeding bij de gezekerde aansluiting uit. Houd vervolgens de bedieningsknop ingedrukt terwijl de voeding weer wordt ingeschakeld om de bypassmodus op te heffen."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 70,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 72,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -308,8 +310,8 @@
       "checks": [
         "Controleer de instellingen."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 71,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -323,8 +325,8 @@
         "Controleer op lekkages.",
         "Het systeemwater moet worden bijgevuld."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 71,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -338,8 +340,8 @@
         "Controleer op lekkages.",
         "Het systeemwater moet worden bijgevuld."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 71,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -352,8 +354,8 @@
       "checks": [
         "Raadpleeg Intergas Verwarming BV."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 71,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -368,8 +370,8 @@
         "Controleer de bedrading tussen de binnenunit en buitenunit op breuk of kortsluiting.",
         "Controleer de aansluitingen in de buitenunit."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 71,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -383,8 +385,8 @@
         "Mogelijk onvoldoende doorstroming.",
         "Het systeem kan de warmte niet afgeven."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 71,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -397,8 +399,8 @@
       "checks": [
         "Sluit de Comfort Touch-thermostaat aan; zie §8.8.5."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 71,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -412,8 +414,8 @@
         "Mogelijk een losse aansluiting op de buitenunit.",
         "Defect weerstandselement."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 71,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -427,8 +429,8 @@
         "Sensoren T03 en T04 zijn onjuist aangesloten of gemonteerd.",
         "Controleer de doorstroming in het systeem."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 71,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -441,8 +443,8 @@
       "checks": [
         "Raadpleeg Intergas Verwarming BV."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 71,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -456,8 +458,8 @@
         "Controleer de bedrading.",
         "Vervang de geheugenmodule."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 71,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -473,8 +475,8 @@
         "De pomp draait op maximaal vermogen.",
         "Wanneer gedurende 30 seconden weer voldoende doorstroming wordt bereikt, stopt het programma en verdwijnt de notificatiecode."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 71,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -487,8 +489,8 @@
       "checks": [
         "Waarschijnlijk lucht in het systeem; ontlucht het systeem."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 71,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -501,8 +503,8 @@
       "checks": [
         "Controleer het CV-circuit op beperkingen, vuil, lucht of gesloten afsluiters."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 71,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -516,8 +518,8 @@
         "Controleer of de sensor stevig is bevestigd.",
         "Controleer de connector op de hoofdprint."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 71,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -530,8 +532,8 @@
       "checks": [
         "Stel de klok in."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 71,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -545,8 +547,8 @@
         "Mogelijk een hardwarefout.",
         "Raadpleeg Intergas Verwarming BV."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 71,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 73,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -559,8 +561,8 @@
       "checks": [
         "Raadpleeg Intergas Verwarming BV."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 72,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -573,8 +575,8 @@
       "checks": [
         "Controleer in het WiFi-bedieningsscherm of: P066 = 4 (CV-ketelaansturing Aan/Uit), P123 = 1 (Ja), P123 = 3 (instelbare relaisuitgang)."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 72,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -588,8 +590,8 @@
         "Mogelijk een koeltechnische fout.",
         "Mogelijk staat de buitenunit volledig in de wind."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 72,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -603,8 +605,8 @@
         "Controleer de positie en aansluiting van de sensor op de aanvoerleiding.",
         "Controleer de bedrading. Vervang deze indien nodig."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 72,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -617,8 +619,8 @@
       "checks": [
         "Controleer de bedrading. Vervang deze indien nodig."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 72,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -631,8 +633,8 @@
       "checks": [
         "Controleer de bedrading. Vervang deze indien nodig."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 72,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -645,8 +647,8 @@
       "checks": [
         "Controleer de bedrading. Vervang deze indien nodig."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 72,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -659,8 +661,8 @@
       "checks": [
         "Controleer de CV-ketel op een storing."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 72,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -673,8 +675,8 @@
       "checks": [
         "Controleer de bedrading. Vervang deze indien nodig."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 72,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -687,8 +689,8 @@
       "checks": [
         "Stel de aanvoertemperatuur van de CV-ketel ten minste 10ºC hoger in dan de systeemaanvoertemperatuur van de Xtend (P194)."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 72,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -701,8 +703,8 @@
       "checks": [
         "Controleer of de CV-ketel of CV-functie is uitgeschakeld."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 72,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -715,8 +717,8 @@
       "checks": [
         "Verhelp de storing van de Intergas CV-ketel."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 72,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -730,8 +732,8 @@
         "Controleer de ingestelde aanvoertemperatuur van de CV-ketel.",
         "Controleer het ingestelde vermogen van de CV-ketel."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 72,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -744,8 +746,8 @@
       "checks": [
         "Installeer de nieuwste versie van de Intergas Comfort Touch."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 72,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -759,8 +761,8 @@
         "Controleer het WiFi-bedieningsscherm voor aanvullende informatie.",
         "Raadpleeg Intergas Verwarming BV."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 72,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -773,8 +775,8 @@
       "checks": [
         "Controleer de doorstroming of vul het systeemwater bij."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 72,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -787,8 +789,8 @@
       "checks": [
         "Controleer de doorstroming of vul het systeemwater bij."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 72,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -802,8 +804,8 @@
         "Controleer het koudemiddelcircuit op lekkages.",
         "Mogelijk koudemiddeltekort."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 72,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -817,8 +819,8 @@
         "Controleer de doorstroming.",
         "Mogelijk een te laag watervolume."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 72,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
       "verified": true,
       "verifiedDate": "2026-08-14"
     },
@@ -832,8 +834,8 @@
         "Start de Xtend opnieuw op.",
         "Raadpleeg Intergas Verwarming BV."
       ],
-      "source": "https://www.intergas-verwarming.nl/app/uploads/2024/03/88102401-Installatievoorschrift-Xtend-Monoblock.pdf",
-      "sourcePage": 72,
+      "source": "https://www.intergasheating.co.uk/app/uploads/2025/11/88302401w-Xtend-Mono-Installation-Instructions-V1.2-1.pdf",
+      "sourcePage": 74,
       "verified": true,
       "verifiedDate": "2026-08-14"
     }

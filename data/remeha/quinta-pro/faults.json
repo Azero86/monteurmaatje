@@ -2,679 +2,684 @@
   "schemaVersion": 1,
   "deviceId": "quinta-pro",
   "source": {
-    "title": "Remeha installatie-, gebruikers- en servicehandleiding Quinta Pro 45/65/90/115, V12",
-    "url": "https://documentation.remeha.nl/wp-content/uploads/sites/68/2025/12/Installatie-gebruikers-en-servicehandleiding-Quinta-Pro-45-65-90-%E2%80%93-115-%E2%80%93-V12.pdf"
+    "title": "Remeha installatie-, gebruikers- en servicehandleiding Quinta Pro",
+    "url": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Quinta%20PRO/150302%20UM%20IM%20SM%20%20Quinta%20Pro%2045-115%20NL.pdf"
   },
   "faults": [
     {
       "code": "Su.00",
-      "title": "Parameterfout",
-      "meaning": "Parameterfout",
+      "title": "Parameterfout PSU",
+      "meaning": "De Quinta Pro is tijdelijk geblokkeerd: parameterfout psu.",
       "causes": [
-        "Parameterfout in de PSU print",
-        "Parameters herstellen met Recom"
+        "Configuratienummer of parameterinstelling onjuist",
+        "CSU/CU-configuratie komt niet overeen",
+        "Besturingsprint of configuratiegeheugen defect"
       ],
       "checks": [
-        "En opnieuw instellen"
+        "Controleer configuratie en parameters",
+        "Vergelijk CN1 en CN2 met de typeplaat",
+        "Voer indien voorgeschreven automatische detectie uit",
+        "Controleer CSU en besturingsprint"
       ]
     },
     {
       "code": "Su.01",
       "title": "Maximale aanvoertemperatuur overschreden",
-      "meaning": "Maximale aanvoertemperatuur overschreden",
+      "meaning": "De Quinta Pro is tijdelijk geblokkeerd: maximale aanvoertemperatuur overschreden.",
       "causes": [
         "Geen of te weinig doorstroming",
-        "Doorstroming (richting, pomp, kleppen) controleren",
-        "Reden van warmtevraag"
+        "Lucht of vervuiling in de cv-installatie of warmtewisselaar",
+        "Pomp, klep of temperatuursensor werkt niet correct"
       ],
-      "checks": []
+      "checks": [
+        "Controleer waterdruk en ontlucht de installatie",
+        "Controleer stromingsrichting, pomp en kleppen",
+        "Controleer de warmtewisselaar op vervuiling",
+        "Controleer montage en werking van de temperatuursensoren"
+      ]
     },
     {
       "code": "Su.02",
-      "title": "Maximale stijging van de aanvoertemperatuur is overschreden",
-      "meaning": "Maximale stijging van de aanvoertemperatuur is overschreden",
+      "title": "Aanvoertemperatuur stijgt te snel",
+      "meaning": "De Quinta Pro is tijdelijk geblokkeerd: aanvoertemperatuur stijgt te snel.",
       "causes": [
         "Geen of te weinig doorstroming",
-        "Doorstroming (richting, pomp, kleppen) controleren",
-        "Waterdruk controleren",
-        "Sensorfout"
+        "Lucht of vervuiling in de cv-installatie of warmtewisselaar",
+        "Pomp, klep of temperatuursensor werkt niet correct"
       ],
       "checks": [
-        "Controleer warmtewisselaar op vervuiling",
-        "Controleer de goede werking van de sensors",
-        "Controleer of de sensor goed gemonteerd is"
+        "Controleer waterdruk en ontlucht de installatie",
+        "Controleer stromingsrichting, pomp en kleppen",
+        "Controleer de warmtewisselaar op vervuiling",
+        "Controleer montage en werking van de temperatuursensoren"
       ]
     },
     {
       "code": "Su.07",
-      "title": "Maximaal verschil tussen aanvoer- en retourtemperatuur overschreden",
-      "meaning": "Maximaal verschil tussen aanvoer- en retourtemperatuur overschreden",
+      "title": "Verschil aanvoer en retour te groot",
+      "meaning": "De Quinta Pro is tijdelijk geblokkeerd: verschil aanvoer en retour te groot.",
       "causes": [
         "Geen of te weinig doorstroming",
-        "Doorstroming (richting, pomp, kleppen) controleren",
-        "Waterdruk controleren",
-        "Sensorfout"
+        "Lucht of vervuiling in de cv-installatie of warmtewisselaar",
+        "Pomp, klep of temperatuursensor werkt niet correct"
       ],
       "checks": [
-        "Controleer warmtewisselaar op vervuiling",
-        "Controleer de goede werking van de sensors",
-        "Controleer of de sensor goed gemonteerd is"
+        "Controleer waterdruk en ontlucht de installatie",
+        "Controleer stromingsrichting, pomp en kleppen",
+        "Controleer de warmtewisselaar op vervuiling",
+        "Controleer montage en werking van de temperatuursensoren"
       ]
     },
     {
       "code": "Su.08",
       "title": "Geen vrijgavesignaal",
-      "meaning": "Geen vrijgavesignaal",
+      "meaning": "De Quinta Pro is tijdelijk geblokkeerd: geen vrijgavesignaal.",
       "causes": [
-        "Externe oorzaak",
-        "Parameterfout",
-        "Slechte verbinding"
+        "Externe blokkering, vrijgave of vorstbeveiliging actief",
+        "Ingang of parameter verkeerd geconfigureerd",
+        "Slechte verbinding met het externe contact"
       ],
       "checks": [
-        "Neem externe oorzaak weg",
-        "Controleer parameters",
-        "De bedrading controleren"
+        "Bepaal welke externe ingang actief is",
+        "Controleer aangesloten beveiliging en contact",
+        "Controleer de bijbehorende parameter",
+        "Hef de externe oorzaak op en controleer de bedrijfsstatus"
       ]
     },
     {
       "code": "Su.09",
-      "title": "Fase en nul van netspanning omgewisseld",
-      "meaning": "Fase en nul van netspanning omgewisseld",
+      "title": "Fase en nul omgewisseld",
+      "meaning": "De Quinta Pro is tijdelijk geblokkeerd: fase en nul omgewisseld.",
       "causes": [
-        "Netvoeding fout bedraad",
-        "Zwevend net of 2 fasen net"
+        "Interne besturings- of veiligheidsfout",
+        "Aansluiting of onderdeel reageert niet zoals verwacht"
       ],
       "checks": [
-        "Fase en nul omwisselen",
-        "Zet parameter P43 op 0"
+        "Noteer de code en lees de fouthistorie uit",
+        "Controleer bedrading en connectoren",
+        "Herstart alleen nadat de oorzaak is onderzocht",
+        "Raadpleeg de officiële servicehandleiding"
       ]
     },
     {
       "code": "Su.10",
-      "title": "Blokkerende ingang is actief",
-      "meaning": "Blokkerende ingang is actief",
+      "title": "Blokkerende ingang actief",
+      "meaning": "De Quinta Pro is tijdelijk geblokkeerd: blokkerende ingang actief.",
       "causes": [
-        "Externe oorzaak",
-        "Parameterfout",
-        "Slechte verbinding"
+        "Interne besturings- of veiligheidsfout",
+        "Aansluiting of onderdeel reageert niet zoals verwacht"
       ],
       "checks": [
-        "Neem externe oorzaak weg",
-        "Controleer parameters",
-        "De bedrading controleren"
+        "Noteer de code en lees de fouthistorie uit",
+        "Controleer bedrading en connectoren",
+        "Herstart alleen nadat de oorzaak is onderzocht",
+        "Raadpleeg de officiële servicehandleiding"
       ]
     },
     {
       "code": "Su.11",
-      "title": "Blokkerende ingang of vorstbeveiliging is actief",
-      "meaning": "Blokkerende ingang of vorstbeveiliging is actief",
+      "title": "Blokkering of vorstbeveiliging actief",
+      "meaning": "De Quinta Pro is tijdelijk geblokkeerd: blokkering of vorstbeveiliging actief.",
       "causes": [
-        "Externe oorzaak",
-        "Parameterfout",
-        "Slechte verbinding"
+        "Externe blokkering, vrijgave of vorstbeveiliging actief",
+        "Ingang of parameter verkeerd geconfigureerd",
+        "Slechte verbinding met het externe contact"
       ],
       "checks": [
-        "Neem externe oorzaak weg",
-        "Controleer parameters",
-        "De bedrading controleren"
+        "Bepaal welke externe ingang actief is",
+        "Controleer aangesloten beveiliging en contact",
+        "Controleer de bijbehorende parameter",
+        "Hef de externe oorzaak op en controleer de bedrijfsstatus"
       ]
     },
     {
       "code": "Su.13",
-      "title": "Communicatiefout met de SCU-print",
-      "meaning": "Communicatiefout met de SCU-print",
+      "title": "Communicatiefout SCU-print",
+      "meaning": "De Quinta Pro is tijdelijk geblokkeerd: communicatiefout scu-print.",
       "causes": [
-        "Slechte verbinding met BUS",
-        "SCU print niet aanwezig in ketel"
+        "Verbinding, stekker of busbedrading onderbroken",
+        "Aangesloten regel- of uitbreidingsprint niet gevonden",
+        "Besturings- of uitbreidingsprint defect"
       ],
       "checks": [
-        "De bedrading controleren",
-        "Automatische detectie uitvoeren"
+        "Controleer bedrading en connectoren",
+        "Controleer of alle aangesloten apparaten spanning hebben",
+        "Voer automatische detectie uit indien voorgeschreven",
+        "Herstart het toestel en controleer de betreffende print"
       ]
     },
     {
       "code": "Su.14",
       "title": "Waterdruk te laag",
-      "meaning": "Waterdruk te laag",
+      "meaning": "De Quinta Pro is tijdelijk geblokkeerd: waterdruk te laag.",
       "causes": [
-        "Waterdruk te laag",
-        "Waterdruk controleren"
+        "Installatiedruk of wateraanvoer onvoldoende",
+        "Lekkage in toestel of cv-installatie",
+        "Druksensor, vulinrichting of veiligheidsventiel werkt niet correct"
       ],
       "checks": [
-        "Vul de ketel en de installatie met water"
+        "Controleer de actuele waterdruk en wateraanvoer",
+        "Controleer toestel en installatie op lekkage",
+        "Controleer druksensor, vulinrichting en veiligheidsventiel",
+        "Vul en ontlucht volgens het installatievoorschrift"
       ]
     },
     {
       "code": "Su.15",
       "title": "Gasdruk te laag",
-      "meaning": "Gasdruk te laag",
+      "meaning": "De Quinta Pro is tijdelijk geblokkeerd: gasdruk te laag.",
       "causes": [
-        "Geen of te weinig doorstroming",
-        "Verkeerde afstelling van gasdrukschakelaar Gps op SCU print"
+        "Gastoevoer of gasvoordruk niet in orde",
+        "Ontstekings- of ionisatieprobleem",
+        "Gasblok of gasklepregeling defect",
+        "Luchttoevoer, rookgasafvoer of aarding niet in orde"
       ],
       "checks": [
-        "Controleer of de gaskraan goed geopend is",
-        "Controleer de gasaanvoerdruk",
-        "Controleer of de Gps schakelaar goed gemonteerd is",
-        "Vervang schakelaar Gps indien nodig"
-      ]
+        "Controleer gastoevoer en gasvoordruk",
+        "Controleer ontstekings-/ionisatie-elektrode, kabel en aarding",
+        "Controleer luchttoevoer en rookgasafvoer",
+        "Controleer gasblok en aansturing volgens het Remeha-voorschrift"
+      ],
+      "note": "Gaszijdige metingen en afstellingen alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "Su.16",
-      "title": "Configuratiefout of SU-print niet herkend",
-      "meaning": "Configuratiefout of SU-print niet herkend",
+      "title": "SU-print niet herkend",
+      "meaning": "De Quinta Pro is tijdelijk geblokkeerd: su-print niet herkend.",
       "causes": [
-        "Verkeerde SU print voor deze ketel"
+        "Interne besturings- of veiligheidsfout",
+        "Aansluiting of onderdeel reageert niet zoals verwacht"
       ],
       "checks": [
-        "Vervang SU print"
+        "Noteer de code en lees de fouthistorie uit",
+        "Controleer bedrading en connectoren",
+        "Herstart alleen nadat de oorzaak is onderzocht",
+        "Raadpleeg de officiële servicehandleiding"
       ]
     },
     {
       "code": "Su.17",
-      "title": "Configuratiefout of standaardparametertabel niet in orde",
-      "meaning": "Configuratiefout of standaardparametertabel niet in orde",
+      "title": "Standaard parametertabel onjuist",
+      "meaning": "De Quinta Pro is tijdelijk geblokkeerd: standaard parametertabel onjuist.",
       "causes": [
-        "Parameterfout in de PCU print"
+        "Configuratienummer of parameterinstelling onjuist",
+        "CSU/CU-configuratie komt niet overeen",
+        "Besturingsprint of configuratiegeheugen defect"
       ],
       "checks": [
-        "Vervang PCU print"
+        "Controleer configuratie en parameters",
+        "Vergelijk CN1 en CN2 met de typeplaat",
+        "Voer indien voorgeschreven automatische detectie uit",
+        "Controleer CSU en besturingsprint"
       ]
     },
     {
       "code": "Su.18",
-      "title": "Configuratiefout of PSU-print niet herkend",
-      "meaning": "Configuratiefout of PSU-print niet herkend",
+      "title": "PSU-print niet herkend",
+      "meaning": "De Quinta Pro is tijdelijk geblokkeerd: psu-print niet herkend.",
       "causes": [
-        "Verkeerde PCU print voor deze ketel"
+        "Interne besturings- of veiligheidsfout",
+        "Aansluiting of onderdeel reageert niet zoals verwacht"
       ],
       "checks": [
-        "Vervang PCU print"
+        "Noteer de code en lees de fouthistorie uit",
+        "Controleer bedrading en connectoren",
+        "Herstart alleen nadat de oorzaak is onderzocht",
+        "Raadpleeg de officiële servicehandleiding"
       ]
     },
     {
       "code": "Su.19",
-      "title": "Configuratiefout of parameters dF en dU onbekend",
-      "meaning": "Configuratiefout of parameters dF en dU onbekend",
+      "title": "Configuratieparameters onbekend",
+      "meaning": "De Quinta Pro is tijdelijk geblokkeerd: configuratieparameters onbekend.",
       "causes": [
-        "dF en dU opnieuw instellen"
+        "Configuratienummer of parameterinstelling onjuist",
+        "CSU/CU-configuratie komt niet overeen",
+        "Besturingsprint of configuratiegeheugen defect"
       ],
-      "checks": []
+      "checks": [
+        "Controleer configuratie en parameters",
+        "Vergelijk CN1 en CN2 met de typeplaat",
+        "Voer indien voorgeschreven automatische detectie uit",
+        "Controleer CSU en besturingsprint"
+      ]
     },
     {
       "code": "Su.20",
       "title": "Configuratieprocedure actief",
-      "meaning": "Configuratieprocedure actief",
+      "meaning": "De Quinta Pro is tijdelijk geblokkeerd: configuratieprocedure actief.",
       "causes": [
-        "Kort actief na inschakelen van de ketel"
+        "Configuratienummer of parameterinstelling onjuist",
+        "CSU/CU-configuratie komt niet overeen",
+        "Besturingsprint of configuratiegeheugen defect"
       ],
       "checks": [
-        "Geen actie"
+        "Controleer configuratie en parameters",
+        "Vergelijk CN1 en CN2 met de typeplaat",
+        "Voer indien voorgeschreven automatische detectie uit",
+        "Controleer CSU en besturingsprint"
       ]
     },
     {
       "code": "Su.21",
-      "title": "Communicatiefout met de SU-print",
-      "meaning": "Communicatiefout met de SU-print",
+      "title": "Communicatiefout SU-print",
+      "meaning": "De Quinta Pro is tijdelijk geblokkeerd: communicatiefout su-print.",
       "causes": [
-        "Slechte verbinding"
+        "Verbinding, stekker of busbedrading onderbroken",
+        "Aangesloten regel- of uitbreidingsprint niet gevonden",
+        "Besturings- of uitbreidingsprint defect"
       ],
       "checks": [
-        "Controleer of de PCU print juist in de connector op de SU print is geplaatst"
+        "Controleer bedrading en connectoren",
+        "Controleer of alle aangesloten apparaten spanning hebben",
+        "Voer automatische detectie uit indien voorgeschreven",
+        "Herstart het toestel en controleer de betreffende print"
       ]
     },
     {
       "code": "Su.22",
       "title": "Vlamwegval tijdens bedrijf",
-      "meaning": "Vlamwegval tijdens bedrijf",
+      "meaning": "De Quinta Pro is tijdelijk geblokkeerd: vlamwegval tijdens bedrijf.",
       "causes": [
-        "Geen ionisatiestroom"
+        "Gastoevoer of gasvoordruk niet in orde",
+        "Ontstekings- of ionisatieprobleem",
+        "Gasblok of gasklepregeling defect",
+        "Luchttoevoer, rookgasafvoer of aarding niet in orde"
       ],
       "checks": [
-        "Ontlucht de gasleiding",
-        "Controleer of de gaskraan goed geopend is",
-        "Controleer de gasaanvoerdruk",
-        "Controleer correcte werking en afstelling gasblok",
-        "Controleer luchttoevoer en rookgasafvoer op verstopping",
-        "Controleer op rookgasrecirculatie"
-      ]
+        "Controleer gastoevoer en gasvoordruk",
+        "Controleer ontstekings-/ionisatie-elektrode, kabel en aarding",
+        "Controleer luchttoevoer en rookgasafvoer",
+        "Controleer gasblok en aansturing volgens het Remeha-voorschrift"
+      ],
+      "note": "Gaszijdige metingen en afstellingen alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "Su.25",
       "title": "Interne fout SU-print",
-      "meaning": "Interne fout SU-print",
-      "causes": [],
+      "meaning": "De Quinta Pro is tijdelijk geblokkeerd: interne fout su-print.",
+      "causes": [
+        "Interne besturings- of veiligheidsfout",
+        "Aansluiting of onderdeel reageert niet zoals verwacht"
+      ],
       "checks": [
-        "Vervang de SU-print"
+        "Noteer de code en lees de fouthistorie uit",
+        "Controleer bedrading en connectoren",
+        "Herstart alleen nadat de oorzaak is onderzocht",
+        "Raadpleeg de officiële servicehandleiding"
       ]
     },
     {
       "code": "E.00",
-      "title": "Parameter storage unit PSU niet gevonden",
-      "meaning": "Parameter storage unit PSU niet gevonden",
+      "title": "PSU niet gevonden",
+      "meaning": "De Quinta Pro is vergrendeld: psu niet gevonden.",
       "causes": [
-        "Slechte verbinding"
+        "Interne besturings- of veiligheidsfout",
+        "Aansluiting of onderdeel reageert niet zoals verwacht"
       ],
       "checks": [
-        "Controleer de bedrading"
+        "Noteer de code en lees de fouthistorie uit",
+        "Controleer bedrading en connectoren",
+        "Herstart alleen nadat de oorzaak is onderzocht",
+        "Raadpleeg de officiële servicehandleiding"
       ]
     },
     {
       "code": "E.01",
-      "title": "Veiligheidsparameters niet in orde",
-      "meaning": "Veiligheidsparameters niet in orde",
+      "title": "Veiligheidsparameters onjuist",
+      "meaning": "De Quinta Pro is vergrendeld: veiligheidsparameters onjuist.",
       "causes": [
-        "Slechte verbinding",
-        "Defecte PSU"
+        "Configuratienummer of parameterinstelling onjuist",
+        "CSU/CU-configuratie komt niet overeen",
+        "Besturingsprint of configuratiegeheugen defect"
       ],
       "checks": [
-        "Controleer de bedrading",
-        "Vervang PSU"
+        "Controleer configuratie en parameters",
+        "Vergelijk CN1 en CN2 met de typeplaat",
+        "Voer indien voorgeschreven automatische detectie uit",
+        "Controleer CSU en besturingsprint"
       ]
     },
     {
       "code": "E.02",
-      "title": "Aanvoertemperatuursensor kortgesloten",
-      "meaning": "Aanvoertemperatuursensor kortgesloten",
+      "title": "Aanvoersensor kortgesloten",
+      "meaning": "De Quinta Pro is vergrendeld: aanvoersensor kortgesloten.",
       "causes": [
-        "Slechte verbinding",
-        "Sensor niet of slecht aangesloten",
-        "Defecte sensor"
+        "Stekker of bedrading los, beschadigd of kortgesloten",
+        "Sensor niet correct gemonteerd",
+        "Sensorwaarde buiten bereik of sensor defect"
       ],
       "checks": [
-        "Controleer de bedrading",
-        "Controleer of de sensor goed gemonteerd is",
-        "Controleer de goede werking van de sensors",
-        "Vervang sensor indien nodig"
+        "Controleer stekker en bedrading",
+        "Controleer montage en positie van de sensor",
+        "Meet de sensor volgens de fabrikantgegevens",
+        "Vervang de sensor indien deze defect is"
       ]
     },
     {
       "code": "E.03",
-      "title": "Aanvoertemperatuursensor open",
-      "meaning": "Aanvoertemperatuursensor open",
+      "title": "Aanvoersensor open",
+      "meaning": "De Quinta Pro is vergrendeld: aanvoersensor open.",
       "causes": [
-        "Slechte verbinding",
-        "Sensor niet of slecht aangesloten",
-        "Defecte sensor"
+        "Stekker of bedrading los, beschadigd of kortgesloten",
+        "Sensor niet correct gemonteerd",
+        "Sensorwaarde buiten bereik of sensor defect"
       ],
       "checks": [
-        "Controleer de bedrading",
-        "Controleer of de sensor goed gemonteerd is",
-        "Controleer de goede werking van de sensors",
-        "Vervang sensor indien nodig"
+        "Controleer stekker en bedrading",
+        "Controleer montage en positie van de sensor",
+        "Meet de sensor volgens de fabrikantgegevens",
+        "Vervang de sensor indien deze defect is"
       ]
     },
     {
       "code": "E.04",
-      "title": "Temperatuur warmtewisselaar te laag",
-      "meaning": "Temperatuur warmtewisselaar te laag",
+      "title": "Warmtewisselaartemperatuur te laag",
+      "meaning": "De Quinta Pro is vergrendeld: warmtewisselaartemperatuur te laag.",
       "causes": [
-        "Slechte verbinding",
-        "Sensor niet of slecht aangesloten",
-        "Defecte sensor",
-        "Geen doorstroming",
-        "Indien aanwezig"
+        "Geen of te weinig doorstroming",
+        "Lucht of vervuiling in de cv-installatie of warmtewisselaar",
+        "Pomp, klep of temperatuursensor werkt niet correct"
       ],
       "checks": [
-        "Controleer de bedrading",
-        "Controleer de goede werking van de sensors",
-        "Controleer of de sensor goed gemonteerd is",
-        "Vervang sensor indien nodig",
-        "Ontlucht CV-installatie",
-        "Controleer de doorstroming (richting, pomp, kleppen)",
-        "Controleer de waterdruk",
-        "Controleer warmtewisselaar op vervuiling",
-        "Controleer instelling keteltype-parameter"
+        "Controleer waterdruk en ontlucht de installatie",
+        "Controleer stromingsrichting, pomp en kleppen",
+        "Controleer de warmtewisselaar op vervuiling",
+        "Controleer montage en werking van de temperatuursensoren"
       ]
     },
     {
       "code": "E.05",
-      "title": "Temperatuur warmtewisselaar te hoog",
-      "meaning": "Temperatuur warmtewisselaar te hoog",
+      "title": "Warmtewisselaartemperatuur te hoog",
+      "meaning": "De Quinta Pro is vergrendeld: warmtewisselaartemperatuur te hoog.",
       "causes": [
-        "Slechte verbinding",
-        "Sensor niet of slecht aangesloten",
-        "Defecte sensor",
-        "Geen doorstroming",
-        "Indien aanwezig"
+        "Geen of te weinig doorstroming",
+        "Lucht of vervuiling in de cv-installatie of warmtewisselaar",
+        "Pomp, klep of temperatuursensor werkt niet correct"
       ],
       "checks": [
-        "Controleer de bedrading",
-        "Controleer de goede werking van de sensors",
-        "Controleer of de sensor goed gemonteerd is",
-        "Vervang sensor indien nodig",
-        "Ontlucht CV-installatie",
-        "Controleer de doorstroming (richting, pomp, kleppen)",
-        "Controleer de waterdruk",
-        "Controleer warmtewisselaar op vervuiling",
-        "Controleer instelling keteltype-parameter"
+        "Controleer waterdruk en ontlucht de installatie",
+        "Controleer stromingsrichting, pomp en kleppen",
+        "Controleer de warmtewisselaar op vervuiling",
+        "Controleer montage en werking van de temperatuursensoren"
       ]
     },
     {
       "code": "E.06",
-      "title": "Retourtemperatuursensor kortgesloten",
-      "meaning": "Retourtemperatuursensor kortgesloten",
+      "title": "Retoursensor kortgesloten",
+      "meaning": "De Quinta Pro is vergrendeld: retoursensor kortgesloten.",
       "causes": [
-        "Slechte verbinding",
-        "Sensor niet of slecht aangesloten",
-        "Defecte sensor"
+        "Stekker of bedrading los, beschadigd of kortgesloten",
+        "Sensor niet correct gemonteerd",
+        "Sensorwaarde buiten bereik of sensor defect"
       ],
       "checks": [
-        "Controleer de bedrading",
-        "Controleer de goede werking van de sensors",
-        "Controleer of de sensor goed gemonteerd is",
-        "Vervang sensor indien nodig"
+        "Controleer stekker en bedrading",
+        "Controleer montage en positie van de sensor",
+        "Meet de sensor volgens de fabrikantgegevens",
+        "Vervang de sensor indien deze defect is"
       ]
     },
     {
       "code": "E.07",
-      "title": "Retourtemperatuursensor open",
-      "meaning": "Retourtemperatuursensor open",
+      "title": "Retoursensor open",
+      "meaning": "De Quinta Pro is vergrendeld: retoursensor open.",
       "causes": [
-        "Slechte verbinding",
-        "Sensor niet of slecht aangesloten",
-        "Defecte sensor"
+        "Stekker of bedrading los, beschadigd of kortgesloten",
+        "Sensor niet correct gemonteerd",
+        "Sensorwaarde buiten bereik of sensor defect"
       ],
       "checks": [
-        "Controleer de bedrading",
-        "Controleer de goede werking van de sensors",
-        "Controleer of de sensor goed gemonteerd is",
-        "Vervang sensor indien nodig"
+        "Controleer stekker en bedrading",
+        "Controleer montage en positie van de sensor",
+        "Meet de sensor volgens de fabrikantgegevens",
+        "Vervang de sensor indien deze defect is"
       ]
     },
     {
       "code": "E.08",
       "title": "Retourtemperatuur te laag",
-      "meaning": "Retourtemperatuur te laag",
+      "meaning": "De Quinta Pro is vergrendeld: retourtemperatuur te laag.",
       "causes": [
-        "Slechte verbinding",
-        "Defecte sensor",
-        "Sensor niet of slecht aangesloten",
-        "Geen doorstroming",
-        "Indien aanwezig"
+        "Geen of te weinig doorstroming",
+        "Lucht of vervuiling in de cv-installatie of warmtewisselaar",
+        "Pomp, klep of temperatuursensor werkt niet correct"
       ],
       "checks": [
-        "Controleer de bedrading",
-        "Vervang sensor indien nodig",
-        "Controleer de goede werking van de sensors",
-        "Controleer of de sensor goed gemonteerd is",
-        "Ontlucht CV-installatie",
-        "Controleer de doorstroming (richting, pomp, kleppen)",
-        "Controleer de waterdruk",
-        "Controleer warmtewisselaar op vervuiling",
-        "Controleer instelling keteltype-parameter"
+        "Controleer waterdruk en ontlucht de installatie",
+        "Controleer stromingsrichting, pomp en kleppen",
+        "Controleer de warmtewisselaar op vervuiling",
+        "Controleer montage en werking van de temperatuursensoren"
       ]
     },
     {
       "code": "E.09",
       "title": "Retourtemperatuur te hoog",
-      "meaning": "Retourtemperatuur te hoog",
+      "meaning": "De Quinta Pro is vergrendeld: retourtemperatuur te hoog.",
       "causes": [
-        "Slechte verbinding",
-        "Defecte sensor",
-        "Sensor niet of slecht aangesloten",
-        "Geen doorstroming",
-        "Indien aanwezig"
+        "Geen of te weinig doorstroming",
+        "Lucht of vervuiling in de cv-installatie of warmtewisselaar",
+        "Pomp, klep of temperatuursensor werkt niet correct"
       ],
       "checks": [
-        "Controleer de bedrading",
-        "Vervang sensor indien nodig",
-        "Controleer de goede werking van de sensors",
-        "Controleer of de sensor goed gemonteerd is",
-        "Ontlucht CV-installatie",
-        "Controleer de doorstroming (richting, pomp, kleppen)",
-        "Controleer de waterdruk",
-        "Controleer warmtewisselaar op vervuiling",
-        "Controleer instelling keteltype-parameter"
+        "Controleer waterdruk en ontlucht de installatie",
+        "Controleer stromingsrichting, pomp en kleppen",
+        "Controleer de warmtewisselaar op vervuiling",
+        "Controleer montage en werking van de temperatuursensoren"
       ]
     },
     {
       "code": "E.10",
-      "title": "Te veel verschil tussen aanvoer- en retourtemperatuur",
-      "meaning": "Te veel verschil tussen aanvoer- en retourtemperatuur",
+      "title": "Temperatuurverschil aanvoer en retour te groot",
+      "meaning": "De Quinta Pro is vergrendeld: temperatuurverschil aanvoer en retour te groot.",
       "causes": [
-        "Geen doorstroming",
-        "Indien aanwezig",
-        "Sensor niet of slecht aangesloten",
-        "Defecte sensor"
+        "Geen of te weinig doorstroming",
+        "Lucht of vervuiling in de cv-installatie of warmtewisselaar",
+        "Pomp, klep of temperatuursensor werkt niet correct"
       ],
       "checks": [
-        "Ontlucht CV-installatie",
-        "Controleer de doorstroming (richting, pomp, kleppen)",
-        "Controleer de waterdruk",
-        "Controleer warmtewisselaar op vervuiling",
-        "Controleer de goede werking van de verwarmingspomp",
-        "Controleer instelling keteltype-parameter",
-        "Controleer de goede werking van de sensors",
-        "Controleer of de sensor goed gemonteerd is",
-        "Vervang sensor indien nodig"
+        "Controleer waterdruk en ontlucht de installatie",
+        "Controleer stromingsrichting, pomp en kleppen",
+        "Controleer de warmtewisselaar op vervuiling",
+        "Controleer montage en werking van de temperatuursensoren"
       ]
     },
     {
       "code": "E.11",
-      "title": "Te veel verschil tussen aanvoer- en retourtemperatuur",
-      "meaning": "Te veel verschil tussen aanvoer- en retourtemperatuur",
+      "title": "Temperatuurverschil aanvoer en retour te groot",
+      "meaning": "De Quinta Pro is vergrendeld: temperatuurverschil aanvoer en retour te groot.",
       "causes": [
-        "Geen doorstroming",
-        "Indien aanwezig",
-        "Sensor niet of slecht aangesloten",
-        "Defecte sensor"
+        "Geen of te weinig doorstroming",
+        "Lucht of vervuiling in de cv-installatie of warmtewisselaar",
+        "Pomp, klep of temperatuursensor werkt niet correct"
       ],
       "checks": [
-        "Ontlucht CV-installatie",
-        "Controleer de doorstroming (richting, pomp, kleppen)",
-        "Controleer de waterdruk",
-        "Controleer warmtewisselaar op vervuiling",
-        "Controleer de goede werking van de verwarmingspomp",
-        "Controleer instelling keteltype-parameter",
-        "Controleer de goede werking van de sensors",
-        "Controleer of de sensor goed gemonteerd is",
-        "Vervang sensor indien nodig"
+        "Controleer waterdruk en ontlucht de installatie",
+        "Controleer stromingsrichting, pomp en kleppen",
+        "Controleer de warmtewisselaar op vervuiling",
+        "Controleer montage en werking van de temperatuursensoren"
       ]
     },
     {
       "code": "E.12",
-      "title": "Temperatuur warmtewisselaar boven normaal bereik (maximaalthermostaat STB)",
-      "meaning": "Temperatuur warmtewisselaar boven normaal bereik (maximaalthermostaat STB)",
+      "title": "Maximaalthermostaat STB aangesproken",
+      "meaning": "De Quinta Pro is vergrendeld: maximaalthermostaat stb aangesproken.",
       "causes": [
-        "Slechte verbinding",
-        "Sensor niet of slecht aangesloten",
-        "Defecte sensor",
-        "Geen doorstroming",
-        "Indien aanwezig",
-        "Luchttoevoer of rookgasafvoer verstopt"
+        "Interne besturings- of veiligheidsfout",
+        "Aansluiting of onderdeel reageert niet zoals verwacht"
       ],
       "checks": [
-        "Controleer de bedrading",
-        "Controleer de goede werking van de sensors",
-        "Controleer of de sensor goed gemonteerd is",
-        "Vervang sensor indien nodig",
-        "Ontlucht CV-installatie",
-        "Controleer de doorstroming (richting, pomp, kleppen)",
-        "Controleer de waterdruk",
-        "Controleer warmtewisselaar op vervuiling",
-        "Controleer instelling keteltype-parameter",
-        "Luchtdrukverschilschakelaar is aangesproken:",
-        "Controleer luchttoevoer en rookgasafvoer op verstopping"
+        "Noteer de code en lees de fouthistorie uit",
+        "Controleer bedrading en connectoren",
+        "Herstart alleen nadat de oorzaak is onderzocht",
+        "Raadpleeg de officiële servicehandleiding"
       ]
     },
     {
       "code": "E.14",
-      "title": "5 mislukte branderstarts",
-      "meaning": "5 mislukte branderstarts",
+      "title": "Vijf mislukte branderstarts",
+      "meaning": "De Quinta Pro is vergrendeld: vijf mislukte branderstarts.",
       "causes": [
-        "Geen ontstekingsvonk",
-        "Defecte aansturing SU print",
-        "Wel ontstekingsvonk maar geen vlamvorming",
-        "Wel vlam maar geen of onvoldoende ionisatie"
+        "Gastoevoer of gasvoordruk niet in orde",
+        "Ontstekings- of ionisatieprobleem",
+        "Gasblok of gasklepregeling defect",
+        "Luchttoevoer, rookgasafvoer of aarding niet in orde"
       ],
       "checks": [
-        "Controleer bekabeling ontstekingstrafo",
-        "Controleer ionisatie- / ontstekingselektrode",
-        "Controleer doorslag naar massa / aarde",
-        "Controleer de conditie van het branderdek",
-        "Controleer aarding",
-        "Ontlucht de gasleiding",
-        "Controleer of de gaskraan goed geopend is",
-        "Controleer de gasaanvoerdruk",
-        "Controleer correcte werking en afstelling gasblok",
-        "Controleer luchttoevoer en rookgasafvoer op verstopping",
-        "Controleer de bekabeling van het gasblok",
-        "Controleer de bekabeling ionisatie- /ontstekingselektrode"
-      ]
-    },
-    {
-      "code": "E.15",
-      "title": "Indien VPS-schakelaar aanwezig: 5 mislukte gaslekcontroles",
-      "meaning": "Indien VPS-schakelaar aanwezig: 5 mislukte gaslekcontroles",
-      "causes": [
-        "Geen of te lage gasdruk",
-        "Bedradingsfout",
-        "Verkeerde afstelling van de VPS-schakelaar",
-        "Drukschakelaar VPS niet of slecht gemonteerd",
-        "Defecte VPS-schakelaar",
-        "Defecte gasklep"
+        "Controleer gastoevoer en gasvoordruk",
+        "Controleer ontstekings-/ionisatie-elektrode, kabel en aarding",
+        "Controleer luchttoevoer en rookgasafvoer",
+        "Controleer gasblok en aansturing volgens het Remeha-voorschrift"
       ],
-      "checks": [
-        "Controleer of de gaskraan goed geopend is",
-        "Controleer de gasaanvoerdruk",
-        "Controleer de bedrading",
-        "Controleer of de VPS-schakelaar goed afgesteld is",
-        "Controleer of de VPS-schakelaar goed gemonteerd is",
-        "Vervang schakelaar VPS indien nodig",
-        "Controleer de gasklep en vervang deze, indien nodig"
-      ]
+      "note": "Gaszijdige metingen en afstellingen alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "E.16",
       "title": "Vals vlamsignaal",
-      "meaning": "Vals vlamsignaal",
+      "meaning": "De Quinta Pro is vergrendeld: vals vlamsignaal.",
       "causes": [
-        "Wel ionisatiestroom gemeten, terwijl er geen vlam mag zijn",
-        "Ontstekingstrafo defect",
-        "Defecte gasklep",
-        "Brander gloeit na",
-        "2 2"
+        "Gastoevoer of gasvoordruk niet in orde",
+        "Ontstekings- of ionisatieprobleem",
+        "Gasblok of gasklepregeling defect",
+        "Luchttoevoer, rookgasafvoer of aarding niet in orde"
       ],
       "checks": [
-        "Controleer ionisatie- / ontstekingselektrode",
-        "Vervang de ontstekingstrafo indien nodig",
-        "Controleer de gasklep en vervang deze, indien nodig",
-        "Te hoog O : Stel O af"
-      ]
+        "Controleer gastoevoer en gasvoordruk",
+        "Controleer ontstekings-/ionisatie-elektrode, kabel en aarding",
+        "Controleer luchttoevoer en rookgasafvoer",
+        "Controleer gasblok en aansturing volgens het Remeha-voorschrift"
+      ],
+      "note": "Gaszijdige metingen en afstellingen alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "E.17",
       "title": "Gasklepstoring SU-print",
-      "meaning": "Gasklepstoring SU-print",
+      "meaning": "De Quinta Pro is vergrendeld: gasklepstoring su-print.",
       "causes": [
-        "Slechte verbinding",
-        "Defecte SU-print"
+        "Gastoevoer of gasvoordruk niet in orde",
+        "Ontstekings- of ionisatieprobleem",
+        "Gasblok of gasklepregeling defect",
+        "Luchttoevoer, rookgasafvoer of aarding niet in orde"
       ],
       "checks": [
-        "Controleer de bedrading",
-        "Controleer de SU-print en vervang deze, indien nodig"
-      ]
+        "Controleer gastoevoer en gasvoordruk",
+        "Controleer ontstekings-/ionisatie-elektrode, kabel en aarding",
+        "Controleer luchttoevoer en rookgasafvoer",
+        "Controleer gasblok en aansturing volgens het Remeha-voorschrift"
+      ],
+      "note": "Gaszijdige metingen en afstellingen alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "E.34",
       "title": "Ventilatorstoring",
-      "meaning": "Ventilatorstoring",
+      "meaning": "De Quinta Pro is vergrendeld: ventilatorstoring.",
       "causes": [
-        "Slechte verbinding",
-        "Ventilator defect"
+        "Luchttoevoer of rookgasafvoer geblokkeerd",
+        "Sifon, terugslagklep of warmtewisselaar vervuild",
+        "Ventilator, drukschakelaar of bedrading defect"
       ],
       "checks": [
-        "Controleer de bedrading",
-        "Controleer de goede trek ter hoogte van de aansluiting op de schoorsteen",
-        "Vervang de ventilator indien nodig"
-      ]
+        "Controleer luchttoevoer en rookgasafvoer op blokkering",
+        "Controleer sifon, terugslagklep en warmtewisselaar",
+        "Controleer bedrading en connectoren",
+        "Controleer ventilator of drukschakelaar volgens voorschrift"
+      ],
+      "note": "Werkzaamheden aan rookgasafvoer en verbranding alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "E.35",
       "title": "Aanvoer en retour verwisseld",
-      "meaning": "Aanvoer en retour verwisseld",
+      "meaning": "De Quinta Pro is vergrendeld: aanvoer en retour verwisseld.",
       "causes": [
-        "Slechte verbinding",
-        "Sensor niet of slecht aangesloten",
-        "Defecte sensor",
-        "Doorstroomrichting verkeerd"
+        "Geen of te weinig doorstroming",
+        "Lucht of vervuiling in de cv-installatie of warmtewisselaar",
+        "Pomp, klep of temperatuursensor werkt niet correct"
       ],
       "checks": [
-        "Controleer de goede werking van de sensors",
-        "Controleer of de sensor goed gemonteerd is",
-        "Vervang sensor indien nodig",
-        "Controleer de doorstroming (richting, pomp, kleppen)"
+        "Controleer waterdruk en ontlucht de installatie",
+        "Controleer stromingsrichting, pomp en kleppen",
+        "Controleer de warmtewisselaar op vervuiling",
+        "Controleer montage en werking van de temperatuursensoren"
       ]
     },
     {
       "code": "E.36",
-      "title": "5x vlamverlies",
-      "meaning": "5x vlamverlies",
+      "title": "Vijfmaal vlamverlies",
+      "meaning": "De Quinta Pro is vergrendeld: vijfmaal vlamverlies.",
       "causes": [
-        "Geen ionisatiestroom"
+        "Gastoevoer of gasvoordruk niet in orde",
+        "Ontstekings- of ionisatieprobleem",
+        "Gasblok of gasklepregeling defect",
+        "Luchttoevoer, rookgasafvoer of aarding niet in orde"
       ],
       "checks": [
-        "Ontlucht de gasleiding",
-        "Controleer of de gaskraan goed geopend is",
-        "Controleer de gasaanvoerdruk",
-        "Controleer correcte werking en afstelling gasblok",
-        "Controleer luchttoevoer en rookgasafvoer op verstopping",
-        "Controleer op rookgasrecirculatie"
-      ]
+        "Controleer gastoevoer en gasvoordruk",
+        "Controleer ontstekings-/ionisatie-elektrode, kabel en aarding",
+        "Controleer luchttoevoer en rookgasafvoer",
+        "Controleer gasblok en aansturing volgens het Remeha-voorschrift"
+      ],
+      "note": "Gaszijdige metingen en afstellingen alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "E.37",
-      "title": "Communicatiefout met de SU-print",
-      "meaning": "Communicatiefout met de SU-print",
+      "title": "Communicatiefout SU-print",
+      "meaning": "De Quinta Pro is vergrendeld: communicatiefout su-print.",
       "causes": [
-        "Slechte verbinding"
+        "Verbinding, stekker of busbedrading onderbroken",
+        "Aangesloten regel- of uitbreidingsprint niet gevonden",
+        "Besturings- of uitbreidingsprint defect"
       ],
       "checks": [
-        "Controleer of de SU-print juist in de connector op de PCU-print is geplaatst"
+        "Controleer bedrading en connectoren",
+        "Controleer of alle aangesloten apparaten spanning hebben",
+        "Voer automatische detectie uit indien voorgeschreven",
+        "Herstart het toestel en controleer de betreffende print"
       ]
     },
     {
       "code": "E.38",
-      "title": "Communicatiefout met de SCU-print",
-      "meaning": "Communicatiefout met de SCU-print",
+      "title": "Communicatiefout SCU-print",
+      "meaning": "De Quinta Pro is vergrendeld: communicatiefout scu-print.",
       "causes": [
-        "Slechte verbinding",
-        "Defecte SCU print"
+        "Verbinding, stekker of busbedrading onderbroken",
+        "Aangesloten regel- of uitbreidingsprint niet gevonden",
+        "Besturings- of uitbreidingsprint defect"
       ],
       "checks": [
-        "Controleer de bedrading",
-        "Vervang SCU print"
+        "Controleer bedrading en connectoren",
+        "Controleer of alle aangesloten apparaten spanning hebben",
+        "Voer automatische detectie uit indien voorgeschreven",
+        "Herstart het toestel en controleer de betreffende print"
       ]
     },
     {
       "code": "E.39",
-      "title": "Blokkerende ingang in vergrendelende modus",
-      "meaning": "Blokkerende ingang in vergrendelende modus",
+      "title": "Blokkerende ingang vergrendelend",
+      "meaning": "De Quinta Pro is vergrendeld: blokkerende ingang vergrendelend.",
       "causes": [
-        "Slechte verbinding",
-        "Externe oorzaak",
-        "Fout ingestelde parameter"
+        "Interne besturings- of veiligheidsfout",
+        "Aansluiting of onderdeel reageert niet zoals verwacht"
       ],
       "checks": [
-        "Controleer de bedrading",
-        "Neem externe oorzaak weg",
-        "Controleer parameters"
+        "Noteer de code en lees de fouthistorie uit",
+        "Controleer bedrading en connectoren",
+        "Herstart alleen nadat de oorzaak is onderzocht",
+        "Raadpleeg de officiële servicehandleiding"
       ]
     },
     {
       "code": "E.40",
-      "title": "Indien aanwezig: HRU/WTW-unit testfout",
-      "meaning": "Indien aanwezig: HRU/WTW-unit testfout",
+      "title": "HRU/WTW-testfout",
+      "meaning": "De Quinta Pro is vergrendeld: hru/wtw-testfout.",
       "causes": [
-        "Slechte verbinding",
-        "Externe oorzaak",
-        "Fout ingestelde parameter"
+        "Interne besturings- of veiligheidsfout",
+        "Aansluiting of onderdeel reageert niet zoals verwacht"
       ],
       "checks": [
-        "Controleer de bedrading",
-        "Neem externe oorzaak weg",
-        "Controleer parameters"
+        "Noteer de code en lees de fouthistorie uit",
+        "Controleer bedrading en connectoren",
+        "Herstart alleen nadat de oorzaak is onderzocht",
+        "Raadpleeg de officiële servicehandleiding"
       ]
     }
   ]

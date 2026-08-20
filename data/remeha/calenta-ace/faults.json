@@ -8,1153 +8,1359 @@
   "faults": [
     {
       "code": "A.00.34",
-      "title": "Buitentemperatuursensor werd verwacht maar is niet gedetecteerd",
-      "meaning": "Buitentemperatuursensor werd verwacht maar is niet gedetecteerd",
+      "title": "Buitensensor niet gedetecteerd",
+      "meaning": "Remeha geeft een waarschuwing: buitensensor niet gedetecteerd. Het toestel kan blijven werken, maar de oorzaak moet worden onderzocht.",
       "causes": [
-        "Buitensensor niet gedetecteerd",
-        "Buitensensor is niet aangesloten",
-        "De buitensensor is niet op juiste wijze aangesloten"
+        "Stekker of bedrading los, beschadigd of kortgesloten",
+        "Sensor niet correct gemonteerd",
+        "Sensorwaarde buiten bereik of sensor defect"
       ],
       "checks": [
-        "Sluit de sensor aan",
-        "Sluit de sensor correct aan"
+        "Controleer stekker en bedrading",
+        "Controleer montage en positie van de sensor",
+        "Meet de sensor volgens de fabrikantgegevens",
+        "Vervang de sensor indien deze defect is"
       ]
     },
     {
       "code": "A.00.42",
-      "title": "Waterdruksensor werd verwacht maar is niet gedetecteerd",
-      "meaning": "Waterdruksensor werd verwacht maar is niet gedetecteerd",
+      "title": "Waterdruksensor niet gedetecteerd",
+      "meaning": "Remeha geeft een waarschuwing: waterdruksensor niet gedetecteerd. Het toestel kan blijven werken, maar de oorzaak moet worden onderzocht.",
       "causes": [
-        "Waterdruksensor niet gedetecteerd",
-        "Waterdruksensor is niet aangesloten",
-        "Waterdruksensor is niet correct aangesloten"
+        "Stekker of bedrading los, beschadigd of kortgesloten",
+        "Sensor niet correct gemonteerd",
+        "Sensorwaarde buiten bereik of sensor defect"
       ],
       "checks": [
-        "Sluit de sensor aan",
-        "Sluit de sensor correct aan"
+        "Controleer stekker en bedrading",
+        "Controleer montage en positie van de sensor",
+        "Meet de sensor volgens de fabrikantgegevens",
+        "Vervang de sensor indien deze defect is"
       ]
     },
     {
       "code": "A.01.23",
       "title": "Slechte verbranding",
-      "meaning": "Slechte verbranding",
+      "meaning": "Remeha geeft een waarschuwing: slechte verbranding. Het toestel kan blijven werken, maar de oorzaak moet worden onderzocht.",
       "causes": [
-        "Configuratiefout",
-        "Geen ionisatiestroom"
+        "Gastoevoer of gasvoordruk niet in orde",
+        "Ontstekings- of ionisatieprobleem",
+        "Gasblok of gasklepregeling defect",
+        "Luchttoevoer, rookgasafvoer of aarding niet in orde"
       ],
       "checks": [
-        "Vlamwegval tijdens bedrijf:",
-        "Ontlucht de gasleiding.",
-        "Controleer of de gaskraan goed geopend is.",
-        "Controleer de gasaanvoerdruk.",
-        "Controleer correcte werking en afstelling gasblok.",
-        "Controleer luchttoevoer en rookgasafvoer op verstopping.",
-        "Controleer op rookgasrecirculatie."
-      ]
+        "Controleer gastoevoer en gasvoordruk",
+        "Controleer ontstekings-/ionisatie-elektrode, kabel en aarding",
+        "Controleer luchttoevoer en rookgasafvoer",
+        "Controleer gasblok en aansturing volgens het Remeha-voorschrift"
+      ],
+      "note": "Gaszijdige metingen en afstellingen alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "A.02.06",
       "title": "Waarschuwing waterdruk actief",
-      "meaning": "Waarschuwing waterdruk actief",
+      "meaning": "Remeha geeft een waarschuwing: waarschuwing waterdruk actief. Het toestel kan blijven werken, maar de oorzaak moet worden onderzocht.",
       "causes": [
-        "Waterdruk waarschuwing",
-        "Waterdruk te laag; controleer de waterdruk"
+        "Installatiedruk of wateraanvoer onvoldoende",
+        "Lekkage in toestel of cv-installatie",
+        "Druksensor, vulinrichting of veiligheidsventiel werkt niet correct"
       ],
-      "checks": []
+      "checks": [
+        "Controleer de actuele waterdruk en wateraanvoer",
+        "Controleer toestel en installatie op lekkage",
+        "Controleer druksensor, vulinrichting en veiligheidsventiel",
+        "Vul en ontlucht volgens het installatievoorschrift"
+      ]
     },
     {
       "code": "A.02.18",
-      "title": "Fout woordenboekobject",
-      "meaning": "Fout woordenboekobject",
+      "title": "Fout in configuratiewoordenboek",
+      "meaning": "Remeha geeft een waarschuwing: fout in configuratiewoordenboek. Het toestel kan blijven werken, maar de oorzaak moet worden onderzocht.",
       "causes": [
-        "Configuratiefout",
-        "CN1 en CN2 opnieuw instellen",
-        "Zie",
-        "De typeplaat voor de CN1 en CN2 waarden."
+        "Configuratienummer of parameterinstelling onjuist",
+        "CSU/CU-configuratie komt niet overeen",
+        "Besturingsprint of configuratiegeheugen defect"
       ],
-      "checks": []
+      "checks": [
+        "Controleer configuratie en parameters",
+        "Vergelijk CN1 en CN2 met de typeplaat",
+        "Voer indien voorgeschreven automatische detectie uit",
+        "Controleer CSU en besturingsprint"
+      ]
     },
     {
       "code": "A.02.33",
-      "title": "Automatisch bijvullen installatie communicatie heeft terugmeldtijd overschreden",
-      "meaning": "Automatisch bijvullen installatie communicatie heeft terugmeldtijd overschreden",
+      "title": "Automatisch bijvullen duurt te lang",
+      "meaning": "Remeha geeft een waarschuwing: automatisch bijvullen duurt te lang. Het toestel kan blijven werken, maar de oorzaak moet worden onderzocht.",
       "causes": [
-        "Maximale tijd voor het automatisch bijvullen van de installatie is overschreden",
-        "Geen of te lage waterdruk in de wateraanvoerleiding",
-        "Waterlekkage in de ketel of de installatie",
-        "Het drukverschil tussen de minimale (parameter AP006) en de maximale (parameter AP070) waterdruk moet groot genoeg zijn om een te korte tijd tussen twee vulpogingen te voorkomen.",
-        "De klep op de automatisch (bij)vulinrichting is defect"
+        "Installatiedruk of wateraanvoer onvoldoende",
+        "Lekkage in toestel of cv-installatie",
+        "Druksensor, vulinrichting of veiligheidsventiel werkt niet correct"
       ],
       "checks": [
-        "Controleer of de hoofdwaterkraan goed geopend is.",
-        "Controleer de ketel en de installatie op lekkage.",
-        "Controleer parameter AP069.",
-        "Controleer parameter AP070.",
-        "Vervang de (bij)vulinrichting."
-      ],
-      "note": "Belangrijk"
+        "Controleer de actuele waterdruk en wateraanvoer",
+        "Controleer toestel en installatie op lekkage",
+        "Controleer druksensor, vulinrichting en veiligheidsventiel",
+        "Vul en ontlucht volgens het installatievoorschrift"
+      ]
     },
     {
       "code": "A.02.34",
-      "title": "De minimale tussentijd voor autovullen tss twee verzoeken is niet bereikt",
-      "meaning": "De minimale tussentijd voor autovullen tss twee verzoeken is niet bereikt",
+      "title": "Te korte tussentijd tussen vulverzoeken",
+      "meaning": "Remeha geeft een waarschuwing: te korte tussentijd tussen vulverzoeken. Het toestel kan blijven werken, maar de oorzaak moet worden onderzocht.",
       "causes": [
-        "De installatie moet te snel weer bijgevuld worden door de automatische (bij)vulinrichting",
-        "Waterlekkage in de ketel of de installatie",
-        "Laatste bijvulling eindigde net boven de minimale waterdruk doordat deze door de gebruiker onderbroken werd of doordat de waterdruk in de aanvoerleiding (tijdelijk) te laag was."
+        "Interne besturings- of veiligheidsfout",
+        "Aansluiting of onderdeel reageert niet zoals verwacht"
       ],
       "checks": [
-        "Controleer de ketel en de installatie op lekkage."
+        "Noteer de code en lees de fouthistorie uit",
+        "Controleer bedrading en connectoren",
+        "Herstart alleen nadat de oorzaak is onderzocht",
+        "Raadpleeg de officiële servicehandleiding"
       ]
     },
     {
       "code": "A.02.36",
-      "title": "Functioneel apparaat is ontkoppeld",
-      "meaning": "Functioneel apparaat is ontkoppeld",
+      "title": "Functioneel apparaat ontkoppeld",
+      "meaning": "Remeha geeft een waarschuwing: functioneel apparaat ontkoppeld. Het toestel kan blijven werken, maar de oorzaak moet worden onderzocht.",
       "causes": [
-        "SCB niet gevonden",
-        "Slechte verbinding",
-        "Defecte SCB"
+        "Verbinding, stekker of busbedrading onderbroken",
+        "Aangesloten regel- of uitbreidingsprint niet gevonden",
+        "Besturings- of uitbreidingsprint defect"
       ],
       "checks": [
-        "Controleer de bedrading en connectoren",
-        "Vervang SCB"
+        "Controleer bedrading en connectoren",
+        "Controleer of alle aangesloten apparaten spanning hebben",
+        "Voer automatische detectie uit indien voorgeschreven",
+        "Herstart het toestel en controleer de betreffende print"
       ]
     },
     {
       "code": "A.02.37",
-      "title": "Niet kritisch apparaat is ontkoppeld",
-      "meaning": "Niet kritisch apparaat is ontkoppeld",
+      "title": "Niet-kritisch apparaat ontkoppeld",
+      "meaning": "Remeha geeft een waarschuwing: niet-kritisch apparaat ontkoppeld. Het toestel kan blijven werken, maar de oorzaak moet worden onderzocht.",
       "causes": [
-        "SCB niet gevonden",
-        "Slechte verbinding",
-        "Defecte SCB"
+        "Verbinding, stekker of busbedrading onderbroken",
+        "Aangesloten regel- of uitbreidingsprint niet gevonden",
+        "Besturings- of uitbreidingsprint defect"
       ],
       "checks": [
-        "Controleer de bedrading en connectoren",
-        "Vervang SCB"
+        "Controleer bedrading en connectoren",
+        "Controleer of alle aangesloten apparaten spanning hebben",
+        "Voer automatische detectie uit indien voorgeschreven",
+        "Herstart het toestel en controleer de betreffende print"
       ]
     },
     {
       "code": "A.02.45",
       "title": "CAN-verbindingsmatrix vol",
-      "meaning": "CAN-verbindingsmatrix vol",
+      "meaning": "Remeha geeft een waarschuwing: can-verbindingsmatrix vol. Het toestel kan blijven werken, maar de oorzaak moet worden onderzocht.",
       "causes": [
-        "SCB niet gevonden"
+        "Verbinding, stekker of busbedrading onderbroken",
+        "Aangesloten regel- of uitbreidingsprint niet gevonden",
+        "Besturings- of uitbreidingsprint defect"
       ],
       "checks": [
-        "Voer een automatische detectie uit"
+        "Controleer bedrading en connectoren",
+        "Controleer of alle aangesloten apparaten spanning hebben",
+        "Voer automatische detectie uit indien voorgeschreven",
+        "Herstart het toestel en controleer de betreffende print"
       ]
     },
     {
       "code": "A.02.46",
-      "title": "CAN-admin. apparaat vol",
-      "meaning": "CAN-admin. apparaat vol",
+      "title": "CAN-administratie vol",
+      "meaning": "Remeha geeft een waarschuwing: can-administratie vol. Het toestel kan blijven werken, maar de oorzaak moet worden onderzocht.",
       "causes": [
-        "SCB niet gevonden"
+        "Verbinding, stekker of busbedrading onderbroken",
+        "Aangesloten regel- of uitbreidingsprint niet gevonden",
+        "Besturings- of uitbreidingsprint defect"
       ],
       "checks": [
-        "Voer een automatische detectie uit"
+        "Controleer bedrading en connectoren",
+        "Controleer of alle aangesloten apparaten spanning hebben",
+        "Voer automatische detectie uit indien voorgeschreven",
+        "Herstart het toestel en controleer de betreffende print"
       ]
     },
     {
       "code": "A.02.48",
       "title": "Configuratiefout functiegroep",
-      "meaning": "Configuratiefout functiegroep",
+      "meaning": "Remeha geeft een waarschuwing: configuratiefout functiegroep. Het toestel kan blijven werken, maar de oorzaak moet worden onderzocht.",
       "causes": [
-        "SCB niet gevonden"
+        "Configuratienummer of parameterinstelling onjuist",
+        "CSU/CU-configuratie komt niet overeen",
+        "Besturingsprint of configuratiegeheugen defect"
       ],
       "checks": [
-        "Voer een automatische detectie uit"
+        "Controleer configuratie en parameters",
+        "Vergelijk CN1 en CN2 met de typeplaat",
+        "Voer indien voorgeschreven automatische detectie uit",
+        "Controleer CSU en besturingsprint"
       ]
     },
     {
       "code": "A.02.49",
-      "title": "Initialisatienode mislukt",
-      "meaning": "Initialisatienode mislukt",
+      "title": "Initialisatie van node mislukt",
+      "meaning": "Remeha geeft een waarschuwing: initialisatie van node mislukt. Het toestel kan blijven werken, maar de oorzaak moet worden onderzocht.",
       "causes": [
-        "SCB niet gevonden"
+        "Verbinding, stekker of busbedrading onderbroken",
+        "Aangesloten regel- of uitbreidingsprint niet gevonden",
+        "Besturings- of uitbreidingsprint defect"
       ],
       "checks": [
-        "Voer een automatische detectie uit"
+        "Controleer bedrading en connectoren",
+        "Controleer of alle aangesloten apparaten spanning hebben",
+        "Voer automatische detectie uit indien voorgeschreven",
+        "Herstart het toestel en controleer de betreffende print"
       ]
     },
     {
       "code": "A.02.55",
-      "title": "Ongeldig of ontbrekend serienr. apparaat",
-      "meaning": "Ongeldig of ontbrekend serienr. apparaat",
-      "causes": [],
+      "title": "Ongeldig of ontbrekend serienummer",
+      "meaning": "Remeha geeft een waarschuwing: ongeldig of ontbrekend serienummer. Het toestel kan blijven werken, maar de oorzaak moet worden onderzocht.",
+      "causes": [
+        "Interne besturings- of veiligheidsfout",
+        "Aansluiting of onderdeel reageert niet zoals verwacht"
+      ],
       "checks": [
-        "Neem contact op met uw leverancier."
+        "Noteer de code en lees de fouthistorie uit",
+        "Controleer bedrading en connectoren",
+        "Herstart alleen nadat de oorzaak is onderzocht",
+        "Raadpleeg de officiële servicehandleiding"
       ]
     },
     {
       "code": "A.02.69",
-      "title": "Demo-modus actief",
-      "meaning": "Demo-modus actief",
-      "causes": [],
+      "title": "Demomodus actief",
+      "meaning": "Remeha geeft een waarschuwing: demomodus actief. Het toestel kan blijven werken, maar de oorzaak moet worden onderzocht.",
+      "causes": [
+        "Configuratienummer of parameterinstelling onjuist",
+        "CSU/CU-configuratie komt niet overeen",
+        "Besturingsprint of configuratiegeheugen defect"
+      ],
       "checks": [
-        "Neem contact op met uw leverancier."
+        "Controleer configuratie en parameters",
+        "Vergelijk CN1 en CN2 met de typeplaat",
+        "Voer indien voorgeschreven automatische detectie uit",
+        "Controleer CSU en besturingsprint"
       ]
     },
     {
       "code": "A.02.76",
-      "title": "De geres geheugenruimte voor aangepaste parameterw is vol. Gebruikerswijzigingen nt mr mogelijk",
-      "meaning": "De geres geheugenruimte voor aangepaste parameterw is vol. Gebruikerswijzigingen nt mr mogelijk",
+      "title": "Geheugen voor parameterwijzigingen vol",
+      "meaning": "Remeha geeft een waarschuwing: geheugen voor parameterwijzigingen vol. Het toestel kan blijven werken, maar de oorzaak moet worden onderzocht.",
       "causes": [
-        "Configuratiefout",
-        "CN1 en CN2 opnieuw instellen",
-        "Defecte CSU"
+        "Configuratienummer of parameterinstelling onjuist",
+        "CSU/CU-configuratie komt niet overeen",
+        "Besturingsprint of configuratiegeheugen defect"
       ],
       "checks": [
-        "Vervang CSU",
-        "Vervang de CU-GH"
+        "Controleer configuratie en parameters",
+        "Vergelijk CN1 en CN2 met de typeplaat",
+        "Voer indien voorgeschreven automatische detectie uit",
+        "Controleer CSU en besturingsprint"
       ]
     },
     {
       "code": "A.02.80",
-      "title": "Ontbrekende cascaderegelaar",
-      "meaning": "Ontbrekende cascaderegelaar",
+      "title": "Cascaderegelaar ontbreekt",
+      "meaning": "Remeha geeft een waarschuwing: cascaderegelaar ontbreekt. Het toestel kan blijven werken, maar de oorzaak moet worden onderzocht.",
       "causes": [
-        "Cascaderegelaar niet gevonden"
+        "Configuratienummer of parameterinstelling onjuist",
+        "CSU/CU-configuratie komt niet overeen",
+        "Besturingsprint of configuratiegeheugen defect"
       ],
       "checks": [
-        "Sluit de cascademaster weer aan",
-        "Voer een automatische detectie uit"
+        "Controleer configuratie en parameters",
+        "Vergelijk CN1 en CN2 met de typeplaat",
+        "Voer indien voorgeschreven automatische detectie uit",
+        "Controleer CSU en besturingsprint"
       ]
     },
     {
       "code": "A.08.02",
-      "title": "De voor het douchen gereserveerde tijd is verstreken",
-      "meaning": "De voor het douchen gereserveerde tijd is verstreken",
-      "causes": [],
+      "title": "Ingestelde douchetijd verstreken",
+      "meaning": "Remeha geeft een waarschuwing: ingestelde douchetijd verstreken. Het toestel kan blijven werken, maar de oorzaak moet worden onderzocht.",
+      "causes": [
+        "Ingestelde maximale douchetijd is verstreken"
+      ],
       "checks": [
-        "Stel parameter DP357 in op de gewenste douchetijd."
+        "Controleer parameter DP357",
+        "Stel de gewenste douchetijd in volgens het installatievoorschrift"
       ]
     },
     {
       "code": "H.01.00",
-      "title": "Communicatiefout opgetreden",
-      "meaning": "Communicatiefout opgetreden",
+      "title": "Communicatiefout met veiligheidskern",
+      "meaning": "Remeha blokkeert de normale werking tijdelijk vanwege: communicatiefout met veiligheidskern. Na het opheffen van de oorzaak kan het toestel automatisch hervatten.",
       "causes": [
-        "Communicatiefout met de veiligheidskern"
+        "Verbinding, stekker of busbedrading onderbroken",
+        "Aangesloten regel- of uitbreidingsprint niet gevonden",
+        "Besturings- of uitbreidingsprint defect"
       ],
       "checks": [
-        "Herstart de ketel",
-        "Vervang de CU-GH"
+        "Controleer bedrading en connectoren",
+        "Controleer of alle aangesloten apparaten spanning hebben",
+        "Voer automatische detectie uit indien voorgeschreven",
+        "Herstart het toestel en controleer de betreffende print"
       ]
     },
     {
       "code": "H.01.05",
-      "title": "Maximaal verschil tussen aanvoertemperatuur en retourtemperatuur",
-      "meaning": "Maximaal verschil tussen aanvoertemperatuur en retourtemperatuur",
+      "title": "Temperatuurverschil aanvoer en retour te groot",
+      "meaning": "Remeha blokkeert de normale werking tijdelijk vanwege: temperatuurverschil aanvoer en retour te groot. Na het opheffen van de oorzaak kan het toestel automatisch hervatten.",
       "causes": [
-        "Maximaal verschil tussen aanvoer- en retourtemperatuur overschreden",
         "Geen of te weinig doorstroming",
-        "Doorstroming (richting, pomp, kleppen) controleren",
-        "Sensorfout"
+        "Lucht of vervuiling in de cv-installatie of warmtewisselaar",
+        "Pomp, klep of temperatuursensor werkt niet correct"
       ],
       "checks": [
-        "Controleer de waterdruk",
-        "Controleer warmtewisselaar op vervuiling",
-        "Controleer de goede werking van de sensors",
-        "Controleer of de sensor goed gemonteerd is"
+        "Controleer waterdruk en ontlucht de installatie",
+        "Controleer stromingsrichting, pomp en kleppen",
+        "Controleer de warmtewisselaar op vervuiling",
+        "Controleer montage en werking van de temperatuursensoren"
       ]
     },
     {
       "code": "H.01.06",
-      "title": "Maximaal verschil tussen temperatuur warmtewisselaar en aanvoertemperatuur",
-      "meaning": "Maximaal verschil tussen temperatuur warmtewisselaar en aanvoertemperatuur",
+      "title": "Temperatuurverschil warmtewisselaar en aanvoer te groot",
+      "meaning": "Remeha blokkeert de normale werking tijdelijk vanwege: temperatuurverschil warmtewisselaar en aanvoer te groot. Na het opheffen van de oorzaak kan het toestel automatisch hervatten.",
       "causes": [
-        "Maximaal verschil tussen warmtewisselaar- en aanvoertemperatuur overschreden",
         "Geen of te weinig doorstroming",
-        "Sensorfout"
+        "Lucht of vervuiling in de cv-installatie of warmtewisselaar",
+        "Pomp, klep of temperatuursensor werkt niet correct"
       ],
       "checks": [
-        "Controleer de doorstroming (richting, pomp, kleppen).",
-        "Controleer de waterdruk.",
-        "Controleer warmtewisselaar op vervuiling.",
-        "Controleer of de installatie ontlucht is.",
-        "Controleer of de waterkwaliteit aan de specificaties van de leverancier voldoet.",
-        "Controleer de goede werking van de sensors.",
-        "Controleer of de sensor goed gemonteerd is."
+        "Controleer waterdruk en ontlucht de installatie",
+        "Controleer stromingsrichting, pomp en kleppen",
+        "Controleer de warmtewisselaar op vervuiling",
+        "Controleer montage en werking van de temperatuursensoren"
       ]
     },
     {
       "code": "H.01.09",
-      "title": "Gasdrukschakelaar",
-      "meaning": "Gasdrukschakelaar",
+      "title": "Gasdrukschakelaar meldt te lage druk",
+      "meaning": "Remeha blokkeert de normale werking tijdelijk vanwege: gasdrukschakelaar meldt te lage druk. Na het opheffen van de oorzaak kan het toestel automatisch hervatten.",
       "causes": [
-        "Gasdruk te laag",
-        "Geen of te weinig doorstroming",
-        "Als er een gasfilter is",
-        "Verkeerde afstelling van de gasdrukschakelaar"
+        "Gastoevoer of gasvoordruk niet in orde",
+        "Ontstekings- of ionisatieprobleem",
+        "Gasblok of gasklepregeling defect",
+        "Luchttoevoer, rookgasafvoer of aarding niet in orde"
       ],
       "checks": [
-        "Zorg ervoor dat de gaskraan volledig is geopend",
-        "Controleer de gastoevoerdruk",
-        "Zorg ervoor dat het filter schoon is",
-        "Zorg ervoor dat de schakelaar goed is gemonteerd",
-        "Vervang schakelaar indien nodig"
-      ]
+        "Controleer gastoevoer en gasvoordruk",
+        "Controleer ontstekings-/ionisatie-elektrode, kabel en aarding",
+        "Controleer luchttoevoer en rookgasafvoer",
+        "Controleer gasblok en aansturing volgens het Remeha-voorschrift"
+      ],
+      "note": "Gaszijdige metingen en afstellingen alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "H.01.13",
-      "title": "Temperatuur van warmtewisselaar heeft de maximale bedrijfswaarde overschreden",
-      "meaning": "Temperatuur van warmtewisselaar heeft de maximale bedrijfswaarde overschreden",
+      "title": "Warmtewisselaartemperatuur te hoog",
+      "meaning": "Remeha blokkeert de normale werking tijdelijk vanwege: warmtewisselaartemperatuur te hoog. Na het opheffen van de oorzaak kan het toestel automatisch hervatten.",
       "causes": [
-        "Maximale warmtewisselaartemperatuur overschreden"
+        "Geen of te weinig doorstroming",
+        "Lucht of vervuiling in de cv-installatie of warmtewisselaar",
+        "Pomp, klep of temperatuursensor werkt niet correct"
       ],
       "checks": [
-        "Controleer de doorstroming (richting, pomp, kleppen).",
-        "Controleer de waterdruk.",
-        "Controleer de goede werking van de sensors.",
-        "Controleer of de sensor goed gemonteerd is.",
-        "Controleer warmtewisselaar op vervuiling.",
-        "Controleer of de cv-installatie correct is ontlucht."
+        "Controleer waterdruk en ontlucht de installatie",
+        "Controleer stromingsrichting, pomp en kleppen",
+        "Controleer de warmtewisselaar op vervuiling",
+        "Controleer montage en werking van de temperatuursensoren"
       ]
     },
     {
       "code": "H.01.15",
-      "title": "De rookgastemperatuur heeft de maximale bedrijfswaarde overschreden",
-      "meaning": "De rookgastemperatuur heeft de maximale bedrijfswaarde overschreden",
+      "title": "Rookgastemperatuur te hoog",
+      "meaning": "Remeha blokkeert de normale werking tijdelijk vanwege: rookgastemperatuur te hoog. Na het opheffen van de oorzaak kan het toestel automatisch hervatten.",
       "causes": [
-        "Maximum rookgastemperatuur overschreden",
-        "Defecte sensor"
+        "Geen of te weinig doorstroming",
+        "Lucht of vervuiling in de cv-installatie of warmtewisselaar",
+        "Pomp, klep of temperatuursensor werkt niet correct"
       ],
       "checks": [
-        "Controleer het rookgasafvoersysteem",
-        "Controleer de warmtewisselaar op rookgaszijdige vervuiling",
-        "Vervang de sensor"
+        "Controleer waterdruk en ontlucht de installatie",
+        "Controleer stromingsrichting, pomp en kleppen",
+        "Controleer de warmtewisselaar op vervuiling",
+        "Controleer montage en werking van de temperatuursensoren"
       ]
     },
     {
       "code": "H.01.21",
-      "title": "Maximale SWW-temperatuurgradiënt Level3 overschreden",
-      "meaning": "Maximale SWW-temperatuurgradiënt Level3 overschreden",
+      "title": "SWW-temperatuur stijgt te snel",
+      "meaning": "Remeha blokkeert de normale werking tijdelijk vanwege: sww-temperatuur stijgt te snel. Na het opheffen van de oorzaak kan het toestel automatisch hervatten.",
       "causes": [
-        "De aanvoertemperatuur is te snel gestegen",
-        "Doorstroming (richting, pomp, kleppen) controleren"
+        "Geen of te weinig doorstroming",
+        "Lucht of vervuiling in de cv-installatie of warmtewisselaar",
+        "Pomp, klep of temperatuursensor werkt niet correct"
       ],
       "checks": [
-        "Controleer de goede werking van de pomp"
+        "Controleer waterdruk en ontlucht de installatie",
+        "Controleer stromingsrichting, pomp en kleppen",
+        "Controleer de warmtewisselaar op vervuiling",
+        "Controleer montage en werking van de temperatuursensoren"
       ]
     },
     {
       "code": "H.02.00",
-      "title": "Reset wordt uitgev.",
-      "meaning": "Reset wordt uitgev.",
+      "title": "Resetprocedure actief",
+      "meaning": "Remeha blokkeert de normale werking tijdelijk vanwege: resetprocedure actief. Na het opheffen van de oorzaak kan het toestel automatisch hervatten.",
       "causes": [
-        "Resetprocedure actief",
-        "Geen actie"
+        "Resetprocedure is actief"
       ],
-      "checks": []
+      "checks": [
+        "Wacht tot de resetprocedure is afgerond",
+        "Controleer of het toestel daarna normaal opstart"
+      ]
     },
     {
       "code": "H.02.02",
-      "title": "Wacht op configuratienummer",
-      "meaning": "Wacht op configuratienummer",
+      "title": "Wachten op configuratienummer",
+      "meaning": "Remeha blokkeert de normale werking tijdelijk vanwege: wachten op configuratienummer. Na het opheffen van de oorzaak kan het toestel automatisch hervatten.",
       "causes": [
-        "Configuratiefout of configuratienummer onbekend",
-        "CN1 en CN2 opnieuw instellen"
+        "Configuratienummer of parameterinstelling onjuist",
+        "CSU/CU-configuratie komt niet overeen",
+        "Besturingsprint of configuratiegeheugen defect"
       ],
-      "checks": []
+      "checks": [
+        "Controleer configuratie en parameters",
+        "Vergelijk CN1 en CN2 met de typeplaat",
+        "Voer indien voorgeschreven automatische detectie uit",
+        "Controleer CSU en besturingsprint"
+      ]
     },
     {
       "code": "H.02.03",
       "title": "Configuratiefout",
-      "meaning": "Configuratiefout",
+      "meaning": "Remeha blokkeert de normale werking tijdelijk vanwege: configuratiefout. Na het opheffen van de oorzaak kan het toestel automatisch hervatten.",
       "causes": [
-        "Configuratiefout of configuratienummer onbekend",
-        "CN1 en CN2 opnieuw instellen"
+        "Configuratienummer of parameterinstelling onjuist",
+        "CSU/CU-configuratie komt niet overeen",
+        "Besturingsprint of configuratiegeheugen defect"
       ],
-      "checks": []
+      "checks": [
+        "Controleer configuratie en parameters",
+        "Vergelijk CN1 en CN2 met de typeplaat",
+        "Voer indien voorgeschreven automatische detectie uit",
+        "Controleer CSU en besturingsprint"
+      ]
     },
     {
       "code": "H.02.04",
       "title": "Parameterfout",
-      "meaning": "Parameterfout",
+      "meaning": "Remeha blokkeert de normale werking tijdelijk vanwege: parameterfout. Na het opheffen van de oorzaak kan het toestel automatisch hervatten.",
       "causes": [
-        "Fabrieksinstellingen niet in orde",
-        "Parameters staan niet goed",
-        "CN1 en CN2 opnieuw instellen"
+        "Configuratienummer of parameterinstelling onjuist",
+        "CSU/CU-configuratie komt niet overeen",
+        "Besturingsprint of configuratiegeheugen defect"
       ],
       "checks": [
-        "Herstart de ketel",
-        "Vervang de CU-GH print"
+        "Controleer configuratie en parameters",
+        "Vergelijk CN1 en CN2 met de typeplaat",
+        "Voer indien voorgeschreven automatische detectie uit",
+        "Controleer CSU en besturingsprint"
       ]
     },
     {
       "code": "H.02.05",
       "title": "CSU komt niet overeen met CU-type",
-      "meaning": "CSU komt niet overeen met CU-type",
+      "meaning": "Remeha blokkeert de normale werking tijdelijk vanwege: csu komt niet overeen met cu-type. Na het opheffen van de oorzaak kan het toestel automatisch hervatten.",
       "causes": [
-        "Configuratiefout",
-        "CN1 en CN2 opnieuw instellen"
+        "Verbinding, stekker of busbedrading onderbroken",
+        "Aangesloten regel- of uitbreidingsprint niet gevonden",
+        "Besturings- of uitbreidingsprint defect"
       ],
-      "checks": []
+      "checks": [
+        "Controleer bedrading en connectoren",
+        "Controleer of alle aangesloten apparaten spanning hebben",
+        "Voer automatische detectie uit indien voorgeschreven",
+        "Herstart het toestel en controleer de betreffende print"
+      ]
     },
     {
       "code": "H.02.09",
-      "title": "Deelblokkering van het apparaat gedetecteerd",
-      "meaning": "Deelblokkering van het apparaat gedetecteerd",
+      "title": "Gedeeltelijke blokkering actief",
+      "meaning": "Remeha blokkeert de normale werking tijdelijk vanwege: gedeeltelijke blokkering actief. Na het opheffen van de oorzaak kan het toestel automatisch hervatten.",
       "causes": [
-        "Blokkerende ingang of vorstbeveiliging is actief",
-        "Externe oorzaak",
-        "Fout ingestelde parameter",
-        "Slechte verbinding"
+        "Externe blokkering, vrijgave of vorstbeveiliging actief",
+        "Ingang of parameter verkeerd geconfigureerd",
+        "Slechte verbinding met het externe contact"
       ],
       "checks": [
-        "Neem externe oorzaak weg",
-        "Controleer parameters",
-        "Controleer de verbinding"
+        "Bepaal welke externe ingang actief is",
+        "Controleer aangesloten beveiliging en contact",
+        "Controleer de bijbehorende parameter",
+        "Hef de externe oorzaak op en controleer de bedrijfsstatus"
       ]
     },
     {
       "code": "H.02.10",
-      "title": "Volledige blokkering van het apparaat gedetecteerd",
-      "meaning": "Volledige blokkering van het apparaat gedetecteerd",
+      "title": "Volledige blokkering actief",
+      "meaning": "Remeha blokkeert de normale werking tijdelijk vanwege: volledige blokkering actief. Na het opheffen van de oorzaak kan het toestel automatisch hervatten.",
       "causes": [
-        "Blokkerende ingang is actief (zonder vorstbeveiliging)",
-        "Externe oorzaak",
-        "Fout ingestelde parameter",
-        "Slechte verbinding"
+        "Externe blokkering, vrijgave of vorstbeveiliging actief",
+        "Ingang of parameter verkeerd geconfigureerd",
+        "Slechte verbinding met het externe contact"
       ],
       "checks": [
-        "Neem externe oorzaak weg",
-        "Controleer parameters",
-        "Controleer de verbinding"
+        "Bepaal welke externe ingang actief is",
+        "Controleer aangesloten beveiliging en contact",
+        "Controleer de bijbehorende parameter",
+        "Hef de externe oorzaak op en controleer de bedrijfsstatus"
       ]
     },
     {
       "code": "H.02.12",
-      "title": "Ingang vrijgavesignaal van de regeleenheid van externe apparaatomgeving",
-      "meaning": "Ingang vrijgavesignaal van de regeleenheid van externe apparaatomgeving",
+      "title": "Vrijgavesignaal niet ontvangen",
+      "meaning": "Remeha blokkeert de normale werking tijdelijk vanwege: vrijgavesignaal niet ontvangen. Na het opheffen van de oorzaak kan het toestel automatisch hervatten.",
       "causes": [
-        "Wachttijd vrijgave signaal is verlopen",
-        "Externe oorzaak",
-        "Fout ingestelde parameter",
-        "Slechte verbinding"
+        "Externe blokkering, vrijgave of vorstbeveiliging actief",
+        "Ingang of parameter verkeerd geconfigureerd",
+        "Slechte verbinding met het externe contact"
       ],
       "checks": [
-        "Neem externe oorzaak weg",
-        "Controleer parameters",
-        "Controleer de verbinding"
+        "Bepaal welke externe ingang actief is",
+        "Controleer aangesloten beveiliging en contact",
+        "Controleer de bijbehorende parameter",
+        "Hef de externe oorzaak op en controleer de bedrijfsstatus"
       ]
     },
     {
       "code": "H.02.15",
       "title": "Time-out externe CSU",
-      "meaning": "Time-out externe CSU",
+      "meaning": "Remeha blokkeert de normale werking tijdelijk vanwege: time-out externe csu. Na het opheffen van de oorzaak kan het toestel automatisch hervatten.",
       "causes": [
-        "CSU time-out",
-        "Slechte verbinding",
-        "Defecte CSU"
+        "Verbinding, stekker of busbedrading onderbroken",
+        "Aangesloten regel- of uitbreidingsprint niet gevonden",
+        "Besturings- of uitbreidingsprint defect"
       ],
       "checks": [
-        "Controleer de bedrading en connectoren.",
-        "Vervang CSU."
+        "Controleer bedrading en connectoren",
+        "Controleer of alle aangesloten apparaten spanning hebben",
+        "Voer automatische detectie uit indien voorgeschreven",
+        "Herstart het toestel en controleer de betreffende print"
       ]
     },
     {
       "code": "H.02.36",
-      "title": "Functioneel apparaat is ontkoppeld",
-      "meaning": "Functioneel apparaat is ontkoppeld",
+      "title": "Functioneel apparaat ontkoppeld",
+      "meaning": "Remeha blokkeert de normale werking tijdelijk vanwege: functioneel apparaat ontkoppeld. Na het opheffen van de oorzaak kan het toestel automatisch hervatten.",
       "causes": [
-        "Communicatiefout met de SCB print",
-        "Slechte verbinding met BUS",
-        "Print niet aanwezig"
+        "Verbinding, stekker of busbedrading onderbroken",
+        "Aangesloten regel- of uitbreidingsprint niet gevonden",
+        "Besturings- of uitbreidingsprint defect"
       ],
       "checks": [
-        "Controleer de bedrading.",
-        "Print opnieuw aansluiten of met Autodetect uit geheugen halen."
+        "Controleer bedrading en connectoren",
+        "Controleer of alle aangesloten apparaten spanning hebben",
+        "Voer automatische detectie uit indien voorgeschreven",
+        "Herstart het toestel en controleer de betreffende print"
       ]
     },
     {
       "code": "H.02.40",
-      "title": "Functie nt beschikb.",
-      "meaning": "Functie nt beschikb.",
-      "causes": [],
+      "title": "Functie niet beschikbaar",
+      "meaning": "Remeha blokkeert de normale werking tijdelijk vanwege: functie niet beschikbaar. Na het opheffen van de oorzaak kan het toestel automatisch hervatten.",
+      "causes": [
+        "Interne besturings- of veiligheidsfout",
+        "Aansluiting of onderdeel reageert niet zoals verwacht"
+      ],
       "checks": [
-        "Neem contact op met uw leverancier"
+        "Noteer de code en lees de fouthistorie uit",
+        "Controleer bedrading en connectoren",
+        "Herstart alleen nadat de oorzaak is onderzocht",
+        "Raadpleeg de officiële servicehandleiding"
       ]
     },
     {
       "code": "H.02.79",
-      "title": "Er is geen apparaat aanwezig op de systeembus (cascade).",
-      "meaning": "Er is geen apparaat aanwezig op de systeembus (cascade).",
+      "title": "Geen apparaat op S-Bus aanwezig",
+      "meaning": "Remeha blokkeert de normale werking tijdelijk vanwege: geen apparaat op s-bus aanwezig. Na het opheffen van de oorzaak kan het toestel automatisch hervatten.",
       "causes": [
-        "S-Bus connectorapparaten niet aanwezig",
-        "Slechte verbinding",
-        "Slecht gemonteerde connectors",
-        "Eindconnectors (met weerstand) niet aanwezig of slecht aangesloten"
+        "Verbinding, stekker of busbedrading onderbroken",
+        "Aangesloten regel- of uitbreidingsprint niet gevonden",
+        "Besturings- of uitbreidingsprint defect"
       ],
       "checks": [
-        "Controleer de bedrading en connectoren",
-        "Controleer of de sensors correct gemonteerd zijn",
-        "Controleer bedrading en connectors",
-        "Controleer of aangesloten apparaten zijn geactiveerd"
+        "Controleer bedrading en connectoren",
+        "Controleer of alle aangesloten apparaten spanning hebben",
+        "Voer automatische detectie uit indien voorgeschreven",
+        "Herstart het toestel en controleer de betreffende print"
       ]
     },
     {
       "code": "H.03.01",
-      "title": "Geen geldige data v CU nr GRK ontvangen",
-      "meaning": "Geen geldige data v CU nr GRK ontvangen",
+      "title": "Geen geldige data van CU ontvangen",
+      "meaning": "Remeha blokkeert de normale werking tijdelijk vanwege: geen geldige data van cu ontvangen. Na het opheffen van de oorzaak kan het toestel automatisch hervatten.",
       "causes": [
-        "Communicatiefout met de CU-GH"
+        "Interne besturings- of veiligheidsfout",
+        "Aansluiting of onderdeel reageert niet zoals verwacht"
       ],
       "checks": [
-        "Herstart de ketel"
+        "Noteer de code en lees de fouthistorie uit",
+        "Controleer bedrading en connectoren",
+        "Herstart alleen nadat de oorzaak is onderzocht",
+        "Raadpleeg de officiële servicehandleiding"
       ]
     },
     {
       "code": "H.03.02",
-      "title": "Gemeten ionisatiestroom is onder limiet",
-      "meaning": "Gemeten ionisatiestroom is onder limiet",
+      "title": "Ionisatiestroom onder de limiet",
+      "meaning": "Remeha blokkeert de normale werking tijdelijk vanwege: ionisatiestroom onder de limiet. Na het opheffen van de oorzaak kan het toestel automatisch hervatten.",
       "causes": [
-        "Vlamwegval tijdens bedrijf",
-        "Geen ionisatiestroom"
+        "Gastoevoer of gasvoordruk niet in orde",
+        "Ontstekings- of ionisatieprobleem",
+        "Gasblok of gasklepregeling defect",
+        "Luchttoevoer, rookgasafvoer of aarding niet in orde"
       ],
       "checks": [
-        "Ontlucht de gasleiding",
-        "Controleer of de gaskraan goed geopend is",
-        "Controleer de gastoevoerdruk",
-        "Controleer correcte werking en afstelling gasblok",
-        "Controleer luchttoevoer en rookgasafvoer op verstopping",
-        "Controleer op rookgasrecirculatie"
-      ]
+        "Controleer gastoevoer en gasvoordruk",
+        "Controleer ontstekings-/ionisatie-elektrode, kabel en aarding",
+        "Controleer luchttoevoer en rookgasafvoer",
+        "Controleer gasblok en aansturing volgens het Remeha-voorschrift"
+      ],
+      "note": "Gaszijdige metingen en afstellingen alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "H.03.05",
-      "title": "Gasklepregeling interne blokkering opgetreden",
-      "meaning": "Gasklepregeling interne blokkering opgetreden",
+      "title": "Interne blokkering gasklepregeling",
+      "meaning": "Remeha blokkeert de normale werking tijdelijk vanwege: interne blokkering gasklepregeling. Na het opheffen van de oorzaak kan het toestel automatisch hervatten.",
       "causes": [
-        "Fout in veiligheidskern"
+        "Gastoevoer of gasvoordruk niet in orde",
+        "Ontstekings- of ionisatieprobleem",
+        "Gasblok of gasklepregeling defect",
+        "Luchttoevoer, rookgasafvoer of aarding niet in orde"
       ],
       "checks": [
-        "Herstart de ketel",
-        "Vervang de CU-GH"
-      ]
+        "Controleer gastoevoer en gasvoordruk",
+        "Controleer ontstekings-/ionisatie-elektrode, kabel en aarding",
+        "Controleer luchttoevoer en rookgasafvoer",
+        "Controleer gasblok en aansturing volgens het Remeha-voorschrift"
+      ],
+      "note": "Gaszijdige metingen en afstellingen alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "H.03.17",
-      "title": "Periodieke veiligheidscontrole wordt uitgevoerd",
-      "meaning": "Periodieke veiligheidscontrole wordt uitgevoerd",
-      "causes": [],
+      "title": "Periodieke veiligheidscontrole actief",
+      "meaning": "Remeha blokkeert de normale werking tijdelijk vanwege: periodieke veiligheidscontrole actief. Na het opheffen van de oorzaak kan het toestel automatisch hervatten.",
+      "causes": [
+        "Interne besturings- of veiligheidsfout",
+        "Aansluiting of onderdeel reageert niet zoals verwacht"
+      ],
       "checks": [
-        "Herstart de ketel",
-        "Vervang de CU-GH"
+        "Noteer de code en lees de fouthistorie uit",
+        "Controleer bedrading en connectoren",
+        "Herstart alleen nadat de oorzaak is onderzocht",
+        "Raadpleeg de officiële servicehandleiding"
       ]
     },
     {
       "code": "H.03.254",
-      "title": "Onbekende fout",
-      "meaning": "Onbekende fout",
-      "causes": [],
-      "checks": []
+      "title": "Onbekende blokkeringsfout",
+      "meaning": "Remeha blokkeert de normale werking tijdelijk vanwege: onbekende blokkeringsfout. Na het opheffen van de oorzaak kan het toestel automatisch hervatten.",
+      "causes": [
+        "De officiële tabel geeft voor deze code geen verdere diagnose-oplossing"
+      ],
+      "checks": [
+        "Noteer de volledige code en actuele bedrijfswaarden",
+        "Lees de fouthistorie uit",
+        "Raadpleeg de officiële Remeha-servicehandleiding of technische ondersteuning"
+      ]
     },
     {
       "code": "H.10.00",
-      "title": "Aanvoertemperatuursensor groep A open",
-      "meaning": "Aanvoertemperatuursensor groep A open",
+      "title": "Aanvoertemperatuursensor zone A open",
+      "meaning": "Remeha blokkeert de normale werking tijdelijk vanwege: aanvoertemperatuursensor zone a open. Na het opheffen van de oorzaak kan het toestel automatisch hervatten.",
       "causes": [
-        "Aanvoertemperatuursensor zone A open",
-        "Slechte verbinding",
-        "Slecht gemonteerde sensor",
-        "Sensor is niet aanwezig.",
-        "Defecte sensor"
+        "Stekker of bedrading los, beschadigd of kortgesloten",
+        "Sensor niet correct gemonteerd",
+        "Sensorwaarde buiten bereik of sensor defect"
       ],
       "checks": [
-        "Controleer de bedrading en connectoren",
-        "Controleer of de sensor goed gemonteerd is",
-        "Vervang de sensor"
+        "Controleer stekker en bedrading",
+        "Controleer montage en positie van de sensor",
+        "Meet de sensor volgens de fabrikantgegevens",
+        "Vervang de sensor indien deze defect is"
       ]
     },
     {
       "code": "E.00.04",
-      "title": "Retourtemperatuursensor is verwijderd of meet een temperatuur beneden het bereik",
-      "meaning": "Retourtemperatuursensor is verwijderd of meet een temperatuur beneden het bereik",
+      "title": "Retourtemperatuursensor open",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: retourtemperatuursensor open. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Retourtemperatuursensor open",
-        "Slechte verbinding",
-        "Slecht gemonteerde sensor",
-        "Defecte sensor"
+        "Stekker of bedrading los, beschadigd of kortgesloten",
+        "Sensor niet correct gemonteerd",
+        "Sensorwaarde buiten bereik of sensor defect"
       ],
       "checks": [
-        "Controleer de bedrading en connectoren",
-        "Controleer of de sensor goed gemonteerd is",
-        "Vervang de sensor"
+        "Controleer stekker en bedrading",
+        "Controleer montage en positie van de sensor",
+        "Meet de sensor volgens de fabrikantgegevens",
+        "Vervang de sensor indien deze defect is"
       ]
     },
     {
       "code": "E.00.05",
-      "title": "De retourtemperatuursensor is kortgesloten of meet een temperatuur boven het bereik",
-      "meaning": "De retourtemperatuursensor is kortgesloten of meet een temperatuur boven het bereik",
+      "title": "Retourtemperatuursensor kortgesloten",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: retourtemperatuursensor kortgesloten. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Retourtemperatuursensor kortgesloten",
-        "Slechte verbinding",
-        "Slecht gemonteerde sensor",
-        "Defecte sensor"
+        "Stekker of bedrading los, beschadigd of kortgesloten",
+        "Sensor niet correct gemonteerd",
+        "Sensorwaarde buiten bereik of sensor defect"
       ],
       "checks": [
-        "Controleer de bedrading en connectoren",
-        "Controleer of de sensor goed gemonteerd is",
-        "Vervang de sensor"
+        "Controleer stekker en bedrading",
+        "Controleer montage en positie van de sensor",
+        "Meet de sensor volgens de fabrikantgegevens",
+        "Vervang de sensor indien deze defect is"
       ]
     },
     {
       "code": "E.00.06",
-      "title": "De retourtemperatuursensor werd verwacht maar is niet gedetecteerd",
-      "meaning": "De retourtemperatuursensor werd verwacht maar is niet gedetecteerd",
+      "title": "Retourtemperatuursensor niet gedetecteerd",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: retourtemperatuursensor niet gedetecteerd. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Geen verbinding met retourtemperatuursensor",
-        "Slechte verbinding",
-        "Defecte sensor"
+        "Stekker of bedrading los, beschadigd of kortgesloten",
+        "Sensor niet correct gemonteerd",
+        "Sensorwaarde buiten bereik of sensor defect"
       ],
       "checks": [
-        "Controleer de bedrading en connectoren.",
-        "Vervang de sensor"
+        "Controleer stekker en bedrading",
+        "Controleer montage en positie van de sensor",
+        "Meet de sensor volgens de fabrikantgegevens",
+        "Vervang de sensor indien deze defect is"
       ]
     },
     {
       "code": "E.00.07",
-      "title": "Verschil retourtemperatuur is te groot",
-      "meaning": "Verschil retourtemperatuur is te groot",
+      "title": "Temperatuurverschil aanvoer en retour te groot",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: temperatuurverschil aanvoer en retour te groot. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Verschil tussen aanvoer- en retourtemperatuur te hoog",
-        "Geen doorstroming",
-        "Indien aanwezig",
-        "Sensor niet of slecht aangesloten",
-        "Defecte sensor"
+        "Geen of te weinig doorstroming",
+        "Lucht of vervuiling in de cv-installatie of warmtewisselaar",
+        "Pomp, klep of temperatuursensor werkt niet correct"
       ],
       "checks": [
-        "Ontlucht de cv-installatie om lucht te verwijderen",
-        "Controleer de waterdruk",
-        "Controleer instelling keteltype-parameter",
-        "Controleer de doorstroming (richting, pomp, kleppen)",
-        "Controleer de goede werking van de verwarmingspomp",
-        "Controleer warmtewisselaar op vervuiling",
-        "Controleer de goede werking van de sensors",
-        "Controleer of de sensor goed gemonteerd is",
-        "Vervang sensor indien nodig"
+        "Controleer waterdruk en ontlucht de installatie",
+        "Controleer stromingsrichting, pomp en kleppen",
+        "Controleer de warmtewisselaar op vervuiling",
+        "Controleer montage en werking van de temperatuursensoren"
       ]
     },
     {
       "code": "E.00.16",
-      "title": "Temperatuursensor tank sanitair warm water is verwijderd of meet een temperatuur beneden het bereik",
-      "meaning": "Temperatuursensor tank sanitair warm water is verwijderd of meet een temperatuur beneden het bereik",
+      "title": "Boilersensor open",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: boilersensor open. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Boilersensor open",
-        "Slechte verbinding",
-        "Defecte sensor"
+        "Stekker of bedrading los, beschadigd of kortgesloten",
+        "Sensor niet correct gemonteerd",
+        "Sensorwaarde buiten bereik of sensor defect"
       ],
       "checks": [
-        "Controleer de bedrading en connectoren",
-        "Vervang de sensor"
+        "Controleer stekker en bedrading",
+        "Controleer montage en positie van de sensor",
+        "Meet de sensor volgens de fabrikantgegevens",
+        "Vervang de sensor indien deze defect is"
       ]
     },
     {
       "code": "E.00.17",
-      "title": "Temperatuursensor tank sanitair warm water is kortgesloten of meet een temperatuur boven het bereik",
-      "meaning": "Temperatuursensor tank sanitair warm water is kortgesloten of meet een temperatuur boven het bereik",
+      "title": "Boilersensor kortgesloten",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: boilersensor kortgesloten. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Boilersensor kortgesloten",
-        "Slechte verbinding",
-        "Defecte sensor"
+        "Stekker of bedrading los, beschadigd of kortgesloten",
+        "Sensor niet correct gemonteerd",
+        "Sensorwaarde buiten bereik of sensor defect"
       ],
       "checks": [
-        "Controleer de bedrading en connectoren",
-        "Vervang de sensor"
+        "Controleer stekker en bedrading",
+        "Controleer montage en positie van de sensor",
+        "Meet de sensor volgens de fabrikantgegevens",
+        "Vervang de sensor indien deze defect is"
       ]
     },
     {
       "code": "E.00.44",
-      "title": "Sanitair warm water uittredetemperatuursensor is verwijderd of meet een temperatuur onder het bereik",
-      "meaning": "Sanitair warm water uittredetemperatuursensor is verwijderd of meet een temperatuur onder het bereik",
+      "title": "SWW-uitloopsensor open",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: sww-uitloopsensor open. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "SWW-temperatuursensor open",
-        "Slechte verbinding",
-        "Defecte sensor"
+        "Stekker of bedrading los, beschadigd of kortgesloten",
+        "Sensor niet correct gemonteerd",
+        "Sensorwaarde buiten bereik of sensor defect"
       ],
       "checks": [
-        "Controleer de bedrading en connectoren",
-        "Vervang de sensor"
+        "Controleer stekker en bedrading",
+        "Controleer montage en positie van de sensor",
+        "Meet de sensor volgens de fabrikantgegevens",
+        "Vervang de sensor indien deze defect is"
       ]
     },
     {
       "code": "E.00.45",
-      "title": "Sanitair warm water uittredetemperatuursensor kortgesloten of meet een temperatuur boven zijn bereik",
-      "meaning": "Sanitair warm water uittredetemperatuursensor kortgesloten of meet een temperatuur boven zijn bereik",
+      "title": "SWW-uitloopsensor kortgesloten",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: sww-uitloopsensor kortgesloten. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "SWW-temperatuursensor kortgesloten",
-        "Slechte verbinding",
-        "Defecte sensor"
+        "Stekker of bedrading los, beschadigd of kortgesloten",
+        "Sensor niet correct gemonteerd",
+        "Sensorwaarde buiten bereik of sensor defect"
       ],
       "checks": [
-        "Controleer de bedrading en connectoren",
-        "Vervang de sensor"
+        "Controleer stekker en bedrading",
+        "Controleer montage en positie van de sensor",
+        "Meet de sensor volgens de fabrikantgegevens",
+        "Vervang de sensor indien deze defect is"
       ]
     },
     {
       "code": "E.01.04",
-      "title": "5x onbedoeld vlamverliesfout opgetreden",
-      "meaning": "5x onbedoeld vlamverliesfout opgetreden",
+      "title": "Vijf keer onbedoeld vlamverlies",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: vijf keer onbedoeld vlamverlies. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "5 keer vlamverlies"
+        "Gastoevoer of gasvoordruk niet in orde",
+        "Ontstekings- of ionisatieprobleem",
+        "Gasblok of gasklepregeling defect",
+        "Luchttoevoer, rookgasafvoer of aarding niet in orde"
       ],
       "checks": [
-        "Ontlucht de gasleiding",
-        "Controleer of de gaskraan goed geopend is",
-        "Controleer de gastoevoerdruk",
-        "Controleer correcte werking en afstelling gasblok",
-        "Controleer luchttoevoer en rookgasafvoer op verstopping",
-        "Controleer op rookgasrecirculatie"
-      ]
+        "Controleer gastoevoer en gasvoordruk",
+        "Controleer ontstekings-/ionisatie-elektrode, kabel en aarding",
+        "Controleer luchttoevoer en rookgasafvoer",
+        "Controleer gasblok en aansturing volgens het Remeha-voorschrift"
+      ],
+      "note": "Gaszijdige metingen en afstellingen alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "E.01.11",
-      "title": "Ventilatortoerental overschrijdt normaal werkingsbereik",
-      "meaning": "Ventilatortoerental overschrijdt normaal werkingsbereik",
+      "title": "Ventilatortoerental buiten bereik",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: ventilatortoerental buiten bereik. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Ventilator storing",
-        "Slechte verbinding",
-        "Defecte ventilator",
-        "Ventilator draait terwijl hij niet mag draaien"
+        "Luchttoevoer of rookgasafvoer geblokkeerd",
+        "Sifon, terugslagklep of warmtewisselaar vervuild",
+        "Ventilator, drukschakelaar of bedrading defect"
       ],
       "checks": [
-        "Controleer de bedrading en connectoren.",
-        "Vervang de ventilator",
-        "Controleer of er teveel schoorsteentrek is"
-      ]
+        "Controleer luchttoevoer en rookgasafvoer op blokkering",
+        "Controleer sifon, terugslagklep en warmtewisselaar",
+        "Controleer bedrading en connectoren",
+        "Controleer ventilator of drukschakelaar volgens voorschrift"
+      ],
+      "note": "Werkzaamheden aan rookgasafvoer en verbranding alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "E.01.12",
-      "title": "Retourtemperatuur heeft hogere temperatuurwaarde dan de aanvoertemperatuur",
-      "meaning": "Retourtemperatuur heeft hogere temperatuurwaarde dan de aanvoertemperatuur",
+      "title": "Retourtemperatuur hoger dan aanvoer",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: retourtemperatuur hoger dan aanvoer. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Aanvoer en retour verwisseld",
-        "Slechte verbinding",
-        "Doorstroomrichting verkeerd",
-        "Slecht gemonteerde sensor",
-        "Slecht werkende sensor",
-        "Defecte sensor"
+        "Geen of te weinig doorstroming",
+        "Lucht of vervuiling in de cv-installatie of warmtewisselaar",
+        "Pomp, klep of temperatuursensor werkt niet correct"
       ],
       "checks": [
-        "Controleer de bedrading en connectoren",
-        "Controleer de doorstroming (richting, pomp, kleppen)",
-        "Controleer of de sensor goed gemonteerd is",
-        "Controleer de weerstandswaarde van de sensor",
-        "Vervang de sensor"
+        "Controleer waterdruk en ontlucht de installatie",
+        "Controleer stromingsrichting, pomp en kleppen",
+        "Controleer de warmtewisselaar op vervuiling",
+        "Controleer montage en werking van de temperatuursensoren"
       ]
     },
     {
       "code": "E.01.24",
-      "title": "Meerdere verbrandingsfouten opgetreden binnen 24 uur",
-      "meaning": "Meerdere verbrandingsfouten opgetreden binnen 24 uur",
+      "title": "Meerdere verbrandingsfouten binnen 24 uur",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: meerdere verbrandingsfouten binnen 24 uur. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Lage ionisatiestroom"
+        "Gastoevoer of gasvoordruk niet in orde",
+        "Ontstekings- of ionisatieprobleem",
+        "Gasblok of gasklepregeling defect",
+        "Luchttoevoer, rookgasafvoer of aarding niet in orde"
       ],
       "checks": [
-        "Ontlucht de gasleiding.",
-        "Controleer of de gaskraan goed geopend is.",
-        "Controleer de gastoevoerdruk.",
-        "Controleer de correcte werking en afstelling van het gasblok.",
-        "Controleer luchttoevoer en rookgasafvoer op verstopping",
-        "Controleer op rookgasrecirculatie."
-      ]
+        "Controleer gastoevoer en gasvoordruk",
+        "Controleer ontstekings-/ionisatie-elektrode, kabel en aarding",
+        "Controleer luchttoevoer en rookgasafvoer",
+        "Controleer gasblok en aansturing volgens het Remeha-voorschrift"
+      ],
+      "note": "Gaszijdige metingen en afstellingen alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "E.02.13",
-      "title": "Blokkerende ingang van besturingsautomaat door buitenomgeving van apparaat",
-      "meaning": "Blokkerende ingang van besturingsautomaat door buitenomgeving van apparaat",
+      "title": "Externe blokkerende ingang actief",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: externe blokkerende ingang actief. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Blokkerende ingang is actief",
-        "Externe oorzaak",
-        "Fout ingestelde parameter"
+        "Interne besturings- of veiligheidsfout",
+        "Aansluiting of onderdeel reageert niet zoals verwacht"
       ],
       "checks": [
-        "Neem externe oorzaak weg",
-        "Controleer parameters"
+        "Noteer de code en lees de fouthistorie uit",
+        "Controleer bedrading en connectoren",
+        "Herstart alleen nadat de oorzaak is onderzocht",
+        "Raadpleeg de officiële servicehandleiding"
       ]
     },
     {
       "code": "E.02.15",
       "title": "Time-out externe CSU",
-      "meaning": "Time-out externe CSU",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: time-out externe csu. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "CSU time-out",
-        "Slechte verbinding",
-        "Defecte CSU"
+        "Verbinding, stekker of busbedrading onderbroken",
+        "Aangesloten regel- of uitbreidingsprint niet gevonden",
+        "Besturings- of uitbreidingsprint defect"
       ],
       "checks": [
-        "Controleer de bedrading en connectoren",
-        "Vervang CSU"
+        "Controleer bedrading en connectoren",
+        "Controleer of alle aangesloten apparaten spanning hebben",
+        "Voer automatische detectie uit indien voorgeschreven",
+        "Herstart het toestel en controleer de betreffende print"
       ]
     },
     {
       "code": "E.02.17",
-      "title": "Gasklepregeleenheid communicatie heeft feedbacktijd overschreden",
-      "meaning": "Gasklepregeleenheid communicatie heeft feedbacktijd overschreden",
+      "title": "Communicatie gasklepregeling mislukt",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: communicatie gasklepregeling mislukt. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Communicatiefout met de veiligheidskern"
+        "Gastoevoer of gasvoordruk niet in orde",
+        "Ontstekings- of ionisatieprobleem",
+        "Gasblok of gasklepregeling defect",
+        "Luchttoevoer, rookgasafvoer of aarding niet in orde"
       ],
       "checks": [
-        "Herstart de ketel",
-        "Vervang de CU-GH"
-      ]
+        "Controleer gastoevoer en gasvoordruk",
+        "Controleer ontstekings-/ionisatie-elektrode, kabel en aarding",
+        "Controleer luchttoevoer en rookgasafvoer",
+        "Controleer gasblok en aansturing volgens het Remeha-voorschrift"
+      ],
+      "note": "Gaszijdige metingen en afstellingen alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "E.02.32",
-      "title": "Autovullen installatie communicatie heeft terugmeldtijd overschreden",
-      "meaning": "Autovullen installatie communicatie heeft terugmeldtijd overschreden",
+      "title": "Automatisch bijvullen duurt te lang",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: automatisch bijvullen duurt te lang. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Bijvullen van de cv-installatie duurt te lang"
+        "Installatiedruk of wateraanvoer onvoldoende",
+        "Lekkage in toestel of cv-installatie",
+        "Druksensor, vulinrichting of veiligheidsventiel werkt niet correct"
       ],
       "checks": [
-        "Controleer de installatie op lekkage.",
-        "Controleer de waterdruk van het systeem.",
-        "Controleer of de kraan van de inlaatcombinatie goed geopend is.",
-        "Controleer of de hoofdwaterkraan goed geopend is.",
-        "Controleer de werking van de druksensor.",
-        "Controleer de werking van het veiligheidsventiel."
+        "Controleer de actuele waterdruk en wateraanvoer",
+        "Controleer toestel en installatie op lekkage",
+        "Controleer druksensor, vulinrichting en veiligheidsventiel",
+        "Vul en ontlucht volgens het installatievoorschrift"
       ]
     },
     {
       "code": "E.02.35",
-      "title": "Kritisch veiligheidsapparaat is ontkoppeld",
-      "meaning": "Kritisch veiligheidsapparaat is ontkoppeld",
+      "title": "Kritisch veiligheidsapparaat ontkoppeld",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: kritisch veiligheidsapparaat ontkoppeld. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Communicatiestoring"
+        "Verbinding, stekker of busbedrading onderbroken",
+        "Aangesloten regel- of uitbreidingsprint niet gevonden",
+        "Besturings- of uitbreidingsprint defect"
       ],
       "checks": [
-        "Voer een automatische detectie uit"
+        "Controleer bedrading en connectoren",
+        "Controleer of alle aangesloten apparaten spanning hebben",
+        "Voer automatische detectie uit indien voorgeschreven",
+        "Herstart het toestel en controleer de betreffende print"
       ]
     },
     {
       "code": "E.02.39",
-      "title": "Geen voldoende drukstijging na autovullen",
-      "meaning": "Geen voldoende drukstijging na autovullen",
+      "title": "Onvoldoende drukstijging na automatisch vullen",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: onvoldoende drukstijging na automatisch vullen. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "De waterdruk van de installatie is onvoldoende gestegen tijdens de automatische vulprocedure"
+        "Installatiedruk of wateraanvoer onvoldoende",
+        "Lekkage in toestel of cv-installatie",
+        "Druksensor, vulinrichting of veiligheidsventiel werkt niet correct"
       ],
       "checks": [
-        "Controleer de installatie op lekkage.",
-        "Controleer de waterdruk van het systeem.",
-        "Controleer of de kraan van de inlaatcombinatie goed geopend is.",
-        "Controleer of de hoofdwaterkraan goed geopend is.",
-        "Controleer de werking van de druksensor.",
-        "Controleer de werking van het veiligheidsventiel."
+        "Controleer de actuele waterdruk en wateraanvoer",
+        "Controleer toestel en installatie op lekkage",
+        "Controleer druksensor, vulinrichting en veiligheidsventiel",
+        "Vul en ontlucht volgens het installatievoorschrift"
       ]
     },
     {
       "code": "E.02.47",
-      "title": "Verbinding functiegroepen mislukt",
-      "meaning": "Verbinding functiegroepen mislukt",
+      "title": "Verbinding met functiegroep mislukt",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: verbinding met functiegroep mislukt. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Functiegroep niet gevonden"
+        "Verbinding, stekker of busbedrading onderbroken",
+        "Aangesloten regel- of uitbreidingsprint niet gevonden",
+        "Besturings- of uitbreidingsprint defect"
       ],
       "checks": [
-        "Voer een automatische detectie uit",
-        "Herstart de ketel",
-        "Vervang de CU-GH"
+        "Controleer bedrading en connectoren",
+        "Controleer of alle aangesloten apparaten spanning hebben",
+        "Voer automatische detectie uit indien voorgeschreven",
+        "Herstart het toestel en controleer de betreffende print"
       ]
     },
     {
       "code": "E.04.00",
-      "title": "Veiligheidsparameters niveau 5 zijn niet correct of ontbreken",
-      "meaning": "Veiligheidsparameters niveau 5 zijn niet correct of ontbreken",
-      "causes": [],
+      "title": "Veiligheidsparameters niveau 5 onjuist",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: veiligheidsparameters niveau 5 onjuist. Verhelp eerst de oorzaak en reset daarna handmatig.",
+      "causes": [
+        "Configuratienummer of parameterinstelling onjuist",
+        "CSU/CU-configuratie komt niet overeen",
+        "Besturingsprint of configuratiegeheugen defect"
+      ],
       "checks": [
-        "Vervang de. CU-GH"
+        "Controleer configuratie en parameters",
+        "Vergelijk CN1 en CN2 met de typeplaat",
+        "Voer indien voorgeschreven automatische detectie uit",
+        "Controleer CSU en besturingsprint"
       ]
     },
     {
       "code": "E.04.01",
-      "title": "Aanvoertemperatuursensor is kortgesloten of meet een temperatuur boven het bereik",
-      "meaning": "Aanvoertemperatuursensor is kortgesloten of meet een temperatuur boven het bereik",
+      "title": "Aanvoertemperatuursensor kortgesloten",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: aanvoertemperatuursensor kortgesloten. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Aanvoertemperatuursensor kortgesloten",
-        "Slechte verbinding",
-        "Slecht gemonteerde sensor",
-        "Defecte sensor"
+        "Stekker of bedrading los, beschadigd of kortgesloten",
+        "Sensor niet correct gemonteerd",
+        "Sensorwaarde buiten bereik of sensor defect"
       ],
       "checks": [
-        "Controleer de bedrading en connectoren",
-        "Controleer of de sensor goed gemonteerd is",
-        "Vervang de sensor"
+        "Controleer stekker en bedrading",
+        "Controleer montage en positie van de sensor",
+        "Meet de sensor volgens de fabrikantgegevens",
+        "Vervang de sensor indien deze defect is"
       ]
     },
     {
       "code": "E.04.02",
-      "title": "Aanvoertemperatuursensor is verwijderd of meet een temperatuur beneden het bereik",
-      "meaning": "Aanvoertemperatuursensor is verwijderd of meet een temperatuur beneden het bereik",
+      "title": "Aanvoertemperatuursensor open",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: aanvoertemperatuursensor open. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Aanvoertemperatuursensor open",
-        "Slechte verbinding",
-        "Defecte sensor"
+        "Stekker of bedrading los, beschadigd of kortgesloten",
+        "Sensor niet correct gemonteerd",
+        "Sensorwaarde buiten bereik of sensor defect"
       ],
       "checks": [
-        "Controleer de bedrading en connectoren",
-        "Vervang de sensor"
+        "Controleer stekker en bedrading",
+        "Controleer montage en positie van de sensor",
+        "Meet de sensor volgens de fabrikantgegevens",
+        "Vervang de sensor indien deze defect is"
       ]
     },
     {
       "code": "E.04.03",
-      "title": "Gemeten temperatuur boven veiligheidslimiet",
-      "meaning": "Gemeten temperatuur boven veiligheidslimiet",
+      "title": "Temperatuur boven veiligheidslimiet",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: temperatuur boven veiligheidslimiet. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Geen of te weinig doorstroming"
+        "Geen of te weinig doorstroming",
+        "Lucht of vervuiling in de cv-installatie of warmtewisselaar",
+        "Pomp, klep of temperatuursensor werkt niet correct"
       ],
       "checks": [
-        "Controleer de doorstroming (richting, pomp, kleppen)",
-        "Controleer de waterdruk",
-        "Controleer warmtewisselaar op vervuiling"
+        "Controleer waterdruk en ontlucht de installatie",
+        "Controleer stromingsrichting, pomp en kleppen",
+        "Controleer de warmtewisselaar op vervuiling",
+        "Controleer montage en werking van de temperatuursensoren"
       ]
     },
     {
       "code": "E.04.04",
-      "title": "Rookgastemperatuursensor is kortgesloten of meet een temperatuur boven het bereik",
-      "meaning": "Rookgastemperatuursensor is kortgesloten of meet een temperatuur boven het bereik",
+      "title": "Rookgastemperatuursensor kortgesloten",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: rookgastemperatuursensor kortgesloten. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Rookgastemperatuursensor kortgesloten",
-        "Slechte verbinding",
-        "Slecht gemonteerde sensor",
-        "Defecte sensor"
+        "Stekker of bedrading los, beschadigd of kortgesloten",
+        "Sensor niet correct gemonteerd",
+        "Sensorwaarde buiten bereik of sensor defect"
       ],
       "checks": [
-        "Controleer de bedrading en connectoren",
-        "Controleer of de sensor goed gemonteerd is",
-        "Vervang de sensor"
+        "Controleer stekker en bedrading",
+        "Controleer montage en positie van de sensor",
+        "Meet de sensor volgens de fabrikantgegevens",
+        "Vervang de sensor indien deze defect is"
       ]
     },
     {
       "code": "E.04.05",
-      "title": "Rookgastemperatuursensor is verwijderd of meet een temperatuur beneden het bereik",
-      "meaning": "Rookgastemperatuursensor is verwijderd of meet een temperatuur beneden het bereik",
+      "title": "Rookgastemperatuursensor open",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: rookgastemperatuursensor open. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Rookgastemperatuursensor open",
-        "Slechte verbinding",
-        "Slecht gemonteerde sensor",
-        "Defecte sensor"
+        "Stekker of bedrading los, beschadigd of kortgesloten",
+        "Sensor niet correct gemonteerd",
+        "Sensorwaarde buiten bereik of sensor defect"
       ],
       "checks": [
-        "Controleer de bedrading en connectoren",
-        "Controleer of de sensor goed gemonteerd is",
-        "Vervang de sensor"
+        "Controleer stekker en bedrading",
+        "Controleer montage en positie van de sensor",
+        "Meet de sensor volgens de fabrikantgegevens",
+        "Vervang de sensor indien deze defect is"
       ]
     },
     {
       "code": "E.04.06",
-      "title": "Gemeten rooktemperatuur boven limiet",
-      "meaning": "Gemeten rooktemperatuur boven limiet",
-      "causes": [],
-      "checks": []
+      "title": "Rookgastemperatuur boven limiet",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: rookgastemperatuur boven limiet. Verhelp eerst de oorzaak en reset daarna handmatig.",
+      "causes": [
+        "De officiële tabel geeft voor deze code geen verdere diagnose-oplossing"
+      ],
+      "checks": [
+        "Noteer de volledige code en actuele bedrijfswaarden",
+        "Lees de fouthistorie uit",
+        "Raadpleeg de officiële Remeha-servicehandleiding of technische ondersteuning"
+      ]
     },
     {
       "code": "E.04.07",
-      "title": "Afwijking in aanvoersensor 1 en aanvoersensor 2 gedetecteerd",
-      "meaning": "Afwijking in aanvoersensor 1 en aanvoersensor 2 gedetecteerd",
+      "title": "Afwijking tussen aanvoersensoren",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: afwijking tussen aanvoersensoren. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Afwijking van aanvoertemperatuursensor",
-        "Slechte verbinding",
-        "Defecte sensor"
+        "Stekker of bedrading los, beschadigd of kortgesloten",
+        "Sensor niet correct gemonteerd",
+        "Sensorwaarde buiten bereik of sensor defect"
       ],
       "checks": [
-        "Controleer de verbinding",
-        "Vervang de sensor"
+        "Controleer stekker en bedrading",
+        "Controleer montage en positie van de sensor",
+        "Meet de sensor volgens de fabrikantgegevens",
+        "Vervang de sensor indien deze defect is"
       ]
     },
     {
       "code": "E.04.08",
-      "title": "Veiligheidsingang is open",
-      "meaning": "Veiligheidsingang is open",
+      "title": "Veiligheidsingang open",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: veiligheidsingang open. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Luchtdrukverschilschakelaar geactiveerd",
-        "Slechte verbinding",
-        "Terugslagklep opent niet",
-        "Verstopte of lege sifon"
+        "Luchttoevoer of rookgasafvoer geblokkeerd",
+        "Sifon, terugslagklep of warmtewisselaar vervuild",
+        "Ventilator, drukschakelaar of bedrading defect"
       ],
       "checks": [
-        "Controleer de bedrading en connectoren",
-        "Controleer luchttoevoer en rookgasafvoer op verstopping",
-        "Controleer warmtewisselaar op vervuiling"
-      ]
+        "Controleer luchttoevoer en rookgasafvoer op blokkering",
+        "Controleer sifon, terugslagklep en warmtewisselaar",
+        "Controleer bedrading en connectoren",
+        "Controleer ventilator of drukschakelaar volgens voorschrift"
+      ],
+      "note": "Werkzaamheden aan rookgasafvoer en verbranding alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "E.04.09",
-      "title": "Afwijking in rooksensor 1 en rooksensor 2 gedetecteerd",
-      "meaning": "Afwijking in rooksensor 1 en rooksensor 2 gedetecteerd",
+      "title": "Afwijking tussen rookgassensoren",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: afwijking tussen rookgassensoren. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Afwijking van rookgastemperatuursensor",
-        "Slechte verbinding",
-        "Defecte sensor"
+        "Stekker of bedrading los, beschadigd of kortgesloten",
+        "Sensor niet correct gemonteerd",
+        "Sensorwaarde buiten bereik of sensor defect"
       ],
       "checks": [
-        "Controleer de verbinding",
-        "Vervang de sensor"
+        "Controleer stekker en bedrading",
+        "Controleer montage en positie van de sensor",
+        "Meet de sensor volgens de fabrikantgegevens",
+        "Vervang de sensor indien deze defect is"
       ]
     },
     {
       "code": "E.04.10",
-      "title": "5 mislukte branderstarts gedetecteerd",
-      "meaning": "5 mislukte branderstarts gedetecteerd",
+      "title": "Vijf mislukte branderstarts",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: vijf mislukte branderstarts. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Vijf mislukte branderstarts",
-        "Geen ontstekingsvonk",
-        "Wel ontstekingsvonk maar geen vlamvorming",
-        "Wel vlam maar geen of onvoldoende ionisatie"
+        "Gastoevoer of gasvoordruk niet in orde",
+        "Ontstekings- of ionisatieprobleem",
+        "Gasblok of gasklepregeling defect",
+        "Luchttoevoer, rookgasafvoer of aarding niet in orde"
       ],
       "checks": [
-        "Controleer de bekabeling tussen de CU-GH en de ontstekingstrafo",
-        "Controleer de ionisatie- /ontstekingselektrode",
-        "Controleer de doorslag naar massa / aarde",
-        "Controleer de conditie van het branderdek",
-        "Controleer aarding",
-        "Vervang de CU-GH",
-        "Ontlucht de gasleidingen",
-        "Controleer luchttoevoer en rookgasafvoer op verstopping",
-        "Controleer of de gaskraan goed geopend is",
-        "Controleer de gastoevoerdruk",
-        "Controleer correcte werking en afstelling gasblok",
-        "Controleer de bekabeling van het gasblok",
-        "Controleer de bekabeling ionisatie- /ontstekingselektrode."
-      ]
+        "Controleer gastoevoer en gasvoordruk",
+        "Controleer ontstekings-/ionisatie-elektrode, kabel en aarding",
+        "Controleer luchttoevoer en rookgasafvoer",
+        "Controleer gasblok en aansturing volgens het Remeha-voorschrift"
+      ],
+      "note": "Gaszijdige metingen en afstellingen alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "E.04.11",
-      "title": "VPS gasklepcontrole mislukt",
-      "meaning": "VPS gasklepcontrole mislukt",
+      "title": "VPS-gasklepcontrole mislukt",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: vps-gasklepcontrole mislukt. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Gaslekcontrole fout",
-        "Slechte verbinding",
-        "Gaslekcontrole VPS defect",
-        "Defect gasblok"
+        "Gastoevoer of gasvoordruk niet in orde",
+        "Ontstekings- of ionisatieprobleem",
+        "Gasblok of gasklepregeling defect",
+        "Luchttoevoer, rookgasafvoer of aarding niet in orde"
       ],
       "checks": [
-        "Controleer de bedrading en connectoren",
-        "Vervang het kleptestsysteem (VPS)",
-        "Vervang het gasblok"
-      ]
+        "Controleer gastoevoer en gasvoordruk",
+        "Controleer ontstekings-/ionisatie-elektrode, kabel en aarding",
+        "Controleer luchttoevoer en rookgasafvoer",
+        "Controleer gasblok en aansturing volgens het Remeha-voorschrift"
+      ],
+      "note": "Gaszijdige metingen en afstellingen alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "E.04.12",
-      "title": "Valse vlam gedetecteerd voor branderstart",
-      "meaning": "Valse vlam gedetecteerd voor branderstart",
+      "title": "Vals vlamsignaal voor branderstart",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: vals vlamsignaal voor branderstart. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Vals vlamsignaal",
-        "Brander gloeit na",
-        "2",
-        "Wel ionisatiestroom gemeten, terwijl er geen vlam mag zijn",
-        "Defecte gasklep",
-        "Defecte ontstekingstrafo"
+        "Gastoevoer of gasvoordruk niet in orde",
+        "Ontstekings- of ionisatieprobleem",
+        "Gasblok of gasklepregeling defect",
+        "Luchttoevoer, rookgasafvoer of aarding niet in orde"
       ],
       "checks": [
-        "Stel O af",
-        "Controleer ionisatie- /ontstekingselektrode",
-        "Vervang de gasklep",
-        "Vervang de ontstekingstrafo"
-      ]
+        "Controleer gastoevoer en gasvoordruk",
+        "Controleer ontstekings-/ionisatie-elektrode, kabel en aarding",
+        "Controleer luchttoevoer en rookgasafvoer",
+        "Controleer gasblok en aansturing volgens het Remeha-voorschrift"
+      ],
+      "note": "Gaszijdige metingen en afstellingen alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "E.04.13",
-      "title": "Ventilatortoerental overschrijdt normaal werkingsbereik",
-      "meaning": "Ventilatortoerental overschrijdt normaal werkingsbereik",
+      "title": "Ventilatortoerental buiten bereik",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: ventilatortoerental buiten bereik. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Ventilator storing",
-        "Slechte verbinding",
-        "Ventilator draait terwijl hij niet mag draaien",
-        "Defecte ventilator"
+        "Luchttoevoer of rookgasafvoer geblokkeerd",
+        "Sifon, terugslagklep of warmtewisselaar vervuild",
+        "Ventilator, drukschakelaar of bedrading defect"
       ],
       "checks": [
-        "Controleer de bedrading en connectoren.",
-        "Controleer of er teveel schoorsteentrek is",
-        "Vervang de ventilator"
-      ]
+        "Controleer luchttoevoer en rookgasafvoer op blokkering",
+        "Controleer sifon, terugslagklep en warmtewisselaar",
+        "Controleer bedrading en connectoren",
+        "Controleer ventilator of drukschakelaar volgens voorschrift"
+      ],
+      "note": "Werkzaamheden aan rookgasafvoer en verbranding alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "E.04.14",
-      "title": "De brandertemperatuur en zijn instelpunt verschillen meer dan 60 seconden wat betreft GKR-config.",
-      "meaning": "De brandertemperatuur en zijn instelpunt verschillen meer dan 60 seconden wat betreft GKR-config.",
-      "causes": [],
-      "checks": []
+      "title": "Brandertemperatuur wijkt te lang af",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: brandertemperatuur wijkt te lang af. Verhelp eerst de oorzaak en reset daarna handmatig.",
+      "causes": [
+        "De officiële tabel geeft voor deze code geen verdere diagnose-oplossing"
+      ],
+      "checks": [
+        "Noteer de volledige code en actuele bedrijfswaarden",
+        "Lees de fouthistorie uit",
+        "Raadpleeg de officiële Remeha-servicehandleiding of technische ondersteuning"
+      ]
     },
     {
       "code": "E.04.15",
-      "title": "De rookgasleiding zit verstopt",
-      "meaning": "De rookgasleiding zit verstopt",
+      "title": "Rookgasleiding geblokkeerd",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: rookgasleiding geblokkeerd. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Rookgasafvoer is geblokkeerd"
+        "Luchttoevoer of rookgasafvoer geblokkeerd",
+        "Sifon, terugslagklep of warmtewisselaar vervuild",
+        "Ventilator, drukschakelaar of bedrading defect"
       ],
       "checks": [
-        "Controleer de rookgasafvoer op verstopping",
-        "Herstart de ketel"
-      ]
+        "Controleer luchttoevoer en rookgasafvoer op blokkering",
+        "Controleer sifon, terugslagklep en warmtewisselaar",
+        "Controleer bedrading en connectoren",
+        "Controleer ventilator of drukschakelaar volgens voorschrift"
+      ],
+      "note": "Werkzaamheden aan rookgasafvoer en verbranding alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "E.04.17",
-      "title": "De aandrijving voor de gasklep is defect",
-      "meaning": "De aandrijving voor de gasklep is defect",
+      "title": "Aandrijving gasklep defect",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: aandrijving gasklep defect. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Gasblok storing",
-        "Slechte verbinding",
-        "Defect gasblok"
+        "Gastoevoer of gasvoordruk niet in orde",
+        "Ontstekings- of ionisatieprobleem",
+        "Gasblok of gasklepregeling defect",
+        "Luchttoevoer, rookgasafvoer of aarding niet in orde"
       ],
       "checks": [
-        "Controleer de bedrading en connectoren",
-        "Vervang het gasblok"
-      ]
+        "Controleer gastoevoer en gasvoordruk",
+        "Controleer ontstekings-/ionisatie-elektrode, kabel en aarding",
+        "Controleer luchttoevoer en rookgasafvoer",
+        "Controleer gasblok en aansturing volgens het Remeha-voorschrift"
+      ],
+      "note": "Gaszijdige metingen en afstellingen alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "E.04.18",
-      "title": "De aanv.temperatuur is lager dan het min. gedefinieerd door de GKR-parameter",
-      "meaning": "De aanv.temperatuur is lager dan het min. gedefinieerd door de GKR-parameter",
-      "causes": [],
-      "checks": []
+      "title": "Aanvoertemperatuur onder GKR-limiet",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: aanvoertemperatuur onder gkr-limiet. Verhelp eerst de oorzaak en reset daarna handmatig.",
+      "causes": [
+        "De officiële tabel geeft voor deze code geen verdere diagnose-oplossing"
+      ],
+      "checks": [
+        "Noteer de volledige code en actuele bedrijfswaarden",
+        "Lees de fouthistorie uit",
+        "Raadpleeg de officiële Remeha-servicehandleiding of technische ondersteuning"
+      ]
     },
     {
       "code": "E.04.21",
-      "title": "Afwijking in brandersensor 1 en brandersensor 2 gedetecteerd",
-      "meaning": "Afwijking in brandersensor 1 en brandersensor 2 gedetecteerd",
-      "causes": [],
-      "checks": []
+      "title": "Afwijking tussen brandersensoren",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: afwijking tussen brandersensoren. Verhelp eerst de oorzaak en reset daarna handmatig.",
+      "causes": [
+        "De officiële tabel geeft voor deze code geen verdere diagnose-oplossing"
+      ],
+      "checks": [
+        "Noteer de volledige code en actuele bedrijfswaarden",
+        "Lees de fouthistorie uit",
+        "Raadpleeg de officiële Remeha-servicehandleiding of technische ondersteuning"
+      ]
     },
     {
       "code": "E.04.23",
       "title": "Interne vergrendeling gasklepregeling",
-      "meaning": "Interne vergrendeling gasklepregeling",
-      "causes": [],
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: interne vergrendeling gasklepregeling. Verhelp eerst de oorzaak en reset daarna handmatig.",
+      "causes": [
+        "Gastoevoer of gasvoordruk niet in orde",
+        "Ontstekings- of ionisatieprobleem",
+        "Gasblok of gasklepregeling defect",
+        "Luchttoevoer, rookgasafvoer of aarding niet in orde"
+      ],
       "checks": [
-        "Herstart de ketel",
-        "Vervang de CU-GH"
-      ]
+        "Controleer gastoevoer en gasvoordruk",
+        "Controleer ontstekings-/ionisatie-elektrode, kabel en aarding",
+        "Controleer luchttoevoer en rookgasafvoer",
+        "Controleer gasblok en aansturing volgens het Remeha-voorschrift"
+      ],
+      "note": "Gaszijdige metingen en afstellingen alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "E.04.24",
-      "title": "Het is niet gelukt om de gassoort te herkennen.",
-      "meaning": "Het is niet gelukt om de gassoort te herkennen.",
-      "causes": [],
-      "checks": []
-    },
-    {
-      "code": "E.04.250",
-      "title": "Fout gaskleprelais gedetecteerd",
-      "meaning": "Fout gaskleprelais gedetecteerd",
+      "title": "Gassoort niet herkend",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: gassoort niet herkend. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Interne storing"
+        "De officiële tabel geeft voor deze code geen verdere diagnose-oplossing"
       ],
       "checks": [
-        "Vervang de PCB."
+        "Noteer de volledige code en actuele bedrijfswaarden",
+        "Lees de fouthistorie uit",
+        "Raadpleeg de officiële Remeha-servicehandleiding of technische ondersteuning"
       ]
     },
     {
-      "code": "E.04.254",
-      "title": "Onbekend",
-      "meaning": "Onbekend",
+      "code": "E.04.250",
+      "title": "Gaskleprelaisfout",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: gaskleprelaisfout. Verhelp eerst de oorzaak en reset daarna handmatig.",
       "causes": [
-        "Onbekende fout"
+        "Gastoevoer of gasvoordruk niet in orde",
+        "Ontstekings- of ionisatieprobleem",
+        "Gasblok of gasklepregeling defect",
+        "Luchttoevoer, rookgasafvoer of aarding niet in orde"
       ],
       "checks": [
-        "Vervang de PCB."
+        "Controleer gastoevoer en gasvoordruk",
+        "Controleer ontstekings-/ionisatie-elektrode, kabel en aarding",
+        "Controleer luchttoevoer en rookgasafvoer",
+        "Controleer gasblok en aansturing volgens het Remeha-voorschrift"
+      ],
+      "note": "Gaszijdige metingen en afstellingen alleen laten uitvoeren door een gecertificeerd monteur."
+    },
+    {
+      "code": "E.04.254",
+      "title": "Onbekende vergrendelingsfout",
+      "meaning": "Remeha heeft het toestel vergrendeld vanwege: onbekende vergrendelingsfout. Verhelp eerst de oorzaak en reset daarna handmatig.",
+      "causes": [
+        "Interne besturings- of veiligheidsfout",
+        "Aansluiting of onderdeel reageert niet zoals verwacht"
+      ],
+      "checks": [
+        "Noteer de code en lees de fouthistorie uit",
+        "Controleer bedrading en connectoren",
+        "Herstart alleen nadat de oorzaak is onderzocht",
+        "Raadpleeg de officiële servicehandleiding"
       ]
     }
   ]

@@ -8,347 +8,654 @@
   "faults": [
     {
       "code": "F.00",
-      "title": "Storing: aanvoertemperatuursensor",
-      "meaning": "Storing: aanvoertemperatuursensor",
+      "title": "Aanvoertemperatuurvoeler onderbroken",
+      "meaning": "De ecoFIT pro meldt F.00: aanvoertemperatuurvoeler onderbroken.",
       "causes": [
-        "NTC-stekker niet aangesloten of los, multistekker op de printplaat niet correct aangesloten, onderbreking in de kabelboom, NTC-sensor defect"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
-      "checks": []
+      "checks": [
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.01",
-      "title": "Storing: retourtemperatuursensor",
-      "meaning": "Storing: retourtemperatuursensor",
+      "title": "Retourtemperatuurvoeler onderbroken",
+      "meaning": "De ecoFIT pro meldt F.01: retourtemperatuurvoeler onderbroken.",
       "causes": [
-        "NTC-stekker niet aangesloten of los, multistekker op de printplaat niet correct aangesloten, onderbreking in de kabelboom, NTC-sensor defect"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
-      "checks": []
+      "checks": [
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.10",
-      "title": "Kortsluiting: aanvoertemperatuursensor",
-      "meaning": "Kortsluiting: aanvoertemperatuursensor",
+      "title": "Aanvoertemperatuurvoeler kortgesloten",
+      "meaning": "De ecoFIT pro meldt F.10: aanvoertemperatuurvoeler kortgesloten.",
       "causes": [
-        "NTC-sensor defect, kortsluiting in de kabelboom, kabel/behuizing"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
-      "checks": []
+      "checks": [
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.11",
-      "title": "Kortsluiting: retourtemperatuursensor",
-      "meaning": "Kortsluiting: retourtemperatuursensor",
+      "title": "Retourtemperatuurvoeler kortgesloten",
+      "meaning": "De ecoFIT pro meldt F.11: retourtemperatuurvoeler kortgesloten.",
       "causes": [
-        "NTC-sensor defect, kortsluiting in de kabelboom, kabel/behuizing"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
-      "checks": []
+      "checks": [
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.13",
-      "title": "Kortsluiting: temperatuursensor van de warmwaterboiler",
-      "meaning": "Kortsluiting: temperatuursensor van de warmwaterboiler",
+      "title": "Warmstart- of boilertemperatuurvoeler kortgesloten",
+      "meaning": "De ecoFIT pro meldt F.13: warmstart- of boilertemperatuurvoeler kortgesloten.",
       "causes": [
-        "NTC-sensor defect, kortsluiting in de kabelboom, kabel/behuizing"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
-      "checks": []
+      "checks": [
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.20",
-      "title": "Veiligheidsuitschakeling: oververhittingstemperatuur bereikt",
-      "meaning": "Veiligheidsuitschakeling: oververhittingstemperatuur bereikt",
+      "title": "Veiligheidstemperatuurbegrenzer actief",
+      "meaning": "De ecoFIT pro meldt F.20: veiligheidstemperatuurbegrenzer actief.",
       "causes": [
-        "Massaverbinding kabelboom naar het product niet correct, aanvoer- of retour-NTC defect (loszittend contact), zwarte ontlading via ontstekingskabel, ontstekingsstekker of ontstekingselektrode"
+        "Te lage systeemdruk, lucht of onvoldoende circulatie",
+        "Pomp, druksensor of bekabeling reageert niet correct",
+        "Afsluiter, filter, bypass of hydraulisch circuit is geblokkeerd"
       ],
-      "checks": []
+      "checks": [
+        "Controleer systeemdruk en installatie op lekkage",
+        "Ontlucht volgens het installatievoorschrift",
+        "Controleer pompwerking, stekkers en vrije doorstroming",
+        "Controleer druksensor, filters, bypass en expansievat"
+      ],
+      "note": "Vul niet herhaaldelijk bij zonder eerst lekkage en expansievat te controleren."
     },
     {
       "code": "F.22",
-      "title": "Veiligheidsuitschakeling: watergebrek in de CV-ketel",
-      "meaning": "Veiligheidsuitschakeling: watergebrek in de CV-ketel",
+      "title": "Veiligheidsuitschakeling door watertekort",
+      "meaning": "De ecoFIT pro meldt F.22: veiligheidsuitschakeling door watertekort.",
       "causes": [
-        "Geen of te weinig water in het product, waterdrukvoeler defect, kabel naar de pomp of naar waterdrukvoeler los/niet aangesloten/defect"
+        "Te lage systeemdruk, lucht of onvoldoende circulatie",
+        "Pomp, druksensor of bekabeling reageert niet correct",
+        "Afsluiter, filter, bypass of hydraulisch circuit is geblokkeerd"
       ],
-      "checks": []
+      "checks": [
+        "Controleer systeemdruk en installatie op lekkage",
+        "Ontlucht volgens het installatievoorschrift",
+        "Controleer pompwerking, stekkers en vrije doorstroming",
+        "Controleer druksensor, filters, bypass en expansievat"
+      ],
+      "note": "Vul niet herhaaldelijk bij zonder eerst lekkage en expansievat te controleren."
     },
     {
       "code": "F.23",
-      "title": "Veiligheidsuitschakeling: temperatuurspreiding te groot (NTC1/NTC2)",
-      "meaning": "Veiligheidsuitschakeling: temperatuurspreiding te groot (NTC1/NTC2)",
+      "title": "Temperatuurspreiding te groot",
+      "meaning": "De ecoFIT pro meldt F.23: temperatuurspreiding te groot.",
       "causes": [
-        "Pomp geblokkeerd, minder vermogen van de pomp, lucht in het product, aanvoer- en retour-NTC verwisseld"
+        "Te lage systeemdruk, lucht of onvoldoende circulatie",
+        "Pomp, druksensor of bekabeling reageert niet correct",
+        "Afsluiter, filter, bypass of hydraulisch circuit is geblokkeerd"
       ],
-      "checks": []
+      "checks": [
+        "Controleer systeemdruk en installatie op lekkage",
+        "Ontlucht volgens het installatievoorschrift",
+        "Controleer pompwerking, stekkers en vrije doorstroming",
+        "Controleer druksensor, filters, bypass en expansievat"
+      ],
+      "note": "Vul niet herhaaldelijk bij zonder eerst lekkage en expansievat te controleren."
     },
     {
       "code": "F.24",
-      "title": "Veiligheidsuitschakeling: temperatuurstijging te snel",
-      "meaning": "Veiligheidsuitschakeling: temperatuurstijging te snel",
+      "title": "Temperatuurstijging te snel",
+      "meaning": "De ecoFIT pro meldt F.24: temperatuurstijging te snel.",
       "causes": [
-        "Pomp geblokkeerd, minder vermogen van de pomp, lucht in het product, systeemdruk te laag, terugslagklep geblokkeerd/verkeerd gemonteerd"
+        "Te lage systeemdruk, lucht of onvoldoende circulatie",
+        "Pomp, druksensor of bekabeling reageert niet correct",
+        "Afsluiter, filter, bypass of hydraulisch circuit is geblokkeerd"
       ],
-      "checks": []
+      "checks": [
+        "Controleer systeemdruk en installatie op lekkage",
+        "Ontlucht volgens het installatievoorschrift",
+        "Controleer pompwerking, stekkers en vrije doorstroming",
+        "Controleer druksensor, filters, bypass en expansievat"
+      ],
+      "note": "Vul niet herhaaldelijk bij zonder eerst lekkage en expansievat te controleren."
     },
     {
       "code": "F.25",
-      "title": "Veiligheidsuitschakeling: verbrandingsgastemperatuur te hoog",
-      "meaning": "Veiligheidsuitschakeling: verbrandingsgastemperatuur te hoog",
+      "title": "Rookgastemperatuur te hoog",
+      "meaning": "De ecoFIT pro meldt F.25: rookgastemperatuur te hoog.",
       "causes": [
-        "Steekverbinding optionele verbrandingsgas-veiligheidstemperatuurbegrenzer onderbroken, onderbreking in de kabelboom"
+        "Luchttoevoer of rookgasafvoer geblokkeerd of verkeerd geconfigureerd",
+        "Ventilator, sensor, klep of condenspomp defect",
+        "Condensweg, sifon of warmtewisselaar vervuild"
       ],
-      "checks": []
+      "checks": [
+        "Stel het toestel veilig buiten bedrijf bij rookgasgevaar",
+        "Controleer lucht-/rookgastraject, sifon en condensafvoer",
+        "Controleer ventilator, kleppen, sensoren en bekabeling",
+        "Controleer configuratie en voer de voorgeschreven rookgasmeting uit"
+      ],
+      "note": "Werk aan het rookgas- en verbrandingssysteem alleen als gecertificeerd monteur."
     },
     {
       "code": "F.27",
-      "title": "Veiligheidsuitschakeling: fout bij vlamherkenning",
-      "meaning": "Veiligheidsuitschakeling: fout bij vlamherkenning",
+      "title": "Vlamsimulatie terwijl de brander uit is",
+      "meaning": "De ecoFIT pro meldt F.27: vlamsimulatie terwijl de brander uit is.",
       "causes": [
-        "Vocht op de elektronica, elektronica (vlambewaking) defect, elektromagnetische gasklep lek"
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
       ],
-      "checks": []
+      "checks": [
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
     },
     {
       "code": "F.28",
-      "title": "Fout: mislukte ontsteking bij de start",
-      "meaning": "Fout: mislukte ontsteking bij de start",
+      "title": "Geen ontsteking bij de start",
+      "meaning": "De ecoFIT pro meldt F.28: geen ontsteking bij de start.",
       "causes": [
-        "Gasmeter defect of gasdrukregelaar is uitgevallen, lucht in het gas, gasdynamische druk te gering, thermische afsluitvoorziening geactiveerd, verkeerde gasbegrenzer, verkeerd ET-gasblok, storing bij het gasblok, multistekker op de printplaat niet correct aangesloten, onderbreking in de kabelboom, ontstekingssysteem (ontstekingstrafo, ontstekingskabel, ontstekingsstekker of ontstekingselektrode) defect, onderbreking van de ionisatiestroom (kabel, elektrode), verkeerde aarding van het product, elektronica defect, terugstroomblokkering/luchtaanzuigbuis geblokkeerd"
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
       ],
-      "checks": []
+      "checks": [
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
     },
     {
       "code": "F.29",
-      "title": "Fout: vlamverlies",
-      "meaning": "Fout: vlamverlies",
+      "title": "Geen herontsteking na vlamuitval",
+      "meaning": "De ecoFIT pro meldt F.29: geen herontsteking na vlamuitval.",
       "causes": [
-        "Gastoevoer tijdelijk onderbroken, verbrandingsgasrecirculatie, foute aarding van het product, ontstekingstransformator heeft ontstekingsweigeringen"
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
       ],
-      "checks": []
+      "checks": [
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
     },
     {
       "code": "F.32",
-      "title": "Vorstbeschermingsfunctie van de ventilator actief: ventilatortoerental buiten de tolerantiewaarden",
-      "meaning": "Vorstbeschermingsfunctie van de ventilator actief: ventilatortoerental buiten de tolerantiewaarden",
+      "title": "Ventilator defect of niet aangesloten",
+      "meaning": "De ecoFIT pro meldt F.32: ventilator defect of niet aangesloten.",
       "causes": [
-        "Stekker op ventilator niet correct aangesloten, multistekker op de printplaat niet correct aangesloten, onderbreking in de kabelboom, ventilator geblokkeerd, Hallsensor defect, elektronica defect"
+        "Luchttoevoer of rookgasafvoer geblokkeerd of verkeerd geconfigureerd",
+        "Ventilator, sensor, klep of condenspomp defect",
+        "Condensweg, sifon of warmtewisselaar vervuild"
       ],
-      "checks": []
+      "checks": [
+        "Stel het toestel veilig buiten bedrijf bij rookgasgevaar",
+        "Controleer lucht-/rookgastraject, sifon en condensafvoer",
+        "Controleer ventilator, kleppen, sensoren en bekabeling",
+        "Controleer configuratie en voer de voorgeschreven rookgasmeting uit"
+      ],
+      "note": "Werk aan het rookgas- en verbrandingssysteem alleen als gecertificeerd monteur."
     },
     {
       "code": "F.49",
-      "title": "Fout eBUS: spanning te laag",
-      "meaning": "Fout eBUS: spanning te laag",
+      "title": "eBUS-spanning te laag of kortgesloten",
+      "meaning": "De ecoFIT pro meldt F.49: ebus-spanning te laag of kortgesloten.",
       "causes": [
-        "Kortsluiting bij de eBus, eBus-overbelasting of twee spanningsvoorzieningen met verschillende polariteiten op de eBus"
+        "Voeding of busspanning buiten bereik",
+        "Stekker, buskabel of polariteit niet in orde",
+        "Configuratie, display of printplaat defect"
       ],
-      "checks": []
+      "checks": [
+        "Controleer netvoeding, zekeringen en aarding",
+        "Controleer bus- en stekkerverbindingen op polariteit en kortsluiting",
+        "Controleer toestelconfiguratie en aangesloten modules",
+        "Vervang elektronica pas na uitsluiten van externe oorzaken"
+      ],
+      "note": "Maak het toestel spanningsvrij en controleer op spanningsloosheid voordat de elektronica wordt geopend."
     },
     {
       "code": "F.61",
-      "title": "Fout: besturing van het gasblok",
-      "meaning": "Fout: besturing van het gasblok",
+      "title": "Gasblok kan niet worden aangestuurd",
+      "meaning": "De ecoFIT pro meldt F.61: gasblok kan niet worden aangestuurd.",
       "causes": [
-        "Kortsluiting/massasluiting in de kabelboom naar gasblok, gasblok defect (massasluiting van de spoelen), elektronica defect"
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
       ],
-      "checks": []
+      "checks": [
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
     },
     {
       "code": "F.62",
-      "title": "Fout: uitschakelbesturing van de gasklep",
-      "meaning": "Fout: uitschakelbesturing van de gasklep",
+      "title": "Gasklep schakelt vertraagd uit",
+      "meaning": "De ecoFIT pro meldt F.62: gasklep schakelt vertraagd uit.",
       "causes": [
-        "vertraagde uitschakeling van het gasblok, vertraagd doven van het vlamsignaal, gasblok ondicht, elektronica defect"
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
       ],
-      "checks": []
+      "checks": [
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
     },
     {
       "code": "F.63",
-      "title": "Fout: EEPROM",
-      "meaning": "Fout: EEPROM",
+      "title": "EEPROM-fout",
+      "meaning": "De ecoFIT pro meldt F.63: eeprom-fout.",
       "causes": [
-        "Elektronica defect"
+        "Voeding of busspanning buiten bereik",
+        "Stekker, buskabel of polariteit niet in orde",
+        "Configuratie, display of printplaat defect"
       ],
-      "checks": []
+      "checks": [
+        "Controleer netvoeding, zekeringen en aarding",
+        "Controleer bus- en stekkerverbindingen op polariteit en kortsluiting",
+        "Controleer toestelconfiguratie en aangesloten modules",
+        "Vervang elektronica pas na uitsluiten van externe oorzaken"
+      ],
+      "note": "Maak het toestel spanningsvrij en controleer op spanningsloosheid voordat de elektronica wordt geopend."
     },
     {
       "code": "F.64",
-      "title": "Fout: elektronica / sensor / analoogdigitaal-omvormer",
-      "meaning": "Fout: elektronica / sensor / analoogdigitaal-omvormer",
+      "title": "Elektronica, sensor of kabel defect",
+      "meaning": "De ecoFIT pro meldt F.64: elektronica, sensor of kabel defect.",
       "causes": [
-        "Kortsluiting aanvoer- of retour-NTC, elektronica defect"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
-      "checks": []
+      "checks": [
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.65",
-      "title": "Fout: temperatuur van de elektronica te hoog",
-      "meaning": "Fout: temperatuur van de elektronica te hoog",
+      "title": "Elektronica te warm",
+      "meaning": "De ecoFIT pro meldt F.65: elektronica te warm.",
       "causes": [
-        "Elektronica door externe inwerking te heet, elektronica defect"
+        "Voeding of busspanning buiten bereik",
+        "Stekker, buskabel of polariteit niet in orde",
+        "Configuratie, display of printplaat defect"
       ],
-      "checks": []
+      "checks": [
+        "Controleer netvoeding, zekeringen en aarding",
+        "Controleer bus- en stekkerverbindingen op polariteit en kortsluiting",
+        "Controleer toestelconfiguratie en aangesloten modules",
+        "Vervang elektronica pas na uitsluiten van externe oorzaken"
+      ],
+      "note": "Maak het toestel spanningsvrij en controleer op spanningsloosheid voordat de elektronica wordt geopend."
     },
     {
       "code": "F.67",
-      "title": "Door ASIC teruggestuurde waarde foutief (vlamsignaal)",
-      "meaning": "Door ASIC teruggestuurde waarde foutief (vlamsignaal)",
+      "title": "Vlamsignaal niet plausibel",
+      "meaning": "De ecoFIT pro meldt F.67: vlamsignaal niet plausibel.",
       "causes": [
-        "Ongeldig vlamsignaal, elektronica defect"
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
       ],
-      "checks": []
+      "checks": [
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
     },
     {
       "code": "F.68",
-      "title": "Fout: vlam instabiel (analoge ingang)",
-      "meaning": "Fout: vlam instabiel (analoge ingang)",
+      "title": "Vlamsignaal instabiel",
+      "meaning": "De ecoFIT pro meldt F.68: vlamsignaal instabiel.",
       "causes": [
-        "Lucht in gas, gas dynamische druk te gering, verkeerde luchtverhouding, verkeerde gasbegrenzer, onderbreking van de ionisatiestroom (kabel, elektrode)"
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
       ],
-      "checks": []
+      "checks": [
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
     },
     {
       "code": "F.70",
-      "title": "Productcode ongeldig (DSN)",
-      "meaning": "Productcode ongeldig (DSN)",
+      "title": "Toestelcode of codeerweerstand ongeldig",
+      "meaning": "De ecoFIT pro meldt F.70: toestelcode of codeerweerstand ongeldig.",
       "causes": [
-        "Gelijktijdige vervanging van het beeldscherm en de printplaat, zonder de toestelherkenning van het product opnieuw te configureren"
+        "Toestel- of installatieconfiguratie komt niet overeen",
+        "Codeerweerstand, vervangend onderdeel of parameters passen niet bij het toestel",
+        "Inbedrijfstelling of ombouwprocedure is niet afgerond"
       ],
-      "checks": []
+      "checks": [
+        "Controleer volledig typenummer en ingestelde toestelcode",
+        "Controleer codeerweerstand, onderdelen en parameterinstellingen",
+        "Rond de officiële inbedrijfstellings- of ombouwprocedure af",
+        "Controleer daarna de foutstatus opnieuw"
+      ],
+      "note": "Gebruik uitsluitend configuratiegegevens en onderdelen die voor het exacte toesteltype zijn vrijgegeven."
     },
     {
       "code": "F.71",
-      "title": "Fout: aanvoer-/retourtemperatuursensor",
-      "meaning": "Fout: aanvoer-/retourtemperatuursensor",
+      "title": "Aanvoertemperatuurvoeler geeft onwaarschijnlijke waarde",
+      "meaning": "De ecoFIT pro meldt F.71: aanvoertemperatuurvoeler geeft onwaarschijnlijke waarde.",
       "causes": [
-        "Aanvoertemperatuursensor die een constante waarde aangeeft: aanvoertemperatuursensor niet correct op de aanvoerbuis aangebracht, aanvoertemperatuursensor defect"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
-      "checks": []
+      "checks": [
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.72",
-      "title": "Fout: afwijking van de waterdruksensor / retourtemperatuursensor",
-      "meaning": "Fout: afwijking van de waterdruksensor / retourtemperatuursensor",
+      "title": "Temperatuurverschil aanvoer/retour te groot",
+      "meaning": "De ecoFIT pro meldt F.72: temperatuurverschil aanvoer/retour te groot.",
       "causes": [
-        "Temperatuurverschil aanvoer-/retour-NTC te groot → aanvoer- en/ of retourtemperatuursensor defect"
+        "Onderdeel, aansluiting of configuratie reageert niet zoals verwacht",
+        "Interne veiligheidscontrole heeft een afwijking vastgesteld"
       ],
-      "checks": []
+      "checks": [
+        "Noteer de code en lees het foutgeheugen uit",
+        "Controleer stekkers, kabelboom en toestelconfiguratie",
+        "Volg de maatregelentabel in de officiële handleiding",
+        "Reset pas nadat de oorzaak is verholpen"
+      ]
     },
     {
       "code": "F.73",
-      "title": "Fout: waterdruksensor niet aangesloten of kortgesloten",
-      "meaning": "Fout: waterdruksensor niet aangesloten of kortgesloten",
+      "title": "Waterdruksensorsignaal te laag",
+      "meaning": "De ecoFIT pro meldt F.73: waterdruksensorsignaal te laag.",
       "causes": [
-        "Onderbreking/kortsluiting waterdruksensor, onderbreking/massasluiting in toevoerleiding van de waterdruksensor of waterdruksensor defect"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
-      "checks": []
+      "checks": [
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.74",
-      "title": "Fout: elektrisch probleem van de waterdruksensor",
-      "meaning": "Fout: elektrisch probleem van de waterdruksensor",
+      "title": "Waterdruksensorsignaal te hoog",
+      "meaning": "De ecoFIT pro meldt F.74: waterdruksensorsignaal te hoog.",
       "causes": [
-        "Leiding naar de waterdruksensor heeft een kortsluiting bij 5 V/24 V of interne fout in de waterdruksensor"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
-      "checks": []
+      "checks": [
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.75",
-      "title": "Fout: druksensor",
-      "meaning": "Fout: druksensor",
+      "title": "Geen voldoende druksprong bij pompstart",
+      "meaning": "De ecoFIT pro meldt F.75: geen voldoende druksprong bij pompstart.",
       "causes": [
-        "Druksensor of pomp defect of watergebrek"
+        "Te lage systeemdruk, lucht of onvoldoende circulatie",
+        "Pomp, druksensor of bekabeling reageert niet correct",
+        "Afsluiter, filter, bypass of hydraulisch circuit is geblokkeerd"
       ],
-      "checks": []
+      "checks": [
+        "Controleer systeemdruk en installatie op lekkage",
+        "Ontlucht volgens het installatievoorschrift",
+        "Controleer pompwerking, stekkers en vrije doorstroming",
+        "Controleer druksensor, filters, bypass en expansievat"
+      ],
+      "note": "Vul niet herhaaldelijk bij zonder eerst lekkage en expansievat te controleren."
     },
     {
       "code": "F.77",
-      "title": "Fout: condens of rook",
-      "meaning": "Fout: condens of rook",
+      "title": "Geen terugmelding rookgasklep of condenspomp",
+      "meaning": "De ecoFIT pro meldt F.77: geen terugmelding rookgasklep of condenspomp.",
       "causes": [
-        "Geen terugmelding, verbrandingsgasklep defect"
+        "Luchttoevoer of rookgasafvoer geblokkeerd of verkeerd geconfigureerd",
+        "Ventilator, sensor, klep of condenspomp defect",
+        "Condensweg, sifon of warmtewisselaar vervuild"
       ],
-      "checks": []
+      "checks": [
+        "Stel het toestel veilig buiten bedrijf bij rookgasgevaar",
+        "Controleer lucht-/rookgastraject, sifon en condensafvoer",
+        "Controleer ventilator, kleppen, sensoren en bekabeling",
+        "Controleer configuratie en voer de voorgeschreven rookgasmeting uit"
+      ],
+      "note": "Werk aan het rookgas- en verbrandingssysteem alleen als gecertificeerd monteur."
     },
     {
       "code": "F.78",
-      "title": "Onderbreking warmwateruitloopsensor aan de externe regelaar",
-      "meaning": "Onderbreking warmwateruitloopsensor aan de externe regelaar",
+      "title": "Warmwateruitloopvoeler bij externe thermostaat onderbroken",
+      "meaning": "De ecoFIT pro meldt F.78: warmwateruitloopvoeler bij externe thermostaat onderbroken.",
       "causes": [
-        "Link box aangesloten, maar warmwater-NTC niet overbrugd"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
-      "checks": []
+      "checks": [
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.83",
-      "title": "Storing: droogkoken",
-      "meaning": "Storing: droogkoken",
+      "title": "Temperatuurverandering van NTC-sensoren te klein",
+      "meaning": "De ecoFIT pro meldt F.83: temperatuurverandering van ntc-sensoren te klein.",
       "causes": [
-        "Bij branderstart wordt geen of een te lage temperatuursverandering door de aanvoer- of retourtemperatuursensor geregistreerd: te weinig water in het product, aanvoer- of retourtemperatuursensor niet correct op de buis aangebracht"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
-      "checks": []
+      "checks": [
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.84",
-      "title": "Fout: aanvoer-/retourtemperatuursensor",
-      "meaning": "Fout: aanvoer-/retourtemperatuursensor",
+      "title": "NTC-temperatuurverschil niet plausibel",
+      "meaning": "De ecoFIT pro meldt F.84: ntc-temperatuurverschil niet plausibel.",
       "causes": [
-        "Waarden kloppen niet, verschil < -6 K",
-        "Aanvoer- en retourtemperatuursensor melden niet-plausibele waarden: aanvoer- en retourtemperatuursensor zijn verwisseld, aanvoer- en retourtemperatuursensor zijn niet correct gemonteerd"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
-      "checks": []
+      "checks": [
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.85",
-      "title": "Fout: temperatuursensor",
-      "meaning": "Fout: temperatuursensor",
+      "title": "NTC-sensoren verkeerd gemonteerd",
+      "meaning": "De ecoFIT pro meldt F.85: ntc-sensoren verkeerd gemonteerd.",
       "causes": [
-        "Aanvoer- en/of retourtemperatuursensor zijn op dezelfde/foute buis gemonteerd",
-        "Temperatuursensor niet of niet goed aangesloten"
+        "Sensor of voeler defect",
+        "Stekker, kabelboom of verbinding onderbroken",
+        "Kortsluiting, vocht of onjuiste montage"
       ],
-      "checks": []
+      "checks": [
+        "Maak het toestel spanningsvrij",
+        "Controleer stekkers, kabelboom en sensorpositie",
+        "Meet de sensor en vergelijk de waarde met het Vaillant-voorschrift",
+        "Vervang het defecte onderdeel en controleer de meetwaarde opnieuw"
+      ],
+      "note": "Metingen aan netspanning en geopende elektronica alleen door een bevoegd monteur."
     },
     {
       "code": "F.86",
-      "title": "Fout: vloerverwarmingscontact",
-      "meaning": "Fout: vloerverwarmingscontact",
+      "title": "Contact van de vloerverwarmingsbeveiliging geopend",
+      "meaning": "De ecoFIT pro meldt F.86: contact van de vloerverwarmingsbeveiliging geopend.",
       "causes": [
-        "Vloerverwarmingscontact geopend, sensor losgekoppeld of defect"
+        "Onderdeel, aansluiting of configuratie reageert niet zoals verwacht",
+        "Interne veiligheidscontrole heeft een afwijking vastgesteld"
       ],
-      "checks": []
+      "checks": [
+        "Noteer de code en lees het foutgeheugen uit",
+        "Controleer stekkers, kabelboom en toestelconfiguratie",
+        "Volg de maatregelentabel in de officiële handleiding",
+        "Reset pas nadat de oorzaak is verholpen"
+      ]
     },
     {
       "code": "F.87",
-      "title": "Storing: ontstekingselektrode",
-      "meaning": "Storing: ontstekingselektrode",
+      "title": "Ontstekingselektrode of ontstekingsaansluiting defect",
+      "meaning": "De ecoFIT pro meldt F.87: ontstekingselektrode of ontstekingsaansluiting defect.",
       "causes": [
-        "Ontstekingselektrode niet correct aangesloten, kortsluiting in de kabelboom"
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
       ],
-      "checks": []
+      "checks": [
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
     },
     {
       "code": "F.88",
-      "title": "Fout: gasblok",
-      "meaning": "Fout: gasblok",
+      "title": "Elektrische aansluiting van het gasblok onderbroken",
+      "meaning": "De ecoFIT pro meldt F.88: elektrische aansluiting van het gasblok onderbroken.",
       "causes": [
-        "Gasblok niet of niet goed aangesloten, kortsluiting in de kabelboom"
+        "Gastoevoer of gasdruk niet in orde",
+        "Ontstekings- of ionisatiecircuit vervuild, defect of slecht geaard",
+        "Gas-luchtverhouding, gasklep of verbrandingsregeling wijkt af",
+        "Luchttoevoer, rookgasafvoer of condensweg geblokkeerd"
       ],
-      "checks": []
+      "checks": [
+        "Controleer gaskraan, gastoevoer en storingshistorie",
+        "Inspecteer elektroden, kabels, stekkers en aarding",
+        "Controleer lucht-/rookgastraject en condensafvoer",
+        "Voer de voorgeschreven gasdruk- en verbrandingsmeting uit"
+      ],
+      "note": "Gaszijdige metingen, afstellingen en reparaties alleen door een gecertificeerd monteur. Reset niet herhaaldelijk zonder oorzaakonderzoek."
     },
     {
       "code": "F.89",
-      "title": "Fout: pomp",
-      "meaning": "Fout: pomp",
+      "title": "Pomp niet passend, geblokkeerd of defect",
+      "meaning": "De ecoFIT pro meldt F.89: pomp niet passend, geblokkeerd of defect.",
       "causes": [
-        "Pomp niet of niet goed aangesloten, verkeerde pomp aangesloten, kortsluiting in de kabelboom"
+        "Te lage systeemdruk, lucht of onvoldoende circulatie",
+        "Pomp, druksensor of bekabeling reageert niet correct",
+        "Afsluiter, filter, bypass of hydraulisch circuit is geblokkeerd"
       ],
-      "checks": []
+      "checks": [
+        "Controleer systeemdruk en installatie op lekkage",
+        "Ontlucht volgens het installatievoorschrift",
+        "Controleer pompwerking, stekkers en vrije doorstroming",
+        "Controleer druksensor, filters, bypass en expansievat"
+      ],
+      "note": "Vul niet herhaaldelijk bij zonder eerst lekkage en expansievat te controleren."
     },
     {
       "code": "F.97",
-      "title": "Fout: zelftest hoofdprintplaat mislukt",
-      "meaning": "Fout: zelftest hoofdprintplaat mislukt",
+      "title": "Zelftest van de hoofdprintplaat mislukt",
+      "meaning": "De ecoFIT pro meldt F.97: zelftest van de hoofdprintplaat mislukt.",
       "causes": [
-        "Hoofdprintplaat defect"
+        "Voeding of busspanning buiten bereik",
+        "Stekker, buskabel of polariteit niet in orde",
+        "Configuratie, display of printplaat defect"
       ],
-      "checks": []
+      "checks": [
+        "Controleer netvoeding, zekeringen en aarding",
+        "Controleer bus- en stekkerverbindingen op polariteit en kortsluiting",
+        "Controleer toestelconfiguratie en aangesloten modules",
+        "Vervang elektronica pas na uitsluiten van externe oorzaken"
+      ],
+      "note": "Maak het toestel spanningsvrij en controleer op spanningsloosheid voordat de elektronica wordt geopend."
     }
   ]
 }

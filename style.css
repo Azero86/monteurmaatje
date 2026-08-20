@@ -170,3 +170,132 @@ html[data-theme="dark"] option{background:#2b2623;color:#f6eee9}
   .theme-toggle{width:58px;height:32px}
   .theme-toggle span{height:24px}
 }
+
+/* Final conservative usability pass: documentation and parameter readability. */
+.source-row>span{
+  min-width:0;
+  line-height:1.5;
+  overflow-wrap:anywhere;
+}
+.manual-links{
+  flex:none;
+  align-items:center;
+  text-transform:none;
+  letter-spacing:normal;
+}
+.manual-links a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  min-height:42px;
+  padding:10px 14px;
+  color:var(--accent);
+  background:#fff;
+  border:1px solid #e8b8a9;
+  border-radius:10px;
+  font-size:12px;
+  font-weight:800;
+  line-height:1.25;
+  box-shadow:0 5px 14px rgba(86,48,31,.07);
+}
+.manual-links a b{font-size:15px;line-height:1}
+.manual-links a:hover{
+  color:#fff;
+  background:linear-gradient(135deg,var(--accent-2),var(--accent));
+  border-color:var(--accent);
+}
+.manual-links a:focus-visible{
+  outline:3px solid rgba(230,59,46,.22);
+  outline-offset:2px;
+}
+.parameter-detail .fault-title-row{align-items:flex-start}
+.parameter-detail .fault-title-row h2{
+  max-width:100%;
+  line-height:1.25;
+  overflow-wrap:anywhere;
+}
+.parameter-list div{align-items:flex-start}
+.parameter-list dd{
+  max-width:70%;
+  text-align:right;
+  line-height:1.5;
+  overflow-wrap:anywhere;
+}
+.parameter-list .parameter-choices-row{
+  display:grid;
+  grid-template-columns:minmax(88px,auto) minmax(0,1fr);
+  align-items:start;
+}
+.parameter-choices-row dd{max-width:none;text-align:left}
+.parameter-choices{
+  display:grid;
+  gap:7px;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.parameter-choices li{
+  padding:8px 10px;
+  color:#514a46;
+  background:var(--surface-soft);
+  border:1px solid var(--line);
+  border-radius:8px;
+  font-weight:650;
+  line-height:1.45;
+  overflow-wrap:anywhere;
+}
+.parameter-addition{
+  margin:15px 0 0;
+  padding:13px 14px;
+  color:#5f554f;
+  background:var(--surface-soft);
+  border:1px solid var(--line);
+  border-radius:9px;
+  font-size:12px;
+  line-height:1.6;
+  overflow-wrap:anywhere;
+}
+.parameter-addition strong{display:block;margin-bottom:4px;color:var(--ink)}
+.parameter-details{margin-top:15px}
+.parameter-details summary{
+  color:var(--accent);
+  cursor:pointer;
+  font-size:13px;
+  font-weight:800;
+  line-height:1.45;
+}
+.parameter-details summary:focus-visible{outline:3px solid rgba(230,59,46,.20);outline-offset:3px}
+.parameter-details>div{margin-top:12px}
+
+html[data-theme="dark"] .manual-links a{
+  color:#ffb39f;
+  background:#2a2522;
+  border-color:#66483f;
+  box-shadow:none;
+}
+html[data-theme="dark"] .manual-links a:hover{
+  color:#fff;
+  background:linear-gradient(135deg,var(--accent-2),var(--accent));
+  border-color:var(--accent);
+}
+html[data-theme="dark"] .parameter-choices li,
+html[data-theme="dark"] .parameter-addition{
+  color:#dfd4cd;
+  background:#211d1b;
+  border-color:#443b36;
+}
+html[data-theme="dark"] .parameter-addition strong{color:#f5eee9}
+
+@media(max-width:560px){
+  .source-row{flex-direction:column;gap:13px}
+  .manual-links{width:100%}
+  .manual-links a{width:100%;min-height:44px}
+  .parameter-list div{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:5px;
+  }
+  .parameter-list dd{max-width:none;text-align:left}
+  .parameter-list .parameter-choices-row{grid-template-columns:1fr}
+}

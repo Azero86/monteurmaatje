@@ -2,200 +2,316 @@
   "schemaVersion": 1,
   "deviceId": "quinta-classic",
   "source": {
-    "title": "Remeha Technische informatie Quinta 25s/30s/28c/35c (versie AH)",
-    "url": "https://documentation.remeha.nl/wp-content/uploads/sites/68/2025/12/Quinta-25s_28c_30s_35c-versie-AH.pdf"
+    "title": "Remeha technische informatie Quinta 25s/30s/28c/35c",
+    "url": "https://remehatools.be/wp-content/uploads/documents/archive/REMEHA/Gas/Quinta/110125%20TM%20Quinta%2025s%2030s%2028c%2035c%20NL.pdf"
   },
   "faults": [
     {
       "code": "00",
       "title": "Onterecht vlamsignaal",
-      "meaning": "Onterecht vlamsignaal",
+      "meaning": "De klassieke Quinta vergrendelt met code 00: onterecht vlamsignaal.",
       "causes": [
-        "Brander gloeit na t.g.v. te hoog CO₂",
-        "Gasklep lekt of blijft in geopende positie staan"
+        "Gastoevoer of gasvoordruk niet in orde",
+        "Ontstekings- of ionisatieprobleem",
+        "Gasblok of gasklepregeling defect",
+        "Luchttoevoer, rookgasafvoer of aarding niet in orde"
       ],
-      "checks": []
+      "checks": [
+        "Controleer gastoevoer en gasvoordruk",
+        "Controleer ontstekings-/ionisatie-elektrode, kabel en aarding",
+        "Controleer luchttoevoer en rookgasafvoer",
+        "Controleer gasblok en aansturing volgens het Remeha-voorschrift"
+      ],
+      "note": "Gaszijdige metingen en afstellingen alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "01",
-      "title": "Kortsluiting 24V",
-      "meaning": "Kortsluiting 24V",
-      "causes": [],
+      "title": "Kortsluiting 24 V",
+      "meaning": "De klassieke Quinta vergrendelt met code 01: kortsluiting 24 v.",
+      "causes": [
+        "Interne besturings- of veiligheidsfout",
+        "Aansluiting of onderdeel reageert niet zoals verwacht"
+      ],
       "checks": [
-        "Controleer de bedrading."
+        "Noteer de code en lees de fouthistorie uit",
+        "Controleer bedrading en connectoren",
+        "Herstart alleen nadat de oorzaak is onderzocht",
+        "Raadpleeg de officiële servicehandleiding"
       ]
     },
     {
       "code": "02",
-      "title": "Geen vlamvorming of geen ionisatie (na 5 startpogingen) Opmerking: Meting ionisatie in Volts tussen klem 4 van de klemmenstrook en aarde (1 V  1 A), zie Afb. 29",
-      "meaning": "Geen vlamvorming of geen ionisatie (na 5 startpogingen) Opmerking: Meting ionisatie in Volts tussen klem 4 van de klemmenstrook en aarde (1 V  1 A), zie Afb. 29",
+      "title": "Geen vlamvorming of ionisatie",
+      "meaning": "De klassieke Quinta vergrendelt met code 02: geen vlamvorming of ionisatie.",
       "causes": [
-        "a. Geen ontstekingsvonk, controleer",
-        "de aarding b. Wel ontstekingsvonk, maar geen vlam, controleer of",
-        "er geen recirculatie van rookgassen optreedt (intern/ extern) c. Wel vlam maar geen of onvoldoende (< 4 A) ionisatie, controleer"
+        "Gastoevoer of gasvoordruk niet in orde",
+        "Ontstekings- of ionisatieprobleem",
+        "Gasblok of gasklepregeling defect",
+        "Luchttoevoer, rookgasafvoer of aarding niet in orde"
       ],
       "checks": [
-        "De aansluiting van ontstekingskabel en bougiedop",
-        "De ontstekingskabel en de elektrode op ‘doorslag’",
-        "De elektrodeafstand, deze moet 3 à 4 mm zijn",
-        "De gaskraan is geopend",
-        "De gasvoordruk voldoende is",
-        "De gasleiding is ontlucht (denk aan evt. propaantank)",
-        "De gasklep bekrachtigd wordt tijdens ontsteken en open gaat",
-        "De elektrode juist is gemonteerd en schoon is",
-        "De gas- / lucht verhouding juist is afgesteld",
-        "Er geen verstopping / montagefout in de gasleiding zit",
-        "Er geen verstopping in de luchttoevoer of rookgasafvoer zit (bv. door verstopte sifon)",
-        "Vlambeeld, is de vlamkern zichtbaar en de vlam stabiel?",
-        "Afstelling CO op laaglast en vollast",
-        "2",
-        "Controle van de aarding van de ontsteekpen",
-        "Controle temperatuursensoren op lekstroom (vochtig bij sensoren)",
-        "Visuele controle ontstekings/ionisatie elektrode, door controle op witte oxidehuid (deze met een schuurpapiertje of schroevendraaier schoonkrabben) of door controle op de vorm (hebben de pennen de originele vorm en is de afstand tussen de twee uiteinden van de pennen tussen de 3 en 4 mm."
-      ]
+        "Controleer gastoevoer en gasvoordruk",
+        "Controleer ontstekings-/ionisatie-elektrode, kabel en aarding",
+        "Controleer luchttoevoer en rookgasafvoer",
+        "Controleer gasblok en aansturing volgens het Remeha-voorschrift"
+      ],
+      "note": "Gaszijdige metingen en afstellingen alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "04",
-      "title": "Spanningswegval tijdens storingsvergrendeling",
-      "meaning": "Spanningswegval tijdens storingsvergrendeling",
-      "causes": [],
-      "checks": []
+      "title": "Spanningswegval tijdens vergrendeling",
+      "meaning": "De klassieke Quinta vergrendelt met code 04: spanningswegval tijdens vergrendeling.",
+      "causes": [
+        "Interne besturings- of veiligheidsfout",
+        "Aansluiting of onderdeel reageert niet zoals verwacht"
+      ],
+      "checks": [
+        "Noteer de code en lees de fouthistorie uit",
+        "Controleer bedrading en connectoren",
+        "Herstart alleen nadat de oorzaak is onderzocht",
+        "Raadpleeg de officiële servicehandleiding"
+      ]
     },
     {
       "code": "05",
-      "title": "Externe invloeden",
-      "meaning": "Externe invloeden",
+      "title": "Externe EMC-invloed",
+      "meaning": "De klassieke Quinta vergrendelt met code 05: externe emc-invloed.",
       "causes": [
-        "Eventuele externe EMC-invloeden wegnemen"
+        "Interne besturings- of veiligheidsfout",
+        "Aansluiting of onderdeel reageert niet zoals verwacht"
       ],
-      "checks": []
+      "checks": [
+        "Noteer de code en lees de fouthistorie uit",
+        "Controleer bedrading en connectoren",
+        "Herstart alleen nadat de oorzaak is onderzocht",
+        "Raadpleeg de officiële servicehandleiding"
+      ]
     },
     {
       "code": "08",
       "title": "Programmeerfout",
-      "meaning": "Programmeerfout",
-      "causes": [],
+      "meaning": "De klassieke Quinta vergrendelt met code 08: programmeerfout.",
+      "causes": [
+        "Interne besturings- of veiligheidsfout",
+        "Aansluiting of onderdeel reageert niet zoals verwacht"
+      ],
       "checks": [
-        "Controleer parameter D (tweede cijfer moet 0 zijn)"
+        "Noteer de code en lees de fouthistorie uit",
+        "Controleer bedrading en connectoren",
+        "Herstart alleen nadat de oorzaak is onderzocht",
+        "Raadpleeg de officiële servicehandleiding"
       ]
     },
     {
       "code": "11",
-      "title": "Storing interne communicatiebus",
-      "meaning": "Storing interne communicatiebus",
+      "title": "Interne communicatiebusstoring",
+      "meaning": "De klassieke Quinta vergrendelt met code 11: interne communicatiebusstoring.",
       "causes": [
-        "De vlakbandkabel is beschadigd / maakt kortsluiting",
-        "Er zit vocht op het display",
-        "Evt. externe EMC-invloeden"
+        "Verbinding, stekker of busbedrading onderbroken",
+        "Aangesloten regel- of uitbreidingsprint niet gevonden",
+        "Besturings- of uitbreidingsprint defect"
       ],
-      "checks": []
+      "checks": [
+        "Controleer bedrading en connectoren",
+        "Controleer of alle aangesloten apparaten spanning hebben",
+        "Voer automatische detectie uit indien voorgeschreven",
+        "Herstart het toestel en controleer de betreffende print"
+      ]
     },
     {
       "code": "18",
-      "title": "Te hoge aanvoertemperatuur",
-      "meaning": "Te hoge aanvoertemperatuur",
-      "causes": [],
+      "title": "Aanvoertemperatuur te hoog",
+      "meaning": "De klassieke Quinta vergrendelt met code 18: aanvoertemperatuur te hoog.",
+      "causes": [
+        "Geen of te weinig doorstroming",
+        "Lucht of vervuiling in de cv-installatie of warmtewisselaar",
+        "Pomp, klep of temperatuursensor werkt niet correct"
+      ],
       "checks": [
-        "De doorstroming, zie Par.8.5.5",
-        "Of de installatie goed ontlucht is",
-        "Aanvoer- en retourtemperatuursensoren op afwijkingen",
-        "De waterdruk (min. 0,8 bar)"
+        "Controleer waterdruk en ontlucht de installatie",
+        "Controleer stromingsrichting, pomp en kleppen",
+        "Controleer de warmtewisselaar op vervuiling",
+        "Controleer montage en werking van de temperatuursensoren"
       ]
     },
     {
       "code": "19",
-      "title": "Te hoge retourtemperatuur",
-      "meaning": "Te hoge retourtemperatuur",
-      "causes": [],
-      "checks": []
+      "title": "Retourtemperatuur te hoog",
+      "meaning": "De klassieke Quinta vergrendelt met code 19: retourtemperatuur te hoog.",
+      "causes": [
+        "Geen of te weinig doorstroming",
+        "Lucht of vervuiling in de cv-installatie of warmtewisselaar",
+        "Pomp, klep of temperatuursensor werkt niet correct"
+      ],
+      "checks": [
+        "Controleer waterdruk en ontlucht de installatie",
+        "Controleer stromingsrichting, pomp en kleppen",
+        "Controleer de warmtewisselaar op vervuiling",
+        "Controleer montage en werking van de temperatuursensoren"
+      ]
     },
     {
       "code": "24",
-      "title": "Aanvoer- en retourwisseling",
-      "meaning": "Aanvoer- en retourwisseling",
+      "title": "Aanvoer en retour verwisseld",
+      "meaning": "De klassieke Quinta vergrendelt met code 24: aanvoer en retour verwisseld.",
       "causes": [
-        "Aanvoertemperatuursensor niet goed gemonteerd",
-        "Doorstroomrichting van de pomp is verkeerd of externe pomp is verkeerd ingebouwd"
+        "Geen of te weinig doorstroming",
+        "Lucht of vervuiling in de cv-installatie of warmtewisselaar",
+        "Pomp, klep of temperatuursensor werkt niet correct"
       ],
-      "checks": []
+      "checks": [
+        "Controleer waterdruk en ontlucht de installatie",
+        "Controleer stromingsrichting, pomp en kleppen",
+        "Controleer de warmtewisselaar op vervuiling",
+        "Controleer montage en werking van de temperatuursensoren"
+      ]
     },
     {
       "code": "28",
       "title": "Ventilator draait niet",
-      "meaning": "Ventilator draait niet",
+      "meaning": "De klassieke Quinta vergrendelt met code 28: ventilator draait niet.",
       "causes": [
-        "Ventilator zit vast of rotor draait niet.",
-        "Geen spanning of PWM-signaal door corrosie van kabel of connector"
+        "Luchttoevoer of rookgasafvoer geblokkeerd",
+        "Sifon, terugslagklep of warmtewisselaar vervuild",
+        "Ventilator, drukschakelaar of bedrading defect"
       ],
-      "checks": []
+      "checks": [
+        "Controleer luchttoevoer en rookgasafvoer op blokkering",
+        "Controleer sifon, terugslagklep en warmtewisselaar",
+        "Controleer bedrading en connectoren",
+        "Controleer ventilator of drukschakelaar volgens voorschrift"
+      ],
+      "note": "Werkzaamheden aan rookgasafvoer en verbranding alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "29",
-      "title": "Ventilator blijft draaien of signaal niet correct",
-      "meaning": "Ventilator blijft draaien of signaal niet correct",
+      "title": "Ventilator blijft draaien of signaal onjuist",
+      "meaning": "De klassieke Quinta vergrendelt met code 29: ventilator blijft draaien of signaal onjuist.",
       "causes": [
-        "Controle van de connector op ventilator en automaat",
-        "Ventilator defect",
-        "Natuurlijke trek"
+        "Luchttoevoer of rookgasafvoer geblokkeerd",
+        "Sifon, terugslagklep of warmtewisselaar vervuild",
+        "Ventilator, drukschakelaar of bedrading defect"
       ],
-      "checks": []
+      "checks": [
+        "Controleer luchttoevoer en rookgasafvoer op blokkering",
+        "Controleer sifon, terugslagklep en warmtewisselaar",
+        "Controleer bedrading en connectoren",
+        "Controleer ventilator of drukschakelaar volgens voorschrift"
+      ],
+      "note": "Werkzaamheden aan rookgasafvoer en verbranding alleen laten uitvoeren door een gecertificeerd monteur."
     },
     {
       "code": "31",
-      "title": "Temperatuursensor fout",
-      "meaning": "Temperatuursensor fout",
+      "title": "Aanvoersensor kortgesloten",
+      "meaning": "De klassieke Quinta vergrendelt met code 31: aanvoersensor kortgesloten.",
       "causes": [
-        "Kortsluiting aanvoertemperatuursensor"
+        "Stekker of bedrading los, beschadigd of kortgesloten",
+        "Sensor niet correct gemonteerd",
+        "Sensorwaarde buiten bereik of sensor defect"
       ],
-      "checks": []
+      "checks": [
+        "Controleer stekker en bedrading",
+        "Controleer montage en positie van de sensor",
+        "Meet de sensor volgens de fabrikantgegevens",
+        "Vervang de sensor indien deze defect is"
+      ]
     },
     {
       "code": "32",
-      "title": "Kortsluiting retourtemperatuursensor",
-      "meaning": "Kortsluiting retourtemperatuursensor",
-      "causes": [],
-      "checks": []
+      "title": "Retoursensor kortgesloten",
+      "meaning": "De klassieke Quinta vergrendelt met code 32: retoursensor kortgesloten.",
+      "causes": [
+        "Stekker of bedrading los, beschadigd of kortgesloten",
+        "Sensor niet correct gemonteerd",
+        "Sensorwaarde buiten bereik of sensor defect"
+      ],
+      "checks": [
+        "Controleer stekker en bedrading",
+        "Controleer montage en positie van de sensor",
+        "Meet de sensor volgens de fabrikantgegevens",
+        "Vervang de sensor indien deze defect is"
+      ]
     },
     {
       "code": "34",
-      "title": "Kortsluiting buitentemperatuursensor",
-      "meaning": "Kortsluiting buitentemperatuursensor",
-      "causes": [],
-      "checks": []
+      "title": "Buitensensor kortgesloten",
+      "meaning": "De klassieke Quinta vergrendelt met code 34: buitensensor kortgesloten.",
+      "causes": [
+        "Stekker of bedrading los, beschadigd of kortgesloten",
+        "Sensor niet correct gemonteerd",
+        "Sensorwaarde buiten bereik of sensor defect"
+      ],
+      "checks": [
+        "Controleer stekker en bedrading",
+        "Controleer montage en positie van de sensor",
+        "Meet de sensor volgens de fabrikantgegevens",
+        "Vervang de sensor indien deze defect is"
+      ]
     },
     {
       "code": "36",
-      "title": "Aanvoertemperatuursensor niet aangesloten of defect",
-      "meaning": "Aanvoertemperatuursensor niet aangesloten of defect",
-      "causes": [],
-      "checks": []
+      "title": "Aanvoersensor ontbreekt of is defect",
+      "meaning": "De klassieke Quinta vergrendelt met code 36: aanvoersensor ontbreekt of is defect.",
+      "causes": [
+        "Stekker of bedrading los, beschadigd of kortgesloten",
+        "Sensor niet correct gemonteerd",
+        "Sensorwaarde buiten bereik of sensor defect"
+      ],
+      "checks": [
+        "Controleer stekker en bedrading",
+        "Controleer montage en positie van de sensor",
+        "Meet de sensor volgens de fabrikantgegevens",
+        "Vervang de sensor indien deze defect is"
+      ]
     },
     {
       "code": "37",
-      "title": "Retourtemperatuursensor niet aangesloten of defect",
-      "meaning": "Retourtemperatuursensor niet aangesloten of defect",
-      "causes": [],
-      "checks": []
+      "title": "Retoursensor ontbreekt of is defect",
+      "meaning": "De klassieke Quinta vergrendelt met code 37: retoursensor ontbreekt of is defect.",
+      "causes": [
+        "Stekker of bedrading los, beschadigd of kortgesloten",
+        "Sensor niet correct gemonteerd",
+        "Sensorwaarde buiten bereik of sensor defect"
+      ],
+      "checks": [
+        "Controleer stekker en bedrading",
+        "Controleer montage en positie van de sensor",
+        "Meet de sensor volgens de fabrikantgegevens",
+        "Vervang de sensor indien deze defect is"
+      ]
     },
     {
       "code": "40",
       "title": "Programmeerfout",
-      "meaning": "Programmeerfout",
+      "meaning": "De klassieke Quinta vergrendelt met code 40: programmeerfout.",
       "causes": [
-        "Ga terug naar fabrieksinstellingen, zie Par. 7.4, code b$#."
+        "Interne besturings- of veiligheidsfout",
+        "Aansluiting of onderdeel reageert niet zoals verwacht"
       ],
-      "checks": []
+      "checks": [
+        "Noteer de code en lees de fouthistorie uit",
+        "Controleer bedrading en connectoren",
+        "Herstart alleen nadat de oorzaak is onderzocht",
+        "Raadpleeg de officiële servicehandleiding"
+      ]
     },
     {
       "code": "77",
-      "title": "Ionisatie wegval tijdens bedrijf (na 4 herstarts tijdens 1 warmtevraag)",
-      "meaning": "Ionisatie wegval tijdens bedrijf (na 4 herstarts tijdens 1 warmtevraag)",
+      "title": "Ionisatiewegval tijdens bedrijf",
+      "meaning": "De klassieke Quinta vergrendelt met code 77: ionisatiewegval tijdens bedrijf.",
       "causes": [
-        "Recirculatie rookgassen (interne lekkage of uitmondingsconstructie niet juist)",
-        "Onvoldoende luchttransport door verstopping",
-        "Afstelling van het toestel is niet juist"
+        "Gastoevoer of gasvoordruk niet in orde",
+        "Ontstekings- of ionisatieprobleem",
+        "Gasblok of gasklepregeling defect",
+        "Luchttoevoer, rookgasafvoer of aarding niet in orde"
       ],
-      "checks": []
+      "checks": [
+        "Controleer gastoevoer en gasvoordruk",
+        "Controleer ontstekings-/ionisatie-elektrode, kabel en aarding",
+        "Controleer luchttoevoer en rookgasafvoer",
+        "Controleer gasblok en aansturing volgens het Remeha-voorschrift"
+      ],
+      "note": "Gaszijdige metingen en afstellingen alleen laten uitvoeren door een gecertificeerd monteur."
     }
   ]
 }

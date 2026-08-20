@@ -7,7 +7,9 @@
     deviceId: "",
     tab: "faults",
     faults: [],
+    faultSource: null,
     parameters: [],
+    parameterSource: null,
     combustion: null,
     diagnostics: null,
     faultCode: "",
@@ -21,6 +23,7 @@
 
   let knowledgeRefreshPromise = null;
   let lastKnowledgeRefreshAt = 0;
+  let deviceLoadController = null;
 
   const $ = (id) => document.getElementById(id);
   const refs = {
@@ -130,7 +133,7 @@
     if (state.tab === "faults") {
       thirdSelect("fault", "Storingscode", state.faults.map(f => `<option value="${esc(f.code)}">${esc(f.code)} — ${esc(f.title || f.meaning || "")}</option>`).join(""), "Kies een storingscode", state.faultCode, e => { state.faultCode = e.target.value; renderResult(); progress(); });
     } else if (state.tab === "parameters") {
-      thirdSelect("parameter", "Parameter", state.parameters.map(p => `<option value="${esc(p.code)}">${esc(p.code)} — ${esc(p.description || "")}</option>`).join(""), "Kies een parameter", state.parameterCode, e => { state.parameterCode = e.target.value; renderResult(); progress(); });
+      thirdSelect("parameter", "Parameter", state.parameters.map(p => `<option value="${esc(p.code)}">${esc(p.code)} — ${esc(compactOptionLabel(p.description || ""))}</option>`).join(""), "Kies een parameter", state.parameterCode, e => { state.parameterCode = e.target.value; renderResult(); progress(); });
     } else if (state.tab === "diagnostics") {
       const items = state.diagnostics?.diagnostics || [];
       thirdSelect("diagnostic", "Diagnose", items.map(d => `<option value="${esc(d.id)}">${esc(d.title)}</option>`).join(""), "Kies een diagnose", state.diagnosticId, e => {
@@ -145,10 +148,21 @@
     }
   }
 
+  function compactOptionLabel(value, maximumLength = 88) {
+    const text = String(value ?? "").replace(/\s+/g, " ").trim();
+    if (text.length <= maximumLength) return text;
+    return `${text.slice(0, maximumLength - 1).trimEnd()}…`;
+  }
+
   function manualsHtml(device, source) {
     const manuals = Array.isArray(device?.manuals) && device.manuals.length ? device.manuals : (source?.url ? [{ title: source.title || "Officiële handleiding", url: source.url }] : []);
     if (!manuals.length) return "";
-    return `<div class="manual-links">${manuals.map(m => `<a href="${esc(m.url)}" target="_blank" rel="noopener noreferrer">${esc(m.title || "Officiële handleiding")}</a>`).join("")}</div>`;
+    const typeLabels = { installation: "installatiehandleiding", service: "servicehandleiding", user: "gebruikershandleiding" };
+    return `<div class="manual-links" aria-label="Officiële documentatie">${manuals.map(m => {
+      const action = manuals.length === 1 ? "Open officiële handleiding" : `Open ${typeLabels[m.type] || "officieel document"}`;
+      const title = m.title || "Officiële handleiding";
+      return `<a href="${esc(m.url)}" target="_blank" rel="noopener noreferrer" title="${esc(title)}" aria-label="${esc(`${action}: ${title} (opent in een nieuw venster)`)}"><span>${esc(action)}</span><b aria-hidden="true">↗</b></a>`;
+    }).join("")}</div>`;
   }
 
   function sourceRow(device, data) {
@@ -161,7 +175,7 @@
     if (!fault) return emptyResult("Selecteer de storingscode", "Na je selectie verschijnt hier de betekenis, mogelijke oorzaken en controlevolgorde.");
     const causes = (fault.causes || []).map(c => `<li><span></span><p>${esc(c)}</p></li>`).join("");
     const checks = (fault.checks || []).map((c, i) => `<li><span>${i + 1}</span><p>${esc(c)}</p></li>`).join("");
-    refs.result.innerHTML = `<div class="fault-detail"><div class="fault-header"><div><p class="step-label">STORINGSCODE</p><div class="fault-title-row"><span class="code-badge">${esc(fault.code)}</span><h2>${esc(fault.title || fault.meaning)}</h2></div></div></div><div class="detail-grid"><section><p class="section-kicker">BETEKENIS</p><p class="parameter-explanation">${esc(fault.meaning || fault.title)}</p><p class="section-kicker" style="margin-top:26px">MOGELIJKE OORZAKEN</p><ul class="cause-list">${causes || "<li><p>Niet apart vermeld in de fabrikantdocumentatie.</p></li>"}</ul></section><section><p class="section-kicker">CONTROLEVOLGORDE</p><ol class="check-list">${checks || "<li><span>1</span><p>Raadpleeg de officiële handleiding.</p></li>"}</ol></section></div>${fault.note ? `<div class="notice"><strong>Let op</strong><p>${esc(fault.note)}</p></div>` : ""}${sourceRow(device, { source: sourceOf({source: state.faultSource}, device) })}</div>`;
+    refs.result.innerHTML = `<div class="fault-detail"><div class="fault-header"><div><p class="step-label">STORINGSCODE</p><div class="fault-title-row"><span class="code-badge">${esc(fault.code)}</span><h2>${esc(fault.title || fault.meaning)}</h2></div></div></div><div class="detail-grid"><section><p class="section-kicker">BETEKENIS</p><p class="parameter-explanation">${esc(fault.meaning || fault.title)}</p><p class="section-kicker" style="margin-top:26px">MOGELIJKE OORZAKEN</p><ul class="cause-list">${causes || "<li><p>Niet apart vermeld in de fabrikantdocumentatie.</p></li>"}</ul></section><section><p class="section-kicker">CONTROLEVOLGORDE</p><ol class="check-list">${checks || "<li><span>1</span><p>Raadpleeg de officiële handleiding.</p></li>"}</ol></section></div>${fault.note ? `<div class="notice"><strong>Let op</strong><p>${esc(fault.note)}</p></div>` : ""}${sourceRow(device, { source: state.faultSource })}</div>`;
   }
 
   function displayValue(v, unit) {
@@ -173,15 +187,29 @@
 
   function parameterRows(p) {
     const rows = [];
-    const add = (name, value) => { if (value !== undefined && value !== null && value !== "") rows.push(`<div><dt>${esc(name)}</dt><dd>${esc(displayValue(value))}</dd></div>`); };
-    add("Fabrieksinstelling", p.factoryDefault); add("Instelbereik", p.settingRange); if (p.choices?.length) add("Keuzes", p.choices.join(" · ")); if (p.category) add("Categorie", p.category);
+    const add = (name, value, unit = "") => { if (value !== undefined && value !== null && value !== "") rows.push(`<div><dt>${esc(name)}</dt><dd>${esc(displayValue(value, unit))}</dd></div>`); };
+    add("Fabrieksinstelling", p.factoryDefault, p.unit);
+    add("Instelbereik", p.settingRange);
+    if (p.choices?.length) rows.push(`<div class="parameter-choices-row"><dt>Keuzes</dt><dd><ul class="parameter-choices">${p.choices.map(choice => `<li>${esc(choice)}</li>`).join("")}</ul></dd></div>`);
+    if (p.category) add("Categorie", p.category);
     return rows.join("");
+  }
+
+  function parameterExplanationHtml(p) {
+    const explanation = String(p.technicalExplanation || p.description || "Geen aanvullende toelichting opgenomen.").trim();
+    const note = String(p.note || "").trim();
+    const rangeNote = p.settingRange ? `Officieel instelbereik/keuzen: ${p.settingRange}` : "";
+    const normalize = value => value.replace(/\s+/g, " ").trim().toLocaleLowerCase("nl-NL");
+    const additionalNote = note && normalize(note) !== normalize(rangeNote) ? note : "";
+    const content = `<p class="parameter-explanation">${esc(explanation)}</p>${additionalNote ? `<p class="parameter-addition"><strong>Aanvullende informatie</strong>${esc(additionalNote)}</p>` : ""}`;
+    if (explanation.length + additionalNote.length <= 300) return content;
+    return `<details class="parameter-details"><summary>Bekijk volledige technische toelichting</summary><div>${content}</div></details>`;
   }
 
   function renderParameter() {
     const device = selectedDevice(); const p = state.parameters.find(x => String(x.code) === String(state.parameterCode));
     if (!p) return emptyResult("Selecteer de parameter", "Na je selectie verschijnen de officiële instelling, bereik en technische toelichting.");
-    refs.result.innerHTML = `<div class="fault-detail"><div class="fault-header"><div><p class="step-label">PARAMETER</p><div class="fault-title-row"><span class="code-badge">${esc(p.code)}</span><h2>${esc(p.description || p.code)}</h2></div></div></div><div class="detail-grid"><section><p class="section-kicker">INSTELLING</p><dl class="parameter-list">${parameterRows(p) || "<div><dt>Waarde</dt><dd>Niet opgegeven</dd></div>"}</dl></section><section><p class="section-kicker">TECHNISCHE TOELICHTING</p><p class="parameter-explanation">${esc(p.technicalExplanation || p.description || "Geen aanvullende toelichting opgenomen.")}</p></section></div>${sourceRow(device, { source: state.parameterSource })}</div>`;
+    refs.result.innerHTML = `<div class="fault-detail parameter-detail"><div class="fault-header"><div><p class="step-label">PARAMETER</p><div class="fault-title-row"><span class="code-badge">${esc(p.code)}</span><h2>${esc(p.description || p.code)}</h2></div></div></div><div class="detail-grid"><section><p class="section-kicker">INSTELLING</p><dl class="parameter-list">${parameterRows(p) || "<div><dt>Waarde</dt><dd>Niet opgegeven</dd></div>"}</dl></section><section><p class="section-kicker">TECHNISCHE TOELICHTING</p>${parameterExplanationHtml(p)}</section></div>${sourceRow(device, { source: state.parameterSource })}</div>`;
   }
 
   function measurementRows(item) {
@@ -289,19 +317,25 @@
     const device = selectedDevice();
     if (!device) return;
     if (!silent) refs.dataMessage.classList.add("hidden");
+    deviceLoadController?.abort();
     const controller = new AbortController();
+    deviceLoadController = controller;
 
     try {
       const bundle = await fetchDeviceBundle(device, controller.signal);
+      if (controller.signal.aborted || selectedDevice()?.id !== device.id) return;
       applyDeviceBundle(bundle, { preserveSelection });
       renderTabs(); renderThirdStep(); renderResult(); progress();
       if (!silent) refs.dataMessage.classList.add("hidden");
     } catch (error) {
+      if (error?.name === "AbortError") return;
       if (!silent) {
         refs.dataMessage.textContent = "De gegevens van dit toestel konden niet worden geladen. Controleer de verbinding en probeer opnieuw.";
         refs.dataMessage.classList.remove("hidden");
       }
       console.error(error);
+    } finally {
+      if (deviceLoadController === controller) deviceLoadController = null;
     }
   }
 
@@ -356,6 +390,7 @@
   }
 
   refs.brand.addEventListener("change", () => {
+    deviceLoadController?.abort();
     state.brandId = refs.brand.value; state.deviceId = ""; state.tab = "faults"; state.faults=[];state.parameters=[];state.combustion=null;state.diagnostics=null;
     renderDeviceOptions(); refs.family.classList.add("hidden"); refs.tabs.classList.add("hidden"); refs.thirdStep.innerHTML=""; renderResult(); progress();
   });
@@ -369,6 +404,7 @@
   });
 
   refs.reset.addEventListener("click", () => {
+    deviceLoadController?.abort();
     state.brandId="";state.deviceId="";state.tab="faults";state.faultCode="";state.parameterCode="";state.diagnosticId="";state.diagnosticStep="";state.diagnosticActions=[];
     refs.brand.value=""; renderDeviceOptions(); refs.family.classList.add("hidden"); refs.tabs.classList.add("hidden"); refs.thirdStep.innerHTML=""; refs.dataMessage.classList.add("hidden"); renderResult(); progress();
   });
@@ -410,7 +446,7 @@
   async function registerServiceWorker() {
     if (!("serviceWorker" in navigator) || location.protocol === "file:") return;
     try {
-      const registration = await navigator.serviceWorker.register(appUrl("sw.js?v=5"), { updateViaCache: "none" });
+      const registration = await navigator.serviceWorker.register(appUrl("sw.js?v=4"), { updateViaCache: "none" });
       if (registration.waiting && navigator.serviceWorker.controller) exposeWaiting(registration.waiting);
       registration.addEventListener("updatefound", () => {
         const installing = registration.installing;
