@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "title": "Verbrandingscontrole A-Serie",
+  "measurements": [
+    {
+      "label": "O₂ vollast — aardgas",
+      "value": 4.7,
+      "minimum": 3.6,
+      "maximum": 5.5,
+      "unit": "%",
+      "load": "Vollast",
+      "condition": "Gesloten mantel/luchtkast"
+    },
+    {
+      "label": "O₂ vollast — propaan",
+      "value": 5.1,
+      "minimum": 4.1,
+      "maximum": 5.8,
+      "unit": "%",
+      "load": "Vollast",
+      "condition": "Gesloten mantel/luchtkast"
+    },
+    {
+      "label": "O₂ laaglast — aardgas",
+      "value": "Minimaal 0,5% hoger dan gemeten vollastwaarde; maximaal 7,5%",
+      "unit": "%",
+      "load": "Laaglast",
+      "condition": "Gesloten mantel/luchtkast"
+    },
+    {
+      "label": "O₂ laaglast — propaan",
+      "value": "Minimaal 0,2% hoger dan gemeten vollastwaarde; maximaal 7,3%",
+      "unit": "%",
+      "load": "Laaglast",
+      "condition": "Gesloten mantel/luchtkast"
+    }
+  ],
+  "settings": [],
+  "measurementConditions": [
+    "Gebruik een gekalibreerd O₂-meetinstrument.",
+    "Meet volgens de rookgasanalyseprocedure in de officiële handleiding.",
+    "Waarden gelden bij gesloten mantel/luchtkast waar de handleiding dit expliciet vermeldt."
+  ],
+  "technicalExplanation": "Gebruik de O₂-waarden voor de juiste gassoort en belasting zoals in de officiële ATAG-handleiding aangegeven.",
+  "notes": [],
+  "sourcePage": "48, 49, 50, 57",
+  "verified": false,
+  "deviceId": "a-serie"
+}

@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "a-serie",
+  "source": {
+    "title": "Atag A-Serie",
+    "url": "https://atag.compano.com/Data/Environments/000001/Attachment/Bijlage/Documents/InstallationManual/8A515804%20INST%20VRSCHR%20A%20SERIE%20V0917.pdf"
+  },
+  "parameters": [
+    {
+      "code": "518",
+      "description": "Gradiënt snelheid CV",
+      "category": "",
+      "factoryDefault": "5",
+      "settingRange": "0 - 15 (0 = uit)",
+      "choices": [],
+      "technicalExplanation": "Instelbereik 0 t/m 15. Waarde 0 schakelt de functie uit.",
+      "sourcePage": 45
+    },
+    {
+      "code": "520",
+      "description": "Nachtverlagingstemperatuur",
+      "category": "",
+      "factoryDefault": "5",
+      "settingRange": "0 - 10 K",
+      "choices": [],
+      "technicalExplanation": "Alleen actief bij 100% weersafhankelijk regelen. De dagtemperatuur wordt met deze waarde verlaagd.",
+      "sourcePage": 45
+    },
+    {
+      "code": "532",
+      "description": "Stooklijn CV-watertemperatuur",
+      "category": "",
+      "factoryDefault": "24",
+      "settingRange": "1 - 40",
+      "choices": [],
+      "technicalExplanation": "Instelling van de CV-stooklijn. Zie ook de stooklijngrafiek in de handleiding.",
+      "sourcePage": 45
+    },
+    {
+      "code": "541",
+      "description": "Maximaal vermogen CV",
+      "category": "",
+      "factoryDefault": "max.",
+      "settingRange": "0 - max.",
+      "choices": [],
+      "technicalExplanation": "Maximaal CV-vermogen in %. Alleen reduceren; niet verhogen. 0 = laaglast.",
+      "sourcePage": 45
+    },
+    {
+      "code": "555",
+      "description": "Buitenvoelerfuncties",
+      "category": "",
+      "factoryDefault": "",
+      "settingRange": "Functies per bit b0 t/m b7",
+      "choices": [
+        "b0 en b1 = geen functie; niet wijzigen",
+        "b2 off = weersafhankelijk regelen met kamerthermostaat",
+        "b2 on = 100% weersafhankelijk regelen volgens dag- en nachtstooklijn",
+        "b3 = geen functie; niet wijzigen",
+        "b4 = vorstbeveiliging CV-installatie",
+        "b5 t/m b7 = geen functie; niet wijzigen"
+      ],
+      "technicalExplanation": "b0 en b1 — geen functie; niet wijzigen. b2 — off: weersafhankelijk met kamerthermostaat; on: 100% weersafhankelijk volgens dag- en nachtstooklijn. b3 — geen functie; niet wijzigen. b4 — vorstbeveiliging CV-installatie. b5 t/m b7 — geen functie; niet wijzigen.",
+      "sourcePage": 45
+    },
+    {
+      "code": "637",
+      "description": "Niet wijzigen",
+      "category": "",
+      "factoryDefault": "4,6",
+      "settingRange": "",
+      "choices": [],
+      "technicalExplanation": "Niet wijzigen.",
+      "sourcePage": 45
+    },
+    {
+      "code": "651",
+      "description": "Niet wijzigen",
+      "category": "",
+      "factoryDefault": "1",
+      "settingRange": "1 - 3",
+      "choices": [
+        "1 = Aardgas 1",
+        "2 = Aardgas 2 en met terugslagklep bij collectieve rookgasafvoer (HP-versie)",
+        "3 = Propaan"
+      ],
+      "technicalExplanation": "Niet wijzigen. Keuzes volgens de handleiding: 1 = Aardgas 1; 2 = Aardgas 2 en met terugslagklep bij collectieve rookgasafvoer (HP-versie); 3 = Propaan. Na wijzigen en OK volgt een volledige herstart en start het ontluchtingsprogramma.",
+      "sourcePage": 45
+    },
+    {
+      "code": "652",
+      "description": "Snelselectie instellingen CV-installatie",
+      "category": "",
+      "factoryDefault": "0",
+      "settingRange": "1 - 4",
+      "choices": [
+        "1 = CV Tmax 85 °C; gradiënt 5; stooklijn 24",
+        "2 = CV Tmax 70 °C; gradiënt 5; stooklijn 19",
+        "3 = CV Tmax 60 °C; gradiënt 4; stooklijn 15",
+        "4 = CV Tmax 50 °C; gradiënt 3; stooklijn 11"
+      ],
+      "technicalExplanation": "Kopieert de gekozen waarden naar CV Tmax, P518 en P532. De waarden blijven daarna afzonderlijk instelbaar. Na verstelling geeft parameter 652 weer 0 aan.",
+      "sourcePage": 45
+    },
+    {
+      "code": "680",
+      "description": "Service-parameter",
+      "category": "",
+      "factoryDefault": "0",
+      "settingRange": "0 - 10",
+      "choices": [],
+      "technicalExplanation": "Niet wijzigen.",
+      "sourcePage": 45
+    },
+    {
+      "code": "681",
+      "description": "Groene toets functie",
+      "category": "",
+      "factoryDefault": "off",
+      "settingRange": "b7: off / on",
+      "choices": [
+        "b0 t/m b6 = geen functie",
+        "b7 = fabrieksinstellingen terugzetten"
+      ],
+      "technicalExplanation": "b0 t/m b6 — geen functie. b7 — zet, afhankelijk van het niveau, de fabrieksinstellingen terug na bevestiging met OK; P651 blijft ongewijzigd.",
+      "sourcePage": 45
+    },
+    {
+      "code": "682",
+      "description": "Dynamische functies",
+      "category": "",
+      "factoryDefault": "",
+      "settingRange": "Functies per bit",
+      "choices": [
+        "b0 = niet wijzigen",
+        "b1 t/m b6 = geen functie",
+        "b7 = bevestiging service-parameter"
+      ],
+      "technicalExplanation": "b0 — niet wijzigen. b1 t/m b6 — geen functie. b7 — bevestiging service-parameter.",
+      "sourcePage": 45
+    },
+    {
+      "code": "683",
+      "description": "Correctiefactor ventilatortoerental t.b.v. Miniflex",
+      "category": "",
+      "factoryDefault": "0%",
+      "settingRange": "OSS1: 0 - 15%; OSS2: 0 - 30%",
+      "choices": [],
+      "technicalExplanation": "Verhoogt het toerentalbereik met het ingestelde percentage. Zie de tabel bij rookgasafvoerlengtes en vermeld de instelling op de sticker.",
+      "sourcePage": 45
+    },
+    {
+      "code": "684",
+      "description": "Pompfunctie",
+      "category": "",
+      "factoryDefault": "b0 = off; b1 = on",
+      "settingRange": "b0: off / on; b1: off / on",
+      "choices": [
+        "b0: off = pomp automatisch; on = pomp continu",
+        "b1: off = warmwater Eco; on = warmwater Comfort"
+      ],
+      "technicalExplanation": "b0 — Pomp: off = automatisch; on = continu. b1 — Warmwater: off = Eco; on = Comfort. Als beide op on staan, is 'pomp continu' leidend i.v.m. bevriezingsgevaar.",
+      "sourcePage": 45
+    },
+    {
+      "code": "687",
+      "description": "Niet wijzigen",
+      "category": "",
+      "factoryDefault": "4,0",
+      "settingRange": "",
+      "choices": [],
+      "technicalExplanation": "Niet wijzigen.",
+      "sourcePage": 45
+    }
+  ]
+}

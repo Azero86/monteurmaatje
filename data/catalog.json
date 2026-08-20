@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordCount": 2089,
+  "recordCount": 2107,
   "brands": [
     {
       "id": "intergas",
@@ -499,6 +499,37 @@
           "sourceTitle": "Nefit Bosch installatie- en onderhoudsinstructie 9700i HR(C), document 6721875843 (2024/02)",
           "sourceUrl": "https://www.nefit-bosch.nl/media/country_pool/professioneel/documenten/hr-ketels/6721875843.pdf",
           "combustionPath": "data/nefit/9700i/combustion.json"
+        }
+      ]
+    },
+    {
+      "id": "atag",
+      "name": "ATAG",
+      "devices": [
+        {
+          "id": "a-serie",
+          "name": "A-Serie",
+          "deviceType": "boiler",
+          "family": "A203C / A203EC / A244CL / A244EC / A285C / A285EC",
+          "faultsPath": "data/atag/a-serie/faults.json",
+          "parametersPath": "data/atag/a-serie/parameters.json",
+          "recordCount": 18,
+          "sourceTitle": "Atag A-Serie",
+          "sourceUrl": "https://atag.compano.com/Data/Environments/000001/Attachment/Bijlage/Documents/InstallationManual/8A515804%20INST%20VRSCHR%20A%20SERIE%20V0917.pdf",
+          "combustionPath": "data/atag/a-serie/combustion.json",
+          "manuals": [
+            {
+              "type": "installation",
+              "title": "Handleiding",
+              "url": "https://atag.compano.com/Data/Environments/000001/Attachment/Bijlage/Documents/InstallationManual/8A515804%20INST%20VRSCHR%20A%20SERIE%20V0917.pdf",
+              "language": "nl",
+              "market": "NL",
+              "official": true,
+              "documentNumber": "",
+              "revision": "",
+              "notes": ""
+            }
+          ]
         }
       ]
     }

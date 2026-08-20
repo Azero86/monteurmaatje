@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "a-serie",
+  "source": {
+    "title": "Atag A-Serie",
+    "url": "https://atag.compano.com/Data/Environments/000001/Attachment/Bijlage/Documents/InstallationManual/8A515804%20INST%20VRSCHR%20A%20SERIE%20V0917.pdf"
+  },
+  "faults": [
+    {
+      "code": "C1 05",
+      "codeType": "storing",
+      "title": "Ontluchtingsprogramma actief (ca. 7 minuten)",
+      "meaning": "Ontluchtingsprogramma actief (ca. 7 minuten)",
+      "causes": [],
+      "checks": [],
+      "sourcePage": 56
+    },
+    {
+      "code": "C1 10",
+      "codeType": "storing",
+      "title": "Veiligheidstemperatuur overschreden",
+      "meaning": "Veiligheidstemperatuur overschreden",
+      "causes": [],
+      "checks": [],
+      "sourcePage": 56
+    },
+    {
+      "code": "C1 11",
+      "codeType": "storing",
+      "title": "Maximaal temperatuur overschreden",
+      "meaning": "Maximaal temperatuur overschreden",
+      "causes": [],
+      "checks": [],
+      "sourcePage": 56
+    },
+    {
+      "code": "C1 17",
+      "codeType": "storing",
+      "title": "Druk te hoog (>3 bar) of pompdrukverhoging te hoog",
+      "meaning": "Druk te hoog (>3 bar) of pompdrukverhoging te hoog",
+      "causes": [],
+      "checks": [],
+      "sourcePage": 56
+    },
+    {
+      "code": "C1 18",
+      "codeType": "storing",
+      "title": "Druk te laag (<0,7 bar) of pompdrukverhoging te laag (geen pomp detectie)",
+      "meaning": "Druk te laag (<0,7 bar) of pompdrukverhoging te laag (geen pomp detectie)",
+      "causes": [],
+      "checks": [
+        "Handmatig deblokkeren van de ketelpomp"
+      ],
+      "sourcePage": 56
+    },
+    {
+      "code": "C1 29",
+      "codeType": "storing",
+      "title": "Ventilator fout (ventilator start niet op)",
+      "meaning": "Ventilator fout (ventilator start niet op)",
+      "causes": [],
+      "checks": [],
+      "sourcePage": 56
+    },
+    {
+      "code": "C1 33",
+      "codeType": "storing",
+      "title": "Geen vlam na 5 ontsteekpogingen",
+      "meaning": "Geen vlam na 5 ontsteekpogingen",
+      "causes": [],
+      "checks": [],
+      "sourcePage": 56
+    },
+    {
+      "code": "C1 51",
+      "codeType": "storing",
+      "title": "Ventilator fout (toerentalregeling wordt niet gehaald of ligt buiten range) of defecte stuurautomaat",
+      "meaning": "Ventilator fout (toerentalregeling wordt niet gehaald of ligt buiten range) of defecte stuurautomaat",
+      "causes": [],
+      "checks": [],
+      "sourcePage": 56
+    },
+    {
+      "code": "C1 52",
+      "codeType": "storing",
+      "title": "Instelling buitenvoeler niet juist. Parameter 555 b0 en/of b1 staat ten onrechte op 'on'",
+      "meaning": "Instelling buitenvoeler niet juist. Parameter 555 b0 en/of b1 staat ten onrechte op 'on'",
+      "causes": [],
+      "checks": [],
+      "sourcePage": 56
+    },
+    {
+      "code": "C1 54",
+      "codeType": "storing",
+      "title": "Aanvoer stijgt te snel, ΔT te groot, retour > aanvoer",
+      "meaning": "Aanvoer stijgt te snel, ΔT te groot, retour > aanvoer",
+      "causes": [],
+      "checks": [],
+      "sourcePage": 56
+    },
+    {
+      "code": "C1 80",
+      "codeType": "storing",
+      "title": "Geen storing: kortstondig te zien bij verlaten van schoorsteenvegerfunctie",
+      "meaning": "Geen storing: kortstondig te zien bij verlaten van schoorsteenvegerfunctie",
+      "causes": [],
+      "checks": [],
+      "sourcePage": 56
+    },
+    {
+      "code": "C1 81",
+      "codeType": "storing",
+      "title": "Geen storing: kortstondig te zien bij verlaten van 'gaspedaalfunctie'",
+      "meaning": "Geen storing: kortstondig te zien bij verlaten van 'gaspedaalfunctie'",
+      "causes": [],
+      "checks": [],
+      "sourcePage": 56
+    },
+    {
+      "code": "C 10",
+      "codeType": "storing",
+      "title": "Buitenvoeler fout (bv. open, kortgesloten, buiten range)",
+      "meaning": "Buitenvoeler fout (bv. open, kortgesloten, buiten range)",
+      "causes": [],
+      "checks": [],
+      "sourcePage": 56
+    },
+    {
+      "code": "C 20",
+      "codeType": "storing",
+      "title": "Aanvoersensor fout (bv. open, kortgesloten, buiten range)",
+      "meaning": "Aanvoersensor fout (bv. open, kortgesloten, buiten range)",
+      "causes": [],
+      "checks": [],
+      "sourcePage": 56
+    },
+    {
+      "code": "C 40",
+      "codeType": "storing",
+      "title": "Retoursensor fout (bv. open, kortgesloten, buiten range)",
+      "meaning": "Retoursensor fout (bv. open, kortgesloten, buiten range)",
+      "causes": [],
+      "checks": [],
+      "sourcePage": 56
+    },
+    {
+      "code": "C 50",
+      "codeType": "storing",
+      "title": "Warmwatersensor fout (bv. open, kortgesloten, buiten range)",
+      "meaning": "Warmwatersensor fout (bv. open, kortgesloten, buiten range)",
+      "causes": [],
+      "checks": [],
+      "sourcePage": 56
+    },
+    {
+      "code": "C 61",
+      "codeType": "storing",
+      "title": "Geen communicatie via Z-bus (reset alleen mogelijk door spanningsonderbreking)",
+      "meaning": "Geen communicatie via Z-bus (reset alleen mogelijk door spanningsonderbreking)",
+      "causes": [],
+      "checks": [],
+      "sourcePage": 56
+    },
+    {
+      "code": "C 78",
+      "codeType": "storing",
+      "title": "Waterdruksensor buiten range of niet aangesloten of, indien waterdruk OK: pomp defect",
+      "meaning": "Waterdruksensor buiten range of niet aangesloten of, indien waterdruk OK: pomp defect",
+      "causes": [],
+      "checks": [],
+      "sourcePage": 56
+    }
+  ]
+}
