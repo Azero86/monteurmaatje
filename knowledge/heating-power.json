@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "title": "CV-vermogen instellen",
+  "calculator": {
+    "radiatorKw": 2.0,
+    "floorZoneKw": 1.5,
+    "reserveKw": 1.0,
+    "disclaimer": "Praktijk-vuistregel, geen warmteverliesberekening. Beoordeel de definitieve instelling op woning en installatie."
+  },
+  "devices": {
+    "hre": {
+      "parameterCode": "3",
+      "maxFlowTemperatureCode": "5."
+    },
+    "hreco": {
+      "parameterCode": "3",
+      "maxFlowTemperatureCode": "5."
+    },
+    "xtreme": {
+      "parameterCode": "P010",
+      "maxFlowTemperatureCode": "P059"
+    },
+    "avanta-classic": {
+      "parameterCode": "P17",
+      "maxFlowTemperatureCode": "P1"
+    },
+    "quinta-classic": {
+      "parameterCode": "^",
+      "maxFlowTemperatureCode": "!"
+    },
+    "quinta-pro": {
+      "parameterCode": "P17",
+      "maxFlowTemperatureCode": "P23"
+    },
+    "quinta-ace": {
+      "parameterCode": "GP007",
+      "maxFlowTemperatureCode": null
+    },
+    "tzerra-ace": {
+      "parameterCode": "GP007",
+      "maxFlowTemperatureCode": "CP000"
+    },
+    "calenta-ace": {
+      "parameterCode": "GP007",
+      "maxFlowTemperatureCode": null
+    },
+    "avanta-ace": {
+      "parameterCode": "GP007",
+      "maxFlowTemperatureCode": "CP000"
+    },
+    "tzerra-ace-matic": {
+      "parameterCode": "GP088",
+      "maxFlowTemperatureCode": "CP000"
+    },
+    "calenta-ace-matic": {
+      "parameterCode": "GP088",
+      "maxFlowTemperatureCode": "CP000"
+    },
+    "calenta-ace-matic-40l": {
+      "parameterCode": "GP088",
+      "maxFlowTemperatureCode": "CP000"
+    },
+    "ecotec-plus-cs": {
+      "parameterCode": "D.000",
+      "maxFlowTemperatureCode": "D.071"
+    },
+    "ecotec-exclusive-cf": {
+      "parameterCode": "D.000",
+      "maxFlowTemperatureCode": "D.071"
+    },
+    "ecofit-pro-6-3": {
+      "parameterCode": "d.00",
+      "maxFlowTemperatureCode": "d.71"
+    },
+    "ecotec-classic-5-3": {
+      "parameterCode": "D.000",
+      "maxFlowTemperatureCode": "D.071"
+    },
+    "ecotec-plus-5-5": {
+      "parameterCode": "D.000",
+      "maxFlowTemperatureCode": "D.071"
+    },
+    "ecotec-exclusive-5-7": {
+      "parameterCode": "D.000",
+      "maxFlowTemperatureCode": "D.071"
+    },
+    "ecotec-pure-7-2": {
+      "parameterCode": "d.00",
+      "maxFlowTemperatureCode": "d.71"
+    },
+    "proline-nxt": {
+      "parameterCode": "P2",
+      "maxFlowTemperatureCode": "P1"
+    },
+    "proline-eco": {
+      "parameterCode": "P2",
+      "maxFlowTemperatureCode": "P1"
+    },
+    "topline-compact": {
+      "parameterCode": "1.3",
+      "maxFlowTemperatureCode": "1.2"
+    },
+    "topline": {
+      "parameterCode": "Maximaal cv-vermogen",
+      "maxFlowTemperatureCode": "Maximale cv-watertemperatuur"
+    },
+    "topline-ii": {
+      "parameterCode": "Maximaal cv-vermogen",
+      "maxFlowTemperatureCode": "Maximale cv-watertemperatuur"
+    },
+    "trendline-ii": {
+      "parameterCode": "Maximaal cv-vermogen",
+      "maxFlowTemperatureCode": "Maximale cv-watertemperatuur"
+    },
+    "trendline-ii-aquapower-plus": {
+      "parameterCode": "Maximaal cv-vermogen",
+      "maxFlowTemperatureCode": "Maximale cv-watertemperatuur"
+    },
+    "9700i": {
+      "parameterCode": "Max. cv-verm.",
+      "maxFlowTemperatureCode": "Max. aanvoertemp."
+    },
+    "a-serie": {
+      "parameterCode": "541",
+      "maxFlowTemperatureCode": null
+    },
+    "hrc": {
+      "parameterCode": "5.0",
+      "maxFlowTemperatureCode": "2.5"
+    },
+    "hrs-hrc-top": {
+      "parameterCode": "5.0",
+      "maxFlowTemperatureCode": "2.5"
+    },
+    "hrs-hrc-heatronic3": {
+      "parameterCode": "1.A",
+      "maxFlowTemperatureCode": "2.b"
+    }
+  },
+  "toolTitle": "CV-installatie afstellen",
+  "toolNote": "De vermogensberekening is een praktische startwaarde. Aanvoertemperatuur wordt afzonderlijk ingesteld en verandert de berekende warmtevraag niet."
+}

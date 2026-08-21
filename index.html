@@ -256,18 +256,114 @@
   </section>
 
   <section id="knowledgeView" class="app-view info-view hidden-view" data-app-view="knowledge" aria-labelledby="knowledgeTitle">
-    <div class="info-shell">
-      <p class="section-kicker">PRAKTISCHE VAKINFORMATIE</p>
-      <h1 id="knowledgeTitle">Kennis</h1>
-      <p class="info-intro">Hier komt later aanvullende technische vakinformatie die niet aan één specifiek toestel gekoppeld is.</p>
-      <div class="info-grid">
-        <article class="info-card">
-          <span class="info-icon" aria-hidden="true">i</span>
-          <div><h2>Technische kennis</h2><p>Praktische uitleg, controles en hulpmiddelen voor onderweg.</p></div>
-          <span class="coming-badge">Binnenkort</span>
-        </article>
-      </div>
-      <p class="info-note">Voor nu is dit een vaste plek in de navigatie zodat de toekomstige app-opzet al zichtbaar is.</p>
+    <div class="info-shell knowledge-shell">
+      <p class="section-kicker">PRAKTISCHE INSTALLATIEHULP</p>
+      <h1 id="knowledgeTitle">Tools</h1>
+      <p class="info-intro">Snelle praktijktools voor het instellen en beoordelen van installaties. De monteur bepaalt altijd de definitieve instelling.</p>
+
+      <article class="knowledge-tool">
+        <div class="knowledge-tool-head">
+          <span class="info-icon knowledge-tool-icon" aria-hidden="true">kW</span>
+          <div>
+            <p class="step-label">CV-INSTALLATIE</p>
+            <h2>CV-installatie afstellen</h2>
+            <p>Praktische startwaarde voor CV-vermogen, daarna direct de juiste toestelinstellingen erbij.</p>
+          </div>
+        </div>
+
+        <div class="knowledge-calc-grid">
+          <div class="knowledge-fields">
+            <div class="knowledge-field">
+              <label for="powerRadiators">Gebruikte radiatoren</label>
+              <div class="number-wrap">
+                <button type="button" data-number-target="powerRadiators" data-number-step="-1" aria-label="Radiator minder">−</button>
+                <input id="powerRadiators" type="number" inputmode="numeric" min="0" max="30" step="1" value="0">
+                <button type="button" data-number-target="powerRadiators" data-number-step="1" aria-label="Radiator meer">+</button>
+              </div>
+              <small>Praktijkregel: 2 kW per radiator die daadwerkelijk gebruikt wordt.</small>
+            </div>
+            <div class="knowledge-field">
+              <label for="powerFloorZones">Vloerverwarmingszones</label>
+              <div class="number-wrap">
+                <button type="button" data-number-target="powerFloorZones" data-number-step="-1" aria-label="Zone minder">−</button>
+                <input id="powerFloorZones" type="number" inputmode="numeric" min="0" max="10" step="1" value="0">
+                <button type="button" data-number-target="powerFloorZones" data-number-step="1" aria-label="Zone meer">+</button>
+              </div>
+              <small>Praktijkregel: 1,5 kW per gebruikte vloerverwarmingszone.</small>
+            </div>
+          </div>
+
+          <div class="power-result-card" aria-live="polite">
+            <p class="section-kicker">STAP 1 · BEREKEN RICHTWAARDE</p>
+            <h3 class="power-result-title">Richtwaarde maximaal CV-vermogen</h3>
+            <div class="power-total"><strong id="powerAdvice">—</strong><span id="powerAdviceUnit"></span></div>
+            <dl class="power-breakdown">
+              <div><dt>Radiatoren</dt><dd id="powerRadiatorResult">0,0 kW</dd></div>
+              <div><dt>Vloerverwarming</dt><dd id="powerFloorResult">0,0 kW</dd></div>
+              <div><dt>Praktijkreserve</dt><dd id="powerReserveResult">—</dd></div>
+            </dl>
+            <p class="power-disclaimer">Praktijk-vuistregel, geen warmteverliesberekening.</p>
+          </div>
+        </div>
+
+        <div class="power-device-linker">
+          <div class="power-device-head">
+            <div>
+              <p class="step-label">STAP 2 · KIES KETEL</p>
+              <h3>Welke ketel staat er?</h3>
+            </div>
+            <span class="power-live-badge">Bestaande parameterdata</span>
+          </div>
+
+          <div class="power-device-selects">
+            <div class="knowledge-field">
+              <label for="powerBrand">Merk</label>
+              <div class="select-wrap">
+                <select id="powerBrand"><option value="">Kies een merk</option></select>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+              </div>
+            </div>
+            <div class="knowledge-field">
+              <label for="powerDevice">Ketel</label>
+              <div class="select-wrap">
+                <select id="powerDevice" disabled><option value="">Kies eerst een merk</option></select>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <div id="powerParameterResult" class="power-parameter-empty">
+            Kies merk en ketel. MonteurMaatje toont daarna direct de bestaande parameter waarmee het maximale CV-vermogen wordt ingesteld.
+          </div>
+
+          <section class="power-followup">
+            <div class="power-followup-head">
+              <p class="step-label">STAP 3 · AANVOERTEMPERATUUR</p>
+              <h3>Maximale CV-aanvoertemperatuur</h3>
+              <p>Stel de aanvoertemperatuur los van het maximale CV-vermogen in. Kies hem zo laag als praktisch mogelijk, zolang de installatie de woning comfortabel warm krijgt.</p>
+            </div>
+            <div id="powerTemperatureParameterResult" class="power-parameter-empty">
+              Kies eerst een ketel. Als de huidige toesteldata een eenduidige maximale CV-aanvoertemperatuur bevat, verschijnt die parameter hier.
+            </div>
+          </section>
+
+          <section class="power-followup">
+            <div class="power-followup-head">
+              <p class="step-label">STAP 4 · CONTROLE NA AFSTELLEN</p>
+              <h3>Beoordeel het installatiegedrag</h3>
+            </div>
+            <ul class="power-checklist">
+              <li><span>✓</span><p>Wordt de woning bij warmtevraag goed en gelijkmatig warm?</p></li>
+              <li><span>✓</span><p>Loopt de ketel rustig door zonder onnodig snel in- en uitschakelen?</p></li>
+              <li><span>✓</span><p>Bereikt de ketel niet direct zijn maximale aanvoertemperatuur terwijl de woning nog warmte vraagt?</p></li>
+              <li><span>✓</span><p>Controleer doorstroming en pompinstelling als afgifte of temperatuurverdeling niet logisch is.</p></li>
+            </ul>
+            <p class="power-disclaimer">De tool geeft een praktische startinstelling. De monteur bepaalt de definitieve instelling op basis van woning, installatie en werkelijk gedrag.</p>
+          </section>
+        </div>
+      </article>
+
+      <p class="info-note">De berekening geeft een praktische richtwaarde. Gebruik de toestelparameter en je vakkennis om de definitieve instelling te bepalen.</p>
     </div>
   </section>
 
@@ -282,7 +378,7 @@
     </button>
     <button class="bottom-nav-item" type="button" data-nav-target="knowledge">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H11a3 3 0 0 1 3 3v15a3 3 0 0 0-3-3H6.5A2.5 2.5 0 0 0 4 20.5zm16 0A2.5 2.5 0 0 0 17.5 3H14v18a3 3 0 0 1 3-3h.5a2.5 2.5 0 0 1 2.5 2.5z"/></svg>
-      <span>Kennis</span>
+      <span>Tools</span>
     </button>
   </nav>
 </main>

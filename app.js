@@ -459,12 +459,254 @@
     } catch (error) { console.warn("Serviceworker kon niet worden geregistreerd", error); }
   }
 
+
+  // Kennis: praktische CV-vermogensrichtwaarde + koppeling aan bestaande parameterdata.
+  let heatingPowerKnowledge = null;
+
+  function numberValue(id) {
+    const input = document.getElementById(id);
+    if (!input) return 0;
+    const min = Number(input.min || 0);
+    const max = Number(input.max || Number.MAX_SAFE_INTEGER);
+    const value = Math.max(min, Math.min(max, Number(input.value) || 0));
+    input.value = String(value);
+    return value;
+  }
+
+  function formatKw(value) {
+    return Number(value).toLocaleString("nl-NL", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  }
+
+  function renderHeatingPowerAdvice() {
+    if (!heatingPowerKnowledge) return;
+    const radiators = numberValue("powerRadiators");
+    const floorZones = numberValue("powerFloorZones");
+    const rules = heatingPowerKnowledge.calculator;
+
+    const radiatorKw = radiators * Number(rules.radiatorKw || 0);
+    const floorKw = floorZones * Number(rules.floorZoneKw || 0);
+    const hasInput = radiators > 0 || floorZones > 0;
+    const reserveKw = hasInput ? Number(rules.reserveKw || 0) : 0;
+    const total = radiatorKw + floorKw + reserveKw;
+
+    const advice = document.getElementById("powerAdvice");
+    const adviceUnit = document.getElementById("powerAdviceUnit");
+    const radiatorResult = document.getElementById("powerRadiatorResult");
+    const floorResult = document.getElementById("powerFloorResult");
+    const reserveResult = document.getElementById("powerReserveResult");
+
+    if (advice) advice.textContent = hasInput ? formatKw(total) : "—";
+    if (adviceUnit) adviceUnit.textContent = hasInput ? "kW" : "";
+    if (radiatorResult) radiatorResult.textContent = `${formatKw(radiatorKw)} kW`;
+    if (floorResult) floorResult.textContent = `${formatKw(floorKw)} kW`;
+    if (reserveResult) reserveResult.textContent = hasInput ? `+ ${formatKw(reserveKw)} kW` : "—";
+
+    const linked = document.getElementById("powerLinkedAdvice");
+    if (linked) linked.textContent = hasInput ? `${formatKw(total)} kW` : "Nog geen richtwaarde";
+  }
+
+  function heatingPowerBrands() {
+    if (!state.catalog || !heatingPowerKnowledge) return [];
+    const mappedIds = new Set(Object.keys(heatingPowerKnowledge.devices || {}));
+    return state.catalog.brands.map(brand => ({
+      ...brand,
+      devices: (brand.devices || []).filter(device => device.deviceType === "boiler" && mappedIds.has(device.id)),
+    })).filter(brand => brand.devices.length);
+  }
+
+  function populateHeatingPowerBrands() {
+    const brandSelect = document.getElementById("powerBrand");
+    if (!brandSelect) return;
+    const current = brandSelect.value;
+    const brands = heatingPowerBrands();
+    brandSelect.innerHTML = `<option value="">Kies een merk</option>${brands.map(
+      brand => `<option value="${esc(brand.id)}">${esc(brand.name)}</option>`
+    ).join("")}`;
+    if (brands.some(brand => brand.id === current)) brandSelect.value = current;
+    populateHeatingPowerDevices();
+  }
+
+  function populateHeatingPowerDevices() {
+    const brandSelect = document.getElementById("powerBrand");
+    const deviceSelect = document.getElementById("powerDevice");
+    if (!brandSelect || !deviceSelect) return;
+    const brand = heatingPowerBrands().find(item => item.id === brandSelect.value);
+    deviceSelect.disabled = !brand;
+    deviceSelect.innerHTML = `<option value="">${brand ? "Kies een ketel" : "Kies eerst een merk"}</option>${
+      (brand?.devices || []).map(device => `<option value="${esc(device.id)}">${esc(device.name)}</option>`).join("")
+    }`;
+    renderHeatingPowerParameter();
+  }
+
+  function installationParameterCard(parameter, device, data, kicker, noteHtml = "") {
+    const rows = [];
+    if (parameter.factoryDefault !== undefined && parameter.factoryDefault !== null && parameter.factoryDefault !== "") {
+      rows.push(`<div><dt>Fabrieksinstelling</dt><dd>${esc(displayValue(parameter.factoryDefault, parameter.unit))}</dd></div>`);
+    }
+    if (parameter.settingRange) rows.push(`<div><dt>Instelbereik</dt><dd>${esc(parameter.settingRange)}</dd></div>`);
+    if (parameter.choices?.length) {
+      rows.push(`<div><dt>Keuzes</dt><dd>${parameter.choices.map(choice => `<span class="power-choice">${esc(choice)}</span>`).join("")}</dd></div>`);
+    }
+    const source = sourceOf(data, device);
+    return `
+      <div class="power-parameter-title">
+        <div>
+          <p class="step-label">${esc(kicker)}</p>
+          <div class="power-code-row"><span class="code-badge">${esc(parameter.code)}</span><h4>${esc(parameter.description || parameter.code)}</h4></div>
+        </div>
+      </div>
+      ${rows.length ? `<dl class="power-parameter-rows">${rows.join("")}</dl>` : ""}
+      ${parameter.technicalExplanation ? `<p class="power-parameter-explanation">${esc(parameter.technicalExplanation)}</p>` : ""}
+      ${noteHtml}
+      ${source?.url ? `<a class="power-source-link" href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">Open officiële handleiding ↗</a>` : ""}
+    `;
+  }
+
+  async function renderHeatingTemperatureParameter() {
+    const result = document.getElementById("powerTemperatureParameterResult");
+    const brandId = document.getElementById("powerBrand")?.value || "";
+    const deviceId = document.getElementById("powerDevice")?.value || "";
+    if (!result) return;
+
+    if (!brandId || !deviceId) {
+      result.className = "power-parameter-empty";
+      result.textContent = "Kies eerst een ketel. Als de huidige toesteldata een eenduidige maximale CV-aanvoertemperatuur bevat, verschijnt die parameter hier.";
+      return;
+    }
+
+    const brand = state.catalog?.brands?.find(item => item.id === brandId);
+    const device = brand?.devices?.find(item => item.id === deviceId);
+    const map = heatingPowerKnowledge?.devices?.[deviceId];
+    const code = map?.maxFlowTemperatureCode;
+
+    if (!code || !device?.parametersPath) {
+      result.className = "power-parameter-empty";
+      result.textContent = "Voor dit toestel is in de huidige dataset geen eenduidige maximale CV-aanvoertemperatuurparameter gekoppeld. MonteurMaatje vult hier niets zelf voor in.";
+      return;
+    }
+
+    result.className = "power-parameter-card is-loading";
+    result.innerHTML = "<p>Temperatuurparameter laden…</p>";
+
+    try {
+      const data = await loadJson(device.parametersPath);
+      const parameter = (data.parameters || []).find(item => String(item.code) === String(code));
+      if (!parameter) throw new Error(`Temperatuurparameter ${code} niet gevonden`);
+
+      result.className = "power-parameter-card";
+      result.innerHTML = installationParameterCard(
+        parameter,
+        device,
+        data,
+        "MAXIMALE CV-AANVOERTEMPERATUUR",
+        `<div class="power-parameter-note"><strong>Let op:</strong> aanvoertemperatuur en maximaal CV-vermogen zijn twee afzonderlijke instellingen. Een lagere aanvoertemperatuur verlaagt niet automatisch de warmtevraag van de woning.</div>`
+      );
+    } catch (error) {
+      result.className = "power-parameter-empty";
+      result.textContent = "De temperatuurparameter kon niet worden geladen.";
+      console.error(error);
+    }
+  }
+
+  async function renderHeatingPowerParameter() {
+    const result = document.getElementById("powerParameterResult");
+    const brandId = document.getElementById("powerBrand")?.value || "";
+    const deviceId = document.getElementById("powerDevice")?.value || "";
+    if (!result) return;
+
+    if (!brandId || !deviceId) {
+      result.className = "power-parameter-empty";
+      result.textContent = "Kies merk en ketel. MonteurMaatje toont daarna direct de bestaande parameter waarmee het maximale CV-vermogen wordt ingesteld.";
+      return;
+    }
+
+    const brand = state.catalog?.brands?.find(item => item.id === brandId);
+    const device = brand?.devices?.find(item => item.id === deviceId);
+    const map = heatingPowerKnowledge?.devices?.[deviceId];
+    if (!device || !map?.parameterCode || !device.parametersPath) {
+      result.className = "power-parameter-empty";
+      result.textContent = "Voor dit toestel is nog geen eenduidige CV-vermogensparameter gekoppeld.";
+      return;
+    }
+
+    result.className = "power-parameter-card is-loading";
+    result.innerHTML = `<p>Parameter laden…</p>`;
+
+    try {
+      const data = await loadJson(device.parametersPath);
+      const parameter = (data.parameters || []).find(item => String(item.code) === String(map.parameterCode));
+      if (!parameter) throw new Error(`Parameter ${map.parameterCode} niet gevonden`);
+
+      const rows = [];
+      if (parameter.factoryDefault !== undefined && parameter.factoryDefault !== null && parameter.factoryDefault !== "") {
+        rows.push(`<div><dt>Fabrieksinstelling</dt><dd>${esc(displayValue(parameter.factoryDefault, parameter.unit))}</dd></div>`);
+      }
+      if (parameter.settingRange) rows.push(`<div><dt>Instelbereik</dt><dd>${esc(parameter.settingRange)}</dd></div>`);
+      if (parameter.choices?.length) rows.push(`<div><dt>Keuzes</dt><dd>${parameter.choices.map(choice => `<span class="power-choice">${esc(choice)}</span>`).join("")}</dd></div>`);
+
+      const source = sourceOf(data, device);
+      result.className = "power-parameter-card";
+      result.innerHTML = `
+        <div class="power-parameter-title">
+          <div>
+            <p class="step-label">JUISTE TOESTELPARAMETER</p>
+            <div class="power-code-row"><span class="code-badge">${esc(parameter.code)}</span><h4>${esc(parameter.description || parameter.code)}</h4></div>
+          </div>
+        </div>
+        ${rows.length ? `<dl class="power-parameter-rows">${rows.join("")}</dl>` : ""}
+        ${parameter.technicalExplanation ? `<p class="power-parameter-explanation">${esc(parameter.technicalExplanation)}</p>` : ""}
+        <div class="power-parameter-note"><strong>Richtwaarde uit calculator:</strong> <span id="powerLinkedAdvice">${document.getElementById("powerAdvice")?.textContent !== "—" ? `${esc(document.getElementById("powerAdvice")?.textContent)} kW` : "Nog geen richtwaarde"}</span><br>Gebruik deze richtwaarde samen met de officiële parameterinformatie; MonteurMaatje rekent geen fabrikantwaarde om als daarvoor geen betrouwbare tabel in de huidige data staat.</div>
+        ${source?.url ? `<a class="power-source-link" href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">Open officiële handleiding ↗</a>` : ""}
+      `;
+    } catch (error) {
+      result.className = "power-parameter-empty";
+      result.textContent = "De parameter kon niet worden geladen. Controleer de verbinding of probeer het toestel opnieuw.";
+      console.error(error);
+    }
+  }
+
+  async function initHeatingPowerKnowledge() {
+    try {
+      heatingPowerKnowledge = await loadJson("knowledge/heating-power.json");
+      populateHeatingPowerBrands();
+      renderHeatingPowerAdvice();
+
+      document.getElementById("powerRadiators")?.addEventListener("input", () => {
+        renderHeatingPowerAdvice();
+        const linked = document.getElementById("powerLinkedAdvice");
+        if (linked) linked.textContent = `${document.getElementById("powerAdvice")?.textContent || "—"} kW`;
+      });
+      document.getElementById("powerFloorZones")?.addEventListener("input", () => {
+        renderHeatingPowerAdvice();
+        const linked = document.getElementById("powerLinkedAdvice");
+        if (linked) linked.textContent = `${document.getElementById("powerAdvice")?.textContent || "—"} kW`;
+      });
+
+      document.querySelectorAll("[data-number-target]").forEach(button => {
+        button.addEventListener("click", () => {
+          const input = document.getElementById(button.dataset.numberTarget);
+          if (!input) return;
+          input.value = String((Number(input.value) || 0) + Number(button.dataset.numberStep || 0));
+          input.dispatchEvent(new Event("input", { bubbles: true }));
+        });
+      });
+
+      document.getElementById("powerBrand")?.addEventListener("change", populateHeatingPowerDevices);
+      document.getElementById("powerDevice")?.addEventListener("change", () => { renderHeatingPowerParameter(); renderHeatingTemperatureParameter(); });
+    } catch (error) {
+      console.warn("Kennis-tool CV-vermogen kon niet worden geladen", error);
+      const result = document.getElementById("powerParameterResult");
+      if (result) result.textContent = "De kennis-tool kon niet worden geladen.";
+    }
+  }
+
   async function init() {
     setOnlineStatus(); emptyResult("Begin met het merk", "Na je selectie verschijnt hier direct de beschikbare technische informatie."); progress();
     try {
       state.catalog = await loadJson("data/catalog.json");
       refs.recordCount.textContent = state.catalog.recordCount ?? "—";
       renderBrandOptions(); renderDeviceOptions(); setOnlineStatus();
+      initHeatingPowerKnowledge();
     } catch (error) {
       refs.statusText.textContent = "Kennisbank niet beschikbaar"; refs.statusPill.classList.add("offline");
       refs.dataMessage.textContent = "De kennisbank kon niet worden geladen. Controleer de verbinding en probeer opnieuw."; refs.dataMessage.classList.remove("hidden");
