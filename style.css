@@ -718,3 +718,73 @@ html[data-theme="dark"] .power-followup-head h3,
 html[data-theme="dark"] .power-checklist li p{color:#f6eee9}
 html[data-theme="dark"] .power-followup-head>p:last-child{color:#b9aca4}
 html[data-theme="dark"] .power-checklist li{background:#2b2623;border-color:#4b403a}
+
+
+/* Tools home + Elga Ace */
+.tools-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.tool-card{
+  display:grid;grid-template-columns:48px 1fr 24px;gap:13px;align-items:center;
+  width:100%;text-align:left;border:1px solid var(--line);border-radius:18px;
+  padding:17px;background:var(--surface);color:var(--ink);cursor:pointer;box-shadow:var(--shadow)
+}
+.tool-card-icon{display:grid;place-items:center;width:46px;height:46px;border-radius:14px;background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:900}
+.tool-card h2{margin:0 0 4px;font-size:17px;letter-spacing:-.025em}
+.tool-card p{margin:0;color:var(--muted);font-size:11px;line-height:1.45}
+.tool-card-arrow{font-size:28px;color:var(--muted)}
+.tool-back{margin:0 0 12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:11px;padding:9px 12px;font:inherit;font-size:11px;font-weight:800;cursor:pointer}
+.elga-step{padding:18px 20px;border-top:1px solid var(--line)}
+.elga-step:first-of-type{border-top:0}
+.elga-step-intro{margin:5px 0 14px;color:var(--muted);font-size:11.5px;line-height:1.55}
+.elga-flow-hero{display:grid;grid-template-columns:180px 1fr;gap:16px;align-items:center;border:1px solid rgba(239,98,68,.28);background:var(--accent-soft);border-radius:17px;padding:15px;margin-top:10px}
+.elga-flow-hero>div{display:flex;align-items:baseline;gap:5px;flex-wrap:wrap}
+.elga-flow-hero span{width:100%;font-size:10px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.elga-flow-hero strong{font-size:42px;line-height:1;color:var(--ink);letter-spacing:-.05em}
+.elga-flow-hero b{font-size:14px;color:var(--accent)}
+.elga-flow-hero p{margin:0;color:var(--ink);font-size:12px;line-height:1.5}
+.elga-explainer{margin-top:13px;border:1px solid var(--line);border-radius:15px;padding:14px;background:var(--surface-muted)}
+.elga-explainer h3{margin:0 0 7px;font-size:15px;color:var(--ink)}
+.elga-explainer p{margin:6px 0;color:var(--muted);font-size:11px;line-height:1.55}
+.elga-param-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.elga-param-card{border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:14px}
+.elga-param-head{display:flex;align-items:center;gap:9px;margin-bottom:10px}
+.elga-param-head h3{margin:0;color:var(--ink);font-size:14px;line-height:1.25}
+.elga-param-copy h4{margin:12px 0 3px;color:var(--ink);font-size:10.5px;text-transform:uppercase;letter-spacing:.04em}
+.elga-param-copy p{margin:0;color:var(--muted);font-size:11px;line-height:1.5}
+.elga-warning{margin-top:12px;border-left:3px solid var(--accent);background:var(--accent-soft);padding:9px 10px;border-radius:0 10px 10px 0}
+.elga-warning strong{color:var(--ink);font-size:10.5px}.elga-warning p{margin:2px 0 0;color:var(--muted);font-size:10.5px;line-height:1.45}
+.elga-check-box{margin-top:14px;border:1px solid var(--line);border-radius:15px;padding:13px;background:var(--surface-muted)}
+.elga-check-box>strong{font-size:12px;color:var(--ink)}
+.elga-check-box ol{margin:8px 0 0;padding-left:19px}.elga-check-box li{margin:5px 0;color:var(--muted);font-size:11px;line-height:1.45}
+.elga-source-box{margin:0 20px 20px;border:1px solid var(--line);border-radius:15px;padding:13px;display:grid;gap:7px;background:var(--surface-muted)}
+.elga-source-box strong{font-size:11px;color:var(--ink)}
+.elga-source-box a{color:var(--accent);font-size:10.5px;font-weight:800;text-decoration:none}
+
+html[data-theme="dark"] .tool-card,
+html[data-theme="dark"] .tool-back,
+html[data-theme="dark"] .elga-param-card{background:#24201e;border-color:#443b36;box-shadow:none}
+html[data-theme="dark"] .tool-card h2,
+html[data-theme="dark"] .tool-back,
+html[data-theme="dark"] .elga-flow-hero strong,
+html[data-theme="dark"] .elga-flow-hero p,
+html[data-theme="dark"] .elga-explainer h3,
+html[data-theme="dark"] .elga-param-head h3,
+html[data-theme="dark"] .elga-param-copy h4,
+html[data-theme="dark"] .elga-warning strong,
+html[data-theme="dark"] .elga-check-box>strong,
+html[data-theme="dark"] .elga-source-box strong{color:#f6eee9}
+html[data-theme="dark"] .elga-explainer,
+html[data-theme="dark"] .elga-check-box,
+html[data-theme="dark"] .elga-source-box{background:#2b2623;border-color:#4b403a}
+html[data-theme="dark"] .elga-param-copy p,
+html[data-theme="dark"] .elga-explainer p,
+html[data-theme="dark"] .elga-check-box li{color:#b9aca4}
+
+@media(max-width:700px){
+  .tools-grid{grid-template-columns:1fr}
+  .tool-card{grid-template-columns:44px 1fr 20px;padding:14px}
+  .tool-card-icon{width:42px;height:42px}
+  .elga-step{padding:15px}
+  .elga-flow-hero{grid-template-columns:1fr}
+  .elga-param-grid{grid-template-columns:1fr}
+  .elga-source-box{margin:0 15px 15px}
+}

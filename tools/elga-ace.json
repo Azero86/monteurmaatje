@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "elga-ace",
+  "title": "Elga Ace afstellen",
+  "subtitle": "Inbedrijfstelling & optimalisatie",
+  "models": {
+    "4": {
+      "label": "Elga Ace 4 kW",
+      "targetFlow": 12
+    },
+    "6": {
+      "label": "Elga Ace 6 kW",
+      "targetFlow": 17
+    }
+  },
+  "sources": [
+    {
+      "title": "Officiële Elga Ace installatie-, gebruikers- en servicehandleiding",
+      "url": "https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaNL/RemehaNL/Documentatie/Consument/02---Hybride-warmtepompen/Elga-Ace/Documentatie-voor-installateurs/Installatie-gebruikers-en-servicehandleiding-Elga-Ace.pdf"
+    },
+    {
+      "title": "Remeha Kennisbank – debietstoring E02.24",
+      "url": "https://kennisbank.remeha.nl/remeha-elga-ace-storing-e02-24-oplossen/"
+    },
+    {
+      "title": "Remeha Kennisbank – debietgestuurde warmtepomp optimaliseren",
+      "url": "https://kennisbank.remeha.nl/hoe-optimaliseer-ik-mijn-debietgestuurde-warmtepomp/"
+    },
+    {
+      "title": "Remeha Kennisbank – comfortklacht te koud hybride",
+      "url": "https://kennisbank.remeha.nl/oplossen-comfortklacht-te-koud-hybride-warmtepomp/"
+    }
+  ],
+  "parameters": {
+    "PP016": {
+      "group": "flow",
+      "title": "Maximum pomptoerental CV-bedrijf",
+      "what": "Begrenst de maximale snelheid van de circulatiepomp tijdens CV-bedrijf.",
+      "effect": "Remeha schrijft voor de Elga Ace voor dat deze op de fabrieksinstelling van 100% blijft staan. Verlagen kan het beschikbare debiet beperken en daarmee efficiëntie en warmteoverdracht verslechteren.",
+      "when": "Niet gebruiken als comfort- of geluidsregelaar. Bij te laag debiet eerst installatie, lucht, filter, afsluiters en hydraulische weerstand controleren.",
+      "warning": "Remeha: niet verlagen."
+    },
+    "HP069": {
+      "group": "flow",
+      "title": "Nominaal CV-debiet",
+      "what": "Dit is het debietsetpunt waar de regeling tijdens CV-bedrijf op stuurt.",
+      "effect": "Voor de 4 kW is het doel 12 l/min; voor de 6 kW 17 l/min. Genoeg debiet is nodig om het geproduceerde warmtepompvermogen via het CV-water af te voeren.",
+      "when": "Controleer dit bij inbedrijfstelling, flowstoringen of wanneer de warmtepomp onvoldoende vermogen lijkt af te geven.",
+      "warning": "Op sommige softwareversies, waaronder versie 1.09 volgens Remeha, kan HP069 ontbreken. Verlaag het setpunt niet."
+    },
+    "CP780": {
+      "group": "control",
+      "title": "Regelstrategie groep",
+      "what": "Bepaalt op basis waarvan de installatie de gevraagde aanvoertemperatuur berekent: ruimte, buitencondities of een combinatie daarvan.",
+      "effect": "Remeha adviseert voor efficiënte warmtepompwerking weersafhankelijk of Buiten + Ruimte. Bij eTwist/R-Bus en koudeklachten noemt Remeha Buiten & Kamer als aanbevolen instelling.",
+      "when": "Controleer deze wanneer de regeling niet logisch reageert op buitentemperatuur of wanneer structurele comfortklachten ontstaan.",
+      "warning": "De juiste keuze hangt mede af van het aangesloten type thermostaat/regellus."
+    },
+    "CP230": {
+      "group": "control",
+      "title": "Helling stooklijn",
+      "what": "Bepaalt hoe sterk de gevraagde aanvoertemperatuur stijgt als de buitentemperatuur daalt.",
+      "effect": "Hoger geeft bij koud weer een hogere aanvoertemperatuur. Lager is gunstiger voor warmtepomprendement zolang de woning comfortabel warm blijft.",
+      "when": "Als de woning bij zacht weer goed op temperatuur komt maar bij koude buitentemperaturen achterblijft, adviseert Remeha CP230 stapsgewijs met 0,2 te verhogen.",
+      "warning": "Niet onnodig hoog instellen; optimaliseer op laagst mogelijke stooklijn met behoud van comfort."
+    },
+    "CP210": {
+      "group": "control",
+      "title": "Voetpunt stooklijn dagbedrijf",
+      "what": "Bepaalt het lage startpunt van de stooklijn bij 20 °C buitentemperatuur voor dagbedrijf.",
+      "effect": "Een hoger voetpunt verhoogt de gevraagde aanvoertemperatuur over het hele mildere buitentemperatuurgebied.",
+      "when": "Bij koudeklachten bij vrijwel alle buitentemperaturen noemt Remeha 20–25 °C als mogelijke aanpassing; standaard staat deze op 15 °C.",
+      "warning": "Alleen verhogen als de comfortklacht daar aanleiding toe geeft."
+    },
+    "CP220": {
+      "group": "control",
+      "title": "Voetpunt stooklijn nachtbedrijf",
+      "what": "Zelfde functie als CP210, maar voor nachtbedrijf.",
+      "effect": "Een hoger voetpunt geeft in nachtbedrijf een hogere gevraagde aanvoertemperatuur.",
+      "when": "Remeha noemt bij comfortklachten als mogelijkheid dezelfde waarde als overdag of circa 20 °C.",
+      "warning": "Beoordeel altijd samen met nachtverlaging en werkelijk installatiegedrag."
+    },
+    "CP000": {
+      "group": "control",
+      "title": "Maximale aanvoertemperatuur groep",
+      "what": "Begrenst de maximale aanvoertemperatuur die de Elga Ace voor de verwarmingsgroep mag vragen.",
+      "effect": "Een lagere grens kan het systeem efficiënter laten werken, maar als de afgifte-installatie de woning daarmee niet warm krijgt ontstaan comfortklachten.",
+      "when": "Remeha adviseert bij de beschreven hybride comfortinstellingen de fabriekswaarde 70 °C te behouden en ook de back-upketel niet hoger te zetten.",
+      "warning": "Niet verwarren met warmtepompvermogen of stooklijnhelling; dit is alleen het temperatuurplafond."
+    },
+    "HP061": {
+      "group": "hybrid",
+      "title": "Optimalisatiemethode hybride systeem",
+      "what": "Bepaalt volgens welke strategie de Elga Ace verdeelt tussen warmtepomp en hydraulische back-up/cv-ketel.",
+      "effect": "Kosten is de fabrieksinstelling en gebruikt economische optimalisatie. Bij Geen blijft de warmtepomp volgens Remeha zo lang mogelijk actief totdat ondersteuning of overname nodig is.",
+      "when": "Gebruik dit bewust als je het systeem op kosten, primaire energie/CO₂ of maximale warmtepompinzet wilt sturen.",
+      "warning": "Bij Kosten moeten de bijbehorende energieprijzen/ketelgegevens correct zijn; anders kan de keuze tussen warmtepomp en ketel onlogisch worden."
+    },
+    "HP000": {
+      "group": "hybrid",
+      "title": "Bivalente temperatuur",
+      "what": "Bepaalt de buitentemperatuurgrens waarboven de hydraulische back-up niet mag inschakelen.",
+      "effect": "Bij de Elga Ace staat deze standaard op 15 °C. Boven deze buitentemperatuur wordt de back-up volgens Remeha niet ingeschakeld.",
+      "when": "Controleer bij onlogisch vroeg of laat inschakelen van de cv-ketel, maar wijzig hem niet zonder het effect op comfort en warmtepompinzet te beoordelen.",
+      "warning": "Remeha adviseert bij comfortklachten de Elga Ace-standaard van 15 °C te behouden."
+    },
+    "HP030": {
+      "group": "hybrid",
+      "title": "Vertraging starten reserve-energiebron CV",
+      "what": "Bepaalt hoe lang de regeling wacht voordat de cv-ketel/back-up mag ondersteunen.",
+      "effect": "0 minuten activeert volgens Remeha een dynamische vertraging. Een langere vaste tijd geeft de warmtepomp meer tijd en kan gas besparen; een kortere tijd laat de ketel eerder ondersteunen.",
+      "when": "Bij onvoldoende opwarmsnelheid noemt Remeha voor maximaal comfort 20 minuten als mogelijke instelling. Voor meer gasbesparing kan een langere tijd zinvol zijn.",
+      "warning": "Meer vertraging kan comfort kosten; minder vertraging kan gasverbruik verhogen."
+    }
+  }
+}

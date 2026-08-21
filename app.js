@@ -700,6 +700,88 @@
     }
   }
 
+
+  // Tools-overzicht en Elga Ace afsteltool.
+  let elgaAceTool = null;
+
+  function showTool(tool) {
+    const home = document.getElementById("toolsHome");
+    const cv = document.getElementById("toolCvView");
+    const elga = document.getElementById("toolElgaView");
+    home?.classList.toggle("hidden-view", !!tool);
+    cv?.classList.toggle("hidden-view", tool !== "cv");
+    elga?.classList.toggle("hidden-view", tool !== "elga");
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }
+
+  function elgaDevice() {
+    return state.catalog?.brands?.find(b => b.id === "remeha")?.devices?.find(d => d.id === "elga-ace");
+  }
+
+  function elgaExplanationBlock(code, parameter, extra) {
+    const rows = [];
+    if (parameter?.factoryDefault !== undefined && parameter?.factoryDefault !== "") rows.push(`<div><dt>Fabrieksinstelling</dt><dd>${esc(displayValue(parameter.factoryDefault, parameter.unit))}</dd></div>`);
+    if (parameter?.settingRange) rows.push(`<div><dt>Instelbereik</dt><dd>${esc(parameter.settingRange)}</dd></div>`);
+    return `<article class="elga-param-card">
+      <div class="elga-param-head"><span class="code-badge">${esc(code)}</span><h3>${esc(extra.title)}</h3></div>
+      ${rows.length ? `<dl class="power-parameter-rows">${rows.join("")}</dl>` : ""}
+      <div class="elga-param-copy"><h4>Wat doet deze?</h4><p>${esc(extra.what)}</p>
+      <h4>Effect van aanpassen</h4><p>${esc(extra.effect)}</p>
+      <h4>Wanneer aanpassen?</h4><p>${esc(extra.when)}</p></div>
+      ${extra.warning ? `<div class="elga-warning"><strong>Let op</strong><p>${esc(extra.warning)}</p></div>` : ""}
+    </article>`;
+  }
+
+  async function renderElgaTool() {
+    if (!elgaAceTool) return;
+    const device = elgaDevice();
+    if (!device?.parametersPath) return;
+    const model = document.getElementById("elgaModel")?.value || "4";
+    const modelData = elgaAceTool.models?.[model];
+    const flow = document.getElementById("elgaTargetFlow");
+    if (flow) flow.textContent = modelData?.targetFlow ?? "—";
+
+    try {
+      const data = await loadJson(device.parametersPath);
+      const params = data.parameters || [];
+      const get = code => params.find(p => String(p.code) === String(code));
+      const renderGroup = (group, elementId) => {
+        const node = document.getElementById(elementId);
+        if (!node) return;
+        node.innerHTML = Object.entries(elgaAceTool.parameters)
+          .filter(([,extra]) => extra.group === group)
+          .map(([code,extra]) => {
+            const parameter = get(code);
+            if (!parameter) return "";
+            let cloned = {...parameter};
+            if (code === "HP069" && modelData?.targetFlow) cloned = {...cloned, factoryDefault: `${modelData.targetFlow} l/min`};
+            return elgaExplanationBlock(code, cloned, extra);
+          }).join("");
+      };
+      renderGroup("flow", "elgaFlowParams");
+      renderGroup("control", "elgaControlParams");
+      renderGroup("hybrid", "elgaHybridParams");
+    } catch (error) {
+      console.error("Elga Ace tool kon parameterdata niet laden", error);
+    }
+  }
+
+  async function initTools() {
+    document.querySelectorAll("[data-tool-open]").forEach(button => {
+      button.addEventListener("click", () => {
+        showTool(button.dataset.toolOpen);
+        if (button.dataset.toolOpen === "elga") renderElgaTool();
+      });
+    });
+    document.querySelectorAll("[data-tool-back]").forEach(button => button.addEventListener("click", () => showTool("")));
+    try {
+      elgaAceTool = await loadJson("tools/elga-ace.json");
+      document.getElementById("elgaModel")?.addEventListener("change", renderElgaTool);
+    } catch (error) {
+      console.warn("Elga Ace tooldata kon niet worden geladen", error);
+    }
+  }
+
   async function init() {
     setOnlineStatus(); emptyResult("Begin met het merk", "Na je selectie verschijnt hier direct de beschikbare technische informatie."); progress();
     try {
@@ -707,6 +789,7 @@
       refs.recordCount.textContent = state.catalog.recordCount ?? "—";
       renderBrandOptions(); renderDeviceOptions(); setOnlineStatus();
       initHeatingPowerKnowledge();
+      initTools();
     } catch (error) {
       refs.statusText.textContent = "Kennisbank niet beschikbaar"; refs.statusPill.classList.add("offline");
       refs.dataMessage.textContent = "De kennisbank kon niet worden geladen. Controleer de verbinding en probeer opnieuw."; refs.dataMessage.classList.remove("hidden");

@@ -15,7 +15,7 @@
   <link rel="icon" href="./favicon-v3.svg?v=3" type="image/svg+xml">
   <link rel="icon" href="./icons/mm-app-v3-192.png?v=3" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon" href="./icons/mm-app-v3-180.png?v=3" sizes="180x180" type="image/png">
-  <link rel="stylesheet" href="./style.css?v=20260821-1">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body class="__variable_f91424 __variable_dd0526 antialiased">
 <main>
@@ -261,6 +261,23 @@
       <h1 id="knowledgeTitle">Tools</h1>
       <p class="info-intro">Snelle praktijktools voor het instellen en beoordelen van installaties. De monteur bepaalt altijd de definitieve instelling.</p>
 
+      <div id="toolsHome" class="tools-home">
+        <div class="tools-grid">
+          <button class="tool-card" type="button" data-tool-open="cv">
+            <span class="tool-card-icon" aria-hidden="true">kW</span>
+            <div><h2>CV-installatie afstellen</h2><p>Praktische startwaarde voor CV-vermogen en direct de juiste toestelparameters erbij.</p></div>
+            <span class="tool-card-arrow" aria-hidden="true">›</span>
+          </button>
+          <button class="tool-card" type="button" data-tool-open="elga">
+            <span class="tool-card-icon" aria-hidden="true">WP</span>
+            <div><h2>Elga Ace afstellen</h2><p>Debiet, stooklijn, hybride regeling en back-up stap voor stap controleren.</p></div>
+            <span class="tool-card-arrow" aria-hidden="true">›</span>
+          </button>
+        </div>
+      </div>
+
+      <div id="toolCvView" class="tool-detail hidden-view">
+        <button class="tool-back" type="button" data-tool-back>← Terug naar Tools</button>
       <article class="knowledge-tool">
         <div class="knowledge-tool-head">
           <span class="info-icon knowledge-tool-icon" aria-hidden="true">kW</span>
@@ -363,7 +380,106 @@
         </div>
       </article>
 
-      <p class="info-note">De berekening geeft een praktische richtwaarde. Gebruik de toestelparameter en je vakkennis om de definitieve instelling te bepalen.</p>
+
+      </div>
+
+      <div id="toolElgaView" class="tool-detail hidden-view">
+        <button class="tool-back" type="button" data-tool-back>← Terug naar Tools</button>
+        <article class="knowledge-tool elga-tool">
+          <div class="knowledge-tool-head">
+            <span class="info-icon knowledge-tool-icon" aria-hidden="true">WP</span>
+            <div>
+              <p class="step-label">REMEHA ELGA ACE</p>
+              <h2>Elga Ace afstellen</h2>
+              <p>Inbedrijfstelling & optimalisatie op basis van de officiële Elga Ace-data en Remeha Kennisbank.</p>
+            </div>
+          </div>
+
+          <section class="elga-step">
+            <p class="section-kicker">STAP 1 · TOESTEL & INSTALLATIE</p>
+            <div class="power-device-selects">
+              <div class="knowledge-field">
+                <label for="elgaModel">Model</label>
+                <div class="select-wrap">
+                  <select id="elgaModel">
+                    <option value="4">Elga Ace 4 kW</option>
+                    <option value="6">Elga Ace 6 kW</option>
+                  </select>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                </div>
+              </div>
+              <div class="knowledge-field">
+                <label for="elgaEmitter">Afgiftesysteem</label>
+                <div class="select-wrap">
+                  <select id="elgaEmitter">
+                    <option>Radiatoren</option>
+                    <option>Vloerverwarming</option>
+                    <option>Combinatie radiatoren + vloerverwarming</option>
+                  </select>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="elga-step">
+            <p class="section-kicker">STAP 2 · DEBIET</p>
+            <div class="elga-flow-hero">
+              <div><span>Streefdebiet</span><strong id="elgaTargetFlow">12</strong><b>l/min</b></div>
+              <p>Lees de werkelijke waterflow uit via <strong>AM056</strong>. Dit is een meetwaarde, geen instelparameter.</p>
+            </div>
+            <div class="elga-explainer">
+              <h3>Waarom is debiet zo belangrijk?</h3>
+              <p>De warmtepomp moet zijn geproduceerde warmte via het CV-water kunnen afvoeren. Te weinig liters per minuut beperken de warmteoverdracht; de warmtepomp kan daardoor minder efficiënt werken, onvoldoende vermogen kwijt en uiteindelijk een flowstoring geven of eerder hulp van de cv-ketel nodig hebben.</p>
+              <p>Richtwaarde: <strong>12 l/min voor 4 kW</strong> en <strong>17 l/min voor 6 kW</strong>. Knijp het systeem niet om kunstmatig een bepaalde ΔT te maken; zorg eerst dat het vereiste debiet beschikbaar is.</p>
+            </div>
+            <div id="elgaFlowParams" class="elga-param-grid"></div>
+            <div class="elga-check-box">
+              <strong>Debiet te laag?</strong>
+              <ol>
+                <li>Radiatoren en vloerverwarmingsgroepen volledig openen.</li>
+                <li>CV-druk controleren; Remeha noemt 1,5–2 bar bij afgekoeld systeem.</li>
+                <li>Installatie, ketel en warmtepomp ontluchten.</li>
+                <li>Retourfilter controleren/reinigen.</li>
+                <li>Afsluiters en hydraulische weerstand controleren.</li>
+                <li>Bij zone-/naregeling hydraulische opzet/buffervat beoordelen.</li>
+              </ol>
+            </div>
+          </section>
+
+          <section class="elga-step">
+            <p class="section-kicker">STAP 3 · REGELING & STOOKLIJN</p>
+            <p class="elga-step-intro">Stel de stooklijn zo laag mogelijk in met behoud van comfort. Een te hoge stooklijn kost rendement; een te lage geeft comfortklachten.</p>
+            <div id="elgaControlParams" class="elga-param-grid"></div>
+          </section>
+
+          <section class="elga-step">
+            <p class="section-kicker">STAP 4 · HYBRIDE & BACK-UP</p>
+            <p class="elga-step-intro">Hier bepaal je wanneer en op welke strategie de cv-ketel ondersteunt. Meer warmtepompinzet kan gas besparen, maar mag niet ten koste gaan van comfort.</p>
+            <div id="elgaHybridParams" class="elga-param-grid"></div>
+          </section>
+
+          <section class="elga-step">
+            <p class="section-kicker">STAP 5 · EINDCONTROLE</p>
+            <ul class="power-checklist">
+              <li><span>✓</span><p>AM056 zit rond het streefdebiet voor het gekozen model.</p></li>
+              <li><span>✓</span><p>PP016 staat op 100% en HP069 staat op het juiste modeldebiet indien beschikbaar.</p></li>
+              <li><span>✓</span><p>De woning wordt comfortabel warm met een zo laag mogelijke stooklijn.</p></li>
+              <li><span>✓</span><p>De cv-ketel springt niet onnodig vroeg bij, maar comfort blijft behouden.</p></li>
+              <li><span>✓</span><p>Controleer recente storingen, compressor-/back-upgedrag en installatieflow na wijzigingen.</p></li>
+            </ul>
+          </section>
+
+          <div class="elga-source-box">
+            <strong>Officiële bronnen</strong>
+            <a href="https://edge.sitecorecloud.io/bdrthermea1-platform-production-864a/media/Project/RemehaNL/RemehaNL/Documentatie/Consument/02---Hybride-warmtepompen/Elga-Ace/Documentatie-voor-installateurs/Installatie-gebruikers-en-servicehandleiding-Elga-Ace.pdf" target="_blank" rel="noopener noreferrer">Open Elga Ace handleiding ↗</a>
+            <a href="https://kennisbank.remeha.nl/remeha-elga-ace-storing-e02-24-oplossen/" target="_blank" rel="noopener noreferrer">Remeha Kennisbank – debiet E02.24 ↗</a>
+            <a href="https://kennisbank.remeha.nl/hoe-optimaliseer-ik-mijn-debietgestuurde-warmtepomp/" target="_blank" rel="noopener noreferrer">Remeha Kennisbank – optimaliseren ↗</a>
+            <a href="https://kennisbank.remeha.nl/oplossen-comfortklacht-te-koud-hybride-warmtepomp/" target="_blank" rel="noopener noreferrer">Remeha Kennisbank – comfort te koud ↗</a>
+          </div>
+        </article>
+      </div>
+      <p class="info-note">Tools ondersteunt de monteur met praktische startwaarden en officiële toestelparameters. De definitieve instelling blijft een vakinhoudelijke beoordeling.</p>
     </div>
   </section>
 
@@ -382,6 +498,6 @@
     </button>
   </nav>
 </main>
-<script src="./app.js?v=20260821-1" defer></script>
+<script src="./app.js" defer></script>
 </body>
 </html>
