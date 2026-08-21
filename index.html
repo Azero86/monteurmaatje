@@ -76,28 +76,182 @@
   </div>
 
   <section id="regulationsView" class="app-view info-view hidden-view" data-app-view="regulations" aria-labelledby="regulationsTitle">
-    <div class="info-shell">
+    <div class="info-shell regulations-shell">
       <p class="section-kicker">REGELGEVING & VOORSCHRIFTEN</p>
-      <h1 id="regulationsTitle">Regelgeving</h1>
-      <p class="info-intro">Hier komt straks praktische regelgeving voor monteurs, met korte uitleg en directe verwijzingen naar officiële bronnen.</p>
-      <div class="info-grid">
-        <article class="info-card">
-          <span class="info-icon" aria-hidden="true">↗</span>
-          <div><h2>ROGAFA</h2><p>Rookgasafvoer, beugelen, materiaalgebruik en montagevoorschriften.</p></div>
-          <span class="coming-badge">Binnenkort</span>
-        </article>
-        <article class="info-card">
-          <span class="info-icon" aria-hidden="true">CO</span>
-          <div><h2>CO-certificering</h2><p>Praktische verwijzingen rond werkzaamheden aan gasverbrandingstoestellen.</p></div>
-          <span class="coming-badge">Binnenkort</span>
-        </article>
-        <article class="info-card">
-          <span class="info-icon" aria-hidden="true">§</span>
-          <div><h2>Normen & voorschriften</h2><p>Plek voor relevante NEN/NPR-verwijzingen en andere officiële vakinformatie.</p></div>
-          <span class="coming-badge">Binnenkort</span>
-        </article>
+      <h1 id="regulationsTitle">ROG(A)FA</h1>
+      <p class="info-intro">Praktische rookgasafvoer-informatie voor onderweg. MonteurMaatje vat de officiële ROG(A)FA-bronnen compact samen; de fabrikantdocumentatie en officiële bron blijven leidend.</p>
+
+      <div class="regulation-source-note" role="note">
+        <strong>Bronnen in deze pagina</strong>
+        <span>Het Nieuwe Beugelen 2024-11 · CLV C(10)₃ versie 1.5 · RGA bij ketelvervanging</span>
       </div>
-      <p class="info-note">Deze pagina is alvast onderdeel van de app-opzet. De officiële bronnen en inhoud worden later toegevoegd.</p>
+
+      <div class="regulation-topics">
+        <details class="regulation-topic" open>
+          <summary>
+            <span class="info-icon" aria-hidden="true">RGA</span>
+            <span><strong>Het Nieuwe Beugelen</strong><small>Montage, beugelafstanden, afschot en verbindingen</small></span>
+            <span class="topic-chevron" aria-hidden="true">⌄</span>
+          </summary>
+          <div class="regulation-topic-body">
+            <div class="quick-rule">
+              <strong>Kernregel</strong>
+              <p>Beugel volgens het systeemvoorschrift, monteer spanningsvrij en zorg voor 3° afschot (50 mm per meter) richting het toestel waar dit voor de rookgasafvoer is voorgeschreven.</p>
+            </div>
+
+            <div class="rogafa-systems">
+              <details class="rogafa-system">
+                <summary><span>Kunststof RGA</span><small>Enkelwandig kunststof · in het zicht</small></summary>
+                <div class="rogafa-system-body">
+                  <ul class="regulation-checks">
+                    <li>Elke bocht en verlengbuis fixerend beugelen op de mof.</li>
+                    <li>Eerste beugel maximaal 0,5 m vanaf het toestel; ieder systeem bevat minimaal één beugel.</li>
+                    <li>Bij meer dan 1 m tussen fixerende mofbeugels: een niet-fixerende beugel ertussen.</li>
+                    <li>Minimale insteeklengte na montage 40 mm; bij kunststof lengten t/m 2 m circa 10 mm terugtrekken voor uitzetting.</li>
+                    <li>Laatste element vóór doorvoer/schacht beugelen.</li>
+                    <li>Niet schroeven/parkeren, kitten, schuimen of plakken; geen vet, vaseline of olie op afdichtringen.</li>
+                  </ul>
+                  <details class="diagram-toggle"><summary>Bekijk beugelschema</summary><img loading="lazy" src="./assets/regulations/rogafa/kunststof.webp" alt="ROG(A)FA beugelschema voor enkelwandige kunststof rookgasafvoer"></details>
+                </div>
+              </details>
+
+              <details class="rogafa-system">
+                <summary><span>Metalen RGA</span><small>Enkelwandig aluminium of RVS</small></summary>
+                <div class="rogafa-system-body">
+                  <ul class="regulation-checks">
+                    <li>Iedere bocht op of nabij de mof beugelen.</li>
+                    <li>Horizontaal/niet-verticaal: maximaal 1 m tussen beugels; verticaal maximaal 2 m.</li>
+                    <li>Eerste beugel maximaal 0,5 m vanaf het toestel; laatste element vóór doorvoer/schacht beugelen.</li>
+                    <li>Minimale insteeklengte 40 mm en 3° afschot (50 mm/m) naar het toestel.</li>
+                    <li>Geen verschillende materialen/fabricaten mixen, behalve waar fabrikant of genoemde Gastec QA-uitzondering dit toestaat.</li>
+                    <li>Rookgasverbindingen niet schroeven/parkeren, kitten, schuimen of plakken.</li>
+                  </ul>
+                  <details class="diagram-toggle"><summary>Bekijk beugelschema</summary><img loading="lazy" src="./assets/regulations/rogafa/metaal.webp" alt="ROG(A)FA beugelschema voor enkelwandige metalen rookgasafvoer"></details>
+                </div>
+              </details>
+
+              <details class="rogafa-system">
+                <summary><span>Concentrisch</span><small>Rookgasafvoer + verbrandingslucht</small></summary>
+                <div class="rogafa-system-body">
+                  <ul class="regulation-checks">
+                    <li>Iedere bocht op of nabij de mof beugelen.</li>
+                    <li>Horizontaal/niet-verticaal: maximaal 1 m; verticaal: maximaal 2 m.</li>
+                    <li>Eerste beugel maximaal 0,5 m vanaf het toestel en minimaal één beugel per systeem.</li>
+                    <li>Componenten maximaal insteken, spanningsvrij monteren en 3° afschot naar het toestel aanhouden.</li>
+                    <li>Geen componenten van verschillende materialen of fabricaten mixen.</li>
+                    <li>Metalen buitenpijp mag volgens voorschrift geschroefd/geparkerd worden; kunststof buitenpijp alleen op de door de fabrikant aangegeven positie en wijze.</li>
+                  </ul>
+                  <details class="diagram-toggle"><summary>Bekijk beugelschema</summary><img loading="lazy" src="./assets/regulations/rogafa/concentrisch.webp" alt="ROG(A)FA beugelschema voor concentrische rookgasafvoer"></details>
+                </div>
+              </details>
+
+              <details class="rogafa-system">
+                <summary><span>Luchttoevoer</span><small>Enkelwandige verbrandingsluchttoevoer</small></summary>
+                <div class="rogafa-system-body">
+                  <ul class="regulation-checks">
+                    <li>Eerste beugel maximaal 0,5 m vanaf het toestel; bij een korte verlengbuis vóór de eerste bocht kan de aangegeven uitzondering gelden.</li>
+                    <li>Horizontaal/niet-verticaal: maximaal 1 m; verticaal maximaal 2 m.</li>
+                    <li>Bij kunststof luchttoevoer minimaal 35 mm afstand tot metalen rookgasleiding.</li>
+                    <li>Minimale insteeklengte 40 mm, spanningsvrij monteren en laatste element vóór schacht/doorvoer beugelen.</li>
+                    <li>Geen ongeoorloofde materiaal-/fabricatenmix; trekvaste systemen volgens fabrikantvoorschrift.</li>
+                  </ul>
+                  <details class="diagram-toggle"><summary>Bekijk beugelschema</summary><img loading="lazy" src="./assets/regulations/rogafa/luchttoevoer.webp" alt="ROG(A)FA beugelschema voor verbrandingsluchttoevoer"></details>
+                </div>
+              </details>
+
+              <details class="rogafa-system">
+                <summary><span>Metaal in schacht</span><small>RGA en/of luchttoevoer in de schacht</small></summary>
+                <div class="rogafa-system-body">
+                  <ul class="regulation-checks">
+                    <li>Horizontale leiding naar het toestel: 3° afschot en na brandwerende voorzieningen minimaal 50 mm vrije insteekmogelijkheid.</li>
+                    <li>Verticaal: maximaal verdiepingshoogte of 4 m bij maximaal drie elementen per verdieping; bij meer elementen maximaal 2 m.</li>
+                    <li>Bij verslepingen iedere bocht beugelen; maximaal 1 m tussen beugels.</li>
+                    <li>Bevestig beugels deugdelijk aan het gebouw; langere uitkraging via fabrikant-verlengset of een deugdelijke constructie.</li>
+                    <li>Trekvaste verbindingen: maximale beugelafstand volgens fabrikantvoorschrift.</li>
+                  </ul>
+                  <details class="diagram-toggle"><summary>Bekijk beugelschema</summary><img loading="lazy" src="./assets/regulations/rogafa/schacht.webp" alt="ROG(A)FA beugelschema voor enkelwandig metaal in een schacht"></details>
+                </div>
+              </details>
+            </div>
+
+            <div class="official-source">
+              <div><strong>Officiële bron</strong><span>ROG(A)FA - Beugelvoorschrift V11, 2024-11</span></div>
+              <a href="https://www.rogafa.nl/wp-content/uploads/2025/01/241129-rogafa-beugelvoorschrift-V11-2024.pdf" target="_blank" rel="noopener noreferrer">Open officieel voorschrift <b aria-hidden="true">↗</b></a>
+            </div>
+          </div>
+        </details>
+
+        <details class="regulation-topic">
+          <summary>
+            <span class="info-icon" aria-hidden="true">↻</span>
+            <span><strong>RGA bij ketelvervanging</strong><small>Wat te doen met de bestaande rookgasafvoer</small></span>
+            <span class="topic-chevron" aria-hidden="true">⌄</span>
+          </summary>
+          <div class="regulation-topic-body">
+            <div class="replacement-grid">
+              <div class="quick-rule important"><strong>ROG(A)FA-advies</strong><p>Bij vervanging van de ketel adviseert ROG(A)FA het rookgasafvoerkanaal mee te vervangen wanneer dit ouder is dan 5 jaar.</p></div>
+              <div class="quick-rule"><strong>Collectief systeem</strong><p>Een collectief kanaal met meerdere toestellen vraagt een afzonderlijke beoordeling; iedere situatie is afhankelijk van de bestaande installatie.</p></div>
+            </div>
+            <ul class="regulation-checks compact">
+              <li>Niet-condenserende (VR) en condenserende (HR) toestellen horen niet gecombineerd op hetzelfde collectieve rookgasafvoerkanaal.</li>
+              <li>Bij een collectief systeem moet worden vastgesteld of het kanaal geschikt is voor de nieuwe toestellen.</li>
+              <li>Gebruik de situatie ter plaatse en de documentatie van toestel- en systeemfabrikant voor het uiteindelijke advies.</li>
+            </ul>
+            <div class="official-source">
+              <div><strong>Officiële bron</strong><span>ROG(A)FA - Vervangen ketel</span></div>
+              <a href="https://www.rogafa.nl/rookgasafvoersysteem/vervangen-ketel/" target="_blank" rel="noopener noreferrer">Open officiële pagina <b aria-hidden="true">↗</b></a>
+            </div>
+          </div>
+        </details>
+
+        <details class="regulation-topic">
+          <summary>
+            <span class="info-icon" aria-hidden="true">CLV</span>
+            <span><strong>CLV-systemen C(10)₃</strong><small>Gemeenschappelijke luchttoevoer en rookgasafvoer onder overdruk</small></span>
+            <span class="topic-chevron" aria-hidden="true">⌄</span>
+          </summary>
+          <div class="regulation-topic-body">
+            <div class="clv-layout">
+              <div>
+                <div class="quick-rule"><strong>Herkennen</strong><p>C(10)₃ is een CLV-overdruksysteem voor geschikte gesloten toestellen met ventilator. De gemeenschappelijke luchttoevoer en rookgasafvoer zijn concentrisch uitgevoerd.</p></div>
+                <ul class="regulation-checks">
+                  <li>Gemeenschappelijke voorzieningen: CE-gemarkeerd en concentrisch.</li>
+                  <li>Toestelaansluitingen op het gemeenschappelijke systeem: concentrisch 100 mm luchttoevoer / 60 mm rookgasafvoer.</li>
+                  <li>Geen trekonderbreker aan de onderzijde van het CLV-systeem.</li>
+                  <li>Rookgasafvoer onderaan voorzien van condensafvoer; luchttoevoer zo nodig van regenwaterafvoer.</li>
+                  <li>Aansluitleiding toestel: concentrisch, maximale lengte volgens toestelvoorschrift en gemonteerd volgens de ROG(A)FA-basisvoorschriften voor concentrisch.</li>
+                </ul>
+              </div>
+              <details class="diagram-toggle clv-diagram"><summary>Bekijk principe C(10)₃</summary><img loading="lazy" src="./assets/regulations/rogafa/clv-principe.webp" alt="Principe van een C(10)3 overdruk CLV-systeem"></details>
+            </div>
+
+            <div class="clv-mini-grid">
+              <div><strong>Inspectie</strong><span>RGA en luchttoevoer moeten zonder speciale hulpmiddelen toegankelijk zijn voor inspectie/reiniging.</span></div>
+              <div><strong>Typeplaat</strong><span>Bij iedere aansluiting en bij het inspectieluik horen de voorgeschreven systeemgegevens aanwezig te zijn.</span></div>
+              <div><strong>Brandveiligheid</strong><span>Schacht en doorvoeringen moeten voldoen aan de toepasselijke brandveiligheidseisen; fabrikant- en projectspecificaties blijven leidend.</span></div>
+              <div><strong>Dimensionering</strong><span>Maximaal twee toestellen per verdieping; luchttoevoeroppervlak minimaal 1,25 × RGA-oppervlak. Gebruik voor diameters de officiële tabellen/fabrikantberekening.</span></div>
+            </div>
+
+            <details class="technical-more">
+              <summary>Meer C(10)₃ toestelvoorwaarden</summary>
+              <ul class="regulation-checks compact">
+                <li>Toestel inclusief aansluitleiding moet volgens het document bestand zijn tegen minimaal 25 Pa overdruk bij minimale belasting.</li>
+                <li>Het toestel heeft een terugslagvoorziening met de vereiste dichtheid en levensduurbeproeving.</li>
+                <li>Het toestel moet geschikt zijn voor 10% rookgasrecirculatie en voor de in het document genoemde onderdruksituatie.</li>
+                <li>Controleer altijd of de specifieke ketel door de toestelfabrikant voor C(10)₃ is vrijgegeven.</li>
+              </ul>
+            </details>
+
+            <div class="manufacturer-priority" role="note"><strong>Belangrijk</strong><span>De technische documentatie van toestel- en CLV-fabrikant gaat boven de voorbeelden en interpretaties uit het ROG(A)FA/VFK-document.</span></div>
+            <div class="official-source">
+              <div><strong>Officiële bron</strong><span>ROG(A)FA / VFK - C(10)₃ CLV, versie 1.5 (01-07-2017)</span></div>
+              <a href="https://www.rogafa.nl/wp-content/uploads/2017/09/NL-voorschriften-CLV-C10-toepassingen.pdf" target="_blank" rel="noopener noreferrer">Open officieel voorschrift <b aria-hidden="true">↗</b></a>
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <p class="info-note">MonteurMaatje is een praktisch hulpmiddel. Controleer bij twijfel altijd de officiële bron en het product-specifieke voorschrift van de fabrikant.</p>
     </div>
   </section>
 

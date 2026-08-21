@@ -17,6 +17,12 @@ const CORE_SHELL = [
   appUrl("icons/mm-app-v3-180.png?v=3"),
   appUrl("assets/fonts/569ce4b8f30dc480-s.p.woff2"),
   appUrl("assets/fonts/93f479601ee12b01-s.p.woff2"),
+  appUrl("assets/regulations/rogafa/kunststof.webp"),
+  appUrl("assets/regulations/rogafa/metaal.webp"),
+  appUrl("assets/regulations/rogafa/concentrisch.webp"),
+  appUrl("assets/regulations/rogafa/luchttoevoer.webp"),
+  appUrl("assets/regulations/rogafa/schacht.webp"),
+  appUrl("assets/regulations/rogafa/clv-principe.webp"),
 ];
 
 const CATALOG_URL = appUrl("data/catalog.json");

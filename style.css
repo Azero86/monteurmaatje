@@ -450,3 +450,102 @@ html[data-theme="dark"] .info-shell .section-kicker{color:#ff6750}
   .coming-badge{grid-column:2;justify-self:start}
   .info-intro{font-size:14px}
 }
+
+/* ROG(A)FA regelgeving - praktisch, mobiel eerst */
+.regulations-shell{max-width:980px}
+.regulation-source-note{
+  display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;
+  margin:-8px 0 22px;padding:13px 15px;border:1px solid var(--line);
+  border-radius:15px;background:var(--surface-muted);color:var(--muted);
+  font-size:12px;line-height:1.45
+}
+.regulation-source-note strong{color:var(--ink);font-size:12px}
+.regulation-topics{display:grid;gap:14px}
+.regulation-topic{
+  border:1px solid var(--line);border-radius:23px;background:rgba(255,255,255,.94);
+  box-shadow:var(--shadow);overflow:hidden
+}
+.regulation-topic>summary{
+  list-style:none;cursor:pointer;display:grid;grid-template-columns:48px 1fr 30px;
+  align-items:center;gap:15px;padding:18px 20px;min-height:92px
+}
+.regulation-topic>summary::-webkit-details-marker,.rogafa-system>summary::-webkit-details-marker,
+.diagram-toggle>summary::-webkit-details-marker,.technical-more>summary::-webkit-details-marker{display:none}
+.regulation-topic>summary strong{display:block;color:var(--ink);font-size:18px;letter-spacing:-.025em}
+.regulation-topic>summary small{display:block;margin-top:4px;color:var(--muted);font-size:12px;line-height:1.4}
+.topic-chevron{justify-self:end;color:var(--muted);font-size:22px;transition:transform .18s ease}
+.regulation-topic[open] .topic-chevron{transform:rotate(180deg)}
+.regulation-topic-body{border-top:1px solid var(--line);padding:18px 20px 20px}
+.quick-rule{border:1px solid var(--line);background:var(--surface-muted);border-radius:16px;padding:14px 15px;margin-bottom:14px}
+.quick-rule.important{border-color:rgba(239,98,68,.32);background:var(--accent-soft)}
+.quick-rule strong{display:block;color:var(--ink);font-size:12px;text-transform:uppercase;letter-spacing:.07em;margin-bottom:5px}
+.quick-rule p{margin:0;color:var(--muted);font-size:13px;line-height:1.55}
+.rogafa-systems{display:grid;gap:9px}
+.rogafa-system{border:1px solid var(--line);border-radius:16px;background:var(--surface);overflow:hidden}
+.rogafa-system>summary{list-style:none;cursor:pointer;padding:13px 15px;display:flex;flex-direction:column;gap:2px;position:relative;padding-right:42px}
+.rogafa-system>summary::after{content:"+";position:absolute;right:15px;top:50%;transform:translateY(-50%);font-size:20px;color:var(--accent);font-weight:700}
+.rogafa-system[open]>summary::after{content:"−"}
+.rogafa-system>summary span{font-weight:800;color:var(--ink);font-size:14px}
+.rogafa-system>summary small{color:var(--muted);font-size:11px}
+.rogafa-system-body{border-top:1px solid var(--line);padding:13px 15px 15px}
+.regulation-checks{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.regulation-checks li{position:relative;padding-left:22px;color:var(--muted);font-size:12.5px;line-height:1.5}
+.regulation-checks li::before{content:"✓";position:absolute;left:0;top:0;color:var(--accent);font-weight:900}
+.regulation-checks.compact{margin-top:12px}
+.diagram-toggle,.technical-more{margin-top:13px;border:1px solid var(--line);border-radius:13px;overflow:hidden;background:var(--surface-muted)}
+.diagram-toggle>summary,.technical-more>summary{list-style:none;cursor:pointer;color:var(--accent);font-size:12px;font-weight:800;padding:11px 13px}
+.diagram-toggle img{display:block;width:100%;height:auto;background:#fff;border-top:1px solid var(--line)}
+.official-source{
+  margin-top:17px;padding-top:16px;border-top:1px solid var(--line);
+  display:flex;gap:14px;justify-content:space-between;align-items:center
+}
+.official-source div{min-width:0}.official-source strong{display:block;color:var(--ink);font-size:12px}.official-source span{display:block;color:var(--muted);font-size:11px;line-height:1.4;margin-top:3px}
+.official-source a{flex:0 0 auto;text-decoration:none;background:var(--accent);color:#fff;border-radius:12px;padding:11px 13px;font-size:11px;font-weight:850;white-space:nowrap}
+.official-source a:hover{filter:brightness(.97)}
+.replacement-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.replacement-grid .quick-rule{margin:0}
+.clv-layout{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(220px,.7fr);gap:15px;align-items:start}
+.clv-diagram{margin-top:0}.clv-diagram>summary{text-align:center}
+.clv-mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:15px}
+.clv-mini-grid>div{border:1px solid var(--line);border-radius:14px;padding:12px 13px;background:var(--surface-muted)}
+.clv-mini-grid strong{display:block;color:var(--ink);font-size:12px;margin-bottom:4px}.clv-mini-grid span{display:block;color:var(--muted);font-size:11.5px;line-height:1.45}
+.technical-more{margin-top:14px}.technical-more .regulation-checks{padding:0 13px 13px}
+.manufacturer-priority{margin-top:14px;border-left:3px solid var(--accent);padding:10px 12px;background:var(--accent-soft);border-radius:0 12px 12px 0;display:grid;gap:3px}
+.manufacturer-priority strong{color:var(--ink);font-size:11px;text-transform:uppercase;letter-spacing:.06em}.manufacturer-priority span{color:var(--muted);font-size:11.5px;line-height:1.45}
+
+html[data-theme="dark"] .regulation-topic,
+html[data-theme="dark"] .rogafa-system{background:rgba(36,32,30,.96);border-color:#443b36;box-shadow:none}
+html[data-theme="dark"] .regulation-topic-body,
+html[data-theme="dark"] .rogafa-system-body,
+html[data-theme="dark"] .official-source{border-color:#443b36}
+html[data-theme="dark"] .regulation-source-note,
+html[data-theme="dark"] .quick-rule,
+html[data-theme="dark"] .diagram-toggle,
+html[data-theme="dark"] .technical-more,
+html[data-theme="dark"] .clv-mini-grid>div{background:#2b2623;border-color:#4b403a}
+html[data-theme="dark"] .quick-rule.important,
+html[data-theme="dark"] .manufacturer-priority{background:#342c28}
+html[data-theme="dark"] .regulation-topic>summary strong,
+html[data-theme="dark"] .rogafa-system>summary span,
+html[data-theme="dark"] .quick-rule strong,
+html[data-theme="dark"] .official-source strong,
+html[data-theme="dark"] .clv-mini-grid strong,
+html[data-theme="dark"] .manufacturer-priority strong,
+html[data-theme="dark"] .regulation-source-note strong{color:#f6eee9}
+html[data-theme="dark"] .regulation-topic>summary small,
+html[data-theme="dark"] .rogafa-system>summary small,
+html[data-theme="dark"] .quick-rule p,
+html[data-theme="dark"] .regulation-checks li,
+html[data-theme="dark"] .official-source span,
+html[data-theme="dark"] .clv-mini-grid span,
+html[data-theme="dark"] .manufacturer-priority span,
+html[data-theme="dark"] .regulation-source-note{color:#b9aca4}
+
+@media(max-width:700px){
+  .regulation-topic>summary{grid-template-columns:44px 1fr 22px;gap:11px;padding:15px;min-height:82px}
+  .regulation-topic>summary .info-icon{width:42px;height:42px;border-radius:12px;font-size:12px}
+  .regulation-topic>summary strong{font-size:16px}.regulation-topic>summary small{font-size:11px}
+  .regulation-topic-body{padding:14px}
+  .replacement-grid,.clv-layout,.clv-mini-grid{grid-template-columns:1fr}
+  .official-source{align-items:stretch;flex-direction:column}.official-source a{text-align:center;width:100%;box-sizing:border-box}
+  .regulation-source-note{margin-bottom:16px}
+}
