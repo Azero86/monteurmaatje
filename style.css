@@ -788,3 +788,5 @@ html[data-theme="dark"] .elga-check-box li{color:#b9aca4}
   .elga-param-grid{grid-template-columns:1fr}
   .elga-source-box{margin:0 15px 15px}
 }
+
+.xtend-subtitle{margin:18px 0 8px;color:var(--ink);font-size:14px}.elga-step>.knowledge-field{margin-top:10px}

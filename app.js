@@ -703,14 +703,17 @@
 
   // Tools-overzicht en Elga Ace afsteltool.
   let elgaAceTool = null;
+  let xtendEcoTool = null;
 
   function showTool(tool) {
     const home = document.getElementById("toolsHome");
     const cv = document.getElementById("toolCvView");
     const elga = document.getElementById("toolElgaView");
+    const xtend = document.getElementById("toolXtendView");
     home?.classList.toggle("hidden-view", !!tool);
     cv?.classList.toggle("hidden-view", tool !== "cv");
     elga?.classList.toggle("hidden-view", tool !== "elga");
+    xtend?.classList.toggle("hidden-view", tool !== "xtend");
     window.scrollTo({ top: 0, behavior: "auto" });
   }
 
@@ -766,17 +769,54 @@
     }
   }
 
+
+  function xtendDevice() {
+    return state.catalog?.brands?.find(b => b.id === "intergas")?.devices?.find(d => d.id === "intergas-xtend-eco");
+  }
+
+  async function renderXtendTool() {
+    if (!xtendEcoTool) return;
+    const device = xtendDevice();
+    if (!device?.parametersPath) return;
+    try {
+      const data = await loadJson(device.parametersPath);
+      const params = data.parameters || [];
+      const get = code => params.find(p => String(p.code) === String(code));
+      const renderGroup = (key, id) => {
+        const node = document.getElementById(id);
+        if (!node) return;
+        node.innerHTML = (xtendEcoTool.groups?.[key] || []).map(code => {
+          const p = get(code), x = xtendEcoTool.explanations?.[code];
+          if (!p || !x) return "";
+          return elgaExplanationBlock(code, p, {title:x[0], what:x[1], effect:x[2], when:x[3], warning:""});
+        }).join("");
+      };
+      renderGroup("hydraulics","xtendHydraulics");
+      renderGroup("hybrid","xtendHybrid");
+      renderGroup("curve","xtendCurve");
+      renderGroup("xtore_setup","xtendXtoreSetup");
+      renderGroup("xtore_control","xtendXtoreControl");
+    } catch (error) {
+      console.error("Xtend Eco tool kon parameterdata niet laden", error);
+    }
+  }
+
   async function initTools() {
     document.querySelectorAll("[data-tool-open]").forEach(button => {
       button.addEventListener("click", () => {
         showTool(button.dataset.toolOpen);
         if (button.dataset.toolOpen === "elga") renderElgaTool();
+        if (button.dataset.toolOpen === "xtend") renderXtendTool();
       });
     });
     document.querySelectorAll("[data-tool-back]").forEach(button => button.addEventListener("click", () => showTool("")));
     try {
       elgaAceTool = await loadJson("tools/elga-ace.json");
       document.getElementById("elgaModel")?.addEventListener("change", renderElgaTool);
+      xtendEcoTool = await loadJson("tools/xtend-eco.json");
+      document.getElementById("xtendXtore")?.addEventListener("change", event => {
+        document.getElementById("xtendXtoreContent")?.classList.toggle("hidden-view", event.target.value !== "yes");
+      });
     } catch (error) {
       console.warn("Elga Ace tooldata kon niet worden geladen", error);
     }

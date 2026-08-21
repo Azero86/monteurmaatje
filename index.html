@@ -15,7 +15,7 @@
   <link rel="icon" href="./favicon-v3.svg?v=3" type="image/svg+xml">
   <link rel="icon" href="./icons/mm-app-v3-192.png?v=3" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon" href="./icons/mm-app-v3-180.png?v=3" sizes="180x180" type="image/png">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css?v=20260821-xtend6">
 </head>
 <body class="__variable_f91424 __variable_dd0526 antialiased">
 <main>
@@ -273,6 +273,11 @@
             <div><h2>Elga Ace afstellen</h2><p>Debiet, stooklijn, hybride regeling en back-up stap voor stap controleren.</p></div>
             <span class="tool-card-arrow" aria-hidden="true">›</span>
           </button>
+          <button class="tool-card" type="button" data-tool-open="xtend">
+            <span class="tool-card-icon" aria-hidden="true">IG</span>
+            <div><h2>Xtend Eco afstellen</h2><p>Hybride regeling, stooklijn, pomp/ΔT en Xtore stap voor stap instellen.</p></div>
+            <span class="tool-card-arrow" aria-hidden="true">›</span>
+          </button>
         </div>
       </div>
 
@@ -479,6 +484,61 @@
           </div>
         </article>
       </div>
+      <div id="toolXtendView" class="tool-detail hidden-view">
+        <button class="tool-back" type="button" data-tool-back>← Terug naar Tools</button>
+        <article class="knowledge-tool elga-tool">
+          <div class="knowledge-tool-head">
+            <span class="info-icon knowledge-tool-icon" aria-hidden="true">IG</span>
+            <div><p class="step-label">INTERGAS XTEND ECO</p><h2>Xtend Eco afstellen</h2>
+            <p>Hybride inbedrijfstelling, stooklijn en Xtore op basis van het officiële Intergas installatievoorschrift.</p></div>
+          </div>
+          <section class="elga-step">
+            <p class="section-kicker">STAP 1 · HYDRAULIEK & POMP</p>
+            <div class="elga-explainer"><h3>Flow eerst, instellingen daarna</h3><p>De Xtend Eco moet zijn warmte via voldoende waterflow kwijt kunnen. P081 begrenst de maximale pompaansturing; P086 kan het debiet reduceren wanneer ΔT onder de ingestelde waarde komt. Bij flowproblemen eerst vullen, ontluchten, filter/afsluiters en hydraulische weerstand controleren.</p></div>
+            <div id="xtendHydraulics" class="elga-param-grid"></div>
+          </section>
+          <section class="elga-step">
+            <p class="section-kicker">STAP 2 · HYBRIDE REGELING</p>
+            <p class="elga-step-intro">P100 bepaalt de hoofdstrategie. De bivalentgrenzen en wachttijden bepalen vervolgens wanneer de cv-ketel mag ondersteunen of overnemen.</p>
+            <div id="xtendHybrid" class="elga-param-grid"></div>
+          </section>
+          <section class="elga-step">
+            <p class="section-kicker">STAP 3 · STOOKLIJN</p>
+            <div class="elga-explainer"><h3>Radiatoren of vloerverwarming?</h3><p>Intergas geeft afzonderlijke stooklijnvoorbeelden. Bij P194 = 40 °C gebruikt het voorschrift bijvoorbeeld P192 = 0,74 en P210 = 0 voor radiatoren, tegenover P192 = 0,44 en P210 = 8 voor vloerverwarming. Dit zijn voorbeeldinstellingen uit de handleiding, geen universele woningberekening.</p></div>
+            <div id="xtendCurve" class="elga-param-grid"></div>
+          </section>
+          <section class="elga-step">
+            <p class="section-kicker">STAP 4 · XTORE</p>
+            <div class="knowledge-field">
+              <label for="xtendXtore">Xtore aanwezig?</label>
+              <div class="select-wrap"><select id="xtendXtore"><option value="no">Nee</option><option value="yes">Ja · Xtore 40/80 L</option></select>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></div>
+            </div>
+            <div id="xtendXtoreContent" class="hidden-view">
+              <div class="elga-warning"><strong>Belangrijk voor legionellapreventie</strong><p>Intergas schrijft voor de CV-aanvoertemperatuur van de cv-ketel op minimaal 75 °C te zetten zodat het wekelijkse legionellaprogramma de Xtore tot 65 °C kan verwarmen.</p></div>
+              <div class="elga-explainer"><h3>Basis inbedrijfstelling Xtore</h3><p>Volgens Intergas: P003 = Intergas Xtore, P046 = Ja, P068 óf P069 = warmwatervat-klepsturing, P076 = warmwatervatsensor, P077 = temperatuurbeveiligingssensor CV indien aangesloten en P079 op de gewenste doeltemperatuur. De Xtore-handleiding adviseert 50 °C. Na opslaan de Xtend minimaal 30 seconden spanningsloos maken en opnieuw starten.</p></div>
+              <h3 class="xtend-subtitle">Aansluiten & activeren</h3><div id="xtendXtoreSetup" class="elga-param-grid"></div>
+              <h3 class="xtend-subtitle">Tapwater optimaliseren</h3><div id="xtendXtoreControl" class="elga-param-grid"></div>
+            </div>
+          </section>
+          <section class="elga-step">
+            <p class="section-kicker">STAP 5 · EINDCONTROLE</p>
+            <ul class="power-checklist">
+              <li><span>✓</span><p>Controleer flow, systeemdruk, ontluchting en stabiel pompgedrag.</p></li>
+              <li><span>✓</span><p>Controleer of de gekozen hybride modus logisch schakelt tussen warmtepomp en cv-ketel.</p></li>
+              <li><span>✓</span><p>Stooklijn zo laag mogelijk met behoud van comfort.</p></li>
+              <li><span>✓</span><p>Bij Xtore: klepwerking, vatsensor, doeltemperatuur en legionellaprogramma controleren.</p></li>
+              <li><span>✓</span><p>Bij Xtore: cv-ketel maximaal aanvoer minimaal 75 °C voor legionellapreventie.</p></li>
+            </ul>
+          </section>
+          <div class="elga-source-box"><strong>Officiële bronnen</strong>
+            <a href="https://www.intergas-verwarming.nl/app/uploads/2025/12/88104401-Installatievoorschrift-Xtend-Eco-1.pdf" target="_blank" rel="noopener noreferrer">Xtend Eco installatievoorschrift ↗</a>
+            <a href="https://www.intergas-verwarming.nl/app/uploads/2024/07/88444402.pdf" target="_blank" rel="noopener noreferrer">Xtore installatievoorschrift ↗</a>
+            <a href="https://www.intergas-verwarming.nl/zakelijk/download-xtend-software/" target="_blank" rel="noopener noreferrer">Xtend firmware/update-informatie ↗</a>
+          </div>
+        </article>
+      </div>
+
       <p class="info-note">Tools ondersteunt de monteur met praktische startwaarden en officiële toestelparameters. De definitieve instelling blijft een vakinhoudelijke beoordeling.</p>
     </div>
   </section>
@@ -498,6 +558,6 @@
     </button>
   </nav>
 </main>
-<script src="./app.js" defer></script>
+<script src="./app.js?v=20260821-xtend6" defer></script>
 </body>
 </html>

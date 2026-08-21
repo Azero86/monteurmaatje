@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "intergas-xtend-eco",
+  "title": "Xtend Eco afstellen",
+  "subtitle": "Inbedrijfstelling, hybride regeling & Xtore",
+  "sources": [
+    {
+      "title": "Intergas Xtend Eco installatievoorschrift",
+      "url": "https://www.intergas-verwarming.nl/app/uploads/2025/12/88104401-Installatievoorschrift-Xtend-Eco-1.pdf"
+    },
+    {
+      "title": "Intergas Xtore installatievoorschrift",
+      "url": "https://www.intergas-verwarming.nl/app/uploads/2024/07/88444402.pdf"
+    },
+    {
+      "title": "Intergas Xtend firmware/update-informatie",
+      "url": "https://www.intergas-verwarming.nl/zakelijk/download-xtend-software/"
+    }
+  ],
+  "groups": {
+    "hydraulics": [
+      "P081",
+      "P086"
+    ],
+    "hybrid": [
+      "P100",
+      "P101",
+      "P102",
+      "P103",
+      "P104",
+      "P107",
+      "P108",
+      "P113",
+      "P114",
+      "P115",
+      "P116"
+    ],
+    "curve": [
+      "P192",
+      "P194",
+      "P210",
+      "P221"
+    ],
+    "xtore_setup": [
+      "P003",
+      "P046",
+      "P068",
+      "P069",
+      "P076",
+      "P077",
+      "P079"
+    ],
+    "xtore_control": [
+      "P040",
+      "P041",
+      "P042",
+      "P043",
+      "P045",
+      "P047",
+      "P048",
+      "P049",
+      "P050",
+      "P052"
+    ]
+  },
+  "explanations": {
+    "P081": [
+      "Maximale pompaansturing",
+      "Begrenst hoe ver de interne waterpomp maximaal mag worden aangestuurd.",
+      "Te laag begrenzen kan de beschikbare waterflow beperken. De fabrieksinstelling is 100%.",
+      "Bij onvoldoende flow eerst de installatie controleren voordat je de pomp begrenst."
+    ],
+    "P086": [
+      "Minimale ΔT verwarming",
+      "De Xtend kan het debiet reduceren wanneer het temperatuurverschil tussen aanvoer en retour onder deze ingestelde waarde komt.",
+      "Met 0 staat deze functie uit en wordt het ingestelde debiet aangehouden; hoger laat de regeling eerder debiet terugnemen bij kleine ΔT.",
+      "Niet gebruiken om kunstmatig een gewenst ΔT af te dwingen zonder eerst hydrauliek en afgifte te beoordelen."
+    ],
+    "P100": [
+      "Hybride / bivalente werkingsmodus",
+      "Bepaalt de hoofdstrategie waarmee Xtend Eco kiest tussen warmtepomp en cv-ketel.",
+      "De officiële keuzes lopen van geheel elektrisch, COP-/CO₂-/tariefgestuurd en maximaal warmtepompgebruik tot alleen cv-ketel.",
+      "Kies de strategie bewust op installatie en doel. Economisch werkt alleen logisch als de tariefgegevens correct zijn."
+    ],
+    "P101": [
+      "Minimale COP warmtepompwerking",
+      "Bij de COP-gestuurde hybride modus bepaalt dit de minimale COP waarbij warmtepompbedrijf gewenst is.",
+      "Een hogere grens laat de regeling eerder voor de cv-ketel kiezen; een lagere grens houdt de warmtepomp langer actief.",
+      "Alleen relevant wanneer P100 op minimale COP staat."
+    ],
+    "P102": [
+      "Bivalentpunt cv-ketel",
+      "Boven deze buitentemperatuur mag de cv-ketel niet bijverwarmen.",
+      "Een hogere waarde geeft de ketel over een groter buitentemperatuurgebied de mogelijkheid om bij te springen.",
+      "Niet los beoordelen van P103 en het werkelijke comfort."
+    ],
+    "P103": [
+      "Ondergrens warmtepompbedrijf",
+      "Onder deze buitentemperatuur stopt de warmtepomp en wordt alleen met de cv-ketel verwarmd.",
+      "Lager houdt de warmtepomp bij kouder weer langer beschikbaar; hoger schakelt eerder volledig over op de ketel.",
+      "Beoordeel samen met capaciteit, afgifte en gekozen hybride strategie."
+    ],
+    "P104": [
+      "Maximale retourtemperatuur warmtepomp",
+      "Boven deze retourtemperatuur stopt de warmtepomp en neemt de cv-ketel het verwarmen over.",
+      "Een lagere grens schakelt de warmtepomp eerder uit bij hoge systeemtemperaturen.",
+      "Relevant bij hoge-temperatuurafgifte; niet onnodig verlagen."
+    ],
+    "P107": [
+      "Startmoment cv-ketel",
+      "Bepaalt via graadminuten hoe snel de cv-ketel mag bijschakelen wanneer de warmtepomp de vraag niet direct volgt.",
+      "0 is adaptief. Bij een handmatige waarde geldt volgens Intergas: hoe groter de waarde, hoe langer het duurt voordat de ketel bijschakelt.",
+      "Laat adaptief staan tenzij er een duidelijke reden is om het bijschakelgedrag te wijzigen."
+    ],
+    "P108": [
+      "Back-up bij warmtepompstoring",
+      "Wachttijd voordat de cv-ketel bijspringt wanneer de warmtepomp een fout heeft.",
+      "Een langere wachttijd stelt nood-/back-upverwarming langer uit.",
+      "Comfort- en storingsparameter; niet gebruiken als normale energiebesparingsinstelling."
+    ],
+    "P113": [
+      "Lage buitentemperatuur wachttijdcurve",
+      "Ondergrens van de buitentemperatuur voor de variabele wachttijd van de cv-ketel.",
+      "Werkt samen met P114, P115 en P116.",
+      "Alle vier als één regeling beoordelen."
+    ],
+    "P114": [
+      "Hoge buitentemperatuur wachttijdcurve",
+      "Bovengrens van de buitentemperatuur voor de variabele wachttijd van de cv-ketel.",
+      "Werkt samen met P113, P115 en P116.",
+      "Alle vier als één regeling beoordelen."
+    ],
+    "P115": [
+      "Wachttijd bij lage buitentemperatuur",
+      "Bepaalt de ketelwachttijd aan de koude kant van de buitentemperatuurcurve.",
+      "Korter geeft bij koud weer sneller cv-ketelondersteuning; langer geeft de warmtepomp meer tijd.",
+      "Comfort versus warmtepompinzet afwegen."
+    ],
+    "P116": [
+      "Wachttijd bij hoge buitentemperatuur",
+      "Bepaalt de ketelwachttijd aan de warme kant van de buitentemperatuurcurve.",
+      "Bij relatief warm weer kan volgens Intergas langer worden gewacht voordat de ketel bijspringt.",
+      "Werkt samen met P113–P115."
+    ],
+    "P194": [
+      "Maximale aanvoertemperatuur",
+      "Temperatuurplafond van de verwarmingsregeling en belangrijk uitgangspunt van de stooklijn.",
+      "Hoger maakt hogere systeemtemperaturen mogelijk; lager begrenst die. De woning moet met de gekozen waarde wel comfortabel warm worden.",
+      "Gebruik samen met P192 en P210."
+    ],
+    "P192": [
+      "Helling stooklijn",
+      "Bepaalt hoeveel de aanvoertemperatuur stijgt wanneer de buitentemperatuur daalt.",
+      "Een steilere lijn geeft bij kouder weer sneller een hogere aanvoertemperatuur.",
+      "Alleen relevant bij weersafhankelijke regeling; zo laag mogelijk met behoud van comfort."
+    ],
+    "P210": [
+      "Voetpuntverschuiving stooklijn",
+      "Verschuift het lage temperatuurdeel/voetpunt van de stooklijn.",
+      "Een hogere verschuiving verhoogt de minimale gevraagde aanvoertemperatuur.",
+      "Intergas geeft aparte voorbeeldwaarden voor vloerverwarming en radiatoren."
+    ],
+    "P221": [
+      "Stooklijnverschuiving",
+      "Verschuift de volledige stooklijn omhoog of omlaag.",
+      "Positief verhoogt de gevraagde temperatuur over de lijn; negatief verlaagt die.",
+      "Volgens Intergas alleen instellen bij toepassing van een Aan/Uit-thermostaat (proportionele band)."
+    ],
+    "P003": [
+      "Waterzijdige aansluiting",
+      "Vertelt de Xtend welk type waterzijdige toepassing is aangesloten.",
+      "Voor Xtore is keuze 11 = Intergas Xtore.",
+      "Essentiële configuratiestap voor Xtore."
+    ],
+    "P046": [
+      "Hybride tapwaterbereiding",
+      "Schakelt hybride tapwaterbereiding met Xtore in of uit.",
+      "Voor Xtore-inbedrijfstelling schrijft Intergas P046 = Ja voor.",
+      "Na wijzigen instellingen opslaan en de Xtend volgens voorschrift herstarten."
+    ],
+    "P068": [
+      "AUX 1 relaisfunctie",
+      "Kan worden gebruikt voor de warmwatervat-klepsturing.",
+      "Kies P068 óf P069 afhankelijk van op welke contacten de klep fysiek is aangesloten.",
+      "Niet beide blind instellen; volg de daadwerkelijke bedrading."
+    ],
+    "P069": [
+      "AUX 2 relaisfunctie",
+      "Alternatieve uitgang voor de warmwatervat-klepsturing.",
+      "Kies P068 óf P069 afhankelijk van de gebruikte aansluiting.",
+      "Controleer poort-/kleprichting daarna met P047 indien nodig."
+    ],
+    "P076": [
+      "Temperatuursensor 1 functie",
+      "Wijst de eerste temperatuursensoringang toe.",
+      "Voor Xtore schrijft Intergas deze ingang voor als warmwatervatsensor wanneer daar aangesloten.",
+      "Sensorfunctie moet overeenkomen met de fysieke aansluiting."
+    ],
+    "P077": [
+      "Temperatuursensor 2 functie",
+      "Wijst de tweede temperatuursensoringang toe.",
+      "Bij Xtore kan deze voor de temperatuurbeveiligingssensor CV worden gebruikt, mits die is aangesloten.",
+      "Alleen instellen overeenkomstig de installatie."
+    ],
+    "P079": [
+      "Doeltemperatuur Xtore",
+      "Streefwaarde voor de temperatuur van het warmwatervat.",
+      "De Xtore-handleiding adviseert 50 °C als doeltemperatuur; de actuele Xtend Eco parameterlijst laat een instelbereik tot 65 °C zien.",
+      "Dit is een streefwaarde; omstandigheden en regeling bepalen of die altijd wordt bereikt."
+    ],
+    "P040": [
+      "Wijze van Xtore verwarmen",
+      "Bepaalt of Xtore alleen door de warmtepomp, COP-beperkt, met cv-ketelnaverwarming of alleen door de ketel wordt verwarmd.",
+      "Keuzes 0–2 maximaliseren warmtepompgebruik; 3–6 laten volgens de Xtore-handleiding ook cv-ketelnaverwarming/ketelbedrijf toe.",
+      "Kies op gewenste balans tussen rendement, snelheid en comfort."
+    ],
+    "P041": [
+      "Pompdebiet Xtore",
+      "Stelt het pompdebiet in tijdens het verwarmen van de Xtore.",
+      "Meer debiet verandert de warmteoverdracht door de spiraal; de Xtore-handleiding noemt 15 l/min als default.",
+      "Niet willekeurig wijzigen zonder hydraulisch gedrag te beoordelen."
+    ],
+    "P042": [
+      "Buitentemperatuurgrens Xtore",
+      "Onder deze buitentemperatuur mag de warmtepomp de Xtore niet verwarmen.",
+      "Hoger beperkt warmtepomp-tapwaterbedrijf eerder bij kou.",
+      "Beoordeel op beschikbare capaciteit en comfort."
+    ],
+    "P043": [
+      "Legionellaprogramma tijdstip",
+      "Bepaalt dag en tijdstip van het wekelijkse legionellapreventieprogramma.",
+      "Default correspondeert volgens Intergas met maandag 12:00; 168 schakelt het programma uit.",
+      "Legionellapreventie niet uitschakelen zonder geldige reden; voor uitvoering moet de cv-ketel voldoende temperatuur kunnen leveren."
+    ],
+    "P045": [
+      "Tapwaterprogramma",
+      "Schakelt het tijdprogramma voor Xtore-verwarming aan of uit.",
+      "Met het programma kan de gebruiker tijdvakken bepalen waarin Xtore mag verwarmen.",
+      "Handig voor planning, maar houd rekening met beschikbaar warmwatercomfort."
+    ],
+    "P047": [
+      "Klepaansturing omkeren",
+      "Draait de logica van de omschakelklep om.",
+      "Gebruik wanneer de fysieke A/B-poorten tegengesteld aan de standaardconfiguratie zijn aangesloten.",
+      "Controleer altijd daadwerkelijk klepgedrag na wijziging."
+    ],
+    "P048": [
+      "Xtore hysterese",
+      "Bepaalt hoeveel de vattemperatuur onder P079 mag zakken voordat opnieuw verwarmen nodig wordt.",
+      "Grotere hysterese geeft grotere temperatuurschommelingen en minder snel opnieuw starten; kleinere hysterese houdt de temperatuur strakker.",
+      "Afwegen tussen comfort en schakelgedrag."
+    ],
+    "P049": [
+      "Xtore prioriteitsopties",
+      "Combineert extra voorwaarden voor het onderbreken van Xtore-verwarming bij CV-/tapvraag en omgang met kamersetpointwijzigingen.",
+      "De waarde is een combinatie van drie officiële opties.",
+      "Niet als simpel hoger/lager behandelen; kies de combinatie die bij de gewenste prioriteit hoort."
+    ],
+    "P050": [
+      "Maximale Xtore verwarmtijd",
+      "Begrenst hoe lang de Xtore per verwarmcyclus mag worden verwarmd.",
+      "Een langere tijd geeft meer ruimte om het vat op temperatuur te krijgen; een kortere tijd begrenst de cyclus eerder.",
+      "Beoordeel samen met doeltemperatuur, buitentemperatuur en warmtevraag."
+    ],
+    "P052": [
+      "Xtore tankvolume",
+      "Bepaalt het gebruikte vatvolume; 0 staat voor automatische detectie.",
+      "Handmatige invoer is bedoeld wanneer automatische detectie niet wordt gebruikt.",
+      "Bij standaard Xtore eerst automatische detectie aanhouden tenzij de installatie anders vereist."
+    ]
+  }
+}
