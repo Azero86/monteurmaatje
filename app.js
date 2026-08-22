@@ -1003,6 +1003,140 @@
     }
   }
 
+
+  function initDiagramViewer() {
+    const viewer = document.getElementById("diagramViewer");
+    const stage = document.getElementById("diagramViewerStage");
+    const image = document.getElementById("diagramViewerImage");
+    const title = document.getElementById("diagramViewerTitle");
+    const closeButton = document.getElementById("diagramViewerClose");
+    if (!viewer || !stage || !image || !closeButton) return;
+
+    let scale = 1, x = 0, y = 0;
+    let startDistance = 0, startScale = 1;
+    let dragStart = null;
+    let pointerDrag = null;
+    let viewerHistoryActive = false;
+
+    const applyTransform = () => {
+      image.style.transform = `translate(${x}px, ${y}px) scale(${scale})`;
+    };
+    const resetTransform = () => {
+      scale = 1; x = 0; y = 0;
+      applyTransform();
+    };
+    const hideViewer = () => {
+      viewer.hidden = true;
+      viewer.setAttribute("aria-hidden", "true");
+      document.documentElement.classList.remove("diagram-viewer-open");
+      image.removeAttribute("src");
+      viewerHistoryActive = false;
+      resetTransform();
+    };
+    const openViewer = (source) => {
+      image.src = source.currentSrc || source.src;
+      image.alt = source.alt || "ROG(A)FA beugelschema";
+      title.textContent = source.alt?.replace(/^ROG\(A\)FA\s*/i, "") || "Beugelschema";
+      resetTransform();
+      viewer.hidden = false;
+      viewer.setAttribute("aria-hidden", "false");
+      document.documentElement.classList.add("diagram-viewer-open");
+      history.pushState({ ...(history.state || {}), mmDiagramViewer: true }, "", location.href);
+      viewerHistoryActive = true;
+      closeButton.focus({ preventScroll: true });
+    };
+    const requestClose = () => {
+      if (viewerHistoryActive && history.state?.mmDiagramViewer) history.back();
+      else hideViewer();
+    };
+
+    document.querySelectorAll("#guidelineRogafaView .diagram-toggle img").forEach(source => {
+      source.classList.add("diagram-zoomable");
+      source.tabIndex = 0;
+      source.setAttribute("role", "button");
+      source.setAttribute("aria-label", `${source.alt || "Beugelschema"} schermvullend bekijken`);
+      source.addEventListener("click", () => openViewer(source));
+      source.addEventListener("keydown", event => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          openViewer(source);
+        }
+      });
+    });
+
+    closeButton.addEventListener("click", requestClose);
+    let suppressViewerClick = false;
+    viewer.addEventListener("click", event => {
+      if (suppressViewerClick) {
+        suppressViewerClick = false;
+        return;
+      }
+      if (event.target === viewer || event.target === stage) requestClose();
+    });
+
+    stage.addEventListener("wheel", event => {
+      event.preventDefault();
+      scale = Math.min(5, Math.max(1, scale + (event.deltaY < 0 ? .2 : -.2)));
+      if (scale === 1) { x = 0; y = 0; }
+      applyTransform();
+    }, { passive: false });
+
+    stage.addEventListener("pointerdown", event => {
+      if (event.pointerType === "touch") return;
+      pointerDrag = { clientX:event.clientX, clientY:event.clientY, x, y, moved:false };
+      stage.setPointerCapture?.(event.pointerId);
+      stage.classList.add("is-dragging");
+    });
+    stage.addEventListener("pointermove", event => {
+      if (!pointerDrag || event.pointerType === "touch") return;
+      const dx = event.clientX - pointerDrag.clientX;
+      const dy = event.clientY - pointerDrag.clientY;
+      if (Math.hypot(dx, dy) > 4) pointerDrag.moved = true;
+      x = pointerDrag.x + dx;
+      y = pointerDrag.y + dy;
+      applyTransform();
+    });
+    const endPointerDrag = event => {
+      if (!pointerDrag) return;
+      if (pointerDrag.moved) suppressViewerClick = true;
+      pointerDrag = null;
+      stage.releasePointerCapture?.(event.pointerId);
+      stage.classList.remove("is-dragging");
+    };
+    stage.addEventListener("pointerup", endPointerDrag);
+    stage.addEventListener("pointercancel", endPointerDrag);
+
+    stage.addEventListener("touchstart", event => {
+      if (event.touches.length === 2) {
+        const [a,b] = event.touches;
+        startDistance = Math.hypot(a.clientX-b.clientX, a.clientY-b.clientY);
+        startScale = scale;
+      } else if (event.touches.length === 1) {
+        dragStart = { clientX:event.touches[0].clientX, clientY:event.touches[0].clientY, x, y };
+      }
+    }, { passive: true });
+    stage.addEventListener("touchmove", event => {
+      if (event.touches.length === 2 && startDistance) {
+        event.preventDefault();
+        const [a,b] = event.touches;
+        const distance = Math.hypot(a.clientX-b.clientX, a.clientY-b.clientY);
+        scale = Math.min(5, Math.max(1, startScale * distance/startDistance));
+        if (scale === 1) { x = 0; y = 0; }
+        applyTransform();
+      } else if (event.touches.length === 1 && dragStart && scale > 1) {
+        event.preventDefault();
+        x = dragStart.x + event.touches[0].clientX-dragStart.clientX;
+        y = dragStart.y + event.touches[0].clientY-dragStart.clientY;
+        applyTransform();
+      }
+    }, { passive: false });
+    stage.addEventListener("touchend", () => { startDistance = 0; dragStart = null; }, { passive: true });
+
+    window.addEventListener("popstate", () => {
+      if (!viewer.hidden && !history.state?.mmDiagramViewer) hideViewer();
+    });
+  }
+
   async function initTools() {
     document.querySelectorAll("[data-tool-open]").forEach(button => {
       button.addEventListener("click", () => navigateRoute(`tools/${button.dataset.toolOpen}`));
@@ -1041,6 +1175,7 @@
       refs.recordCount.textContent = state.catalog.recordCount ?? "—";
       renderBrandOptions(); renderDeviceOptions(); setOnlineStatus();
       initHeatingPowerKnowledge();
+      initDiagramViewer();
       initTools();
     } catch (error) {
       refs.statusText.textContent = "Kennisbank niet beschikbaar"; refs.statusPill.classList.add("offline");

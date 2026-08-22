@@ -1,14 +1,14 @@
 const CACHE_PREFIX = "monteurmaatje-";
-const APP_CACHE = `${CACHE_PREFIX}app-20260822-v13`;
-const DATA_CACHE = `${CACHE_PREFIX}data-20260822-v13`;
+const APP_CACHE = `${CACHE_PREFIX}app-20260822-v19`;
+const DATA_CACHE = `${CACHE_PREFIX}data-20260822-v19`;
 const APP_ROOT = new URL("./", self.registration.scope).href;
 const appUrl = (path = "") => new URL(path, self.registration.scope).href;
 
 const CORE_SHELL = [
   APP_ROOT,
   appUrl("index.html"),
-  appUrl("style.css?v=103-gh"),
-  appUrl("app.js?v=103-gh"),
+  appUrl("style.css?v=106-gh"),
+  appUrl("app.js?v=106-gh"),
   appUrl("manifest-v3.webmanifest?v=3"),
   appUrl("favicon-v3.svg?v=3"),
   appUrl("icons/mm-app-v3-192.png?v=3"),
