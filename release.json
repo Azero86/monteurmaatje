@@ -1,10 +1,10 @@
 {
   "product": "MonteurMaatje",
   "foundationVersion": "1.1.0-foundation",
-  "appRevision": "86822af915ba3f77",
+  "appRevision": "093d153ad37c49ca",
   "dataRevision": "387427fc6ef3cc96",
   "dataUpdateMode": "conditional-revalidation",
   "manualDataVersionRequired": false,
-  "generatedAt": "2026-08-20T20:00:00+02:00",
-  "change": "Navigatie, Regelgeving en Kennis volledig gelijkgetrokken met bestaande MonteurMaatje huisstijl"
+  "generatedAt": "2026-08-22T18:55:00+02:00",
+  "change": "v1.0 final bugfix: terugnavigatie, uniforme footer/bronnen, CO-statuskleuren dark mode en runtime-opschoning"
 }

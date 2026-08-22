@@ -18,7 +18,6 @@
     diagnosticStep: "",
     diagnosticActions: [],
     installPrompt: null,
-    waitingWorker: null,
   };
 
   let knowledgeRefreshPromise = null;
@@ -30,7 +29,7 @@
     brand: $("brand"), device: $("device"), deviceGroup: $("deviceGroup"), family: $("familyHint"),
     tabs: $("tabs"), thirdStep: $("thirdStep"), result: $("result"), reset: $("resetButton"),
     dataMessage: $("dataMessage"), p1: $("p1"), p2: $("p2"), p3: $("p3"),
-    recordCount: $("recordCount"), install: $("installButton"), update: $("updateButton"),
+    recordCount: $("recordCount"), install: $("installButton"),
     statusPill: $("statusPill"), statusText: $("statusText"), themeToggle: $("themeToggle"),
   };
 
@@ -185,14 +184,64 @@
     return unit ? `${v} ${unit}` : String(v);
   }
 
-  function parameterRows(p) {
+  function choiceParts(choice) {
+    const text = String(choice ?? "").trim();
+    const match = text.match(/^([^=]{1,24}?)\s*=\s*(.+)$/);
+    if (match) return { key: match[1].trim(), label: match[2].trim(), raw: text };
+    return { key: "", label: text, raw: text };
+  }
+
+  function parameterChoices(p) {
+    if (Array.isArray(p?.choices) && p.choices.length) return p.choices.map(String);
+    const range = String(p?.settingRange || "").trim();
+    if (!range) return [];
+    if (range.includes(";")) {
+      const parts = range.split(";").map(v => v.trim()).filter(Boolean);
+      if (parts.length > 1) return parts;
+    }
+    return [];
+  }
+
+  function choiceListHtml(choices) {
+    return `<ul class="parameter-choices">${choices.map(choice => {
+      const part = choiceParts(choice);
+      return part.key
+        ? `<li><span class="choice-key">${esc(part.key)}</span><span class="choice-label">${esc(part.label)}</span></li>`
+        : `<li><span class="choice-label">${esc(part.label)}</span></li>`;
+    }).join("")}</ul>`;
+  }
+
+  function factoryMeaning(p, choices) {
+    const value = String(p?.factoryDefault ?? "").trim();
+    if (!value || !choices.length) return "";
+    for (const choice of choices) {
+      const part = choiceParts(choice);
+      if (part.key && part.key.toLocaleLowerCase("nl-NL") === value.toLocaleLowerCase("nl-NL")) return part.label;
+      if (!part.key && part.label.toLocaleLowerCase("nl-NL") === value.toLocaleLowerCase("nl-NL")) return "";
+    }
+    return "";
+  }
+
+  function parameterSettingRows(p, includeCategory = false) {
     const rows = [];
-    const add = (name, value, unit = "") => { if (value !== undefined && value !== null && value !== "") rows.push(`<div><dt>${esc(name)}</dt><dd>${esc(displayValue(value, unit))}</dd></div>`); };
-    add("Fabrieksinstelling", p.factoryDefault, p.unit);
-    add("Instelbereik", p.settingRange);
-    if (p.choices?.length) rows.push(`<div class="parameter-choices-row"><dt>Keuzes</dt><dd><ul class="parameter-choices">${p.choices.map(choice => `<li>${esc(choice)}</li>`).join("")}</ul></dd></div>`);
-    if (p.category) add("Categorie", p.category);
+    const choices = parameterChoices(p);
+    const meaning = factoryMeaning(p, choices);
+    if (p.factoryDefault !== undefined && p.factoryDefault !== null && p.factoryDefault !== "") {
+      const value = displayValue(p.factoryDefault, p.unit);
+      rows.push(`<div><dt>Fabrieksinstelling</dt><dd><strong class="factory-value">${esc(value)}</strong>${meaning ? `<span class="factory-meaning"> — ${esc(meaning)}</span>` : ""}</dd></div>`);
+    }
+    if (p.settingRange && !choices.length) {
+      rows.push(`<div><dt>Instelbereik</dt><dd>${esc(p.settingRange)}</dd></div>`);
+    }
+    if (choices.length) {
+      rows.push(`<div class="parameter-choices-row"><dt>Keuzes</dt><dd>${choiceListHtml(choices)}</dd></div>`);
+    }
+    if (includeCategory && p.category) rows.push(`<div><dt>Categorie</dt><dd>${esc(p.category)}</dd></div>`);
     return rows.join("");
+  }
+
+  function parameterRows(p) {
+    return parameterSettingRows(p, true);
   }
 
   function parameterExplanationHtml(p) {
@@ -420,41 +469,33 @@
   window.addEventListener("appinstalled", () => { state.installPrompt = null; refs.install.classList.add("hidden"); });
   refs.install.addEventListener("click", async () => { if (!state.installPrompt) return; await state.installPrompt.prompt(); await state.installPrompt.userChoice; state.installPrompt = null; refs.install.classList.add("hidden"); });
 
-  function exposeWaiting(worker) {
-    if (!worker || state.waitingWorker === worker) return;
-    state.waitingWorker = worker;
-    refs.update.disabled = false;
-    refs.update.textContent = "Update app";
-    refs.update.classList.remove("hidden");
-  }
-  refs.update.addEventListener("click", () => {
-    if (!state.waitingWorker || refs.update.disabled) return;
-    refs.update.disabled = true; refs.update.textContent = "Bijwerken…";
-    state.waitingWorker.postMessage({ type: "SKIP_WAITING" });
-  });
   if ("serviceWorker" in navigator) {
     const hadControllerAtStartup = !!navigator.serviceWorker.controller;
+    let reloadedForUpdate = false;
     navigator.serviceWorker.addEventListener("controllerchange", () => {
-      state.waitingWorker = null;
-      refs.update.classList.add("hidden");
-      // Eerste installatie mag de gebruiker niet onnodig herladen. Bij een echte
-      // worker-update herladen we precies één keer naar de nieuwe controller.
-      if (hadControllerAtStartup) location.reload();
+      if (hadControllerAtStartup && !reloadedForUpdate) {
+        reloadedForUpdate = true;
+        location.reload();
+      }
     });
   }
+
 
   async function registerServiceWorker() {
     if (!("serviceWorker" in navigator) || location.protocol === "file:") return;
     try {
-      const registration = await navigator.serviceWorker.register(appUrl("sw.js?v=7"), { updateViaCache: "none" });
-      if (registration.waiting && navigator.serviceWorker.controller) exposeWaiting(registration.waiting);
+      const registration = await navigator.serviceWorker.register(appUrl("sw.js?v=10"), { updateViaCache: "none" });
+      if (registration.waiting && navigator.serviceWorker.controller) {
+        registration.waiting.postMessage({ type: "SKIP_WAITING" });
+      }
       registration.addEventListener("updatefound", () => {
         const installing = registration.installing;
         installing?.addEventListener("statechange", () => {
-          if (installing.state === "installed" && navigator.serviceWorker.controller) exposeWaiting(installing);
+          if (installing.state === "installed" && navigator.serviceWorker.controller) {
+            installing.postMessage({ type: "SKIP_WAITING" });
+          }
         });
       });
-      // Eén lichte updatecheck per sessie. Geen hash-download van alle frontendassets.
       registration.update().catch(() => {});
     } catch (error) { console.warn("Serviceworker kon niet worden geregistreerd", error); }
   }
@@ -539,14 +580,7 @@
   }
 
   function installationParameterCard(parameter, device, data, kicker, noteHtml = "") {
-    const rows = [];
-    if (parameter.factoryDefault !== undefined && parameter.factoryDefault !== null && parameter.factoryDefault !== "") {
-      rows.push(`<div><dt>Fabrieksinstelling</dt><dd>${esc(displayValue(parameter.factoryDefault, parameter.unit))}</dd></div>`);
-    }
-    if (parameter.settingRange) rows.push(`<div><dt>Instelbereik</dt><dd>${esc(parameter.settingRange)}</dd></div>`);
-    if (parameter.choices?.length) {
-      rows.push(`<div><dt>Keuzes</dt><dd>${parameter.choices.map(choice => `<span class="power-choice">${esc(choice)}</span>`).join("")}</dd></div>`);
-    }
+    const rowsHtml = parameterSettingRows(parameter, false);
     const source = sourceOf(data, device);
     return `
       <div class="power-parameter-title">
@@ -555,7 +589,7 @@
           <div class="power-code-row"><span class="code-badge">${esc(parameter.code)}</span><h4>${esc(parameter.description || parameter.code)}</h4></div>
         </div>
       </div>
-      ${rows.length ? `<dl class="power-parameter-rows">${rows.join("")}</dl>` : ""}
+      ${rowsHtml ? `<dl class="power-parameter-rows">${rowsHtml}</dl>` : ""}
       ${parameter.technicalExplanation ? `<p class="power-parameter-explanation">${esc(parameter.technicalExplanation)}</p>` : ""}
       ${noteHtml}
       ${source?.url ? `<a class="power-source-link" href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">Open officiële handleiding ↗</a>` : ""}
@@ -637,13 +671,7 @@
       const parameter = (data.parameters || []).find(item => String(item.code) === String(map.parameterCode));
       if (!parameter) throw new Error(`Parameter ${map.parameterCode} niet gevonden`);
 
-      const rows = [];
-      if (parameter.factoryDefault !== undefined && parameter.factoryDefault !== null && parameter.factoryDefault !== "") {
-        rows.push(`<div><dt>Fabrieksinstelling</dt><dd>${esc(displayValue(parameter.factoryDefault, parameter.unit))}</dd></div>`);
-      }
-      if (parameter.settingRange) rows.push(`<div><dt>Instelbereik</dt><dd>${esc(parameter.settingRange)}</dd></div>`);
-      if (parameter.choices?.length) rows.push(`<div><dt>Keuzes</dt><dd>${parameter.choices.map(choice => `<span class="power-choice">${esc(choice)}</span>`).join("")}</dd></div>`);
-
+      const rowsHtml = parameterSettingRows(parameter, false);
       const source = sourceOf(data, device);
       result.className = "power-parameter-card";
       result.innerHTML = `
@@ -653,7 +681,7 @@
             <div class="power-code-row"><span class="code-badge">${esc(parameter.code)}</span><h4>${esc(parameter.description || parameter.code)}</h4></div>
           </div>
         </div>
-        ${rows.length ? `<dl class="power-parameter-rows">${rows.join("")}</dl>` : ""}
+        ${rowsHtml ? `<dl class="power-parameter-rows">${rowsHtml}</dl>` : ""}
         ${parameter.technicalExplanation ? `<p class="power-parameter-explanation">${esc(parameter.technicalExplanation)}</p>` : ""}
         <div class="power-parameter-note"><strong>Richtwaarde uit calculator:</strong> <span id="powerLinkedAdvice">${document.getElementById("powerAdvice")?.textContent !== "—" ? `${esc(document.getElementById("powerAdvice")?.textContent)} kW` : "Nog geen richtwaarde"}</span><br>Gebruik deze richtwaarde samen met de officiële parameterinformatie; MonteurMaatje rekent geen fabrikantwaarde om als daarvoor geen betrouwbare tabel in de huidige data staat.</div>
         ${source?.url ? `<a class="power-source-link" href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">Open officiële handleiding ↗</a>` : ""}
@@ -708,10 +736,12 @@
   function showTool(tool) {
     const home = document.getElementById("toolsHome");
     const cv = document.getElementById("toolCvView");
+    const setup = document.getElementById("toolSetupView");
     const elga = document.getElementById("toolElgaView");
     const xtend = document.getElementById("toolXtendView");
     home?.classList.toggle("hidden-view", !!tool);
     cv?.classList.toggle("hidden-view", tool !== "cv");
+    setup?.classList.toggle("hidden-view", tool !== "setup");
     elga?.classList.toggle("hidden-view", tool !== "elga");
     xtend?.classList.toggle("hidden-view", tool !== "xtend");
     window.scrollTo({ top: 0, behavior: "auto" });
@@ -722,12 +752,10 @@
   }
 
   function elgaExplanationBlock(code, parameter, extra) {
-    const rows = [];
-    if (parameter?.factoryDefault !== undefined && parameter?.factoryDefault !== "") rows.push(`<div><dt>Fabrieksinstelling</dt><dd>${esc(displayValue(parameter.factoryDefault, parameter.unit))}</dd></div>`);
-    if (parameter?.settingRange) rows.push(`<div><dt>Instelbereik</dt><dd>${esc(parameter.settingRange)}</dd></div>`);
+    const rowsHtml = parameterSettingRows(parameter, false);
     return `<article class="elga-param-card">
       <div class="elga-param-head"><span class="code-badge">${esc(code)}</span><h3>${esc(extra.title)}</h3></div>
-      ${rows.length ? `<dl class="power-parameter-rows">${rows.join("")}</dl>` : ""}
+      ${rowsHtml ? `<dl class="power-parameter-rows">${rowsHtml}</dl>` : ""}
       <div class="elga-param-copy"><h4>Wat doet deze?</h4><p>${esc(extra.what)}</p>
       <h4>Effect van aanpassen</h4><p>${esc(extra.effect)}</p>
       <h4>Wanneer aanpassen?</h4><p>${esc(extra.when)}</p></div>
@@ -801,15 +829,198 @@
     }
   }
 
+
+  function showGuideline(guideline) {
+    const home = document.getElementById("guidelinesHome");
+    const rogafa = document.getElementById("guidelineRogafaView");
+    const co = document.getElementById("guidelineCoView");
+    home?.classList.toggle("hidden-view", !!guideline);
+    rogafa?.classList.toggle("hidden-view", guideline !== "rogafa");
+    co?.classList.toggle("hidden-view", guideline !== "co");
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }
+
+  function setupNumber(id) {
+    const input = document.getElementById(id);
+    if (!input) return 0;
+    return Number(String(input.value).replace(",", ".")) || 0;
+  }
+
+  function renderSetupRoom() {
+    const result = document.getElementById("setupResult");
+    if (!result) return;
+    const length = setupNumber("setupLength");
+    const width = setupNumber("setupWidth");
+    const height = setupNumber("setupHeight");
+    const load = setupNumber("setupLoad");
+
+    if (!(length > 0 && width > 0 && height > 0 && load > 0)) {
+      result.className = "setup-result setup-empty";
+      result.innerHTML = `<p class="section-kicker">UITKOMST</p><h3>Vul de ruimte en toestelbelasting in</h3><p>Daarna vergelijkt MonteurMaatje de werkelijke inhoud met 0,2 × nominale belasting.</p>`;
+      return;
+    }
+
+    const volume = length * width * height;
+    const requiredVolume = load * 0.2;
+    const sufficient = volume > requiredVolume;
+    result.className = `setup-result ${sufficient ? "setup-ok" : "setup-warning"}`;
+    result.innerHTML = sufficient
+      ? `<p class="section-kicker">UITKOMST</p>
+         <h3>✓ Ruimte-inhoud voldoet</h3>
+         <dl class="setup-result-list">
+           <div><dt>Werkelijke inhoud</dt><dd>${formatKw(volume)} m³</dd></div>
+           <div><dt>Grens 0,2 × B</dt><dd>${formatKw(requiredVolume)} m³</dd></div>
+         </dl>
+         <p>De ruimte is groter dan de berekende grens. Volgens deze NPR-beoordeling is geen aanvullende At/Aa-opening nodig.</p>`
+      : `<p class="section-kicker">UITKOMST</p>
+         <h3>⚠ Aanvullende ventilatie nodig</h3>
+         <dl class="setup-result-list">
+           <div><dt>Werkelijke inhoud</dt><dd>${formatKw(volume)} m³</dd></div>
+           <div><dt>Grens 0,2 × B</dt><dd>${formatKw(requiredVolume)} m³</dd></div>
+           <div><dt>Luchttoevoer At</dt><dd>min. 50 cm² vrij</dd></div>
+           <div><dt>Luchtafvoer Aa</dt><dd>min. 50 cm² vrij</dd></div>
+         </dl>
+         <p>De ruimte is kleiner dan of gelijk aan de berekende grens. Voor jullie HR-ketels t/m 40 kW geldt minimaal 50 cm² vrije doorlaat voor zowel At als Aa.</p>`;
+  }
+
+  function routeFromLocation() {
+    const raw = location.hash.replace(/^#/, "");
+    const aliases = { regulations: "guidelines", knowledge: "tools" };
+    return aliases[raw] || raw || "home";
+  }
+
+  function baseViewForRoute(route) {
+    if (route === "home") return "home";
+    if (route.startsWith("guidelines")) return "regulations";
+    if (route.startsWith("tools")) return "knowledge";
+    return "home";
+  }
+
+  function renderRoute(route) {
+    const base = baseViewForRoute(route);
+    showAppView(base, { updateHistory: false });
+
+    if (base === "knowledge") {
+      const tool = route.includes("/") ? route.split("/")[1] : "";
+      showTool(tool);
+      if (tool === "elga") renderElgaTool();
+      if (tool === "xtend") renderXtendTool();
+      if (tool === "setup") renderSetupRoom();
+    } else {
+      showTool("");
+    }
+
+    if (base === "regulations") {
+      const guideline = route.includes("/") ? route.split("/")[1] : "";
+      showGuideline(guideline);
+    } else {
+      showGuideline("");
+    }
+  }
+
+  const HISTORY_VERSION = 2;
+  let pendingTopRoute = "";
+
+  function routeDepth(route) {
+    if (route === "home") return 0;
+    if (route === "tools" || route === "guidelines") return 1;
+    if (route.startsWith("tools/") || route.startsWith("guidelines/")) return 2;
+    return 0;
+  }
+
+  function parentRoute(route) {
+    if (route.startsWith("tools/")) return "tools";
+    if (route.startsWith("guidelines/")) return "guidelines";
+    return "home";
+  }
+
+  function routeHash(route) {
+    return route === "home" ? "#home" : `#${route}`;
+  }
+
+  function writeRoute(route, method = "replaceState") {
+    history[method]({ mmRoute: route, mmHistoryVersion: HISTORY_VERSION }, "", routeHash(route));
+    renderRoute(route);
+  }
+
+  function navigateRoute(route) {
+    const current = routeFromLocation();
+    if (current === route) {
+      renderRoute(route);
+      return;
+    }
+
+    const currentDepth = routeDepth(current);
+    const targetDepth = routeDepth(route);
+
+    // Home is altijd de wortel van de interne app-navigatie.
+    if (route === "home") {
+      if (currentDepth > 0) {
+        history.go(-currentDepth);
+      } else {
+        writeRoute("home");
+      }
+      return;
+    }
+
+    // Hoofdniveau: Home -> push één niveau.
+    // Wisselen tussen Tools/Richtlijnen vervangt dat ene niveau,
+    // zodat bezochte hoofdpagina's geen lange teruggeschiedenis vormen.
+    if (targetDepth === 1) {
+      if (currentDepth === 0) {
+        writeRoute(route, "pushState");
+      } else if (currentDepth === 1) {
+        writeRoute(route);
+      } else {
+        // Vanuit een detail eerst één niveau terug en vervang daarna de ouder.
+        if (parentRoute(current) === route) {
+          history.back();
+        } else {
+          pendingTopRoute = route;
+          history.back();
+        }
+      }
+      return;
+    }
+
+    // Detailpagina: altijd precies boven zijn eigen hoofdniveau.
+    const targetParent = parentRoute(route);
+    if (targetDepth === 2) {
+      if (currentDepth === 0) {
+        writeRoute(targetParent, "pushState");
+        writeRoute(route, "pushState");
+      } else if (currentDepth === 1) {
+        if (current !== targetParent) writeRoute(targetParent);
+        writeRoute(route, "pushState");
+      } else if (parentRoute(current) === targetParent) {
+        writeRoute(route);
+      } else {
+        pendingTopRoute = targetParent;
+        history.back();
+        // detail wordt na de pending hoofdroute geopend door de gebruiker;
+        // zo ontstaat nooit een verborgen extra history-laag.
+      }
+    }
+  }
+
   async function initTools() {
     document.querySelectorAll("[data-tool-open]").forEach(button => {
-      button.addEventListener("click", () => {
-        showTool(button.dataset.toolOpen);
-        if (button.dataset.toolOpen === "elga") renderElgaTool();
-        if (button.dataset.toolOpen === "xtend") renderXtendTool();
-      });
+      button.addEventListener("click", () => navigateRoute(`tools/${button.dataset.toolOpen}`));
     });
-    document.querySelectorAll("[data-tool-back]").forEach(button => button.addEventListener("click", () => showTool("")));
+    document.querySelectorAll("[data-tool-back]").forEach(button => {
+      button.addEventListener("click", () => history.back());
+    });
+    document.querySelectorAll("[data-guideline-open]").forEach(button => {
+      button.addEventListener("click", () => navigateRoute(`guidelines/${button.dataset.guidelineOpen}`));
+    });
+    document.querySelectorAll("[data-guideline-back]").forEach(button => {
+      button.addEventListener("click", () => history.back());
+    });
+
+    ["setupLength","setupWidth","setupHeight","setupLoad"].forEach(id => {
+      document.getElementById(id)?.addEventListener("input", renderSetupRoom);
+    });
+
     try {
       elgaAceTool = await loadJson("tools/elga-ace.json");
       document.getElementById("elgaModel")?.addEventListener("change", renderElgaTool);
@@ -818,9 +1029,10 @@
         document.getElementById("xtendXtoreContent")?.classList.toggle("hidden-view", event.target.value !== "yes");
       });
     } catch (error) {
-      console.warn("Elga Ace tooldata kon niet worden geladen", error);
+      console.warn("Tooldata kon niet volledig worden geladen", error);
     }
   }
+
 
   async function init() {
     setOnlineStatus(); emptyResult("Begin met het merk", "Na je selectie verschijnt hier direct de beschikbare technische informatie."); progress();
@@ -839,7 +1051,7 @@
   }
 
 
-  // Hoofdnavigatie: Home is de bestaande MonteurMaatje-flow.
+  // Hoofdnavigatie + PWA-teruggedrag.
   const appViews = {
     home: document.getElementById("homeView"),
     regulations: document.getElementById("regulationsView"),
@@ -847,7 +1059,7 @@
   };
   const navButtons = [...document.querySelectorAll("[data-nav-target]")];
 
-  function showAppView(target, { updateHistory = true } = {}) {
+  function showAppView(target, { updateHistory = false } = {}) {
     if (!appViews[target]) target = "home";
     for (const [name, view] of Object.entries(appViews)) {
       view?.classList.toggle("hidden-view", name !== target);
@@ -860,23 +1072,47 @@
       else button.removeAttribute("aria-current");
     });
     if (updateHistory) {
-      const hash = target === "home" ? "#home" : `#${target}`;
-      if (location.hash !== hash) history.replaceState({ mmView: target }, "", hash);
+      const route = target === "regulations" ? "guidelines" : target === "knowledge" ? "tools" : "home";
+      navigateRoute(route);
     }
     window.scrollTo({ top: 0, behavior: "auto" });
   }
 
-  function viewFromLocation() {
-    const value = location.hash.replace(/^#/, "");
-    return ["home", "regulations", "knowledge"].includes(value) ? value : "home";
-  }
-
   navButtons.forEach(button => {
-    button.addEventListener("click", () => showAppView(button.dataset.navTarget));
+    button.addEventListener("click", () => {
+      const route = button.dataset.navTarget === "regulations" ? "guidelines" :
+                    button.dataset.navTarget === "knowledge" ? "tools" : "home";
+      navigateRoute(route);
+    });
   });
-  window.addEventListener("popstate", () => showAppView(viewFromLocation(), { updateHistory: false }));
-  window.addEventListener("hashchange", () => showAppView(viewFromLocation(), { updateHistory: false }));
-  showAppView(viewFromLocation(), { updateHistory: false });
+
+  window.addEventListener("popstate", () => {
+    if (pendingTopRoute) {
+      const target = pendingTopRoute;
+      pendingTopRoute = "";
+      writeRoute(target);
+      return;
+    }
+    renderRoute(routeFromLocation());
+  });
+
+  // Bouw bij een verse v1.0-sessie maximaal Home -> hoofdgroep -> detail.
+  // Daardoor sluit Android/PWA Terug na Home de app, zonder eerst alle bezochte
+  // Tools/Richtlijnen uit de hele sessie langs te hoeven.
+  const initialRoute = routeFromLocation();
+  if (history.state?.mmHistoryVersion === HISTORY_VERSION) {
+    renderRoute(initialRoute);
+  } else if (routeDepth(initialRoute) === 0) {
+    writeRoute("home");
+  } else if (routeDepth(initialRoute) === 1) {
+    writeRoute("home");
+    writeRoute(initialRoute, "pushState");
+  } else {
+    const initialParent = parentRoute(initialRoute);
+    writeRoute("home");
+    writeRoute(initialParent, "pushState");
+    writeRoute(initialRoute, "pushState");
+  }
 
   init();
 })();

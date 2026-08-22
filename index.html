@@ -15,7 +15,7 @@
   <link rel="icon" href="./favicon-v3.svg?v=3" type="image/svg+xml">
   <link rel="icon" href="./icons/mm-app-v3-192.png?v=3" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon" href="./icons/mm-app-v3-180.png?v=3" sizes="180x180" type="image/png">
-  <link rel="stylesheet" href="./style.css?v=20260821-xtend6">
+  <link rel="stylesheet" href="./style.css?v=103-gh">
 </head>
 <body class="__variable_f91424 __variable_dd0526 antialiased">
 <main>
@@ -25,7 +25,6 @@
       <div><strong>MonteurMaatje</strong><small>Technische serviceassistent</small></div>
     </div>
     <div class="top-actions">
-      <button id="updateButton" class="install-button hidden" type="button">Update app</button>
       <button id="installButton" class="install-button hidden" type="button">Installeer app</button>
       <button id="themeToggle" class="theme-toggle" type="button" aria-label="Schakel donkere modus in" title="Licht/donker">
         <span class="theme-sun" aria-hidden="true">☀</span><span class="theme-moon" aria-hidden="true">☾</span>
@@ -77,11 +76,31 @@
 
   <section id="regulationsView" class="app-view info-view hidden-view" data-app-view="regulations" aria-labelledby="regulationsTitle">
     <div class="info-shell regulations-shell">
-      <p class="section-kicker">REGELGEVING & VOORSCHRIFTEN</p>
-      <h1 id="regulationsTitle">ROG(A)FA</h1>
-      <p class="info-intro">Praktische rookgasafvoer-informatie voor onderweg. MonteurMaatje vat de officiële ROG(A)FA-bronnen compact samen; de fabrikantdocumentatie en officiële bron blijven leidend.</p>
+      <div id="guidelinesHome">
+        <p class="section-kicker">TECHNISCHE RICHTLIJNEN</p>
+        <h1 id="regulationsTitle">Richtlijnen</h1>
+        <p class="info-intro">Praktische richtlijnen en grenswaarden voor onderweg, met directe verwijzingen naar officiële bronnen.</p>
 
-      <div class="regulation-source-note" role="note">
+        <div class="tools-grid guidelines-grid">
+          <button class="tool-card" type="button" data-guideline-open="rogafa">
+            <span class="tool-card-icon" aria-hidden="true">RGA</span>
+            <div><h2>ROG(A)FA – Rookgasafvoer</h2><p>Beugelen, RGA bij ketelvervanging en CLV C(10)₃.</p></div>
+            <span class="tool-card-arrow" aria-hidden="true">›</span>
+          </button>
+          <button class="tool-card" type="button" data-guideline-open="co">
+            <span class="tool-card-icon" aria-hidden="true">CO</span>
+            <div><h2>CO & grenswaarden</h2><p>Achtergrondmeting, acties en rookgasgrenswaarden voor type A, B en C.</p></div>
+            <span class="tool-card-arrow" aria-hidden="true">›</span>
+          </button>
+        </div>
+      </div>
+
+      <div id="guidelineRogafaView" class="guideline-detail hidden-view">
+        <button class="tool-back" type="button" data-guideline-back>← Terug naar Richtlijnen</button>
+        <p class="section-kicker">ROOKGASAFVOER</p>
+        <h1>ROG(A)FA</h1>
+        <p class="info-intro">Praktische rookgasafvoer-informatie voor onderweg. MonteurMaatje vat de officiële ROG(A)FA-bronnen compact samen; fabrikantdocumentatie en officiële bron blijven leidend.</p>
+        <div class="regulation-source-note" role="note">
         <strong>Bronnen in deze pagina</strong>
         <span>Het Nieuwe Beugelen 2024-11 · CLV C(10)₃ versie 1.5 · RGA bij ketelvervanging</span>
       </div>
@@ -252,6 +271,62 @@
       </div>
 
       <p class="info-note">MonteurMaatje is een praktisch hulpmiddel. Controleer bij twijfel altijd de officiële bron en het product-specifieke voorschrift van de fabrikant.</p>
+      </div>
+
+      <div id="guidelineCoView" class="guideline-detail hidden-view">
+        <button class="tool-back" type="button" data-guideline-back>← Terug naar Richtlijnen</button>
+        <p class="section-kicker">BRL 6000-25 · CO-CERTIFICERING</p>
+        <h1>CO & grenswaarden</h1>
+        <p class="info-intro">Snelle referentie voor CO-metingen in de opstellingsruimte en rookgas. Fabrikantvoorschriften blijven leidend wanneer zij een specifiekere meetinstructie of grenswaarde geven.</p>
+
+        <section class="guideline-panel">
+          <div class="guideline-panel-head">
+            <span class="tool-card-icon" aria-hidden="true">ppm</span>
+            <div><h2>CO in de opstellingsruimte</h2><p>Beoordeling rond het gastoestel.</p></div>
+          </div>
+          <div class="co-thresholds">
+            <article class="co-threshold co-ok">
+              <strong>0 – &lt;5 ppm</strong>
+              <p>Geen bezwaar om de installatie (opnieuw) in bedrijf te stellen, mits de installatie naar professioneel oordeel veilig is.</p>
+            </article>
+            <article class="co-threshold co-warn">
+              <strong>5 – 20 ppm</strong>
+              <p>Installatie niet opnieuw in bedrijf stellen voordat de oorzaak van de verhoogde CO-concentratie is onderzocht en weggenomen.</p>
+            </article>
+            <article class="co-threshold co-danger">
+              <strong>&gt;20 ppm</strong>
+              <p>Meldplicht volgens BRL 6000-25/Bbl-procedure. Oorzaak moet worden weggenomen voordat de installatie opnieuw in bedrijf wordt gesteld.</p>
+            </article>
+          </div>
+          <div class="guideline-note">
+            <strong>Interne veiligheidskaart</strong>
+            <p>Bij 20–400 ppm: ventileren en aanwezigen waarschuwen, oorzaak onderzoeken en indien niet gevonden hulpdiensten inschakelen. Boven 400 ppm: direct naar buiten en hulpdiensten inschakelen.</p>
+          </div>
+        </section>
+
+        <section class="guideline-panel">
+          <div class="guideline-panel-head">
+            <span class="tool-card-icon" aria-hidden="true">CO</span>
+            <div><h2>Maximale CO in rookgas</h2><p>Als het fabrikantvoorschrift geen andere grenswaarde voorschrijft.</p></div>
+          </div>
+          <div class="co-device-grid">
+            <article><span>Type A</span><strong>50 ppm</strong><p>Open toestel, afvoerloos</p></article>
+            <article><span>Type B</span><strong>200 ppm</strong><p>Open toestel, afvoergebonden</p></article>
+            <article><span>Type C</span><strong>400 ppm</strong><p>Gesloten toestel</p></article>
+          </div>
+          <div class="manufacturer-priority" role="note"><strong>Fabrikant gaat voor</strong><span>Lees de installatie-/servicehandleiding van het toestel. Fabrikanten kunnen meetinstructies of grenswaarden aanpassen.</span></div>
+        </section>
+
+        <div class="official-source stacked-source">
+          <div><strong>Officiële bronnen</strong><span>BRL 6000-25 (actuele aangewezen versie) · InstallQ CO-certificering</span></div>
+          <div class="source-actions">
+            <a href="https://installq.nl/controllers/brl" target="_blank" rel="noopener noreferrer">Actuele BRL 6000-25 ↗</a>
+            <a href="https://installq.nl/meetapparatuur-volgens-de-co-certificering" target="_blank" rel="noopener noreferrer">InstallQ CO-grenswaarden ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="info-note">Richtlijnen zijn een praktisch hulpmiddel. Controleer bij twijfel altijd de actuele officiële bron en het fabrikantvoorschrift.</p>
     </div>
   </section>
 
@@ -266,6 +341,11 @@
           <button class="tool-card" type="button" data-tool-open="cv">
             <span class="tool-card-icon" aria-hidden="true">kW</span>
             <div><h2>CV-installatie afstellen</h2><p>Praktische startwaarde voor CV-vermogen en direct de juiste toestelparameters erbij.</p></div>
+            <span class="tool-card-arrow" aria-hidden="true">›</span>
+          </button>
+          <button class="tool-card" type="button" data-tool-open="setup">
+            <span class="tool-card-icon" aria-hidden="true">m³</span>
+            <div><h2>Opstellingsruimte controleren</h2><p>Controleer voor HR-ketels of de ruimte-inhoud volstaat of dat At/Aa-ventilatie nodig is.</p></div>
             <span class="tool-card-arrow" aria-hidden="true">›</span>
           </button>
           <button class="tool-card" type="button" data-tool-open="elga">
@@ -386,6 +466,54 @@
       </article>
 
 
+      </div>
+
+      <div id="toolSetupView" class="tool-detail hidden-view">
+        <button class="tool-back" type="button" data-tool-back>← Terug naar Tools</button>
+        <article class="knowledge-tool setup-tool">
+          <div class="knowledge-tool-head">
+            <span class="info-icon knowledge-tool-icon" aria-hidden="true">m³</span>
+            <div>
+              <p class="step-label">HR-KETEL · OPSTELLINGSRUIMTE</p>
+              <h2>Opstellingsruimte controleren</h2>
+              <p>Praktische controle van ruimte-inhoud en benodigde permanente luchttoevoer/-afvoer volgens NPR 3378-22.</p>
+            </div>
+          </div>
+
+          <div class="setup-grid">
+            <section class="setup-inputs">
+              <p class="section-kicker">STAP 1 · RUIMTE & TOESTEL</p>
+              <div class="setup-dimensions">
+                <div class="knowledge-field"><label for="setupLength">Lengte</label><div class="input-unit"><input id="setupLength" type="number" min="0" max="20" step="0.1" inputmode="decimal" placeholder="2,0"><span>m</span></div></div>
+                <div class="knowledge-field"><label for="setupWidth">Breedte</label><div class="input-unit"><input id="setupWidth" type="number" min="0" max="20" step="0.1" inputmode="decimal" placeholder="2,0"><span>m</span></div></div>
+                <div class="knowledge-field"><label for="setupHeight">Hoogte</label><div class="input-unit"><input id="setupHeight" type="number" min="0" max="10" step="0.1" inputmode="decimal" placeholder="2,5"><span>m</span></div></div>
+              </div>
+              <div class="knowledge-field setup-load">
+                <label for="setupLoad">Nominale belasting bovenwaarde HR-ketel</label>
+                <div class="input-unit"><input id="setupLoad" type="number" min="1" max="40" step="1" inputmode="decimal" placeholder="30"><span>kW</span></div>
+                <small>MonteurMaatje ondersteunt deze tool voor jullie praktijkbereik t/m 40 kW.</small>
+              </div>
+            </section>
+
+            <section id="setupResult" class="setup-result setup-empty" aria-live="polite">
+              <p class="section-kicker">UITKOMST</p>
+              <h3>Vul de ruimte en toestelbelasting in</h3>
+              <p>Daarna vergelijkt MonteurMaatje de werkelijke inhoud met 0,2 × nominale belasting.</p>
+            </section>
+          </div>
+
+          <section class="setup-explanation">
+            <p class="section-kicker">HOE WORDT BEOORDEELD?</p>
+            <div class="setup-formula"><strong>Benodigde ruimte-inhoud = 0,2 × B</strong><span>B = nominale belasting bovenwaarde in kW</span></div>
+            <p>Is de werkelijke ruimte-inhoud groter dan de berekende grens, dan is volgens deze beoordeling geen aanvullende At/Aa-opening nodig. Is de ruimte kleiner dan of gelijk aan de grens, dan is voor jullie toestellen t/m 40 kW minimaal <strong>50 cm² vrije doorlaat At én 50 cm² vrije doorlaat Aa</strong> nodig.</p>
+            <div class="guideline-note"><strong>Vrije doorlaat</strong><p>50 cm² is de effectieve vrije opening, niet automatisch de buitenmaat van het rooster. Controleer daarnaast altijd fabrikantvoorschrift en feitelijke opstellingssituatie.</p></div>
+          </section>
+
+          <div class="official-source stacked-source">
+            <div><strong>Bron</strong><span>NPR 3378-22:2023 – Opstelplaatsen van gastoestellen, opstellingsruimten en stookruimten</span></div>
+            <div class="source-actions"><a href="https://www.nen.nl/npr-3378-22-2023-nl-311076" target="_blank" rel="noopener noreferrer">Bekijk actuele NPR-info bij NEN ↗</a></div>
+          </div>
+        </article>
       </div>
 
       <div id="toolElgaView" class="tool-detail hidden-view">
@@ -543,6 +671,8 @@
     </div>
   </section>
 
+  <footer class="app-footer">© 2026 MonteurMaatje · v1.0</footer>
+
   <nav class="bottom-nav" aria-label="Hoofdnavigatie">
     <button class="bottom-nav-item active" type="button" data-nav-target="home" aria-current="page">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5v9a1.5 1.5 0 0 1-1.5 1.5h-5v-6h-5v6h-5A1.5 1.5 0 0 1 3 19.5z"/></svg>
@@ -550,7 +680,7 @@
     </button>
     <button class="bottom-nav-item" type="button" data-nav-target="regulations">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l3 3v15H6zM9 9h6M9 13h6M9 17h4"/></svg>
-      <span>Regelgeving</span>
+      <span>Richtlijnen</span>
     </button>
     <button class="bottom-nav-item" type="button" data-nav-target="knowledge">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H11a3 3 0 0 1 3 3v15a3 3 0 0 0-3-3H6.5A2.5 2.5 0 0 0 4 20.5zm16 0A2.5 2.5 0 0 0 17.5 3H14v18a3 3 0 0 1 3-3h.5a2.5 2.5 0 0 1 2.5 2.5z"/></svg>
@@ -558,6 +688,6 @@
     </button>
   </nav>
 </main>
-<script src="./app.js?v=20260821-xtend6" defer></script>
+<script src="./app.js?v=103-gh" defer></script>
 </body>
 </html>
