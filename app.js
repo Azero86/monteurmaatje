@@ -1088,7 +1088,7 @@
       viewer.hidden = false;
       viewer.setAttribute("aria-hidden", "false");
       document.documentElement.classList.add("diagram-viewer-open");
-      fitImage();
+      requestAnimationFrame(() => requestAnimationFrame(fitImage));
       history.pushState({ ...(history.state || {}), mmDiagramViewer: true }, "", location.href);
       viewerHistoryActive = true;
       closeButton.focus({ preventScroll: true });
@@ -1194,7 +1194,12 @@
     }, { passive: true });
 
     image.addEventListener("load", fitImage);
-    window.addEventListener("resize", applyTransform);
+    window.addEventListener("resize", () => {
+      if (!viewer.hidden) requestAnimationFrame(fitImage);
+    });
+    window.visualViewport?.addEventListener("resize", () => {
+      if (!viewer.hidden) requestAnimationFrame(fitImage);
+    });
 
     window.addEventListener("popstate", () => {
       if (!viewer.hidden && !history.state?.mmDiagramViewer) hideViewer();
