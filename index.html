@@ -15,7 +15,7 @@
   <link rel="icon" href="./favicon-v3.svg?v=3" type="image/svg+xml">
   <link rel="icon" href="./icons/mm-app-v3-192.png?v=3" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon" href="./icons/mm-app-v3-180.png?v=3" sizes="180x180" type="image/png">
-  <link rel="stylesheet" href="./style.css?v=106-gh">
+  <link rel="stylesheet" href="./style.css?v=107-gh">
 </head>
 <body class="__variable_f91424 __variable_dd0526 antialiased">
 <main>
@@ -675,7 +675,10 @@
   <div id="diagramViewer" class="diagram-viewer" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="Beugelschema bekijken">
     <div class="diagram-viewer-toolbar">
       <span id="diagramViewerTitle">Beugelschema</span>
-      <button id="diagramViewerClose" type="button" aria-label="Sluit beugelschema">✕</button>
+      <div class="diagram-viewer-actions">
+        <button id="diagramViewerFit" class="diagram-viewer-fit" type="button" aria-label="Maak beugelschema passend in beeld">Passend</button>
+        <button id="diagramViewerClose" type="button" aria-label="Sluit beugelschema">✕</button>
+      </div>
     </div>
     <div id="diagramViewerStage" class="diagram-viewer-stage">
       <img id="diagramViewerImage" alt="">
@@ -700,6 +703,6 @@
     </button>
   </nav>
 </main>
-<script src="./app.js?v=106-gh" defer></script>
+<script src="./app.js?v=107-gh" defer></script>
 </body>
 </html>

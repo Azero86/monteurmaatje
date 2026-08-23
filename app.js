@@ -1009,42 +1009,91 @@
     const stage = document.getElementById("diagramViewerStage");
     const image = document.getElementById("diagramViewerImage");
     const title = document.getElementById("diagramViewerTitle");
+    const fitButton = document.getElementById("diagramViewerFit");
     const closeButton = document.getElementById("diagramViewerClose");
-    if (!viewer || !stage || !image || !closeButton) return;
+    if (!viewer || !stage || !image || !fitButton || !closeButton) return;
 
     let scale = 1, x = 0, y = 0;
     let startDistance = 0, startScale = 1;
     let dragStart = null;
     let pointerDrag = null;
     let viewerHistoryActive = false;
+    let suppressViewerClick = false;
+
+    function transformBounds() {
+      if (scale <= 1) return { maxX: 0, maxY: 0 };
+      const baseWidth = image.offsetWidth || 0;
+      const baseHeight = image.offsetHeight || 0;
+      const stageStyles = getComputedStyle(stage);
+      const innerWidth = Math.max(
+        0,
+        stage.clientWidth - parseFloat(stageStyles.paddingLeft || 0) - parseFloat(stageStyles.paddingRight || 0),
+      );
+      const innerHeight = Math.max(
+        0,
+        stage.clientHeight - parseFloat(stageStyles.paddingTop || 0) - parseFloat(stageStyles.paddingBottom || 0),
+      );
+      return {
+        maxX: Math.max(0, (baseWidth * scale - innerWidth) / 2),
+        maxY: Math.max(0, (baseHeight * scale - innerHeight) / 2),
+      };
+    }
+
+    function clampPosition() {
+      if (scale <= 1) {
+        scale = 1;
+        x = 0;
+        y = 0;
+        return;
+      }
+      const { maxX, maxY } = transformBounds();
+      x = Math.max(-maxX, Math.min(maxX, x));
+      y = Math.max(-maxY, Math.min(maxY, y));
+    }
 
     const applyTransform = () => {
-      image.style.transform = `translate(${x}px, ${y}px) scale(${scale})`;
+      clampPosition();
+      image.style.transform = `translate3d(${x}px, ${y}px, 0) scale(${scale})`;
+      fitButton.disabled = scale === 1 && x === 0 && y === 0;
     };
-    const resetTransform = () => {
-      scale = 1; x = 0; y = 0;
+
+    const fitImage = () => {
+      scale = 1;
+      x = 0;
+      y = 0;
       applyTransform();
     };
+
+    const setScale = (nextScale) => {
+      scale = Math.min(5, Math.max(1, nextScale));
+      applyTransform();
+    };
+
     const hideViewer = () => {
       viewer.hidden = true;
       viewer.setAttribute("aria-hidden", "true");
       document.documentElement.classList.remove("diagram-viewer-open");
       image.removeAttribute("src");
       viewerHistoryActive = false;
-      resetTransform();
+      suppressViewerClick = false;
+      pointerDrag = null;
+      dragStart = null;
+      fitImage();
     };
+
     const openViewer = (source) => {
       image.src = source.currentSrc || source.src;
       image.alt = source.alt || "ROG(A)FA beugelschema";
       title.textContent = source.alt?.replace(/^ROG\(A\)FA\s*/i, "") || "Beugelschema";
-      resetTransform();
       viewer.hidden = false;
       viewer.setAttribute("aria-hidden", "false");
       document.documentElement.classList.add("diagram-viewer-open");
+      fitImage();
       history.pushState({ ...(history.state || {}), mmDiagramViewer: true }, "", location.href);
       viewerHistoryActive = true;
       closeButton.focus({ preventScroll: true });
     };
+
     const requestClose = () => {
       if (viewerHistoryActive && history.state?.mmDiagramViewer) history.back();
       else hideViewer();
@@ -1064,8 +1113,9 @@
       });
     });
 
+    fitButton.addEventListener("click", fitImage);
     closeButton.addEventListener("click", requestClose);
-    let suppressViewerClick = false;
+
     viewer.addEventListener("click", event => {
       if (suppressViewerClick) {
         suppressViewerClick = false;
@@ -1076,17 +1126,22 @@
 
     stage.addEventListener("wheel", event => {
       event.preventDefault();
-      scale = Math.min(5, Math.max(1, scale + (event.deltaY < 0 ? .2 : -.2)));
-      if (scale === 1) { x = 0; y = 0; }
-      applyTransform();
+      setScale(scale + (event.deltaY < 0 ? .25 : -.25));
     }, { passive: false });
 
+    stage.addEventListener("dblclick", event => {
+      event.preventDefault();
+      if (scale > 1) fitImage();
+      else setScale(2);
+    });
+
     stage.addEventListener("pointerdown", event => {
-      if (event.pointerType === "touch") return;
-      pointerDrag = { clientX:event.clientX, clientY:event.clientY, x, y, moved:false };
+      if (event.pointerType === "touch" || scale <= 1) return;
+      pointerDrag = { clientX: event.clientX, clientY: event.clientY, x, y, moved: false };
       stage.setPointerCapture?.(event.pointerId);
       stage.classList.add("is-dragging");
     });
+
     stage.addEventListener("pointermove", event => {
       if (!pointerDrag || event.pointerType === "touch") return;
       const dx = event.clientX - pointerDrag.clientX;
@@ -1096,6 +1151,7 @@
       y = pointerDrag.y + dy;
       applyTransform();
     });
+
     const endPointerDrag = event => {
       if (!pointerDrag) return;
       if (pointerDrag.moved) suppressViewerClick = true;
@@ -1108,29 +1164,37 @@
 
     stage.addEventListener("touchstart", event => {
       if (event.touches.length === 2) {
-        const [a,b] = event.touches;
-        startDistance = Math.hypot(a.clientX-b.clientX, a.clientY-b.clientY);
+        const [a, b] = event.touches;
+        startDistance = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY);
         startScale = scale;
-      } else if (event.touches.length === 1) {
-        dragStart = { clientX:event.touches[0].clientX, clientY:event.touches[0].clientY, x, y };
+        dragStart = null;
+      } else if (event.touches.length === 1 && scale > 1) {
+        dragStart = { clientX: event.touches[0].clientX, clientY: event.touches[0].clientY, x, y };
       }
     }, { passive: true });
+
     stage.addEventListener("touchmove", event => {
       if (event.touches.length === 2 && startDistance) {
         event.preventDefault();
-        const [a,b] = event.touches;
-        const distance = Math.hypot(a.clientX-b.clientX, a.clientY-b.clientY);
-        scale = Math.min(5, Math.max(1, startScale * distance/startDistance));
-        if (scale === 1) { x = 0; y = 0; }
-        applyTransform();
+        const [a, b] = event.touches;
+        const distance = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY);
+        setScale(startScale * distance / startDistance);
       } else if (event.touches.length === 1 && dragStart && scale > 1) {
         event.preventDefault();
-        x = dragStart.x + event.touches[0].clientX-dragStart.clientX;
-        y = dragStart.y + event.touches[0].clientY-dragStart.clientY;
+        x = dragStart.x + event.touches[0].clientX - dragStart.clientX;
+        y = dragStart.y + event.touches[0].clientY - dragStart.clientY;
         applyTransform();
       }
     }, { passive: false });
-    stage.addEventListener("touchend", () => { startDistance = 0; dragStart = null; }, { passive: true });
+
+    stage.addEventListener("touchend", () => {
+      startDistance = 0;
+      dragStart = null;
+      applyTransform();
+    }, { passive: true });
+
+    image.addEventListener("load", fitImage);
+    window.addEventListener("resize", applyTransform);
 
     window.addEventListener("popstate", () => {
       if (!viewer.hidden && !history.state?.mmDiagramViewer) hideViewer();
