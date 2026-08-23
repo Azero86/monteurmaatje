@@ -15,19 +15,19 @@ Alle actieve kleuren zijn centraal gedefinieerd in **style.css**. Buiten de toke
 | --surface-inset | #090b0d | Inliggende velden en secties |
 | --border | #292e32 | Standaard border |
 | --border-subtle | #1e2327 | Subtiele scheidingslijn |
-| --border-active | #f32d20 | Actieve border |
+| --border-active | #e46b3f | Actieve border |
 | --text-primary | #f5f7f8 | Primaire tekst |
 | --text-secondary | #b8bec3 | Secundaire tekst |
 | --text-muted | #7f878d | Gedempte tekst |
 | --text-on-accent | #ffffff | Tekst op gevulde actieknoppen |
-| --accent | #f32d20 | Accenttekst, iconen en actieve lijnen |
-| --accent-hover | #ff4438 | Lichte accentvariatie |
-| --accent-strong | #bf1d14 | Donkere accentvariatie |
-| --accent-fill | #d9271b | Toegankelijke rode knopvulling |
-| --accent-fill-hover | #c52218 | Hovervulling met wit tekstcontrast |
-| --accent-soft | rgba(243,45,32,.12) | Zachte rode achtergrond |
-| --accent-soft-strong | rgba(243,45,32,.2) | Sterkere rode achtergrond/border |
-| --accent-glow | rgba(243,45,32,.25) | Subtiele actieve glow |
+| --accent | #e46b3f | Accenttekst, iconen en actieve lijnen |
+| --accent-hover | #f07a4f | Lichte accentvariatie |
+| --accent-strong | #a9472c | Donkere accentvariatie |
+| --accent-fill | #b84b2f | Toegankelijke warme knopvulling |
+| --accent-fill-hover | #a9432a | Hovervulling met wit tekstcontrast |
+| --accent-soft | rgba(228,107,63,.12) | Zachte warme accentachtergrond |
+| --accent-soft-strong | rgba(228,107,63,.20) | Sterkere warme accentachtergrond/border |
+| --accent-glow | rgba(228,107,63,.22) | Subtiele actieve glow |
 | --success | #31d17c | OK- en successtatus |
 | --success-soft | rgba(49,209,124,.12) | Zachte succesachtergrond |
 | --warning | #f4b642 | Waarschuwing |
@@ -36,7 +36,7 @@ Alle actieve kleuren zijn centraal gedefinieerd in **style.css**. Buiten de toke
 | --danger-soft | rgba(255,90,79,.12) | Zachte foutachtergrond |
 | --info | #4aa8ff | Informatieve status |
 | --info-soft | rgba(74,168,255,.12) | Zachte informatieachtergrond |
-| --focus | #ff746b | Keyboardfocus |
+| --focus | #ff9a73 | Keyboardfocus |
 | --overlay | rgba(0,0,0,.9) | Fullscreen diagramviewer |
 | --grid-line | rgba(255,255,255,.018) | Subtiel technisch achtergrondraster |
 | --inset-highlight | rgba(255,255,255,.035) | Inliggende highlight |
@@ -54,20 +54,20 @@ Alle actieve kleuren zijn centraal gedefinieerd in **style.css**. Buiten de toke
 | --surface-inset | #f3f5f6 |
 | --border | #c9d0d4 |
 | --border-subtle | #dce1e4 |
-| --border-active | #d9271b |
+| --border-active | #b84b2f |
 | --text-primary | #141718 |
 | --text-secondary | #464d52 |
 | --text-muted | #6c747a |
-| --accent | #d9271b |
-| --accent-hover | #ef3326 |
-| --accent-strong | #ad1d14 |
-| --accent-fill | #d9271b |
-| --accent-fill-hover | #c52218 |
+| --accent | #b84b2f |
+| --accent-hover | #d95f3a |
+| --accent-strong | #963e27 |
+| --accent-fill | #b84b2f |
+| --accent-fill-hover | #a9432a |
 | --success | #087b46 |
 | --warning | #9a6500 |
 | --danger | #c72c23 |
 | --info | #1769aa |
-| --focus | #b91f15 |
+| --focus | #9d432a |
 
 De transparante lichte varianten, schaduwen en rasterwaarden zijn eveneens centraal in het blok voor het lichte thema vastgelegd.
 
@@ -81,7 +81,7 @@ De transparante lichte varianten, schaduwen en rasterwaarden zijn eveneens centr
 | --radius-xl | 20px |
 | --shadow | Diepe maar terughoudende kaartschaduw |
 | --shadow-soft | Lichte kaartschaduw |
-| --shadow-active | Actieve rode rand/glow |
+| --shadow-active | Actieve warme accentrand/glow |
 
 ## Spacing en layout
 
@@ -104,7 +104,7 @@ De transparante lichte varianten, schaduwen en rasterwaarden zijn eveneens centr
 
 - Gebruik --accent voor iconen, actieve tekst en lijnen.
 - Gebruik --accent-fill voor vlakken met witte tekst; deze combinatie voldoet aan WCAG AA voor normale tekst.
-- Gebruik rood nooit als enige informatiedrager: actieve onderdelen combineren kleur met border, tekst en/of icoon.
+- Gebruik de accentkleur nooit als enige informatiedrager: actieve onderdelen combineren kleur met border, tekst en/of icoon.
 - Gebruik --success, --warning, --danger en --info alleen voor hun functionele status.
 - Voeg geen losse kleurwaarden toe buiten de centrale tokenblokken.
 - Pas afbeeldingen en bestaande logo's niet aan met CSS-filters of verlaagde opacity.

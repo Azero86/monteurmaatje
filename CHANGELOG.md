@@ -63,4 +63,85 @@ De bestaande, werkende MonteurMaatje-app heeft een volledig nieuwe donker-indust
 - Combustion: mobiele waardepresentatie gehard voor alle toestellen; variantregels responsive en lange technische waarden zonder horizontale overflow.
 - PWA manifest splash/theme-kleuren gelijkgezet aan de standaard Industrial dark theme.
 - Technische data ongewijzigd.
+## Release-update — Asbestverdacht materiaal — 2026-08-23
 
+### Nieuwe functionaliteit
+
+- Onder **Richtlijnen** is een nieuwe module **Asbestverdacht materiaal** toegevoegd.
+- De module is uitsluitend bedoeld als informatieve herkennings- en signaleringshulp voor monteurs.
+- MonteurMaatje stelt niet vast dat materiaal asbest bevat. De module benoemt materiaal alleen als mogelijk/asbestverdacht.
+- In de module staat expliciet vermeld dat alleen onderzoek/laboratoriumanalyse zekerheid kan geven over de aanwezigheid van asbest.
+- De inhoud is opgebouwd rond toepassingen die relevant zijn voor installatie- en servicemonteurs, waaronder:
+  - CV-ketels, boilers en geisers
+  - rookgas- en ventilatiekanalen
+  - pakkingen en afdichtkoord
+  - leiding- en ketelisolatie
+  - plaat- en bouwmaterialen rondom installaties
+  - overige materialen die tijdens servicewerkzaamheden kunnen worden aangetroffen
+
+### Bronnen
+
+De technische inhoud van de module is gebaseerd op betrouwbare Nederlandse bronnen:
+
+- **IPLO / Informatiepunt Leefomgeving** als primaire bron voor toepassingen, vindplaatsen en herkenningskenmerken
+- **Arboportaal** voor arbeidsveiligheid en historische context
+- **Ascert** voor formele terminologie rondom asbestverdacht materiaal en inventarisatie
+
+De bestaande links naar officiële voorbeeldinformatie zijn in de module behouden.
+
+### Voorbeeldfoto's
+
+- Aan de asbestmodule zijn lokale voorbeeldfoto's toegevoegd ter visuele ondersteuning.
+- De foto's zijn geselecteerd uit bronnen met gecontroleerde hergebruikrechten.
+- Bij iedere foto is bron-/licentie-informatie opgenomen.
+- De foto's dienen uitsluitend als herkenningsvoorbeeld; een vergelijkbaar uiterlijk is geen bevestiging dat materiaal daadwerkelijk asbest bevat.
+- De foto's zijn lokaal opgenomen zodat zij ook binnen de PWA/offline beschikbaar blijven.
+
+### Gebruikersinterface
+
+- De asbestmodule gebruikt dezelfde bestaande Richtlijnen-opbouw en visuele stijl als de rest van MonteurMaatje.
+- Alle onderdelen van de asbestpagina starten standaard **ingeklapt**.
+- Er wordt pas inhoud geopend wanneer de gebruiker zelf een onderdeel selecteert.
+- De bestaande officiële voorbeeldlinks blijven zichtbaar als aanvullende naslagmogelijkheid.
+
+### PWA / cache-hardening
+
+Tijdens de eerste implementatie bleek dat een nieuwe `index.html` in combinatie met een oudere gecachte `app.js` kon leiden tot een lege Richtlijnen-detailview.
+
+Dit is hersteld door:
+
+- assetversies van `app.js` en `style.css` te verhogen
+- de serviceworker/app-shellcache te verhogen
+- een fail-safe toe te voegen waardoor een onbekende of verouderde Richtlijnen-route niet meer in een lege pagina kan eindigen
+- de nieuwe asbestassets mee te nemen in de PWA-cache
+
+### GitHub Pages
+
+- De GitHub Pages-build is opnieuw rechtstreeks opgebouwd vanuit de actuele VPS-build.
+- VPS en GitHub zijn bestand-voor-bestand vergeleken.
+- De GitHub-build is inhoudelijk identiek aan de VPS-build.
+- Het enige aanvullende bestand in de GitHub-build is `.nojekyll`.
+
+### Expliciet niet gewijzigd
+
+Bij deze uitbreiding zijn de bestaande technische toestelgegevens ongemoeid gelaten:
+
+- `data/`
+- `knowledge/`
+- `tools/`
+- storingscodes
+- parameters
+- verbrandingsgegevens
+- diagnosegegevens
+- toestelcatalogus
+
+De asbestuitbreiding is daarmee een aanvullende Richtlijnen-module en geen wijziging van de bestaande toesteltechnische inhoud.
+
+## Visuele kleurcorrectie — warm Industrial accent — 2026-08-23
+
+- De huidige Industrial-layout en alle bestaande UI-structuren zijn behouden.
+- Het felle primaire rood is vervangen door een rustiger warm koraal/oranje accent, afgeleid van de eerder gebruikte MonteurMaatje-kleurstelling.
+- Actieve borders, accenttekst, knoppen, geselecteerde states en subtiele glow gebruiken nu het warmere accentpalet.
+- De functionele statuskleur `danger` blijft rood, zodat storingen/fouten visueel onderscheiden blijven van gewone actieve navigatie en selectie.
+- Het lichte thema is in dezelfde warmere accentfamilie aangepast.
+- Alleen visuele tokens en noodzakelijke cache-/releaseversies zijn aangepast; layout, routes, data, tools, richtlijnen en applicatielogica zijn niet gewijzigd.

@@ -526,7 +526,7 @@
   async function registerServiceWorker() {
     if (!("serviceWorker" in navigator) || location.protocol === "file:") return;
     try {
-      const registration = await navigator.serviceWorker.register(appUrl("sw.js?v=12"), { updateViaCache: "none" });
+      const registration = await navigator.serviceWorker.register(appUrl("sw.js?v=13"), { updateViaCache: "none" });
       if (registration.waiting && navigator.serviceWorker.controller) {
         registration.waiting.postMessage({ type: "SKIP_WAITING" });
       }
