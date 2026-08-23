@@ -38,11 +38,11 @@
   function preferredTheme() {
     const saved = localStorage.getItem(THEME_KEY);
     if (saved === "light" || saved === "dark") return saved;
-    return "light";
+    return "dark";
   }
   function applyTheme(theme) {
     document.documentElement.dataset.theme = theme;
-    document.querySelector('meta[name="theme-color"]')?.setAttribute("content", theme === "dark" ? "#171513" : "#fffaf6");
+    document.querySelector('meta[name="theme-color"]')?.setAttribute("content", theme === "dark" ? "#07090a" : "#e8ebed");
     if (refs.themeToggle) {
       const dark = theme === "dark";
       refs.themeToggle.classList.toggle("is-dark", dark);
@@ -59,7 +59,9 @@
   const esc = (value) => String(value ?? "").replace(/[&<>'"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"}[c]));
   const appUrl = (path = "") => new URL(path.replace(/^\/+/, ""), document.baseURI).href;
   const sourceOf = (data, device) => {
-    if (data?.source && typeof data.source === "object") return data.source;
+    const raw = data?.source;
+    if (raw && typeof raw === "object") return { title: raw.title || device?.sourceTitle || "Officiële fabrikantdocumentatie", url: raw.url || device?.sourceUrl || "" };
+    if (typeof raw === "string" && raw.trim()) return { title: device?.sourceTitle || "Officiële fabrikantdocumentatie", url: raw.trim() };
     return { title: device?.sourceTitle || "Officiële fabrikantdocumentatie", url: device?.sourceUrl || "" };
   };
 
@@ -114,7 +116,13 @@
     const tabs = availableTabs(selectedDevice());
     refs.tabs.className = `content-tabs tabs-${tabs.length}`;
     refs.tabs.classList.toggle("hidden", tabs.length < 2);
-    refs.tabs.innerHTML = tabs.map(([id, label]) => `<button type="button" data-tab="${id}" class="${state.tab === id ? "active" : ""}">${label}</button>`).join("");
+    const tabIcons = {
+      faults: `<span class="tab-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 5 28 27H4L16 5Z"/><path d="M16 12v7"/><path d="M16 23h.01"/></svg></span>`,
+      parameters: `<span class="tab-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M8 9h16"/><path d="M8 16h16"/><path d="M8 23h16"/><circle cx="12" cy="9" r="2"/><circle cx="20" cy="16" r="2"/><circle cx="15" cy="23" r="2"/></svg></span>`,
+      combustion: `<span class="tab-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M18 4c1 5-4 6-2 11 1-2 3-3 5-4 4 3 6 7 4 12-2 4-6 6-10 5-5-1-8-5-8-10 0-5 3-9 7-12 0 4 1 6 4 8"/></svg></span>`,
+      diagnostics: `<span class="tab-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M4 17h6l3-7 5 14 3-7h7"/></svg></span>`
+    };
+    refs.tabs.innerHTML = tabs.map(([id, label]) => `<button type="button" data-tab="${id}" class="${state.tab === id ? "active" : ""}">${tabIcons[id] || ""}<span class="tab-label">${label}</span></button>`).join("");
     refs.tabs.querySelectorAll("button").forEach(button => button.addEventListener("click", () => {
       state.tab = button.dataset.tab;
       state.faultCode = ""; state.parameterCode = ""; state.diagnosticId = ""; state.diagnosticStep = ""; state.diagnosticActions = [];
@@ -164,9 +172,12 @@
     }).join("")}</div>`;
   }
 
-  function sourceRow(device, data) {
-    const source = sourceOf(data, device);
-    return `<div class="source-row"><span>Bron: ${esc(source?.title || device?.sourceTitle || "Officiële fabrikantdocumentatie")}</span>${manualsHtml(device, source)}</div>`;
+  function sourceRow(device, data, item = null) {
+    const source = sourceOf(item?.source ? { source: item.source } : data, device);
+    const page = item?.sourcePage ?? data?.sourcePage ?? "";
+    const verifiedDate = item?.verifiedDate ?? data?.verifiedDate ?? "";
+    const meta = [page ? `Pagina ${esc(String(page))}` : "", verifiedDate ? `Gecontroleerd ${esc(String(verifiedDate))}` : ""].filter(Boolean).join(" · ");
+    return `<div class="source-row"><div class="source-row-copy"><span class="source-row-label">BRON</span><strong>${esc(source?.title || "Officiële fabrikantdocumentatie")}</strong>${meta ? `<small>${meta}</small>` : ""}</div>${source?.url ? `<a class="source-row-link" href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">Handleiding openen ↗</a>` : ""}</div>`;
   }
 
   function renderFault() {
@@ -174,7 +185,7 @@
     if (!fault) return emptyResult("Selecteer de storingscode", "Na je selectie verschijnt hier de betekenis, mogelijke oorzaken en controlevolgorde.");
     const causes = (fault.causes || []).map(c => `<li><span></span><p>${esc(c)}</p></li>`).join("");
     const checks = (fault.checks || []).map((c, i) => `<li><span>${i + 1}</span><p>${esc(c)}</p></li>`).join("");
-    refs.result.innerHTML = `<div class="fault-detail"><div class="fault-header"><div><p class="step-label">STORINGSCODE</p><div class="fault-title-row"><span class="code-badge">${esc(fault.code)}</span><h2>${esc(fault.title || fault.meaning)}</h2></div></div></div><div class="detail-grid"><section><p class="section-kicker">BETEKENIS</p><p class="parameter-explanation">${esc(fault.meaning || fault.title)}</p><p class="section-kicker" style="margin-top:26px">MOGELIJKE OORZAKEN</p><ul class="cause-list">${causes || "<li><p>Niet apart vermeld in de fabrikantdocumentatie.</p></li>"}</ul></section><section><p class="section-kicker">CONTROLEVOLGORDE</p><ol class="check-list">${checks || "<li><span>1</span><p>Raadpleeg de officiële handleiding.</p></li>"}</ol></section></div>${fault.note ? `<div class="notice"><strong>Let op</strong><p>${esc(fault.note)}</p></div>` : ""}${sourceRow(device, { source: state.faultSource })}</div>`;
+    refs.result.innerHTML = `<div class="fault-detail"><div class="fault-header"><div><p class="step-label">STORINGSCODE</p><div class="fault-title-row"><span class="code-badge">${esc(fault.code)}</span><h2>${esc(fault.title || fault.meaning)}</h2></div></div></div><div class="detail-grid"><section><p class="section-kicker">BETEKENIS</p><p class="parameter-explanation">${esc(fault.meaning || fault.title)}</p><p class="section-kicker" style="margin-top:26px">MOGELIJKE OORZAKEN</p><ul class="cause-list">${causes || "<li><p>Niet apart vermeld in de fabrikantdocumentatie.</p></li>"}</ul></section><section><p class="section-kicker">CONTROLEVOLGORDE</p><ol class="check-list">${checks || "<li><span>1</span><p>Raadpleeg de officiële handleiding.</p></li>"}</ol></section></div>${fault.note ? `<div class="notice"><strong>Let op</strong><p>${esc(fault.note)}</p></div>` : ""}${sourceRow(device, { source: state.faultSource }, fault)}</div>`;
   }
 
   function displayValue(v, unit) {
@@ -222,6 +233,32 @@
     return "";
   }
 
+  function familyHintHtml(device) {
+    const family = String(device?.family || "").trim();
+    if (!family) return "";
+    const parts = family.split(/\s*·\s*/).map(x => x.trim()).filter(Boolean);
+    if (parts.length < 2) return esc(family);
+    return `<span class="family-chips">${parts.map(part => `<span>${esc(part)}</span>`).join("")}</span>`;
+  }
+
+  function renderFamilyHint(device) {
+    refs.family.innerHTML = familyHintHtml(device);
+    refs.family.classList.toggle("hidden", !device?.family);
+  }
+
+  function variantValueHtml(value, unit = "") {
+    if (typeof value !== "string") return "";
+    const parts = value.split(/\s*;\s*/).map(x => x.trim()).filter(Boolean);
+    if (parts.length < 2) return "";
+    const parsed = [];
+    for (const part of parts) {
+      const match = part.match(/^(.+?):\s*(.+)$/);
+      if (!match) return "";
+      parsed.push({ label: match[1].trim(), val: match[2].trim() });
+    }
+    return `<span class="variant-list">${parsed.map(item => `<span class="variant-line"><span class="variant-name">${esc(item.label)}</span><strong>${esc(item.val)}${unit ? ` ${esc(unit)}` : ""}</strong></span>`).join("")}</span>`;
+  }
+
   function parameterSettingRows(p, includeCategory = false) {
     const rows = [];
     const choices = parameterChoices(p);
@@ -231,7 +268,8 @@
       rows.push(`<div><dt>Fabrieksinstelling</dt><dd><strong class="factory-value">${esc(value)}</strong>${meaning ? `<span class="factory-meaning"> — ${esc(meaning)}</span>` : ""}</dd></div>`);
     }
     if (p.settingRange && !choices.length) {
-      rows.push(`<div><dt>Instelbereik</dt><dd>${esc(p.settingRange)}</dd></div>`);
+      const structured = variantValueHtml(p.settingRange, p.unit || "");
+      rows.push(`<div${structured ? ' class="parameter-variants-row"' : ""}><dt>Instelbereik</dt><dd>${structured || esc(p.settingRange)}</dd></div>`);
     }
     if (choices.length) {
       rows.push(`<div class="parameter-choices-row"><dt>Keuzes</dt><dd>${choiceListHtml(choices)}</dd></div>`);
@@ -258,12 +296,17 @@
   function renderParameter() {
     const device = selectedDevice(); const p = state.parameters.find(x => String(x.code) === String(state.parameterCode));
     if (!p) return emptyResult("Selecteer de parameter", "Na je selectie verschijnen de officiële instelling, bereik en technische toelichting.");
-    refs.result.innerHTML = `<div class="fault-detail parameter-detail"><div class="fault-header"><div><p class="step-label">PARAMETER</p><div class="fault-title-row"><span class="code-badge">${esc(p.code)}</span><h2>${esc(p.description || p.code)}</h2></div></div></div><div class="detail-grid"><section><p class="section-kicker">INSTELLING</p><dl class="parameter-list">${parameterRows(p) || "<div><dt>Waarde</dt><dd>Niet opgegeven</dd></div>"}</dl></section><section><p class="section-kicker">TECHNISCHE TOELICHTING</p>${parameterExplanationHtml(p)}</section></div>${sourceRow(device, { source: state.parameterSource })}</div>`;
+    refs.result.innerHTML = `<div class="fault-detail parameter-detail"><div class="fault-header"><div><p class="step-label">PARAMETER</p><div class="fault-title-row"><span class="code-badge">${esc(p.code)}</span><h2>${esc(p.description || p.code)}</h2></div></div></div><div class="detail-grid"><section><p class="section-kicker">INSTELLING</p><dl class="parameter-list">${parameterRows(p) || "<div><dt>Waarde</dt><dd>Niet opgegeven</dd></div>"}</dl></section><section><p class="section-kicker">TECHNISCHE TOELICHTING</p>${parameterExplanationHtml(p)}</section></div>${sourceRow(device, { source: state.parameterSource }, p)}</div>`;
   }
 
   function measurementRows(item) {
     const rows = [];
-    const add = (name, value) => { if (value !== undefined && value !== null && value !== "") rows.push(`<div><dt>${esc(name)}</dt><dd>${esc(displayValue(value, item.unit && ["Waarde","Minimum","Maximum","Tolerantie"].includes(name) ? item.unit : ""))}</dd></div>`); };
+    const add = (name, value) => {
+      if (value === undefined || value === null || value === "") return;
+      const unit = item.unit && ["Waarde","Minimum","Maximum","Tolerantie"].includes(name) ? item.unit : "";
+      const structured = variantValueHtml(value, unit);
+      rows.push(`<div${structured ? ' class="parameter-variants-row"' : ""}><dt>${esc(name)}</dt><dd>${structured || esc(displayValue(value, unit))}</dd></div>`);
+    };
     add("Waarde", item.value); add("Minimum", item.minimum); add("Maximum", item.maximum); add("Tolerantie", item.tolerance); add("Belasting", item.load); add("Modulatie", item.modulation); add("Meetvoorwaarde", item.condition);
     return rows.join("");
   }
@@ -275,7 +318,7 @@
     const settings = (c.settings || []).map(s => `<article class="combustion-item"><h3>${esc(s.label || s.id)}</h3><dl class="parameter-list">${measurementRows(s)}</dl>${s.technicalExplanation ? `<p class="combustion-note">${esc(s.technicalExplanation)}</p>` : ""}</article>`).join("");
     const conditions = (c.measurementConditions || []).map((x,i) => `<li><span>${i+1}</span><p>${esc(x)}</p></li>`).join("");
     const notes = (c.notes || []).map(x => `<li><span></span><p>${esc(x)}</p></li>`).join("");
-    refs.result.innerHTML = `<div class="fault-detail"><div class="fault-header"><div><p class="step-label">VERBRANDING</p><div class="fault-title-row"><span class="code-badge combustion-badge">O₂ / CO</span><h2>${esc(c.title || device?.name || "Verbranding")}</h2></div></div></div>${measurements ? `<section class="combustion-section"><p class="section-kicker">MEETWAARDEN</p><div class="combustion-grid">${measurements}</div></section>` : ""}${settings ? `<section class="combustion-section combustion-settings"><p class="section-kicker">INSTELLINGEN / TESTSTANDEN</p><div class="combustion-grid">${settings}</div></section>` : ""}<div class="detail-grid"><section><p class="section-kicker">MEETVOLGORDE</p><ol class="check-list">${conditions}</ol></section><section><p class="section-kicker">TECHNISCHE TOELICHTING</p><p class="parameter-explanation">${esc(c.technicalExplanation || "")}</p>${notes ? `<p class="section-kicker" style="margin-top:24px">OPMERKINGEN</p><ul class="cause-list">${notes}</ul>` : ""}</section></div>${sourceRow(device, c)}</div>`;
+    refs.result.innerHTML = `<div class="fault-detail"><div class="fault-header"><div><p class="step-label">VERBRANDING</p><div class="fault-title-row"><span class="code-badge combustion-badge">O₂ / CO</span><h2>${esc(c.title || device?.name || "Verbranding")}</h2></div></div></div>${measurements ? `<section class="combustion-section"><p class="section-kicker">MEETWAARDEN</p><div class="combustion-grid">${measurements}</div></section>` : ""}${settings ? `<section class="combustion-section combustion-settings"><p class="section-kicker">INSTELLINGEN / TESTSTANDEN</p><div class="combustion-grid">${settings}</div></section>` : ""}<div class="detail-grid"><section><p class="section-kicker">MEETVOLGORDE</p><ol class="check-list">${conditions}</ol></section><section><p class="section-kicker">TECHNISCHE TOELICHTING</p><p class="parameter-explanation">${esc(c.technicalExplanation || "")}</p>${notes ? `<p class="section-kicker" style="margin-top:24px">OPMERKINGEN</p><ul class="cause-list">${notes}</ul>` : ""}</section></div>${sourceRow(device, c, c)}</div>`;
   }
 
   function normalizeBranch(branch) {
@@ -417,8 +460,7 @@
         refs.device.value = state.deviceId;
 
         const device = selectedDevice();
-        refs.family.textContent = device?.family || "";
-        refs.family.classList.toggle("hidden", !device?.family);
+        renderFamilyHint(device);
 
         if (device) {
           await loadDeviceData({ preserveSelection: true, silent: true });
@@ -447,7 +489,7 @@
   refs.device.addEventListener("change", async () => {
     state.deviceId = refs.device.value;
     const device = selectedDevice(); const tabs = availableTabs(device); state.tab = tabs[0]?.[0] || "faults";
-    refs.family.textContent = device?.family || ""; refs.family.classList.toggle("hidden", !device?.family);
+    renderFamilyHint(device);
     if (device) await loadDeviceData(); else { refs.tabs.classList.add("hidden"); refs.thirdStep.innerHTML=""; renderResult(); }
     progress();
   });
@@ -484,7 +526,7 @@
   async function registerServiceWorker() {
     if (!("serviceWorker" in navigator) || location.protocol === "file:") return;
     try {
-      const registration = await navigator.serviceWorker.register(appUrl("sw.js?v=10"), { updateViaCache: "none" });
+      const registration = await navigator.serviceWorker.register(appUrl("sw.js?v=12"), { updateViaCache: "none" });
       if (registration.waiting && navigator.serviceWorker.controller) {
         registration.waiting.postMessage({ type: "SKIP_WAITING" });
       }
@@ -834,9 +876,13 @@
     const home = document.getElementById("guidelinesHome");
     const rogafa = document.getElementById("guidelineRogafaView");
     const co = document.getElementById("guidelineCoView");
-    home?.classList.toggle("hidden-view", !!guideline);
-    rogafa?.classList.toggle("hidden-view", guideline !== "rogafa");
-    co?.classList.toggle("hidden-view", guideline !== "co");
+    const asbest = document.getElementById("guidelineAsbestView");
+    const available = new Set(["rogafa", "co", "asbest"]);
+    const active = available.has(guideline) ? guideline : "";
+    home?.classList.toggle("hidden-view", !!active);
+    rogafa?.classList.toggle("hidden-view", active !== "rogafa");
+    co?.classList.toggle("hidden-view", active !== "co");
+    asbest?.classList.toggle("hidden-view", active !== "asbest");
     window.scrollTo({ top: 0, behavior: "auto" });
   }
 
@@ -1083,7 +1129,7 @@
 
     const openViewer = (source) => {
       image.src = source.currentSrc || source.src;
-      image.alt = source.alt || "ROG(A)FA beugelschema";
+      image.alt = source.alt || "Rogafa beugelschema";
       title.textContent = source.alt?.replace(/^ROG\(A\)FA\s*/i, "") || "Beugelschema";
       viewer.hidden = false;
       viewer.setAttribute("aria-hidden", "false");

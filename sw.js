@@ -1,14 +1,14 @@
 const CACHE_PREFIX = "monteurmaatje-";
-const APP_CACHE = `${CACHE_PREFIX}app-20260823-v22`;
-const DATA_CACHE = `${CACHE_PREFIX}data-20260823-v22`;
+const APP_CACHE = `monteurmaatje-app-industrial-v3`;
+const DATA_CACHE = `monteurmaatje-data-qa-complete-2`;
 const APP_ROOT = new URL("./", self.registration.scope).href;
 const appUrl = (path = "") => new URL(path, self.registration.scope).href;
 
 const CORE_SHELL = [
   APP_ROOT,
   appUrl("index.html"),
-  appUrl("style.css?v=109-gh"),
-  appUrl("app.js?v=109-gh"),
+  appUrl("style.css?v=industrial-v3"),
+  appUrl("app.js?v=industrial-v3"),
   appUrl("manifest-v3.webmanifest?v=3"),
   appUrl("favicon-v3.svg?v=3"),
   appUrl("icons/mm-app-v3-192.png?v=3"),
@@ -17,6 +17,11 @@ const CORE_SHELL = [
   appUrl("icons/mm-app-v3-180.png?v=3"),
   appUrl("assets/fonts/569ce4b8f30dc480-s.p.woff2"),
   appUrl("assets/fonts/93f479601ee12b01-s.p.woff2"),
+  appUrl("assets/asbest/asbestos_gasket.jpg"),
+  appUrl("assets/asbest/asbestos_cement_pipe.jpg"),
+  appUrl("assets/asbest/asbestos_rope.jpg"),
+  appUrl("assets/asbest/asbestos_pipe_insulation.jpg"),
+  appUrl("assets/asbest/asbestos_board.jpg"),
   appUrl("assets/regulations/rogafa/kunststof.webp"),
   appUrl("assets/regulations/rogafa/metaal.webp"),
   appUrl("assets/regulations/rogafa/concentrisch.webp"),
