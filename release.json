@@ -1,10 +1,10 @@
 {
   "product": "MonteurMaatje",
   "foundationVersion": "1.1.0-foundation",
-  "appRevision": "542b09c9a147a5a9",
+  "appRevision": "093d153ad37c49ca",
   "dataRevision": "387427fc6ef3cc96",
   "dataUpdateMode": "conditional-revalidation",
   "manualDataVersionRequired": false,
-  "generatedAt": "2026-08-23T16:03:08+02:00",
-  "change": "v1.0 visuele restyle: centrale rood-zwart-witte industriële stijl, zonder wijziging van technische inhoud of applicatielogica"
+  "generatedAt": "2026-08-22T18:55:00+02:00",
+  "change": "v1.0 final bugfix: terugnavigatie, uniforme footer/bronnen, CO-statuskleuren dark mode en runtime-opschoning"
 }
