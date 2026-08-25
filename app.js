@@ -526,7 +526,7 @@
   async function registerServiceWorker() {
     if (!("serviceWorker" in navigator) || location.protocol === "file:") return;
     try {
-      const registration = await navigator.serviceWorker.register(appUrl("sw.js?v=13"), { updateViaCache: "none" });
+      const registration = await navigator.serviceWorker.register(appUrl("sw.js?v=15"), { updateViaCache: "none" });
       if (registration.waiting && navigator.serviceWorker.controller) {
         registration.waiting.postMessage({ type: "SKIP_WAITING" });
       }
@@ -805,6 +805,36 @@
     </article>`;
   }
 
+  function renderElgaSetupAdvice() {
+    if (!elgaAceTool?.setupLogic) return;
+    const model = document.getElementById("elgaModel")?.value || "4";
+    const emitterKey = document.getElementById("elgaEmitter")?.value || "radiators";
+    const thermostatKey = document.getElementById("elgaThermostat")?.value || "rbus";
+    const modelData = elgaAceTool.models?.[model];
+    const emitter = elgaAceTool.setupLogic.emitters?.[emitterKey];
+    const thermostat = elgaAceTool.setupLogic.thermostats?.[thermostatKey];
+    if (!emitter || !thermostat) return;
+
+    const emitterAdvice = document.getElementById("elgaEmitterAdvice");
+    if (emitterAdvice) emitterAdvice.innerHTML = `<h3>${esc(emitter.label)} · hydrauliek</h3><p>${esc(emitter.hydraulic)}</p>`;
+
+    const curveValue = emitter.curve?.[thermostatKey];
+    const advice = document.getElementById("elgaSetupAdvice");
+    if (!advice) return;
+    const curveLine = thermostat.curveRelevant && curveValue != null
+      ? `<li><strong>CP230:</strong> ${esc(String(curveValue).replace(".", ","))} · officiële starthelling voor deze combinatie</li>`
+      : `<li><strong>CP230:</strong> geen vaste OpenTherm-startwaarde uit de officiële Elga Ace-tabel; de thermostaat is leidend</li>`;
+    advice.innerHTML = `<h3>Advies voor jouw keuze</h3>
+      <p><strong>${esc(modelData?.label || "Elga Ace")} · ${esc(emitter.label)} · ${esc(thermostat.label)}</strong></p>
+      <ul class="power-checklist">
+        <li><span>→</span><p><strong>Streefdebiet:</strong> ${esc(String(modelData?.targetFlow ?? "—"))} l/min</p></li>
+        <li><span>→</span><p><strong>CP780:</strong> ${esc(thermostat.cp780)} · ${esc(thermostat.strategy)}</p></li>
+        <li><span>→</span><p>${curveLine.replace(/^<li>|<\/li>$/g, "")}</p></li>
+        <li><span>→</span><p><strong>CP210 / CP220:</strong> ${esc(elgaAceTool.setupLogic.curveDefaults?.CP210 || "15 °C")} / ${esc(elgaAceTool.setupLogic.curveDefaults?.CP220 || "15 °C")} als uitgangspunt</p></li>
+      </ul>
+      <p>${esc(thermostat.note)}</p>`;
+  }
+
   async function renderElgaTool() {
     if (!elgaAceTool) return;
     const device = elgaDevice();
@@ -813,6 +843,7 @@
     const modelData = elgaAceTool.models?.[model];
     const flow = document.getElementById("elgaTargetFlow");
     if (flow) flow.textContent = modelData?.targetFlow ?? "—";
+    renderElgaSetupAdvice();
 
     try {
       const data = await loadJson(device.parametersPath);
@@ -844,10 +875,50 @@
     return state.catalog?.brands?.find(b => b.id === "intergas")?.devices?.find(d => d.id === "intergas-xtend-eco");
   }
 
+  function renderXtendSetupAdvice() {
+    if (!xtendEcoTool?.setupLogic) return;
+    const emitterKey = document.getElementById("xtendEmitter")?.value || "radiators";
+    const thermostatKey = document.getElementById("xtendThermostat")?.value || "opentherm";
+    const maxTemp = document.getElementById("xtendMaxTemp")?.value || "40";
+    const emitter = xtendEcoTool.setupLogic.emitters?.[emitterKey];
+    const thermostat = xtendEcoTool.setupLogic.thermostats?.[thermostatKey];
+    const advice = document.getElementById("xtendSetupAdvice");
+    if (!emitter || !thermostat || !advice) return;
+
+    const lines = [
+      `<li><span>→</span><p><strong>P194:</strong> ${esc(maxTemp)} °C · gekozen maximale aanvoertemperatuur</p></li>`,
+      `<li><span>→</span><p><strong>P202:</strong> ${esc(thermostat.P202)}</p></li>`,
+      `<li><span>→</span><p><strong>P064:</strong> ${esc(thermostat.P064)}</p></li>`,
+    ];
+
+    if (thermostat.P006) lines.push(`<li><span>→</span><p><strong>P006:</strong> ${esc(thermostat.P006)}</p></li>`);
+    if (thermostat.P187) lines.push(`<li><span>→</span><p><strong>P187:</strong> ${esc(thermostat.P187)}</p></li>`);
+
+    if (thermostat.curveRelevant) {
+      const slope = emitter.slopes?.[maxTemp];
+      lines.push(`<li><span>→</span><p><strong>P210:</strong> ${esc(String(emitter.P210))} °C · ${esc(emitter.label)}</p></li>`);
+      lines.push(`<li><span>→</span><p><strong>P192:</strong> ${esc(String(slope ?? "—").replace(".", ","))} · officiële helling</p></li>`);
+      if (thermostat.useP221) {
+        const shift = xtendEcoTool.setupLogic.p221ByTemp?.[maxTemp];
+        lines.push(`<li><span>→</span><p><strong>P221:</strong> ${esc(String(shift ?? "—"))} °C · alleen voor Aan/Uit met proportionele band</p></li>`);
+      } else {
+        lines.push(`<li><span>→</span><p><strong>P221:</strong> niet instellen voor deze thermostaatkeuze</p></li>`);
+      }
+    } else {
+      lines.push(`<li><span>→</span><p><strong>Stooklijntabel:</strong> niet leidend bij standaard OpenTherm; P194 blijft wel het temperatuurplafond</p></li>`);
+    }
+
+    advice.innerHTML = `<h3>Advies voor jouw keuze</h3>
+      <p><strong>${esc(emitter.label)} · ${esc(thermostat.label)} · max. ${esc(maxTemp)} °C</strong></p>
+      <ul class="power-checklist">${lines.join("")}</ul>
+      <p>${esc(thermostat.note)}</p>`;
+  }
+
   async function renderXtendTool() {
     if (!xtendEcoTool) return;
     const device = xtendDevice();
     if (!device?.parametersPath) return;
+    renderXtendSetupAdvice();
     try {
       const data = await loadJson(device.parametersPath);
       const params = data.parameters || [];
@@ -1272,8 +1343,9 @@
 
     try {
       elgaAceTool = await loadJson("tools/elga-ace.json");
-      document.getElementById("elgaModel")?.addEventListener("change", renderElgaTool);
+      ["elgaModel", "elgaEmitter", "elgaThermostat"].forEach(id => document.getElementById(id)?.addEventListener("change", renderElgaTool));
       xtendEcoTool = await loadJson("tools/xtend-eco.json");
+      ["xtendEmitter", "xtendThermostat", "xtendMaxTemp"].forEach(id => document.getElementById(id)?.addEventListener("change", renderXtendTool));
       document.getElementById("xtendXtore")?.addEventListener("change", event => {
         document.getElementById("xtendXtoreContent")?.classList.toggle("hidden-view", event.target.value !== "yes");
       });
@@ -1346,7 +1418,7 @@
     renderRoute(routeFromLocation());
   });
 
-  // Bouw bij een verse v1.0-sessie maximaal Home -> hoofdgroep -> detail.
+  // Bouw bij een verse sessie maximaal Home -> hoofdgroep -> detail.
   // Daardoor sluit Android/PWA Terug na Home de app, zonder eerst alle bezochte
   // Tools/Richtlijnen uit de hele sessie langs te hoeven.
   const initialRoute = routeFromLocation();

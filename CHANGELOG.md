@@ -145,3 +145,39 @@ De asbestuitbreiding is daarmee een aanvullende Richtlijnen-module en geen wijzi
 - De functionele statuskleur `danger` blijft rood, zodat storingen/fouten visueel onderscheiden blijven van gewone actieve navigatie en selectie.
 - Het lichte thema is in dezelfde warmere accentfamilie aangepast.
 - Alleen visuele tokens en noodzakelijke cache-/releaseversies zijn aangepast; layout, routes, data, tools, richtlijnen en applicatielogica zijn niet gewijzigd.
+
+## v1.0.1 — Elga Ace & Xtend Eco insteltools — 25 augustus 2026
+
+### Elga Ace
+- Bestaande keuze **Afgiftesysteem** is functioneel gemaakt.
+- Nieuwe keuze **Thermostaat / regeling** toegevoegd: eTwist/R-bus, Aan/Uit of OpenTherm.
+- Streefdebiet blijft modelspecifiek: 12 l/min (4 kW) en 17 l/min (6 kW).
+- Dynamisch insteladvies toegevoegd voor CP780 en, waar van toepassing, CP230.
+- Officiële CP230-startwaarden toegepast: radiatoren/combinatie 1,5 met eTwist/R-bus of 1,7 met Aan/Uit; vloerverwarming 0,7 met eTwist/R-bus of Aan/Uit.
+- OpenTherm wordt als ruimteregeling behandeld; de officiële Elga Ace CP230-tabel geeft hiervoor geen afzonderlijke vaste startwaarde.
+- CP210/CP220 blijven als uitgangspunt 15 °C; bestaande comfort- en hybride-uitleg blijft behouden.
+- Hydraulische toelichting verandert mee met het gekozen afgiftesysteem.
+- Bronbasis: officiële Remeha Elga Ace installatie-/servicehandleiding plus actuele Remeha Kennisbank.
+
+### Xtend Eco
+- Keuze **Afgiftesysteem** toegevoegd: radiatoren of vloerverwarming.
+- Keuze **Thermostaat / regeling** toegevoegd: OpenTherm/Comfort Touch, Aan/Uit met hysterese of Aan/Uit met proportionele band.
+- Keuze **benodigde maximale aanvoertemperatuur P194** toegevoegd: 35, 40, 45, 50, 55, 65 of 75 °C.
+- Dynamisch insteladvies toegevoegd voor P202, P064 en waar van toepassing P006, P187, P210, P192 en P221.
+- Officiële stooklijntabel uit Intergas document 88104401 (juni 2026) verwerkt.
+- P221 wordt alleen geadviseerd bij Aan/Uit met proportionele band.
+- Bij standaard OpenTherm blijft P194 het temperatuurplafond; de WAR-stooklijntabel wordt niet als leidende instelling gepresenteerd.
+- Bestaande Xtore-sectie en firmware/update-link zijn inhoudelijk en qua positie behouden.
+- De Xtend-handleidinglink in de tool is bijgewerkt naar de actuele juni-2026 revisie.
+
+### Techniek / release
+- Zichtbare versie verhoogd van v1.0 naar **v1.0.1**.
+- App-shell/serviceworker-cacheversie verhoogd om oude toolcode uit PWA-cache te voorkomen.
+- Geen wijzigingen aan bestaande storings-, parameter-, verbrandings-, diagnose-, knowledge- of toesteldatasets buiten de twee toolbestanden.
+- Warm Industrial styling en bestaande navigatiestructuur behouden.
+
+### v1.0.1 verificatiecorrectie — 25 augustus 2026
+- Xtend Eco stooklijnmatrix opnieuw regel voor regel gecontroleerd tegen Intergas installatievoorschrift 88104401 (juni 2026).
+- Bevestigd: vloerverwarming gebruikt P210 = 0 en bij P194 = 40 °C P192 = 0,74; radiatoren gebruikt P210 = 8 en bij P194 = 40 °C P192 = 0,44. De bestaande toolmapping was correct en is inhoudelijk niet omgewisseld.
+- Bij de keuze Afgiftesysteem is een korte toelichting toegevoegd dat Intergas geen afzonderlijke officiële stooklijntabel voor een gecombineerd radiator-/vloerverwarmingssysteem publiceert. Er wordt daarom geen fictieve combiwaarde aangeboden.
+- Alleen deze verduidelijking en noodzakelijke PWA-cacheversies zijn aangepast; Elga/Xtend-besliswaarden en overige technische data zijn verder ongewijzigd.

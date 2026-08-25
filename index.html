@@ -743,9 +743,20 @@
                 <label for="elgaEmitter">Afgiftesysteem</label>
                 <div class="select-wrap">
                   <select id="elgaEmitter">
-                    <option>Radiatoren</option>
-                    <option>Vloerverwarming</option>
-                    <option>Combinatie radiatoren + vloerverwarming</option>
+                    <option value="radiators">Radiatoren</option>
+                    <option value="floor">Vloerverwarming</option>
+                    <option value="combo">Combinatie radiatoren + vloerverwarming</option>
+                  </select>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                </div>
+              </div>
+              <div class="knowledge-field">
+                <label for="elgaThermostat">Thermostaat / regeling</label>
+                <div class="select-wrap">
+                  <select id="elgaThermostat">
+                    <option value="rbus">eTwist / R-bus</option>
+                    <option value="onoff">Aan/Uit thermostaat</option>
+                    <option value="opentherm">OpenTherm thermostaat</option>
                   </select>
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
                 </div>
@@ -759,6 +770,7 @@
               <div><span>Streefdebiet</span><strong id="elgaTargetFlow">12</strong><b>l/min</b></div>
               <p>Lees de werkelijke waterflow uit via <strong>AM056</strong>. Dit is een meetwaarde, geen instelparameter.</p>
             </div>
+            <div id="elgaEmitterAdvice" class="elga-explainer" aria-live="polite"></div>
             <div class="elga-explainer">
               <h3>Waarom is debiet zo belangrijk?</h3>
               <p>De warmtepomp moet zijn geproduceerde warmte via het CV-water kunnen afvoeren. Te weinig liters per minuut beperken de warmteoverdracht; de warmtepomp kan daardoor minder efficiënt werken, onvoldoende vermogen kwijt en uiteindelijk een flowstoring geven of eerder hulp van de cv-ketel nodig hebben.</p>
@@ -781,6 +793,7 @@
           <section class="elga-step">
             <p class="section-kicker">STAP 3 · REGELING & STOOKLIJN</p>
             <p class="elga-step-intro">Stel de stooklijn zo laag mogelijk in met behoud van comfort. Een te hoge stooklijn kost rendement; een te lage geeft comfortklachten.</p>
+            <div id="elgaSetupAdvice" class="elga-explainer" aria-live="polite"></div>
             <div id="elgaControlParams" class="elga-param-grid"></div>
           </section>
 
@@ -829,8 +842,33 @@
             <div id="xtendHybrid" class="elga-param-grid"></div>
           </section>
           <section class="elga-step">
-            <p class="section-kicker">STAP 3 · STOOKLIJN</p>
-            <div class="elga-explainer"><h3>Radiatoren of vloerverwarming?</h3><p>Intergas geeft afzonderlijke stooklijnvoorbeelden. Bij P194 = 40 °C gebruikt het voorschrift bijvoorbeeld P192 = 0,74 en P210 = 0 voor radiatoren, tegenover P192 = 0,44 en P210 = 8 voor vloerverwarming. Dit zijn voorbeeldinstellingen uit de handleiding, geen universele woningberekening.</p></div>
+            <p class="section-kicker">STAP 3 · REGELING & STOOKLIJN</p>
+            <div class="power-device-selects">
+              <div class="knowledge-field">
+                <label for="xtendEmitter">Afgiftesysteem</label>
+                <div class="select-wrap"><select id="xtendEmitter">
+                  <option value="radiators">Radiatoren</option>
+                  <option value="floor">Vloerverwarming</option>
+                </select><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></div>
+              </div>
+              <div class="elga-explainer xtend-combo-note"><p><strong>Combinatie radiatoren + vloerverwarming?</strong> Intergas publiceert hiervoor geen aparte stooklijntabel. Kies daarom niet automatisch een fictieve combiwaarde; bepaal welk afgiftesysteem voor de stooklijn van deze installatie leidend is.</p></div>
+              <div class="knowledge-field">
+                <label for="xtendThermostat">Thermostaat / regeling</label>
+                <div class="select-wrap"><select id="xtendThermostat">
+                  <option value="opentherm">OpenTherm / Comfort Touch</option>
+                  <option value="onoff_hysteresis">Aan/Uit · hysterese</option>
+                  <option value="onoff_proportional">Aan/Uit · proportionele band</option>
+                </select><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></div>
+              </div>
+              <div class="knowledge-field">
+                <label for="xtendMaxTemp">Benodigde max. aanvoer (P194)</label>
+                <div class="select-wrap"><select id="xtendMaxTemp">
+                  <option value="35">35 °C</option><option value="40" selected>40 °C</option><option value="45">45 °C</option><option value="50">50 °C</option><option value="55">55 °C</option><option value="65">65 °C</option><option value="75">75 °C</option>
+                </select><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg></div>
+              </div>
+            </div>
+            <div id="xtendSetupAdvice" class="elga-explainer" aria-live="polite"></div>
+            <div class="elga-explainer"><h3>Officiële startwaarden</h3><p>De waarden hieronder komen uit de stooklijntabel van Intergas (document 88104401, juni 2026). Kies P194 op basis van de werkelijk benodigde maximale aanvoertemperatuur; dit is geen warmteverliesberekening.</p></div>
             <div id="xtendCurve" class="elga-param-grid"></div>
           </section>
           <section class="elga-step">
@@ -858,7 +896,7 @@
             </ul>
           </section>
           <div class="elga-source-box"><strong>Officiële bronnen</strong>
-            <a href="https://www.intergas-verwarming.nl/app/uploads/2025/12/88104401-Installatievoorschrift-Xtend-Eco-1.pdf" target="_blank" rel="noopener noreferrer">Xtend Eco installatievoorschrift ↗</a>
+            <a href="https://www.intergas-verwarming.nl/app/uploads/2026/06/88104401-Xtend-Eco-installatievoorschrift.pdf" target="_blank" rel="noopener noreferrer">Xtend Eco installatievoorschrift ↗</a>
             <a href="https://www.intergas-verwarming.nl/app/uploads/2024/07/88444402.pdf" target="_blank" rel="noopener noreferrer">Xtore installatievoorschrift ↗</a>
             <a href="https://www.intergas-verwarming.nl/zakelijk/download-xtend-software/" target="_blank" rel="noopener noreferrer">Xtend firmware/update-informatie ↗</a>
           </div>
@@ -884,7 +922,7 @@
     <div class="diagram-viewer-hint">Knijp om te zoomen · sleep om te verschuiven</div>
   </div>
 
-  <footer class="app-footer">© 2026 MonteurMaatje · v1.0</footer>
+  <footer class="app-footer">© 2026 MonteurMaatje · v1.0.1</footer>
 
   <nav class="bottom-nav" aria-label="Hoofdnavigatie">
     <button class="bottom-nav-item active" type="button" data-nav-target="home" aria-current="page">
@@ -901,6 +939,6 @@
     </button>
   </nav>
 </main>
-<script src="./app.js?v=industrial-v4-warm" defer></script>
+<script src="./app.js?v=industrial-v5-tools101a" defer></script>
 </body>
 </html>

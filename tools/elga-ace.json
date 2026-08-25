@@ -112,5 +112,61 @@
       "when": "Bij onvoldoende opwarmsnelheid noemt Remeha voor maximaal comfort 20 minuten als mogelijke instelling. Voor meer gasbesparing kan een langere tijd zinvol zijn.",
       "warning": "Meer vertraging kan comfort kosten; minder vertraging kan gasverbruik verhogen."
     }
+  },
+  "setupLogic": {
+    "emitters": {
+      "radiators": {
+        "label": "Radiatoren",
+        "curve": {
+          "rbus": 1.5,
+          "onoff": 1.7
+        },
+        "hydraulic": "Zorg dat voldoende radiatoren/open afgifte beschikbaar blijven. Bij thermostatische radiatorkranen moet het minimale debiet hydraulisch gewaarborgd blijven; controleer bypass/naregeling bij flowklachten."
+      },
+      "floor": {
+        "label": "Vloerverwarming",
+        "curve": {
+          "rbus": 0.7,
+          "onoff": 0.7
+        },
+        "hydraulic": "Zet de benodigde vloerverwarmingsgroepen open en waarborg het streefdebiet. Gebruik de lagere officiële starthelling voor vloerverwarming en knijp de installatie niet om een kunstmatige ΔT te maken."
+      },
+      "combo": {
+        "label": "Radiatoren + vloerverwarming",
+        "curve": {
+          "rbus": 1.5,
+          "onoff": 1.7
+        },
+        "hydraulic": "Remeha schaart een gecombineerd radiator-/vloerverwarmingscircuit voor CP230 onder de radiatorinstelling. Zorg dat beide afgiftesystemen voldoende doorstroming houden."
+      }
+    },
+    "thermostats": {
+      "rbus": {
+        "label": "eTwist / R-bus",
+        "strategy": "Buiten & Kamer",
+        "cp780": "Buiten & Kamer",
+        "curveRelevant": true,
+        "note": "Remeha gebruikt bij R-bus/eTwist weersafhankelijke regeling met ruimtecompensatie. De Kennisbank adviseert Buiten & Kamer als praktische instelling."
+      },
+      "onoff": {
+        "label": "Aan/Uit thermostaat",
+        "strategy": "Weersafhankelijk",
+        "cp780": "Weersafhankelijk",
+        "curveRelevant": true,
+        "note": "Bij een Aan/Uit thermostaat wordt tijdens warmtevraag de weersafhankelijke stooklijn vrijgegeven."
+      },
+      "opentherm": {
+        "label": "OpenTherm thermostaat",
+        "strategy": "Ruimteregeling",
+        "cp780": "Ruimteregeling",
+        "curveRelevant": false,
+        "note": "Bij OpenTherm volgt de Elga Ace volgens Remeha de thermostaat. De officiële CP230-starttabel geeft daarom geen aparte OpenTherm-waarde."
+      }
+    },
+    "curveDefaults": {
+      "CP210": "15 °C",
+      "CP220": "15 °C"
+    },
+    "sourcesNote": "CP230-startwaarden: officiële Elga Ace servicehandleiding. Regelstrategie en comfortoptimalisatie: Remeha Kennisbank."
   }
 }

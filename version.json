@@ -1,6 +1,6 @@
 {
-  "version": "1.0",
-  "releaseLabel": "MonteurMaatje v1.0",
-  "releaseDate": "2026-08-22",
+  "version": "1.0.1",
+  "releaseLabel": "MonteurMaatje v1.0.1",
+  "releaseDate": "2026-08-25",
   "visibleVersionPolicy": "Alleen verhogen bij functionele/grotere releases; tekst- en kleine cosmetische correcties blijven binnen dezelfde zichtbare versie."
 }

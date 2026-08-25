@@ -6,7 +6,7 @@
   "sources": [
     {
       "title": "Intergas Xtend Eco installatievoorschrift",
-      "url": "https://www.intergas-verwarming.nl/app/uploads/2025/12/88104401-Installatievoorschrift-Xtend-Eco-1.pdf"
+      "url": "https://www.intergas-verwarming.nl/app/uploads/2026/06/88104401-Xtend-Eco-installatievoorschrift.pdf"
     },
     {
       "title": "Intergas Xtore installatievoorschrift",
@@ -268,5 +268,83 @@
       "Handmatige invoer is bedoeld wanneer automatische detectie niet wordt gebruikt.",
       "Bij standaard Xtore eerst automatische detectie aanhouden tenzij de installatie anders vereist."
     ]
+  },
+  "setupLogic": {
+    "emitters": {
+      "floor": {
+        "label": "Vloerverwarming",
+        "P210": 0,
+        "slopes": {
+          "35": 0.56,
+          "40": 0.74,
+          "45": 0.93,
+          "50": 1.11,
+          "55": 1.3,
+          "65": 1.67,
+          "75": 2.04
+        }
+      },
+      "radiators": {
+        "label": "Radiatoren",
+        "P210": 8,
+        "slopes": {
+          "35": 0.26,
+          "40": 0.44,
+          "45": 0.63,
+          "50": 0.81,
+          "55": 1.0,
+          "65": 1.37,
+          "75": 1.74
+        }
+      }
+    },
+    "maxFlowTemps": [
+      35,
+      40,
+      45,
+      50,
+      55,
+      65,
+      75
+    ],
+    "p221ByTemp": {
+      "35": 3,
+      "40": 4,
+      "45": 5,
+      "50": 6,
+      "55": 7,
+      "65": 9,
+      "75": 10
+    },
+    "thermostats": {
+      "opentherm": {
+        "label": "OpenTherm / Comfort Touch",
+        "P202": "4 · OpenTherm / auto",
+        "P064": "1",
+        "curveRelevant": false,
+        "note": "Bij standaard OpenTherm regelt de thermostaat de warmtevraag. P194 blijft het maximale watertemperatuurplafond; de WAR-stooklijntabel is niet de leidende instelling."
+      },
+      "onoff_hysteresis": {
+        "label": "Aan/Uit · hysterese",
+        "P202": "5 · WAR + Aan/Uit hysterese",
+        "P064": "1",
+        "P187": "0",
+        "P006": "1 · externe buitenvoeler",
+        "curveRelevant": true,
+        "useP221": false,
+        "note": "Intergas schrijft voor deze Aan/Uit-regeling een externe buitenvoeler en een stooklijn voor. P221 hoort volgens §11.6 alleen bij de proportionele Aan/Uit-regeling."
+      },
+      "onoff_proportional": {
+        "label": "Aan/Uit · proportionele band",
+        "P202": "8 · WAR + Aan/Uit proportionele band",
+        "P064": "1",
+        "P187": "volgens thermostaat (bijv. vaak 6/uur)",
+        "P006": "1 · externe buitenvoeler",
+        "curveRelevant": true,
+        "useP221": true,
+        "note": "Intergas schrijft de stooklijn én P221 voor bij de proportionele Aan/Uit-regeling. P187 volgt het aantal schakelingen per uur van de aangesloten thermostaat."
+      }
+    },
+    "sourceRevision": "Intergas Xtend Eco installatievoorschrift 88104401, juni 2026"
   }
 }

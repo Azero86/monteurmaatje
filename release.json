@@ -1,10 +1,10 @@
 {
   "product": "MonteurMaatje",
   "foundationVersion": "1.1.0-foundation",
-  "appRevision": "3f069327b6a23066",
+  "appRevision": "aa59dc1b33804340",
   "dataRevision": "387427fc6ef3cc96",
   "dataUpdateMode": "conditional-revalidation",
   "manualDataVersionRequired": false,
-  "generatedAt": "2026-08-23T19:25:00+02:00",
-  "change": "v1.0 visuele kleurcorrectie: Industrial layout behouden, primair accent van fel rood naar rustig warm koraal/oranje; functionele danger-status blijft rood"
+  "generatedAt": "2026-08-25T17:15:00+02:00",
+  "change": "v1.0.1 verified: Xtend stooklijnmatrix opnieuw bevestigd tegen Intergas 88104401; combi-uitleg toegevoegd; geen wijziging van officiële instelwaarden"
 }
