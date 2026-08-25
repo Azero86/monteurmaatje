@@ -235,3 +235,13 @@ De asbestuitbreiding is daarmee een aanvullende Richtlijnen-module en geen wijzi
 - Technische codes worden genormaliseerd: varianten zoals E.01.11 / E0111 / e 01 11 geven dezelfde exacte codematches.
 - Identieke storingscodes blijven per merk en toestel als afzonderlijke resultaten zichtbaar; een korte numerieke code zoals '5' levert geen willekeurige tekstmatches op.
 - Zoekresultaten openen rechtstreeks de juiste toesteldata/tab/storing/parameter of relevante tool/richtlijn.
+
+- Update 11: vaste automatische release-validator toegevoegd (`scripts/validate-release.py`).
+- `release.json` bijgewerkt naar de actuele fase-10/update-11 status.
+- Mitsubishi hoofdmenu: afwijkende emoji-iconen vervangen door consistente lijniconen in MonteurMaatje-stijl.
+- Mitsubishi DIP-pagina: printplaatfoto vervangen door een strakke FTC6-layoutweergave gebaseerd op Mitsubishi Electric BH79D843H06, Fig. 5.1.1.
+- WhatsApp/social linkpreview toegevoegd via Open Graph metadata en `assets/social/monteurmaatje-share.png` (1200×630).
+
+- Correctie Update 11B: zelfgemaakte FTC6 DIP-layout verwijderd; vervangen door de aangeleverde technische printplaattekening in de DIP-switchcategorie.
+
+- Update 11C: Mitsubishi-hoofdmenu visueel versterkt zodat de vier hoofdingangen duidelijk als klikbare knoppen herkenbaar zijn; inhoud en functionaliteit ongewijzigd.

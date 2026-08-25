@@ -754,3 +754,81 @@ body.search-open{overflow:hidden}
  .global-search-overlay{padding-left:8px;padding-right:8px}.global-search-shell{margin:4px auto;padding:13px;border-radius:var(--radius-sm)}
  .global-search-head h2{font-size:19px}.global-search-field input{font-size:14px}
 }
+
+/* Update 11: Mitsubishi iconografie + officiële FTC6-layout */
+.mitsu-home-card strong{display:flex;align-items:center;gap:10px}
+.mitsu-home-icon{display:inline-grid;place-items:center;flex:0 0 28px;width:28px;height:28px;color:var(--accent)}
+.mitsu-home-icon svg{display:block;width:24px;height:24px}
+.mitsu-board-official img{background:#f5f7f6;padding:10px;box-sizing:border-box}
+
+/* Update 11C: Mitsubishi hoofdingangen duidelijk als klikbare knoppen */
+.mitsu-home-grid{
+  gap:12px;
+}
+.mitsu-home-card{
+  position:relative;
+  min-height:112px;
+  padding:17px 52px 17px 17px;
+  border:1px solid var(--border-strong, var(--border));
+  border-radius:var(--radius-sm);
+  background:var(--surface-elevated);
+  box-shadow:0 1px 0 rgba(255,255,255,.035),0 5px 16px rgba(0,0,0,.08);
+  cursor:pointer;
+  transition:border-color .16s ease,background .16s ease,transform .12s ease,box-shadow .16s ease;
+}
+.mitsu-home-card::after{
+  content:"›";
+  position:absolute;
+  right:18px;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:28px;
+  line-height:1;
+  font-weight:500;
+  color:var(--text-muted);
+  transition:transform .16s ease,color .16s ease;
+}
+.mitsu-home-card:hover,
+.mitsu-home-card:focus-visible{
+  border-color:var(--accent);
+  background:var(--surface-inset);
+  box-shadow:0 0 0 1px color-mix(in srgb,var(--accent) 22%,transparent),0 7px 20px rgba(0,0,0,.12);
+  outline:none;
+}
+.mitsu-home-card:hover::after,
+.mitsu-home-card:focus-visible::after{
+  color:var(--accent);
+  transform:translate(3px,-50%);
+}
+.mitsu-home-card:active{
+  transform:translateY(1px);
+  box-shadow:none;
+}
+.mitsu-home-card strong{
+  margin-bottom:8px;
+  font-size:13px;
+  line-height:1.25;
+}
+.mitsu-home-card p{
+  margin:0;
+  color:var(--text-secondary);
+  font-size:10.5px;
+  line-height:1.45;
+}
+.mitsu-home-icon{
+  width:34px;
+  height:34px;
+  flex-basis:34px;
+  border:1px solid color-mix(in srgb,var(--accent) 35%,var(--border));
+  border-radius:9px;
+  background:color-mix(in srgb,var(--accent) 8%,var(--surface-inset));
+}
+.mitsu-home-icon svg{
+  width:20px;
+  height:20px;
+}
+@media(max-width:620px){
+  .mitsu-home-grid{grid-template-columns:1fr;gap:9px}
+  .mitsu-home-card{min-height:92px;padding:14px 46px 14px 14px}
+  .mitsu-home-card::after{right:15px}
+}

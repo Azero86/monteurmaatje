@@ -5,6 +5,6 @@
   "dataRevision": "73e8d2044ccff883",
   "dataUpdateMode": "conditional-revalidation",
   "manualDataVersionRequired": false,
-  "generatedAt": "2026-08-25T17:40:00+02:00",
-  "change": "UNRELEASED Mitsubishi phase 4: servicehulp uitgebreid, UI terugnavigatie gehard, requestcode-compatibiliteit voor SUZ-SWM40VA gecorrigeerd en diagnoseflows gekoppeld; zichtbare release blijft v1.0.1"
+  "generatedAt": "2026-08-25T18:45:00+02:00",
+  "change": "MonteurMaatje v1.0.1 update 11: globale offline zoekfunctie fase 10 behouden; Mitsubishi hoofdmenu-iconen visueel gelijkgetrokken; FTC6 DIP-printfoto vervangen door schematische layout op basis van officiële Mitsubishi Electric BH79D843H06 Fig. 5.1.1; Open Graph/WhatsApp-linkpreview toegevoegd; vaste automatische release-validator toegevoegd."
 }
