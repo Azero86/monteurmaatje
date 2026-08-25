@@ -1,10 +1,10 @@
 {
   "product": "MonteurMaatje",
   "foundationVersion": "1.1.0-foundation",
-  "appRevision": "c9ae2943fa40e1ad",
-  "dataRevision": "7158240c986c8d82",
+  "appRevision": "e55e070c8af69993",
+  "dataRevision": "73e8d2044ccff883",
   "dataUpdateMode": "conditional-revalidation",
   "manualDataVersionRequired": false,
-  "generatedAt": "2026-08-25T16:55:00+02:00",
-  "change": "UNRELEASED Mitsubishi phase 1: EHSD-VM2D + SUZ-SWM40VA toegevoegd met geverifieerde storingen en servicemenu/Running Information; zichtbare release blijft v1.0.1"
+  "generatedAt": "2026-08-25T17:40:00+02:00",
+  "change": "UNRELEASED Mitsubishi phase 4: servicehulp uitgebreid, UI terugnavigatie gehard, requestcode-compatibiliteit voor SUZ-SWM40VA gecorrigeerd en diagnoseflows gekoppeld; zichtbare release blijft v1.0.1"
 }

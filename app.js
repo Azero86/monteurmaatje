@@ -185,7 +185,19 @@
     if (!fault) return emptyResult("Selecteer de storingscode", "Na je selectie verschijnt hier de betekenis, mogelijke oorzaken en controlevolgorde.");
     const causes = (fault.causes || []).map(c => `<li><span></span><p>${esc(c)}</p></li>`).join("");
     const checks = (fault.checks || []).map((c, i) => `<li><span>${i + 1}</span><p>${esc(c)}</p></li>`).join("");
-    refs.result.innerHTML = `<div class="fault-detail"><div class="fault-header"><div><p class="step-label">STORINGSCODE</p><div class="fault-title-row"><span class="code-badge">${esc(fault.code)}</span><h2>${esc(fault.title || fault.meaning)}</h2></div></div></div><div class="detail-grid"><section><p class="section-kicker">BETEKENIS</p><p class="parameter-explanation">${esc(fault.meaning || fault.title)}</p><p class="section-kicker" style="margin-top:26px">MOGELIJKE OORZAKEN</p><ul class="cause-list">${causes || "<li><p>Niet apart vermeld in de fabrikantdocumentatie.</p></li>"}</ul></section><section><p class="section-kicker">CONTROLEVOLGORDE</p><ol class="check-list">${checks || "<li><span>1</span><p>Raadpleeg de officiële handleiding.</p></li>"}</ol></section></div>${fault.note ? `<div class="notice"><strong>Let op</strong><p>${esc(fault.note)}</p></div>` : ""}${sourceRow(device, { source: state.faultSource }, fault)}</div>`;
+    const mitsuDiag = device?.id === "mitsubishi-ecodan-ehsd-vm2d-suz-swm40va" && fault.diagnosticId
+      ? `<div class="mitsu-fault-action"><button type="button" data-open-mitsu-diag="${esc(fault.diagnosticId)}">🔎 Open uitgebreide Mitsubishi-diagnose</button></div>` : "";
+    refs.result.innerHTML = `<div class="fault-detail"><div class="fault-header"><div><p class="step-label">STORINGSCODE</p><div class="fault-title-row"><span class="code-badge">${esc(fault.code)}</span><h2>${esc(fault.title || fault.meaning)}</h2></div></div></div><div class="detail-grid"><section><p class="section-kicker">BETEKENIS</p><p class="parameter-explanation">${esc(fault.meaning || fault.title)}</p><p class="section-kicker" style="margin-top:26px">MOGELIJKE OORZAKEN</p><ul class="cause-list">${causes || "<li><p>Niet apart vermeld in de fabrikantdocumentatie.</p></li>"}</ul></section><section><p class="section-kicker">CONTROLEVOLGORDE</p><ol class="check-list">${checks || "<li><span>1</span><p>Raadpleeg de officiële handleiding.</p></li>"}</ol></section></div>${fault.note ? `<div class="notice"><strong>Let op</strong><p>${esc(fault.note)}</p></div>` : ""}${mitsuDiag}${sourceRow(device, { source: state.faultSource }, fault)}</div>`;
+    refs.result.querySelector("[data-open-mitsu-diag]")?.addEventListener("click", e => openMitsubishiDiagnosis(e.currentTarget.dataset.openMitsuDiag));
+  }
+
+  function openMitsubishiDiagnosis(id) {
+    navigateRoute("tools/mitsubishi");
+    showMitsuSection("diagnose");
+    requestAnimationFrame(() => {
+      const target = document.getElementById(`mitsu-diag-${id}`);
+      if (target) { target.open = true; target.scrollIntoView({ behavior: "smooth", block: "start" }); }
+    });
   }
 
   function displayValue(v, unit) {
@@ -774,6 +786,7 @@
   // Tools-overzicht en Elga Ace afsteltool.
   let elgaAceTool = null;
   let xtendEcoTool = null;
+  let mitsubishiEcodanTool = null;
 
   function showTool(tool) {
     const home = document.getElementById("toolsHome");
@@ -781,11 +794,13 @@
     const setup = document.getElementById("toolSetupView");
     const elga = document.getElementById("toolElgaView");
     const xtend = document.getElementById("toolXtendView");
+    const mitsubishi = document.getElementById("toolMitsubishiView");
     home?.classList.toggle("hidden-view", !!tool);
     cv?.classList.toggle("hidden-view", tool !== "cv");
     setup?.classList.toggle("hidden-view", tool !== "setup");
     elga?.classList.toggle("hidden-view", tool !== "elga");
     xtend?.classList.toggle("hidden-view", tool !== "xtend");
+    mitsubishi?.classList.toggle("hidden-view", tool !== "mitsubishi");
     window.scrollTo({ top: 0, behavior: "auto" });
   }
 
@@ -942,6 +957,91 @@
     }
   }
 
+  function mitsuSwitchCard(sw) {
+    const reserved = sw.kind === "reserved";
+    if (reserved) {
+      return `<div class="mitsu-switch-card is-reserved" aria-disabled="true">
+        <div class="mitsu-reserved-row"><span class="code-badge">${esc(sw.id)}</span><span class="mitsu-switch-title">${esc(sw.title)}</span><span class="mitsu-muted">niet klikbaar</span></div>
+      </div>`;
+    }
+    return `<details class="mitsu-switch-card" id="mitsu-${esc(sw.id)}">
+      <summary><span class="code-badge">${esc(sw.id)}</span><span class="mitsu-switch-title">${esc(sw.title)}</span><span class="mitsu-default">standaard <strong>${esc(sw.default)}</strong></span></summary>
+      <div class="mitsu-switch-body">
+        <div class="mitsu-onoff"><div><span>OFF</span><strong>${esc(sw.off)}</strong></div><div><span>ON</span><strong>${esc(sw.on)}</strong></div></div>
+        ${sw.note ? `<div class="guideline-note"><strong>Let op</strong><p>${esc(sw.note)}</p></div>` : ""}
+      </div></details>`;
+  }
+
+  function showMitsuSection(section="") {
+    document.querySelector(".mitsu-home-grid")?.classList.toggle("hidden-view", !!section);
+    document.querySelectorAll("[data-mitsu-panel]").forEach(p => p.classList.toggle("is-active", p.dataset.mitsuPanel === section));
+    if (section === "dip") renderMitsubishiTool();
+    if (section === "setup") { renderMitsubishiTool(); renderMitsuSetup(); }
+    window.scrollTo({top:0,behavior:"auto"});
+  }
+
+  function renderMitsuSetup() {
+    const questions=document.getElementById("mitsuSetupQuestions"), result=document.getElementById("mitsuSetupResult"), wizard=mitsubishiEcodanTool?.setupWizard;
+    if(!questions||!result||!wizard)return;
+    questions.innerHTML=wizard.questions.map(q=>`<fieldset class="mitsu-question"><legend>${esc(q.title)}</legend><div class="mitsu-choice-grid">${q.options.map(o=>`<label class="mitsu-choice"><input type="radio" name="mitsu-${esc(q.id)}" value="${esc(o.value)}"><span>${esc(o.label)}</span></label>`).join("")}</div></fieldset>`).join("");
+    const update=()=>{const selected={};wizard.questions.forEach(q=>selected[q.id]=document.querySelector(`input[name="mitsu-${q.id}"]:checked`)?.value||"");
+      if(!wizard.questions.every(q=>selected[q.id])){result.innerHTML=`<div class="mitsu-setup-wait"><strong>Nog niet klaar</strong><p>Maak de vier keuzes hierboven. Daarna verschijnt hier één overzichtelijke controlelijst.</p></div>`;return;}
+      const rules=mitsubishiEcodanTool.setupRules||{}, picked=Object.values(selected).map(v=>rules[v]).filter(Boolean), checks=[...(wizard.baseChecks||[]),...picked.flatMap(x=>x.checks||[])], dips=[...new Set(picked.flatMap(x=>x.dip||[]))];
+      result.innerHTML=`<article class="mitsu-setup-summary"><p class="section-kicker">JOUW CONFIGURATIE</p><div class="mitsu-summary-tags">${picked.map(x=>`<span>${esc(x.title)}</span>`).join("")}</div><h4>Controleer dit</h4><ol>${checks.map(x=>`<li>${esc(x)}</li>`).join("")}</ol>${dips.length?`<div class="guideline-note"><strong>Relevante DIP-switches</strong><p>${dips.map(esc).join(", ")}. Open de DIP-switchkaart voor betekenis en stand.</p></div>`:""}
+      <div class="mitsu-endcheck"><strong>Eindcontrole</strong><ul>${(wizard.endCheck||[]).map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>
+      <details class="mitsu-glossary"><summary>Wat betekenen de afkortingen?</summary>${Object.entries(mitsubishiEcodanTool.glossary||{}).filter(([k])=>checks.join(" ").includes(k)||dips.includes(k)).map(([k,v])=>`<p><strong>${esc(k)}</strong> — ${esc(v)}</p>`).join("")||"<p>Voor deze configuratie zijn geen extra afkortingen nodig.</p>"}</details>
+      <p class="mitsu-result-note">Pas instellingen pas aan nadat de hydraulische basiscontrole goed is.</p></article>`;};
+    questions.querySelectorAll("input").forEach(i=>i.addEventListener("change",update));update();
+  }
+
+  function renderMitsubishiTool() {
+    if (!mitsubishiEcodanTool) return;
+    const all = mitsubishiEcodanTool.switches || [];
+    const bank = document.getElementById("mitsuBank")?.value || "all";
+    const list = bank === "all" ? all : all.filter(sw => sw.bank === bank);
+    const node = document.getElementById("mitsuSwitches");
+    if (node) node.innerHTML = list.map(mitsuSwitchCard).join("");
+
+    const quick = document.getElementById("mitsuQuick");
+    if (quick) quick.innerHTML = all.filter(sw => sw.frequent && sw.kind !== "reserved").map(sw =>
+      `<button type="button" class="mitsu-chip" data-mitsu-jump="${esc(sw.id)}"><strong>${esc(sw.id)}</strong><span>${esc(sw.title)}</span></button>`).join("");
+
+    
+
+    const serviceAccess = document.getElementById("mitsuServiceAccess");
+    if (serviceAccess && mitsubishiEcodanTool.serviceAccess) {
+      const a=mitsubishiEcodanTool.serviceAccess;
+      serviceAccess.innerHTML=`<article class="mitsu-access-card"><span class="mitsu-access-badge">START HIER</span><h4>${esc(a.title)}</h4><ol>${a.steps.map(x=>`<li>${esc(x)}</li>`).join("")}</ol><details><summary>Wachtwoord vergeten?</summary><ol>${a.passwordReset.map(x=>`<li>${esc(x)}</li>`).join("")}</ol></details><div class="guideline-note"><strong>Let op</strong><p>${esc(a.warning)}</p></div></article>`;
+    }
+    const serviceTasks = document.getElementById("mitsuServiceTasks");
+    if (serviceTasks) serviceTasks.innerHTML=(mitsubishiEcodanTool.serviceTasks||[]).map(x=>`<details class="mitsu-service-task${x.danger?" is-danger":""}"><summary><strong>${esc(x.title)}</strong><span>open uitleg</span></summary><div><div class="mitsu-route"><span>ROUTE</span><strong>${esc(x.route)}</strong></div><p><strong>Wanneer?</strong> ${esc(x.when)}</p><ol>${x.steps.map(s=>`<li>${esc(s)}</li>`).join("")}</ol><div class="guideline-note"><strong>${x.danger?"Waarschuwing":"Onthouden"}</strong><p>${esc(x.note)}</p></div></div></details>`).join("");
+
+    const diag = document.getElementById("mitsuDiagnostics");
+    if (diag) diag.innerHTML = (mitsubishiEcodanTool.diagnostics || []).map(x =>
+      `<details class="mitsu-diagnose" id="mitsu-diag-${esc(x.id)}"><summary><span class="mitsu-diag-summary"><small>${esc(x.kind || "Diagnose")}${x.faultCode ? ` · ${esc(x.faultCode)}` : ""}</small><strong>${esc(x.title)}</strong></span><span>open stappenplan</span></summary><div><p>${esc(x.intro)}</p>${x.howToUse?`<p class="mitsu-how"><strong>Zo gebruik je dit:</strong> ${esc(x.howToUse)}</p>`:""}<ol>${x.steps.map(step=>`<li>${esc(step)}</li>`).join("")}</ol></div></details>`).join("");
+
+    const systemFacts = document.getElementById("mitsuSystemFacts");
+    if (systemFacts) systemFacts.innerHTML = (mitsubishiEcodanTool.systemFacts || []).map(x =>
+      `<article class="mitsu-info-card mitsu-fact"><h4>${esc(x.label)}</h4><strong>${esc(x.value)}</strong></article>`).join("");
+    const systemNote = document.getElementById("mitsuSystemNote");
+    if (systemNote) systemNote.innerHTML = `<strong>Belangrijk</strong><p>${esc(mitsubishiEcodanTool.systemNote || "")}</p>`;
+    const requestNote = document.getElementById("mitsuRequestNote");
+    if (requestNote) requestNote.textContent = mitsubishiEcodanTool.requestCompatibilityNote || "";
+
+    const sources = document.getElementById("mitsuSources");
+    if (sources) sources.innerHTML = (mitsubishiEcodanTool.sources || []).map(x =>
+      `<a href="${esc(x.url)}" target="_blank" rel="noopener noreferrer">${esc(x.title)} ↗</a>`).join("");
+
+    document.querySelectorAll("[data-mitsu-jump]").forEach(button => button.addEventListener("click", () => {
+      const section = document.getElementById("mitsuAllSection");
+      const show = document.getElementById("mitsuShowAll");
+      if (section) section.hidden = false;
+      if (show) show.textContent = "Volledige DIP-kaart verbergen";
+      const id = button.dataset.mitsuJump;
+      const target = document.getElementById(`mitsu-${id}`);
+      if (target) { target.open = true; target.scrollIntoView({behavior:"smooth",block:"center"}); }
+    }));
+  }
 
   function showGuideline(guideline) {
     const home = document.getElementById("guidelinesHome");
@@ -1022,6 +1122,7 @@
       showTool(tool);
       if (tool === "elga") renderElgaTool();
       if (tool === "xtend") renderXtendTool();
+      if (tool === "mitsubishi") renderMitsubishiTool();
       if (tool === "setup") renderSetupRoom();
     } else {
       showTool("");
@@ -1345,6 +1446,18 @@
       elgaAceTool = await loadJson("tools/elga-ace.json");
       ["elgaModel", "elgaEmitter", "elgaThermostat"].forEach(id => document.getElementById(id)?.addEventListener("change", renderElgaTool));
       xtendEcoTool = await loadJson("tools/xtend-eco.json");
+      mitsubishiEcodanTool = await loadJson("tools/mitsubishi-ecodan.json");
+      document.getElementById("mitsuBank")?.addEventListener("change", renderMitsubishiTool);
+      document.querySelectorAll("[data-mitsu-section]").forEach(b => b.addEventListener("click", () => showMitsuSection(b.dataset.mitsuSection)));
+      document.querySelectorAll("[data-mitsu-home]").forEach(b => b.addEventListener("click", () => showMitsuSection("")));
+      document.getElementById("mitsuShowAll")?.addEventListener("click", () => {
+        const section = document.getElementById("mitsuAllSection");
+        const button = document.getElementById("mitsuShowAll");
+        if (!section || !button) return;
+        section.hidden = !section.hidden;
+        button.textContent = section.hidden ? "Alle DIP-switches tonen" : "Volledige DIP-kaart verbergen";
+        if (!section.hidden) renderMitsubishiTool();
+      });
       ["xtendEmitter", "xtendThermostat", "xtendMaxTemp"].forEach(id => document.getElementById(id)?.addEventListener("change", renderXtendTool));
       document.getElementById("xtendXtore")?.addEventListener("change", event => {
         document.getElementById("xtendXtoreContent")?.classList.toggle("hidden-view", event.target.value !== "yes");

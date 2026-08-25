@@ -1,5 +1,5 @@
 const CACHE_PREFIX = "monteurmaatje-";
-const APP_CACHE = `monteurmaatje-app-industrial-v6-mitsu-p1`;
+const APP_CACHE = `monteurmaatje-app-industrial-v8-mitsu-phase4`;
 const DATA_CACHE = `monteurmaatje-data-qa-complete-2`;
 const APP_ROOT = new URL("./", self.registration.scope).href;
 const appUrl = (path = "") => new URL(path, self.registration.scope).href;
@@ -7,8 +7,8 @@ const appUrl = (path = "") => new URL(path, self.registration.scope).href;
 const CORE_SHELL = [
   APP_ROOT,
   appUrl("index.html"),
-  appUrl("style.css?v=industrial-v4-warm"),
-  appUrl("app.js?v=industrial-v5-tools101"),
+  appUrl("style.css?v=industrial-v5-mitsu-phase4"),
+  appUrl("app.js?v=industrial-v8-mitsu-phase4"),
   appUrl("manifest-v3.webmanifest?v=3"),
   appUrl("favicon-v3.svg?v=3"),
   appUrl("icons/mm-app-v3-192.png?v=3"),
@@ -31,6 +31,8 @@ const CORE_SHELL = [
   appUrl("knowledge/heating-power.json"),
   appUrl("tools/elga-ace.json"),
   appUrl("tools/xtend-eco.json"),
+  appUrl("tools/mitsubishi-ecodan.json"),
+  appUrl("assets/mitsubishi/ftc6-dipswitch-board.jpg"),
 ];
 
 const CATALOG_URL = appUrl("data/catalog.json");

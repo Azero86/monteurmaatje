@@ -1,0 +1,1528 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "mitsubishi-ecodan-ehsd-vm2d-suz-swm40va",
+  "title": "Mitsubishi Ecodan servicehulp",
+  "subtitle": "EHSD-VM2D + SUZ-SWM40VA · FTC6",
+  "source": {
+    "title": "Mitsubishi Hydrobox Gen.D / OCH712C",
+    "url": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+    "secondary": "https://files.ecohandel.ch/documents/manuals/mitsubishi/heatpump/IM/IM_DE_Hydrobox_Gen.D.pdf"
+  },
+  "warning": "Schakel binnen- én buitenunit spanningsloos voordat DIP-switches worden gewijzigd.",
+  "modelCode": "SW5-3 t/m SW5-7 = ON · OFF · OFF · ON · OFF",
+  "switches": [
+    {
+      "id": "SW1-1",
+      "bank": "SW1",
+      "number": 1,
+      "title": "Ketel aanwezig",
+      "off": "Zonder ketel",
+      "on": "Met ketel",
+      "default": "OFF",
+      "kind": "config",
+      "note": "Alleen ON bij correct opgebouwde ketel/hybride configuratie.",
+      "frequent": false
+    },
+    {
+      "id": "SW1-2",
+      "bank": "SW1",
+      "number": 2,
+      "title": "Maximale WP-aanvoertemperatuur",
+      "off": "55 °C",
+      "on": "60 °C",
+      "default": "ON",
+      "kind": "config",
+      "note": "EHSD-VM2D ondersteunt maximaal 60 °C.",
+      "frequent": true
+    },
+    {
+      "id": "SW1-3",
+      "bank": "SW1",
+      "number": 3,
+      "title": "Tapwatertank",
+      "off": "Zonder tapwatertank",
+      "on": "Met tapwatertank",
+      "default": "OFF",
+      "kind": "config",
+      "note": "",
+      "frequent": false
+    },
+    {
+      "id": "SW1-4",
+      "bank": "SW1",
+      "number": 4,
+      "title": "Elektrische dompelverwarmer",
+      "off": "Niet aanwezig",
+      "on": "Aanwezig",
+      "default": "OFF",
+      "kind": "config",
+      "note": "",
+      "frequent": false
+    },
+    {
+      "id": "SW1-5",
+      "bank": "SW1",
+      "number": 5,
+      "title": "Booster heater aanwezig",
+      "off": "Niet aanwezig",
+      "on": "Aanwezig",
+      "default": "ON",
+      "kind": "config",
+      "note": "EHSD-VM2D heeft een 2 kW booster heater.",
+      "frequent": true
+    },
+    {
+      "id": "SW1-6",
+      "bank": "SW1",
+      "number": 6,
+      "title": "Booster heater functie",
+      "off": "Alleen ruimteverwarming",
+      "on": "Ruimteverwarming + tapwater",
+      "default": "ON",
+      "kind": "config",
+      "note": "",
+      "frequent": false
+    },
+    {
+      "id": "SW1-7",
+      "bank": "SW1",
+      "number": 7,
+      "title": "Type buitenunit",
+      "off": "Split",
+      "on": "Packaged/monoblock",
+      "default": "OFF",
+      "kind": "config",
+      "note": "SUZ-SWM40VA is een split buitenunit.",
+      "frequent": true
+    },
+    {
+      "id": "SW1-8",
+      "bank": "SW1",
+      "number": 8,
+      "title": "Draadloze afstandsbediening",
+      "off": "Niet aanwezig",
+      "on": "Aanwezig",
+      "default": "OFF",
+      "kind": "config",
+      "note": "",
+      "frequent": false
+    },
+    {
+      "id": "SW2-1",
+      "bank": "SW2",
+      "number": 1,
+      "title": "Ruimtethermostaat zone 1 – logica",
+      "off": "Stop bij gesloten contact",
+      "on": "Stop bij open contact",
+      "default": "OFF",
+      "kind": "config",
+      "note": "",
+      "frequent": false
+    },
+    {
+      "id": "SW2-2",
+      "bank": "SW2",
+      "number": 2,
+      "title": "Flowswitch 1 – logica",
+      "off": "Fout bij gesloten contact",
+      "on": "Fout bij open contact",
+      "default": "OFF",
+      "kind": "config",
+      "note": "",
+      "frequent": false
+    },
+    {
+      "id": "SW2-3",
+      "bank": "SW2",
+      "number": 3,
+      "title": "Vermogensbegrenzing booster heater",
+      "off": "Niet actief",
+      "on": "Actief",
+      "default": "ON",
+      "kind": "config",
+      "note": "Voor E***-VM2D is dit modelspecifiek standaard ON.",
+      "frequent": true
+    },
+    {
+      "id": "SW2-4",
+      "bank": "SW2",
+      "number": 4,
+      "title": "Koelfunctie",
+      "off": "Niet actief",
+      "on": "Actief",
+      "default": "OFF",
+      "kind": "config",
+      "note": "EHSD is heating-only. Niet gebruiken om koeling op deze Hydrobox te “activeren”.",
+      "frequent": false
+    },
+    {
+      "id": "SW2-5",
+      "bank": "SW2",
+      "number": 5,
+      "title": "Automatisch tweede warmtebron bij buitenunitstoring",
+      "off": "Niet actief",
+      "on": "Actief",
+      "default": "OFF",
+      "kind": "config",
+      "note": "",
+      "frequent": false
+    },
+    {
+      "id": "SW2-6",
+      "bank": "SW2",
+      "number": 6,
+      "title": "Mixing/buffertank",
+      "off": "Zonder mixing tank",
+      "on": "Met mixing tank",
+      "default": "OFF",
+      "kind": "config",
+      "note": "Vereist bij o.a. ketelbedrijf en 2-zone temperatuurregeling; fout LL kan hiernaar verwijzen.",
+      "frequent": true
+    },
+    {
+      "id": "SW2-7",
+      "bank": "SW2",
+      "number": 7,
+      "title": "2-zone temperatuurregeling",
+      "off": "Niet actief",
+      "on": "Actief",
+      "default": "OFF",
+      "kind": "config",
+      "note": "Bij 2-zone temperatuurregeling hoort SW2-6 eveneens ON te staan.",
+      "frequent": true
+    },
+    {
+      "id": "SW2-8",
+      "bank": "SW2",
+      "number": 8,
+      "title": "Flowsensor",
+      "off": "Zonder flowsensor",
+      "on": "Met flowsensor",
+      "default": "ON",
+      "kind": "config",
+      "note": "Hydrobox is uitgerust met flowsensor.",
+      "frequent": true
+    },
+    {
+      "id": "SW3-1",
+      "bank": "SW3",
+      "number": 1,
+      "title": "Ruimtethermostaat zone 2 – logica",
+      "off": "Stop bij gesloten contact",
+      "on": "Stop bij open contact",
+      "default": "OFF",
+      "kind": "config",
+      "note": "",
+      "frequent": false
+    },
+    {
+      "id": "SW3-2",
+      "bank": "SW3",
+      "number": 2,
+      "title": "Flowswitch 2/3 – logica",
+      "off": "Fout bij gesloten contact",
+      "on": "Fout bij open contact",
+      "default": "OFF",
+      "kind": "config",
+      "note": "",
+      "frequent": false
+    },
+    {
+      "id": "SW3-3",
+      "bank": "SW3",
+      "number": 3,
+      "title": "Niet gebruikt",
+      "off": "—",
+      "on": "—",
+      "default": "OFF",
+      "kind": "reserved",
+      "note": "",
+      "frequent": false
+    },
+    {
+      "id": "SW3-4",
+      "bank": "SW3",
+      "number": 4,
+      "title": "Elektriciteitsmeter",
+      "off": "Niet aanwezig",
+      "on": "Aanwezig",
+      "default": "OFF",
+      "kind": "config",
+      "note": "",
+      "frequent": false
+    },
+    {
+      "id": "SW3-5",
+      "bank": "SW3",
+      "number": 5,
+      "title": "Verwarmingsmodusfunctie",
+      "off": "Niet actief",
+      "on": "Actief",
+      "default": "ON",
+      "kind": "config",
+      "note": "",
+      "frequent": false
+    },
+    {
+      "id": "SW3-6",
+      "bank": "SW3",
+      "number": 6,
+      "title": "2-zone klep aan/uit-regeling",
+      "off": "Niet actief",
+      "on": "Actief",
+      "default": "OFF",
+      "kind": "config",
+      "note": "",
+      "frequent": false
+    },
+    {
+      "id": "SW3-7",
+      "bank": "SW3",
+      "number": 7,
+      "title": "Tapwater-warmtewisselaar",
+      "off": "Spiraal in tank",
+      "on": "Externe platenwisselaar",
+      "default": "OFF",
+      "kind": "config",
+      "note": "",
+      "frequent": false
+    },
+    {
+      "id": "SW3-8",
+      "bank": "SW3",
+      "number": 8,
+      "title": "Warmtemeter",
+      "off": "Niet aanwezig",
+      "on": "Aanwezig",
+      "default": "OFF",
+      "kind": "config",
+      "note": "",
+      "frequent": false
+    },
+    {
+      "id": "SW4-1",
+      "bank": "SW4",
+      "number": 1,
+      "title": "Meerdere buitenunits",
+      "off": "Niet actief",
+      "on": "Actief",
+      "default": "OFF",
+      "kind": "config",
+      "note": "",
+      "frequent": false
+    },
+    {
+      "id": "SW4-2",
+      "bank": "SW4",
+      "number": 2,
+      "title": "Positie bij meerdere buitenunits",
+      "off": "Sub/secundair",
+      "on": "Main/primair",
+      "default": "OFF",
+      "kind": "config",
+      "note": "",
+      "frequent": false
+    },
+    {
+      "id": "SW4-3",
+      "bank": "SW4",
+      "number": 3,
+      "title": "Niet gebruikt",
+      "off": "—",
+      "on": "—",
+      "default": "OFF",
+      "kind": "reserved",
+      "note": "",
+      "frequent": false
+    },
+    {
+      "id": "SW4-4",
+      "bank": "SW4",
+      "number": 4,
+      "title": "Alleen binnenunit tijdens installatie",
+      "off": "Niet actief",
+      "on": "Actief",
+      "default": "OFF",
+      "kind": "config",
+      "note": "Alleen voor installatie-/testdoeleinden volgens Mitsubishi.",
+      "frequent": false
+    },
+    {
+      "id": "SW4-5",
+      "bank": "SW4",
+      "number": 5,
+      "title": "Noodbedrijf – alleen elektrische heater",
+      "off": "Normaal bedrijf",
+      "on": "Noodbedrijf heater",
+      "default": "OFF",
+      "kind": "config",
+      "note": "Alleen na spanningsloos schakelen wijzigen. Noodbedrijf, geen normale instelling.",
+      "frequent": true
+    },
+    {
+      "id": "SW4-6",
+      "bank": "SW4",
+      "number": 6,
+      "title": "Noodbedrijf – ketel",
+      "off": "Normaal bedrijf",
+      "on": "Noodbedrijf ketel",
+      "default": "OFF",
+      "kind": "config",
+      "note": "Alleen relevant bij correct aangesloten ketelconfiguratie.",
+      "frequent": false
+    },
+    {
+      "id": "SW5-1",
+      "bank": "SW5",
+      "number": 1,
+      "title": "Niet gebruikt",
+      "off": "—",
+      "on": "—",
+      "default": "OFF",
+      "kind": "reserved",
+      "note": "",
+      "frequent": false
+    },
+    {
+      "id": "SW5-2",
+      "bank": "SW5",
+      "number": 2,
+      "title": "Advanced Auto Adaptation",
+      "off": "Niet actief",
+      "on": "Actief",
+      "default": "ON",
+      "kind": "config",
+      "note": "Sommige room-temperature-controlfuncties uit OCH712C zijn alleen actief wanneer SW5-2 OFF staat; later koppelen we die afhankelijkheden in de servicetool.",
+      "frequent": true
+    },
+    {
+      "id": "SW5-3",
+      "bank": "SW5",
+      "number": 3,
+      "title": "Capaciteits-/modelcode",
+      "off": "Onderdeel modelcode",
+      "on": "Onderdeel modelcode",
+      "default": "ON",
+      "kind": "modelcode",
+      "note": "SW5-3 t/m SW5-7 vormen samen één modelcode. Voor E*SD-*M**D: ON · OFF · OFF · ON · OFF. Niet als losse gebruikersinstelling wijzigen.",
+      "frequent": true
+    },
+    {
+      "id": "SW5-4",
+      "bank": "SW5",
+      "number": 4,
+      "title": "Capaciteits-/modelcode",
+      "off": "Onderdeel modelcode",
+      "on": "Onderdeel modelcode",
+      "default": "OFF",
+      "kind": "modelcode",
+      "note": "SW5-3 t/m SW5-7 vormen samen één modelcode. Voor E*SD-*M**D: ON · OFF · OFF · ON · OFF. Niet als losse gebruikersinstelling wijzigen.",
+      "frequent": false
+    },
+    {
+      "id": "SW5-5",
+      "bank": "SW5",
+      "number": 5,
+      "title": "Capaciteits-/modelcode",
+      "off": "Onderdeel modelcode",
+      "on": "Onderdeel modelcode",
+      "default": "OFF",
+      "kind": "modelcode",
+      "note": "SW5-3 t/m SW5-7 vormen samen één modelcode. Voor E*SD-*M**D: ON · OFF · OFF · ON · OFF. Niet als losse gebruikersinstelling wijzigen.",
+      "frequent": false
+    },
+    {
+      "id": "SW5-6",
+      "bank": "SW5",
+      "number": 6,
+      "title": "Capaciteits-/modelcode",
+      "off": "Onderdeel modelcode",
+      "on": "Onderdeel modelcode",
+      "default": "ON",
+      "kind": "modelcode",
+      "note": "SW5-3 t/m SW5-7 vormen samen één modelcode. Voor E*SD-*M**D: ON · OFF · OFF · ON · OFF. Niet als losse gebruikersinstelling wijzigen.",
+      "frequent": true
+    },
+    {
+      "id": "SW5-7",
+      "bank": "SW5",
+      "number": 7,
+      "title": "Capaciteits-/modelcode",
+      "off": "Onderdeel modelcode",
+      "on": "Onderdeel modelcode",
+      "default": "OFF",
+      "kind": "modelcode",
+      "note": "SW5-3 t/m SW5-7 vormen samen één modelcode. Voor E*SD-*M**D: ON · OFF · OFF · ON · OFF. Niet als losse gebruikersinstelling wijzigen.",
+      "frequent": false
+    },
+    {
+      "id": "SW5-8",
+      "bank": "SW5",
+      "number": 8,
+      "title": "Niet gebruikt",
+      "off": "—",
+      "on": "—",
+      "default": "OFF",
+      "kind": "reserved",
+      "note": "",
+      "frequent": false
+    },
+    {
+      "id": "SW6-1",
+      "bank": "SW6",
+      "number": 1,
+      "title": "Niet gebruikt",
+      "off": "—",
+      "on": "—",
+      "default": "OFF",
+      "kind": "reserved",
+      "note": "",
+      "frequent": false
+    },
+    {
+      "id": "SW6-2",
+      "bank": "SW6",
+      "number": 2,
+      "title": "Niet gebruikt",
+      "off": "—",
+      "on": "—",
+      "default": "OFF",
+      "kind": "reserved",
+      "note": "",
+      "frequent": false
+    },
+    {
+      "id": "SW6-3",
+      "bank": "SW6",
+      "number": 3,
+      "title": "Druksensor",
+      "off": "Niet actief",
+      "on": "Actief",
+      "default": "ON",
+      "kind": "config",
+      "note": "Voor E*SD-*M**D standaard ON.",
+      "frequent": true
+    },
+    {
+      "id": "SW6-4",
+      "bank": "SW6",
+      "number": 4,
+      "title": "Analoog signaal",
+      "off": "Niet actief",
+      "on": "Actief",
+      "default": "OFF",
+      "kind": "config",
+      "note": "",
+      "frequent": false
+    },
+    {
+      "id": "SW6-5",
+      "bank": "SW6",
+      "number": 5,
+      "title": "Niet gebruikt",
+      "off": "—",
+      "on": "—",
+      "default": "OFF",
+      "kind": "reserved",
+      "note": "",
+      "frequent": false
+    }
+  ],
+  "serviceMenu": [
+    {
+      "title": "Informatiewerking / Request codes",
+      "path": "Menu → Service → 0000* → Informatiewerking",
+      "note": "Bij één Ecodan: Ref.adres 0. *Alleen als het servicewachtwoord niet is gewijzigd."
+    },
+    {
+      "title": "Kamersensor selecteren",
+      "path": "Menu → Basisinstellingen → Instelling thermistor → Selectie kamersensor",
+      "note": "FTC5/FTC6: kies Hoofdbed. wanneer de ingebouwde sensor van de hoofdregelaar wordt gebruikt; kies de passende draadloze regeling wanneer die is toegepast. Relevant bij P1."
+    },
+    {
+      "title": "Thermistors controleren / corrigeren",
+      "path": "Service → Thermistor adjustment / lezen thermistor",
+      "note": "Controleer eerst of de gemeten temperatuur logisch is. Correctie alleen na vergelijking met een betrouwbare referentiemeting."
+    },
+    {
+      "title": "Pompsnelheid",
+      "path": "Service → Pump speed",
+      "note": "Pompsnelheid instellen voor verwarming en, indien aanwezig, tapwater. Beoordeel altijd het werkelijke debiet na wijzigen."
+    },
+    {
+      "title": "Debietbereik warmtepomp",
+      "path": "Service → Heat pump settings → Heat pump flow rate range",
+      "note": "Voor SUZ-SWM40VA is het waterdebietbereik 6,5–11,4 l/min. Gebruik de flowlijst van de gemonteerde buitenunit."
+    },
+    {
+      "title": "Elektrische ondersteuning",
+      "path": "Service → Auxiliary settings → Electric heater",
+      "note": "Instellingen voor elektrische bijverwarming en eventuele vertraging. Niet verhogen om een hydraulisch of koeltechnisch probleem te maskeren."
+    },
+    {
+      "title": "Mengklep / 2-zone",
+      "path": "Service → Auxiliary settings → Mixing valve control",
+      "note": "Alleen relevant wanneer de installatie daadwerkelijk met mengtank/2-zone is opgebouwd en de bijbehorende sensoren en DIP-switches correct zijn geconfigureerd."
+    },
+    {
+      "title": "Warmtebron",
+      "path": "Service → Heat source setting",
+      "note": "Standard / Heater / Boiler / Hybrid. Boiler/Hybrid alleen bij correct aangesloten en geconfigureerde ketelinstallatie."
+    },
+    {
+      "title": "Handmatige componentcontrole",
+      "path": "Service → Manual operation",
+      "note": "Gebruik om componentwerking gericht te controleren. Zet na de test handmatige bediening weer terug naar normaal bedrijf."
+    },
+    {
+      "title": "Operation settings verwarmen",
+      "path": "Service → Operation settings → Heating operation",
+      "note": "Bevat onder andere grenzen voor de verwarmingsaanvoertemperatuur. Deze EHSD is een alleen-verwarmen Hydrobox."
+    },
+    {
+      "title": "Function settings",
+      "path": "Service → Function settings",
+      "note": "Diepere configuratie-instellingen. Niet wijzigen zonder te weten welke systeemfunctie ermee wordt beïnvloed."
+    }
+  ],
+  "requestCodes": [
+    {
+      "code": "540",
+      "title": "Actueel waterdebiet",
+      "unit": "l/min",
+      "group": "Flow",
+      "note": "FTC6 actuele flow. Minimaal 5 l/min detectie; voor deze SUZ-SWM40VA hoort het bedrijfsbereik 6,5–11,4 l/min te zijn."
+    },
+    {
+      "code": "552",
+      "title": "Bedrijfsmodus tijdens laatste storing",
+      "unit": "",
+      "group": "Diagnose",
+      "note": "0 uit; 1 tapwater; 2 verwarmen; 3 koelen; 4 legionella; 5 vorstbeveiliging; 6 stop; 7 ontdooien."
+    },
+    {
+      "code": "555",
+      "title": "Ruimtetemperatuur zone 1 tijdens fout",
+      "unit": "°C",
+      "group": "Diagnose",
+      "note": "TH1A."
+    },
+    {
+      "code": "557",
+      "title": "Koudemiddel-vloeistoftemperatuur tijdens fout",
+      "unit": "°C",
+      "group": "Diagnose",
+      "note": "TH2."
+    },
+    {
+      "code": "558",
+      "title": "Primaire aanvoertemperatuur tijdens fout",
+      "unit": "°C",
+      "group": "Diagnose",
+      "note": "THW1."
+    },
+    {
+      "code": "559",
+      "title": "Primaire retourtemperatuur tijdens fout",
+      "unit": "°C",
+      "group": "Diagnose",
+      "note": "THW2."
+    },
+    {
+      "code": "561",
+      "title": "Aanvoer zone 1 tijdens fout",
+      "unit": "°C",
+      "group": "Diagnose",
+      "note": "THW6. Bij L8 vergelijken met 562."
+    },
+    {
+      "code": "562",
+      "title": "Retour zone 1 tijdens fout",
+      "unit": "°C",
+      "group": "Diagnose",
+      "note": "THW7. Bij verwarmen hoort de retour normaal niet hoger te zijn dan de aanvoer."
+    },
+    {
+      "code": "565",
+      "title": "Ketelaanvoer tijdens fout",
+      "unit": "°C",
+      "group": "Diagnose",
+      "note": "THWB1. Alleen relevant bij ketel/hybride configuratie."
+    },
+    {
+      "code": "567",
+      "title": "Welke thermistor veroorzaakte fout",
+      "unit": "",
+      "group": "Diagnose",
+      "note": "0 geen; 1 TH1A; 2 TH2; 3 THW1; 4 THW2; 5 THWB1; 6 THW5B; 8 TH1B; A THW6; B THW7; C THW8; D THW9."
+    },
+    {
+      "code": "569",
+      "title": "Flowswitch actief bij L9",
+      "unit": "",
+      "group": "Diagnose",
+      "note": "0 geen; 1 flowswitch 1; 2 flowswitch 2; 3 flowswitch 3."
+    },
+    {
+      "code": "571",
+      "title": "Waterdebiet tijdens laatste storing",
+      "unit": "l/min",
+      "group": "Diagnose",
+      "note": "Gebruik naast 540 om een intermitterend flowprobleem terug te vinden."
+    },
+    {
+      "code": "200",
+      "title": "RESET Function Settings",
+      "unit": "",
+      "group": "Waarschuwing",
+      "danger": true,
+      "note": "Reset alle Function Settings naar fabrieksinstellingen. Niet gebruiken als uitleescode."
+    }
+  ],
+  "sensors": [
+    {
+      "id": "TH1A",
+      "title": "Ruimtetemperatuur zone 1",
+      "request": "555 tijdens fout",
+      "faults": "P1",
+      "note": "Controleer bij P1 ook de geselecteerde kamersensor in Basisinstellingen."
+    },
+    {
+      "id": "TH1B",
+      "title": "Ruimtetemperatuur zone 2",
+      "request": "567 identificatie",
+      "faults": "P1",
+      "note": "Alleen relevant wanneer zone 2/sensor is toegepast."
+    },
+    {
+      "id": "TH2",
+      "title": "Koudemiddel-vloeistoftemperatuur",
+      "request": "557 tijdens fout",
+      "faults": "P2 / P6",
+      "note": "Onderdeel van de koeltechnische diagnose."
+    },
+    {
+      "id": "THW1",
+      "title": "Primaire aanvoertemperatuur",
+      "request": "558 tijdens fout",
+      "faults": "L3 / L5 / L6 / L8",
+      "note": "Vergelijk altijd met THW2/retour en de actuele warmtevraag."
+    },
+    {
+      "id": "THW2",
+      "title": "Primaire retourtemperatuur",
+      "request": "559 tijdens fout",
+      "faults": "L3 / L5 / L6 / L8 / P6",
+      "note": "Bij verwarmen hoort de retour logisch onder de aanvoer te liggen."
+    },
+    {
+      "id": "THW5B",
+      "title": "Tapwatertanktemperatuur",
+      "request": "567 identificatie",
+      "faults": "L4 / L5",
+      "note": "Alleen relevant bij aangesloten tapwatertank."
+    },
+    {
+      "id": "THW6",
+      "title": "Aanvoer zone 1",
+      "request": "561 tijdens fout",
+      "faults": "L5 / L8 / LE",
+      "note": "Bij L8 eerst controleren of THW6 en THW7 niet zijn omgewisseld."
+    },
+    {
+      "id": "THW7",
+      "title": "Retour zone 1",
+      "request": "562 tijdens fout",
+      "faults": "L5 / L8",
+      "note": "Bij verwarmen en correct geplaatste sensoren hoort 561 normaal hoger te zijn dan 562."
+    },
+    {
+      "id": "THW8",
+      "title": "Aanvoer zone 2",
+      "request": "567 identificatie",
+      "faults": "L5",
+      "note": "Alleen bij 2-zone toepassing."
+    },
+    {
+      "id": "THW9",
+      "title": "Retour zone 2",
+      "request": "567 identificatie",
+      "faults": "L5",
+      "note": "Alleen bij 2-zone toepassing."
+    },
+    {
+      "id": "THWB1",
+      "title": "Ketelaanvoer",
+      "request": "565 tijdens fout",
+      "faults": "LC / LD / LE",
+      "note": "Alleen bij ketel/hybride toepassing."
+    }
+  ],
+  "diagnostics": [
+    {
+      "id": "cold",
+      "kind": "Klacht",
+      "title": "Woning wordt niet warm",
+      "intro": "Begin met warmtevraag, flow en temperaturen. Pas instellingen pas aan als de installatie hydraulisch en technisch logisch werkt.",
+      "steps": [
+        "Controleer of er warmtevraag is en of de Ecodan daadwerkelijk in verwarmingsbedrijf staat.",
+        "Controleer of de gekozen regeling werkelijk warmtevraag geeft; bij een lokale kamerthermostaat is dat IN1 voor zone 1 en IN6 voor zone 2.",
+        "Lees actuele flow uit met request 540. FTC6 moet minimaal 5 l/min zien; voor SUZ-SWM40VA hoort het bedrijfsbereik 6,5–11,4 l/min te zijn.",
+        "Controleer primaire aanvoer THW1 en retour THW2. De aanvoer moet bij warmtevraag oplopen en logisch hoger liggen dan de retour.",
+        "Controleer waterdruk, ontluchting, pomp, waterfilter/strainer, afsluiters en of groepen/radiatoren niet allemaal dichtlopen.",
+        "Bij L8: request 567 uitlezen en THW6/THW7 controleren. Request 561/562 toont aanvoer/retour tijdens de fout.",
+        "Controleer elektrische ondersteuning alleen nadat flow/sensoren kloppen; controleer daarna de koeltechnische werking van de buitenunit wanneer de warmtepomp onvoldoende warmte levert."
+      ],
+      "howToUse": "Werk van boven naar beneden. Sla een stap alleen over als je die controle aantoonbaar al hebt uitgevoerd."
+    },
+    {
+      "id": "l9",
+      "kind": "Storing",
+      "faultCode": "L9",
+      "title": "L9 · Te weinig waterflow",
+      "intro": "FTC6-flowstoring. Werk van eenvoudig hydraulisch naar sensor/print.",
+      "steps": [
+        "Controleer waterdruk: >1 bar; Alklima noemt bijvullen tot circa 1,6 bar als praktijkwaarde.",
+        "Ontlucht installatie en Hydrobox. Controleer automatische ontluchters, inclusief de kleine ontluchter achter de FTC6-print.",
+        "Controleer AVDO/bypass, open groepen, afsluiters, pompwerking en waterfilter/strainer.",
+        "Controleer SW2-2: alleen ON wanneer een externe flowswitch is aangesloten; anders OFF.",
+        "Lees actuele flow met 540 en flow tijdens de fout met 571. Voor SUZ-SWM40VA: 6,5–11,4 l/min bedrijfsbereik.",
+        "Verspringt 540 sterk bij herhaald uitlezen, controleer/vervang een vervuilde of defecte flowsensor.",
+        "Als hydrauliek, sensor en bedrading kloppen, blijft de FTC-print als mogelijke oorzaak over."
+      ],
+      "howToUse": "Werk van boven naar beneden. Sla een stap alleen over als je die controle aantoonbaar al hebt uitgevoerd."
+    },
+    {
+      "id": "l8",
+      "kind": "Storing",
+      "faultCode": "L8",
+      "title": "L8 · Te weinig warmtelevering",
+      "intro": "Gebruik de foutgegevens om eerst sensorplaatsing en warmteafgifte te controleren.",
+      "steps": [
+        "Lees request 567 uit om te zien welke thermistor bij de fout is betrokken.",
+        "Controleer eerst THW6 = aanvoer en THW7 = retour; deze mogen niet omgewisseld zitten.",
+        "Controleer 561 (aanvoer tijdens fout) en 562 (retour tijdens fout). Bij verwarmen is 562 hoger dan 561 een sterke aanwijzing voor verwisselde sensoren.",
+        "Controleer of de elektrische heater voeding/zekering aanwezig is wanneer deze als ondersteuning is geconfigureerd.",
+        "Controleer of THW1/THW5/THW6/THW7/THW8/THW9 goed in hun houder zitten.",
+        "Hydrauliek en sensoren goed? Controleer koeltechnische werking van de buitenunit; daarna pas FTC-print als mogelijke oorzaak."
+      ],
+      "howToUse": "Werk van boven naar beneden. Sla een stap alleen over als je die controle aantoonbaar al hebt uitgevoerd."
+    },
+    {
+      "id": "l3",
+      "kind": "Storing",
+      "faultCode": "L3",
+      "title": "L3 · Watertemperatuur te hoog",
+      "intro": "THW1 of THW2 heeft ≥80 °C gemeten. Controleer flow en sensoren voordat je de regeling wijzigt.",
+      "steps": [
+        "Controleer te lage primaire flow volgens L9-diagnose.",
+        "Lees 558 (THW1) en 559 (THW2) tijdens de fout uit.",
+        "Controleer THW1/THW2 en connectoren op de FTC-print.",
+        "Controleer booster-heaterrelais en elektrische voeding S1/S2/S3 wanneer relevant.",
+        "Blijft de meting onlogisch: controleer thermistor/FTC-print."
+      ],
+      "howToUse": "Werk van boven naar beneden. Sla een stap alleen over als je die controle aantoonbaar al hebt uitgevoerd."
+    },
+    {
+      "id": "l6",
+      "kind": "Storing",
+      "faultCode": "L6",
+      "title": "L6 · Vorstbeveiliging watercircuit",
+      "intro": "THW1 ≤1 °C of THW2 ≤3 °C gedurende 10 seconden.",
+      "steps": [
+        "Controleer afgifte en primaire flow; gebruik 540 actueel en 571 tijdens de fout.",
+        "Controleer pomp, ontluchting en verstopte zeef/filter.",
+        "Lees 558/559 uit en controleer THW1/THW2; Alklima noemt circa 2 kΩ bij 55 °C tot 15 kΩ bij 0 °C als controlebereik.",
+        "Controleer of THW1 goed is aangesloten/geplaatst.",
+        "Controleer de 3-wegklep door deze handmatig te bedienen.",
+        "Alle voorgaande controles goed? FTC-print blijft als mogelijke oorzaak."
+      ],
+      "howToUse": "Werk van boven naar beneden. Sla een stap alleen over als je die controle aantoonbaar al hebt uitgevoerd."
+    },
+    {
+      "id": "l5",
+      "kind": "Storing",
+      "faultCode": "L5",
+      "title": "L5 · Watertemperatuursensor fout",
+      "intro": "Een thermistor is onderbroken/kortgesloten of de configuratie verwacht een sensor die niet aanwezig is.",
+      "steps": [
+        "Lees request 567 uit om de foutieve thermistor te identificeren.",
+        "Controleer stekker, kabel en sensorweerstand. Alklima noemt 4,3–9,5 kΩ bij 10–30 °C voor de genoemde watersensoren.",
+        "Geeft 567 code A terwijl THW6/THW7 niet zijn aangesloten? Controleer dat SW2-6 OFF staat.",
+        "Controleer draadloze/hoofdregelaarthermistor wanneer de fout daar betrekking op heeft."
+      ],
+      "howToUse": "Werk van boven naar beneden. Sla een stap alleen over als je die controle aantoonbaar al hebt uitgevoerd."
+    },
+    {
+      "id": "lb",
+      "kind": "Storing",
+      "faultCode": "LB",
+      "title": "LB · Hogedrukbeveiliging",
+      "intro": "Eerst waterzijdig uitsluiten; daarna koeltechnisch verder.",
+      "steps": [
+        "Controleer waterzijdige flow en het ingestelde/werkelijke debiet.",
+        "Controleer platenwarmtewisselaar op vervuiling/verstopping.",
+        "Controleer de koeltechnische werking van de buitenunit.",
+        "Bij koeltechnische meting: Alklima noemt voor CN401 circa 1 V = 12,5 bar; diagnose van druksensor/print alleen door bevoegd koeltechnisch personeel."
+      ],
+      "howToUse": "Werk van boven naar beneden. Sla een stap alleen over als je die controle aantoonbaar al hebt uitgevoerd."
+    },
+    {
+      "id": "p6",
+      "kind": "Storing",
+      "faultCode": "P6",
+      "title": "P6 · Oververhitting/vorstbeveiliging",
+      "intro": "Eerst waterzijde, daarna buitenventilator en koudemiddelcircuit.",
+      "steps": [
+        "Controleer flow, leidingen, waterfilter, lekkage en pomp.",
+        "Controleer lage belasting/te koud instroomwater.",
+        "Controleer buitenventilatormotor en aansturing.",
+        "Controleer koeltechnisch: koudemiddelvulling, verstopping, LEV, lekkage/tekort en druksensor.",
+        "Controleer bij twijfel over de modelconfiguratie de SW5-capaciteitscode; voor deze EHSD-familie is de vaste modelcode in de DIP-kaart opgenomen."
+      ],
+      "howToUse": "Werk van boven naar beneden. Sla een stap alleen over als je die controle aantoonbaar al hebt uitgevoerd."
+    },
+    {
+      "id": "ll",
+      "kind": "Storing",
+      "faultCode": "LL",
+      "title": "LL · DIP-switchconfiguratie fout",
+      "intro": "De FTC6-configuratie past niet bij aangesloten sensoren/zones/ketel.",
+      "steps": [
+        "Ketel aanwezig: controleer SW1-1 ON. Geen ketel maar wel tapwaterboiler: SW1-1 OFF en SW1-3 ON.",
+        "THW6/THW7 voor mengtank aangesloten: controleer SW2-6 ON. Niet aangesloten: configuratie moet hiermee overeenkomen.",
+        "2-zone temperatuurregeling: SW2-7 ON én SW2-6 ON.",
+        "Schakel binnen- én buitenunit spanningsloos voordat een DIP-switch wordt gewijzigd."
+      ],
+      "howToUse": "Werk van boven naar beneden. Sla een stap alleen over als je die controle aantoonbaar al hebt uitgevoerd."
+    },
+    {
+      "id": "ee",
+      "kind": "Storing",
+      "faultCode": "EE",
+      "title": "EE · Verkeerde binnen/buitenunitcombinatie",
+      "intro": "Voor deze combinatie zijn split/druk-sensor DIP-instellingen specifiek.",
+      "steps": [
+        "Controleer modelnummers: deze module is EHSD-VM2D + SUZ-SWM40VA.",
+        "Bij SUZ-SWM hoort SW6-3 ON volgens Alklima; bij PUHZ is dit anders.",
+        "Controleer SW1-7: voor split SUZ-SWM hoort deze OFF te staan.",
+        "Controleer na spanningsloos stellen de overige modelspecifieke DIP-configuratie."
+      ],
+      "howToUse": "Werk van boven naar beneden. Sla een stap alleen over als je die controle aantoonbaar al hebt uitgevoerd."
+    },
+    {
+      "id": "e6e9",
+      "kind": "Storing",
+      "faultCode": "E6/E9",
+      "title": "E6/E9 · Communicatie binnen ↔ buiten",
+      "intro": "Communicatiefout over S2/S3.",
+      "steps": [
+        "Controleer S1/S2/S3 en alle verbindingen tussen Hydrobox en SUZ-buitenunit.",
+        "Alklima noemt voor SUZ een fluctuerende gelijkspanning van circa 10–24 V tussen S2 en S3.",
+        "Geen signaal aan binnenzijde: controleer hetzelfde aan buitenzijde om kabel versus print te scheiden.",
+        "Volg voor de buitenunitprint de OCH718 diagnose als de bekabeling goed is."
+      ],
+      "howToUse": "Werk van boven naar beneden. Sla een stap alleen over als je die controle aantoonbaar al hebt uitgevoerd."
+    },
+    {
+      "id": "p1",
+      "kind": "Storing",
+      "faultCode": "P1",
+      "title": "P1 · Kamersensor niet correct",
+      "intro": "Bij Ecodan is vaak de verkeerde kamersensorreferentie geselecteerd.",
+      "steps": [
+        "Controleer welke kamersensor in de installatie wordt gebruikt.",
+        "FTC5/FTC6: Menu → Basisinstellingen → Instelling thermistor → Selectie kamersensor.",
+        "Gebruik Hoofdbed. wanneer de sensor van de hoofdregelaar wordt gebruikt; kies de passende draadloze sensor wanneer die is toegepast.",
+        "Controleer bij een echte sensorfout bedrading en sensorwaarde."
+      ],
+      "howToUse": "Werk van boven naar beneden. Sla een stap alleen over als je die controle aantoonbaar al hebt uitgevoerd."
+    },
+    {
+      "id": "cycling",
+      "title": "Warmtepomp start en stopt vaak",
+      "intro": "Begin waterzijdig; pas daarna de regeling.",
+      "steps": [
+        "Controleer of zones/groepen of thermostaatkranen de flow dichtzetten.",
+        "Controleer druk, ontluchting, filter/strainer en pomp.",
+        "Controleer actuele flow en het toegestane bereik van de SUZ-SWM40VA.",
+        "Controleer systeeminhoud/buffer en beschikbare afgifte.",
+        "Controleer pas daarna ruimteregeling en compensatiecurve/aanvoertemperatuur."
+      ],
+      "howToUse": "Werk van boven naar beneden. Sla een stap alleen over als je die controle aantoonbaar al hebt uitgevoerd."
+    },
+    {
+      "id": "auxheat",
+      "title": "Elektrisch element schakelt te veel of niet bij",
+      "intro": "Bepaal eerst of de warmtepomp zelf correct draait.",
+      "steps": [
+        "Controleer warmtevraag, aanvoer/retour en waterflow.",
+        "Controleer of de warmtepomp normaal vermogen levert en geen actieve storing heeft.",
+        "Controleer of elektrische ondersteuning voor verwarming is toegestaan.",
+        "Controleer de inschakelvertraging.",
+        "Blijft de warmtepomp zelf achter in vermogen: vervolg met buitenunit/koudemiddel-diagnose."
+      ],
+      "howToUse": "Werk van boven naar beneden. Sla een stap alleen over als je die controle aantoonbaar al hebt uitgevoerd."
+    },
+    {
+      "id": "roomcontrol",
+      "title": "Ruimtetemperatuur klopt niet / regeling reageert vreemd",
+      "intro": "Controleer eerst welke ruimtesensor de FTC6 werkelijk gebruikt.",
+      "steps": [
+        "Bepaal welke regeling de ruimte hoort te meten.",
+        "Hoofdbediening: controleer dat HBD is gekozen.",
+        "Draadloze Mitsubishi-regelaar: controleer dat RC is gekozen en controleer batterij/communicatie.",
+        "Andere aan/uit-kamerthermostaat: controleer IN1 voor zone 1 en eventueel IN6 voor zone 2.",
+        "Controleer bij een lokale thermostaat SW2-1 (zone 1) en SW3-1 (zone 2) voor de juiste contactlogica.",
+        "Pas pas daarna stooklijn of andere regelinstellingen aan."
+      ],
+      "howToUse": "Werk van boven naar beneden. Sla een stap alleen over als je die controle aantoonbaar al hebt uitgevoerd."
+    },
+    {
+      "id": "intermittent",
+      "title": "Storing was er wel, maar is nu weg",
+      "intro": "Gebruik eerst de storingshistorie; ga niet gokken op basis van alleen de klacht van de klant.",
+      "howToUse": "Zoek de geregistreerde code op en ga daarna vanuit die code verder.",
+      "steps": [
+        "Open het FTC6-servicemenu.",
+        "Open de fout-/storingshistorie en bekijk de meest recente registratie.",
+        "Noteer de foutcode en beschikbare context.",
+        "Zoek de foutcode op in Mitsubishi Storingen binnen MonteurMaatje.",
+        "Start de gekoppelde diagnose en controleer of de oorzaak nog reproduceerbaar is."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mitsubishi Electric OCH712C – Hydrobox/FTC6",
+      "url": "https://library.mitsubishielectric.co.uk/pdf/download_full/4382"
+    },
+    {
+      "title": "Mitsubishi Electric Data Book Vol. 5.3 R32",
+      "url": "https://library.mitsubishielectric.co.uk/pdf/download_full/4099"
+    },
+    {
+      "title": "Alklima – Request codes uitlezen",
+      "url": "https://kennisbank.alklima.nl/hc/nl/articles/36762518521873-Request-codes-uitlezen"
+    },
+    {
+      "title": "Alklima – L9 storing",
+      "url": "https://kennisbank.alklima.nl/hc/nl/articles/37672342163217-L9-storing"
+    },
+    {
+      "title": "Alklima – L8 storing",
+      "url": "https://kennisbank.alklima.nl/hc/nl/articles/37672284622097-L8-storing"
+    },
+    {
+      "title": "Alklima – L3 storing",
+      "url": "https://kennisbank.alklima.nl/hc/nl/articles/37671584710161-L3-storing"
+    },
+    {
+      "title": "Alklima – L5 storing",
+      "url": "https://kennisbank.alklima.nl/hc/nl/articles/37671649450513-L5-storing"
+    },
+    {
+      "title": "Alklima – L6 storing",
+      "url": "https://kennisbank.alklima.nl/hc/nl/articles/37671857064081-L6-storing"
+    },
+    {
+      "title": "Alklima – LB storing",
+      "url": "https://kennisbank.alklima.nl/hc/nl/articles/37672659356305-LB-storing"
+    },
+    {
+      "title": "Alklima – LL storing",
+      "url": "https://kennisbank.alklima.nl/hc/nl/articles/37673535052817-LL-storing"
+    },
+    {
+      "title": "Alklima – EE storing",
+      "url": "https://kennisbank.alklima.nl/hc/nl/articles/37669007724689-EE-storing"
+    },
+    {
+      "title": "Alklima – E6/E9 storing",
+      "url": "https://kennisbank.alklima.nl/hc/nl/articles/37642285389841-E6-E9-storing"
+    },
+    {
+      "title": "Alklima – P1 storing",
+      "url": "https://kennisbank.alklima.nl/hc/nl/articles/37602867442321-P1-storing"
+    },
+    {
+      "title": "Alklima – P6 storing",
+      "url": "https://kennisbank.alklima.nl/hc/nl/articles/41061708285713-P6-storing"
+    },
+    {
+      "title": "Alklima – Ecodan downloads en regeltechniek",
+      "url": "https://alklima.nl/service-en-support/downloads?manualFileTypeCode=MTE&q=ecodan"
+    },
+    {
+      "title": "Alklima – Ecodan installatiechecklist",
+      "url": "https://alklima.nl/service-en-support/downloads?manualFileTypeCode=PDB&q=ecodan"
+    },
+    {
+      "title": "Alklima – minimale flow / start-stops",
+      "url": "https://alklima.nl/service-en-support/downloads?manualFileTypeCode=PDB&q=ecodan&sort%5Bdate%5D=desc&sort%5Bsize%5D=asc"
+    }
+  ],
+  "systemFacts": [
+    {
+      "label": "Binnenunit",
+      "value": "EHSD-VM2D / EHSD-VM2D.UK"
+    },
+    {
+      "label": "Buitenunit",
+      "value": "SUZ-SWM40VA / SUZ-SWM40VA.TH"
+    },
+    {
+      "label": "Regeling",
+      "value": "FTC6"
+    },
+    {
+      "label": "Koudemiddel",
+      "value": "R32 · 1,2 kg buitenunit"
+    },
+    {
+      "label": "Waterdebiet SUZ-SWM40VA",
+      "value": "6,5–11,4 l/min"
+    },
+    {
+      "label": "Nominaal waterdebiet verwarmen",
+      "value": "11,4 l/min"
+    },
+    {
+      "label": "FTC6 minimale flowdetectie",
+      "value": "5,0 l/min"
+    },
+    {
+      "label": "Max. aanvoertemperatuur",
+      "value": "60 °C"
+    }
+  ],
+  "systemNote": "De 5,0 l/min is de minimale FTC6-detectiegrens, niet het normale ontwerpdebiet. Voor deze SUZ-SWM40VA houdt Mitsubishi 6,5–11,4 l/min als bedrijfsbereik aan.",
+  "requestCompatibilityNote": "Alklima vermeldt de buitenunit-requestcodes (zoals 001, 016, 090 en 103–105 voor de buitenunit) alleen voor P-serie en S-serie VA2. Deze module is voor SUZ-SWM40VA (VA, geen VA2); daarom worden die buitenunitcodes hier niet als bruikbare uitleescodes aangeboden. Gebruik voor de SUZ-SWM40VA de OCH718 buitenunitdiagnose/LED-controle.",
+  "commissioning": [
+    {
+      "title": "Ruimtesensor correct kiezen",
+      "text": "Bij FTC5/FTC6 moet tijdens inbedrijfstelling de juiste kamersensorreferentie worden gekozen. Gebruik HBD wanneer de hoofdbediening als ruimtesensor wordt gebruikt, of RC bij de draadloze thermostaat. Verkeerde selectie kan P1 veroorzaken.",
+      "source": "Alklima P1 storing"
+    },
+    {
+      "title": "Flow vóór oplevering controleren",
+      "text": "Controleer actuele flow en houd naast de FTC6-detectiegrens ook de flowlijst van de gemonteerde buitenunit aan. Controleer druk, ontluchting, pomp, filter en afsluiters.",
+      "source": "Alklima L9 storing"
+    },
+    {
+      "title": "Minimale flow / start-stops",
+      "text": "Controleer bij pendelen of veel start/stops eerst de waterzijdige flow en systeeminhoud/afgifte voordat regelinstellingen worden gewijzigd.",
+      "source": "Alklima Ecodan minimale-flow/start-stops productblad"
+    }
+  ],
+  "practical": [
+    {
+      "title": "Veel start/stops / pendelen",
+      "steps": [
+        "Controleer eerst warmtevraag en of groepen/afgifte niet dichtlopen.",
+        "Controleer waterdruk, ontluchting, filter/strainer en pomp.",
+        "Controleer actuele flow en vergelijk met de flowlijst van de SUZ-SWM40VA.",
+        "Controleer daarna pas regeling/stooklijn en gekozen ruimteregeling."
+      ]
+    },
+    {
+      "title": "Ruimteregeling / P1 voorkomen",
+      "steps": [
+        "Controleer welke ruimtesensor daadwerkelijk gebruikt wordt.",
+        "Gebruik HBD als de hoofdbediening de ruimte meet; RC bij draadloze thermostaat.",
+        "Controleer in het servicemenu de gekozen thermistor/ruimtesensorreferentie.",
+        "Pas daarna verdere regelinstellingen aan."
+      ]
+    }
+  ],
+  "setupWizard": {
+    "title": "Instellen / inbedrijfstellen",
+    "intro": "Vier simpele keuzes. Daarna toont MonteurMaatje alleen de relevante controlepunten.",
+    "questions": [
+      {
+        "id": "emitter",
+        "title": "Welke afgifte is aanwezig?",
+        "options": [
+          {
+            "value": "floor",
+            "label": "Vloerverwarming"
+          },
+          {
+            "value": "radiators",
+            "label": "Radiatoren / convectoren"
+          },
+          {
+            "value": "mixed",
+            "label": "Combinatie"
+          }
+        ]
+      },
+      {
+        "id": "zones",
+        "title": "Hoe is de zone-indeling?",
+        "options": [
+          {
+            "value": "one",
+            "label": "1 zone"
+          },
+          {
+            "value": "two_same",
+            "label": "2 zones · zelfde aanvoertemperatuur"
+          },
+          {
+            "value": "two_mixed",
+            "label": "2 zones · verschillende aanvoertemperatuur"
+          }
+        ]
+      },
+      {
+        "id": "roomControl",
+        "title": "Hoe wordt de warmtevraag geregeld?",
+        "options": [
+          {
+            "value": "hbd",
+            "label": "Hoofdbediening als ruimtesensor (HBD)"
+          },
+          {
+            "value": "wireless",
+            "label": "Draadloze Mitsubishi-regelaar (RC)"
+          },
+          {
+            "value": "external",
+            "label": "Andere kamerthermostaat (aan/uit)"
+          },
+          {
+            "value": "flowtemp",
+            "label": "Stooklijn / vaste aanvoertemperatuur"
+          }
+        ]
+      },
+      {
+        "id": "heatSource",
+        "title": "Welke warmtebronconfiguratie?",
+        "options": [
+          {
+            "value": "standard",
+            "label": "Warmtepomp / standaard"
+          },
+          {
+            "value": "hybrid",
+            "label": "Hybride / ketel gekoppeld"
+          }
+        ]
+      }
+    ],
+    "baseChecks": [
+      "Controleer eerst systeemdruk, ontluchting, filter/strainer, afsluiters en pompwerking.",
+      "Controleer actuele waterflow en vergelijk die met de toegestane flow van de SUZ-SWM40VA.",
+      "Controleer of de geselecteerde ruimtesensor overeenkomt met de werkelijk gebruikte regeling.",
+      "Wijzig DIP-switches alleen met binnen- én buitenunit spanningsloos."
+    ],
+    "endCheck": [
+      "Warmtevraag komt correct binnen.",
+      "Pomp draait en waterflow blijft stabiel.",
+      "Aanvoer en retour reageren logisch.",
+      "Ruimteregeling en zoneconfiguratie komen overeen met de echte installatie.",
+      "Geen actieve foutcode of relevante fout in storingshistorie.",
+      "Na wijziging van DIP-switches: fabrikantprocedure voor spanningsloos wijzigen/herstart volgen."
+    ]
+  },
+  "setupRules": {
+    "floor": {
+      "title": "Vloerverwarming",
+      "checks": [
+        "Zorg dat voldoende groepen open blijven voor stabiele flow.",
+        "Pas de verwarmingsregeling pas aan nadat de hydrauliek aantoonbaar goed is."
+      ]
+    },
+    "radiators": {
+      "title": "Radiatoren / convectoren",
+      "checks": [
+        "Controleer dat voldoende afgifte open blijft voor stabiele flow.",
+        "Bij veel start/stops: controleer eerst flow, systeeminhoud en afgifte."
+      ]
+    },
+    "mixed": {
+      "title": "Combinatie-afgifte",
+      "checks": [
+        "Controleer welke zone hydraulisch/regeltechnisch bepalend is.",
+        "Controleer menging/naregeling en voorkom dat beide afgiftesystemen tegelijk onvoldoende flow overhouden."
+      ]
+    },
+    "one": {
+      "title": "1 zone",
+      "checks": [
+        "Controleer dat de FTC6 als één-zone-installatie is geconfigureerd."
+      ]
+    },
+    "hbd": {
+      "title": "HBD – hoofdbediening als ruimtesensor",
+      "checks": [
+        "Ga bij FTC5/FTC6 naar Basisinstellingen → Instelling thermistor → Selectie kamersensor en kies Hoofdbed. (HBD).",
+        "Gebruik HBD alleen als de hoofdbediening op een representatieve plek in de ruimte hangt.",
+        "Een verkeerde kamersensorselectie kan P1 of vreemd regelgedrag veroorzaken."
+      ]
+    },
+    "wireless": {
+      "title": "RC – draadloze Mitsubishi-regelaar",
+      "checks": [
+        "Kies RC als kamersensorreferentie wanneer de draadloze Mitsubishi-regelaar de ruimte meet.",
+        "Controleer communicatie, batterij en plaatsing."
+      ]
+    },
+    "external": {
+      "title": "Andere kamerthermostaat (aan/uit)",
+      "checks": [
+        "Zone 1: lokale aan/uit-kamerthermostaat op FTC6-ingang IN1.",
+        "Zone 2: lokale aan/uit-kamerthermostaat op FTC6-ingang IN6.",
+        "Controleer SW2-1 voor zone 1 en SW3-1 voor zone 2; de juiste contactlogica hangt af van de aangesloten thermostaat.",
+        "Controleer eerst of de thermostaat werkelijk warmtevraag geeft voordat andere instellingen worden gewijzigd."
+      ],
+      "dip": [
+        "SW2-1",
+        "SW3-1"
+      ]
+    },
+    "flowtemp": {
+      "title": "Stooklijn / vaste aanvoertemperatuur",
+      "checks": [
+        "Gebruik dit als de warmtepomp niet op een ruimtesensor regelt maar op compensatiecurve of vaste aanvoertemperatuur.",
+        "Controleer de stooklijn/aanvoertemperatuur passend bij het afgiftesysteem.",
+        "Verhoog de aanvoertemperatuur niet om een hydraulisch probleem te maskeren."
+      ]
+    },
+    "standard": {
+      "title": "Standaard warmtepompbedrijf",
+      "checks": [
+        "Heat source setting hoort bij normale warmtepompconfiguratie op Standard te staan, tenzij de installatie aantoonbaar anders is opgebouwd.",
+        "Controleer elektrische ondersteuning alleen wanneer die werkelijk is aangesloten/geconfigureerd."
+      ]
+    },
+    "hybrid": {
+      "title": "Hybride / ketel",
+      "checks": [
+        "Controleer Heat source setting en ketel/hybrideconfiguratie.",
+        "Controleer relevante ketelsensoren en DIP-switches; LL kan ontstaan bij een onjuiste combinatie."
+      ],
+      "dip": [
+        "SW1-1",
+        "SW2-6"
+      ]
+    },
+    "two_same": {
+      "title": "2 zones · zelfde aanvoertemperatuur",
+      "checks": [
+        "Gebruik dit wanneer beide zones met dezelfde aanvoertemperatuur werken en FTC6 de zonekleppen rechtstreeks schakelt.",
+        "Controleer de zonekleppen en de warmtevraag per zone.",
+        "Bij lokale aan/uit-thermostaten gebruikt zone 1 ingang IN1 en zone 2 ingang IN6.",
+        "Controleer de contactlogica alleen wanneer het gebruikte thermostaatcontact daarom vraagt."
+      ],
+      "dip": [
+        "SW3-6",
+        "SW2-1",
+        "SW3-1"
+      ]
+    },
+    "two_mixed": {
+      "title": "2 zones · verschillende aanvoertemperatuur",
+      "checks": [
+        "Gebruik dit bij echte 2-zone temperatuurregeling, bijvoorbeeld radiatoren en vloerverwarming met verschillende watertemperaturen.",
+        "Controleer mengtank/mengregeling, mengklep en zonesensoren.",
+        "Controleer SW2-6 (mixing tank) en SW2-7 (2-zone temperatuurregeling).",
+        "Controleer de waterflow in beide zones afzonderlijk."
+      ],
+      "dip": [
+        "SW2-6",
+        "SW2-7"
+      ]
+    }
+  },
+  "serviceMenuGuide": [
+    {
+      "title": "Ruimteregeling controleren",
+      "why": "Bij verkeerde ruimtetemperatuur of P1.",
+      "what": "Controleer welke ruimtesensor de FTC6 gebruikt: HBD, RC of een andere regelmethode.",
+      "related": "P1 / inbedrijfstellen"
+    },
+    {
+      "title": "Pomp / waterflow",
+      "why": "Bij L9, lage flow, koudeklachten of veel start/stops.",
+      "what": "Controleer pompinstelling pas nadat druk, ontluchting, filter, afsluiters en hydrauliek zijn gecontroleerd.",
+      "related": "L9 / pendelen"
+    },
+    {
+      "title": "Elektrische ondersteuning",
+      "why": "Als de warmtepomp onvoldoende vermogen levert of de bijverwarming onverwacht schakelt.",
+      "what": "Controleer of elektrische ondersteuning is toegestaan en welke inschakelvertraging is ingesteld.",
+      "related": "koudeklacht"
+    },
+    {
+      "title": "Heat source setting",
+      "why": "Bij standaard-, ketel- of hybrideconfiguraties.",
+      "what": "Standard / Heater / Boiler / Hybrid moet overeenkomen met de werkelijk aangesloten installatie.",
+      "related": "LL / hybride"
+    },
+    {
+      "title": "Thermistor adjustment",
+      "why": "Alleen bij aantoonbare afwijking t.o.v. een betrouwbare referentiemeting.",
+      "what": "Geen sensorfout wegregelen; controleer eerst sensor, montage en bedrading.",
+      "related": "P1 / P2 / L5"
+    },
+    {
+      "title": "Function Settings",
+      "why": "Geavanceerde configuratie.",
+      "what": "Alleen wijzigen als Mitsubishi/Alklima dit voor de functie voorschrijft. Request 200 is een resetactie, geen uitleesfunctie.",
+      "related": "geavanceerd"
+    }
+  ],
+  "serviceAccess": {
+    "title": "Zo kom je in het FTC6-servicemenu",
+    "steps": [
+      "Open vanaf het hoofdscherm MENU.",
+      "Ga naar Service en druk op bevestigen (vinkje).",
+      "Voer het servicewachtwoord in. Fabrieksinstelling: 0000, tenzij dit eerder is gewijzigd.",
+      "Wacht tot het servicemenu is geladen.",
+      "Gebruik de pijlen/functietoetsen om naar het gewenste onderdeel te gaan."
+    ],
+    "passwordReset": [
+      "Ga naar Service en bevestig zodat het wachtwoordscherm verschijnt.",
+      "Houd F3 + F4 tegelijk ongeveer 3 seconden ingedrukt.",
+      "Bevestig dat het wachtwoord naar fabrieksinstelling moet worden teruggezet.",
+      "Het servicewachtwoord wordt teruggezet naar 0000."
+    ],
+    "warning": "Sommige instellingen kunnen alleen worden gewijzigd als de Ecodan uit staat. Volg de melding op het scherm. Manual reset en request 200 zijn resetfuncties, geen normale controles."
+  },
+  "serviceTasks": [
+    {
+      "id": "running",
+      "title": "Actuele waarden / requestcode uitlezen",
+      "route": "MENU → Service → 0000 → Informatiewerking",
+      "when": "Bij diagnose, bijvoorbeeld flow of temperatuurcontrole.",
+      "steps": [
+        "Open Informatiewerking.",
+        "Bij één Ecodan: kies Ref.adres 0.",
+        "Voer alleen de requestcode in die MonteurMaatje bij de betreffende diagnose noemt.",
+        "Lees de waarde af en ga terug naar de diagnoseflow voor de betekenis."
+      ],
+      "note": "Requestcodes blijven bewust uit het hoofdmenu; MonteurMaatje toont de juiste code bij de betreffende klacht."
+    },
+    {
+      "id": "history",
+      "title": "Eerdere storing terugzoeken",
+      "route": "MENU → Service → fout-/storingshistorie",
+      "when": "Als de klant een storing meldt die nu niet meer actief is.",
+      "steps": [
+        "Open de fout-/storingshistorie in het servicemenu.",
+        "Bekijk de meest recente registratie eerst.",
+        "Noteer foutcode en beschikbare context.",
+        "Open daarna de betreffende storing in MonteurMaatje en start zo nodig de diagnoseflow."
+      ],
+      "note": "Gebruik historie als aanwijzing; controleer de actuele installatie voordat onderdelen worden vervangen."
+    },
+    {
+      "id": "room",
+      "title": "Ruimteregeling / kamersensor controleren",
+      "route": "MENU → Basisinstellingen → Instelling thermistor → Selectie kamersensor",
+      "when": "Bij P1, verkeerde ruimtetemperatuur of om te controleren welke sensor de ruimte meet.",
+      "steps": [
+        "Bepaal welke regeling de ruimte hoort te meten.",
+        "Kies HBD als de hoofdbediening de ruimte meet.",
+        "Kies RC als de draadloze Mitsubishi-regelaar de ruimte meet.",
+        "Bij een andere aan/uit-kamerthermostaat: controleer IN1 (zone 1) en eventueel IN6 (zone 2) en de bijbehorende DIP-contactlogica."
+      ],
+      "note": "Verkeerde sensorselectie kan een regelprobleem veroorzaken."
+    },
+    {
+      "id": "pump",
+      "title": "Pomp / waterflow controleren",
+      "route": "MENU → Service → Auxiliary settings / Pump speed",
+      "when": "Bij L9, lage flow, koudeklacht of pendelen.",
+      "steps": [
+        "Controleer vóór wijzigen: druk, ontluchting, filter/strainer, afsluiters en pompwerking.",
+        "Lees indien de diagnose dit vraagt de actuele flow uit via Informatiewerking.",
+        "Controleer daarna pas de pompinstelling.",
+        "Bevestig na wijziging dat de flow stabiel en binnen het juiste toestelbereik blijft."
+      ],
+      "note": "Een hogere pompstand is geen oplossing voor een verstopt filter of dichtlopende installatie."
+    },
+    {
+      "id": "heatSource",
+      "title": "Warmtebron instellen",
+      "route": "MENU → Service → Instelling warmtebron / Heat source setting",
+      "when": "Bij standaardbedrijf, hybride/ketelconfiguratie of noodbedrijf.",
+      "steps": [
+        "Controleer eerst hoe de installatie werkelijk is opgebouwd.",
+        "Open Instelling warmtebron.",
+        "Kies alleen de warmtebron die bij de fysieke installatie hoort.",
+        "Bevestig de keuze en controleer daarna de werking."
+      ],
+      "note": "Alklima gebruikt deze route ook voor elektrisch noodbedrijf; controleer daarbij eerst de vereiste hardware/DIP-configuratie."
+    },
+    {
+      "id": "aux",
+      "title": "Elektrische bijverwarming controleren",
+      "route": "MENU → Service → Auxiliary settings",
+      "when": "Als het element te vroeg, te vaak of juist niet bijschakelt.",
+      "steps": [
+        "Controleer eerst of de warmtepomp zelf normaal draait en voldoende flow heeft.",
+        "Open de relevante auxiliary/bijverwarmingsinstellingen.",
+        "Controleer of elektrische ondersteuning is toegestaan en hoe de vertraging is ingesteld.",
+        "Wijzig alleen wanneer de installatieconfiguratie dit vereist."
+      ],
+      "note": "Gebruik elektrische ondersteuning niet om een hydraulisch of koeltechnisch defect te maskeren."
+    },
+    {
+      "id": "thermistor",
+      "title": "Thermistorcorrectie",
+      "route": "MENU → Service → Thermistor adjustment",
+      "when": "Alleen als een sensor aantoonbaar afwijkt van een betrouwbare referentiemeting.",
+      "steps": [
+        "Meet de werkelijke temperatuur met een betrouwbare referentie.",
+        "Controleer sensor, montage en bedrading.",
+        "Open Thermistor adjustment.",
+        "Corrigeer alleen de aantoonbare meetafwijking."
+      ],
+      "note": "Geen defecte sensor 'goedregelen' met offset."
+    },
+    {
+      "id": "function",
+      "title": "Function Settings",
+      "route": "MENU → Service → Function settings",
+      "when": "Alleen voor specifieke systeemfuncties die door Mitsubishi/Alklima worden voorgeschreven.",
+      "steps": [
+        "Bepaal exact welke functie moet worden aangepast.",
+        "Controleer de bijbehorende documentatie vóór wijzigen.",
+        "Pas alleen de bedoelde functie aan.",
+        "Controleer na wijziging de volledige werking."
+      ],
+      "note": "Request 200 / resetfuncties zijn géén normale uitleesactie en mogen niet als diagnoseproef worden gebruikt.",
+      "danger": true
+    }
+  ],
+  "verification": {
+    "date": "2026-08-25",
+    "scope": "EHSD-VM2D / FTC6 + SUZ-SWM40VA",
+    "notes": [
+      "Service toegang en wachtwoord 0000 gecontroleerd tegen Mitsubishi/Alklima documentatie.",
+      "Wachtwoord-reset F3+F4 circa 3 seconden gecontroleerd tegen Mitsubishi FTC-documentatie.",
+      "Informatiewerking route en Ref.adres 0 voor standalone Ecodan gecontroleerd tegen Alklima Kennisbank.",
+      "Niet elk servicemenu-item krijgt een aanbevolen waarde: installatieafhankelijke waarden blijven bewust contextueel.",
+      "Ruimteregeling verduidelijkt: lokale aan/uit-kamerthermostaat via IN1 (zone 1) en IN6 (zone 2).",
+      "2-zone-keuze opgesplitst in gelijke aanvoertemperatuur met FTC-zoneklepregeling (SW3-6) en echte 2-zone temperatuurregeling met menging (SW2-6/SW2-7).",
+      "HBD/RC-route afgestemd op actuele Alklima P1-instructie voor FTC5/FTC6.",
+      "Fase 9: duidelijke boven- en ondernavigatie en contextuele jargonhulp."
+    ]
+  },
+  "glossary": {
+    "HBD": "De bedrade Mitsubishi-hoofdbediening wordt als ruimtesensor gebruikt.",
+    "RC": "De draadloze Mitsubishi-regelaar meet de ruimtetemperatuur.",
+    "IN1": "FTC6-ingang voor een lokale aan/uit-kamerthermostaat van zone 1.",
+    "IN6": "FTC6-ingang voor een lokale aan/uit-kamerthermostaat van zone 2.",
+    "Ref.adres 0": "Referentieadres 0 bij één Ecodan-systeem; gebruikt bij Informatiewerking/requestcodes.",
+    "SW2-1": "Contactlogica van de lokale kamerthermostaat van zone 1.",
+    "SW3-1": "Contactlogica van de lokale kamerthermostaat van zone 2.",
+    "SW3-6": "Relevant voor FTC6 2-zone klepregeling met dezelfde aanvoertemperatuur.",
+    "SW2-6": "Relevant voor de mengtank bij 2-zone temperatuurregeling.",
+    "SW2-7": "Activeert/configureert 2-zone temperatuurregeling."
+  }
+}

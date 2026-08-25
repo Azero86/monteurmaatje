@@ -194,3 +194,36 @@ De asbestuitbreiding is daarmee een aanvullende Richtlijnen-module en geen wijzi
 - Request code **200** expliciet als resetactie gemarkeerd om onbedoeld resetten van Function Settings te voorkomen.
 - DIP-switches, interactieve printkaart, klachtgestuurde diagnose en uitgebreide Mitsubishi servicetool zijn bewust nog **niet** in deze fase ingebouwd.
 - Bestaande Intergas/Remeha/Vaillant/Nefit/ATAG/Bosch-data niet gewijzigd.
+
+- Mitsubishi fase 2: interactieve FTC6 DIP-switchkaart toegevoegd met SW1 t/m SW6, modelspecifieke EHSD-VM2D standaardstanden, veelgebruikte switches en de echte printplaatfoto.
+- SW5-3 t/m SW5-7 bewust als één modelcode behandeld: ON/OFF/OFF/ON/OFF voor E*SD-*M**D.
+- Veiligheidswaarschuwing toegevoegd: binnen- en buitenunit spanningsloos vóór DIP-switchwijzigingen.
+
+- Mitsubishi fase 3: servicehulp uitgebreid met rustig overzicht, niet-gebruikte DIP-switches gedimd/niet klikbaar, volledige DIP-kaart achter knop, servicemenu, request codes, sensoren en eerste klachtgestuurde diagnoseflows (koud/L9/P6).
+
+### Mitsubishi fase 4 — servicehulp aanvulling / UI-hardening — 25 augustus 2026
+- Terugknop **Mitsubishi overzicht** op alle subpagina's uitgelijnd en als duidelijke Industrial navigatieknop vormgegeven.
+- Mitsubishi-subpagina's krijgen consistente binnenpadding; content staat niet meer tegen de linker rand.
+- Systeemgegevens toegevoegd voor EHSD-VM2D + SUZ-SWM40VA: 6,5–11,4 l/min bedrijfsdebiet, 11,4 l/min nominaal, FTC6-detectiegrens 5 l/min en maximaal 60 °C aanvoer.
+- Belangrijke correctie: buitenunit-requestcodes uit de UI verwijderd voor deze **SUZ-SWM40VA (VA)**. Alklima specificeert deze buitenunit-requestcodes voor P-serie en S-serie **VA2**; voor deze VA blijft OCH718/LED-diagnose leidend.
+- Binnenunit/requestdiagnose uitgebreid met 540, 552, 555, 557, 558, 559, 561, 562, 565, 567, 569 en 571.
+- Servicemenu uitgebreid met kamersensorselectie, debietbereik, handmatige componentcontrole en gerichte configuratie-uitleg.
+- Sensorpagina uitgebreid met praktische rol en koppeling naar relevante storingen.
+- Diagnose uitgebreid voor koudeklacht, L9, L8, L3, L6, L5, LB, P6, LL, EE, E6/E9 en P1.
+- Mitsubishi-storingen met een beschikbare uitgebreide diagnose krijgen een directe knop naar de juiste servicehulp-flow.
+- PWA app/style cacheversies gelijkgetrokken en verhoogd zodat fase-4 CSS/JS niet met oudere cacheversies mengt.
+
+- Mitsubishi fase 5: losse tegels Waarden controleren en Sensoren verwijderd; meetwaarden/sensorcodes blijven contextueel beschikbaar in diagnose. Servicemenu aangevuld met inbedrijfstellingschecks. Diagnose aangevuld met pendelen/start-stops en ruimteregeling/P1-preventie.
+
+- Mitsubishi fase 6: vier rustige hoofdingangen, begeleide Instellen/Inbedrijfstellen-wizard, praktisch Servicemenu en uitgebreidere klachtflows. Sensor- en requestcodekennis blijft contextueel en niet als losse hoofdpagina.
+
+- Mitsubishi fase 7: Servicemenu volledig herbouwd als FTC6-bedieningsgids met toegang vanaf hoofdscherm, servicecode, wachtwoordreset, routes per taak, fout-/storingshistorie, Informatiewerking en duidelijke waarschuwingen. Diagnoseflows voorzien van gebruiksuitleg en flow voor verdwenen/intermitterende storing.
+
+- Mitsubishi fase 8: volledige fouten-/duidelijkheidsaudit van de servicetool.
+- Andere kamerthermostaat verduidelijkt als lokale aan/uit-regeling via FTC6 IN1 (zone 1) / IN6 (zone 2), inclusief SW2-1/SW3-1 contactlogica.
+- 2-zone-logica gesplitst in gelijke aanvoertemperatuur/zoneklepregeling (SW3-6) en verschillende aanvoertemperaturen met menging (SW2-6/SW2-7).
+- HBD/RC kamersensorroute concreet gemaakt.
+- Vier regelkeuzes ook mobiel als nette 2×2 indeling.
+- Inbedrijfstellingswizard voorzien van duidelijke eindcontrole.
+
+- Mitsubishi fase 9: duidelijke terugknop boven én onder op subpagina's; jargonhulp toegevoegd; navigatie/scanbaarheid gepolijst.

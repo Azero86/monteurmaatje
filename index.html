@@ -15,7 +15,7 @@
   <link rel="icon" href="./favicon-v3.svg?v=3" type="image/svg+xml">
   <link rel="icon" href="./icons/mm-app-v3-192.png?v=3" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon" href="./icons/mm-app-v3-180.png?v=3" sizes="180x180" type="image/png">
-  <link rel="stylesheet" href="./style.css?v=industrial-v4-warm">
+  <link rel="stylesheet" href="./style.css?v=industrial-v5-mitsu-phase4">
 </head>
 <body class="__variable_f91424 __variable_dd0526 antialiased">
 <main>
@@ -551,6 +551,11 @@
             <div><h2>Elga Ace afstellen</h2><p>Debiet, stooklijn, hybride regeling en back-up stap voor stap controleren.</p></div>
             <span class="tool-card-arrow" aria-hidden="true">›</span>
           </button>
+          <button class="tool-card" type="button" data-tool-open="mitsubishi">
+            <span class="tool-card-icon mm-tool-icon heatpump-icon" aria-hidden="true">SW</span>
+            <div><h2>Mitsubishi Ecodan servicehulp</h2><p>FTC6 DIP-switchkaart voor EHSD-VM2D + SUZ-SWM40VA. Simpel uitgelegd en modelspecifiek.</p></div>
+            <span class="tool-card-arrow" aria-hidden="true">›</span>
+          </button>
           <button class="tool-card" type="button" data-tool-open="xtend">
             <span class="tool-card-icon mm-tool-icon heatpump-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="3" stroke="currentColor" stroke-width="2"/><path d="M16 13c-1.3-4.9.2-8.2 3.4-8.8 2.7-.5 4.9 1.6 4.4 4.2-.6 3.1-3.5 5-7.8 4.6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M19 16c4.9-1.3 8.2.2 8.8 3.4.5 2.7-1.6 4.9-4.2 4.4-3.1-.6-5-3.5-4.6-7.8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M16 19c1.3 4.9-.2 8.2-3.4 8.8-2.7.5-4.9-1.6-4.4-4.2.6-3.1 3.5-5 7.8-4.6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M13 16c-4.9 1.3-8.2-.2-8.8-3.4-.5-2.7 1.6-4.9 4.2-4.4 3.1.6 5 3.5 4.6 7.8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span>
             <div><h2>Xtend Eco afstellen</h2><p>Hybride regeling, stooklijn, pomp/ΔT en Xtore stap voor stap instellen.</p></div>
@@ -903,6 +908,57 @@
         </article>
       </div>
 
+      <div id="toolMitsubishiView" class="tool-detail hidden-view">
+        <button class="tool-back" type="button" data-tool-back>← Terug naar Tools</button>
+        <article class="knowledge-tool mitsubishi-tool">
+          <div class="knowledge-tool-head">
+            <span class="info-icon knowledge-tool-icon" aria-hidden="true">ME</span>
+            <div><p class="step-label">MITSUBISHI ECODAN · FTC6</p><h2>Servicehulp</h2><p>EHSD-VM2D + SUZ-SWM40VA. Snel naar DIP-switches, servicemenu, meetwaarden, sensoren en klachtgestuurde diagnose.</p></div>
+          </div>
+          <div class="mitsu-home-grid">
+            <button class="mitsu-home-card wide" type="button" data-mitsu-section="setup"><strong>🔧 Instellen / inbedrijfstellen</strong><span>Stap voor stap de installatieconfiguratie controleren</span></button>
+            <button class="mitsu-home-card" type="button" data-mitsu-section="diagnose"><strong>🔎 Klacht oplossen</strong><span>Kies de klacht; MonteurMaatje leidt je door de controles</span></button>
+            <button class="mitsu-home-card" type="button" data-mitsu-section="dip"><strong>🎚 DIP-switches</strong><span>Veel gebruikt eerst · volledige kaart optioneel</span></button>
+            <button class="mitsu-home-card wide" type="button" data-mitsu-section="menu"><strong>🖥 Servicemenu</strong><span>Wanneer heb je een instelling nodig en wat doe je ermee?</span></button>
+          </div>
+          <section class="mitsu-panel" data-mitsu-panel="setup">
+            <button class="mitsu-subback mitsu-back-top" type="button" data-mitsu-home>← Terug naar Mitsubishi overzicht</button>
+            <p class="section-kicker">INSTELLEN / INBEDRIJFSTELLEN</p><h3>Hoe is de installatie opgebouwd?</h3>
+            <p class="mitsu-intro">Maak vier keuzes. Daarna krijg je één controlelijst zonder losse codes of menu-chaos.</p>
+            <div id="mitsuSetupQuestions" class="mitsu-setup-questions"></div><div id="mitsuSetupResult" class="mitsu-setup-result"></div>
+          
+<button class="mitsu-subback mitsu-back-bottom" type="button" data-mitsu-home>← Terug naar Mitsubishi overzicht</button>
+</section>
+          <section class="mitsu-panel" data-mitsu-panel="dip">
+            <button class="mitsu-subback mitsu-back-top" type="button" data-mitsu-home>← Terug naar Mitsubishi overzicht</button>
+            <div class="mitsu-danger"><strong>⚠ Spanningsloos wijzigen</strong><p id="mitsuWarning">Schakel binnen- én buitenunit spanningsloos voordat DIP-switches worden gewijzigd.</p></div>
+            <figure class="mitsu-board"><img src="assets/mitsubishi/ftc6-dipswitch-board.jpg" alt="FTC6 printplaat met DIP-switchbanken SW1 tot en met SW6"><figcaption>FTC6-print · SW1 t/m SW6 zijn op de print gemarkeerd.</figcaption></figure>
+            <section class="mitsu-quick"><p class="section-kicker">VEEL GEBRUIKT</p><h3>Belangrijke switches</h3><div id="mitsuQuick" class="mitsu-chip-grid"></div>
+<button class="mitsu-subback mitsu-back-bottom" type="button" data-mitsu-home>← Terug naar Mitsubishi overzicht</button>
+</section>
+            <button id="mitsuShowAll" class="mitsu-showall" type="button">Alle DIP-switches tonen</button>
+            <section id="mitsuAllSection" hidden><div class="mitsu-section-head"><div><p class="section-kicker">VOLLEDIGE KAART</p><h3>SW1 t/m SW6</h3></div><label class="mitsu-filter"><span>Bank</span><select id="mitsuBank"><option value="all">Alle</option><option>SW1</option><option>SW2</option><option>SW3</option><option>SW4</option><option>SW5</option><option>SW6</option></select></label></div><div id="mitsuSwitches" class="mitsu-switch-list"></div></section>
+          </section>
+
+          <section class="mitsu-panel" data-mitsu-panel="menu">
+            <button class="mitsu-subback mitsu-back-top" type="button" data-mitsu-home>← Terug naar Mitsubishi overzicht</button>
+            <p class="section-kicker">FTC6 BEDIENINGSGIDS</p>
+            <h3>Servicemenu zonder zoekwerk</h3>
+            <p class="mitsu-intro">Begin hier als je niet weet hoe je in het servicemenu komt. Kies daarna wat je wilt doen; MonteurMaatje geeft de route en de stappen.</p>
+            <div id="mitsuServiceAccess"></div>
+            <div id="mitsuServiceTasks" class="mitsu-info-list"></div>
+          
+<button class="mitsu-subback mitsu-back-bottom" type="button" data-mitsu-home>← Terug naar Mitsubishi overzicht</button>
+</section>
+          <section class="mitsu-panel" data-mitsu-panel="diagnose"><button class="mitsu-subback mitsu-back-top" type="button" data-mitsu-home>← Terug naar Mitsubishi overzicht</button><p class="section-kicker">KLACHTGESTUURD</p><h3>Diagnose op klacht of storing</h3><div id="mitsuDiagnostics" class="mitsu-info-list"></div>
+<button class="mitsu-subback mitsu-back-bottom" type="button" data-mitsu-home>← Terug naar Mitsubishi overzicht</button>
+</section>
+          <section class="mitsu-panel" data-mitsu-panel="system"><button class="mitsu-subback mitsu-back-top" type="button" data-mitsu-home>← Terug naar Mitsubishi overzicht</button><p class="section-kicker">SYSTEEM</p><h3>EHSD-VM2D + SUZ-SWM40VA</h3><div id="mitsuSystemFacts" class="mitsu-info-list"></div><div id="mitsuSystemNote" class="guideline-note"></div></section>
+
+          <div class="official-source stacked-source"><div><strong>Bronnen</strong><span>Mitsubishi Electric OCH712C + Alklima Mitsubishi Electric Kennisbank</span></div><div id="mitsuSources" class="source-actions"></div></div>
+        </article>
+      </div>
+
       <p class="info-note">Tools ondersteunt de monteur met praktische startwaarden en officiële toestelparameters. De definitieve instelling blijft een vakinhoudelijke beoordeling.</p>
     </div>
   </section>
@@ -939,6 +995,6 @@
     </button>
   </nav>
 </main>
-<script src="./app.js?v=industrial-v5-tools101a" defer></script>
+<script src="./app.js?v=industrial-v8-mitsu-phase4" defer></script>
 </body>
 </html>

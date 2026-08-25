@@ -37,7 +37,8 @@
       "sourceDocument": "OCH712C",
       "sourcePage": 44,
       "verified": true,
-      "verifiedDate": "2026-08-25"
+      "verifiedDate": "2026-08-25",
+      "diagnosticId": "l3"
     },
     {
       "code": "L4",
@@ -78,7 +79,8 @@
       "sourceDocument": "OCH712C",
       "sourcePage": 45,
       "verified": true,
-      "verifiedDate": "2026-08-25"
+      "verifiedDate": "2026-08-25",
+      "diagnosticId": "l5"
     },
     {
       "code": "L6",
@@ -100,7 +102,8 @@
       "sourceDocument": "OCH712C",
       "sourcePage": 45,
       "verified": true,
-      "verifiedDate": "2026-08-25"
+      "verifiedDate": "2026-08-25",
+      "diagnosticId": "l6"
     },
     {
       "code": "L8",
@@ -124,7 +127,8 @@
       "sourcePage": 46,
       "verified": true,
       "verifiedDate": "2026-08-25",
-      "note": "Geschikt als ingang voor de latere klachtgestuurde diagnose 'woning wordt niet warm'."
+      "note": "Geschikt als ingang voor de latere klachtgestuurde diagnose 'woning wordt niet warm'.",
+      "diagnosticId": "l8"
     },
     {
       "code": "L9",
@@ -150,7 +154,8 @@
       "sourceDocument": "OCH712C",
       "sourcePage": 46,
       "verified": true,
-      "verifiedDate": "2026-08-25"
+      "verifiedDate": "2026-08-25",
+      "diagnosticId": "l9"
     },
     {
       "code": "LA",
@@ -189,7 +194,8 @@
       "sourceDocument": "OCH712C",
       "sourcePage": 47,
       "verified": true,
-      "verifiedDate": "2026-08-25"
+      "verifiedDate": "2026-08-25",
+      "diagnosticId": "lb"
     },
     {
       "code": "LC",
@@ -339,7 +345,8 @@
       "sourcePage": 47,
       "verified": true,
       "verifiedDate": "2026-08-25",
-      "note": "Deze fout wordt later rechtstreeks gekoppeld aan de interactieve DIP-switchkaart."
+      "note": "Deze fout wordt later rechtstreeks gekoppeld aan de interactieve DIP-switchkaart.",
+      "diagnosticId": "ll"
     },
     {
       "code": "P1",
@@ -359,7 +366,8 @@
       "sourceDocument": "OCH712C",
       "sourcePage": 47,
       "verified": true,
-      "verifiedDate": "2026-08-25"
+      "verifiedDate": "2026-08-25",
+      "diagnosticId": "p1"
     },
     {
       "code": "P2",
@@ -403,7 +411,8 @@
       "sourceDocument": "OCH712C",
       "sourcePage": 48,
       "verified": true,
-      "verifiedDate": "2026-08-25"
+      "verifiedDate": "2026-08-25",
+      "diagnosticId": "p6"
     },
     {
       "code": "E0",
@@ -514,7 +523,8 @@
       "sourceDocument": "OCH712C",
       "sourcePage": 48,
       "verified": true,
-      "verifiedDate": "2026-08-25"
+      "verifiedDate": "2026-08-25",
+      "diagnosticId": "e6e9"
     },
     {
       "code": "E7",
@@ -804,7 +814,8 @@
       "sourcePage": 49,
       "verified": true,
       "verifiedDate": "2026-08-25",
-      "note": "Zowel FTC6 als de SUZ-SWM40VA-documentatie verwijst bij EE naar een onjuiste unitcombinatie."
+      "note": "Zowel FTC6 als de SUZ-SWM40VA-documentatie verwijst bij EE naar een onjuiste unitcombinatie.",
+      "diagnosticId": "ee"
     },
     {
       "code": "UP",
@@ -918,7 +929,8 @@
       "sourceDocument": "OCH718",
       "sourcePage": 19,
       "verified": true,
-      "verifiedDate": "2026-08-25"
+      "verifiedDate": "2026-08-25",
+      "diagnosticId": "e6e9"
     },
     {
       "code": "UE",
