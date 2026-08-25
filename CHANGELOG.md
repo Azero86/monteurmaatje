@@ -227,3 +227,11 @@ De asbestuitbreiding is daarmee een aanvullende Richtlijnen-module en geen wijzi
 - Inbedrijfstellingswizard voorzien van duidelijke eindcontrole.
 
 - Mitsubishi fase 9: duidelijke terugknop boven én onder op subpagina's; jargonhulp toegevoegd; navigatie/scanbaarheid gepolijst.
+
+- Algemene zoekfunctie fase 10 toegevoegd.
+- Globale zoekknop beschikbaar vanuit iedere apppagina; zoekveld opent als snelle overlay.
+- Statische lokale zoekindex met 4340 entries toegevoegd en opgenomen in de PWA-appshell voor offline zoeken.
+- Zoeken omvat toestellen, storingen, parameters, verbranding, diagnose, tools, richtlijnen en Mitsubishi service/DIP-informatie.
+- Technische codes worden genormaliseerd: varianten zoals E.01.11 / E0111 / e 01 11 geven dezelfde exacte codematches.
+- Identieke storingscodes blijven per merk en toestel als afzonderlijke resultaten zichtbaar; een korte numerieke code zoals '5' levert geen willekeurige tekstmatches op.
+- Zoekresultaten openen rechtstreeks de juiste toesteldata/tab/storing/parameter of relevante tool/richtlijn.

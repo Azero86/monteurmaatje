@@ -15,7 +15,7 @@
   <link rel="icon" href="./favicon-v3.svg?v=3" type="image/svg+xml">
   <link rel="icon" href="./icons/mm-app-v3-192.png?v=3" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon" href="./icons/mm-app-v3-180.png?v=3" sizes="180x180" type="image/png">
-  <link rel="stylesheet" href="./style.css?v=industrial-v5-mitsu-phase4">
+  <link rel="stylesheet" href="./style.css?v=industrial-v13-search">
 </head>
 <body class="__variable_f91424 __variable_dd0526 antialiased">
 <main>
@@ -25,6 +25,9 @@
       <div><strong>MonteurMaatje</strong><small>Technische serviceassistent</small></div>
     </div>
     <div class="top-actions">
+      <button id="globalSearchButton" class="global-search-button" type="button" aria-label="Zoeken in MonteurMaatje" title="Zoeken">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg><span>Zoeken</span>
+      </button>
       <button id="installButton" class="install-button hidden" type="button">Installeer app</button>
       <button id="themeToggle" class="theme-toggle" type="button" aria-label="Schakel donkere modus in" title="Licht/donker">
         <span class="theme-sun" aria-hidden="true">☀</span><span class="theme-moon" aria-hidden="true">☾</span>
@@ -994,7 +997,25 @@
       <span>Tools</span>
     </button>
   </nav>
+
+  <div id="globalSearchOverlay" class="global-search-overlay hidden-view" role="dialog" aria-modal="true" aria-labelledby="globalSearchTitle">
+    <div class="global-search-shell">
+      <div class="global-search-head">
+        <div><p class="section-kicker">MONTEURMAATJE ZOEKEN</p><h2 id="globalSearchTitle">Wat zoek je?</h2></div>
+        <button id="globalSearchClose" class="global-search-close" type="button" aria-label="Zoeken sluiten">×</button>
+      </div>
+      <div class="global-search-field">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+        <input id="globalSearchInput" type="search" autocomplete="off" autocapitalize="off" spellcheck="false"
+               placeholder="Bijv. E.01.11, L9, pomp, Xtend, SW2-7…" aria-label="Zoeken">
+      </div>
+      <p class="global-search-hint">Zoekt offline in toestellen, storingen, parameters, tools en richtlijnen. Een storingscode blijft altijd gekoppeld aan het juiste toestel.</p>
+      <div id="globalSearchStatus" class="global-search-status">Typ minimaal 1 teken.</div>
+      <div id="globalSearchResults" class="global-search-results"></div>
+    </div>
+  </div>
+
 </main>
-<script src="./app.js?v=industrial-v8-mitsu-phase4" defer></script>
+<script src="./app.js?v=industrial-v13-search" defer></script>
 </body>
 </html>

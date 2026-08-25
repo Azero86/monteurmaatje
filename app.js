@@ -31,8 +31,215 @@
     dataMessage: $("dataMessage"), p1: $("p1"), p2: $("p2"), p3: $("p3"),
     recordCount: $("recordCount"), install: $("installButton"),
     statusPill: $("statusPill"), statusText: $("statusText"), themeToggle: $("themeToggle"),
+    searchButton: $("globalSearchButton"), searchOverlay: $("globalSearchOverlay"), searchClose: $("globalSearchClose"),
+    searchInput: $("globalSearchInput"), searchStatus: $("globalSearchStatus"), searchResults: $("globalSearchResults"),
   };
 
+
+
+  let globalSearchIndex = null;
+  let globalSearchLoadPromise = null;
+
+  function normalizeSearchText(value) {
+    return String(value ?? "")
+      .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+      .toLocaleLowerCase("nl-NL")
+      .replace(/[^\p{L}\p{N}]+/gu, " ")
+      .trim().replace(/\s+/g, " ");
+  }
+
+  function normalizeTechnicalCode(value) {
+    return String(value ?? "").toLocaleUpperCase("nl-NL").replace(/[^A-Z0-9]/g, "");
+  }
+
+  function looksLikeTechnicalCode(query) {
+    const q=String(query??"").trim();
+    return /^\d{1,4}$/.test(q) || /^(?:[A-Za-z]{1,4}[\s.\-_]*)?\d[\w\s.\-_]*$/.test(q);
+  }
+
+  async function ensureGlobalSearchIndex() {
+    if (globalSearchIndex) return globalSearchIndex;
+    if (!globalSearchLoadPromise) {
+      globalSearchLoadPromise=loadJson("search-index.json").then(data=>{
+        globalSearchIndex=data?.entries||[];
+        globalSearchIndex.forEach(e=>{
+          e._hay=normalizeSearchText(e.searchText || `${e.title||""} ${e.subtitle||""}`);
+          e._code=normalizeTechnicalCode(e.code || (e.kind==="mitsu-switch" ? e.mitsuSwitch : ""));
+          e._title=normalizeSearchText(e.title||"");
+        });
+        return globalSearchIndex;
+      }).finally(()=>{ globalSearchLoadPromise=null; });
+    }
+    return globalSearchLoadPromise;
+  }
+
+  function searchScore(entry, rawQuery) {
+    const q=normalizeSearchText(rawQuery);
+    const qc=normalizeTechnicalCode(rawQuery);
+    if (!q) return 0;
+
+    // Bij een codezoekopdracht krijgt een exacte code altijd absolute voorrang.
+    if (looksLikeTechnicalCode(rawQuery) && qc) {
+      if (entry._code === qc) return 1000;
+      if (entry._code && entry._code.startsWith(qc) && qc.length >= 2) return 850;
+      // Voor een korte puur numerieke query (bijv. "5") géén willekeurige teksthits.
+      if (/^\d{1,2}$/.test(String(rawQuery).trim())) return 0;
+    }
+
+    if (entry._title === q) return 700;
+    if (entry._title.startsWith(q)) return 620;
+    if (entry._hay.includes(q)) return 500;
+
+    const tokens=q.split(" ").filter(Boolean);
+    if (tokens.length && tokens.every(t=>entry._hay.includes(t))) return 380 + tokens.length;
+    return 0;
+  }
+
+  function searchKindOrder(kind) {
+    return {fault:0,parameter:1,device:2,diagnostic:3,combustion:4,tool:5,guideline:6,
+            "mitsu-switch":7,"mitsu-diagnose":8,"mitsu-service":9}[kind] ?? 20;
+  }
+
+  function renderGlobalSearchResults(rawQuery) {
+    if (!refs.searchResults || !refs.searchStatus) return;
+    const query=String(rawQuery??"").trim();
+    if (!query) {
+      refs.searchStatus.textContent="Typ minimaal 1 teken.";
+      refs.searchResults.innerHTML="";
+      return;
+    }
+    if (!globalSearchIndex) {
+      refs.searchStatus.textContent="Zoekindex laden…";
+      return;
+    }
+
+    const hits=globalSearchIndex.map((entry,i)=>({entry,i,score:searchScore(entry,query)}))
+      .filter(x=>x.score>0)
+      .sort((a,b)=>b.score-a.score || searchKindOrder(a.entry.kind)-searchKindOrder(b.entry.kind) ||
+        String(a.entry.brandName||"").localeCompare(String(b.entry.brandName||""),"nl"))
+      .slice(0,60);
+
+    refs.searchStatus.textContent = hits.length ? `${hits.length}${hits.length===60?"+" : ""} resultaat${hits.length===1?"":"en"}` : "Geen resultaten gevonden.";
+    if (!hits.length) {
+      refs.searchResults.innerHTML=`<div class="search-no-results"><strong>Niets gevonden</strong><p>Controleer de code of probeer een ander technisch woord.</p></div>`;
+      return;
+    }
+
+    hits.forEach((hit,resultIndex)=>{ hit.resultIndex=resultIndex; });
+    const groups=new Map();
+    for (const hit of hits) {
+      const key=hit.entry.label||"Overig";
+      if (!groups.has(key)) groups.set(key,[]);
+      groups.get(key).push(hit);
+    }
+
+    refs.searchResults.innerHTML=[...groups.entries()].map(([label,items])=>`
+      <section class="search-result-group">
+        <div class="search-result-group-head"><strong>${esc(label)}</strong><span>${items.length}</span></div>
+        <div class="search-result-list">${items.map(({entry,resultIndex})=>`
+          <button class="global-search-result" type="button" data-search-result="${resultIndex}" data-search-kind="${esc(entry.kind)}">
+            <span class="search-result-main">
+              ${entry.code ? `<b class="search-code">${esc(entry.code)}</b>` : entry.mitsuSwitch ? `<b class="search-code">${esc(entry.mitsuSwitch)}</b>` : ""}
+              <span><strong>${esc(entry.title)}</strong><small>${esc(entry.subtitle||"")}</small></span>
+            </span>
+            <span class="search-result-arrow" aria-hidden="true">›</span>
+          </button>`).join("")}</div>
+      </section>`).join("");
+
+    refs.searchResults.querySelectorAll("[data-search-result]").forEach(button=>{
+      button.addEventListener("click",()=>{
+        const hit=hits[Number(button.dataset.searchResult)];
+        if (hit) openGlobalSearchResult(hit.entry);
+      });
+    });
+  }
+
+  async function openDeviceSearchResult(entry) {
+    // Search is an overlay, not a route. Force the normal technical-info view directly.
+    history.pushState({mmRoute:"home",mmHistoryVersion:HISTORY_VERSION},"",routeHash("home"));
+    renderRoute("home");
+
+    state.brandId=entry.brandId||"";
+    refs.brand.value=state.brandId;
+    renderDeviceOptions();
+
+    state.deviceId=entry.deviceId||"";
+    refs.device.value=state.deviceId;
+    renderFamilyHint(selectedDevice());
+
+    const device=selectedDevice();
+    if (!device) return;
+    const tabs=availableTabs(device);
+    state.tab=entry.tab || tabs[0]?.[0] || "faults";
+    await loadDeviceData();
+
+    if (entry.kind==="fault") state.faultCode=String(entry.code||"");
+    if (entry.kind==="parameter") state.parameterCode=String(entry.code||"");
+    if (entry.kind==="diagnostic") state.diagnosticId=String(entry.diagnosticId||"");
+
+    renderTabs(); renderThirdStep(); renderResult(); progress();
+    window.scrollTo({top:0,behavior:"auto"});
+  }
+
+  async function openGlobalSearchResult(entry) {
+    closeGlobalSearch();
+    if (entry.brandId && entry.deviceId) {
+      await openDeviceSearchResult(entry);
+      return;
+    }
+    if (entry.route) {
+      navigateRoute(entry.route);
+      if (entry.route==="tools/mitsubishi") {
+        requestAnimationFrame(()=>{
+          if (entry.mitsuSection) showMitsuSection(entry.mitsuSection);
+          requestAnimationFrame(()=>{
+            if (entry.mitsuSwitch) {
+              const all=document.getElementById("mitsuAllSection");
+              const show=document.getElementById("mitsuShowAll");
+              if (all) all.hidden=false;
+              if (show) show.textContent="Volledige DIP-kaart verbergen";
+              renderMitsubishiTool();
+              requestAnimationFrame(()=>{
+                const target=document.getElementById(`mitsu-${entry.mitsuSwitch}`);
+                if (target) { target.open=true; target.scrollIntoView({behavior:"smooth",block:"center"}); }
+              });
+            }
+            if (entry.mitsuDiag) {
+              const target=document.getElementById(`mitsu-diag-${entry.mitsuDiag}`);
+              if (target) { target.open=true; target.scrollIntoView({behavior:"smooth",block:"start"}); }
+            }
+          });
+        });
+      }
+    }
+  }
+
+  async function openGlobalSearch() {
+    refs.searchOverlay?.classList.remove("hidden-view");
+    document.body.classList.add("search-open");
+    refs.searchStatus.textContent="Zoekindex laden…";
+    try {
+      await ensureGlobalSearchIndex();
+      renderGlobalSearchResults(refs.searchInput?.value||"");
+    } catch (error) {
+      refs.searchStatus.textContent="Zoekindex kon niet worden geladen.";
+      console.error(error);
+    }
+    requestAnimationFrame(()=>refs.searchInput?.focus());
+  }
+
+  function closeGlobalSearch() {
+    refs.searchOverlay?.classList.add("hidden-view");
+    document.body.classList.remove("search-open");
+  }
+
+  refs.searchButton?.addEventListener("click",openGlobalSearch);
+  refs.searchClose?.addEventListener("click",closeGlobalSearch);
+  refs.searchInput?.addEventListener("input",e=>renderGlobalSearchResults(e.target.value));
+  refs.searchOverlay?.addEventListener("click",e=>{ if(e.target===refs.searchOverlay) closeGlobalSearch(); });
+  document.addEventListener("keydown",e=>{
+    if(e.key==="Escape" && !refs.searchOverlay?.classList.contains("hidden-view")) closeGlobalSearch();
+  });
 
   const THEME_KEY = "monteurmaatje-theme";
   function preferredTheme() {
