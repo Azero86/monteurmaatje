@@ -181,3 +181,16 @@ De asbestuitbreiding is daarmee een aanvullende Richtlijnen-module en geen wijzi
 - Bevestigd: vloerverwarming gebruikt P210 = 0 en bij P194 = 40 °C P192 = 0,74; radiatoren gebruikt P210 = 8 en bij P194 = 40 °C P192 = 0,44. De bestaande toolmapping was correct en is inhoudelijk niet omgewisseld.
 - Bij de keuze Afgiftesysteem is een korte toelichting toegevoegd dat Intergas geen afzonderlijke officiële stooklijntabel voor een gecombineerd radiator-/vloerverwarmingssysteem publiceert. Er wordt daarom geen fictieve combiwaarde aangeboden.
 - Alleen deze verduidelijking en noodzakelijke PWA-cacheversies zijn aangepast; Elga/Xtend-besliswaarden en overige technische data zijn verder ongewijzigd.
+
+## Unreleased — Mitsubishi Electric Ecodan fase 1 — 25 augustus 2026
+
+- Mitsubishi Electric toegevoegd als nieuw merk in de toestelcatalogus.
+- Eerste ondersteunde combinatie: **Ecodan EHSD-VM2D / FTC6 + SUZ-SWM40VA**.
+- FTC6/Hydrobox-storingen uit Mitsubishi Service Manual **OCH712C** toegevoegd.
+- Buitenunitstoringen voor **SUZ-SWM40VA** uit Mitsubishi Service Manual **OCH718** toegevoegd.
+- Praktische controles in korte monteurstaal opgenomen zonder de fabrikantdiagnose te vervangen.
+- Parameters-tab toegevoegd als **servicemenu / Running Information**-naslag; Mitsubishi gebruikt hiervoor geen Remeha-achtige CP/HP-codeopbouw.
+- Request codes 103–105, 567, 569 en 571 opgenomen als praktische diagnose-ingangen.
+- Request code **200** expliciet als resetactie gemarkeerd om onbedoeld resetten van Function Settings te voorkomen.
+- DIP-switches, interactieve printkaart, klachtgestuurde diagnose en uitgebreide Mitsubishi servicetool zijn bewust nog **niet** in deze fase ingebouwd.
+- Bestaande Intergas/Remeha/Vaillant/Nefit/ATAG/Bosch-data niet gewijzigd.

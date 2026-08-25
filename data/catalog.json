@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordCount": 2169,
+  "recordCount": 2214,
   "brands": [
     {
       "id": "intergas",
@@ -600,6 +600,53 @@
               "language": "nl",
               "market": "NL",
               "official": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mitsubishi",
+      "name": "Mitsubishi Electric",
+      "devices": [
+        {
+          "id": "mitsubishi-ecodan-ehsd-vm2d-suz-swm40va",
+          "name": "Ecodan EHSD-VM2D + SUZ-SWM40VA",
+          "deviceType": "heatpump",
+          "family": "Ecodan split R32 · Hydrobox EHSD-VM2D · buitenunit SUZ-SWM40VA · FTC6",
+          "faultsPath": "data/mitsubishi/ecodan-ehsd-vm2d-suz-swm40va/faults.json",
+          "parametersPath": "data/mitsubishi/ecodan-ehsd-vm2d-suz-swm40va/parameters.json",
+          "recordCount": 45,
+          "sourceTitle": "Mitsubishi Electric OCH712C + OCH718",
+          "sourceUrl": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+          "manuals": [
+            {
+              "type": "service",
+              "title": "Service Manual OCH712C – Hydrobox/FTC6",
+              "url": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+              "language": "en",
+              "market": "EU/UK"
+            },
+            {
+              "type": "service",
+              "title": "Servicehandleiding OCH718 – SUZ-SWM40VA",
+              "url": "https://alklima.nl/storage/SHA/Servicehandleiding-SUZ-SWM40-VA.pdf",
+              "language": "en",
+              "market": "NL"
+            },
+            {
+              "type": "downloads",
+              "title": "Alklima Mitsubishi Electric downloads",
+              "url": "https://alklima.nl/service-en-support/downloads",
+              "language": "nl",
+              "market": "NL"
+            },
+            {
+              "type": "knowledge",
+              "title": "Alklima Mitsubishi Electric Kennisbank",
+              "url": "https://kennisbank.alklima.nl/hc/nl",
+              "language": "nl",
+              "market": "NL"
             }
           ]
         }

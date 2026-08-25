@@ -1,0 +1,962 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "mitsubishi-ecodan-ehsd-vm2d-suz-swm40va",
+  "source": {
+    "title": "Mitsubishi Electric Service Manual OCH712C (EHSD-VM2D/FTC6) + OCH718 (SUZ-SWM40VA)",
+    "url": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+    "secondarySourceUrl": "https://alklima.nl/storage/SHA/Servicehandleiding-SUZ-SWM40-VA.pdf",
+    "revision": "OCH712C oktober 2020; OCH718 augustus 2019"
+  },
+  "appliesTo": {
+    "brand": "Mitsubishi Electric",
+    "system": "Ecodan split",
+    "indoorUnit": "EHSD-VM2D / EHSD-VM2D.UK",
+    "outdoorUnit": "SUZ-SWM40VA / SUZ-SWM40VA.TH",
+    "controller": "FTC6",
+    "refrigerant": "R32",
+    "heatingOnly": true
+  },
+  "faults": [
+    {
+      "code": "L3",
+      "codeType": "storing",
+      "title": "Circulatiewatertemperatuur te hoog",
+      "meaning": "Circulatiewatertemperatuur te hoog",
+      "causes": [
+        "Onvoldoende watercirculatie",
+        "Probleem met pomp, lucht, filter/strainer of afsluiters",
+        "Mogelijke sensor- of regelprintfout"
+      ],
+      "checks": [
+        "Controleer waterflow en systeemdruk.",
+        "Controleer pompwerking en ontlucht de installatie.",
+        "Controleer strainer/filter en afsluiters.",
+        "Controleer relevante thermistors en bekabeling."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 44,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "L4",
+      "codeType": "storing",
+      "title": "Tapwatertanktemperatuur te hoog",
+      "meaning": "Tapwatertanktemperatuur te hoog",
+      "causes": [
+        "THW5B detecteert gedurende 10 seconden ≥ 75 °C",
+        "Probleem met tapwaterverwarming of regeling"
+      ],
+      "checks": [
+        "Controleer tapwatertemperatuur en THW5B.",
+        "Controleer elektrisch element/aansturing indien toegepast.",
+        "Controleer 3-wegklep indien relevant."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 44,
+      "verified": true,
+      "verifiedDate": "2026-08-25",
+      "note": "Alleen relevant wanneer een tapwatertank is aangesloten."
+    },
+    {
+      "code": "L5",
+      "codeType": "storing",
+      "title": "Aanvoer-/retour- of zonesensor binnenunit defect",
+      "meaning": "Aanvoer-/retour- of zonesensor binnenunit defect",
+      "causes": [
+        "Open of kortgesloten thermistor",
+        "Losse connector of bedrading"
+      ],
+      "checks": [
+        "Lees request code 567 uit om te bepalen welke thermistor de fout veroorzaakt.",
+        "Controleer connector en bedrading.",
+        "Meet de betreffende thermistor volgens OCH712C."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 45,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "L6",
+      "codeType": "storing",
+      "title": "Vorstbeveiliging circulatiewater actief",
+      "meaning": "Vorstbeveiliging circulatiewater actief",
+      "causes": [
+        "Lage watertemperatuur",
+        "Onvoldoende circulatie",
+        "Pomp/filter/luchtprobleem"
+      ],
+      "checks": [
+        "Controleer waterflow.",
+        "Controleer pomp en ontluchting.",
+        "Controleer strainer/filter.",
+        "Controleer THW1/THW2 en leidingtemperaturen."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 45,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "L8",
+      "codeType": "storing",
+      "title": "Verwarmingsbedrijf levert onvoldoende warmte",
+      "meaning": "Verwarmingsbedrijf levert onvoldoende warmte",
+      "causes": [
+        "Onvoldoende waterflow",
+        "Thermistor los of onjuist gemonteerd",
+        "Hydraulisch probleem",
+        "Onvoldoende warmteafgifte of hulpverwarming"
+      ],
+      "checks": [
+        "Controleer aanvoer- en retourtemperatuur tijdens de klacht.",
+        "Controleer waterflow, pomp, ontluchting en strainer.",
+        "Controleer of thermistors goed in hun houder zitten.",
+        "Controleer of de installatie en afgifte voldoende warmte kunnen opnemen/afgeven."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 46,
+      "verified": true,
+      "verifiedDate": "2026-08-25",
+      "note": "Geschikt als ingang voor de latere klachtgestuurde diagnose 'woning wordt niet warm'."
+    },
+    {
+      "code": "L9",
+      "codeType": "storing",
+      "title": "Te lage primaire waterflow",
+      "meaning": "Te lage primaire waterflow",
+      "causes": [
+        "Onvoldoende systeemopvoerhoogte",
+        "Pompstoring",
+        "Lucht in installatie",
+        "Verstopte strainer/filter",
+        "Waterlekkage",
+        "Flow switch/flowsensor of bedrading"
+      ],
+      "checks": [
+        "Controleer actuele flow; request code 571 toont de flow op het moment van de fout.",
+        "Controleer request code 569 om te zien welke flowswitch actief was.",
+        "Controleer pomp, ontluchting, strainer/filter en lekkage.",
+        "Controleer flowswitch/flowsensor en bedrading.",
+        "Controleer relevante DIP-switchinstelling wanneer flowswitchlogica niet klopt."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 46,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "LA",
+      "codeType": "storing",
+      "title": "Druksensor defect",
+      "meaning": "Druksensor defect",
+      "causes": [
+        "Druksensor of bedrading defect/los"
+      ],
+      "checks": [
+        "Controleer druksensor, connector en bedrading.",
+        "Vergelijk gemeten druk met de waarde die de FTC ziet."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 47,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "LB",
+      "codeType": "storing",
+      "title": "Hogedrukbeveiliging",
+      "meaning": "Hogedrukbeveiliging",
+      "causes": [
+        "Onvoldoende waterflow",
+        "Te hoge condensatietemperatuur",
+        "Hydraulische blokkade of regelprobleem"
+      ],
+      "checks": [
+        "Controleer waterflow, pomp, filter/strainer en afsluiters.",
+        "Controleer aanvoer/retourtemperaturen.",
+        "Controleer buitenunit en koudemiddelcircuit volgens OCH718 indien de hydrauliek in orde is."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 47,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "LC",
+      "codeType": "storing",
+      "title": "Ketelcircuit watertemperatuur te hoog",
+      "meaning": "Ketelcircuit watertemperatuur te hoog",
+      "causes": [
+        "THWB1 detecteert 80 °C gedurende 10 seconden",
+        "Te lage flow in ketelcircuit"
+      ],
+      "checks": [
+        "Controleer waterflow in het ketelcircuit.",
+        "Controleer lekkage, strainer/filter en pomp.",
+        "Controleer ingestelde keteltemperatuur en THWB1."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 47,
+      "verified": true,
+      "verifiedDate": "2026-08-25",
+      "note": "Alleen relevant bij ketel/hybride configuratie."
+    },
+    {
+      "code": "LD",
+      "codeType": "storing",
+      "title": "Keteltemperatuursensor THWB1 defect",
+      "meaning": "Keteltemperatuursensor THWB1 defect",
+      "causes": [
+        "THWB1 open/kortgesloten",
+        "Losse bedrading"
+      ],
+      "checks": [
+        "Controleer THWB1 en connector.",
+        "Meet thermistorweerstand volgens OCH712C.",
+        "Gebruik request code 567 voor foutidentificatie."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 47,
+      "verified": true,
+      "verifiedDate": "2026-08-25",
+      "note": "Alleen relevant bij ketel/hybride configuratie."
+    },
+    {
+      "code": "LE",
+      "codeType": "storing",
+      "title": "Ketelbedrijf levert onvoldoende warmte",
+      "meaning": "Ketelbedrijf levert onvoldoende warmte",
+      "causes": [
+        "Ketel actief maar gemeten zone-aanvoer blijft te laag",
+        "Ketel- of hydraulisch probleem"
+      ],
+      "checks": [
+        "Controleer of de ketel daadwerkelijk warmte levert.",
+        "Controleer waterflow en kleppen.",
+        "Controleer THW6 indien toegepast.",
+        "Controleer ketel-/hybrideconfiguratie."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 47,
+      "verified": true,
+      "verifiedDate": "2026-08-25",
+      "note": "Alleen relevant bij ketel/hybride configuratie."
+    },
+    {
+      "code": "LF",
+      "codeType": "storing",
+      "title": "Flowsensor defect",
+      "meaning": "Flowsensor defect",
+      "causes": [
+        "Flowsensor niet aangesloten",
+        "Losse of beschadigde kabel",
+        "Defecte flowsensor"
+      ],
+      "checks": [
+        "Controleer flowsensorkabel en connector.",
+        "Controleer actuele flowweergave.",
+        "Controleer sensor volgens OCH712C."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 47,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "LH",
+      "codeType": "storing",
+      "title": "Vorstbeveiliging ketelcircuit",
+      "meaning": "Vorstbeveiliging ketelcircuit",
+      "causes": [
+        "Te lage flow in ketelcircuit",
+        "Lekkage",
+        "Verstopte strainer/filter",
+        "Pompstoring"
+      ],
+      "checks": [
+        "Controleer lekkage.",
+        "Controleer strainer/filter.",
+        "Controleer circulatiepomp en flow."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 47,
+      "verified": true,
+      "verifiedDate": "2026-08-25",
+      "note": "Alleen relevant bij ketel/hybride configuratie."
+    },
+    {
+      "code": "LJ",
+      "codeType": "storing",
+      "title": "Tapwaterbedrijf fout met externe platenwisselaar",
+      "meaning": "Tapwaterbedrijf fout met externe platenwisselaar",
+      "causes": [
+        "THW5B los uit houder",
+        "Te lage flow in sanitair/tapwatercircuit"
+      ],
+      "checks": [
+        "Controleer bevestiging van THW5B.",
+        "Controleer tapwaterpomp/circulatie.",
+        "Controleer hydraulische blokkades."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 47,
+      "verified": true,
+      "verifiedDate": "2026-08-25",
+      "note": "Alleen relevant bij externe platenwisselaar/tapwaterconfiguratie."
+    },
+    {
+      "code": "LL",
+      "codeType": "storing",
+      "title": "DIP-switchconfiguratie fout",
+      "meaning": "DIP-switchconfiguratie fout",
+      "causes": [
+        "DIP-switches passen niet bij de gekozen systeemconfiguratie"
+      ],
+      "checks": [
+        "Bij ketelbedrijf: controleer SW1-1 = ON en SW2-6 = ON.",
+        "Bij 2-zone-regeling: controleer SW2-7 = ON en SW2-6 = ON.",
+        "Bij multiple outdoor control met tapwater: controleer SW1-3 op de betreffende FTC-subunit.",
+        "Schakel binnen- én buitenunit spanningsloos vóór het wijzigen van DIP-switches."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 47,
+      "verified": true,
+      "verifiedDate": "2026-08-25",
+      "note": "Deze fout wordt later rechtstreeks gekoppeld aan de interactieve DIP-switchkaart."
+    },
+    {
+      "code": "P1",
+      "codeType": "storing",
+      "title": "Ruimtetemperatuursensor TH1A/TH1B defect",
+      "meaning": "Ruimtetemperatuursensor TH1A/TH1B defect",
+      "causes": [
+        "Thermistor open/kortgesloten",
+        "Losse connector"
+      ],
+      "checks": [
+        "Gebruik request code 567 om de foutieve thermistor te identificeren.",
+        "Controleer bedrading en connector.",
+        "Meet thermistor volgens OCH712C."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 47,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "P2",
+      "codeType": "storing",
+      "title": "Koudemiddel-vloeistoftemperatuursensor TH2 defect",
+      "meaning": "Koudemiddel-vloeistoftemperatuursensor TH2 defect",
+      "causes": [
+        "TH2 open/kortgesloten",
+        "Losse connector"
+      ],
+      "checks": [
+        "Gebruik request code 567 voor foutidentificatie.",
+        "Controleer TH2 en bedrading.",
+        "Meet thermistor volgens OCH712C."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 47,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "P6",
+      "codeType": "storing",
+      "title": "Vorstbeveiliging platenwarmtewisselaar",
+      "meaning": "Vorstbeveiliging platenwarmtewisselaar",
+      "causes": [
+        "Te lage waterflow",
+        "Te lage watertemperatuur",
+        "Pompstoring",
+        "Koudemiddelprobleem",
+        "LEV-probleem"
+      ],
+      "checks": [
+        "Controleer waterflow, leidingen en filter/strainer.",
+        "Controleer pomp.",
+        "Controleer TH2 en THW2.",
+        "Controleer buitenunit/koudemiddelcircuit en LEV wanneer hydrauliek in orde is."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 48,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "E0",
+      "codeType": "storing",
+      "title": "Communicatiefout hoofdregelaar ↔ FTC (ontvangst)",
+      "meaning": "Communicatiefout hoofdregelaar ↔ FTC (ontvangst)",
+      "causes": [
+        "Losse/beschadigde 2-aderige communicatiekabel",
+        "Verkeerde bekabeling",
+        "Storing hoofdregelaar of FTC"
+      ],
+      "checks": [
+        "Controleer kabel en aansluitingen tussen hoofdregelaar en FTC.",
+        "Controleer dat slechts één hoofdregelaar op één FTC is aangesloten.",
+        "Schakel binnen- en buitenunit uit en opnieuw in.",
+        "Blijft de fout: onderzoek hoofdregelaar/FTC-print."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 48,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "E4",
+      "codeType": "storing",
+      "title": "Communicatiefout hoofdregelaar ↔ FTC (ontvangst)",
+      "meaning": "Communicatiefout hoofdregelaar ↔ FTC (ontvangst)",
+      "causes": [
+        "Losse/beschadigde 2-aderige communicatiekabel",
+        "Verkeerde bekabeling",
+        "Storing hoofdregelaar of FTC"
+      ],
+      "checks": [
+        "Controleer kabel en aansluitingen tussen hoofdregelaar en FTC.",
+        "Controleer dat slechts één hoofdregelaar op één FTC is aangesloten.",
+        "Schakel binnen- en buitenunit uit en opnieuw in.",
+        "Blijft de fout: onderzoek hoofdregelaar/FTC-print."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 48,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "E3",
+      "codeType": "storing",
+      "title": "Communicatiefout hoofdregelaar ↔ FTC (transmissie)",
+      "meaning": "Communicatiefout hoofdregelaar ↔ FTC (transmissie)",
+      "causes": [
+        "Meerdere hoofdregelaars aangesloten",
+        "Storing zend/ontvangstcircuit",
+        "Elektrische storing/ruis"
+      ],
+      "checks": [
+        "Controleer dat één hoofdregelaar op één FTC is aangesloten.",
+        "Controleer communicatiebekabeling.",
+        "Schakel binnen- en buitenunit uit en opnieuw in.",
+        "Blijft de fout: onderzoek hoofdregelaar/FTC-print."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 48,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "E5",
+      "codeType": "storing",
+      "title": "Communicatiefout hoofdregelaar ↔ FTC (transmissie)",
+      "meaning": "Communicatiefout hoofdregelaar ↔ FTC (transmissie)",
+      "causes": [
+        "Meerdere hoofdregelaars aangesloten",
+        "Storing zend/ontvangstcircuit",
+        "Elektrische storing/ruis"
+      ],
+      "checks": [
+        "Controleer dat één hoofdregelaar op één FTC is aangesloten.",
+        "Controleer communicatiebekabeling.",
+        "Schakel binnen- en buitenunit uit en opnieuw in.",
+        "Blijft de fout: onderzoek hoofdregelaar/FTC-print."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 48,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "E6",
+      "codeType": "storing",
+      "title": "Binnenunit ontvangt geen geldig signaal van buitenunit",
+      "meaning": "Binnenunit ontvangt geen geldig signaal van buitenunit",
+      "causes": [
+        "Los contact, kortsluiting of verkeerde bedrading",
+        "Storing communicatiedeel buitenunit",
+        "Storing FTC",
+        "Elektrische ruis"
+      ],
+      "checks": [
+        "Controleer S1/S2/S3 en verbindingskabel tussen binnen- en buitenunit.",
+        "Controleer buitenunit-LED/checkcode.",
+        "Schakel binnen- en buitenunit uit en opnieuw in.",
+        "Gebruik OCH718 voor verdere buitenunitdiagnose."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 48,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "E7",
+      "codeType": "storing",
+      "title": "Buitenunit ontvangt geen geldig signaal van binnenunit",
+      "meaning": "Buitenunit ontvangt geen geldig signaal van binnenunit",
+      "causes": [
+        "Communicatieprobleem binnenunit ↔ buitenunit"
+      ],
+      "checks": [
+        "Controleer verbindingskabel en aansluitingen.",
+        "Controleer buitenunit-LED/checkcode.",
+        "Controleer FTC en buitenunitprint volgens servicehandleidingen."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 49,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "E1",
+      "codeType": "storing",
+      "title": "Hoofdregelaar geheugenfout",
+      "meaning": "Hoofdregelaar geheugenfout",
+      "causes": [
+        "Interne fout hoofdregelaar"
+      ],
+      "checks": [
+        "Schakel systeem uit en opnieuw in.",
+        "Blijft de fout terugkomen: controleer/vervang hoofdregelaar volgens OCH712C."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 49,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "E2",
+      "codeType": "storing",
+      "title": "Hoofdregelaar klokfout",
+      "meaning": "Hoofdregelaar klokfout",
+      "causes": [
+        "Interne fout hoofdregelaar"
+      ],
+      "checks": [
+        "Schakel systeem uit en opnieuw in.",
+        "Blijft de fout terugkomen: controleer/vervang hoofdregelaar volgens OCH712C."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 49,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "J0",
+      "codeType": "storing",
+      "title": "FTC ontvangt geen data van draadloze ontvanger",
+      "meaning": "FTC ontvangt geen data van draadloze ontvanger",
+      "causes": [
+        "Communicatie met draadloze ontvanger ontbreekt"
+      ],
+      "checks": [
+        "Controleer draadloze ontvanger en aansluiting op FTC.",
+        "Controleer voeding/connector.",
+        "Voer communicatiecontrole uit."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 49,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "J1",
+      "codeType": "storing",
+      "title": "Communicatiefout draadloze regelaar adres 1",
+      "meaning": "Communicatiefout draadloze regelaar adres 1",
+      "causes": [
+        "Batterij leeg",
+        "Regelaar buiten bereik",
+        "Storing draadloze regelaar",
+        "Storing ontvanger"
+      ],
+      "checks": [
+        "Controleer/vervang batterij.",
+        "Breng regelaar dichter bij ontvanger en voer communicatietest uit.",
+        "Bij blijvende fout: controleer regelaar en ontvanger."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 49,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "J2",
+      "codeType": "storing",
+      "title": "Communicatiefout draadloze regelaar adres 2",
+      "meaning": "Communicatiefout draadloze regelaar adres 2",
+      "causes": [
+        "Batterij leeg",
+        "Regelaar buiten bereik",
+        "Storing draadloze regelaar",
+        "Storing ontvanger"
+      ],
+      "checks": [
+        "Controleer/vervang batterij.",
+        "Breng regelaar dichter bij ontvanger en voer communicatietest uit.",
+        "Bij blijvende fout: controleer regelaar en ontvanger."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 49,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "J3",
+      "codeType": "storing",
+      "title": "Communicatiefout draadloze regelaar adres 3",
+      "meaning": "Communicatiefout draadloze regelaar adres 3",
+      "causes": [
+        "Batterij leeg",
+        "Regelaar buiten bereik",
+        "Storing draadloze regelaar",
+        "Storing ontvanger"
+      ],
+      "checks": [
+        "Controleer/vervang batterij.",
+        "Breng regelaar dichter bij ontvanger en voer communicatietest uit.",
+        "Bij blijvende fout: controleer regelaar en ontvanger."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 49,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "J4",
+      "codeType": "storing",
+      "title": "Communicatiefout draadloze regelaar adres 4",
+      "meaning": "Communicatiefout draadloze regelaar adres 4",
+      "causes": [
+        "Batterij leeg",
+        "Regelaar buiten bereik",
+        "Storing draadloze regelaar",
+        "Storing ontvanger"
+      ],
+      "checks": [
+        "Controleer/vervang batterij.",
+        "Breng regelaar dichter bij ontvanger en voer communicatietest uit.",
+        "Bij blijvende fout: controleer regelaar en ontvanger."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 49,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "J5",
+      "codeType": "storing",
+      "title": "Communicatiefout draadloze regelaar adres 5",
+      "meaning": "Communicatiefout draadloze regelaar adres 5",
+      "causes": [
+        "Batterij leeg",
+        "Regelaar buiten bereik",
+        "Storing draadloze regelaar",
+        "Storing ontvanger"
+      ],
+      "checks": [
+        "Controleer/vervang batterij.",
+        "Breng regelaar dichter bij ontvanger en voer communicatietest uit.",
+        "Bij blijvende fout: controleer regelaar en ontvanger."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 49,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "J6",
+      "codeType": "storing",
+      "title": "Communicatiefout draadloze regelaar adres 6",
+      "meaning": "Communicatiefout draadloze regelaar adres 6",
+      "causes": [
+        "Batterij leeg",
+        "Regelaar buiten bereik",
+        "Storing draadloze regelaar",
+        "Storing ontvanger"
+      ],
+      "checks": [
+        "Controleer/vervang batterij.",
+        "Breng regelaar dichter bij ontvanger en voer communicatietest uit.",
+        "Bij blijvende fout: controleer regelaar en ontvanger."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 49,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "J7",
+      "codeType": "storing",
+      "title": "Communicatiefout draadloze regelaar adres 7",
+      "meaning": "Communicatiefout draadloze regelaar adres 7",
+      "causes": [
+        "Batterij leeg",
+        "Regelaar buiten bereik",
+        "Storing draadloze regelaar",
+        "Storing ontvanger"
+      ],
+      "checks": [
+        "Controleer/vervang batterij.",
+        "Breng regelaar dichter bij ontvanger en voer communicatietest uit.",
+        "Bij blijvende fout: controleer regelaar en ontvanger."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 49,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "J8",
+      "codeType": "storing",
+      "title": "Communicatiefout draadloze regelaar adres 8",
+      "meaning": "Communicatiefout draadloze regelaar adres 8",
+      "causes": [
+        "Batterij leeg",
+        "Regelaar buiten bereik",
+        "Storing draadloze regelaar",
+        "Storing ontvanger"
+      ],
+      "checks": [
+        "Controleer/vervang batterij.",
+        "Breng regelaar dichter bij ontvanger en voer communicatietest uit.",
+        "Bij blijvende fout: controleer regelaar en ontvanger."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 49,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "J9",
+      "codeType": "storing",
+      "title": "Communicatiefout met FTC-subunit",
+      "meaning": "Communicatiefout met FTC-subunit",
+      "causes": [
+        "Geen normaal signaal van FTC-subunit gedurende 3 minuten"
+      ],
+      "checks": [
+        "Controleer communicatie zoals bij E0/E4.",
+        "Controleer bedrading en adressering van FTC-subunit."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 49,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "EE",
+      "codeType": "storing",
+      "title": "Onjuiste combinatie FTC en buitenunit",
+      "meaning": "Onjuiste combinatie FTC en buitenunit",
+      "causes": [
+        "Binnen- en buitenunitcombinatie klopt niet",
+        "Verkeerd koudemiddel-/unitplatform gecombineerd"
+      ],
+      "checks": [
+        "Controleer modelnummers van binnen- en buitenunit.",
+        "Voor deze MonteurMaatje-entry hoort EHSD-VM2D bij SUZ-SWM40VA.",
+        "Controleer configuratie voordat onderdelen worden vervangen.",
+        "OCH718 gebruikt EE tevens als combinatie-fout tussen binnen- en buitenunit; controleer daarom altijd de unitcombinatie."
+      ],
+      "source": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+      "sourceDocument": "OCH712C",
+      "sourcePage": 49,
+      "verified": true,
+      "verifiedDate": "2026-08-25",
+      "note": "Zowel FTC6 als de SUZ-SWM40VA-documentatie verwijst bij EE naar een onjuiste unitcombinatie."
+    },
+    {
+      "code": "UP",
+      "codeType": "storing",
+      "title": "Buitenunit: overstroombeveiliging / vermogenssysteem",
+      "meaning": "Buitenunit: overstroombeveiliging / vermogenssysteem",
+      "causes": [
+        "Overstroom direct na compressorstart",
+        "Compressorconnector",
+        "Gesloten stopkraan",
+        "Inverter/compressorprobleem"
+      ],
+      "checks": [
+        "Controleer compressorconnector.",
+        "Controleer stopkranen.",
+        "Voer inverter/compressorcontrole uit volgens OCH718."
+      ],
+      "source": "https://alklima.nl/storage/SHA/Servicehandleiding-SUZ-SWM40-VA.pdf",
+      "sourceDocument": "OCH718",
+      "sourcePage": 19,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "U3",
+      "codeType": "storing",
+      "title": "Buitenunit: persgastemperatuursensor defect",
+      "meaning": "Buitenunit: persgastemperatuursensor defect",
+      "causes": [
+        "RT62 open/kortgesloten of bedrading defect"
+      ],
+      "checks": [
+        "Controleer RT62 en connector CN671.",
+        "Meet thermistor volgens OCH718."
+      ],
+      "source": "https://alklima.nl/storage/SHA/Servicehandleiding-SUZ-SWM40-VA.pdf",
+      "sourceDocument": "OCH718",
+      "sourcePage": 19,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "U4",
+      "codeType": "storing",
+      "title": "Buitenunit: thermistorfout",
+      "meaning": "Buitenunit: thermistorfout",
+      "causes": [
+        "Fout in RT61, RT64, RT65, RT68 of bijbehorende bedrading/print"
+      ],
+      "checks": [
+        "Controleer aansluitingen en weerstanden van de buitenunitvoelers.",
+        "Controleer RT61, RT62, RT64, RT65 en RT68 volgens OCH718/Alklima Kennisbank."
+      ],
+      "source": "https://alklima.nl/storage/SHA/Servicehandleiding-SUZ-SWM40-VA.pdf",
+      "sourceDocument": "OCH718",
+      "sourcePage": 19,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "FC",
+      "codeType": "storing",
+      "title": "Buitenunit: besturings-/geheugenfout",
+      "meaning": "Buitenunit: besturings-/geheugenfout",
+      "causes": [
+        "Niet-vluchtig geheugen op inverterprint kan niet goed worden gelezen"
+      ],
+      "checks": [
+        "Controleer voeding en print.",
+        "Volgens OCH718: vervang inverterprint wanneer fout bevestigd blijft."
+      ],
+      "source": "https://alklima.nl/storage/SHA/Servicehandleiding-SUZ-SWM40-VA.pdf",
+      "sourceDocument": "OCH718",
+      "sourcePage": 19,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "E8",
+      "codeType": "storing",
+      "title": "Buitenunit: seriële communicatiefout binnen ↔ buiten",
+      "meaning": "Buitenunit: seriële communicatiefout binnen ↔ buiten",
+      "causes": [
+        "Communicatie valt gedurende 3 minuten weg",
+        "Verbindingskabel of printprobleem"
+      ],
+      "checks": [
+        "Controleer binnen-/buitenunitkabel en aansluitingen.",
+        "Controleer FTC en buitenunitprint als de fout terugkomt."
+      ],
+      "source": "https://alklima.nl/storage/SHA/Servicehandleiding-SUZ-SWM40-VA.pdf",
+      "sourceDocument": "OCH718",
+      "sourcePage": 19,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "E9",
+      "codeType": "storing",
+      "title": "Buitenunit: seriële communicatiefout binnen ↔ buiten",
+      "meaning": "Buitenunit: seriële communicatiefout binnen ↔ buiten",
+      "causes": [
+        "Communicatie valt gedurende 3 minuten weg",
+        "Verbindingskabel of printprobleem"
+      ],
+      "checks": [
+        "Controleer binnen-/buitenunitkabel en aansluitingen.",
+        "Controleer FTC en buitenunitprint als de fout terugkomt."
+      ],
+      "source": "https://alklima.nl/storage/SHA/Servicehandleiding-SUZ-SWM40-VA.pdf",
+      "sourceDocument": "OCH718",
+      "sourcePage": 19,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "UE",
+      "codeType": "storing",
+      "title": "Buitenunit: stopkraan/gesloten kraan gedetecteerd",
+      "meaning": "Buitenunit: stopkraan/gesloten kraan gedetecteerd",
+      "causes": [
+        "Stopkraan dicht of onvoldoende geopend"
+      ],
+      "checks": [
+        "Controleer of de stopkranen volledig geopend zijn."
+      ],
+      "source": "https://alklima.nl/storage/SHA/Servicehandleiding-SUZ-SWM40-VA.pdf",
+      "sourceDocument": "OCH718",
+      "sourcePage": 19,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    },
+    {
+      "code": "PL",
+      "codeType": "storing",
+      "title": "Buitenunit: afwijking koudemiddelcircuit",
+      "meaning": "Buitenunit: afwijking koudemiddelcircuit",
+      "causes": [
+        "Gesloten stopkraan",
+        "Lucht/afwijking in koudemiddelcircuit",
+        "Mogelijke lekkage"
+      ],
+      "checks": [
+        "Controleer stopkranen.",
+        "Controleer leidingen op lekkage.",
+        "Voer OCH718 'outdoor refrigerant circuit' controle uit."
+      ],
+      "source": "https://alklima.nl/storage/SHA/Servicehandleiding-SUZ-SWM40-VA.pdf",
+      "sourceDocument": "OCH718",
+      "sourcePage": 19,
+      "verified": true,
+      "verifiedDate": "2026-08-25"
+    }
+  ]
+}

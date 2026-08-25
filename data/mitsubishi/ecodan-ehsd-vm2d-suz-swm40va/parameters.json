@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "deviceId": "mitsubishi-ecodan-ehsd-vm2d-suz-swm40va",
+  "source": {
+    "title": "Mitsubishi Electric Service Manual OCH712C – FTC6/Hydrobox",
+    "url": "https://device.report/m/4eb7e2057f5e7bf96afaf583fb8c37c66850636400b40f5e0ce0defbf6954490",
+    "revision": "oktober 2020"
+  },
+  "note": "Mitsubishi gebruikt geen Remeha-achtige CP/HP-parameterstructuur. Deze lijst bevat geverifieerde servicemenu-instellingen en Running Information die relevant zijn voor EHSD-VM2D/FTC6. DIP-switches worden later als aparte servicemodule toegevoegd.",
+  "parameters": [
+    {
+      "code": "SERVICE-PUMP-HEAT",
+      "description": "Pompsnelheid ruimteverwarming",
+      "category": "Servicemenu",
+      "factoryDefault": "Model-/installatieafhankelijk",
+      "settingRange": "1–5",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "technicalExplanation": "Servicemenu → Pump speed → Heating/Cooling. Hogere stand geeft meer beschikbare pompdruk/flow. Controleer het effect op daadwerkelijk debiet.",
+      "sourcePage": 29
+    },
+    {
+      "code": "SERVICE-PUMP-DHW",
+      "description": "Pompsnelheid tapwaterbedrijf",
+      "category": "Servicemenu",
+      "factoryDefault": "Model-/installatieafhankelijk",
+      "settingRange": "1–5",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "technicalExplanation": "Servicemenu → Pump speed → DHW. Alleen relevant wanneer tapwaterbedrijf is geconfigureerd.",
+      "sourcePage": 29
+    },
+    {
+      "code": "THERM-ADJ",
+      "description": "Correctie thermistoruitlezing",
+      "category": "Servicemenu",
+      "factoryDefault": "0 °C",
+      "settingRange": "-10 tot +10 °C in stappen van 0,5 °C",
+      "choices": [],
+      "technicalExplanation": "Servicemenu → Thermistor adjustment. Beschikbaar voor onder andere THW1, THW2, THW5B, THW6–THW10 en THWB1. Alleen corrigeren na controle met een betrouwbare referentiemeting.",
+      "sourcePage": 27
+    },
+    {
+      "code": "AUX-PUMP-ECO",
+      "description": "Economy settings for pump",
+      "category": "Servicemenu",
+      "factoryDefault": "Zie toestelinstelling",
+      "settingRange": "Aan/Uit; vertraging 3–60 min",
+      "choices": [],
+      "technicalExplanation": "Servicemenu → Auxiliary settings → Economy settings for pump. Beïnvloedt pompbedrijf en vertraging.",
+      "sourcePage": 28
+    },
+    {
+      "code": "AUX-EHEAT-HEAT",
+      "description": "Elektrische bijverwarming voor verwarming",
+      "category": "Servicemenu",
+      "factoryDefault": "Zie toestelinstelling",
+      "settingRange": "Aan/Uit; vertraging 5–180 min",
+      "choices": [],
+      "technicalExplanation": "Servicemenu → Auxiliary settings → Electric heater (Heating). Hiermee wordt ingesteld of en na hoeveel tijd het elektrische element mag ondersteunen.",
+      "sourcePage": 28
+    },
+    {
+      "code": "AUX-EHEAT-DHW",
+      "description": "Elektrische ondersteuning tapwater",
+      "category": "Servicemenu",
+      "factoryDefault": "Zie configuratie",
+      "settingRange": "Aan/Uit; vertraging 15–30 min",
+      "choices": [],
+      "technicalExplanation": "Servicemenu → Auxiliary settings → Electric heater (DHW). Alleen relevant bij aangesloten tapwatersysteem.",
+      "sourcePage": 28
+    },
+    {
+      "code": "MIXING-VALVE",
+      "description": "Looptijd mengklep",
+      "category": "Servicemenu",
+      "factoryDefault": "Afhankelijk van gebruikte klepmotor",
+      "settingRange": "10–240 s",
+      "choices": [],
+      "technicalExplanation": "Servicemenu → Auxiliary settings → Mixing valve control. Stel de looptijd in volgens de specificatie van de toegepaste mengklepactuator.",
+      "sourcePage": 29
+    },
+    {
+      "code": "FLOW-SENSOR",
+      "description": "Flowsensor minimum/maximum",
+      "category": "Servicemenu",
+      "factoryDefault": "Fabrieksmatig afgestemd op gemonteerde flowsensor",
+      "settingRange": "0–100 l/min",
+      "choices": [],
+      "technicalExplanation": "Servicemenu → Auxiliary settings → Flow sensor. Mitsubishi waarschuwt deze instelling niet te wijzigen wanneer de fabrieksflowsensor van de Hydrobox wordt gebruikt.",
+      "sourcePage": 29
+    },
+    {
+      "code": "HEAT-SOURCE",
+      "description": "Warmtebronselectie",
+      "category": "Servicemenu",
+      "factoryDefault": "Standard",
+      "settingRange": "Standard; Heater; Boiler; Hybrid",
+      "choices": [
+        "Standard",
+        "Heater",
+        "Boiler",
+        "Hybrid"
+      ],
+      "technicalExplanation": "Servicemenu → Heat source setting. Standard gebruikt warmtepomp plus beschikbare elektrische ondersteuning. Boiler/Hybrid alleen gebruiken bij correct geconfigureerde ketel/hybride installatie.",
+      "sourcePage": 29
+    },
+    {
+      "code": "HP-FLOW-RANGE",
+      "description": "Toegestaan warmtepompdebiet",
+      "category": "Servicemenu",
+      "factoryDefault": "Systeem-/buitenunitafhankelijk",
+      "settingRange": "Minimum en maximum instelbaar",
+      "choices": [],
+      "technicalExplanation": "Servicemenu → Heat pump settings → Heat pump flow rate range. Voor de latere servicetool koppelen we dit modelspecifiek aan de SUZ-SWM40VA.",
+      "sourcePage": 25
+    },
+    {
+      "code": "FLOW-TEMP-RANGE",
+      "description": "Grenzen aanvoertemperatuur verwarming",
+      "category": "Servicemenu",
+      "factoryDefault": "Configuratieafhankelijk",
+      "settingRange": "Hydrobox verwarmingsdoel 20–60 °C",
+      "choices": [],
+      "technicalExplanation": "Servicemenu → Operation settings → Heating operation → Flow temp. range. EHSD-VM2D is een alleen-verwarmen Hydrobox; maximale systeemaanvoer is 60 °C.",
+      "sourcePage": 25
+    },
+    {
+      "code": "RUN-INFO-103-105",
+      "description": "Storingshistorie uitlezen",
+      "category": "Running information",
+      "factoryDefault": "n.v.t.",
+      "settingRange": "103 = laatste; 104 = vorige; 105 = derde fout",
+      "choices": [],
+      "technicalExplanation": "Servicemenu → Running information. Request codes 103–105 tonen de drie meest recente storingen.",
+      "sourcePage": 35
+    },
+    {
+      "code": "RUN-INFO-567",
+      "description": "Defecte thermistor identificeren",
+      "category": "Running information",
+      "factoryDefault": "n.v.t.",
+      "settingRange": "Codewaarde verwijst naar TH1A/TH2/THW1/THW2/THW5B/TH1B/THW6–THW9",
+      "choices": [],
+      "technicalExplanation": "Gebruik request code 567 bij P1/P2/L5/LD om te zien welke thermistor de fout veroorzaakt.",
+      "sourcePage": 35
+    },
+    {
+      "code": "RUN-INFO-569",
+      "description": "Geactiveerde flowswitch bij L9",
+      "category": "Running information",
+      "factoryDefault": "n.v.t.",
+      "settingRange": "0 = geen; 1 = flowswitch 1; 2 = flowswitch 2; 3 = flowswitch 3",
+      "choices": [],
+      "technicalExplanation": "Gebruik request code 569 bij L9 om te bepalen welke flowswitch de storing heeft veroorzaakt.",
+      "sourcePage": 35
+    },
+    {
+      "code": "RUN-INFO-571",
+      "description": "Debiet op moment van storing",
+      "category": "Running information",
+      "factoryDefault": "n.v.t.",
+      "settingRange": "0–100 l/min",
+      "choices": [],
+      "technicalExplanation": "Request code 571 toont het gemeten debiet op het moment van de fout.",
+      "sourcePage": 35
+    },
+    {
+      "code": "RUN-INFO-200",
+      "description": "Reset Function Settings naar fabriek",
+      "category": "Running information",
+      "factoryDefault": "n.v.t.",
+      "settingRange": "Resetactie",
+      "choices": [],
+      "technicalExplanation": "WAARSCHUWING: request code 200 initialiseert/reset alle Function Settings naar fabrieksinstellingen. Niet gebruiken als normale uitleescode.",
+      "sourcePage": 35
+    }
+  ]
+}

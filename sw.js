@@ -1,5 +1,5 @@
 const CACHE_PREFIX = "monteurmaatje-";
-const APP_CACHE = `monteurmaatje-app-industrial-v5-tools101a`;
+const APP_CACHE = `monteurmaatje-app-industrial-v6-mitsu-p1`;
 const DATA_CACHE = `monteurmaatje-data-qa-complete-2`;
 const APP_ROOT = new URL("./", self.registration.scope).href;
 const appUrl = (path = "") => new URL(path, self.registration.scope).href;
